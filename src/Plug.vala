@@ -44,7 +44,7 @@ public class ApplicationsPlug : Switchboard.Plug {
 
 		var stack = new Gtk.Stack ();
 		stack.set_transition_type (Gtk.StackTransitionType.SLIDE_LEFT_RIGHT);
-		stack.set_transition_duration (1000);
+		stack.set_transition_duration (500);
 		stack.expand = true;
 
 		stack.add_titled (defaults_plug.get_widget (), "defaults", _("Defaults"));
