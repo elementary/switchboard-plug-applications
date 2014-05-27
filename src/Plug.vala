@@ -24,7 +24,7 @@ public class ApplicationsPlug : Switchboard.Plug {
     private Defaults.Plug defaults_plug;
     private Startup.Plug startup_plug;
 
-	private Gtk.Grid grid;
+    private Gtk.Grid grid;
 
     public ApplicationsPlug () {
         Object (category: Category.PERSONAL,
@@ -38,31 +38,31 @@ public class ApplicationsPlug : Switchboard.Plug {
     }
 
     public override Gtk.Widget get_widget () {
-		if (grid != null) {
-			return grid;
-		}
+        if (grid != null) {
+            return grid;
+        }
 
-		var stack = new Gtk.Stack ();
-		stack.set_transition_type (Gtk.StackTransitionType.SLIDE_LEFT_RIGHT);
-		stack.set_transition_duration (500);
-		stack.expand = true;
+        var stack = new Gtk.Stack ();
+        stack.set_transition_type (Gtk.StackTransitionType.SLIDE_LEFT_RIGHT);
+        stack.set_transition_duration (500);
+        stack.expand = true;
 
-		stack.add_titled (defaults_plug.get_widget (), "defaults", _("Defaults"));
-		stack.add_titled (startup_plug.get_widget (), "startup", _("Startup Apps"));
+        stack.add_titled (defaults_plug.get_widget (), "defaults", _("Defaults"));
+        stack.add_titled (startup_plug.get_widget (), "startup", _("Startup Apps"));
 
-		var stack_switcher = new Gtk.StackSwitcher ();
-		stack_switcher.set_halign (Gtk.Align.CENTER);
-		stack_switcher.set_stack (stack);
-		stack_switcher.margin_top = 12;
+        var stack_switcher = new Gtk.StackSwitcher ();
+        stack_switcher.set_halign (Gtk.Align.CENTER);
+        stack_switcher.set_stack (stack);
+        stack_switcher.margin_top = 12;
 
-		grid = new Gtk.Grid ();
-		grid.margin_top = 1;
+        grid = new Gtk.Grid ();
+        grid.margin_top = 1;
 
-		grid.attach (stack_switcher, 0, 0, 1, 1);
-		grid.attach (stack, 0, 1, 1, 1);
+        grid.attach (stack_switcher, 0, 0, 1, 1);
+        grid.attach (stack, 0, 1, 1, 1);
 
-		grid.show_all ();
-		return grid;
+        grid.show_all ();
+        return grid;
     }
 
     public override void shown () {
