@@ -1,0 +1,5 @@
+switchboard-plug-applications (0.1) trusty; urgency=low
+
+  * Initial Release.
+
+ -- Cody Garver <cody@elementaryos.org>  Tue, 27 May 2014 12:07:26 -0500
