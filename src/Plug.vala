@@ -31,7 +31,7 @@ public class ApplicationsPlug : Switchboard.Plug {
                 code_name: "personal-pantheon-applications",
                 display_name: _("Applications"),
                 description: _("Application Settings"),
-                icon: "application-default-icon");
+                icon: "preferences-desktop-applications");
 
         defaults_plug = new Defaults.Plug ();
         startup_plug = new Startup.Plug ();
