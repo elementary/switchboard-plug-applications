@@ -71,8 +71,8 @@ public class Startup.Widgets.List : Gtk.ListBox {
         if (row == null)
             return;
 
-        app_removed (((AppRow)row).app_info.path);
         remove (row);
+        app_removed (((AppRow)row).app_info.path);
     }
 
     public void add_app (Entity.AppInfo app_info) {
