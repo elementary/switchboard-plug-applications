@@ -17,74 +17,49 @@
     Boston, MA 02110-1301 USA.
 ***/
 
-public class Startup.Widgets.AppRow : Gtk.Box {
-
-    Gtk.Button delete_button;
-    Gtk.Label label;
-    Gtk.Switch active_switch;
-    Gtk.Image image;
+public class Startup.Widgets.AppRow : Gtk.ListBoxRow {
+    public signal void active_changed (bool active);
 
     public Entity.AppInfo app_info { get; construct; }
 
-    public signal void deleted ();
-    public signal void active_changed (bool active);
+    Gtk.Label label;
+    Gtk.Switch active_switch;
+    Gtk.Image image;
+    Gtk.Grid main_grid;
 
     public AppRow (Entity.AppInfo app_info) {
         Object (app_info: app_info);
-        setup ();
-        connect_signals ();
-        on_active_changed ();
-    }
 
-    void setup () {
-        orientation = Gtk.Orientation.HORIZONTAL;
+        main_grid = new Gtk.Grid ();
+        main_grid.orientation = Gtk.Orientation.HORIZONTAL;
 
         var markup = Utils.create_markup (app_info);
         var icon = Utils.create_icon (app_info);
 
-        margin = 6;
-        spacing = 12;
-
-        active_switch = new Gtk.Switch ();
-        active_switch.active = app_info.active;
-        add (active_switch);
+        main_grid.margin = 6;
+        main_grid.column_spacing = 12;
 
         image = new Gtk.Image.from_pixbuf (icon);
-        add (image);
+        main_grid.add (image);
 
         label = new Gtk.Label (markup);
         label.expand = true;
         label.use_markup = true;
         label.halign = Gtk.Align.START;
         label.ellipsize = Pango.EllipsizeMode.END;
-        add (label);
+        main_grid.add (label);
 
-        delete_button = new Gtk.Button.with_label (_("Delete"));
-        delete_button.get_style_context ().add_class ("destructive-action");
-        delete_button.no_show_all = true;
-        delete_button.vexpand = false;
-        var button_box = new Gtk.ButtonBox (Gtk.Orientation.HORIZONTAL);
-        button_box.add (delete_button);
-        add (button_box);
-
-        show_all ();
-    }
-
-    void connect_signals () {
-        delete_button.clicked.connect (on_delete_clicked);
+        active_switch = new Gtk.Switch ();
+        active_switch.active = app_info.active;
         active_switch.notify["active"].connect (on_active_changed);
-    }
+        main_grid.add (active_switch);
 
-    void on_delete_clicked () {
-        deleted ();
+        add (main_grid);
+        show_all ();
+        on_active_changed ();
     }
 
     void on_active_changed () {
         active_changed (active_switch.active);
-    }
-
-    public void show_delete (bool show) {
-        delete_button.no_show_all = !show;
-        delete_button.visible = show;
     }
 }

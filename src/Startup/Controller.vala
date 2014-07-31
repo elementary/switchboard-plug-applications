@@ -19,10 +19,10 @@
 
 public class Startup.Controller : Object {
 
-    public Port.List view  { get; construct; }
+    public Startup.Widgets.Scrolled view  { get; construct; }
     public Port.Monitor monitor  { get; construct; }
 
-    public Controller (Port.List view, Port.Monitor monitor) {
+    public Controller (Startup.Widgets.Scrolled view, Port.Monitor monitor) {
         Object (view: view, monitor: monitor);
         setup_view ();
         connect_signals ();

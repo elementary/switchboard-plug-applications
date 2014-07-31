@@ -17,91 +17,58 @@
     Boston, MA 02110-1301 USA.
 ***/
 
-public interface Startup.Port.List : Object {
-
+/**
+ * Main widget, handels drag and drop.
+ */
+public class Startup.Widgets.Scrolled : Gtk.Grid {
     public signal void app_added (string path);
     public signal void app_added_from_command (string command);
     public signal void app_removed (string path);
     public signal void app_active_changed (string path, bool active);
 
-    public abstract void add_app (Entity.AppInfo app_info);
-    public abstract void remove_app_from_path (string path);
-    public abstract void reload_app_from_path (string path);
-
-    public abstract void init_app_chooser (Gee.Collection <Entity.AppInfo?> app_infos);
-}
-
-/**
- * Main widget, handels drag and drop.
- */
-public class Startup.Widgets.Scrolled : Gtk.ScrolledWindow, Port.List {
-
     public Widgets.List list { get; private set; }
-
-    enum Target {
-        URI_LIST
-    }
-
-    const Gtk.TargetEntry[] target_list = {
-        { "text/uri-list", 0, Target.URI_LIST }
-    };
+    public Dialogs.AppChooser app_chooser;
 
     public Scrolled () {
-        setup_gui ();
-        connect_signals ();
-    }
+        orientation = Gtk.Orientation.VERTICAL;
+        margin = 12;
+        margin_top = 0;
 
-    void setup_gui () {
         list = new Widgets.List ();
-		list.halign = Gtk.Align.CENTER;
-        add (list);
-        Gtk.drag_dest_set (this, Gtk.DestDefaults.ALL, target_list, Gdk.DragAction.COPY);
-        drag_data_received.connect (on_drag_data_received);
-    }
+        list.expand = true;
 
-    void on_drag_data_received (Gdk.DragContext context, int x, int y,
-                                Gtk.SelectionData selection_data,
-                                uint info, uint time_) {
+        var scrolled = new Gtk.ScrolledWindow (null, null);
+        scrolled.shadow_type = Gtk.ShadowType.IN;
+        scrolled.add (list);
 
-        if (info != Target.URI_LIST)
-            return;
+        var toolbar = new Gtk.Toolbar ();
+        toolbar.get_style_context ().add_class (Gtk.STYLE_CLASS_INLINE_TOOLBAR);
+        toolbar.icon_size = Gtk.IconSize.SMALL_TOOLBAR;
 
-        var uris = (string) selection_data.get_data ();
-        add_uris_to_list (uris);
-    }
+        var add_button = new Gtk.ToolButton (new Gtk.Image.from_icon_name ("list-add-symbolic", Gtk.IconSize.BUTTON), null);
+        add_button.tooltip_text = _("Add Startup App…");
+        add_button.clicked.connect (() => {app_chooser.show_all ();});
 
-    void add_uris_to_list (string uris) {
-        foreach (var uri in uris.split ("\r\n"))
-           add_uri_to_list (uri);
-    }
+        var remove_button = new Gtk.ToolButton (new Gtk.Image.from_icon_name ("list-remove-symbolic", Gtk.IconSize.BUTTON), null);
+        remove_button.tooltip_text = _("Remove Selected Startup App");
+        remove_button.clicked.connect (() => {list.remove_selected_app ();});
+        remove_button.sensitive = false;
 
-    void add_uri_to_list (string uri) {
-        var path = get_path_from_uri (uri);
-        if (path != null)
-            app_added (path);
-    }
+        toolbar.add (add_button);
+        toolbar.add (remove_button);
 
-    string? get_path_from_uri (string uri) {
-        if (uri.has_prefix ("#") || uri.strip () == "")
-            return null;
+        add (scrolled);
+        add (toolbar);
 
-        try {
-            return GLib.Filename.from_uri (uri);
-        } catch (Error e) {
-            warning ("Could not convert URI of dropped item to filename");
-            warning (e.message);
-        }
+        app_chooser = new Dialogs.AppChooser (add_button);
+        app_chooser.modal = true;
 
-        return null;
-    }
-
-    void connect_signals () {
-        var app_chooser = list.new_app_row.app_chooser;
-        
         app_chooser.app_chosen.connect ((p) => app_added (p));
         app_chooser.custom_command_chosen.connect ((c) => app_added_from_command (c));
-        
+
         list.app_removed.connect ((p) => app_removed (p));
+        list.app_added.connect ((p) => app_added (p));
+        list.row_selected.connect ((row) => {remove_button.sensitive = true;});
         list.app_active_changed.connect ((p,a) => app_active_changed (p,a));
     }
 
@@ -118,7 +85,6 @@ public class Startup.Widgets.Scrolled : Gtk.ScrolledWindow, Port.List {
     }
 
     public void init_app_chooser (Gee.Collection <Entity.AppInfo?> app_infos) {
-        var app_chooser = list.new_app_row.app_chooser;
         app_chooser.init_list (app_infos);
     }
 }
