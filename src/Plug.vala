@@ -45,8 +45,8 @@ public class ApplicationsPlug : Switchboard.Plug {
         var stack = new Gtk.Stack ();
         stack.expand = true;
 
-        stack.add_titled (defaults_plug.get_widget (), "defaults", _("Defaults"));
-        stack.add_titled (startup_plug.get_widget (), "startup", _("Startup Apps"));
+        stack.add_titled (defaults_plug.get_widget (), "defaults", _("Default"));
+        stack.add_titled (startup_plug.get_widget (), "startup", _("Startup"));
 
         var stack_switcher = new Gtk.StackSwitcher ();
         stack_switcher.set_halign (Gtk.Align.CENTER);
