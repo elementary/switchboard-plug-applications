@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-08-01 14:46-0500\n"
+"POT-Creation-Date: 2014-08-02 20:00-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,11 +26,11 @@ msgid "Application Settings"
 msgstr ""
 
 #: ../src/Plug.vala:48
-msgid "Defaults"
+msgid "Default"
 msgstr ""
 
 #: ../src/Plug.vala:49
-msgid "Startup Apps"
+msgid "Startup"
 msgstr ""
 
 #: ../src/Defaults/DefaultPlug.vala:87
