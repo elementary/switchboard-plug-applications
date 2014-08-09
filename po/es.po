@@ -3,30 +3,30 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-08-02 20:00-0500\n"
-"PO-Revision-Date: 2014-08-08 01:45+0000\n"
-"Last-Translator: Daniel Doblado <danieldoblado@gmail.com>\n"
+"PO-Revision-Date: 2014-08-09 05:36+0000\n"
+"Last-Translator: Champan <xdango.dai@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-08-08 07:11+0000\n"
+"X-Launchpad-Export-Date: 2014-08-09 06:25+0000\n"
 "X-Generator: Launchpad (build 17156)\n"
 
 #: ../src/Plug.vala:32
 msgid "Applications"
-msgstr ""
+msgstr "Aplicaciones"
 
 #: ../src/Plug.vala:33
 msgid "Application Settings"
-msgstr ""
+msgstr "Configuración"
 
 #: ../src/Plug.vala:48
 msgid "Default"
-msgstr ""
+msgstr "Por defecto"
 
 #: ../src/Plug.vala:49
 msgid "Startup"
-msgstr ""
+msgstr "Arranque"
 
 #: ../src/Defaults/DefaultPlug.vala:87
 msgid "Web Browser:"
@@ -34,43 +34,43 @@ msgstr "Navegador Web:"
 
 #: ../src/Defaults/DefaultPlug.vala:91
 msgid "Email Client:"
-msgstr ""
+msgstr "Cliente de correo:"
 
 #: ../src/Defaults/DefaultPlug.vala:95
 msgid "Calendar:"
-msgstr ""
+msgstr "Calendario:"
 
 #: ../src/Defaults/DefaultPlug.vala:99
 msgid "Video Player:"
-msgstr ""
+msgstr "Reproductor de vídeo:"
 
 #: ../src/Defaults/DefaultPlug.vala:103
 msgid "Music Player:"
-msgstr ""
+msgstr "Reproductor de música:"
 
 #: ../src/Defaults/DefaultPlug.vala:108
 msgid "Image Viewer:"
-msgstr ""
+msgstr "Visor de imágenes:"
 
 #: ../src/Defaults/DefaultPlug.vala:113
 msgid "Text Editor:"
-msgstr ""
+msgstr "Editor de textos:"
 
 #: ../src/Defaults/DefaultPlug.vala:118
 msgid "File Browser:"
-msgstr ""
+msgstr "Administrador de archivos:"
 
 #: ../src/Startup/Backend/KeyFile.vala:97
 msgid "Custom Command"
-msgstr ""
+msgstr "Orden personalizada"
 
 #: ../src/Startup/Dialogs/AppChooser.vala:74
 msgid "Search Applications"
-msgstr ""
+msgstr "Buscar aplicaciones"
 
 #: ../src/Startup/Dialogs/AppChooser.vala:91
 msgid "Type in a custom command"
-msgstr ""
+msgstr "Ingrese una orden personalizada"
 
 #: ../src/Startup/Widgets/Scrolled.vala:49
 msgid "Add Startup App…"
