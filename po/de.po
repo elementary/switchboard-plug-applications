@@ -3,13 +3,13 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-08-02 20:00-0500\n"
-"PO-Revision-Date: 2014-08-02 14:33+0000\n"
-"Last-Translator: Marcus Wichelmann <admin@marcusw.de>\n"
+"PO-Revision-Date: 2014-08-10 11:09+0000\n"
+"Last-Translator: Phillip Sz <Unknown>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-08-08 07:11+0000\n"
+"X-Launchpad-Export-Date: 2014-08-11 06:36+0000\n"
 "X-Generator: Launchpad (build 17156)\n"
 
 #: ../src/Plug.vala:32
@@ -22,11 +22,11 @@ msgstr "Anwendungseinstellungen"
 
 #: ../src/Plug.vala:48
 msgid "Default"
-msgstr ""
+msgstr "Standardeinstellungen"
 
 #: ../src/Plug.vala:49
 msgid "Startup"
-msgstr ""
+msgstr "Autostart"
 
 #: ../src/Defaults/DefaultPlug.vala:87
 msgid "Web Browser:"
