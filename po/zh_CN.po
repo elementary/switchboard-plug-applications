@@ -3,13 +3,13 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-08-02 20:00-0500\n"
-"PO-Revision-Date: 2014-08-11 10:02+0000\n"
+"PO-Revision-Date: 2014-08-12 17:05+0000\n"
 "Last-Translator: colindemian <dengmengpc@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-08-12 06:47+0000\n"
+"X-Launchpad-Export-Date: 2014-08-13 06:58+0000\n"
 "X-Generator: Launchpad (build 17156)\n"
 
 #: ../src/Plug.vala:32
@@ -18,15 +18,15 @@ msgstr "应用程序"
 
 #: ../src/Plug.vala:33
 msgid "Application Settings"
-msgstr "应用设置"
+msgstr "应用程序设置"
 
 #: ../src/Plug.vala:48
 msgid "Default"
-msgstr "默认值"
+msgstr "默认程序"
 
 #: ../src/Plug.vala:49
 msgid "Startup"
-msgstr "启动"
+msgstr "启动项"
 
 #: ../src/Defaults/DefaultPlug.vala:87
 msgid "Web Browser:"
@@ -38,7 +38,7 @@ msgstr "邮件客户端："
 
 #: ../src/Defaults/DefaultPlug.vala:95
 msgid "Calendar:"
-msgstr "日历："
+msgstr "日历查看器："
 
 #: ../src/Defaults/DefaultPlug.vala:99
 msgid "Video Player:"
