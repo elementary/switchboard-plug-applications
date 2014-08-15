@@ -3,13 +3,13 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-08-02 20:00-0500\n"
-"PO-Revision-Date: 2014-08-11 21:19+0000\n"
+"PO-Revision-Date: 2014-08-14 15:48+0000\n"
 "Last-Translator: Fabio Zaramella <FFabio.96.X@Gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-08-12 06:47+0000\n"
+"X-Launchpad-Export-Date: 2014-08-15 06:32+0000\n"
 "X-Generator: Launchpad (build 17156)\n"
 
 #: ../src/Plug.vala:32
@@ -18,7 +18,7 @@ msgstr "Applicazioni"
 
 #: ../src/Plug.vala:33
 msgid "Application Settings"
-msgstr "Impostazioni Applicazione"
+msgstr "Impostazioni Applicazioni"
 
 #: ../src/Plug.vala:48
 msgid "Default"
@@ -50,7 +50,7 @@ msgstr "Riproduttore Musicale:"
 
 #: ../src/Defaults/DefaultPlug.vala:108
 msgid "Image Viewer:"
-msgstr "Visualizzatore di immagini:"
+msgstr "Visualizzatore Immagini"
 
 #: ../src/Defaults/DefaultPlug.vala:113
 msgid "Text Editor:"
