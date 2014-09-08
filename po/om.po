@@ -1,0 +1,86 @@
+# Oromo translation for switchboard-plug-applications
+# Copyright (c) 2014 Rosetta Contributors and Canonical Ltd 2014
+# This file is distributed under the same license as the switchboard-plug-applications package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2014.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: switchboard-plug-applications\n"
+"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2014-08-02 20:00-0500\n"
+"PO-Revision-Date: 2014-09-07 14:06+0000\n"
+"Last-Translator: gudeta <gudbog@gmail.com>\n"
+"Language-Team: Oromo <om@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2014-09-08 07:06+0000\n"
+"X-Generator: Launchpad (build 17196)\n"
+
+#: ../src/Plug.vala:32
+msgid "Applications"
+msgstr "Dhimbaaftota"
+
+#: ../src/Plug.vala:33
+msgid "Application Settings"
+msgstr "Qindeesitoota dhimbaasaa"
+
+#: ../src/Plug.vala:48
+msgid "Default"
+msgstr "Durtii"
+
+#: ../src/Plug.vala:49
+msgid "Startup"
+msgstr "Ofiineegalaa"
+
+#: ../src/Defaults/DefaultPlug.vala:87
+msgid "Web Browser:"
+msgstr "Sakatta'aa Weebi"
+
+#: ../src/Defaults/DefaultPlug.vala:91
+msgid "Email Client:"
+msgstr "Maamila  Ergaa-E"
+
+#: ../src/Defaults/DefaultPlug.vala:95
+msgid "Calendar:"
+msgstr "Dhaha"
+
+#: ../src/Defaults/DefaultPlug.vala:99
+msgid "Video Player:"
+msgstr "Taphachiisaa Viidiyoo"
+
+#: ../src/Defaults/DefaultPlug.vala:103
+msgid "Music Player:"
+msgstr "Taphachiisaa Muuziqaa"
+
+#: ../src/Defaults/DefaultPlug.vala:108
+msgid "Image Viewer:"
+msgstr "Mul'isaa Suuraa"
+
+#: ../src/Defaults/DefaultPlug.vala:113
+msgid "Text Editor:"
+msgstr "Gulaalaa Barruu"
+
+#: ../src/Defaults/DefaultPlug.vala:118
+msgid "File Browser:"
+msgstr "Sakkatta'aa Faayilii"
+
+#: ../src/Startup/Backend/KeyFile.vala:97
+msgid "Custom Command"
+msgstr "Ajaja ofii"
+
+#: ../src/Startup/Dialogs/AppChooser.vala:74
+msgid "Search Applications"
+msgstr "Dhimbaaftota Barbaadi"
+
+#: ../src/Startup/Dialogs/AppChooser.vala:91
+msgid "Type in a custom command"
+msgstr "Ajaja ofii barreessi"
+
+#: ../src/Startup/Widgets/Scrolled.vala:49
+msgid "Add Startup App…"
+msgstr "Dhimbaasaa Ofiinegalaa dabali..."
+
+#: ../src/Startup/Widgets/Scrolled.vala:53
+msgid "Remove Selected Startup App"
+msgstr "Dhimbaasa Ofiineegalaa Filatame Haqi"
