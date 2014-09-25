@@ -3,79 +3,80 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-08-02 20:00-0500\n"
-"PO-Revision-Date: 2014-08-01 07:24+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2014-09-24 16:12+0000\n"
+"Last-Translator: Armands Skolmeisters "
+"<armands.skolmeisters@arseniuss.id.lv>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-08-08 07:11+0000\n"
-"X-Generator: Launchpad (build 17156)\n"
+"X-Launchpad-Export-Date: 2014-09-25 06:56+0000\n"
+"X-Generator: Launchpad (build 17196)\n"
 
 #: ../src/Plug.vala:32
 msgid "Applications"
-msgstr ""
+msgstr "Lietotnes"
 
 #: ../src/Plug.vala:33
 msgid "Application Settings"
-msgstr ""
+msgstr "Lietotnes iestatījumi"
 
 #: ../src/Plug.vala:48
 msgid "Default"
-msgstr ""
+msgstr "Pēc noklusējuma"
 
 #: ../src/Plug.vala:49
 msgid "Startup"
-msgstr ""
+msgstr "Startēšana"
 
 #: ../src/Defaults/DefaultPlug.vala:87
 msgid "Web Browser:"
-msgstr ""
+msgstr "Interneta pārlūks:"
 
 #: ../src/Defaults/DefaultPlug.vala:91
 msgid "Email Client:"
-msgstr ""
+msgstr "Epasta klients:"
 
 #: ../src/Defaults/DefaultPlug.vala:95
 msgid "Calendar:"
-msgstr ""
+msgstr "Kalendārs:"
 
 #: ../src/Defaults/DefaultPlug.vala:99
 msgid "Video Player:"
-msgstr ""
+msgstr "Video atskaņotājs:"
 
 #: ../src/Defaults/DefaultPlug.vala:103
 msgid "Music Player:"
-msgstr ""
+msgstr "Mūzikas atskaņotājs:"
 
 #: ../src/Defaults/DefaultPlug.vala:108
 msgid "Image Viewer:"
-msgstr ""
+msgstr "Attēlu skatītājs:"
 
 #: ../src/Defaults/DefaultPlug.vala:113
 msgid "Text Editor:"
-msgstr ""
+msgstr "Teksta redaktors:"
 
 #: ../src/Defaults/DefaultPlug.vala:118
 msgid "File Browser:"
-msgstr ""
+msgstr "Failu pārlūks:"
 
 #: ../src/Startup/Backend/KeyFile.vala:97
 msgid "Custom Command"
-msgstr ""
+msgstr "Pielāgota komanda"
 
 #: ../src/Startup/Dialogs/AppChooser.vala:74
 msgid "Search Applications"
-msgstr ""
+msgstr "Meklēt lietotnes"
 
 #: ../src/Startup/Dialogs/AppChooser.vala:91
 msgid "Type in a custom command"
-msgstr ""
+msgstr "Ievadīt pielāgotu komandu"
 
 #: ../src/Startup/Widgets/Scrolled.vala:49
 msgid "Add Startup App…"
-msgstr ""
+msgstr "Pievienot starta lietotni ..."
 
 #: ../src/Startup/Widgets/Scrolled.vala:53
 msgid "Remove Selected Startup App"
-msgstr ""
+msgstr "Noņemt starta lietotni ..."
