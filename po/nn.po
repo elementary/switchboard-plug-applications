@@ -3,79 +3,79 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-08-02 20:00-0500\n"
-"PO-Revision-Date: 2014-08-01 07:25+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2014-10-20 20:48+0000\n"
+"Last-Translator: Martin Myrvold <Unknown>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-08-08 07:11+0000\n"
-"X-Generator: Launchpad (build 17156)\n"
+"X-Launchpad-Export-Date: 2014-10-21 07:49+0000\n"
+"X-Generator: Launchpad (build 17203)\n"
 
 #: ../src/Plug.vala:32
 msgid "Applications"
-msgstr ""
+msgstr "Applikasjonar"
 
 #: ../src/Plug.vala:33
 msgid "Application Settings"
-msgstr ""
+msgstr "Innstillingar for applikasjonar"
 
 #: ../src/Plug.vala:48
 msgid "Default"
-msgstr ""
+msgstr "Standard"
 
 #: ../src/Plug.vala:49
 msgid "Startup"
-msgstr ""
+msgstr "Oppstart"
 
 #: ../src/Defaults/DefaultPlug.vala:87
 msgid "Web Browser:"
-msgstr ""
+msgstr "Nettlesar:"
 
 #: ../src/Defaults/DefaultPlug.vala:91
 msgid "Email Client:"
-msgstr ""
+msgstr "Epostklient:"
 
 #: ../src/Defaults/DefaultPlug.vala:95
 msgid "Calendar:"
-msgstr ""
+msgstr "Kalender:"
 
 #: ../src/Defaults/DefaultPlug.vala:99
 msgid "Video Player:"
-msgstr ""
+msgstr "Videospelar:"
 
 #: ../src/Defaults/DefaultPlug.vala:103
 msgid "Music Player:"
-msgstr ""
+msgstr "Musikkspelar:"
 
 #: ../src/Defaults/DefaultPlug.vala:108
 msgid "Image Viewer:"
-msgstr ""
+msgstr "Biletevisar:"
 
 #: ../src/Defaults/DefaultPlug.vala:113
 msgid "Text Editor:"
-msgstr ""
+msgstr "Tekstredigerar:"
 
 #: ../src/Defaults/DefaultPlug.vala:118
 msgid "File Browser:"
-msgstr ""
+msgstr "Filhandsamar:"
 
 #: ../src/Startup/Backend/KeyFile.vala:97
 msgid "Custom Command"
-msgstr ""
+msgstr "Sjølvvald kommando"
 
 #: ../src/Startup/Dialogs/AppChooser.vala:74
 msgid "Search Applications"
-msgstr ""
+msgstr "Søk etter applikasjonar"
 
 #: ../src/Startup/Dialogs/AppChooser.vala:91
 msgid "Type in a custom command"
-msgstr ""
+msgstr "Skriv inn ein sjølvvald kommando"
 
 #: ../src/Startup/Widgets/Scrolled.vala:49
 msgid "Add Startup App…"
-msgstr ""
+msgstr "Legg til applikasjon ved oppstart"
 
 #: ../src/Startup/Widgets/Scrolled.vala:53
 msgid "Remove Selected Startup App"
-msgstr ""
+msgstr "Fjern valde oppstart-applikasjon"
