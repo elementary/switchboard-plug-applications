@@ -9,16 +9,16 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-08-16 06:54+0000\n"
-"X-Generator: Launchpad (build 17156)\n"
+"X-Launchpad-Export-Date: 2014-11-07 07:25+0000\n"
+"X-Generator: Launchpad (build 17231)\n"
 
 #: ../src/Plug.vala:32
 msgid "Applications"
 msgstr "Programme"
 
 #: ../src/Plug.vala:33
-msgid "Application Settings"
-msgstr "Programsintellings"
+msgid "Manage default and start up applications"
+msgstr ""
 
 #: ../src/Plug.vala:48
 msgid "Default"
@@ -79,3 +79,6 @@ msgstr "Voeg Beginprogram By"
 #: ../src/Startup/Widgets/Scrolled.vala:53
 msgid "Remove Selected Startup App"
 msgstr "Verwyder Gekose Beginprogram"
+
+#~ msgid "Application Settings"
+#~ msgstr "Programsintellings"

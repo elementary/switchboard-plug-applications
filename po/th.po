@@ -9,15 +9,15 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-08-08 07:11+0000\n"
-"X-Generator: Launchpad (build 17156)\n"
+"X-Launchpad-Export-Date: 2014-11-07 07:29+0000\n"
+"X-Generator: Launchpad (build 17231)\n"
 
 #: ../src/Plug.vala:32
 msgid "Applications"
 msgstr ""
 
 #: ../src/Plug.vala:33
-msgid "Application Settings"
+msgid "Manage default and start up applications"
 msgstr ""
 
 #: ../src/Plug.vala:48

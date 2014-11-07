@@ -4,21 +4,21 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-08-02 20:00-0500\n"
 "PO-Revision-Date: 2014-08-04 05:59+0000\n"
-"Last-Translator: James Spentzos <Unknown>\n"
+"Last-Translator: Jim Spentzos <Unknown>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-08-08 07:11+0000\n"
-"X-Generator: Launchpad (build 17156)\n"
+"X-Launchpad-Export-Date: 2014-11-07 07:27+0000\n"
+"X-Generator: Launchpad (build 17231)\n"
 
 #: ../src/Plug.vala:32
 msgid "Applications"
 msgstr "Εφαρμογές"
 
 #: ../src/Plug.vala:33
-msgid "Application Settings"
-msgstr "Ρυθμίσεις Εφαρμογής"
+msgid "Manage default and start up applications"
+msgstr ""
 
 #: ../src/Plug.vala:48
 msgid "Default"
@@ -79,3 +79,6 @@ msgstr "Προσθήκη Εφαρμογής Εκκίνησης..."
 #: ../src/Startup/Widgets/Scrolled.vala:53
 msgid "Remove Selected Startup App"
 msgstr "Αφαίρεση Επιλεγμένης Εφαρμογής Εκκίνησης"
+
+#~ msgid "Application Settings"
+#~ msgstr "Ρυθμίσεις Εφαρμογής"
