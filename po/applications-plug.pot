@@ -22,7 +22,7 @@ msgid "Applications"
 msgstr ""
 
 #: ../src/Plug.vala:33
-msgid "Application Settings"
+msgid "Manage default and start up applications"
 msgstr ""
 
 #: ../src/Plug.vala:48
