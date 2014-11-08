@@ -3,13 +3,13 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-08-02 20:00-0500\n"
-"PO-Revision-Date: 2014-08-05 06:55+0000\n"
+"PO-Revision-Date: 2014-11-07 11:48+0000\n"
 "Last-Translator: Jiri Grönroos <Unknown>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-11-07 07:27+0000\n"
+"X-Launchpad-Export-Date: 2014-11-08 06:20+0000\n"
 "X-Generator: Launchpad (build 17231)\n"
 
 #: ../src/Plug.vala:32
@@ -19,6 +19,8 @@ msgstr "Sovellukset"
 #: ../src/Plug.vala:33
 msgid "Manage default and start up applications"
 msgstr ""
+"Määritä oletussovellukset ja kirjautumisen yhteydessä käynnistettävät "
+"sovellukset"
 
 #: ../src/Plug.vala:48
 msgid "Default"
@@ -79,6 +81,3 @@ msgstr "Lisää käynnistettävä sovellus…"
 #: ../src/Startup/Widgets/Scrolled.vala:53
 msgid "Remove Selected Startup App"
 msgstr "Poista valittu käynnistettävä sovellus"
-
-#~ msgid "Application Settings"
-#~ msgstr "Sovellusasetukset"
