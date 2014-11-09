@@ -3,13 +3,13 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-08-02 20:00-0500\n"
-"PO-Revision-Date: 2014-08-15 15:42+0000\n"
+"PO-Revision-Date: 2014-11-08 13:03+0000\n"
 "Last-Translator: Fabio Zaramella <FFabio.96.X@Gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-11-08 06:20+0000\n"
+"X-Launchpad-Export-Date: 2014-11-09 07:32+0000\n"
 "X-Generator: Launchpad (build 17231)\n"
 
 #: ../src/Plug.vala:32
@@ -18,7 +18,7 @@ msgstr "Applicazioni"
 
 #: ../src/Plug.vala:33
 msgid "Manage default and start up applications"
-msgstr ""
+msgstr "Gestire applicazioni predefinite e di avvio"
 
 #: ../src/Plug.vala:48
 msgid "Default"
