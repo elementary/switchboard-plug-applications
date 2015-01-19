@@ -3,14 +3,14 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-08-02 20:00-0500\n"
-"PO-Revision-Date: 2014-12-16 20:31+0000\n"
-"Last-Translator: Salih <hernandomtoto@gmail.com>\n"
+"PO-Revision-Date: 2015-01-18 13:02+0000\n"
+"Last-Translator: Ramazan Buğdaycı <Unknown>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-12-17 07:27+0000\n"
-"X-Generator: Launchpad (build 17286)\n"
+"X-Launchpad-Export-Date: 2015-01-19 06:48+0000\n"
+"X-Generator: Launchpad (build 17304)\n"
 
 #: ../src/Plug.vala:32
 msgid "Applications"
@@ -62,11 +62,11 @@ msgstr "Dosya Yöneticisi:"
 
 #: ../src/Startup/Backend/KeyFile.vala:97
 msgid "Custom Command"
-msgstr ""
+msgstr "Özel Komut"
 
 #: ../src/Startup/Dialogs/AppChooser.vala:74
 msgid "Search Applications"
-msgstr ""
+msgstr "Uygulama Ara"
 
 #: ../src/Startup/Dialogs/AppChooser.vala:91
 msgid "Type in a custom command"
