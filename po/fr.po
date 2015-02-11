@@ -3,14 +3,14 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-08-02 20:00-0500\n"
-"PO-Revision-Date: 2014-08-10 08:57+0000\n"
-"Last-Translator: Corentin Noël <corentin@elementaryos.org>\n"
+"PO-Revision-Date: 2015-02-10 14:37+0000\n"
+"Last-Translator: Julien F/ <Unknown>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-11-08 06:20+0000\n"
-"X-Generator: Launchpad (build 17231)\n"
+"X-Launchpad-Export-Date: 2015-02-11 06:32+0000\n"
+"X-Generator: Launchpad (build 17336)\n"
 
 #: ../src/Plug.vala:32
 msgid "Applications"
@@ -18,7 +18,7 @@ msgstr "Applications"
 
 #: ../src/Plug.vala:33
 msgid "Manage default and start up applications"
-msgstr ""
+msgstr "Gérer les applications au démarrage et par défaut"
 
 #: ../src/Plug.vala:48
 msgid "Default"
