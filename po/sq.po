@@ -3,13 +3,13 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-08-02 20:00-0500\n"
-"PO-Revision-Date: 2015-02-26 15:34+0000\n"
+"PO-Revision-Date: 2015-02-27 10:51+0000\n"
 "Last-Translator: Indrit Bashkimi <indrit.bashkimi@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-02-27 05:56+0000\n"
+"X-Launchpad-Export-Date: 2015-02-28 06:28+0000\n"
 "X-Generator: Launchpad (build 17361)\n"
 
 #: ../src/Plug.vala:32
@@ -50,7 +50,7 @@ msgstr "Riprodhues Muzike:"
 
 #: ../src/Defaults/DefaultPlug.vala:108
 msgid "Image Viewer:"
-msgstr ""
+msgstr "Shikues Fotosh:"
 
 #: ../src/Defaults/DefaultPlug.vala:113
 msgid "Text Editor:"
@@ -62,7 +62,7 @@ msgstr "Shfletues Skedarësh:"
 
 #: ../src/Startup/Backend/KeyFile.vala:97
 msgid "Custom Command"
-msgstr ""
+msgstr "Komandë të personalizuar"
 
 #: ../src/Startup/Dialogs/AppChooser.vala:74
 msgid "Search Applications"
@@ -70,12 +70,12 @@ msgstr "Kërko programe"
 
 #: ../src/Startup/Dialogs/AppChooser.vala:91
 msgid "Type in a custom command"
-msgstr ""
+msgstr "Shkruaj një komandë të personalizuar"
 
 #: ../src/Startup/Widgets/Scrolled.vala:49
 msgid "Add Startup App…"
-msgstr ""
+msgstr "Shto një program nisjeje..."
 
 #: ../src/Startup/Widgets/Scrolled.vala:53
 msgid "Remove Selected Startup App"
-msgstr ""
+msgstr "Hiq programet e nisjes të përzgjedhura"
