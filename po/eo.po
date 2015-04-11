@@ -3,18 +3,18 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-08-02 20:00-0500\n"
-"PO-Revision-Date: 2014-08-01 07:21+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2015-04-10 22:32+0000\n"
+"Last-Translator: Adolfo Jayme <fitoschido@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-11-08 06:20+0000\n"
-"X-Generator: Launchpad (build 17231)\n"
+"X-Launchpad-Export-Date: 2015-04-11 05:52+0000\n"
+"X-Generator: Launchpad (build 17423)\n"
 
 #: ../src/Plug.vala:32
 msgid "Applications"
-msgstr ""
+msgstr "Aplikaĵoj"
 
 #: ../src/Plug.vala:33
 msgid "Manage default and start up applications"
@@ -30,7 +30,7 @@ msgstr ""
 
 #: ../src/Defaults/DefaultPlug.vala:87
 msgid "Web Browser:"
-msgstr ""
+msgstr "Retnavigilo:"
 
 #: ../src/Defaults/DefaultPlug.vala:91
 msgid "Email Client:"
@@ -38,7 +38,7 @@ msgstr ""
 
 #: ../src/Defaults/DefaultPlug.vala:95
 msgid "Calendar:"
-msgstr ""
+msgstr "Kalendaro:"
 
 #: ../src/Defaults/DefaultPlug.vala:99
 msgid "Video Player:"
@@ -54,7 +54,7 @@ msgstr ""
 
 #: ../src/Defaults/DefaultPlug.vala:113
 msgid "Text Editor:"
-msgstr ""
+msgstr "Tekstredaktilo:"
 
 #: ../src/Defaults/DefaultPlug.vala:118
 msgid "File Browser:"
