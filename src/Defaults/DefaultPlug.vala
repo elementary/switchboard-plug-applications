@@ -188,11 +188,11 @@ public class Defaults.Plug {
     }
 
     private void run_in_thread (owned ThreadFunc<void*> func) {
-		try {
+        try {
             new Thread<void*>.try (null, func);
-		} catch (Error e) {
-			warning ("Could not create a new thread: %s", e.message);
-		}
+        } catch (Error e) {
+            warning ("Could not create a new thread: %s", e.message);
+        }
     }
     public void change_default (GLib.AppInfo old_app, GLib.AppInfo new_app, string item_type) {
         map_types_to_app (get_types_for_app (item_type), new_app);
