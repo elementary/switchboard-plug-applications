@@ -49,6 +49,8 @@ add_custom_target (dist COMMAND ${CMAKE_MAKE_PROGRAM} package_source)
 # Files
 file (GLOB resources "${CMAKE_CURRENT_SOURCE_DIR}/data/*")
 
+install (FILES "${CMAKE_CURRENT_SOURCE_DIR}/data/pantheon-plug-applications.desktop" DESTINATION "${CMAKE_INSTALL_FULL_DATAROOTDIR}/applications")
+
 # Traslation stuff
 add_subdirectory (po)
 # Info-plug
