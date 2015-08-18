@@ -3,14 +3,14 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-08-02 20:00-0500\n"
-"PO-Revision-Date: 2015-08-15 13:21+0000\n"
+"PO-Revision-Date: 2015-08-17 13:23+0000\n"
 "Last-Translator: Jun Takeda <takeda.jun@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-08-16 05:02+0000\n"
-"X-Generator: Launchpad (build 17686)\n"
+"X-Launchpad-Export-Date: 2015-08-18 06:02+0000\n"
+"X-Generator: Launchpad (build 17690)\n"
 
 #: ../src/Plug.vala:32
 msgid "Applications"
@@ -50,15 +50,15 @@ msgstr "音楽プレーヤー:"
 
 #: ../src/Defaults/DefaultPlug.vala:108
 msgid "Image Viewer:"
-msgstr "画像ビューアー"
+msgstr "画像ビューアー:"
 
 #: ../src/Defaults/DefaultPlug.vala:113
 msgid "Text Editor:"
-msgstr "テキストエディタ"
+msgstr "テキストエディタ:"
 
 #: ../src/Defaults/DefaultPlug.vala:118
 msgid "File Browser:"
-msgstr "ファイルブラウザ"
+msgstr "ファイルブラウザ:"
 
 #: ../src/Startup/Backend/KeyFile.vala:97
 msgid "Custom Command"
