@@ -1,3 +1,9 @@
+switchboard-plug-applications (0.1.0.1) trusty; urgency=medium
+
+  * New upstream release.
+
+ -- Cody Garver <cody@elementary.io>  Tue, 01 Sep 2015 04:21:39 -0500
+
 switchboard-plug-applications (0.1) trusty; urgency=low
 
   * Initial Release.
