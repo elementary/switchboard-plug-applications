@@ -50,6 +50,7 @@ public class Startup.Widgets.AppRow : Gtk.ListBoxRow {
         main_grid.add (label);
 
         active_switch = new Gtk.Switch ();
+        active_switch.valign = Gtk.Align.CENTER;
         active_switch.active = app_info.active;
         active_switch.notify["active"].connect (on_active_changed);
         main_grid.add (active_switch);
