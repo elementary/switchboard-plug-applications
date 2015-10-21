@@ -3,14 +3,14 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-08-02 20:00-0500\n"
-"PO-Revision-Date: 2014-12-20 17:57+0000\n"
-"Last-Translator: Artem Anufrij <Unknown>\n"
+"PO-Revision-Date: 2015-10-20 13:28+0000\n"
+"Last-Translator: Alex <JWo1F@yandex.ru>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-09-22 06:03+0000\n"
-"X-Generator: Launchpad (build 17749)\n"
+"X-Launchpad-Export-Date: 2015-10-21 06:20+0000\n"
+"X-Generator: Launchpad (build 17812)\n"
 
 #: ../src/Plug.vala:32
 msgid "Applications"
@@ -18,7 +18,7 @@ msgstr "Приложения"
 
 #: ../src/Plug.vala:33
 msgid "Manage default and start up applications"
-msgstr "Управление приложений при запуске и по умолчанию"
+msgstr "Управление приложениями по умолчанию и автозапуском"
 
 #: ../src/Plug.vala:48
 msgid "Default"
@@ -26,7 +26,7 @@ msgstr "По умолчанию"
 
 #: ../src/Plug.vala:49
 msgid "Startup"
-msgstr "Запуск при старте"
+msgstr "Автозапуск"
 
 #: ../src/Defaults/DefaultPlug.vala:87
 msgid "Web Browser:"
@@ -50,7 +50,7 @@ msgstr "Музыкальный проигрыватель:"
 
 #: ../src/Defaults/DefaultPlug.vala:108
 msgid "Image Viewer:"
-msgstr "Программа для просмотра изображений:"
+msgstr "Просмотр изображений:"
 
 #: ../src/Defaults/DefaultPlug.vala:113
 msgid "Text Editor:"
