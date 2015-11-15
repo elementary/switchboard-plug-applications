@@ -3,79 +3,79 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-08-02 20:00-0500\n"
-"PO-Revision-Date: 2014-08-01 07:23+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2015-11-14 14:23+0000\n"
+"Last-Translator: Beqa Arabuli <arabulibeqa@yahoo.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-09-22 06:03+0000\n"
-"X-Generator: Launchpad (build 17749)\n"
+"X-Launchpad-Export-Date: 2015-11-15 05:31+0000\n"
+"X-Generator: Launchpad (build 17845)\n"
 
 #: ../src/Plug.vala:32
 msgid "Applications"
-msgstr ""
+msgstr "პროგრამები"
 
 #: ../src/Plug.vala:33
 msgid "Manage default and start up applications"
-msgstr ""
+msgstr "ნაგულისხმევი და ჩართვის დროს გაშვებული აპლიკაციების მართვა"
 
 #: ../src/Plug.vala:48
 msgid "Default"
-msgstr ""
+msgstr "ნაგულისხმევი"
 
 #: ../src/Plug.vala:49
 msgid "Startup"
-msgstr ""
+msgstr "ჩართვის დროს"
 
 #: ../src/Defaults/DefaultPlug.vala:87
 msgid "Web Browser:"
-msgstr ""
+msgstr "ვებ ბრაუზერი:"
 
 #: ../src/Defaults/DefaultPlug.vala:91
 msgid "Email Client:"
-msgstr ""
+msgstr "ელ-ფოსტის კლიენტი:"
 
 #: ../src/Defaults/DefaultPlug.vala:95
 msgid "Calendar:"
-msgstr ""
+msgstr "კალენდარი:"
 
 #: ../src/Defaults/DefaultPlug.vala:99
 msgid "Video Player:"
-msgstr ""
+msgstr "ვიდეოს დამკვრელი:"
 
 #: ../src/Defaults/DefaultPlug.vala:103
 msgid "Music Player:"
-msgstr ""
+msgstr "მუსიკის დამკვრელი:"
 
 #: ../src/Defaults/DefaultPlug.vala:108
 msgid "Image Viewer:"
-msgstr ""
+msgstr "სურათების მნახველი:"
 
 #: ../src/Defaults/DefaultPlug.vala:113
 msgid "Text Editor:"
-msgstr ""
+msgstr "ტექსტის რედაქტორი:"
 
 #: ../src/Defaults/DefaultPlug.vala:118
 msgid "File Browser:"
-msgstr ""
+msgstr "ფაილების ბრაუზერი:"
 
 #: ../src/Startup/Backend/KeyFile.vala:97
 msgid "Custom Command"
-msgstr ""
+msgstr "ბრძანების შეყვანა ხელით"
 
 #: ../src/Startup/Dialogs/AppChooser.vala:74
 msgid "Search Applications"
-msgstr ""
+msgstr "პროგრამის მოძიება"
 
 #: ../src/Startup/Dialogs/AppChooser.vala:91
 msgid "Type in a custom command"
-msgstr ""
+msgstr "შეიყვანეთ ბრძანება ხელით"
 
 #: ../src/Startup/Widgets/Scrolled.vala:49
 msgid "Add Startup App…"
-msgstr ""
+msgstr "პროგრამის დამატება..."
 
 #: ../src/Startup/Widgets/Scrolled.vala:53
 msgid "Remove Selected Startup App"
-msgstr ""
+msgstr "არჩეული პროგრამის წაშლა"
