@@ -16,7 +16,7 @@ set (PLUGTITLE "Applications")
 # The symbolic name of the Icon to use for the plug
 set (PLUGICON "applications-default-icon")
 # Set the version for the plug
-set (VERSION "0.1.0.1")
+set (VERSION "0.1.0.2")
 
 project (${PLUGNAME})
 
