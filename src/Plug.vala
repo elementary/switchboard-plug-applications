@@ -30,7 +30,7 @@ public class ApplicationsPlug : Switchboard.Plug {
         Object (category: Category.PERSONAL,
                 code_name: "personal-pantheon-applications",
                 display_name: _("Applications"),
-                description: _("Manage default and start up applications"),
+                description: _("Manage default and startup applications"),
                 icon: "preferences-desktop-applications");
 
         defaults_plug = new Defaults.Plug ();
