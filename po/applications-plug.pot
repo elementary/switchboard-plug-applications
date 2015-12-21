@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-08-02 20:00-0500\n"
+"POT-Creation-Date: 2015-12-21 12:19-0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,7 +22,7 @@ msgid "Applications"
 msgstr ""
 
 #: ../src/Plug.vala:33
-msgid "Manage default and start up applications"
+msgid "Manage default and startup applications"
 msgstr ""
 
 #: ../src/Plug.vala:48
@@ -65,8 +65,12 @@ msgstr ""
 msgid "File Browser:"
 msgstr ""
 
-#: ../src/Startup/Backend/KeyFile.vala:97
-msgid "Custom Command"
+#: ../src/Startup/Widgets/Scrolled.vala:49
+msgid "Add Startup App…"
+msgstr ""
+
+#: ../src/Startup/Widgets/Scrolled.vala:53
+msgid "Remove Selected Startup App"
 msgstr ""
 
 #: ../src/Startup/Dialogs/AppChooser.vala:74
@@ -77,10 +81,6 @@ msgstr ""
 msgid "Type in a custom command"
 msgstr ""
 
-#: ../src/Startup/Widgets/Scrolled.vala:49
-msgid "Add Startup App…"
-msgstr ""
-
-#: ../src/Startup/Widgets/Scrolled.vala:53
-msgid "Remove Selected Startup App"
+#: ../src/Startup/Backend/KeyFile.vala:97
+msgid "Custom Command"
 msgstr ""
