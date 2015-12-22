@@ -2,14 +2,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-08-02 20:00-0500\n"
+"POT-Creation-Date: 2015-12-21 12:19-0200\n"
 "PO-Revision-Date: 2015-12-11 09:29+0000\n"
 "Last-Translator: Jung-Kyu Park <bagjunggyu@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-12-12 05:46+0000\n"
+"X-Launchpad-Export-Date: 2015-12-22 05:09+0000\n"
 "X-Generator: Launchpad (build 17865)\n"
 
 #: ../src/Plug.vala:32
@@ -17,8 +17,8 @@ msgid "Applications"
 msgstr "프로그램"
 
 #: ../src/Plug.vala:33
-msgid "Manage default and start up applications"
-msgstr "기본 및 시작 프로그램 관리"
+msgid "Manage default and startup applications"
+msgstr ""
 
 #: ../src/Plug.vala:48
 msgid "Default"
@@ -60,9 +60,13 @@ msgstr "텍스트 편집기:"
 msgid "File Browser:"
 msgstr "파일 탐색기:"
 
-#: ../src/Startup/Backend/KeyFile.vala:97
-msgid "Custom Command"
-msgstr "사용자 지정 명령"
+#: ../src/Startup/Widgets/Scrolled.vala:49
+msgid "Add Startup App…"
+msgstr "시작 프로그램 추가..."
+
+#: ../src/Startup/Widgets/Scrolled.vala:53
+msgid "Remove Selected Startup App"
+msgstr "선택한 시작 프로그램 제거"
 
 #: ../src/Startup/Dialogs/AppChooser.vala:74
 msgid "Search Applications"
@@ -72,10 +76,6 @@ msgstr "프로그램 검색"
 msgid "Type in a custom command"
 msgstr "사용자 지정 명령 지정"
 
-#: ../src/Startup/Widgets/Scrolled.vala:49
-msgid "Add Startup App…"
-msgstr "시작 프로그램 추가..."
-
-#: ../src/Startup/Widgets/Scrolled.vala:53
-msgid "Remove Selected Startup App"
-msgstr "선택한 시작 프로그램 제거"
+#: ../src/Startup/Backend/KeyFile.vala:97
+msgid "Custom Command"
+msgstr "사용자 지정 명령"
