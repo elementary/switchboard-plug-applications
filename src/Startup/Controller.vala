@@ -30,8 +30,9 @@ public class Startup.Controller : Object {
 
     void setup_view () {
         foreach (var path in Utils.get_auto_start_files ()) {
-            var app_info = get_app_info_from_path (path);
-            view.add_app (app_info);
+            var key_file = get_key_file_from_path (path);
+            if (key_file.show)
+                view.add_app (key_file.create_app_info ());
         }
 
         var app_infos = new Gee.ArrayList <Entity.AppInfo?> ();
@@ -42,11 +43,6 @@ public class Startup.Controller : Object {
         }
 
         view.init_app_chooser (app_infos);
-    }
-
-    Entity.AppInfo get_app_info_from_path (string path) {
-        var key_file = get_key_file_from_path (path);
-        return key_file.create_app_info ();
     }
 
     void connect_signals () {
