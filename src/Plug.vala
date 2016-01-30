@@ -21,10 +21,14 @@
 
 public class ApplicationsPlug : Switchboard.Plug {
 
+    private const string DEFAULTS = "defaults";
+    private const string STARTUP = "startup"; 
+
     private Defaults.Plug defaults_plug;
     private Startup.Plug startup_plug;
 
     private Gtk.Grid grid;
+    private Gtk.Stack stack;
 
     public ApplicationsPlug () {
         Object (category: Category.PERSONAL,
@@ -42,11 +46,11 @@ public class ApplicationsPlug : Switchboard.Plug {
             return grid;
         }
 
-        var stack = new Gtk.Stack ();
+        stack = new Gtk.Stack ();
         stack.expand = true;
 
-        stack.add_titled (defaults_plug.get_widget (), "defaults", _("Default"));
-        stack.add_titled (startup_plug.get_widget (), "startup", _("Startup"));
+        stack.add_titled (defaults_plug.get_widget (), DEFAULTS, _("Default"));
+        stack.add_titled (startup_plug.get_widget (), STARTUP, _("Startup"));
 
         var stack_switcher = new Gtk.StackSwitcher ();
         stack_switcher.set_halign (Gtk.Align.CENTER);
@@ -73,11 +77,30 @@ public class ApplicationsPlug : Switchboard.Plug {
     }
 
     public override void search_callback (string location) {
-    
+        switch (location) {
+            case STARTUP:
+            case DEFAULTS:
+                stack.set_visible_child_name (location);
+                break;
+            default:
+                stack.set_visible_child_name (DEFAULTS);
+                break;
+        }
     }
 
     public override async Gee.TreeMap<string, string> search (string search) {
-        return new Gee.TreeMap<string, string> (null, null);
+        var search_results = new Gee.TreeMap<string, string> ((GLib.CompareDataFunc<string>)strcmp, (Gee.EqualDataFunc<string>)str_equal);
+        search_results.set ("%s → %s".printf (display_name, _("Startup")), STARTUP);
+        search_results.set ("%s → %s".printf (display_name, _("Default Apps")), DEFAULTS);
+        search_results.set ("%s → %s".printf (display_name, _("Default Application")), DEFAULTS);
+        search_results.set ("%s → %s".printf (display_name, _("Default Web Browser")), DEFAULTS);
+        search_results.set ("%s → %s".printf (display_name, _("Default Music Player")), DEFAULTS);
+        search_results.set ("%s → %s".printf (display_name, _("Default Email Client")), DEFAULTS);
+        search_results.set ("%s → %s".printf (display_name, _("Default Text Editor")), DEFAULTS);
+        search_results.set ("%s → %s".printf (display_name, _("Default File Browser")), DEFAULTS);
+        search_results.set ("%s → %s".printf (display_name, _("Default Video Player")), DEFAULTS);
+        search_results.set ("%s → %s".printf (display_name, _("Default Calendar")), DEFAULTS);
+        return search_results;
     }
 
 }
