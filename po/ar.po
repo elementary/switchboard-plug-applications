@@ -3,18 +3,18 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-12-21 12:19-0200\n"
-"PO-Revision-Date: 2015-10-02 14:18+0000\n"
-"Last-Translator: Saleh <slohe@me.com>\n"
+"PO-Revision-Date: 2016-03-23 07:59+0000\n"
+"Last-Translator: Aboud  Zakaria <aboud.zakaria@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-12-22 05:09+0000\n"
-"X-Generator: Launchpad (build 17865)\n"
+"X-Launchpad-Export-Date: 2016-03-24 06:10+0000\n"
+"X-Generator: Launchpad (build 17958)\n"
 
 #: ../src/Plug.vala:32
 msgid "Applications"
-msgstr "التطبيقات"
+msgstr ""
 
 #: ../src/Plug.vala:33
 msgid "Manage default and startup applications"
@@ -34,7 +34,7 @@ msgstr "متصفح الويب :"
 
 #: ../src/Defaults/DefaultPlug.vala:91
 msgid "Email Client:"
-msgstr ""
+msgstr "برنامج البريد الاكتروني:"
 
 #: ../src/Defaults/DefaultPlug.vala:95
 msgid "Calendar:"
@@ -46,19 +46,19 @@ msgstr "مشغل الفيديو"
 
 #: ../src/Defaults/DefaultPlug.vala:103
 msgid "Music Player:"
-msgstr "مشغل الموسيقى"
+msgstr ""
 
 #: ../src/Defaults/DefaultPlug.vala:108
 msgid "Image Viewer:"
-msgstr "عارض الصور"
+msgstr "عارض الصور:"
 
 #: ../src/Defaults/DefaultPlug.vala:113
 msgid "Text Editor:"
-msgstr "محرر النصوص"
+msgstr "محرر النصوص:"
 
 #: ../src/Defaults/DefaultPlug.vala:118
 msgid "File Browser:"
-msgstr "مستعرض الملفات"
+msgstr "مستعرض الملفات:"
 
 #: ../src/Startup/Widgets/Scrolled.vala:49
 msgid "Add Startup App…"
