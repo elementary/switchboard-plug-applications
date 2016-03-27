@@ -3,14 +3,14 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-12-21 12:19-0200\n"
-"PO-Revision-Date: 2015-12-22 18:40+0000\n"
-"Last-Translator: Murat Yilmazlar <muratyilmazlar@windowslive.com>\n"
+"PO-Revision-Date: 2016-03-26 22:34+0000\n"
+"Last-Translator: Akın Özgen <akin.ozgen17@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-12-23 05:19+0000\n"
-"X-Generator: Launchpad (build 17865)\n"
+"X-Launchpad-Export-Date: 2016-03-27 05:49+0000\n"
+"X-Generator: Launchpad (build 17967)\n"
 
 #: ../src/Plug.vala:32
 msgid "Applications"
@@ -46,7 +46,7 @@ msgstr "Video Oynatıcı:"
 
 #: ../src/Defaults/DefaultPlug.vala:103
 msgid "Music Player:"
-msgstr "Müzik Oynatıcı:"
+msgstr "Müzik Çalar:"
 
 #: ../src/Defaults/DefaultPlug.vala:108
 msgid "Image Viewer:"
@@ -58,7 +58,7 @@ msgstr "Metin Düzenleyici:"
 
 #: ../src/Defaults/DefaultPlug.vala:118
 msgid "File Browser:"
-msgstr "Dosya Yöneticisi:"
+msgstr "Dosya Tarayıcı:"
 
 #: ../src/Startup/Widgets/Scrolled.vala:49
 msgid "Add Startup App…"
@@ -74,7 +74,7 @@ msgstr "Uygulama Ara"
 
 #: ../src/Startup/Dialogs/AppChooser.vala:91
 msgid "Type in a custom command"
-msgstr "Kişisel komut gir"
+msgstr "Özel komut gir"
 
 #: ../src/Startup/Backend/KeyFile.vala:97
 msgid "Custom Command"
