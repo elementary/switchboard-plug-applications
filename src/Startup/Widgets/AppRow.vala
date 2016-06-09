@@ -34,11 +34,10 @@ public class Startup.Widgets.AppRow : Gtk.ListBoxRow {
         main_grid.orientation = Gtk.Orientation.HORIZONTAL;
 
         var markup = Utils.create_markup (app_info);
+        var icon = Utils.create_icon (app_info);
 
         main_grid.margin = 6;
         main_grid.column_spacing = 12;
-
-        var icon = Utils.create_icon (app_info);
 
         image = new Gtk.Image.from_icon_name (icon, Gtk.IconSize.DIALOG);
         main_grid.add (image);

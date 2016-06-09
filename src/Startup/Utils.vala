@@ -62,7 +62,6 @@ namespace Startup.Utils {
         return !name.contains ("~") && name.has_suffix (".desktop");
     }
     
-    const int ICON_SIZE = 48;
     const string FALLBACK_ICON = "application-default-icon";
 
     string create_markup (Entity.AppInfo app_info) {
