@@ -3,14 +3,14 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-12-21 12:19-0200\n"
-"PO-Revision-Date: 2015-08-08 12:19+0000\n"
-"Last-Translator: Bogdan Lisnenko <Unknown>\n"
+"PO-Revision-Date: 2016-06-14 21:59+0000\n"
+"Last-Translator: Serhii Klymenko <Kleim.hostel@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-12-22 05:10+0000\n"
-"X-Generator: Launchpad (build 17865)\n"
+"X-Launchpad-Export-Date: 2016-06-15 06:21+0000\n"
+"X-Generator: Launchpad (build 18097)\n"
 
 #: ../src/Plug.vala:32
 msgid "Applications"
@@ -18,7 +18,7 @@ msgstr "Додатки"
 
 #: ../src/Plug.vala:33
 msgid "Manage default and startup applications"
-msgstr ""
+msgstr "Керування стандартними додатками та додатками автозапуску"
 
 #: ../src/Plug.vala:48
 msgid "Default"
