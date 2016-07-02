@@ -39,7 +39,7 @@ public class Startup.Widgets.AppRow : Gtk.ListBoxRow {
         main_grid.margin = 6;
         main_grid.column_spacing = 12;
 
-        image = new Gtk.Image.from_pixbuf (icon);
+        image = new Gtk.Image.from_icon_name (icon, Gtk.IconSize.DIALOG);
         main_grid.add (image);
 
         label = new Gtk.Label (markup);

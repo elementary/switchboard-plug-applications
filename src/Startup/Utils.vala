@@ -62,7 +62,6 @@ namespace Startup.Utils {
         return !name.contains ("~") && name.has_suffix (".desktop");
     }
     
-    const int ICON_SIZE = 48;
     const string FALLBACK_ICON = "application-default-icon";
 
     string create_markup (Entity.AppInfo app_info) {
@@ -72,19 +71,13 @@ namespace Startup.Utils {
         return @"<span font_weight=\"bold\" size=\"large\">$escaped_name</span>\n$escaped_comment";
     }
 
-    Gdk.Pixbuf create_icon (Entity.AppInfo app_info, int size = ICON_SIZE) {
+    string create_icon (Entity.AppInfo app_info) {
         var icon_theme = Gtk.IconTheme.get_default ();
-        var lookup_flags = Gtk.IconLookupFlags.GENERIC_FALLBACK;
 
-        try {
-            if (icon_theme.has_icon (app_info.icon))
-                return icon_theme.load_icon (app_info.icon, size, lookup_flags);
-            else
-                return icon_theme.load_icon (FALLBACK_ICON, size, lookup_flags);
-        } catch (Error e) {
-            warning (e.message);
+        if (icon_theme.has_icon (app_info.icon)) {
+            return app_info.icon;
+        } else {
+            return FALLBACK_ICON;
         }
-
-        return (Gdk.Pixbuf) null;
     }
 }

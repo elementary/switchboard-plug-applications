@@ -32,12 +32,12 @@ namespace Startup.Dialogs {
             orientation = Gtk.Orientation.HORIZONTAL;
 
             var markup = Utils.create_markup (app_info);
-            var icon = Utils.create_icon (app_info, 32);
+            var icon = Utils.create_icon (app_info);
 
             margin = 6;
             spacing = 12;
 
-            var image = new Gtk.Image.from_pixbuf (icon);
+            var image = new Gtk.Image.from_icon_name (icon, Gtk.IconSize.DND);
             add (image);
 
             var label = new Gtk.Label (markup);
