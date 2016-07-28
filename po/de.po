@@ -3,14 +3,14 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-12-21 12:19-0200\n"
-"PO-Revision-Date: 2016-01-18 17:54+0000\n"
-"Last-Translator: mporten <Unknown>\n"
+"PO-Revision-Date: 2016-07-27 14:36+0000\n"
+"Last-Translator: UweS <Unknown>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-01-19 05:53+0000\n"
-"X-Generator: Launchpad (build 17886)\n"
+"X-Launchpad-Export-Date: 2016-07-28 06:15+0000\n"
+"X-Generator: Launchpad (build 18153)\n"
 
 #: ../src/Plug.vala:32
 msgid "Applications"
@@ -18,7 +18,7 @@ msgstr "Anwendungen"
 
 #: ../src/Plug.vala:33
 msgid "Manage default and startup applications"
-msgstr "Verwalte Standard- und Autostart-Anwendungen"
+msgstr "Standard- und Autostartanwendungen verwalten"
 
 #: ../src/Plug.vala:48
 msgid "Default"
