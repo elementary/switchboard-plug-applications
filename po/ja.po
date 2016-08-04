@@ -3,13 +3,13 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-12-21 12:19-0200\n"
-"PO-Revision-Date: 2016-08-01 23:15+0000\n"
-"Last-Translator: Jun Takeda <takeda.jun@gmail.com>\n"
+"PO-Revision-Date: 2016-08-03 06:33+0000\n"
+"Last-Translator: BALLOON a.k.a. Fu-sen. (Keiichi SHIGA) <Unknown>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-08-02 06:02+0000\n"
+"X-Launchpad-Export-Date: 2016-08-04 05:46+0000\n"
 "X-Generator: Launchpad (build 18169)\n"
 
 #: ../src/Plug.vala:32
@@ -22,7 +22,7 @@ msgstr "既定と起動時のアプリケーション管理"
 
 #: ../src/Plug.vala:48
 msgid "Default"
-msgstr "既定"
+msgstr "デフォルト"
 
 #: ../src/Plug.vala:49
 msgid "Startup"
@@ -30,7 +30,7 @@ msgstr "起動時"
 
 #: ../src/Defaults/DefaultPlug.vala:87
 msgid "Web Browser:"
-msgstr "ウェブブラウザ:"
+msgstr "Web ブラウザ:"
 
 #: ../src/Defaults/DefaultPlug.vala:91
 msgid "Email Client:"
@@ -54,7 +54,7 @@ msgstr "画像ビューアー:"
 
 #: ../src/Defaults/DefaultPlug.vala:113
 msgid "Text Editor:"
-msgstr "テキストエディタ:"
+msgstr "テキストエディター:"
 
 #: ../src/Defaults/DefaultPlug.vala:118
 msgid "File Browser:"
