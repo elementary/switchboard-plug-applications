@@ -3,13 +3,13 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-12-21 12:19-0200\n"
-"PO-Revision-Date: 2016-08-01 22:16+0000\n"
+"PO-Revision-Date: 2016-08-05 17:49+0000\n"
 "Last-Translator: Moo <hazap@hotmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-08-02 06:02+0000\n"
+"X-Launchpad-Export-Date: 2016-08-06 05:47+0000\n"
 "X-Generator: Launchpad (build 18169)\n"
 
 #: ../src/Plug.vala:32
@@ -26,7 +26,7 @@ msgstr "Numatytosios"
 
 #: ../src/Plug.vala:49
 msgid "Startup"
-msgstr "Paleisties"
+msgstr "Paleidžiamos"
 
 #: ../src/Defaults/DefaultPlug.vala:87
 msgid "Web Browser:"
