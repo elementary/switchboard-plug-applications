@@ -24,11 +24,9 @@ public class Startup.Controller : Object {
 
     public Controller (Startup.Widgets.Scrolled view, Port.Monitor monitor) {
         Object (view: view, monitor: monitor);
-        setup_view ();
-        connect_signals ();
     }
 
-    void setup_view () {
+    construct {
         foreach (var path in Utils.get_auto_start_files ()) {
             var key_file = get_key_file_from_path (path);
             if (key_file.show)
@@ -43,9 +41,7 @@ public class Startup.Controller : Object {
         }
 
         view.init_app_chooser (app_infos);
-    }
 
-    void connect_signals () {
         monitor.file_created.connect (add_app_to_view);
         monitor.file_deleted.connect (remove_app_from_view);
         monitor.file_edited.connect (edit_app_in_view);
