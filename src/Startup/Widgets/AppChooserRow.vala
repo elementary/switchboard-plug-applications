@@ -18,40 +18,39 @@
 *
 * Authored by: Julien Spautz <spautz.julien@gmail.com>
 */
-namespace Startup.Widgets {
-    public class AppChooserRow : Gtk.Grid {
 
-        public Entity.AppInfo app_info { get; construct; }
+public class Startup.Widgets.AppChooserRow : Gtk.Grid {
 
-        public signal void deleted ();
+    public Entity.AppInfo app_info { get; construct; }
 
-        public AppChooserRow (Entity.AppInfo app_info) {
-            Object (app_info: app_info);
-        }
+    public signal void deleted ();
 
-        construct {
-            var icon = Utils.create_icon (app_info);
+    public AppChooserRow (Entity.AppInfo app_info) {
+        Object (app_info: app_info);
+    }
 
-            var image = new Gtk.Image.from_icon_name (icon, Gtk.IconSize.DND);
-            image.pixel_size = 32;
+    construct {
+        var icon = Utils.create_icon (app_info);
 
-            var app_name = new Gtk.Label (app_info.name);
-            app_name.get_style_context ().add_class ("h3");
-            app_name.xalign = 0;
+        var image = new Gtk.Image.from_icon_name (icon, Gtk.IconSize.DND);
+        image.pixel_size = 32;
 
-            var app_comment = new Gtk.Label ("<span font_size='small'>" + app_info.comment + "</span>");
-            app_comment.xalign = 0;
-            app_comment.use_markup = true;
+        var app_name = new Gtk.Label (app_info.name);
+        app_name.get_style_context ().add_class ("h3");
+        app_name.xalign = 0;
 
-            margin = 6;
-            margin_end = 12;
-            margin_start = 10; // Account for icon position on the canvas
-            column_spacing = 12;
-            attach (image, 0, 0, 1, 2);
-            attach (app_name, 1, 0, 1, 1);
-            attach (app_comment, 1, 1, 1, 1);
+        var app_comment = new Gtk.Label ("<span font_size='small'>" + app_info.comment + "</span>");
+        app_comment.xalign = 0;
+        app_comment.use_markup = true;
 
-            show_all ();
-        }
+        margin = 6;
+        margin_end = 12;
+        margin_start = 10; // Account for icon position on the canvas
+        column_spacing = 12;
+        attach (image, 0, 0, 1, 2);
+        attach (app_name, 1, 0, 1, 1);
+        attach (app_comment, 1, 1, 1, 1);
+
+        show_all ();
     }
 }

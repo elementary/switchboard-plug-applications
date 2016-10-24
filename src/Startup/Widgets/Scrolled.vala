@@ -22,78 +22,77 @@
 /**
  * Main widget, handels drag and drop.
  */
-namespace Startup.Widgets {
-    public class Scrolled : Gtk.Grid {
-        public signal void app_added (string path);
-        public signal void app_added_from_command (string command);
-        public signal void app_removed (string path);
-        public signal void app_active_changed (string path, bool active);
 
-        public List list { get; private set; }
-        public AppChooser app_chooser;
+public class Startup.Widgets.Scrolled : Gtk.Grid {
+    public signal void app_added (string path);
+    public signal void app_added_from_command (string command);
+    public signal void app_removed (string path);
+    public signal void app_active_changed (string path, bool active);
 
-        public Scrolled () {
-            orientation = Gtk.Orientation.VERTICAL;
-            margin = 12;
-            margin_top = 0;
+    public List list { get; private set; }
+    public AppChooser app_chooser;
 
-            list = new List ();
-            list.expand = true;
+    public Scrolled () {
+        orientation = Gtk.Orientation.VERTICAL;
+        margin = 12;
+        margin_top = 0;
 
-            var scrolled = new Gtk.ScrolledWindow (null, null);
-            scrolled.shadow_type = Gtk.ShadowType.IN;
-            scrolled.add (list);
+        list = new List ();
+        list.expand = true;
 
-            var toolbar = new Gtk.Toolbar ();
-            toolbar.get_style_context ().add_class (Gtk.STYLE_CLASS_INLINE_TOOLBAR);
-            toolbar.icon_size = Gtk.IconSize.SMALL_TOOLBAR;
+        var scrolled = new Gtk.ScrolledWindow (null, null);
+        scrolled.shadow_type = Gtk.ShadowType.IN;
+        scrolled.add (list);
 
-            var add_button = new Gtk.ToolButton (new Gtk.Image.from_icon_name ("list-add-symbolic", Gtk.IconSize.BUTTON), null);
-            add_button.tooltip_text = _("Add Startup App…");
-            add_button.clicked.connect (() => {app_chooser.show_all ();});
+        var toolbar = new Gtk.Toolbar ();
+        toolbar.get_style_context ().add_class (Gtk.STYLE_CLASS_INLINE_TOOLBAR);
+        toolbar.icon_size = Gtk.IconSize.SMALL_TOOLBAR;
 
-            var remove_button = new Gtk.ToolButton (new Gtk.Image.from_icon_name ("list-remove-symbolic", Gtk.IconSize.BUTTON), null);
-            remove_button.tooltip_text = _("Remove Selected Startup App");
-            remove_button.clicked.connect (() => {list.remove_selected_app ();});
-            remove_button.sensitive = false;
+        var add_button = new Gtk.ToolButton (new Gtk.Image.from_icon_name ("list-add-symbolic", Gtk.IconSize.BUTTON), null);
+        add_button.tooltip_text = _("Add Startup App…");
+        add_button.clicked.connect (() => {app_chooser.show_all ();});
 
-            toolbar.add (add_button);
-            toolbar.add (remove_button);
+        var remove_button = new Gtk.ToolButton (new Gtk.Image.from_icon_name ("list-remove-symbolic", Gtk.IconSize.BUTTON), null);
+        remove_button.tooltip_text = _("Remove Selected Startup App");
+        remove_button.clicked.connect (() => {list.remove_selected_app ();});
+        remove_button.sensitive = false;
 
-            add (scrolled);
-            add (toolbar);
+        toolbar.add (add_button);
+        toolbar.add (remove_button);
 
-            app_chooser = new AppChooser (add_button);
-            app_chooser.modal = true;
+        add (scrolled);
+        add (toolbar);
 
-            app_chooser.app_chosen.connect ((p) => app_added (p));
-            app_chooser.custom_command_chosen.connect ((c) => app_added_from_command (c));
+        app_chooser = new AppChooser (add_button);
+        app_chooser.modal = true;
 
-            list.app_removed.connect ((p) => {
-                app_removed (p);
-                if (list.get_children ().length () <= 0) {
-                    remove_button.sensitive = false;
-                }
-            });
-            list.app_added.connect ((p) => app_added (p));
-            list.row_selected.connect ((row) => {remove_button.sensitive = true;});
-            list.app_active_changed.connect ((p,a) => app_active_changed (p,a));
-        }
+        app_chooser.app_chosen.connect ((p) => app_added (p));
+        app_chooser.custom_command_chosen.connect ((c) => app_added_from_command (c));
 
-        public void add_app (Entity.AppInfo app_info) {
-            list.add_app (app_info);
-        }
+        list.app_removed.connect ((p) => {
+            app_removed (p);
+            if (list.get_children ().length () <= 0) {
+                remove_button.sensitive = false;
+            }
+        });
+        list.app_added.connect ((p) => app_added (p));
+        list.row_selected.connect ((row) => {remove_button.sensitive = true;});
+        list.app_active_changed.connect ((p,a) => app_active_changed (p,a));
+    }
 
-        public void remove_app_from_path (string path) {
-            list.remove_app_from_path (path);
-        }
+    public void add_app (Entity.AppInfo app_info) {
+        list.add_app (app_info);
+    }
 
-        public void reload_app_from_path (string path) {
-            list.reload_app_from_path (path);
-        }
+    public void remove_app_from_path (string path) {
+        list.remove_app_from_path (path);
+    }
 
-        public void init_app_chooser (Gee.Collection <Entity.AppInfo?> app_infos) {
-            app_chooser.init_list (app_infos);
-        }
+    public void reload_app_from_path (string path) {
+        list.reload_app_from_path (path);
+    }
+
+    public void init_app_chooser (Gee.Collection <Entity.AppInfo?> app_infos) {
+        app_chooser.init_list (app_infos);
     }
 }
