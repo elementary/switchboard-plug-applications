@@ -22,37 +22,34 @@ public class Startup.Widgets.AppRow : Gtk.ListBoxRow {
 
     public Entity.AppInfo app_info { get; construct; }
 
-    Gtk.Label label;
-    Gtk.Switch active_switch;
-    Gtk.Image image;
-    Gtk.Grid main_grid;
+    private Gtk.Switch active_switch;
 
     public AppRow (Entity.AppInfo app_info) {
         Object (app_info: app_info);
+    }
 
-        main_grid = new Gtk.Grid ();
-        main_grid.orientation = Gtk.Orientation.HORIZONTAL;
-
+    construct {
         var markup = Utils.create_markup (app_info);
         var icon = Utils.create_icon (app_info);
 
-        main_grid.margin = 6;
-        main_grid.column_spacing = 12;
+        var image = new Gtk.Image.from_icon_name (icon, Gtk.IconSize.DIALOG);
 
-        image = new Gtk.Image.from_icon_name (icon, Gtk.IconSize.DIALOG);
-        main_grid.add (image);
-
-        label = new Gtk.Label (markup);
+        var label = new Gtk.Label (markup);
         label.expand = true;
         label.use_markup = true;
         label.halign = Gtk.Align.START;
         label.ellipsize = Pango.EllipsizeMode.END;
-        main_grid.add (label);
 
         active_switch = new Gtk.Switch ();
         active_switch.valign = Gtk.Align.CENTER;
         active_switch.active = app_info.active;
         active_switch.notify["active"].connect (on_active_changed);
+
+        var main_grid = new Gtk.Grid ();
+        main_grid.margin = 6;
+        main_grid.column_spacing = 12;
+        main_grid.add (image);
+        main_grid.add (label);
         main_grid.add (active_switch);
 
         add (main_grid);
@@ -60,7 +57,7 @@ public class Startup.Widgets.AppRow : Gtk.ListBoxRow {
         on_active_changed ();
     }
 
-    void on_active_changed () {
+    private void on_active_changed () {
         active_changed (active_switch.active);
     }
 }
