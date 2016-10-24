@@ -17,7 +17,7 @@
 
 namespace Startup.Dialogs {
 
-    public class AppRow : Gtk.Box {
+    public class AppRow : Gtk.Grid {
 
         public Entity.AppInfo app_info { get; construct; }
 
@@ -25,26 +25,27 @@ namespace Startup.Dialogs {
 
         public AppRow (Entity.AppInfo app_info) {
             Object (app_info: app_info);
-            setup ();
         }
 
-        void setup () {
-            orientation = Gtk.Orientation.HORIZONTAL;
-
-            var markup = Utils.create_markup (app_info);
+        construct {
             var icon = Utils.create_icon (app_info);
+            var image = new Gtk.Image.from_icon_name (icon, Gtk.IconSize.DND);
+
+            var app_name = new Gtk.Label (app_info.name);
+            app_name.get_style_context ().add_class ("h3");
+            app_name.xalign = 0;
+
+            var app_comment = new Gtk.Label ("<span font_size='small'>" + app_info.comment + "</span>");
+            app_comment.xalign = 0;
+            app_comment.use_markup = true;
 
             margin = 6;
-            spacing = 12;
-
-            var image = new Gtk.Image.from_icon_name (icon, Gtk.IconSize.DND);
-            add (image);
-
-            var label = new Gtk.Label (markup);
-            label.use_markup = true;
-            label.halign = Gtk.Align.START;
-            label.ellipsize = Pango.EllipsizeMode.END;
-            add (label);
+            margin_end = 12;
+            margin_start = 10; // Account for icon position on the canvas
+            column_spacing = 12;
+            attach (image, 0, 0, 1, 2);
+            attach (app_name, 1, 0, 1, 1);
+            attach (app_comment, 1, 1, 1, 1);
 
             show_all ();
         }
@@ -61,42 +62,46 @@ namespace Startup.Dialogs {
 
         public AppChooser (Gtk.Widget widget) {
             Object (relative_to: widget);
-            setup_gui ();
-            connect_signals ();
         }
 
-        void setup_gui () {
-            var grid = new Gtk.Grid ();
-            grid.margin = 12;
-            grid.row_spacing = 6;
-
+        construct {
             search_entry = new Gtk.SearchEntry ();
+            search_entry.margin_end = 12;
+            search_entry.margin_start = 12;
             search_entry.placeholder_text = _("Search Applications");
 
             var scrolled = new Gtk.ScrolledWindow (null, null);
             scrolled.height_request = 200;
             scrolled.width_request = 250;
-            scrolled.vscrollbar_policy = Gtk.PolicyType.AUTOMATIC;
-            scrolled.shadow_type = Gtk.ShadowType.IN;
+            scrolled.hscrollbar_policy = Gtk.PolicyType.NEVER;
 
             list = new Gtk.ListBox ();
             list.expand = true;
-            list.height_request = 250;
-            list.width_request = 200;
             list.set_sort_func (sort_function);
             list.set_filter_func (filter_function);
             scrolled.add (list);
 
             custom_entry = new Gtk.Entry();
+            custom_entry.margin_end = 12;
+            custom_entry.margin_start = 12;
             custom_entry.placeholder_text = _("Type in a custom command");
-            custom_entry.primary_icon_name = "document-properties-symbolic";
+            custom_entry.primary_icon_name = "utilities-terminal-symbolic";
             custom_entry.primary_icon_activatable = false;
 
+            var grid = new Gtk.Grid ();
+            grid.margin_bottom = 12;
+            grid.margin_top = 12;
+            grid.row_spacing = 6;
             grid.attach (search_entry, 0, 0, 1, 1);
             grid.attach (scrolled, 0, 1, 1, 1);
             grid.attach (custom_entry, 0, 2, 1, 1);
 
             add (grid);
+
+            search_entry.grab_focus ();
+            list.row_activated.connect (on_app_selected);
+            search_entry.search_changed.connect (apply_filter);
+            custom_entry.activate.connect (on_custom_command_entered);
         }
 
         public void init_list (Gee.Collection <Entity.AppInfo?> app_infos) {
@@ -124,12 +129,6 @@ namespace Startup.Dialogs {
             var app_row = list_box_row.get_child () as AppRow;
             return search_entry.text.down () in app_row.app_info.name.down ()
                 || search_entry.text.down () in app_row.app_info.comment.down ();
-        }
-
-        void connect_signals () {
-            list.row_activated.connect (on_app_selected);
-            search_entry.search_changed.connect (apply_filter);
-            custom_entry.activate.connect (on_custom_command_entered);
         }
 
         void on_app_selected (Gtk.ListBoxRow list_box_row) {
