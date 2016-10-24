@@ -1,0 +1,57 @@
+/*
+* Copyright (c) 2013-2016 elementary LLC. (https://launchpad.net/switchboard-plug-applications)
+*
+* This program is free software; you can redistribute it and/or
+* modify it under the terms of the GNU General Public
+* License as published by the Free Software Foundation; either
+* version 2 of the License, or (at your option) any later version.
+*
+* This program is distributed in the hope that it will be useful,
+* but WITHOUT ANY WARRANTY; without even the implied warranty of
+* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+* General Public License for more details.
+*
+* You should have received a copy of the GNU General Public
+* License along with this program; if not, write to the
+* Free Software Foundation, Inc., 59 Temple Place - Suite 330,
+* Boston, MA 02111-1307, USA.
+*
+* Authored by: Julien Spautz <spautz.julien@gmail.com>
+*/
+namespace Startup.Widgets {
+    public class AppChooserRow : Gtk.Grid {
+
+        public Entity.AppInfo app_info { get; construct; }
+
+        public signal void deleted ();
+
+        public AppChooserRow (Entity.AppInfo app_info) {
+            Object (app_info: app_info);
+        }
+
+        construct {
+            var icon = Utils.create_icon (app_info);
+
+            var image = new Gtk.Image.from_icon_name (icon, Gtk.IconSize.DND);
+            image.pixel_size = 32;
+
+            var app_name = new Gtk.Label (app_info.name);
+            app_name.get_style_context ().add_class ("h3");
+            app_name.xalign = 0;
+
+            var app_comment = new Gtk.Label ("<span font_size='small'>" + app_info.comment + "</span>");
+            app_comment.xalign = 0;
+            app_comment.use_markup = true;
+
+            margin = 6;
+            margin_end = 12;
+            margin_start = 10; // Account for icon position on the canvas
+            column_spacing = 12;
+            attach (image, 0, 0, 1, 2);
+            attach (app_name, 1, 0, 1, 1);
+            attach (app_comment, 1, 1, 1, 1);
+
+            show_all ();
+        }
+    }
+}

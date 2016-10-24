@@ -35,8 +35,8 @@ vala_precompile (VALA_C ${PLUGNAME}
     Startup/Widgets/List.vala
     Startup/Widgets/Scrolled.vala
     Startup/Widgets/AppRow.vala
-
-    Startup/Dialogs/AppChooser.vala
+    Startup/Widgets/AppChooser.vala
+    Startup/Widgets/AppChooserRow.vala
 
     Startup/Entities/AppInfo.vala
     
