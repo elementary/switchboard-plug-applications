@@ -22,21 +22,22 @@
 /**
  * Main widget, handels drag and drop.
  */
+
 public class Startup.Widgets.Scrolled : Gtk.Grid {
     public signal void app_added (string path);
     public signal void app_added_from_command (string command);
     public signal void app_removed (string path);
     public signal void app_active_changed (string path, bool active);
 
-    public Widgets.List list { get; private set; }
-    public Dialogs.AppChooser app_chooser;
+    public List list { get; private set; }
+    public AppChooser app_chooser;
 
     public Scrolled () {
         orientation = Gtk.Orientation.VERTICAL;
         margin = 12;
         margin_top = 0;
 
-        list = new Widgets.List ();
+        list = new List ();
         list.expand = true;
 
         var scrolled = new Gtk.ScrolledWindow (null, null);
@@ -62,7 +63,7 @@ public class Startup.Widgets.Scrolled : Gtk.Grid {
         add (scrolled);
         add (toolbar);
 
-        app_chooser = new Dialogs.AppChooser (add_button);
+        app_chooser = new AppChooser (add_button);
         app_chooser.modal = true;
 
         app_chooser.app_chosen.connect ((p) => app_added (p));
