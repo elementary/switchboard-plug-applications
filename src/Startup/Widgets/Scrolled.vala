@@ -46,7 +46,7 @@ public class Startup.Widgets.Scrolled : Gtk.Grid {
         scrolled = new Gtk.ScrolledWindow (null, null);
         scrolled.add (list);
 
-        var empty_alert = new Granite.Widgets.AlertView (_("Apps in This List Open on Startup"), _("Add Startup apps by clicking the icon in the bottom left corner"), "system-restart");
+        var empty_alert = new Granite.Widgets.AlertView (_("Launch Apps on Startup"), _("Add apps to the Startup list by clicking the icon in the toolbar below."), "system-restart");
 
         stack = new Gtk.Stack ();
         stack.add (empty_alert);
