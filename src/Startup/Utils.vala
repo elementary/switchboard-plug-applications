@@ -24,7 +24,6 @@ namespace Startup.Utils {
 
     const string AUTOSTART_DIR = "autostart";
 
-
     string[] get_application_files () {
         var app_dir = Utils.get_application_dir ();
         var enumerator = new Backend.DesktopFileEnumerator (app_dir);
@@ -66,13 +65,6 @@ namespace Startup.Utils {
     }
     
     const string FALLBACK_ICON = "application-default-icon";
-
-    string create_markup (Entity.AppInfo app_info) {
-        var escaped_name = Markup.escape_text (app_info.name);
-        var escaped_comment = Markup.escape_text (app_info.comment);
-
-        return @"<span font_weight=\"bold\" size=\"large\">$escaped_name</span>\n$escaped_comment";
-    }
 
     string create_icon (Entity.AppInfo app_info) {
         var icon_theme = Gtk.IconTheme.get_default ();
