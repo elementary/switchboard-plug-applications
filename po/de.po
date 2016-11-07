@@ -3,13 +3,13 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-10-26 14:44-0700\n"
-"PO-Revision-Date: 2016-09-08 11:02+0000\n"
+"PO-Revision-Date: 2016-11-06 20:52+0000\n"
 "Last-Translator: UweS <Unknown>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-10-27 06:40+0000\n"
+"X-Launchpad-Export-Date: 2016-11-07 06:45+0000\n"
 "X-Generator: Launchpad (build 18246)\n"
 
 #: ../src/Defaults/DefaultPlug.vala:87
@@ -62,7 +62,7 @@ msgstr "Beim Anmelden automatisch gestartete Anwendungen"
 
 #: ../src/Plug.vala:94
 msgid "Default Apps"
-msgstr ""
+msgstr "Voreingestellte Anwendungen"
 
 #: ../src/Plug.vala:95
 msgid "Default Application"
@@ -70,31 +70,31 @@ msgstr ""
 
 #: ../src/Plug.vala:96
 msgid "Default Web Browser"
-msgstr ""
+msgstr "Voreingestellter Internet-Browser"
 
 #: ../src/Plug.vala:97
 msgid "Default Music Player"
-msgstr ""
+msgstr "Voreingestellte Anwendung zur Musikwiedergabe"
 
 #: ../src/Plug.vala:98
 msgid "Default Email Client"
-msgstr ""
+msgstr "Voreingestellter E-Mail-Client"
 
 #: ../src/Plug.vala:99
 msgid "Default Text Editor"
-msgstr ""
+msgstr "Voreingestellter Texteditor"
 
 #: ../src/Plug.vala:100
 msgid "Default File Browser"
-msgstr ""
+msgstr "Voreingestellte Dateiverwaltung"
 
 #: ../src/Plug.vala:101
 msgid "Default Video Player"
-msgstr ""
+msgstr "Voreingestellte Anwendung zur Videowiedergabe"
 
 #: ../src/Plug.vala:102
 msgid "Default Calendar"
-msgstr ""
+msgstr "Voreingestellter Kalender"
 
 #: ../src/Startup/Backend/KeyFile.vala:99
 msgid "Custom Command"
@@ -102,7 +102,7 @@ msgstr "Benutzerdefinierter Befehl"
 
 #: ../src/Startup/Widgets/Scrolled.vala:49
 msgid "Launch Apps on Startup"
-msgstr ""
+msgstr "Anwendungen, die beim Anmelden gestartet werden"
 
 #: ../src/Startup/Widgets/Scrolled.vala:49
 msgid ""

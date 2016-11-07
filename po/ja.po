@@ -3,13 +3,13 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-10-26 14:44-0700\n"
-"PO-Revision-Date: 2016-10-15 07:12+0000\n"
-"Last-Translator: Ryo Nakano <Unknown>\n"
+"PO-Revision-Date: 2016-11-06 15:48+0000\n"
+"Last-Translator: Jun Takeda <takeda.jun@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-10-27 06:40+0000\n"
+"X-Launchpad-Export-Date: 2016-11-07 06:45+0000\n"
 "X-Generator: Launchpad (build 18246)\n"
 
 #: ../src/Defaults/DefaultPlug.vala:87
@@ -62,39 +62,39 @@ msgstr "起動アプリ"
 
 #: ../src/Plug.vala:94
 msgid "Default Apps"
-msgstr ""
+msgstr "デフォルトのアプリ"
 
 #: ../src/Plug.vala:95
 msgid "Default Application"
-msgstr ""
+msgstr "デフォルトのアプリケーション"
 
 #: ../src/Plug.vala:96
 msgid "Default Web Browser"
-msgstr ""
+msgstr "デフォルトの Web ブラウザ"
 
 #: ../src/Plug.vala:97
 msgid "Default Music Player"
-msgstr ""
+msgstr "デフォルトのミュージックプレーヤー"
 
 #: ../src/Plug.vala:98
 msgid "Default Email Client"
-msgstr ""
+msgstr "デフォルトのメールクライアント"
 
 #: ../src/Plug.vala:99
 msgid "Default Text Editor"
-msgstr ""
+msgstr "デフォルトのテキストエディター"
 
 #: ../src/Plug.vala:100
 msgid "Default File Browser"
-msgstr ""
+msgstr "デフォルトのファイルブラウザ"
 
 #: ../src/Plug.vala:101
 msgid "Default Video Player"
-msgstr ""
+msgstr "デフォルトのビデオプレーヤー"
 
 #: ../src/Plug.vala:102
 msgid "Default Calendar"
-msgstr ""
+msgstr "デフォルトのカレンダー"
 
 #: ../src/Startup/Backend/KeyFile.vala:99
 msgid "Custom Command"
