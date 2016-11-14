@@ -3,14 +3,14 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-10-26 14:44-0700\n"
-"PO-Revision-Date: 2015-12-22 12:11+0000\n"
+"PO-Revision-Date: 2016-11-13 17:50+0000\n"
 "Last-Translator: Piotr Strębski <strebski@o2.pl>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-10-27 06:40+0000\n"
-"X-Generator: Launchpad (build 18246)\n"
+"X-Launchpad-Export-Date: 2016-11-14 06:18+0000\n"
+"X-Generator: Launchpad (build 18255)\n"
 
 #: ../src/Defaults/DefaultPlug.vala:87
 msgid "Web Browser:"
@@ -62,39 +62,39 @@ msgstr "Uruchamianie"
 
 #: ../src/Plug.vala:94
 msgid "Default Apps"
-msgstr ""
+msgstr "Domyślne programy"
 
 #: ../src/Plug.vala:95
 msgid "Default Application"
-msgstr ""
+msgstr "Domyślny program"
 
 #: ../src/Plug.vala:96
 msgid "Default Web Browser"
-msgstr ""
+msgstr "Domyślna przeglądarka internetowa"
 
 #: ../src/Plug.vala:97
 msgid "Default Music Player"
-msgstr ""
+msgstr "Domyślny odtwarzacz muzyki"
 
 #: ../src/Plug.vala:98
 msgid "Default Email Client"
-msgstr ""
+msgstr "Domyślny klient poczty e-mail"
 
 #: ../src/Plug.vala:99
 msgid "Default Text Editor"
-msgstr ""
+msgstr "Domyślny edytor tekstu"
 
 #: ../src/Plug.vala:100
 msgid "Default File Browser"
-msgstr ""
+msgstr "Domyślna przeglądarka plików"
 
 #: ../src/Plug.vala:101
 msgid "Default Video Player"
-msgstr ""
+msgstr "Domyślny odtwarzacz filmów"
 
 #: ../src/Plug.vala:102
 msgid "Default Calendar"
-msgstr ""
+msgstr "Domyślny kalendarz"
 
 #: ../src/Startup/Backend/KeyFile.vala:99
 msgid "Custom Command"
@@ -102,12 +102,14 @@ msgstr "Własne polecenie"
 
 #: ../src/Startup/Widgets/Scrolled.vala:49
 msgid "Launch Apps on Startup"
-msgstr ""
+msgstr "Uruchamiaj programy przy starcie"
 
 #: ../src/Startup/Widgets/Scrolled.vala:49
 msgid ""
 "Add apps to the Startup list by clicking the icon in the toolbar below."
 msgstr ""
+"Dodaj programy do listy uruchamiania klikając na ikonę w poniższym pasku "
+"narzędzi."
 
 #: ../src/Startup/Widgets/Scrolled.vala:63
 msgid "Add Startup App…"
