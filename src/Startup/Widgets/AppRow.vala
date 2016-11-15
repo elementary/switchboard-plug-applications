@@ -31,18 +31,21 @@ public class Startup.Widgets.AppRow : Gtk.ListBoxRow {
     }
 
     construct {
-        var markup = Utils.create_markup (app_info);
         var icon = Utils.create_icon (app_info);
 
         var image = new Gtk.Image.from_icon_name (icon, Gtk.IconSize.DIALOG);
 
-        var label = new Gtk.Label (markup);
-        label.expand = true;
-        label.use_markup = true;
-        label.halign = Gtk.Align.START;
-        label.ellipsize = Pango.EllipsizeMode.END;
+        var app_name = new Gtk.Label (app_info.name);
+        app_name.get_style_context ().add_class ("h3");
+        app_name.xalign = 0;
+
+        var app_comment = new Gtk.Label (app_info.comment);
+        app_comment.ellipsize = Pango.EllipsizeMode.END;
+        app_comment.hexpand = true;
+        app_comment.xalign = 0;
 
         active_switch = new Gtk.Switch ();
+        active_switch.tooltip_text = _("Launch %s on startup".printf (app_info.name));
         active_switch.valign = Gtk.Align.CENTER;
         active_switch.active = app_info.active;
         active_switch.notify["active"].connect (on_active_changed);
@@ -50,9 +53,10 @@ public class Startup.Widgets.AppRow : Gtk.ListBoxRow {
         var main_grid = new Gtk.Grid ();
         main_grid.margin = 6;
         main_grid.column_spacing = 12;
-        main_grid.add (image);
-        main_grid.add (label);
-        main_grid.add (active_switch);
+        main_grid.attach (image, 0, 0, 1, 2);
+        main_grid.attach (app_name, 1, 0, 1, 1);
+        main_grid.attach (app_comment, 1, 1, 1, 1);
+        main_grid.attach (active_switch, 2, 0, 1, 2);
 
         add (main_grid);
         show_all ();
