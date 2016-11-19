@@ -215,8 +215,19 @@ namespace Defaults {
 
             case "text_editor":
                 return { "application/xml",
+                        "application/x-perl",
+                        "text/mathml",
                         "text/plain",
-                        "text/xml"
+                        "text/xml",
+                        "text/x-c++hdr",
+                        "text/x-c++src",
+                        "text/x-xsrc",
+                        "text/x-chdr",
+                        "text/x-csrc",
+                        "text/x-dtd",
+                        "text/x-java",
+                        "text/x-python",
+                        "text/x-sql"
                 };
 
             case "file_browser":
