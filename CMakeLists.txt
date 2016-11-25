@@ -18,7 +18,7 @@ set (PLUGICON "applications-default-icon")
 # Set the version for the plug
 set (VERSION "0.1.0.2")
 
-project (${PLUGNAME})
+project (${PLUGNAME} C)
 
 #########################################################
 # Only alter stuff below if you know what you are doing #
