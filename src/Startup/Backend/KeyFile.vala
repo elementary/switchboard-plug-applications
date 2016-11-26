@@ -26,7 +26,6 @@
  */
 public class Startup.Backend.KeyFile : GLib.Object {
 
-    const int ICON_SIZE = 48;
     const string FALLBACK_ICON = "application-default-icon";
 
     const string KEY_NAME = KeyFileDesktop.KEY_NAME;
@@ -249,22 +248,6 @@ public class Startup.Backend.KeyFile : GLib.Object {
         var escaped_comment = Markup.escape_text (comment);
 
         return @"<span font_weight=\"bold\" size=\"large\">$escaped_name</span>\n$escaped_comment";
-    }
-
-    public Gdk.Pixbuf create_icon (int size = ICON_SIZE) {
-        var icon_theme = Gtk.IconTheme.get_default ();
-        var lookup_flags = Gtk.IconLookupFlags.GENERIC_FALLBACK;
-
-        try {
-            if (icon_theme.has_icon (icon))
-                return icon_theme.load_icon (icon, size, lookup_flags);
-            else
-                return icon_theme.load_icon (FALLBACK_ICON, size, lookup_flags);
-        } catch (Error e) {
-            warning (e.message);
-        }
-
-        return (Gdk.Pixbuf) null;
     }
     
     public Entity.AppInfo create_app_info () {
