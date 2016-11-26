@@ -2,15 +2,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-10-26 14:44-0700\n"
+"POT-Creation-Date: 2016-11-25 04:34-0600\n"
 "PO-Revision-Date: 2016-10-27 07:17+0000\n"
 "Last-Translator: Jung-Kyu Park <bagjunggyu@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-10-28 06:07+0000\n"
-"X-Generator: Launchpad (build 18246)\n"
+"X-Launchpad-Export-Date: 2016-11-26 05:52+0000\n"
+"X-Generator: Launchpad (build 18282)\n"
 
 #: ../src/Defaults/DefaultPlug.vala:87
 msgid "Web Browser:"
@@ -43,6 +43,39 @@ msgstr "텍스트 편집:"
 #: ../src/Defaults/DefaultPlug.vala:118
 msgid "File Browser:"
 msgstr "파일:"
+
+#: ../src/Startup/Backend/KeyFile.vala:99
+msgid "Custom Command"
+msgstr "사용자 지정 명령어"
+
+#: ../src/Startup/Widgets/AppChooser.vala:39
+msgid "Search Applications"
+msgstr "애플리케이션 검색"
+
+#: ../src/Startup/Widgets/AppChooser.vala:55
+msgid "Type in a custom command"
+msgstr "사용자 지정 명령어 입력"
+
+#: ../src/Startup/Widgets/AppRow.vala:48
+msgid "Launch %s on startup"
+msgstr ""
+
+#: ../src/Startup/Widgets/Scrolled.vala:49
+msgid "Launch Apps on Startup"
+msgstr "시작 애플리케이션"
+
+#: ../src/Startup/Widgets/Scrolled.vala:49
+msgid ""
+"Add apps to the Startup list by clicking the icon in the toolbar below."
+msgstr "시작 애플리케이션에 등록하려면 아래 툴바의 아이콘을 클릭하세요."
+
+#: ../src/Startup/Widgets/Scrolled.vala:63
+msgid "Add Startup App…"
+msgstr "시작 앱 추가…"
+
+#: ../src/Startup/Widgets/Scrolled.vala:67
+msgid "Remove Selected Startup App"
+msgstr "선택한 시작 앱 제거"
 
 #: ../src/Plug.vala:36
 msgid "Applications"
@@ -95,32 +128,3 @@ msgstr "기본 비디오 플레이어"
 #: ../src/Plug.vala:102
 msgid "Default Calendar"
 msgstr "기본 일정 관리 프로그램"
-
-#: ../src/Startup/Backend/KeyFile.vala:99
-msgid "Custom Command"
-msgstr "사용자 지정 명령어"
-
-#: ../src/Startup/Widgets/Scrolled.vala:49
-msgid "Launch Apps on Startup"
-msgstr "시작 애플리케이션"
-
-#: ../src/Startup/Widgets/Scrolled.vala:49
-msgid ""
-"Add apps to the Startup list by clicking the icon in the toolbar below."
-msgstr "시작 애플리케이션에 등록하려면 아래 툴바의 아이콘을 클릭하세요."
-
-#: ../src/Startup/Widgets/Scrolled.vala:63
-msgid "Add Startup App…"
-msgstr "시작 앱 추가…"
-
-#: ../src/Startup/Widgets/Scrolled.vala:67
-msgid "Remove Selected Startup App"
-msgstr "선택한 시작 앱 제거"
-
-#: ../src/Startup/Widgets/AppChooser.vala:39
-msgid "Search Applications"
-msgstr "애플리케이션 검색"
-
-#: ../src/Startup/Widgets/AppChooser.vala:55
-msgid "Type in a custom command"
-msgstr "사용자 지정 명령어 입력"

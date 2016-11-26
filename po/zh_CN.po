@@ -2,15 +2,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-10-26 14:44-0700\n"
+"POT-Creation-Date: 2016-11-25 04:34-0600\n"
 "PO-Revision-Date: 2016-11-03 05:50+0000\n"
 "Last-Translator: colindemian <colindemian@outlook.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-11-04 05:43+0000\n"
-"X-Generator: Launchpad (build 18246)\n"
+"X-Launchpad-Export-Date: 2016-11-26 05:53+0000\n"
+"X-Generator: Launchpad (build 18282)\n"
 
 #: ../src/Defaults/DefaultPlug.vala:87
 msgid "Web Browser:"
@@ -43,6 +43,39 @@ msgstr "文本编辑器："
 #: ../src/Defaults/DefaultPlug.vala:118
 msgid "File Browser:"
 msgstr "文件浏览器："
+
+#: ../src/Startup/Backend/KeyFile.vala:99
+msgid "Custom Command"
+msgstr "自定义命令"
+
+#: ../src/Startup/Widgets/AppChooser.vala:39
+msgid "Search Applications"
+msgstr "搜索应用程序"
+
+#: ../src/Startup/Widgets/AppChooser.vala:55
+msgid "Type in a custom command"
+msgstr "键入自定义命令"
+
+#: ../src/Startup/Widgets/AppRow.vala:48
+msgid "Launch %s on startup"
+msgstr ""
+
+#: ../src/Startup/Widgets/Scrolled.vala:49
+msgid "Launch Apps on Startup"
+msgstr "开机启动"
+
+#: ../src/Startup/Widgets/Scrolled.vala:49
+msgid ""
+"Add apps to the Startup list by clicking the icon in the toolbar below."
+msgstr "点击下方工具栏中的图标将应用程序设置为开机启动。"
+
+#: ../src/Startup/Widgets/Scrolled.vala:63
+msgid "Add Startup App…"
+msgstr "添加启动项..."
+
+#: ../src/Startup/Widgets/Scrolled.vala:67
+msgid "Remove Selected Startup App"
+msgstr "移除选中的启动项"
 
 #: ../src/Plug.vala:36
 msgid "Applications"
@@ -95,32 +128,3 @@ msgstr "视频播放器"
 #: ../src/Plug.vala:102
 msgid "Default Calendar"
 msgstr "日历管理器"
-
-#: ../src/Startup/Backend/KeyFile.vala:99
-msgid "Custom Command"
-msgstr "自定义命令"
-
-#: ../src/Startup/Widgets/Scrolled.vala:49
-msgid "Launch Apps on Startup"
-msgstr "开机启动"
-
-#: ../src/Startup/Widgets/Scrolled.vala:49
-msgid ""
-"Add apps to the Startup list by clicking the icon in the toolbar below."
-msgstr "点击下方工具栏中的图标将应用程序设置为开机启动。"
-
-#: ../src/Startup/Widgets/Scrolled.vala:63
-msgid "Add Startup App…"
-msgstr "添加启动项..."
-
-#: ../src/Startup/Widgets/Scrolled.vala:67
-msgid "Remove Selected Startup App"
-msgstr "移除选中的启动项"
-
-#: ../src/Startup/Widgets/AppChooser.vala:39
-msgid "Search Applications"
-msgstr "搜索应用程序"
-
-#: ../src/Startup/Widgets/AppChooser.vala:55
-msgid "Type in a custom command"
-msgstr "键入自定义命令"

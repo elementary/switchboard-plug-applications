@@ -2,15 +2,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-10-26 14:44-0700\n"
+"POT-Creation-Date: 2016-11-25 04:34-0600\n"
 "PO-Revision-Date: 2014-08-01 07:27+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-10-27 06:40+0000\n"
-"X-Generator: Launchpad (build 18246)\n"
+"X-Launchpad-Export-Date: 2016-11-26 05:53+0000\n"
+"X-Generator: Launchpad (build 18282)\n"
 
 #: ../src/Defaults/DefaultPlug.vala:87
 msgid "Web Browser:"
@@ -42,6 +42,39 @@ msgstr ""
 
 #: ../src/Defaults/DefaultPlug.vala:118
 msgid "File Browser:"
+msgstr ""
+
+#: ../src/Startup/Backend/KeyFile.vala:99
+msgid "Custom Command"
+msgstr ""
+
+#: ../src/Startup/Widgets/AppChooser.vala:39
+msgid "Search Applications"
+msgstr ""
+
+#: ../src/Startup/Widgets/AppChooser.vala:55
+msgid "Type in a custom command"
+msgstr ""
+
+#: ../src/Startup/Widgets/AppRow.vala:48
+msgid "Launch %s on startup"
+msgstr ""
+
+#: ../src/Startup/Widgets/Scrolled.vala:49
+msgid "Launch Apps on Startup"
+msgstr ""
+
+#: ../src/Startup/Widgets/Scrolled.vala:49
+msgid ""
+"Add apps to the Startup list by clicking the icon in the toolbar below."
+msgstr ""
+
+#: ../src/Startup/Widgets/Scrolled.vala:63
+msgid "Add Startup App…"
+msgstr ""
+
+#: ../src/Startup/Widgets/Scrolled.vala:67
+msgid "Remove Selected Startup App"
 msgstr ""
 
 #: ../src/Plug.vala:36
@@ -94,33 +127,4 @@ msgstr ""
 
 #: ../src/Plug.vala:102
 msgid "Default Calendar"
-msgstr ""
-
-#: ../src/Startup/Backend/KeyFile.vala:99
-msgid "Custom Command"
-msgstr ""
-
-#: ../src/Startup/Widgets/Scrolled.vala:49
-msgid "Launch Apps on Startup"
-msgstr ""
-
-#: ../src/Startup/Widgets/Scrolled.vala:49
-msgid ""
-"Add apps to the Startup list by clicking the icon in the toolbar below."
-msgstr ""
-
-#: ../src/Startup/Widgets/Scrolled.vala:63
-msgid "Add Startup App…"
-msgstr ""
-
-#: ../src/Startup/Widgets/Scrolled.vala:67
-msgid "Remove Selected Startup App"
-msgstr ""
-
-#: ../src/Startup/Widgets/AppChooser.vala:39
-msgid "Search Applications"
-msgstr ""
-
-#: ../src/Startup/Widgets/AppChooser.vala:55
-msgid "Type in a custom command"
 msgstr ""

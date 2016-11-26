@@ -2,15 +2,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-10-26 14:44-0700\n"
+"POT-Creation-Date: 2016-11-25 04:34-0600\n"
 "PO-Revision-Date: 2016-11-02 17:01+0000\n"
 "Last-Translator: gogo <trebelnik2@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-11-03 06:22+0000\n"
-"X-Generator: Launchpad (build 18246)\n"
+"X-Launchpad-Export-Date: 2016-11-26 05:52+0000\n"
+"X-Generator: Launchpad (build 18282)\n"
 
 #: ../src/Defaults/DefaultPlug.vala:87
 msgid "Web Browser:"
@@ -43,6 +43,40 @@ msgstr "Uređivač teksta:"
 #: ../src/Defaults/DefaultPlug.vala:118
 msgid "File Browser:"
 msgstr "Preglednik datoteka:"
+
+#: ../src/Startup/Backend/KeyFile.vala:99
+msgid "Custom Command"
+msgstr "Prilagođena naredba"
+
+#: ../src/Startup/Widgets/AppChooser.vala:39
+msgid "Search Applications"
+msgstr "Pretraži aplikacije"
+
+#: ../src/Startup/Widgets/AppChooser.vala:55
+msgid "Type in a custom command"
+msgstr "Upiši prilagođenu naredbu"
+
+#: ../src/Startup/Widgets/AppRow.vala:48
+msgid "Launch %s on startup"
+msgstr ""
+
+#: ../src/Startup/Widgets/Scrolled.vala:49
+msgid "Launch Apps on Startup"
+msgstr "Pokreni aplikaciju pri pokretanju računala"
+
+#: ../src/Startup/Widgets/Scrolled.vala:49
+msgid ""
+"Add apps to the Startup list by clicking the icon in the toolbar below."
+msgstr ""
+"Dodaj aplikaciju na popis pokretanja klikom na ikonu u alatnoj traci ispod."
+
+#: ../src/Startup/Widgets/Scrolled.vala:63
+msgid "Add Startup App…"
+msgstr "Dodaj pokretanje aplikacije..."
+
+#: ../src/Startup/Widgets/Scrolled.vala:67
+msgid "Remove Selected Startup App"
+msgstr "Ukloni odabrano pokretanje aplikacije"
 
 #: ../src/Plug.vala:36
 msgid "Applications"
@@ -95,33 +129,3 @@ msgstr "Zadani video reproduktor"
 #: ../src/Plug.vala:102
 msgid "Default Calendar"
 msgstr "Zadani kalendar"
-
-#: ../src/Startup/Backend/KeyFile.vala:99
-msgid "Custom Command"
-msgstr "Prilagođena naredba"
-
-#: ../src/Startup/Widgets/Scrolled.vala:49
-msgid "Launch Apps on Startup"
-msgstr "Pokreni aplikaciju pri pokretanju računala"
-
-#: ../src/Startup/Widgets/Scrolled.vala:49
-msgid ""
-"Add apps to the Startup list by clicking the icon in the toolbar below."
-msgstr ""
-"Dodaj aplikaciju na popis pokretanja klikom na ikonu u alatnoj traci ispod."
-
-#: ../src/Startup/Widgets/Scrolled.vala:63
-msgid "Add Startup App…"
-msgstr "Dodaj pokretanje aplikacije..."
-
-#: ../src/Startup/Widgets/Scrolled.vala:67
-msgid "Remove Selected Startup App"
-msgstr "Ukloni odabrano pokretanje aplikacije"
-
-#: ../src/Startup/Widgets/AppChooser.vala:39
-msgid "Search Applications"
-msgstr "Pretraži aplikacije"
-
-#: ../src/Startup/Widgets/AppChooser.vala:55
-msgid "Type in a custom command"
-msgstr "Upiši prilagođenu naredbu"
