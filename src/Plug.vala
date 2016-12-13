@@ -31,12 +31,16 @@ public class ApplicationsPlug : Switchboard.Plug {
     private Gtk.Stack stack;
 
     public ApplicationsPlug () {
+        var settings = new Gee.TreeMap<string, string?> (null, null);
+        settings.set ("applications", "null");
+        settings.set ("applications/defaults", DEFAULTS);
+        settings.set ("applications/startup", STARTUP);
         Object (category: Category.PERSONAL,
                 code_name: "personal-pantheon-applications",
                 display_name: _("Applications"),
                 description: _("Manage default and startup applications"),
-                icon: "preferences-desktop-applications");
-
+                icon: "preferences-desktop-applications",
+                supported_settings: settings);
         defaults_plug = new Defaults.Plug ();
         startup_plug = new Startup.Plug ();
     }
