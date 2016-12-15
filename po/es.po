@@ -3,14 +3,14 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-11-25 04:34-0600\n"
-"PO-Revision-Date: 2016-12-06 17:55+0000\n"
-"Last-Translator: abelinux <Unknown>\n"
+"PO-Revision-Date: 2016-12-14 14:40+0000\n"
+"Last-Translator: Félix Brezo <felixbrezo@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-12-07 04:58+0000\n"
-"X-Generator: Launchpad (build 18292)\n"
+"X-Launchpad-Export-Date: 2016-12-15 05:09+0000\n"
+"X-Generator: Launchpad (build 18293)\n"
 
 #: ../src/Defaults/DefaultPlug.vala:87
 msgid "Web Browser:"
@@ -38,7 +38,7 @@ msgstr "Visor de imágenes:"
 
 #: ../src/Defaults/DefaultPlug.vala:113
 msgid "Text Editor:"
-msgstr "Editor de textos:"
+msgstr "Editor de texto:"
 
 #: ../src/Defaults/DefaultPlug.vala:118
 msgid "File Browser:"
@@ -62,7 +62,7 @@ msgstr "Ejecutar %s al inicio"
 
 #: ../src/Startup/Widgets/Scrolled.vala:49
 msgid "Launch Apps on Startup"
-msgstr "Ejecutar Aplicaciones al inicio"
+msgstr "Ejecutar aplicaciones al inicio"
 
 #: ../src/Startup/Widgets/Scrolled.vala:49
 msgid ""
@@ -125,7 +125,7 @@ msgstr "Explorador de archivos predeterminado"
 
 #: ../src/Plug.vala:101
 msgid "Default Video Player"
-msgstr "Reproductor de videos predeterminado"
+msgstr "Reproductor de vídeos predeterminado"
 
 #: ../src/Plug.vala:102
 msgid "Default Calendar"
