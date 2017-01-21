@@ -3,18 +3,18 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-11-25 04:34-0600\n"
-"PO-Revision-Date: 2014-11-08 23:51+0000\n"
-"Last-Translator: George Chalkitis <chalkitisge@gmail.com>\n"
+"PO-Revision-Date: 2017-01-19 17:21+0000\n"
+"Last-Translator: Christos Iatropoulos <Unknown>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-11-26 05:52+0000\n"
-"X-Generator: Launchpad (build 18282)\n"
+"X-Launchpad-Export-Date: 2017-01-21 06:51+0000\n"
+"X-Generator: Launchpad (build 18302)\n"
 
 #: ../src/Defaults/DefaultPlug.vala:87
 msgid "Web Browser:"
-msgstr "Περιηγητής Ιστού:"
+msgstr "Περιηγητής ιστού:"
 
 #: ../src/Defaults/DefaultPlug.vala:91
 msgid "Email Client:"
@@ -34,23 +34,23 @@ msgstr "Πρόγραμμα Αναπαραγωγής Μουσικής:"
 
 #: ../src/Defaults/DefaultPlug.vala:108
 msgid "Image Viewer:"
-msgstr "Προβολή Εικόνων:"
+msgstr "Προβολή εικόνων:"
 
 #: ../src/Defaults/DefaultPlug.vala:113
 msgid "Text Editor:"
-msgstr "Επεξεργαστής Κειμένου:"
+msgstr "Επεξεργαστής κειμένου:"
 
 #: ../src/Defaults/DefaultPlug.vala:118
 msgid "File Browser:"
-msgstr "Περιηγητής Αρχείων:"
+msgstr "Περιηγητής αρχείων:"
 
 #: ../src/Startup/Backend/KeyFile.vala:99
 msgid "Custom Command"
-msgstr "Προσαρμοσμένη Εντολή"
+msgstr "Προσαρμοσμένη εντολή"
 
 #: ../src/Startup/Widgets/AppChooser.vala:39
 msgid "Search Applications"
-msgstr "Αναζήτηση Εφαρμογών"
+msgstr "Αναζήτηση εφαρμογών"
 
 #: ../src/Startup/Widgets/AppChooser.vala:55
 msgid "Type in a custom command"
@@ -68,6 +68,8 @@ msgstr ""
 msgid ""
 "Add apps to the Startup list by clicking the icon in the toolbar below."
 msgstr ""
+"Προσθέστε εφαρμογές στη λίστα εκκίνησης κάνοντας κλικ στο εικονίδιο στη "
+"γραμμή εργαλειών που βρίσκεται από κάτω."
 
 #: ../src/Startup/Widgets/Scrolled.vala:63
 msgid "Add Startup App…"
@@ -75,7 +77,7 @@ msgstr "Προσθήκη Εφαρμογής Εκκίνησης..."
 
 #: ../src/Startup/Widgets/Scrolled.vala:67
 msgid "Remove Selected Startup App"
-msgstr "Αφαίρεση Επιλεγμένης Εφαρμογής Εκκίνησης"
+msgstr "Αφαίρεση επιλεγμένης εφαρμογής εκκίνησης"
 
 #: ../src/Plug.vala:36
 msgid "Applications"
@@ -95,15 +97,15 @@ msgstr "Εκκίνηση"
 
 #: ../src/Plug.vala:94
 msgid "Default Apps"
-msgstr ""
+msgstr "Προεπιλεγμένες εφαρμογές"
 
 #: ../src/Plug.vala:95
 msgid "Default Application"
-msgstr ""
+msgstr "Προεπιλεγμένη εφαρμογή"
 
 #: ../src/Plug.vala:96
 msgid "Default Web Browser"
-msgstr ""
+msgstr "Προεπιλεγμένος περιηγητής"
 
 #: ../src/Plug.vala:97
 msgid "Default Music Player"
@@ -119,7 +121,7 @@ msgstr ""
 
 #: ../src/Plug.vala:100
 msgid "Default File Browser"
-msgstr ""
+msgstr "Προεπιλεγμένος περιηγητής αρχείων"
 
 #: ../src/Plug.vala:101
 msgid "Default Video Player"
@@ -127,4 +129,4 @@ msgstr ""
 
 #: ../src/Plug.vala:102
 msgid "Default Calendar"
-msgstr ""
+msgstr "Προεπιλεγμένο ημερολόγιο"
