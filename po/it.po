@@ -3,14 +3,14 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-11-25 04:34-0600\n"
-"PO-Revision-Date: 2017-01-24 10:46+0000\n"
+"PO-Revision-Date: 2017-01-25 13:16+0000\n"
 "Last-Translator: Fabio Zaramella <FFabio.96.X@Gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2017-01-25 05:56+0000\n"
-"X-Generator: Launchpad (build 18312)\n"
+"X-Launchpad-Export-Date: 2017-01-26 06:43+0000\n"
+"X-Generator: Launchpad (build 18315)\n"
 
 #: ../src/Defaults/DefaultPlug.vala:87
 msgid "Web Browser:"
@@ -73,7 +73,7 @@ msgstr ""
 
 #: ../src/Startup/Widgets/Scrolled.vala:63
 msgid "Add Startup App…"
-msgstr "Aggiungi un app di avvio ..."
+msgstr "Aggiungi un app di avvio..."
 
 #: ../src/Startup/Widgets/Scrolled.vala:67
 msgid "Remove Selected Startup App"
