@@ -3,13 +3,13 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-11-25 04:34-0600\n"
-"PO-Revision-Date: 2017-02-07 12:33+0000\n"
+"PO-Revision-Date: 2017-02-09 12:44+0000\n"
 "Last-Translator: Christos Iatropoulos <Unknown>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2017-02-08 05:11+0000\n"
+"X-Launchpad-Export-Date: 2017-02-10 05:58+0000\n"
 "X-Generator: Launchpad (build 18326)\n"
 
 #: ../src/Defaults/DefaultPlug.vala:87
@@ -18,7 +18,7 @@ msgstr "Περιηγητής ιστού:"
 
 #: ../src/Defaults/DefaultPlug.vala:91
 msgid "Email Client:"
-msgstr "Αποδέκτης Email:"
+msgstr "Πελάτης email:"
 
 #: ../src/Defaults/DefaultPlug.vala:95
 msgid "Calendar:"
@@ -115,11 +115,11 @@ msgstr "Προεπιλεγμένος αναπαραγωγέας μουσικής
 
 #: ../src/Plug.vala:98
 msgid "Default Email Client"
-msgstr ""
+msgstr "Προεπιλεγμένος πελάτης Email"
 
 #: ../src/Plug.vala:99
 msgid "Default Text Editor"
-msgstr ""
+msgstr "Προεπιλεγμένος επεξεργαστής κειμένου"
 
 #: ../src/Plug.vala:100
 msgid "Default File Browser"
