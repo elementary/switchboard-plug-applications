@@ -3,14 +3,14 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-11-25 04:34-0600\n"
-"PO-Revision-Date: 2015-03-09 15:15+0000\n"
-"Last-Translator: abuyop <Unknown>\n"
+"PO-Revision-Date: 2017-02-18 11:43+0000\n"
+"Last-Translator: Timothy <timothy.wong@rocketmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-11-26 05:52+0000\n"
-"X-Generator: Launchpad (build 18282)\n"
+"X-Launchpad-Export-Date: 2017-02-19 05:56+0000\n"
+"X-Generator: Launchpad (build 18326)\n"
 
 #: ../src/Defaults/DefaultPlug.vala:87
 msgid "Web Browser:"
@@ -58,16 +58,18 @@ msgstr "Taipkan perintah suai"
 
 #: ../src/Startup/Widgets/AppRow.vala:48
 msgid "Launch %s on startup"
-msgstr ""
+msgstr "Mulakan %s semasa bootup"
 
 #: ../src/Startup/Widgets/Scrolled.vala:49
 msgid "Launch Apps on Startup"
-msgstr ""
+msgstr "Mulakan applikasi-applikasi semasa bootup"
 
 #: ../src/Startup/Widgets/Scrolled.vala:49
 msgid ""
 "Add apps to the Startup list by clicking the icon in the toolbar below."
 msgstr ""
+"Tambahkan applikasi ke senaraian Startup menggunakan icon dalam bar alat di "
+"bawah"
 
 #: ../src/Startup/Widgets/Scrolled.vala:63
 msgid "Add Startup App…"
@@ -83,7 +85,7 @@ msgstr "Aplikasi"
 
 #: ../src/Plug.vala:37
 msgid "Manage default and startup applications"
-msgstr ""
+msgstr "Menguruskan aplikasi-aplikasi lalai dan permulaan."
 
 #: ../src/Plug.vala:52
 msgid "Default"
@@ -95,36 +97,36 @@ msgstr "Permulaan"
 
 #: ../src/Plug.vala:94
 msgid "Default Apps"
-msgstr ""
+msgstr "Applikasi-applikasi lalai"
 
 #: ../src/Plug.vala:95
 msgid "Default Application"
-msgstr ""
+msgstr "Aplikasi Lalai"
 
 #: ../src/Plug.vala:96
 msgid "Default Web Browser"
-msgstr ""
+msgstr "Pelayar Web lalai"
 
 #: ../src/Plug.vala:97
 msgid "Default Music Player"
-msgstr ""
+msgstr "Pemain Musik lalai"
 
 #: ../src/Plug.vala:98
 msgid "Default Email Client"
-msgstr ""
+msgstr "Klient Emel lalai"
 
 #: ../src/Plug.vala:99
 msgid "Default Text Editor"
-msgstr ""
+msgstr "Penyunting Teks lalai"
 
 #: ../src/Plug.vala:100
 msgid "Default File Browser"
-msgstr ""
+msgstr "Pelayar Fail lalai"
 
 #: ../src/Plug.vala:101
 msgid "Default Video Player"
-msgstr ""
+msgstr "Pemain Rakaman lalai"
 
 #: ../src/Plug.vala:102
 msgid "Default Calendar"
-msgstr ""
+msgstr "Kalendar Lalai"
