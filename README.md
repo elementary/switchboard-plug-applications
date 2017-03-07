@@ -1,4 +1,4 @@
-# switchboard-plug-applications
+# Switchboard Applications Plug
 
 ## Building, Testing, and Installation
 
