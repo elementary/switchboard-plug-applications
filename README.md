@@ -1,0 +1,1 @@
+# switchboard-plug-applications
