@@ -32,7 +32,6 @@ public class Startup.Widgets.Scrolled : Gtk.Grid {
     public List list { get; private set; }
     public AppChooser app_chooser;
 
-    private Gtk.Stack stack;
     private Gtk.ScrolledWindow scrolled;
 
     public Scrolled () {
@@ -46,14 +45,8 @@ public class Startup.Widgets.Scrolled : Gtk.Grid {
         scrolled = new Gtk.ScrolledWindow (null, null);
         scrolled.add (list);
 
-        var empty_alert = new Granite.Widgets.AlertView (_("Launch Apps on Startup"), _("Add apps to the Startup list by clicking the icon in the toolbar below."), "system-restart");
-
-        stack = new Gtk.Stack ();
-        stack.add (empty_alert);
-        stack.add (scrolled);
-
         var frame = new Gtk.Frame (null);
-        frame.add (stack);
+        frame.add (scrolled);
 
         var toolbar = new Gtk.Toolbar ();
         toolbar.get_style_context ().add_class (Gtk.STYLE_CLASS_INLINE_TOOLBAR);
@@ -80,13 +73,7 @@ public class Startup.Widgets.Scrolled : Gtk.Grid {
         app_chooser.app_chosen.connect ((p) => app_added (p));
         app_chooser.custom_command_chosen.connect ((c) => app_added_from_command (c));
 
-        list.app_removed.connect ((p) => {
-            app_removed (p);
-            if (list.get_children ().length () <= 0) {
-                remove_button.sensitive = false;
-                stack.visible_child = empty_alert;
-            }
-        });
+        list.app_removed.connect ((p) => app_removed (p));
         list.app_added.connect ((p) => app_added (p));
         list.row_selected.connect ((row) => {remove_button.sensitive = true;});
         list.app_active_changed.connect ((p,a) => app_active_changed (p,a));
@@ -94,7 +81,6 @@ public class Startup.Widgets.Scrolled : Gtk.Grid {
 
     public void add_app (Entity.AppInfo app_info) {
         list.add_app (app_info);
-        stack.visible_child = scrolled;
     }
 
     public void remove_app_from_path (string path) {
