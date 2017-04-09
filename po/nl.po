@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-11-25 04:34-0600\n"
-"PO-Revision-Date: 2017-04-09 17:08+0000\n"
+"PO-Revision-Date: 2017-04-09 17:11+0000\n"
 "Last-Translator: Dieter Debast <dieter_debast@hotmail.com>\n"
 "Language-Team: Dutch <http://weblate.elementary.io/projects/desktop"
 "/switchboard-plug-applications/nl/>\n"
@@ -76,11 +76,11 @@ msgstr ""
 
 #: ../src/Startup/Widgets/Scrolled.vala:63
 msgid "Add Startup App…"
-msgstr "Voeg Een Opstarttoepassing Toe…"
+msgstr "Voeg een opstarttoepassing toe…"
 
 #: ../src/Startup/Widgets/Scrolled.vala:67
 msgid "Remove Selected Startup App"
-msgstr "Verwijder De Geselecteerde Opstarttoepassing"
+msgstr "Verwijder de geselecteerde opstarttoepassing"
 
 #: ../src/Plug.vala:36
 msgid "Applications"
@@ -88,8 +88,7 @@ msgstr "Toepassingen"
 
 #: ../src/Plug.vala:37
 msgid "Manage default and startup applications"
-msgstr ""
-"Beheerd standaard applicaties en applicaties die automatisch opstarten"
+msgstr "Beheer standaardapplicaties en applicaties die automatisch opstarten"
 
 #: ../src/Plug.vala:52
 msgid "Default"
@@ -101,36 +100,36 @@ msgstr "Opstarten"
 
 #: ../src/Plug.vala:94
 msgid "Default Apps"
-msgstr "Standaard Applicaties"
+msgstr "Standaardapplicaties"
 
 #: ../src/Plug.vala:95
 msgid "Default Application"
-msgstr "Standaard Applicatie"
+msgstr "Standaardapplicatie"
 
 #: ../src/Plug.vala:96
 msgid "Default Web Browser"
-msgstr "Standaard Web Browser"
+msgstr "Standaard web browser"
 
 #: ../src/Plug.vala:97
 msgid "Default Music Player"
-msgstr "Standaard Muziekspeler"
+msgstr "Standaard muziekspeler"
 
 #: ../src/Plug.vala:98
 msgid "Default Email Client"
-msgstr "Standaard Email Toepassing"
+msgstr "Standaard e-mailclient"
 
 #: ../src/Plug.vala:99
 msgid "Default Text Editor"
-msgstr "Standaard Tekstverwerker"
+msgstr "Standaard tekstverwerker"
 
 #: ../src/Plug.vala:100
 msgid "Default File Browser"
-msgstr "Standaard Bestandsverkenner"
+msgstr "Standaard bestandsverkenner"
 
 #: ../src/Plug.vala:101
 msgid "Default Video Player"
-msgstr "Standaard Videospeler"
+msgstr "Standaard videospeler"
 
 #: ../src/Plug.vala:102
 msgid "Default Calendar"
-msgstr "Standaard Agenda"
+msgstr "Standaard agenda"
