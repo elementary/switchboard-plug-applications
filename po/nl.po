@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-11-25 04:34-0600\n"
-"PO-Revision-Date: 2017-04-08 11:17+0000\n"
-"Last-Translator: Jonathan Moerman <jonathanmoerman@gmail.com>\n"
+"PO-Revision-Date: 2017-04-09 17:08+0000\n"
+"Last-Translator: Dieter Debast <dieter_debast@hotmail.com>\n"
 "Language-Team: Dutch <http://weblate.elementary.io/projects/desktop"
 "/switchboard-plug-applications/nl/>\n"
 "Language: nl\n"
@@ -21,7 +21,7 @@ msgstr "Webbrowser:"
 
 #: ../src/Defaults/DefaultPlug.vala:91
 msgid "Email Client:"
-msgstr "E-mail Toepassing:"
+msgstr "E-mailclient:"
 
 #: ../src/Defaults/DefaultPlug.vala:95
 msgid "Calendar:"
@@ -41,11 +41,11 @@ msgstr "Afbeeldingen:"
 
 #: ../src/Defaults/DefaultPlug.vala:113
 msgid "Text Editor:"
-msgstr "Tekst Verwerker:"
+msgstr "Tekstverwerker:"
 
 #: ../src/Defaults/DefaultPlug.vala:118
 msgid "File Browser:"
-msgstr "Bestandenbrowser:"
+msgstr "Bestandsverkenner:"
 
 #: ../src/Startup/Backend/KeyFile.vala:99
 msgid "Custom Command"
@@ -57,7 +57,7 @@ msgstr "Zoek toepassingen"
 
 #: ../src/Startup/Widgets/AppChooser.vala:55
 msgid "Type in a custom command"
-msgstr "Type een aangepast commando"
+msgstr "Voer een aangepast commando in"
 
 #: ../src/Startup/Widgets/AppRow.vala:48
 msgid "Launch %s on startup"
@@ -68,11 +68,10 @@ msgid "Launch Apps on Startup"
 msgstr "Start applicaties bij het opstarten"
 
 #: ../src/Startup/Widgets/Scrolled.vala:49
-#, fuzzy
 msgid ""
 "Add apps to the Startup list by clicking the icon in the toolbar below."
 msgstr ""
-"Voeg applicaties aan de Opstart lijst toe door op het icoon in de werkbalk "
+"Voeg applicaties aan de opstartlijst toe door op het icoon in de werkbalk "
 "hieronder te klikken."
 
 #: ../src/Startup/Widgets/Scrolled.vala:63
