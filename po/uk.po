@@ -77,7 +77,7 @@ msgstr ""
 
 #: ../src/Startup/Widgets/Scrolled.vala:63
 msgid "Add Startup App…"
-msgstr "Додати в автозапуск"
+msgstr "Додати додаток в автозапуск…"
 
 #: ../src/Startup/Widgets/Scrolled.vala:67
 msgid "Remove Selected Startup App"
