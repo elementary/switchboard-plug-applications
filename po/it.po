@@ -3,9 +3,9 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-11-25 04:34-0600\n"
-"PO-Revision-Date: 2017-04-09 11:26+0000\n"
+"PO-Revision-Date: 2017-05-04 20:29+0000\n"
 "Last-Translator: Fabio Zaramella <fabiozaramella@hotmail.it>\n"
-"Language-Team: Italian <http://weblate.elementary.io/projects/desktop"
+"Language-Team: Italian <https://l10n.elementary.io/projects/switchboard"
 "/switchboard-plug-applications/it/>\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
@@ -41,7 +41,7 @@ msgstr "Visualizzatore di immagini:"
 
 #: ../src/Defaults/DefaultPlug.vala:113
 msgid "Text Editor:"
-msgstr "Editor di testo:"
+msgstr "Editor di testi:"
 
 #: ../src/Defaults/DefaultPlug.vala:118
 msgid "File Browser:"
@@ -53,7 +53,7 @@ msgstr "Comando personalizzato"
 
 #: ../src/Startup/Widgets/AppChooser.vala:39
 msgid "Search Applications"
-msgstr "Cerca nelle applicazioni"
+msgstr "Cerca applicazioni"
 
 #: ../src/Startup/Widgets/AppChooser.vala:55
 msgid "Type in a custom command"
@@ -120,7 +120,7 @@ msgstr "Client di posta predefinito"
 
 #: ../src/Plug.vala:99
 msgid "Default Text Editor"
-msgstr "Editor di testo predefinito"
+msgstr "Editor di testi predefinito"
 
 #: ../src/Plug.vala:100
 msgid "Default File Browser"
