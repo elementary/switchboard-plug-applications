@@ -32,7 +32,7 @@ public class ApplicationsPlug : Switchboard.Plug {
 
     public ApplicationsPlug () {
         var settings = new Gee.TreeMap<string, string?> (null, null);
-        settings.set ("applications", "null");
+        settings.set ("applications", null);
         settings.set ("applications/defaults", DEFAULTS);
         settings.set ("applications/startup", STARTUP);
         Object (category: Category.PERSONAL,
