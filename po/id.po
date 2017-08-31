@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-11-25 04:34-0600\n"
-"PO-Revision-Date: 2017-08-23 11:24+0000\n"
-"Last-Translator: Aprianto Nursetiawan <noersetiawan@gmail.com>\n"
+"PO-Revision-Date: 2017-08-31 15:16+0700\n"
+"Last-Translator: Kukuh Syafaat <syafaatkukuh@gmail.com>\n"
 "Language-Team: Indonesian <https://weblate.elementary.io/projects/switchboard"
 "/switchboard-plug-applications/id/>\n"
 "Language: id\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 2.15\n"
+"X-Generator: Poedit 2.0.3\n"
 "X-Launchpad-Export-Date: 2016-11-26 05:52+0000\n"
 
 #: ../src/Defaults/DefaultPlug.vala:87
@@ -92,7 +92,7 @@ msgstr "Kelola aplikasi bawaan dan awal mula"
 
 #: ../src/Plug.vala:52
 msgid "Default"
-msgstr ""
+msgstr "Bawaan"
 
 #: ../src/Plug.vala:53 ../src/Plug.vala:93
 msgid "Startup"
