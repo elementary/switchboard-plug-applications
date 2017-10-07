@@ -57,13 +57,14 @@ public class ApplicationsPlug : Switchboard.Plug {
         stack.add_titled (startup_plug.get_widget (), STARTUP, _("Startup"));
 
         var stack_switcher = new Gtk.StackSwitcher ();
-        stack_switcher.set_halign (Gtk.Align.CENTER);
-        stack_switcher.set_stack (stack);
+        stack_switcher.halign = Gtk.Align.CENTER;
+        stack_switcher.homogeneous = true;
         stack_switcher.margin_top = 12;
+        stack_switcher.stack = stack;
 
         grid = new Gtk.Grid ();
         grid.margin_top = 1;
-        grid.row_spacing = 20;
+        grid.row_spacing = 24;
 
         grid.attach (stack_switcher, 0, 0, 1, 1);
         grid.attach (stack, 0, 1, 1, 1);
