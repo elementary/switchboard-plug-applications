@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-11-25 04:34-0600\n"
-"PO-Revision-Date: 2017-12-25 03:13+0000\n"
+"PO-Revision-Date: 2017-12-26 00:09+0000\n"
 "Last-Translator: Cheng-Chia Tseng <pswo10680@gmail.com>\n"
 "Language-Team: Chinese (Traditional) "
 "<https://weblate.elementary.io/projects/switchboard/switchboard-plug-"
@@ -66,7 +66,7 @@ msgstr "初始啟動時啟動 %s"
 
 #: ../src/Startup/Widgets/Scrolled.vala:49
 msgid "Launch Apps on Startup"
-msgstr "初始啟動時啟動 App"
+msgstr "初始啟動時啟動程式"
 
 #: ../src/Startup/Widgets/Scrolled.vala:49
 msgid ""
