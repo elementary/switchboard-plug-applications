@@ -24,40 +24,29 @@
  */
 class Startup.Backend.DesktopFileEnumerator : GLib.Object {
 
-    string dir;
+    string[] dirs;
 
-    public DesktopFileEnumerator (string dir) {
-        this.dir = dir;
+    public DesktopFileEnumerator (string[] dirs) {
+        this.dirs = dirs;
     }
 
     public string[] get_desktop_files () {
-        try {
-            return try_getting_desktop_files ();
-        } catch (Error e) {
-            warning (e.message);
-        }
-
-        return {};
-    }
-    
-    string[] try_getting_desktop_files () throws Error {
         string[] result = {};
 
-        if (!directory_exists ())
-            return result;
-
-        foreach (var name in enumerate_children ())
-            if (Utils.is_desktop_file (name))
-                result += create_path_from_name (name);
+        foreach (var dir in dirs) {
+            try {
+                foreach (var name in enumerate_children (dir))
+                    if (Utils.is_desktop_file (name))
+                        result += Path.build_filename (dir, name);
+            } catch (Error e) {
+                warning (@"Error inside $dir: $(e.message)");
+            }
+        }
 
         return result;
     }
 
-    bool directory_exists () throws Error {
-        return FileUtils.test (dir, FileTest.EXISTS);
-    }
-
-    string[] enumerate_children () throws Error {
+    string[] enumerate_children (string dir) throws Error {
         string[] result = {};
         FileInfo file_info;
         var enumerator = File.new_for_path (dir).enumerate_children (FileAttribute.STANDARD_NAME, 0);
@@ -66,7 +55,4 @@ class Startup.Backend.DesktopFileEnumerator : GLib.Object {
         return result;
     }
 
-    string create_path_from_name (string name) {
-        return GLib.Path.build_filename (dir, name);
-    }
 }

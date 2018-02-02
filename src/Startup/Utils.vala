@@ -23,27 +23,34 @@ using Startup;
 namespace Startup.Utils {
 
     const string AUTOSTART_DIR = "autostart";
+    const string APPLICATION_DIRS = "applications";
 
     string[] get_application_files () {
-        var app_dir = Utils.get_application_dir ();
-        var enumerator = new Backend.DesktopFileEnumerator (app_dir);
+        var app_dirs = Utils.get_application_dirs ();
+        var enumerator = new Backend.DesktopFileEnumerator (app_dirs);
         return enumerator.get_desktop_files ();
     }
 
     string[] get_auto_start_files () {
         var startup_dir = Utils.get_user_startup_dir ();
-        var enumerator = new Backend.DesktopFileEnumerator (startup_dir);
+        var enumerator = new Backend.DesktopFileEnumerator ({ startup_dir });
         return enumerator.get_desktop_files ();
     }
-    
-    string get_application_dir () {
-        var app_dir = "/usr/share/applications/";
-        
-        if (FileUtils.test (app_dir, FileTest.EXISTS))
-            return app_dir;
+
+    string[] get_application_dirs () {
+        string[] result = {};
+
+        var data_dirs = Environment.get_system_data_dirs ();
+        foreach (var data_dir in data_dirs) {
+            var app_dir = Path.build_filename (data_dir, APPLICATION_DIRS);
+            if (FileUtils.test (app_dir, FileTest.EXISTS))
+                result += app_dir;
+        }
+
+        if (result.length == 0)
+            warning ("No application directories found");
             
-        warning (@"Application directory '$app_dir' does not exist");
-        return "";
+        return result;
     }
 
     string get_user_startup_dir () {
