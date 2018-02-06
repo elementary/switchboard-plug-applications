@@ -1,5 +1,5 @@
 /*
-* Copyright (c) 2013-2017 elementary LLC. (http://launchpad.net/switchboard-plug-applications)
+* Copyright (c) 2013-2018 elementary LLC. (http://launchpad.net/switchboard-plug-applications)
 *
 * This program is free software; you can redistribute it and/or
 * modify it under the terms of the GNU General Public
@@ -19,7 +19,6 @@
 * Authored by: Julien Spautz <spautz.julien@gmail.com>
 */
 
-using Startup;
 namespace Startup.Utils {
 
     const string AUTOSTART_DIR = "autostart";
@@ -43,12 +42,14 @@ namespace Startup.Utils {
         var data_dirs = Environment.get_system_data_dirs ();
         foreach (var data_dir in data_dirs) {
             var app_dir = Path.build_filename (data_dir, APPLICATION_DIRS);
-            if (FileUtils.test (app_dir, FileTest.EXISTS))
+            if (FileUtils.test (app_dir, FileTest.EXISTS)) {
                 result += app_dir;
+            }
         }
 
-        if (result.length == 0)
+        if (result.length == 0) {
             warning ("No application directories found");
+        }
             
         return result;
     }
@@ -60,8 +61,11 @@ namespace Startup.Utils {
         if (FileUtils.test (startup_dir, FileTest.EXISTS) == false) {
             var file = File.new_for_path (startup_dir);
             
-            try { file.make_directory_with_parents (); }
-            catch (Error e) { warning (e.message); }
+            try {
+                file.make_directory_with_parents ();
+            } catch (Error e) {
+                warning (e.message);
+            }
         }
 
         return startup_dir;
