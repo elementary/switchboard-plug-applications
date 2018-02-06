@@ -1,5 +1,5 @@
 /*
-* Copyright (c) 2013-2017 elementary LLC. (http://launchpad.net/switchboard-plug-applications)
+* Copyright (c) 2013-2018 elementary LLC. (https://elementary.io)
 *
 * This program is free software; you can redistribute it and/or
 * modify it under the terms of the GNU General Public
@@ -35,9 +35,11 @@ class Startup.Backend.DesktopFileEnumerator : GLib.Object {
 
         foreach (var dir in dirs) {
             try {
-                foreach (var name in enumerate_children (dir))
-                    if (Utils.is_desktop_file (name))
+                foreach (var name in enumerate_children (dir)) {
+                    if (Utils.is_desktop_file (name)) {
                         result += Path.build_filename (dir, name);
+                    }
+                }
             } catch (Error e) {
                 warning (@"Error inside $dir: $(e.message)");
             }
