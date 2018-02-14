@@ -3,25 +3,25 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-11-25 04:34-0600\n"
-"PO-Revision-Date: 2017-04-06 12:24+0000\n"
-"Last-Translator: Ryo Nakano <nscnskichiro0911@gmail.com>\n"
-"Language-Team: Japanese <http://weblate.elementary.io/projects/desktop"
+"PO-Revision-Date: 2018-02-18 11:09+0000\n"
+"Last-Translator: Ryo Nakano <ryonakaknock@gmail.com>\n"
+"Language-Team: Japanese <https://weblate.elementary.io/projects/switchboard"
 "/switchboard-plug-applications/ja/>\n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 2.13-dev\n"
+"X-Generator: Weblate 2.18\n"
 "X-Launchpad-Export-Date: 2017-02-12 06:23+0000\n"
 
 #: ../src/Defaults/DefaultPlug.vala:87
 msgid "Web Browser:"
-msgstr "Web ブラウザ:"
+msgstr "Web ブラウザー:"
 
 #: ../src/Defaults/DefaultPlug.vala:91
 msgid "Email Client:"
-msgstr "メールソフト:"
+msgstr "メールクライアント:"
 
 #: ../src/Defaults/DefaultPlug.vala:95
 msgid "Calendar:"
@@ -45,7 +45,7 @@ msgstr "テキストエディター:"
 
 #: ../src/Defaults/DefaultPlug.vala:118
 msgid "File Browser:"
-msgstr "ファイルブラウザ:"
+msgstr "ファイルブラウザー:"
 
 #: ../src/Startup/Backend/KeyFile.vala:99
 msgid "Custom Command"
@@ -106,7 +106,7 @@ msgstr "デフォルトのアプリケーション"
 
 #: ../src/Plug.vala:96
 msgid "Default Web Browser"
-msgstr "デフォルトの Web ブラウザ"
+msgstr "デフォルトの Web ブラウザー"
 
 #: ../src/Plug.vala:97
 msgid "Default Music Player"
@@ -122,7 +122,7 @@ msgstr "デフォルトのテキストエディター"
 
 #: ../src/Plug.vala:100
 msgid "Default File Browser"
-msgstr "デフォルトのファイルブラウザ"
+msgstr "デフォルトのファイルブラウザー"
 
 #: ../src/Plug.vala:101
 msgid "Default Video Player"
