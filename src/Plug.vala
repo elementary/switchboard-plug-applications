@@ -1,5 +1,5 @@
 /*
-* Copyright (c) 2014-2017 elementary LLC. (http://launchpad.net/switchboard-plug-applications)
+* Copyright (c) 2014-2018 elementary LLC. (http://launchpad.net/switchboard-plug-applications)
 *
 * This program is free software; you can redistribute it and/or
 * modify it under the terms of the GNU General Public
@@ -24,25 +24,21 @@ public class ApplicationsPlug : Switchboard.Plug {
     private const string DEFAULTS = "defaults";
     private const string STARTUP = "startup"; 
 
-    private Defaults.Plug defaults_plug;
-    private Startup.Plug startup_plug;
-
     private Gtk.Grid grid;
     private Gtk.Stack stack;
 
     public ApplicationsPlug () {
         var settings = new Gee.TreeMap<string, string?> (null, null);
-        settings.set ("applications", null);
-        settings.set ("applications/defaults", DEFAULTS);
-        settings.set ("applications/startup", STARTUP);
+        settings["applications"] = null;
+        settings["applications/defaults"] = DEFAULTS;
+        settings["applications/startup"] = STARTUP;
+
         Object (category: Category.PERSONAL,
                 code_name: "personal-pantheon-applications",
                 display_name: _("Applications"),
                 description: _("Manage default and startup applications"),
                 icon: "preferences-desktop-applications",
                 supported_settings: settings);
-        defaults_plug = new Defaults.Plug ();
-        startup_plug = new Startup.Plug ();
     }
 
     public override Gtk.Widget get_widget () {
@@ -53,7 +49,10 @@ public class ApplicationsPlug : Switchboard.Plug {
         stack = new Gtk.Stack ();
         stack.expand = true;
 
-        stack.add_titled (defaults_plug.get_widget (), DEFAULTS, _("Default"));
+        var defaults_page = new DefaultsPage ();
+        var startup_plug = new Startup.Plug ();
+
+        stack.add_titled (defaults_page, DEFAULTS, _("Default"));
         stack.add_titled (startup_plug.get_widget (), STARTUP, _("Startup"));
 
         var stack_switcher = new Gtk.StackSwitcher ();
@@ -85,10 +84,10 @@ public class ApplicationsPlug : Switchboard.Plug {
         switch (location) {
             case STARTUP:
             case DEFAULTS:
-                stack.set_visible_child_name (location);
+                stack.visible_child_name = location;
                 break;
             default:
-                stack.set_visible_child_name (DEFAULTS);
+                stack.visible_child_name = DEFAULTS;
                 break;
         }
     }

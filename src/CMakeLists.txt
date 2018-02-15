@@ -20,7 +20,7 @@ include (ValaPrecompile)
 vala_precompile (VALA_C ${PLUGNAME}
     Plug.vala
 
-    Defaults/DefaultPlug.vala
+    Defaults/DefaultsPage.vala
     Defaults/Utils.vala
 
     Startup/Startup.vala
