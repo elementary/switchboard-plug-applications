@@ -177,11 +177,6 @@ public class DefaultsPage : Gtk.Grid {
         }));
     }
 
-    // 'search' returns results like ("Keyboard → Behavior → Duration", "keyboard<sep>behavior")
-    public  async Gee.TreeMap<string, string> search (string search) {
-        return new Gee.TreeMap<string, string> (null, null);
-    }
-
     private static void run_in_thread (owned ThreadFunc<void*> func) {
         try {
             new Thread<void*>.try (null, func);
@@ -190,7 +185,7 @@ public class DefaultsPage : Gtk.Grid {
         }
     }
 
-    public void change_default (GLib.AppInfo old_app, GLib.AppInfo new_app, string item_type) {
+    private void change_default (GLib.AppInfo old_app, GLib.AppInfo new_app, string item_type) {
         Defaults.map_types_to_app (Defaults.get_types_for_app (item_type), new_app);
 
         /*  the code below implements ->
