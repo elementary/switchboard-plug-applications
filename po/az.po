@@ -3,14 +3,18 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-11-25 04:34-0600\n"
-"PO-Revision-Date: 2016-03-19 15:03+0000\n"
-"Last-Translator: Fuad <fuad.mammadovf@mail.ru>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2018-02-15 15:34+0000\n"
+"Last-Translator: Вагиф Кязым <vaqif134@gmail.com>\n"
+"Language-Team: Azerbaijani "
+"<https://weblate.elementary.io/projects/switchboard/switchboard-plug-"
+"applications/az/>\n"
+"Language: az\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2.18\n"
 "X-Launchpad-Export-Date: 2016-11-26 05:52+0000\n"
-"X-Generator: Launchpad (build 18282)\n"
 
 #: ../src/Defaults/DefaultPlug.vala:87
 msgid "Web Browser:"
@@ -58,20 +62,22 @@ msgstr "Xüsusi bir komanda yazın"
 
 #: ../src/Startup/Widgets/AppRow.vala:48
 msgid "Launch %s on startup"
-msgstr ""
+msgstr "Qoşulandan sonra %s işə sal"
 
 #: ../src/Startup/Widgets/Scrolled.vala:49
 msgid "Launch Apps on Startup"
-msgstr ""
+msgstr "Qoşularkən tətbiqetmələrin işə salınması"
 
 #: ../src/Startup/Widgets/Scrolled.vala:49
 msgid ""
 "Add apps to the Startup list by clicking the icon in the toolbar below."
 msgstr ""
+"Aşağıdakı alətlər panelindəki nişana basmaqla tətbiqetmələri avtomatik açma "
+"siyahısına əlavə edin."
 
 #: ../src/Startup/Widgets/Scrolled.vala:63
 msgid "Add Startup App…"
-msgstr "Başlanğıc proqramı"
+msgstr "Başlanğıc proqramı əlavə et…"
 
 #: ../src/Startup/Widgets/Scrolled.vala:67
 msgid "Remove Selected Startup App"
@@ -95,36 +101,36 @@ msgstr "Başlanğıc"
 
 #: ../src/Plug.vala:94
 msgid "Default Apps"
-msgstr ""
+msgstr "Əzəli tətbiqetmələr"
 
 #: ../src/Plug.vala:95
 msgid "Default Application"
-msgstr ""
+msgstr "Əzəli tətbiqetmə"
 
 #: ../src/Plug.vala:96
 msgid "Default Web Browser"
-msgstr ""
+msgstr "Əzəli veb-bələdçi"
 
 #: ../src/Plug.vala:97
 msgid "Default Music Player"
-msgstr ""
+msgstr "Əzəli musiqi oxuducusu"
 
 #: ../src/Plug.vala:98
 msgid "Default Email Client"
-msgstr ""
+msgstr "Əzəli email tətbiqetməsi"
 
 #: ../src/Plug.vala:99
 msgid "Default Text Editor"
-msgstr ""
+msgstr "Əzəli mətn redaktoru"
 
 #: ../src/Plug.vala:100
 msgid "Default File Browser"
-msgstr ""
+msgstr "Əzəli fayl meneceri"
 
 #: ../src/Plug.vala:101
 msgid "Default Video Player"
-msgstr ""
+msgstr "Əzəli video oxuducusu"
 
 #: ../src/Plug.vala:102
 msgid "Default Calendar"
-msgstr ""
+msgstr "Əzəli təqvim"
