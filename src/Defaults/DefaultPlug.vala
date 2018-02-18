@@ -1,5 +1,5 @@
 /*
-* Copyright (c) 2011-2017 elementary LLC. (http://launchpad.net/switchboard-plug-applications)
+* Copyright (c) 2011-2018 elementary LLC. (http://launchpad.net/switchboard-plug-applications)
 *
 * This program is free software; you can redistribute it and/or
 * modify it under the terms of the GNU General Public
@@ -20,31 +20,34 @@
 *              Chris Triantafillis <christriant1995@gmail.com>
 */
 
-class Defaults.LLabel : Gtk.Label {
-    public LLabel (string label) {
-        this.set_halign (Gtk.Align.START);
-        this.label = label;
-    }
-    public LLabel.indent (string label) {
-        this (label);
-        this.margin_left = 10;
-    }
-    public LLabel.markup (string label) {
-        this (label);
-        this.use_markup = true;
-    }
-    public LLabel.right (string label) {
-        this.set_halign (Gtk.Align.END);
-        this.label = label;
-    }
-    public LLabel.right_with_markup (string label) {
-        this.set_halign (Gtk.Align.END);
-        this.use_markup = true;
-        this.label = label;
-    }
-}
+public class DefaultsPage : Gtk.Grid {
+    private class LLabel : Gtk.Label {
+        public LLabel (string label) {
+            this.halign = Gtk.Align.START;
+            this.label = label;
+        }
+        
+        public LLabel.indent (string label) {
+            this (label);
+            this.margin_start = 10;
+        }
 
-public class Defaults.Plug {
+        public LLabel.markup (string label) {
+            this (label);
+            this.use_markup = true;
+        }
+
+        public LLabel.right (string label) {
+            this.halign = Gtk.Align.END;
+            this.label = label;
+        }
+
+        public LLabel.right_with_markup (string label) {
+            this.halign = Gtk.Align.END;
+            this.use_markup = true;
+            this.label = label;
+        }
+    }    
 
     Gtk.AppChooserButton wb_chooser;
     Gtk.AppChooserButton ec_chooser;
@@ -64,138 +67,126 @@ public class Defaults.Plug {
     GLib.AppInfo iv_old;
     GLib.AppInfo te_old;
     GLib.AppInfo fb_old;
-    Gtk.Grid grid;
 
-    public Plug () {
+    construct {
+        halign = Gtk.Align.CENTER;
+        set_column_homogeneous (false);
+        set_row_spacing (6);
+        set_column_spacing (10);
+        
+        //space between the two columns
+        const int margin_columns = 40;
+        margin_start = margin_columns;
+        margin_end = 30;
+        margin_top = 64;
 
+        var wb_label = new LLabel.right (_("Web Browser:"));
+        wb_chooser = new Gtk.AppChooserButton ("x-scheme-handler/http");
+        wb_chooser.show_default_item = true;
+
+        var ec_label = new LLabel.right (_("Email Client:"));
+        ec_chooser = new Gtk.AppChooserButton ("x-scheme-handler/mailto");
+        ec_chooser.show_default_item = true;
+
+        var c_label = new LLabel.right (_("Calendar:"));
+        c_chooser = new Gtk.AppChooserButton ("text/calendar");
+        c_chooser.show_default_item = true;
+
+        var vp_label = new LLabel.right (_("Video Player:"));
+        vp_chooser = new Gtk.AppChooserButton ("video/x-ogm+ogg");
+        vp_chooser.show_default_item = true;
+
+        var mp_label = new LLabel.right (_("Music Player:"));
+        mp_chooser = new Gtk.AppChooserButton ("audio/x-vorbis+ogg");
+        mp_chooser.show_default_item = true;
+        mp_label.margin_start = margin_columns;
+
+        var iv_label = new LLabel.right (_("Image Viewer:"));
+        iv_chooser = new Gtk.AppChooserButton ("image/jpeg");
+        iv_chooser.show_default_item = true;
+        iv_label.margin_start = margin_columns;
+
+        var te_label = new LLabel.right (_("Text Editor:"));
+        te_chooser = new Gtk.AppChooserButton ("text/plain");
+        te_chooser.show_default_item = true;
+        te_label.margin_start = margin_columns;
+
+        var fb_label = new LLabel.right (_("File Browser:"));
+        fb_chooser = new Gtk.AppChooserButton ("inode/directory");
+        fb_chooser.show_default_item = true;
+        fb_label.margin_start = margin_columns;
+
+        attach (wb_label, 0, 0, 1, 1);
+        attach (wb_chooser, 1, 0, 1, 1);
+        attach (ec_label, 0, 1, 1, 1);
+        attach (ec_chooser, 1, 1, 1, 1);
+        attach (c_label, 0, 2, 1, 1);
+        attach (c_chooser, 1, 2, 1, 1);
+        attach (vp_label, 0, 3, 1, 1);
+        attach (vp_chooser, 1, 3, 1, 1);
+        attach (mp_label, 2, 0, 1, 1);
+        attach (mp_chooser, 3, 0, 1, 1);
+        attach (iv_label, 2, 1, 1, 1);
+        attach (iv_chooser, 3, 1, 1, 1);
+        attach (te_label, 2, 2, 1, 1);
+        attach (te_chooser, 3, 2, 1, 1);
+        attach (fb_label, 2, 3, 1, 1);
+        attach (fb_chooser, 3, 3, 1, 1);
+        show_all ();
+
+        cache_apps ();
+
+        wb_chooser.changed.connect ( () => run_in_thread ( () => {
+            change_default (wb_old, wb_chooser.get_app_info (), "web_browser");
+            return null;
+        }));
+
+        ec_chooser.changed.connect ( () => run_in_thread ( () => {
+            change_default (ec_old, ec_chooser.get_app_info (), "email_client");
+            return null;
+        }));
+
+        c_chooser.changed.connect ( () => run_in_thread ( () => {
+            change_default (c_old, c_chooser.get_app_info (), "calendar");
+            return null;
+        }));
+
+        vp_chooser.changed.connect ( () => run_in_thread ( () => {
+            change_default (vp_old, vp_chooser.get_app_info (), "video_player");
+            return null;
+        }));
+
+        mp_chooser.changed.connect ( () => run_in_thread ( () => {
+            change_default (mp_old, mp_chooser.get_app_info (), "music_player");
+            return null;
+        }));
+
+        iv_chooser.changed.connect ( () => run_in_thread ( () => {
+            change_default (iv_old, iv_chooser.get_app_info (), "image_viewer");
+            return null;
+        }));
+
+        te_chooser.changed.connect ( () => run_in_thread ( () => {
+            change_default (te_old, te_chooser.get_app_info (), "text_editor");
+            return null;
+        }));
+
+        fb_chooser.changed.connect ( () => run_in_thread ( () => {
+            change_default (fb_old, fb_chooser.get_app_info (), "file_browser");
+            return null;
+        }));
     }
 
-    public Gtk.Widget get_widget () {
-        if (grid == null) {
-            grid = new Gtk.Grid ();
-            grid.halign = Gtk.Align.CENTER;
-            grid.set_column_homogeneous (false);
-            grid.set_row_spacing (6);
-            grid.set_column_spacing (10);
-            
-            //space between the two columns
-            int margin_columns = 40;
-            grid.margin_left = margin_columns;
-            grid.margin_right = 30;
-            grid.margin_top = 64;
-
-            var wb_label = new LLabel.right (_("Web Browser:"));
-            wb_chooser = new Gtk.AppChooserButton ("x-scheme-handler/http");
-            wb_chooser.show_default_item = true;
-
-            var ec_label = new LLabel.right (_("Email Client:"));
-            ec_chooser = new Gtk.AppChooserButton ("x-scheme-handler/mailto");
-            ec_chooser.show_default_item = true;
-
-            var c_label = new LLabel.right (_("Calendar:"));
-            c_chooser = new Gtk.AppChooserButton ("text/calendar");
-            c_chooser.show_default_item = true;
-
-            var vp_label = new LLabel.right (_("Video Player:"));
-            vp_chooser = new Gtk.AppChooserButton ("video/x-ogm+ogg");
-            vp_chooser.show_default_item = true;
-
-            var mp_label = new LLabel.right (_("Music Player:"));
-            mp_chooser = new Gtk.AppChooserButton ("audio/x-vorbis+ogg");
-            mp_chooser.show_default_item = true;
-            mp_label.margin_left = margin_columns;
-
-            var iv_label = new LLabel.right (_("Image Viewer:"));
-            iv_chooser = new Gtk.AppChooserButton ("image/jpeg");
-            iv_chooser.show_default_item = true;
-            iv_label.margin_left = margin_columns;
-
-            var te_label = new LLabel.right (_("Text Editor:"));
-            te_chooser = new Gtk.AppChooserButton ("text/plain");
-            te_chooser.show_default_item = true;
-            te_label.margin_left = margin_columns;
-
-            var fb_label = new LLabel.right (_("File Browser:"));
-            fb_chooser = new Gtk.AppChooserButton ("inode/directory");
-            fb_chooser.show_default_item = true;
-            fb_label.margin_left = margin_columns;
-
-            grid.attach (wb_label, 0, 0, 1, 1);
-            grid.attach (wb_chooser, 1, 0, 1, 1);
-            grid.attach (ec_label, 0, 1, 1, 1);
-            grid.attach (ec_chooser, 1, 1, 1, 1);
-            grid.attach (c_label, 0, 2, 1, 1);
-            grid.attach (c_chooser, 1, 2, 1, 1);
-            grid.attach (vp_label, 0, 3, 1, 1);
-            grid.attach (vp_chooser, 1, 3, 1, 1);
-            grid.attach (mp_label, 2, 0, 1, 1);
-            grid.attach (mp_chooser, 3, 0, 1, 1);
-            grid.attach (iv_label, 2, 1, 1, 1);
-            grid.attach (iv_chooser, 3, 1, 1, 1);
-            grid.attach (te_label, 2, 2, 1, 1);
-            grid.attach (te_chooser, 3, 2, 1, 1);
-            grid.attach (fb_label, 2, 3, 1, 1);
-            grid.attach (fb_chooser, 3, 3, 1, 1);
-
-            cache_apps ();
-
-            wb_chooser.changed.connect ( () => run_in_thread ( () => {
-                change_default(wb_old, wb_chooser.get_app_info (), "web_browser");
-                return null;
-            }));
-
-            ec_chooser.changed.connect ( () => run_in_thread ( () => {
-                change_default(ec_old, ec_chooser.get_app_info (), "email_client");
-                return null;
-            }));
-
-            c_chooser.changed.connect ( () => run_in_thread ( () => {
-                change_default(c_old, c_chooser.get_app_info (), "calendar");
-                return null;
-            }));
-
-            vp_chooser.changed.connect ( () => run_in_thread ( () => {
-                change_default(vp_old, vp_chooser.get_app_info (), "video_player");
-                return null;
-            }));
-
-            mp_chooser.changed.connect ( () => run_in_thread ( () => {
-                change_default(mp_old, mp_chooser.get_app_info (), "music_player");
-                return null;
-            }));
-
-            iv_chooser.changed.connect ( () => run_in_thread ( () => {
-                change_default (iv_old, iv_chooser.get_app_info (), "image_viewer");
-                return null;
-            }));
-            te_chooser.changed.connect ( () => run_in_thread ( () => {
-                change_default(te_old, te_chooser.get_app_info (), "text_editor");
-                return null;
-            }));
-            fb_chooser.changed.connect ( () => run_in_thread ( () => {
-                change_default(fb_old, fb_chooser.get_app_info (), "file_browser");
-                return null;
-            }));
-
-        }
-        grid.show_all ();
-        return grid;
-    }
-
-    // 'search' returns results like ("Keyboard → Behavior → Duration", "keyboard<sep>behavior")
-    public  async Gee.TreeMap<string, string> search (string search) {
-        return new Gee.TreeMap<string, string> (null, null);
-    }
-
-    private void run_in_thread (owned ThreadFunc<void*> func) {
+    private static void run_in_thread (owned ThreadFunc<void*> func) {
         try {
             new Thread<void*>.try (null, func);
         } catch (Error e) {
             warning ("Could not create a new thread: %s", e.message);
         }
     }
-    public void change_default (GLib.AppInfo old_app, GLib.AppInfo new_app, string item_type) {
-        map_types_to_app (get_types_for_app (item_type), new_app);
+
+    private void change_default (GLib.AppInfo old_app, GLib.AppInfo new_app, string item_type) {
+        Defaults.map_types_to_app (Defaults.get_types_for_app (item_type), new_app);
 
         /*  the code below implements ->
             string[] old_types = old_app.get_supported_types ();
@@ -216,8 +207,8 @@ public class Defaults.Plug {
             warning ("An error occured %s".printf (e.message));
             oldapp_types = "";
         }
-        //end block
-        map_types_to_app (oldapp_types.split (","), new_app);
+        // end block
+        Defaults.map_types_to_app (oldapp_types.split (","), new_app);
 
         cache_apps ();
     }
