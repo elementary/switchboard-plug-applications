@@ -1,6 +1,14 @@
 # Switchboard Applications Plug
 
-## Building, Testing, and Installation
+## Building and Installation
+
+You'll need the following dependencies:
+
+* libswitchboard-2.0-dev
+* libgranite-dev
+* libgtk-3-dev
+* meson
+* valac
 
 It's recommended to create a clean build environment
 
