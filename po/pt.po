@@ -2,131 +2,132 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-11-25 04:34-0600\n"
+"POT-Creation-Date: 2018-02-20 14:33-0800\n"
 "PO-Revision-Date: 2016-12-31 00:26+0000\n"
 "Last-Translator: Pedro Monteiro <Unknown>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Launchpad-Export-Date: 2017-01-01 05:40+0000\n"
 "X-Generator: Launchpad (build 18298)\n"
 
-#: ../src/Defaults/DefaultPlug.vala:87
-msgid "Web Browser:"
-msgstr "Navegador Web:"
+#: src/Plug.vala:40
+msgid "Applications"
+msgstr "Aplicações"
 
-#: ../src/Defaults/DefaultPlug.vala:91
-msgid "Email Client:"
-msgstr "Correio Eletrónico:"
+#: src/Plug.vala:41
+msgid "Manage default and startup applications"
+msgstr "Gerir aplicações por defeito e de inicialização"
 
-#: ../src/Defaults/DefaultPlug.vala:95
-msgid "Calendar:"
-msgstr "Calendário:"
+#: src/Plug.vala:56
+msgid "Default"
+msgstr "Predefinições"
 
-#: ../src/Defaults/DefaultPlug.vala:99
-msgid "Video Player:"
-msgstr "Reprodutor de Vídeo:"
+#: src/Plug.vala:57 src/Plug.vala:98
+msgid "Startup"
+msgstr "Arranque"
 
-#: ../src/Defaults/DefaultPlug.vala:103
-msgid "Music Player:"
-msgstr "Reprodutor de Música:"
+#: src/Plug.vala:99
+msgid "Default Apps"
+msgstr "Aplicações Predefinidas"
 
-#: ../src/Defaults/DefaultPlug.vala:108
-msgid "Image Viewer:"
-msgstr "Visualizador de Imagens:"
+#: src/Plug.vala:100
+msgid "Default Application"
+msgstr "Aplicação Predefinida"
 
-#: ../src/Defaults/DefaultPlug.vala:113
-msgid "Text Editor:"
-msgstr "Editor de Texto:"
+#: src/Plug.vala:101
+msgid "Default Web Browser"
+msgstr "Navegador Web Predefinido"
 
-#: ../src/Defaults/DefaultPlug.vala:118
-msgid "File Browser:"
-msgstr "Explorador de Ficheiros:"
+#: src/Plug.vala:102
+msgid "Default Music Player"
+msgstr "Reprodutor de Músicas Predefinido"
 
-#: ../src/Startup/Backend/KeyFile.vala:99
+#: src/Plug.vala:103
+msgid "Default Email Client"
+msgstr "Cliente de Correio Eletrónico Predefinido"
+
+#: src/Plug.vala:104
+msgid "Default Text Editor"
+msgstr "Editor de Texto Predefinido"
+
+#: src/Plug.vala:105
+msgid "Default File Browser"
+msgstr "Explorador de Ficheiros Predefinido"
+
+#: src/Plug.vala:106
+msgid "Default Video Player"
+msgstr "Reprodutor de Vídeos Predefinido"
+
+#: src/Plug.vala:107
+msgid "Default Calendar"
+msgstr "Calendário Predefinido"
+
+#: src/Startup/Backend/KeyFile.vala:98
 msgid "Custom Command"
 msgstr "Comando Personalizado"
 
-#: ../src/Startup/Widgets/AppChooser.vala:39
-msgid "Search Applications"
-msgstr "Procurar Aplicações"
+#: src/Startup/Widgets/Scrolled.vala:56
+msgid "Add Startup App…"
+msgstr "Adicionar Aplicação ao Arranque..."
 
-#: ../src/Startup/Widgets/AppChooser.vala:55
-msgid "Type in a custom command"
-msgstr "Escreva o comando personalizado"
+#: src/Startup/Widgets/Scrolled.vala:60
+msgid "Remove Selected Startup App"
+msgstr "Remover a Aplicação Seleccionada do Arranque"
 
-#: ../src/Startup/Widgets/AppRow.vala:48
-msgid "Launch %s on startup"
-msgstr "Executar %s no arranque"
-
-#: ../src/Startup/Widgets/Scrolled.vala:49
+#: src/Startup/Widgets/List.vala:52
 msgid "Launch Apps on Startup"
 msgstr "Executar Apps no Arranque"
 
-#: ../src/Startup/Widgets/Scrolled.vala:49
-msgid ""
-"Add apps to the Startup list by clicking the icon in the toolbar below."
+#: src/Startup/Widgets/List.vala:52
+msgid "Add apps to the Startup list by clicking the icon in the toolbar below."
 msgstr ""
 "Adicione apps à lista de Arranque clicando no ícone na barra de ferramentas "
 "em baixo."
 
-#: ../src/Startup/Widgets/Scrolled.vala:63
-msgid "Add Startup App…"
-msgstr "Adicionar Aplicação ao Arranque..."
+#: src/Startup/Widgets/AppRow.vala:48
+#, c-format
+msgid "Launch %s on startup"
+msgstr "Executar %s no arranque"
 
-#: ../src/Startup/Widgets/Scrolled.vala:67
-msgid "Remove Selected Startup App"
-msgstr "Remover a Aplicação Seleccionada do Arranque"
+#: src/Startup/Widgets/AppChooser.vala:39
+msgid "Search Applications"
+msgstr "Procurar Aplicações"
 
-#: ../src/Plug.vala:36
-msgid "Applications"
-msgstr "Aplicações"
+#: src/Startup/Widgets/AppChooser.vala:55
+msgid "Type in a custom command"
+msgstr "Escreva o comando personalizado"
 
-#: ../src/Plug.vala:37
-msgid "Manage default and startup applications"
-msgstr "Gerir aplicações por defeito e de inicialização"
+#: src/Defaults/DefaultPlug.vala:87
+msgid "Web Browser:"
+msgstr "Navegador Web:"
 
-#: ../src/Plug.vala:52
-msgid "Default"
-msgstr "Predefinições"
+#: src/Defaults/DefaultPlug.vala:91
+msgid "Email Client:"
+msgstr "Correio Eletrónico:"
 
-#: ../src/Plug.vala:53 ../src/Plug.vala:93
-msgid "Startup"
-msgstr "Arranque"
+#: src/Defaults/DefaultPlug.vala:95
+msgid "Calendar:"
+msgstr "Calendário:"
 
-#: ../src/Plug.vala:94
-msgid "Default Apps"
-msgstr "Aplicações Predefinidas"
+#: src/Defaults/DefaultPlug.vala:99
+msgid "Video Player:"
+msgstr "Reprodutor de Vídeo:"
 
-#: ../src/Plug.vala:95
-msgid "Default Application"
-msgstr "Aplicação Predefinida"
+#: src/Defaults/DefaultPlug.vala:103
+msgid "Music Player:"
+msgstr "Reprodutor de Música:"
 
-#: ../src/Plug.vala:96
-msgid "Default Web Browser"
-msgstr "Navegador Web Predefinido"
+#: src/Defaults/DefaultPlug.vala:108
+msgid "Image Viewer:"
+msgstr "Visualizador de Imagens:"
 
-#: ../src/Plug.vala:97
-msgid "Default Music Player"
-msgstr "Reprodutor de Músicas Predefinido"
+#: src/Defaults/DefaultPlug.vala:113
+msgid "Text Editor:"
+msgstr "Editor de Texto:"
 
-#: ../src/Plug.vala:98
-msgid "Default Email Client"
-msgstr "Cliente de Correio Eletrónico Predefinido"
-
-#: ../src/Plug.vala:99
-msgid "Default Text Editor"
-msgstr "Editor de Texto Predefinido"
-
-#: ../src/Plug.vala:100
-msgid "Default File Browser"
-msgstr "Explorador de Ficheiros Predefinido"
-
-#: ../src/Plug.vala:101
-msgid "Default Video Player"
-msgstr "Reprodutor de Vídeos Predefinido"
-
-#: ../src/Plug.vala:102
-msgid "Default Calendar"
-msgstr "Calendário Predefinido"
+#: src/Defaults/DefaultPlug.vala:118
+msgid "File Browser:"
+msgstr "Explorador de Ficheiros:"

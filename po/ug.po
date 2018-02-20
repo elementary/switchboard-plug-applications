@@ -6,132 +6,133 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-applications\n"
-"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2016-11-25 04:34-0600\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-02-20 14:33-0800\n"
 "PO-Revision-Date: 2017-01-02 04:06+0000\n"
 "Last-Translator: ablimet <Unknown>\n"
 "Language-Team: Uyghur <ug@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Launchpad-Export-Date: 2017-01-03 06:15+0000\n"
 "X-Generator: Launchpad (build 18298)\n"
 
-#: ../src/Defaults/DefaultPlug.vala:87
-msgid "Web Browser:"
-msgstr "توركۆرگۈچ:"
+#: src/Plug.vala:40
+msgid "Applications"
+msgstr "ئەپلەر"
 
-#: ../src/Defaults/DefaultPlug.vala:91
-msgid "Email Client:"
-msgstr "ئېلخەت تېرمىنالى:"
+#: src/Plug.vala:41
+msgid "Manage default and startup applications"
+msgstr "سۈكۈتتىكى ۋە  كومپىيۇتىر بىلەن تەڭ قوزغىتىلىدىغان ئەپلەرنى باشقۇرۇش"
 
-#: ../src/Defaults/DefaultPlug.vala:95
-msgid "Calendar:"
-msgstr "كالېندار:"
+#: src/Plug.vala:56
+msgid "Default"
+msgstr "سۈكۈتتىكى"
 
-#: ../src/Defaults/DefaultPlug.vala:99
-msgid "Video Player:"
-msgstr "ۋىدېئو قويغۇچ:"
+#: src/Plug.vala:57 src/Plug.vala:98
+msgid "Startup"
+msgstr "قوزغىتىش"
 
-#: ../src/Defaults/DefaultPlug.vala:103
-msgid "Music Player:"
-msgstr "مۇزىكا قويغۇچ:"
+#: src/Plug.vala:99
+msgid "Default Apps"
+msgstr "سۈكۈتتىكى ئەپلەر"
 
-#: ../src/Defaults/DefaultPlug.vala:108
-msgid "Image Viewer:"
-msgstr "رەسىم كۆرگۈچ:"
+#: src/Plug.vala:100
+msgid "Default Application"
+msgstr "سۈكۈتتىكى ئەپ"
 
-#: ../src/Defaults/DefaultPlug.vala:113
-msgid "Text Editor:"
-msgstr "تېكست تەھرىرلىگۈچ:"
+#: src/Plug.vala:101
+msgid "Default Web Browser"
+msgstr "سۈكۈتتىكى توركۆرگۈچ"
 
-#: ../src/Defaults/DefaultPlug.vala:118
-msgid "File Browser:"
-msgstr "ھۆججەت كۆرگۈچ؛"
+#: src/Plug.vala:102
+msgid "Default Music Player"
+msgstr "سۈكۈتتىكى مۇزىكا قويغۇچ"
 
-#: ../src/Startup/Backend/KeyFile.vala:99
+#: src/Plug.vala:103
+msgid "Default Email Client"
+msgstr "سۈكۈتتىتى ئېلخەت تېرمىنالى"
+
+#: src/Plug.vala:104
+msgid "Default Text Editor"
+msgstr "سۈكۈتتىكى تېكست تەھرىرلىگۈچ"
+
+#: src/Plug.vala:105
+msgid "Default File Browser"
+msgstr "سۈكۈتتىكى ھۆججەت كۆرگۈچ"
+
+#: src/Plug.vala:106
+msgid "Default Video Player"
+msgstr "سۈكۈتتىكى ۋىدىئو قويغۇچ"
+
+#: src/Plug.vala:107
+msgid "Default Calendar"
+msgstr "سۈكۈتتىكى كالېندار"
+
+#: src/Startup/Backend/KeyFile.vala:98
 msgid "Custom Command"
 msgstr "ئۆزگىچىلەشتۈرۈلگەن بۇيرۇق"
 
-#: ../src/Startup/Widgets/AppChooser.vala:39
-msgid "Search Applications"
-msgstr "ئەپ ئىزدەش"
+#: src/Startup/Widgets/Scrolled.vala:56
+msgid "Add Startup App…"
+msgstr "كومپىيۇتىر بىلەن تەڭ قوزغىتىلىدىغان ئەپلەرنى قىتىش...."
 
-#: ../src/Startup/Widgets/AppChooser.vala:55
-msgid "Type in a custom command"
-msgstr "ئۆزگىچىلەشتۈرۈلگەن بۇيرۇق كىرگۈزۈش"
+#: src/Startup/Widgets/Scrolled.vala:60
+msgid "Remove Selected Startup App"
+msgstr "تاللانغان كومپىيۇتىر بىلەن تەڭ قوزغىتىلىدىغان ئەپلەرنى ئۆچۈرۈش"
 
-#: ../src/Startup/Widgets/AppRow.vala:48
-msgid "Launch %s on startup"
-msgstr "%s نى كومپىيۇتىر قوزغىتىلغاندا قوزغىتىش"
-
-#: ../src/Startup/Widgets/Scrolled.vala:49
+#: src/Startup/Widgets/List.vala:52
 msgid "Launch Apps on Startup"
 msgstr "ئەپلەرنى كومپىيۇتىر قوزغىتىلغاندا قوزغىتىش"
 
-#: ../src/Startup/Widgets/Scrolled.vala:49
-msgid ""
-"Add apps to the Startup list by clicking the icon in the toolbar below."
+#: src/Startup/Widgets/List.vala:52
+msgid "Add apps to the Startup list by clicking the icon in the toolbar below."
 msgstr ""
 "تۆۋەندىكى قورال ستونىدىكى سىنبەلگىنى چىكىش ئارقىلىق كومپىيۇتىر بىلەن تەڭ "
 "قوزغىتىش تىزىملىكىگە ئەپ قىتىش."
 
-#: ../src/Startup/Widgets/Scrolled.vala:63
-msgid "Add Startup App…"
-msgstr "كومپىيۇتىر بىلەن تەڭ قوزغىتىلىدىغان ئەپلەرنى قىتىش...."
+#: src/Startup/Widgets/AppRow.vala:48
+#, c-format
+msgid "Launch %s on startup"
+msgstr "%s نى كومپىيۇتىر قوزغىتىلغاندا قوزغىتىش"
 
-#: ../src/Startup/Widgets/Scrolled.vala:67
-msgid "Remove Selected Startup App"
-msgstr "تاللانغان كومپىيۇتىر بىلەن تەڭ قوزغىتىلىدىغان ئەپلەرنى ئۆچۈرۈش"
+#: src/Startup/Widgets/AppChooser.vala:39
+msgid "Search Applications"
+msgstr "ئەپ ئىزدەش"
 
-#: ../src/Plug.vala:36
-msgid "Applications"
-msgstr "ئەپلەر"
+#: src/Startup/Widgets/AppChooser.vala:55
+msgid "Type in a custom command"
+msgstr "ئۆزگىچىلەشتۈرۈلگەن بۇيرۇق كىرگۈزۈش"
 
-#: ../src/Plug.vala:37
-msgid "Manage default and startup applications"
-msgstr "سۈكۈتتىكى ۋە  كومپىيۇتىر بىلەن تەڭ قوزغىتىلىدىغان ئەپلەرنى باشقۇرۇش"
+#: src/Defaults/DefaultPlug.vala:87
+msgid "Web Browser:"
+msgstr "توركۆرگۈچ:"
 
-#: ../src/Plug.vala:52
-msgid "Default"
-msgstr "سۈكۈتتىكى"
+#: src/Defaults/DefaultPlug.vala:91
+msgid "Email Client:"
+msgstr "ئېلخەت تېرمىنالى:"
 
-#: ../src/Plug.vala:53 ../src/Plug.vala:93
-msgid "Startup"
-msgstr "قوزغىتىش"
+#: src/Defaults/DefaultPlug.vala:95
+msgid "Calendar:"
+msgstr "كالېندار:"
 
-#: ../src/Plug.vala:94
-msgid "Default Apps"
-msgstr "سۈكۈتتىكى ئەپلەر"
+#: src/Defaults/DefaultPlug.vala:99
+msgid "Video Player:"
+msgstr "ۋىدېئو قويغۇچ:"
 
-#: ../src/Plug.vala:95
-msgid "Default Application"
-msgstr "سۈكۈتتىكى ئەپ"
+#: src/Defaults/DefaultPlug.vala:103
+msgid "Music Player:"
+msgstr "مۇزىكا قويغۇچ:"
 
-#: ../src/Plug.vala:96
-msgid "Default Web Browser"
-msgstr "سۈكۈتتىكى توركۆرگۈچ"
+#: src/Defaults/DefaultPlug.vala:108
+msgid "Image Viewer:"
+msgstr "رەسىم كۆرگۈچ:"
 
-#: ../src/Plug.vala:97
-msgid "Default Music Player"
-msgstr "سۈكۈتتىكى مۇزىكا قويغۇچ"
+#: src/Defaults/DefaultPlug.vala:113
+msgid "Text Editor:"
+msgstr "تېكست تەھرىرلىگۈچ:"
 
-#: ../src/Plug.vala:98
-msgid "Default Email Client"
-msgstr "سۈكۈتتىتى ئېلخەت تېرمىنالى"
-
-#: ../src/Plug.vala:99
-msgid "Default Text Editor"
-msgstr "سۈكۈتتىكى تېكست تەھرىرلىگۈچ"
-
-#: ../src/Plug.vala:100
-msgid "Default File Browser"
-msgstr "سۈكۈتتىكى ھۆججەت كۆرگۈچ"
-
-#: ../src/Plug.vala:101
-msgid "Default Video Player"
-msgstr "سۈكۈتتىكى ۋىدىئو قويغۇچ"
-
-#: ../src/Plug.vala:102
-msgid "Default Calendar"
-msgstr "سۈكۈتتىكى كالېندار"
+#: src/Defaults/DefaultPlug.vala:118
+msgid "File Browser:"
+msgstr "ھۆججەت كۆرگۈچ؛"

@@ -1,0 +1,134 @@
+# Xhosa translations for applications-plug package.
+# Copyright (C) 2018 THE applications-plug'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the applications-plug package.
+# Automatically generated, 2018.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: applications-plug\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-02-20 14:33-0800\n"
+"PO-Revision-Date: 2018-02-20 14:33-0800\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: xh\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: src/Plug.vala:40
+msgid "Applications"
+msgstr ""
+
+#: src/Plug.vala:41
+msgid "Manage default and startup applications"
+msgstr ""
+
+#: src/Plug.vala:56
+msgid "Default"
+msgstr ""
+
+#: src/Plug.vala:57 src/Plug.vala:98
+msgid "Startup"
+msgstr ""
+
+#: src/Plug.vala:99
+msgid "Default Apps"
+msgstr ""
+
+#: src/Plug.vala:100
+msgid "Default Application"
+msgstr ""
+
+#: src/Plug.vala:101
+msgid "Default Web Browser"
+msgstr ""
+
+#: src/Plug.vala:102
+msgid "Default Music Player"
+msgstr ""
+
+#: src/Plug.vala:103
+msgid "Default Email Client"
+msgstr ""
+
+#: src/Plug.vala:104
+msgid "Default Text Editor"
+msgstr ""
+
+#: src/Plug.vala:105
+msgid "Default File Browser"
+msgstr ""
+
+#: src/Plug.vala:106
+msgid "Default Video Player"
+msgstr ""
+
+#: src/Plug.vala:107
+msgid "Default Calendar"
+msgstr ""
+
+#: src/Startup/Backend/KeyFile.vala:98
+msgid "Custom Command"
+msgstr ""
+
+#: src/Startup/Widgets/Scrolled.vala:56
+msgid "Add Startup App…"
+msgstr ""
+
+#: src/Startup/Widgets/Scrolled.vala:60
+msgid "Remove Selected Startup App"
+msgstr ""
+
+#: src/Startup/Widgets/List.vala:52
+msgid "Launch Apps on Startup"
+msgstr ""
+
+#: src/Startup/Widgets/List.vala:52
+msgid "Add apps to the Startup list by clicking the icon in the toolbar below."
+msgstr ""
+
+#: src/Startup/Widgets/AppRow.vala:48
+#, c-format
+msgid "Launch %s on startup"
+msgstr ""
+
+#: src/Startup/Widgets/AppChooser.vala:39
+msgid "Search Applications"
+msgstr ""
+
+#: src/Startup/Widgets/AppChooser.vala:55
+msgid "Type in a custom command"
+msgstr ""
+
+#: src/Defaults/DefaultPlug.vala:87
+msgid "Web Browser:"
+msgstr ""
+
+#: src/Defaults/DefaultPlug.vala:91
+msgid "Email Client:"
+msgstr ""
+
+#: src/Defaults/DefaultPlug.vala:95
+msgid "Calendar:"
+msgstr ""
+
+#: src/Defaults/DefaultPlug.vala:99
+msgid "Video Player:"
+msgstr ""
+
+#: src/Defaults/DefaultPlug.vala:103
+msgid "Music Player:"
+msgstr ""
+
+#: src/Defaults/DefaultPlug.vala:108
+msgid "Image Viewer:"
+msgstr ""
+
+#: src/Defaults/DefaultPlug.vala:113
+msgid "Text Editor:"
+msgstr ""
+
+#: src/Defaults/DefaultPlug.vala:118
+msgid "File Browser:"
+msgstr ""

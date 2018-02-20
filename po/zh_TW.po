@@ -2,12 +2,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-11-25 04:34-0600\n"
+"POT-Creation-Date: 2018-02-20 14:33-0800\n"
 "PO-Revision-Date: 2017-12-26 00:09+0000\n"
 "Last-Translator: Cheng-Chia Tseng <pswo10680@gmail.com>\n"
-"Language-Team: Chinese (Traditional) "
-"<https://weblate.elementary.io/projects/switchboard/switchboard-plug-"
-"applications/zh_TW/>\n"
+"Language-Team: Chinese (Traditional) <https://weblate.elementary.io/projects/"
+"switchboard/switchboard-plug-applications/zh_TW/>\n"
 "Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -16,119 +15,119 @@ msgstr ""
 "X-Generator: Weblate 2.18\n"
 "X-Launchpad-Export-Date: 2016-11-26 05:53+0000\n"
 
-#: ../src/Defaults/DefaultPlug.vala:87
-msgid "Web Browser:"
-msgstr "網頁瀏覽器："
-
-#: ../src/Defaults/DefaultPlug.vala:91
-msgid "Email Client:"
-msgstr "電子郵件客戶端："
-
-#: ../src/Defaults/DefaultPlug.vala:95
-msgid "Calendar:"
-msgstr "行事曆："
-
-#: ../src/Defaults/DefaultPlug.vala:99
-msgid "Video Player:"
-msgstr "影片播放器："
-
-#: ../src/Defaults/DefaultPlug.vala:103
-msgid "Music Player:"
-msgstr "音樂播放器："
-
-#: ../src/Defaults/DefaultPlug.vala:108
-msgid "Image Viewer:"
-msgstr "影像檢視器："
-
-#: ../src/Defaults/DefaultPlug.vala:113
-msgid "Text Editor:"
-msgstr "文字編輯器："
-
-#: ../src/Defaults/DefaultPlug.vala:118
-msgid "File Browser:"
-msgstr "檔案瀏覽器："
-
-#: ../src/Startup/Backend/KeyFile.vala:99
-msgid "Custom Command"
-msgstr "自訂指令"
-
-#: ../src/Startup/Widgets/AppChooser.vala:39
-msgid "Search Applications"
-msgstr "搜尋應用程式"
-
-#: ../src/Startup/Widgets/AppChooser.vala:55
-msgid "Type in a custom command"
-msgstr "輸入自訂指令"
-
-#: ../src/Startup/Widgets/AppRow.vala:48
-msgid "Launch %s on startup"
-msgstr "初始啟動時啟動 %s"
-
-#: ../src/Startup/Widgets/Scrolled.vala:49
-msgid "Launch Apps on Startup"
-msgstr "初始啟動時啟動程式"
-
-#: ../src/Startup/Widgets/Scrolled.vala:49
-msgid ""
-"Add apps to the Startup list by clicking the icon in the toolbar below."
-msgstr "請點按下方的工具列圖示來將程式加入初始啟動清單中。"
-
-#: ../src/Startup/Widgets/Scrolled.vala:63
-msgid "Add Startup App…"
-msgstr "加入初始啟動程式…"
-
-#: ../src/Startup/Widgets/Scrolled.vala:67
-msgid "Remove Selected Startup App"
-msgstr "移除選取的初始啟動程式"
-
-#: ../src/Plug.vala:36
+#: src/Plug.vala:40
 msgid "Applications"
 msgstr "應用程式"
 
-#: ../src/Plug.vala:37
+#: src/Plug.vala:41
 msgid "Manage default and startup applications"
 msgstr "管理預設與開機時啟動的程式"
 
-#: ../src/Plug.vala:52
+#: src/Plug.vala:56
 msgid "Default"
 msgstr "預設開啟"
 
-#: ../src/Plug.vala:53 ../src/Plug.vala:93
+#: src/Plug.vala:57 src/Plug.vala:98
 msgid "Startup"
 msgstr "初始啟動"
 
-#: ../src/Plug.vala:94
+#: src/Plug.vala:99
 msgid "Default Apps"
 msgstr "預設程式"
 
-#: ../src/Plug.vala:95
+#: src/Plug.vala:100
 msgid "Default Application"
 msgstr "預設應用程式"
 
-#: ../src/Plug.vala:96
+#: src/Plug.vala:101
 msgid "Default Web Browser"
 msgstr "預設網頁瀏覽器"
 
-#: ../src/Plug.vala:97
+#: src/Plug.vala:102
 msgid "Default Music Player"
 msgstr "預設音樂播放器"
 
-#: ../src/Plug.vala:98
+#: src/Plug.vala:103
 msgid "Default Email Client"
 msgstr "預設郵件客戶端"
 
-#: ../src/Plug.vala:99
+#: src/Plug.vala:104
 msgid "Default Text Editor"
 msgstr "預設文字編輯器"
 
-#: ../src/Plug.vala:100
+#: src/Plug.vala:105
 msgid "Default File Browser"
 msgstr "預設檔案編輯器"
 
-#: ../src/Plug.vala:101
+#: src/Plug.vala:106
 msgid "Default Video Player"
 msgstr "預設影片播放器"
 
-#: ../src/Plug.vala:102
+#: src/Plug.vala:107
 msgid "Default Calendar"
 msgstr "預設行事曆"
+
+#: src/Startup/Backend/KeyFile.vala:98
+msgid "Custom Command"
+msgstr "自訂指令"
+
+#: src/Startup/Widgets/Scrolled.vala:56
+msgid "Add Startup App…"
+msgstr "加入初始啟動程式…"
+
+#: src/Startup/Widgets/Scrolled.vala:60
+msgid "Remove Selected Startup App"
+msgstr "移除選取的初始啟動程式"
+
+#: src/Startup/Widgets/List.vala:52
+msgid "Launch Apps on Startup"
+msgstr "初始啟動時啟動程式"
+
+#: src/Startup/Widgets/List.vala:52
+msgid "Add apps to the Startup list by clicking the icon in the toolbar below."
+msgstr "請點按下方的工具列圖示來將程式加入初始啟動清單中。"
+
+#: src/Startup/Widgets/AppRow.vala:48
+#, c-format
+msgid "Launch %s on startup"
+msgstr "初始啟動時啟動 %s"
+
+#: src/Startup/Widgets/AppChooser.vala:39
+msgid "Search Applications"
+msgstr "搜尋應用程式"
+
+#: src/Startup/Widgets/AppChooser.vala:55
+msgid "Type in a custom command"
+msgstr "輸入自訂指令"
+
+#: src/Defaults/DefaultPlug.vala:87
+msgid "Web Browser:"
+msgstr "網頁瀏覽器："
+
+#: src/Defaults/DefaultPlug.vala:91
+msgid "Email Client:"
+msgstr "電子郵件客戶端："
+
+#: src/Defaults/DefaultPlug.vala:95
+msgid "Calendar:"
+msgstr "行事曆："
+
+#: src/Defaults/DefaultPlug.vala:99
+msgid "Video Player:"
+msgstr "影片播放器："
+
+#: src/Defaults/DefaultPlug.vala:103
+msgid "Music Player:"
+msgstr "音樂播放器："
+
+#: src/Defaults/DefaultPlug.vala:108
+msgid "Image Viewer:"
+msgstr "影像檢視器："
+
+#: src/Defaults/DefaultPlug.vala:113
+msgid "Text Editor:"
+msgstr "文字編輯器："
+
+#: src/Defaults/DefaultPlug.vala:118
+msgid "File Browser:"
+msgstr "檔案瀏覽器："
