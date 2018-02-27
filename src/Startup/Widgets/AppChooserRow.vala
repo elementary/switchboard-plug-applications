@@ -38,10 +38,14 @@ public class Startup.Widgets.AppChooserRow : Gtk.Grid {
         var app_name = new Gtk.Label (app_info.name);
         app_name.get_style_context ().add_class ("h3");
         app_name.xalign = 0;
+        app_name.ellipsize = Pango.EllipsizeMode.END;
+        app_name.max_width_chars = 40;
 
         var app_comment = new Gtk.Label ("<span font_size='small'>" + app_info.comment + "</span>");
         app_comment.xalign = 0;
         app_comment.use_markup = true;
+        app_comment.ellipsize = Pango.EllipsizeMode.END;
+        app_comment.max_width_chars = 40;
 
         margin = 6;
         margin_end = 12;
