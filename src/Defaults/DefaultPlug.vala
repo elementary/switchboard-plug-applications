@@ -1,5 +1,5 @@
 /*
-* Copyright (c) 2011-2017 elementary LLC. (http://launchpad.net/switchboard-plug-applications)
+* Copyright (c) 2011-2018 elementary LLC. (https://elementary.io)
 *
 * This program is free software; you can redistribute it and/or
 * modify it under the terms of the GNU General Public
@@ -20,32 +20,7 @@
 *              Chris Triantafillis <christriant1995@gmail.com>
 */
 
-class Defaults.LLabel : Gtk.Label {
-    public LLabel (string label) {
-        this.set_halign (Gtk.Align.START);
-        this.label = label;
-    }
-    public LLabel.indent (string label) {
-        this (label);
-        this.margin_left = 10;
-    }
-    public LLabel.markup (string label) {
-        this (label);
-        this.use_markup = true;
-    }
-    public LLabel.right (string label) {
-        this.set_halign (Gtk.Align.END);
-        this.label = label;
-    }
-    public LLabel.right_with_markup (string label) {
-        this.set_halign (Gtk.Align.END);
-        this.use_markup = true;
-        this.label = label;
-    }
-}
-
 public class Defaults.Plug {
-
     Gtk.AppChooserButton wb_chooser;
     Gtk.AppChooserButton ec_chooser;
     Gtk.AppChooserButton c_chooser;
@@ -66,60 +41,62 @@ public class Defaults.Plug {
     GLib.AppInfo fb_old;
     Gtk.Grid grid;
 
-    public Plug () {
-
-    }
-
     public Gtk.Widget get_widget () {
         if (grid == null) {
-            grid = new Gtk.Grid ();
-            grid.halign = Gtk.Align.CENTER;
-            grid.set_column_homogeneous (false);
-            grid.set_row_spacing (6);
-            grid.set_column_spacing (10);
-            
-            //space between the two columns
-            int margin_columns = 40;
-            grid.margin_left = margin_columns;
-            grid.margin_right = 30;
-            grid.margin_top = 64;
-
-            var wb_label = new LLabel.right (_("Web Browser:"));
+            var wb_label = new SettingsLabel (_("Web Browser:"));
             wb_chooser = new Gtk.AppChooserButton ("x-scheme-handler/http");
             wb_chooser.show_default_item = true;
 
-            var ec_label = new LLabel.right (_("Email Client:"));
+            var ec_label = new SettingsLabel (_("Email Client:"));
             ec_chooser = new Gtk.AppChooserButton ("x-scheme-handler/mailto");
             ec_chooser.show_default_item = true;
 
-            var c_label = new LLabel.right (_("Calendar:"));
+            var c_label = new SettingsLabel (_("Calendar:"));
             c_chooser = new Gtk.AppChooserButton ("text/calendar");
             c_chooser.show_default_item = true;
 
-            var vp_label = new LLabel.right (_("Video Player:"));
+            var vp_label = new SettingsLabel (_("Video Player:"));
             vp_chooser = new Gtk.AppChooserButton ("video/x-ogm+ogg");
             vp_chooser.show_default_item = true;
 
-            var mp_label = new LLabel.right (_("Music Player:"));
+            int margin_columns = 32;
+
+            var mp_label = new SettingsLabel (_("Music Player:"));
             mp_chooser = new Gtk.AppChooserButton ("audio/x-vorbis+ogg");
             mp_chooser.show_default_item = true;
-            mp_label.margin_left = margin_columns;
+            mp_label.margin_start = margin_columns;
 
-            var iv_label = new LLabel.right (_("Image Viewer:"));
+            var iv_label = new SettingsLabel (_("Image Viewer:"));
             iv_chooser = new Gtk.AppChooserButton ("image/jpeg");
             iv_chooser.show_default_item = true;
-            iv_label.margin_left = margin_columns;
+            iv_label.margin_start = margin_columns;
 
-            var te_label = new LLabel.right (_("Text Editor:"));
+            var te_label = new SettingsLabel (_("Text Editor:"));
             te_chooser = new Gtk.AppChooserButton ("text/plain");
             te_chooser.show_default_item = true;
-            te_label.margin_left = margin_columns;
+            te_label.margin_start = margin_columns;
 
-            var fb_label = new LLabel.right (_("File Browser:"));
+            var fb_label = new SettingsLabel (_("File Browser:"));
             fb_chooser = new Gtk.AppChooserButton ("inode/directory");
             fb_chooser.show_default_item = true;
-            fb_label.margin_left = margin_columns;
+            fb_label.margin_start = margin_columns;
 
+            var size_group = new Gtk.SizeGroup (Gtk.SizeGroupMode.HORIZONTAL);
+            size_group.add_widget (wb_chooser);
+            size_group.add_widget (ec_chooser);
+            size_group.add_widget (c_chooser);
+            size_group.add_widget (vp_chooser);
+            size_group.add_widget (mp_chooser);
+            size_group.add_widget (iv_chooser);
+            size_group.add_widget (te_chooser);
+            size_group.add_widget (fb_chooser);
+
+            grid = new Gtk.Grid ();
+            grid.column_spacing = 12;
+            grid.row_spacing = 12;
+            grid.halign = Gtk.Align.CENTER;
+            grid.margin = 24;
+            grid.margin_top = 64;
             grid.attach (wb_label, 0, 0, 1, 1);
             grid.attach (wb_chooser, 1, 0, 1, 1);
             grid.attach (ec_label, 0, 1, 1, 1);
@@ -232,5 +209,12 @@ public class Defaults.Plug {
         iv_old = iv_chooser.get_app_info ();
         te_old = te_chooser.get_app_info ();
         fb_old = fb_chooser.get_app_info ();
+    }
+
+    private class SettingsLabel : Gtk.Label {
+        public SettingsLabel (string label) {
+            Object (label: label);
+            halign = Gtk.Align.END;
+        }
     }
 }
