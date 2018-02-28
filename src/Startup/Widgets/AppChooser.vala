@@ -40,7 +40,7 @@ public class Startup.Widgets.AppChooser : Gtk.Popover {
 
         var scrolled = new Gtk.ScrolledWindow (null, null);
         scrolled.height_request = 200;
-        scrolled.width_request = 250;
+        scrolled.width_request = 500;
         scrolled.hscrollbar_policy = Gtk.PolicyType.NEVER;
 
         list = new Gtk.ListBox ();
