@@ -20,7 +20,7 @@ plug_files = files(
 switchboard_dep = dependency('switchboard-2.0')
 
 shared_module(
-    meson.project_name(),
+    meson.project_name() + '-plug',
     plug_files,
     dependencies: [
         dependency('glib-2.0'),
@@ -31,5 +31,5 @@ shared_module(
         switchboard_dep
     ],
     install: true,
-    install_dir : join_paths(switchboard_dep.get_pkgconfig_variable('plugsdir'), 'personal')
+    install_dir : join_paths(switchboard_dep.get_pkgconfig_variable('plugsdir'), 'personal', 'pantheon-' + meson.project_name() + '-plug')
 )
