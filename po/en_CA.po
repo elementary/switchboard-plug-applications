@@ -3,15 +3,18 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-02-20 14:33-0800\n"
-"PO-Revision-Date: 2016-03-19 19:41+0000\n"
-"Last-Translator: chilledfrogs <Unknown>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2018-03-08 14:37+0000\n"
+"Last-Translator: Shawn <syst3mfailur3@gmail.com>\n"
+"Language-Team: English (Canada) "
+"<https://weblate.elementary.io/projects/switchboard/switchboard-plug-"
+"applications/en_CA/>\n"
+"Language: en_CA\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2.18\n"
 "X-Launchpad-Export-Date: 2016-11-26 05:53+0000\n"
-"X-Generator: Launchpad (build 18282)\n"
 
 #: src/Plug.vala:40
 msgid "Applications"
@@ -31,39 +34,39 @@ msgstr "Startup"
 
 #: src/Plug.vala:99
 msgid "Default Apps"
-msgstr ""
+msgstr "Default Apps"
 
 #: src/Plug.vala:100
 msgid "Default Application"
-msgstr ""
+msgstr "Default Application"
 
 #: src/Plug.vala:101
 msgid "Default Web Browser"
-msgstr ""
+msgstr "Default Web Browser"
 
 #: src/Plug.vala:102
 msgid "Default Music Player"
-msgstr ""
+msgstr "Default Music Player"
 
 #: src/Plug.vala:103
 msgid "Default Email Client"
-msgstr ""
+msgstr "Default Email Client"
 
 #: src/Plug.vala:104
 msgid "Default Text Editor"
-msgstr ""
+msgstr "Default Text Editor"
 
 #: src/Plug.vala:105
 msgid "Default File Browser"
-msgstr ""
+msgstr "Default File Browser"
 
 #: src/Plug.vala:106
 msgid "Default Video Player"
-msgstr ""
+msgstr "Default Video Player"
 
 #: src/Plug.vala:107
 msgid "Default Calendar"
-msgstr ""
+msgstr "Default Calendar"
 
 #: src/Startup/Backend/KeyFile.vala:98
 msgid "Custom Command"
@@ -79,16 +82,16 @@ msgstr "Remove Selected Startup App"
 
 #: src/Startup/Widgets/List.vala:52
 msgid "Launch Apps on Startup"
-msgstr ""
+msgstr "Launch Apps on Startup"
 
 #: src/Startup/Widgets/List.vala:52
 msgid "Add apps to the Startup list by clicking the icon in the toolbar below."
-msgstr ""
+msgstr "Add apps to the Startup list by clicking the icon in the toolbar below."
 
 #: src/Startup/Widgets/AppRow.vala:48
 #, c-format
 msgid "Launch %s on startup"
-msgstr ""
+msgstr "Launch %s on startup"
 
 #: src/Startup/Widgets/AppChooser.vala:39
 msgid "Search Applications"
