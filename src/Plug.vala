@@ -24,9 +24,6 @@ public class ApplicationsPlug : Switchboard.Plug {
     private const string DEFAULTS = "defaults";
     private const string STARTUP = "startup"; 
 
-    private Defaults.Plug defaults_plug;
-    private Startup.Plug startup_plug;
-
     private Gtk.Grid grid;
     private Gtk.Stack stack;
 
@@ -41,8 +38,6 @@ public class ApplicationsPlug : Switchboard.Plug {
                 description: _("Manage default and startup applications"),
                 icon: "preferences-desktop-applications",
                 supported_settings: settings);
-        defaults_plug = new Defaults.Plug ();
-        startup_plug = new Startup.Plug ();
     }
 
     public override Gtk.Widget get_widget () {
@@ -50,11 +45,14 @@ public class ApplicationsPlug : Switchboard.Plug {
             return grid;
         }
 
+        var defaults_plug = new Defaults.Plug ();
+        var startup_plug = new Startup.Plug ();
+
         stack = new Gtk.Stack ();
         stack.expand = true;
 
-        stack.add_titled (defaults_plug.get_widget (), DEFAULTS, _("Default"));
-        stack.add_titled (startup_plug.get_widget (), STARTUP, _("Startup"));
+        stack.add_titled (defaults_plug, DEFAULTS, _("Default"));
+        stack.add_titled (startup_plug, STARTUP, _("Startup"));
 
         var stack_switcher = new Gtk.StackSwitcher ();
         stack_switcher.halign = Gtk.Align.CENTER;
