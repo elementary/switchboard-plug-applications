@@ -20,26 +20,16 @@
 *              Julien Spautz <spautz.julien@gmail.com>
 */
 
-public class Startup.Plug {
+public class Startup.Plug : Widgets.Scrolled {
+    private Controller controller;
 
-    Controller controller;
+    construct {
+        Backend.KeyFileFactory.init ();
+        show_all ();
+    }
 
     public Plug () {
-        Backend.KeyFileFactory.init ();
-    }
-
-    public  Gtk.Widget get_widget () {
-        if (controller == null) {
-            var monitor = new Backend.Monitor ();
-            var view = new Widgets.Scrolled ();
-            view.show_all ();
-            controller = new Controller (view, monitor);
-        }
-        
-        return controller.view as Gtk.Widget;
-    }
-
-    public async Gee.TreeMap <string, string> search (string search) {
-        return new Gee.TreeMap <string, string> (null, null);
+        var monitor = new Backend.Monitor ();
+        controller = new Controller (this, monitor);
     }
 }

@@ -20,7 +20,7 @@
 *              Chris Triantafillis <christriant1995@gmail.com>
 */
 
-public class Defaults.Plug {
+public class Defaults.Plug : Gtk.Grid {
     Gtk.AppChooserButton wb_chooser;
     Gtk.AppChooserButton ec_chooser;
     Gtk.AppChooserButton c_chooser;
@@ -39,129 +39,122 @@ public class Defaults.Plug {
     GLib.AppInfo iv_old;
     GLib.AppInfo te_old;
     GLib.AppInfo fb_old;
-    Gtk.Grid grid;
 
-    public Gtk.Widget get_widget () {
-        if (grid == null) {
-            var wb_label = new SettingsLabel (_("Web Browser:"));
-            wb_chooser = new Gtk.AppChooserButton ("x-scheme-handler/http");
-            wb_chooser.show_default_item = true;
+    construct {
+        column_spacing = 12;
+        row_spacing = 12;
+        halign = Gtk.Align.CENTER;
+        margin = 24;
+        margin_top = 64;
 
-            var ec_label = new SettingsLabel (_("Email Client:"));
-            ec_chooser = new Gtk.AppChooserButton ("x-scheme-handler/mailto");
-            ec_chooser.show_default_item = true;
+        var wb_label = new SettingsLabel (_("Web Browser:"));
+        wb_chooser = new Gtk.AppChooserButton ("x-scheme-handler/http");
+        wb_chooser.show_default_item = true;
 
-            var c_label = new SettingsLabel (_("Calendar:"));
-            c_chooser = new Gtk.AppChooserButton ("text/calendar");
-            c_chooser.show_default_item = true;
+        var ec_label = new SettingsLabel (_("Email Client:"));
+        ec_chooser = new Gtk.AppChooserButton ("x-scheme-handler/mailto");
+        ec_chooser.show_default_item = true;
 
-            var vp_label = new SettingsLabel (_("Video Player:"));
-            vp_chooser = new Gtk.AppChooserButton ("video/x-ogm+ogg");
-            vp_chooser.show_default_item = true;
+        var c_label = new SettingsLabel (_("Calendar:"));
+        c_chooser = new Gtk.AppChooserButton ("text/calendar");
+        c_chooser.show_default_item = true;
 
-            int margin_columns = 32;
+        var vp_label = new SettingsLabel (_("Video Player:"));
+        vp_chooser = new Gtk.AppChooserButton ("video/x-ogm+ogg");
+        vp_chooser.show_default_item = true;
 
-            var mp_label = new SettingsLabel (_("Music Player:"));
-            mp_chooser = new Gtk.AppChooserButton ("audio/x-vorbis+ogg");
-            mp_chooser.show_default_item = true;
-            mp_label.margin_start = margin_columns;
+        int margin_columns = 32;
 
-            var iv_label = new SettingsLabel (_("Image Viewer:"));
-            iv_chooser = new Gtk.AppChooserButton ("image/jpeg");
-            iv_chooser.show_default_item = true;
-            iv_label.margin_start = margin_columns;
+        var mp_label = new SettingsLabel (_("Music Player:"));
+        mp_chooser = new Gtk.AppChooserButton ("audio/x-vorbis+ogg");
+        mp_chooser.show_default_item = true;
+        mp_label.margin_start = margin_columns;
 
-            var te_label = new SettingsLabel (_("Text Editor:"));
-            te_chooser = new Gtk.AppChooserButton ("text/plain");
-            te_chooser.show_default_item = true;
-            te_label.margin_start = margin_columns;
+        var iv_label = new SettingsLabel (_("Image Viewer:"));
+        iv_chooser = new Gtk.AppChooserButton ("image/jpeg");
+        iv_chooser.show_default_item = true;
+        iv_label.margin_start = margin_columns;
 
-            var fb_label = new SettingsLabel (_("File Browser:"));
-            fb_chooser = new Gtk.AppChooserButton ("inode/directory");
-            fb_chooser.show_default_item = true;
-            fb_label.margin_start = margin_columns;
+        var te_label = new SettingsLabel (_("Text Editor:"));
+        te_chooser = new Gtk.AppChooserButton ("text/plain");
+        te_chooser.show_default_item = true;
+        te_label.margin_start = margin_columns;
 
-            var size_group = new Gtk.SizeGroup (Gtk.SizeGroupMode.HORIZONTAL);
-            size_group.add_widget (wb_chooser);
-            size_group.add_widget (ec_chooser);
-            size_group.add_widget (c_chooser);
-            size_group.add_widget (vp_chooser);
-            size_group.add_widget (mp_chooser);
-            size_group.add_widget (iv_chooser);
-            size_group.add_widget (te_chooser);
-            size_group.add_widget (fb_chooser);
+        var fb_label = new SettingsLabel (_("File Browser:"));
+        fb_chooser = new Gtk.AppChooserButton ("inode/directory");
+        fb_chooser.show_default_item = true;
+        fb_label.margin_start = margin_columns;
 
-            grid = new Gtk.Grid ();
-            grid.column_spacing = 12;
-            grid.row_spacing = 12;
-            grid.halign = Gtk.Align.CENTER;
-            grid.margin = 24;
-            grid.margin_top = 64;
-            grid.attach (wb_label, 0, 0, 1, 1);
-            grid.attach (wb_chooser, 1, 0, 1, 1);
-            grid.attach (ec_label, 0, 1, 1, 1);
-            grid.attach (ec_chooser, 1, 1, 1, 1);
-            grid.attach (c_label, 0, 2, 1, 1);
-            grid.attach (c_chooser, 1, 2, 1, 1);
-            grid.attach (vp_label, 0, 3, 1, 1);
-            grid.attach (vp_chooser, 1, 3, 1, 1);
-            grid.attach (mp_label, 2, 0, 1, 1);
-            grid.attach (mp_chooser, 3, 0, 1, 1);
-            grid.attach (iv_label, 2, 1, 1, 1);
-            grid.attach (iv_chooser, 3, 1, 1, 1);
-            grid.attach (te_label, 2, 2, 1, 1);
-            grid.attach (te_chooser, 3, 2, 1, 1);
-            grid.attach (fb_label, 2, 3, 1, 1);
-            grid.attach (fb_chooser, 3, 3, 1, 1);
+        var size_group = new Gtk.SizeGroup (Gtk.SizeGroupMode.HORIZONTAL);
+        size_group.add_widget (wb_chooser);
+        size_group.add_widget (ec_chooser);
+        size_group.add_widget (c_chooser);
+        size_group.add_widget (vp_chooser);
+        size_group.add_widget (mp_chooser);
+        size_group.add_widget (iv_chooser);
+        size_group.add_widget (te_chooser);
+        size_group.add_widget (fb_chooser);
 
-            cache_apps ();
+        attach (wb_label, 0, 0, 1, 1);
+        attach (wb_chooser, 1, 0, 1, 1);
+        attach (ec_label, 0, 1, 1, 1);
+        attach (ec_chooser, 1, 1, 1, 1);
+        attach (c_label, 0, 2, 1, 1);
+        attach (c_chooser, 1, 2, 1, 1);
+        attach (vp_label, 0, 3, 1, 1);
+        attach (vp_chooser, 1, 3, 1, 1);
+        attach (mp_label, 2, 0, 1, 1);
+        attach (mp_chooser, 3, 0, 1, 1);
+        attach (iv_label, 2, 1, 1, 1);
+        attach (iv_chooser, 3, 1, 1, 1);
+        attach (te_label, 2, 2, 1, 1);
+        attach (te_chooser, 3, 2, 1, 1);
+        attach (fb_label, 2, 3, 1, 1);
+        attach (fb_chooser, 3, 3, 1, 1);
 
-            wb_chooser.changed.connect ( () => run_in_thread ( () => {
-                change_default(wb_old, wb_chooser.get_app_info (), "web_browser");
-                return null;
-            }));
+        cache_apps ();
 
-            ec_chooser.changed.connect ( () => run_in_thread ( () => {
-                change_default(ec_old, ec_chooser.get_app_info (), "email_client");
-                return null;
-            }));
+        wb_chooser.changed.connect (() => run_in_thread ( () => {
+            change_default (wb_old, wb_chooser.get_app_info (), "web_browser");
+            return null;
+        }));
 
-            c_chooser.changed.connect ( () => run_in_thread ( () => {
-                change_default(c_old, c_chooser.get_app_info (), "calendar");
-                return null;
-            }));
+        ec_chooser.changed.connect (() => run_in_thread ( () => {
+            change_default(ec_old, ec_chooser.get_app_info (), "email_client");
+            return null;
+        }));
 
-            vp_chooser.changed.connect ( () => run_in_thread ( () => {
-                change_default(vp_old, vp_chooser.get_app_info (), "video_player");
-                return null;
-            }));
+        c_chooser.changed.connect (() => run_in_thread ( () => {
+            change_default(c_old, c_chooser.get_app_info (), "calendar");
+            return null;
+        }));
 
-            mp_chooser.changed.connect ( () => run_in_thread ( () => {
-                change_default(mp_old, mp_chooser.get_app_info (), "music_player");
-                return null;
-            }));
+        vp_chooser.changed.connect (() => run_in_thread ( () => {
+            change_default (vp_old, vp_chooser.get_app_info (), "video_player");
+            return null;
+        }));
 
-            iv_chooser.changed.connect ( () => run_in_thread ( () => {
-                change_default (iv_old, iv_chooser.get_app_info (), "image_viewer");
-                return null;
-            }));
-            te_chooser.changed.connect ( () => run_in_thread ( () => {
-                change_default(te_old, te_chooser.get_app_info (), "text_editor");
-                return null;
-            }));
-            fb_chooser.changed.connect ( () => run_in_thread ( () => {
-                change_default(fb_old, fb_chooser.get_app_info (), "file_browser");
-                return null;
-            }));
+        mp_chooser.changed.connect (() => run_in_thread ( () => {
+            change_default (mp_old, mp_chooser.get_app_info (), "music_player");
+            return null;
+        }));
 
-        }
-        grid.show_all ();
-        return grid;
-    }
+        iv_chooser.changed.connect (() => run_in_thread ( () => {
+            change_default (iv_old, iv_chooser.get_app_info (), "image_viewer");
+            return null;
+        }));
 
-    // 'search' returns results like ("Keyboard → Behavior → Duration", "keyboard<sep>behavior")
-    public  async Gee.TreeMap<string, string> search (string search) {
-        return new Gee.TreeMap<string, string> (null, null);
+        te_chooser.changed.connect (() => run_in_thread ( () => {
+            change_default (te_old, te_chooser.get_app_info (), "text_editor");
+            return null;
+        }));
+        
+        fb_chooser.changed.connect (() => run_in_thread ( () => {
+            change_default(fb_old, fb_chooser.get_app_info (), "file_browser");
+            return null;
+        }));
+
+        show_all ();
     }
 
     private void run_in_thread (owned ThreadFunc<void*> func) {
