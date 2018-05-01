@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-01 10:38-0700\n"
+"POT-Creation-Date: 2018-05-01 11:52-0700\n"
 "PO-Revision-Date: 2018-05-01 10:26-0700\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -30,6 +30,14 @@ msgstr ""
 msgid "preferences-desktop-applications"
 msgstr ""
 
-#: data/io.elementary.switchboard-plug-applications.desktop.in:9
+#: data/io.elementary.switchboard-plug-applications.desktop.in:10
 msgid "Default;Startup;Apps;"
+msgstr ""
+
+#: data/io.elementary.switchboard-plug-applications.desktop.in:14
+msgid "Default Apps"
+msgstr ""
+
+#: data/io.elementary.switchboard-plug-applications.desktop.in:18
+msgid "Startup Apps"
 msgstr ""

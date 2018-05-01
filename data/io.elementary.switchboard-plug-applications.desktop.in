@@ -3,6 +3,15 @@ Name=Applications
 Comment=Manage default and startup applications
 URL=settings://applications
 Icon=preferences-desktop-applications
+Actions=Default;Startup;
 Type=Link
 NoDisplay=true
 Keywords=Default;Startup;Apps;
+
+[Desktop Action Default]
+Exec=xdg-open settings://applications/defaults
+Name=Default Apps
+
+[Desktop Action Startup]
+Exec=xdg-open settings://applications/startup
+Name=Startup Apps
