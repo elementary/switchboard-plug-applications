@@ -1,7 +1,8 @@
 [Desktop Entry]
-Type=Link
 Name=Applications
 Comment=Manage default and startup applications
-Icon=preferences-desktop-applications
-Keywords=Default;Startup;Apps;
 URL=settings://applications
+Icon=preferences-desktop-applications
+Type=Link
+NoDisplay=true
+Keywords=Default;Startup;Apps;
