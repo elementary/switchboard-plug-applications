@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component type="addon">
 ​  <id>io.elementary.switchboard-plug-applications</id>
-​  <extends>io.elementary.switchboard.desktop</extends>
+​  <extends>io.elementary.switchboard</extends>
 ​  <name>Applications</name>
 ​  <summary>Manage default and startup applications</summary>
 ​  <url type="homepage">https://elementary.io</url>
