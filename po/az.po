@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-02-20 14:33-0800\n"
+"POT-Creation-Date: 2018-05-08 09:10-0700\n"
 "PO-Revision-Date: 2018-02-15 15:34+0000\n"
 "Last-Translator: Вагиф Кязым <vaqif134@gmail.com>\n"
 "Language-Team: Azerbaijani <https://weblate.elementary.io/projects/"
@@ -15,55 +15,55 @@ msgstr ""
 "X-Generator: Weblate 2.18\n"
 "X-Launchpad-Export-Date: 2016-11-26 05:52+0000\n"
 
-#: src/Plug.vala:40
+#: src/Plug.vala:37
 msgid "Applications"
 msgstr "Proqramlar"
 
-#: src/Plug.vala:41
+#: src/Plug.vala:38
 msgid "Manage default and startup applications"
 msgstr "Varsayılan və başlanğıc proqramları idarə et"
 
-#: src/Plug.vala:56
+#: src/Plug.vala:54
 msgid "Default"
 msgstr "Varsayılan"
 
-#: src/Plug.vala:57 src/Plug.vala:98
+#: src/Plug.vala:55 src/Plug.vala:96
 msgid "Startup"
 msgstr "Başlanğıc"
 
-#: src/Plug.vala:99
+#: src/Plug.vala:97
 msgid "Default Apps"
 msgstr "Əzəli tətbiqetmələr"
 
-#: src/Plug.vala:100
+#: src/Plug.vala:98
 msgid "Default Application"
 msgstr "Əzəli tətbiqetmə"
 
-#: src/Plug.vala:101
+#: src/Plug.vala:99
 msgid "Default Web Browser"
 msgstr "Əzəli veb-bələdçi"
 
-#: src/Plug.vala:102
+#: src/Plug.vala:100
 msgid "Default Music Player"
 msgstr "Əzəli musiqi oxuducusu"
 
-#: src/Plug.vala:103
+#: src/Plug.vala:101
 msgid "Default Email Client"
 msgstr "Əzəli email tətbiqetməsi"
 
-#: src/Plug.vala:104
+#: src/Plug.vala:102
 msgid "Default Text Editor"
 msgstr "Əzəli mətn redaktoru"
 
-#: src/Plug.vala:105
+#: src/Plug.vala:103
 msgid "Default File Browser"
 msgstr "Əzəli fayl meneceri"
 
-#: src/Plug.vala:106
+#: src/Plug.vala:104
 msgid "Default Video Player"
 msgstr "Əzəli video oxuducusu"
 
-#: src/Plug.vala:107
+#: src/Plug.vala:105
 msgid "Default Calendar"
 msgstr "Əzəli təqvim"
 
@@ -102,34 +102,34 @@ msgstr "Proqramlar arasında axtarış"
 msgid "Type in a custom command"
 msgstr "Xüsusi bir komanda yazın"
 
-#: src/Defaults/DefaultPlug.vala:87
+#: src/Defaults/DefaultPlug.vala:50
 msgid "Web Browser:"
 msgstr "Veb səyyahı:"
 
-#: src/Defaults/DefaultPlug.vala:91
+#: src/Defaults/DefaultPlug.vala:54
 msgid "Email Client:"
 msgstr "E-poçt klienti:"
 
-#: src/Defaults/DefaultPlug.vala:95
+#: src/Defaults/DefaultPlug.vala:58
 msgid "Calendar:"
 msgstr "Təqvim:"
 
-#: src/Defaults/DefaultPlug.vala:99
+#: src/Defaults/DefaultPlug.vala:62
 msgid "Video Player:"
 msgstr "Video oynadıcı:"
 
-#: src/Defaults/DefaultPlug.vala:103
+#: src/Defaults/DefaultPlug.vala:68
 msgid "Music Player:"
 msgstr "Musiqi çaldırıcı:"
 
-#: src/Defaults/DefaultPlug.vala:108
+#: src/Defaults/DefaultPlug.vala:73
 msgid "Image Viewer:"
 msgstr "Şəkil göstəricisi:"
 
-#: src/Defaults/DefaultPlug.vala:113
+#: src/Defaults/DefaultPlug.vala:78
 msgid "Text Editor:"
 msgstr "Mətn redaktoru:"
 
-#: src/Defaults/DefaultPlug.vala:118
+#: src/Defaults/DefaultPlug.vala:83
 msgid "File Browser:"
 msgstr "Fayl səyyahı"

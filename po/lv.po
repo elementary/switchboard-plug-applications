@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-02-20 14:33-0800\n"
+"POT-Creation-Date: 2018-05-08 09:10-0700\n"
 "PO-Revision-Date: 2014-12-22 12:52+0000\n"
 "Last-Translator: ERX <eriksh@inbox.lv>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -13,55 +13,55 @@ msgstr ""
 "X-Launchpad-Export-Date: 2016-11-26 05:52+0000\n"
 "X-Generator: Launchpad (build 18282)\n"
 
-#: src/Plug.vala:40
+#: src/Plug.vala:37
 msgid "Applications"
 msgstr "Lietotnes"
 
-#: src/Plug.vala:41
+#: src/Plug.vala:38
 msgid "Manage default and startup applications"
 msgstr ""
 
-#: src/Plug.vala:56
+#: src/Plug.vala:54
 msgid "Default"
 msgstr "Pēc noklusējuma"
 
-#: src/Plug.vala:57 src/Plug.vala:98
+#: src/Plug.vala:55 src/Plug.vala:96
 msgid "Startup"
 msgstr "Startēšana"
 
-#: src/Plug.vala:99
+#: src/Plug.vala:97
 msgid "Default Apps"
 msgstr ""
 
-#: src/Plug.vala:100
+#: src/Plug.vala:98
 msgid "Default Application"
 msgstr ""
 
-#: src/Plug.vala:101
+#: src/Plug.vala:99
 msgid "Default Web Browser"
 msgstr ""
 
-#: src/Plug.vala:102
+#: src/Plug.vala:100
 msgid "Default Music Player"
 msgstr ""
 
-#: src/Plug.vala:103
+#: src/Plug.vala:101
 msgid "Default Email Client"
 msgstr ""
 
-#: src/Plug.vala:104
+#: src/Plug.vala:102
 msgid "Default Text Editor"
 msgstr ""
 
-#: src/Plug.vala:105
+#: src/Plug.vala:103
 msgid "Default File Browser"
 msgstr ""
 
-#: src/Plug.vala:106
+#: src/Plug.vala:104
 msgid "Default Video Player"
 msgstr ""
 
-#: src/Plug.vala:107
+#: src/Plug.vala:105
 msgid "Default Calendar"
 msgstr ""
 
@@ -98,34 +98,34 @@ msgstr "Meklēt lietotnes"
 msgid "Type in a custom command"
 msgstr "Ievadīt pielāgotu komandu"
 
-#: src/Defaults/DefaultPlug.vala:87
+#: src/Defaults/DefaultPlug.vala:50
 msgid "Web Browser:"
 msgstr "Interneta pārlūks:"
 
-#: src/Defaults/DefaultPlug.vala:91
+#: src/Defaults/DefaultPlug.vala:54
 msgid "Email Client:"
 msgstr "Epasta klients:"
 
-#: src/Defaults/DefaultPlug.vala:95
+#: src/Defaults/DefaultPlug.vala:58
 msgid "Calendar:"
 msgstr "Kalendārs:"
 
-#: src/Defaults/DefaultPlug.vala:99
+#: src/Defaults/DefaultPlug.vala:62
 msgid "Video Player:"
 msgstr "Video atskaņotājs:"
 
-#: src/Defaults/DefaultPlug.vala:103
+#: src/Defaults/DefaultPlug.vala:68
 msgid "Music Player:"
 msgstr "Mūzikas atskaņotājs:"
 
-#: src/Defaults/DefaultPlug.vala:108
+#: src/Defaults/DefaultPlug.vala:73
 msgid "Image Viewer:"
 msgstr "Attēlu skatītājs:"
 
-#: src/Defaults/DefaultPlug.vala:113
+#: src/Defaults/DefaultPlug.vala:78
 msgid "Text Editor:"
 msgstr "Teksta redaktors:"
 
-#: src/Defaults/DefaultPlug.vala:118
+#: src/Defaults/DefaultPlug.vala:83
 msgid "File Browser:"
 msgstr "Failu pārlūks:"
