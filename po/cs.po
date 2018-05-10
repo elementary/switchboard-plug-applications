@@ -3,16 +3,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-05-08 09:10-0700\n"
-"PO-Revision-Date: 2017-04-11 12:07+0000\n"
+"PO-Revision-Date: 2018-05-10 17:18+0000\n"
 "Last-Translator: Jan Marek <janmarek28@gmail.com>\n"
-"Language-Team: Czech <https://l10n.elementary.io/projects/switchboard/"
-"switchboard-plug-applications/cs/>\n"
+"Language-Team: Czech <https://weblate.elementary.io/projects/switchboard"
+"/switchboard-plug-applications/cs/>\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Weblate 2.13-dev\n"
+"X-Generator: Weblate 2.18\n"
 "X-Launchpad-Export-Date: 2017-02-27 05:51+0000\n"
 
 #: src/Plug.vala:37
@@ -21,7 +21,7 @@ msgstr "Aplikace"
 
 #: src/Plug.vala:38
 msgid "Manage default and startup applications"
-msgstr "Správa předvolených a spouštěcích aplikacií"
+msgstr "Správa výchozích aplikací a aplikací po spuštění"
 
 #: src/Plug.vala:54
 msgid "Default"
@@ -29,7 +29,7 @@ msgstr "Výchozí"
 
 #: src/Plug.vala:55 src/Plug.vala:96
 msgid "Startup"
-msgstr "Spuštění"
+msgstr "Po spuštění"
 
 #: src/Plug.vala:97
 msgid "Default Apps"
@@ -81,7 +81,7 @@ msgstr "Odebrat aplikaci po spuštění"
 
 #: src/Startup/Widgets/List.vala:52
 msgid "Launch Apps on Startup"
-msgstr "Spustit aplikace při startu počítače"
+msgstr "Spustit aplikace při startu"
 
 #: src/Startup/Widgets/List.vala:52
 msgid "Add apps to the Startup list by clicking the icon in the toolbar below."
@@ -91,7 +91,7 @@ msgstr ""
 #: src/Startup/Widgets/AppRow.vala:48
 #, c-format
 msgid "Launch %s on startup"
-msgstr "Spustit %s při startu počítače"
+msgstr "Spustit %s při startu"
 
 #: src/Startup/Widgets/AppChooser.vala:39
 msgid "Search Applications"
