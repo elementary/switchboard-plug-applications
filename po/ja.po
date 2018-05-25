@@ -3,10 +3,10 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-05-08 09:10-0700\n"
-"PO-Revision-Date: 2018-02-18 11:09+0000\n"
+"PO-Revision-Date: 2018-05-27 00:05+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock@gmail.com>\n"
-"Language-Team: Japanese <https://weblate.elementary.io/projects/switchboard/"
-"switchboard-plug-applications/ja/>\n"
+"Language-Team: Japanese <https://weblate.elementary.io/projects/switchboard"
+"/switchboard-plug-applications/ja/>\n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -120,7 +120,7 @@ msgstr "ビデオプレーヤー:"
 
 #: src/Defaults/DefaultPlug.vala:68
 msgid "Music Player:"
-msgstr "音楽プレーヤー:"
+msgstr "ミュージックプレーヤー:"
 
 #: src/Defaults/DefaultPlug.vala:73
 msgid "Image Viewer:"
