@@ -3,15 +3,17 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-05-08 09:10-0700\n"
-"PO-Revision-Date: 2015-08-19 17:57+0000\n"
-"Last-Translator: Papp Ferenc <Unknown>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2018-05-29 14:24+0000\n"
+"Last-Translator: Majer Tamás <mtamas@disroot.org>\n"
+"Language-Team: Hungarian <https://weblate.elementary.io/projects/switchboard"
+"/switchboard-plug-applications/hu/>\n"
+"Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2.18\n"
 "X-Launchpad-Export-Date: 2016-11-26 05:52+0000\n"
-"X-Generator: Launchpad (build 18282)\n"
 
 #: src/Plug.vala:37
 msgid "Applications"
@@ -19,7 +21,7 @@ msgstr "Alkalmazások"
 
 #: src/Plug.vala:38
 msgid "Manage default and startup applications"
-msgstr ""
+msgstr "Az alapértelmezett és az automatikusan induló alkalmazások kezelése"
 
 #: src/Plug.vala:54
 msgid "Default"
@@ -31,39 +33,39 @@ msgstr "Automatikusan induló"
 
 #: src/Plug.vala:97
 msgid "Default Apps"
-msgstr ""
+msgstr "Alapértelmezett alkalmazások"
 
 #: src/Plug.vala:98
 msgid "Default Application"
-msgstr ""
+msgstr "Alapértelmezett alkalmazás"
 
 #: src/Plug.vala:99
 msgid "Default Web Browser"
-msgstr ""
+msgstr "Alapértelmezett böngésző"
 
 #: src/Plug.vala:100
 msgid "Default Music Player"
-msgstr ""
+msgstr "Alapértelmezett zenelejátszó"
 
 #: src/Plug.vala:101
 msgid "Default Email Client"
-msgstr ""
+msgstr "Alapértelmezett levelező kliens"
 
 #: src/Plug.vala:102
 msgid "Default Text Editor"
-msgstr ""
+msgstr "Alapértelmezett szövegszerkesztő"
 
 #: src/Plug.vala:103
 msgid "Default File Browser"
-msgstr ""
+msgstr "Alapértelmezett fájlkezelő"
 
 #: src/Plug.vala:104
 msgid "Default Video Player"
-msgstr ""
+msgstr "Alapértelmezett videolejátszó"
 
 #: src/Plug.vala:105
 msgid "Default Calendar"
-msgstr ""
+msgstr "Alapértelmezett naptár"
 
 #: src/Startup/Backend/KeyFile.vala:98
 msgid "Custom Command"
@@ -79,16 +81,18 @@ msgstr "Kiválasztott automatikusan induló program eltávolítása"
 
 #: src/Startup/Widgets/List.vala:52
 msgid "Launch Apps on Startup"
-msgstr ""
+msgstr "Alkalmazások indítása rendszerindításkor"
 
 #: src/Startup/Widgets/List.vala:52
 msgid "Add apps to the Startup list by clicking the icon in the toolbar below."
 msgstr ""
+"Adjon hozzá alkalmazásokat a listához, az alábbi ikonra kattintva az "
+"eszköztáron."
 
 #: src/Startup/Widgets/AppRow.vala:48
 #, c-format
 msgid "Launch %s on startup"
-msgstr ""
+msgstr "%s indítása rendszerinduláskor"
 
 #: src/Startup/Widgets/AppChooser.vala:39
 msgid "Search Applications"
