@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-05-08 09:10-0700\n"
-"PO-Revision-Date: 2018-05-29 14:24+0000\n"
+"PO-Revision-Date: 2018-05-30 00:03+0000\n"
 "Last-Translator: Majer Tamás <mtamas@disroot.org>\n"
 "Language-Team: Hungarian <https://weblate.elementary.io/projects/switchboard"
 "/switchboard-plug-applications/hu/>\n"
@@ -73,7 +73,7 @@ msgstr "Egyéni parancs"
 
 #: src/Startup/Widgets/Scrolled.vala:56
 msgid "Add Startup App…"
-msgstr "Automatikusan induló program hozzáadása..."
+msgstr "Automatikusan induló alkalmazás hozzáadása…"
 
 #: src/Startup/Widgets/Scrolled.vala:60
 msgid "Remove Selected Startup App"
