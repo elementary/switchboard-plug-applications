@@ -153,7 +153,7 @@ namespace Defaults {
                         "audio/webm",
                         "audio/x-webm"
                 };
- 
+
             case "image_viewer":
                 return {    "image/jpeg",
                         "image/jpg",

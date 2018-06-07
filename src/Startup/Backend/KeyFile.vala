@@ -105,16 +105,16 @@ public class Startup.Backend.KeyFile : GLib.Object {
 
         write_to_file ();
     }
-    
+
     string create_path_for_custom_command () {
         var startup_dir = Utils.get_user_startup_dir ();
-        
+
         for (int i = 0; i < 100; i++) {
             var filename = Path.build_filename (startup_dir, @"custom-command$i.desktop");
             if (FileUtils.test (filename, FileTest.EXISTS) == false)
                 return filename;
         }
-        
+
         return "";
     }
 
@@ -249,7 +249,7 @@ public class Startup.Backend.KeyFile : GLib.Object {
 
         return @"<span font_weight=\"bold\" size=\"large\">$escaped_name</span>\n$escaped_comment";
     }
-    
+
     public Entity.AppInfo create_app_info () {
         return Entity.AppInfo () {
             name = name,
@@ -257,6 +257,6 @@ public class Startup.Backend.KeyFile : GLib.Object {
             icon = icon,
             active = active,
             path = path
-        }; 
+        };
     }
 }

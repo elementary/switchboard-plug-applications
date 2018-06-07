@@ -50,7 +50,7 @@ namespace Startup.Utils {
         if (result.length == 0) {
             warning ("No application directories found");
         }
-            
+
         return result;
     }
 
@@ -60,7 +60,7 @@ namespace Startup.Utils {
 
         if (FileUtils.test (startup_dir, FileTest.EXISTS) == false) {
             var file = File.new_for_path (startup_dir);
-            
+
             try {
                 file.make_directory_with_parents ();
             } catch (Error e) {
@@ -70,11 +70,11 @@ namespace Startup.Utils {
 
         return startup_dir;
     }
-    
+
     bool is_desktop_file (string name) {
         return !name.contains ("~") && name.has_suffix (".desktop");
     }
-    
+
     const string FALLBACK_ICON = "application-default-icon";
 
     string create_icon (Entity.AppInfo app_info) {
