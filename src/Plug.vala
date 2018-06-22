@@ -22,7 +22,7 @@
 public class ApplicationsPlug : Switchboard.Plug {
 
     private const string DEFAULTS = "defaults";
-    private const string STARTUP = "startup"; 
+    private const string STARTUP = "startup";
 
     private Gtk.Grid grid;
     private Gtk.Stack stack;
@@ -72,11 +72,11 @@ public class ApplicationsPlug : Switchboard.Plug {
     }
 
     public override void shown () {
-    
+
     }
 
     public override void hidden () {
-    
+
     }
 
     public override void search_callback (string location) {
