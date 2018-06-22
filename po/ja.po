@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-05-08 09:10-0700\n"
-"PO-Revision-Date: 2018-06-10 00:11+0000\n"
+"PO-Revision-Date: 2018-06-18 00:05+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock@gmail.com>\n"
 "Language-Team: Japanese <https://weblate.elementary.io/projects/switchboard"
 "/switchboard-plug-applications/ja/>\n"
@@ -96,7 +96,7 @@ msgstr "起動時に %s を起動"
 
 #: src/Startup/Widgets/AppChooser.vala:39
 msgid "Search Applications"
-msgstr "アプリケーションの検索"
+msgstr "アプリケーションを検索"
 
 #: src/Startup/Widgets/AppChooser.vala:55
 msgid "Type in a custom command"

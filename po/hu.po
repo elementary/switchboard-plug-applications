@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-05-08 09:10-0700\n"
-"PO-Revision-Date: 2018-06-02 00:05+0000\n"
+"PO-Revision-Date: 2018-06-18 00:05+0000\n"
 "Last-Translator: Majer Tamás <mtamas@disroot.org>\n"
 "Language-Team: Hungarian <https://weblate.elementary.io/projects/switchboard"
 "/switchboard-plug-applications/hu/>\n"
@@ -21,7 +21,7 @@ msgstr "Alkalmazások"
 
 #: src/Plug.vala:38
 msgid "Manage default and startup applications"
-msgstr "Az alapértelmezett és az automatikusan induló alkalmazások kezelése"
+msgstr "Az alapértelmezett és az automatikusan induló alkalmazások beállítása"
 
 #: src/Plug.vala:54
 msgid "Default"
@@ -77,7 +77,7 @@ msgstr "Automatikusan induló alkalmazás hozzáadása…"
 
 #: src/Startup/Widgets/Scrolled.vala:60
 msgid "Remove Selected Startup App"
-msgstr "Kiválasztott automatikusan induló program eltávolítása"
+msgstr "A kiválasztott alkalmazás eltávolítása"
 
 #: src/Startup/Widgets/List.vala:52
 msgid "Launch Apps on Startup"
