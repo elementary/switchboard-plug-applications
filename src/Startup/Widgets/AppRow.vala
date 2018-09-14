@@ -45,7 +45,7 @@ public class Startup.Widgets.AppRow : Gtk.ListBoxRow {
         app_comment.xalign = 0;
 
         active_switch = new Gtk.Switch ();
-        active_switch.tooltip_text = _("Launch %s on startup".printf (app_info.name));
+        active_switch.tooltip_text = _("Launch %s on startup").printf (app_info.name);
         active_switch.valign = Gtk.Align.CENTER;
         active_switch.active = app_info.active;
         active_switch.notify["active"].connect (on_active_changed);
