@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-08 09:10-0700\n"
+"POT-Creation-Date: 2018-10-13 15:05-0700\n"
 "PO-Revision-Date: 2017-04-10 21:33+0000\n"
 "Last-Translator: Moo <hazap@hotmail.com>\n"
 "Language-Team: Lithuanian <https://l10n.elementary.io/projects/switchboard/"
@@ -90,7 +90,7 @@ msgstr ""
 "Pridėkite programas į paleidimo sąrašą, spusteldami žemiau, įrankių juostoje "
 "esančią piktogramą."
 
-#: src/Startup/Widgets/AppRow.vala:48
+#: src/Startup/Widgets/AppRow.vala:49
 #, c-format
 msgid "Launch %s on startup"
 msgstr "Paleisti %s kompiuterio paleidimo metu"
