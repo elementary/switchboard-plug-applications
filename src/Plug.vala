@@ -22,7 +22,7 @@
 public class ApplicationsPlug : Switchboard.Plug {
 
     private const string DEFAULTS = "defaults";
-    private const string STARTUP = "startup"; 
+    private const string STARTUP = "startup";
 
     private Gtk.Grid grid;
     private Gtk.Stack stack;
@@ -96,13 +96,14 @@ public class ApplicationsPlug : Switchboard.Plug {
         search_results.set ("%s → %s".printf (display_name, _("Startup")), STARTUP);
         search_results.set ("%s → %s".printf (display_name, _("Default Apps")), DEFAULTS);
         search_results.set ("%s → %s".printf (display_name, _("Default Application")), DEFAULTS);
-        search_results.set ("%s → %s".printf (display_name, _("Default Web Browser")), DEFAULTS);
-        search_results.set ("%s → %s".printf (display_name, _("Default Music Player")), DEFAULTS);
-        search_results.set ("%s → %s".printf (display_name, _("Default Email Client")), DEFAULTS);
-        search_results.set ("%s → %s".printf (display_name, _("Default Text Editor")), DEFAULTS);
-        search_results.set ("%s → %s".printf (display_name, _("Default File Browser")), DEFAULTS);
-        search_results.set ("%s → %s".printf (display_name, _("Default Video Player")), DEFAULTS);
-        search_results.set ("%s → %s".printf (display_name, _("Default Calendar")), DEFAULTS);
+        search_results.set ("%s → %s → %s".printf (display_name, _("Default"), _("Web Browser")), DEFAULTS);
+        search_results.set ("%s → %s → %s".printf (display_name, _("Default"), _("Email Client")), DEFAULTS);
+        search_results.set ("%s → %s → %s".printf (display_name, _("Default"), _("Calendar")), DEFAULTS);
+        search_results.set ("%s → %s → %s".printf (display_name, _("Default"), _("Video Player")), DEFAULTS);
+        search_results.set ("%s → %s → %s".printf (display_name, _("Default"), _("Music Player")), DEFAULTS);
+        search_results.set ("%s → %s → %s".printf (display_name, _("Default"), _("Text Editor")), DEFAULTS);
+        search_results.set ("%s → %s → %s".printf (display_name, _("Default"), _("Image Viewer")), DEFAULTS);
+        search_results.set ("%s → %s → %s".printf (display_name, _("Default"), _("File Browser")), DEFAULTS);
         return search_results;
     }
 
