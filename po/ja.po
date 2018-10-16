@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-15 20:03-0500\n"
-"PO-Revision-Date: 2018-06-18 00:05+0000\n"
-"Last-Translator: Ryo Nakano <ryonakaknock@gmail.com>\n"
+"PO-Revision-Date: 2018-10-16 01:52+0000\n"
+"Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-applications/ja/>\n"
 "Language: ja\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 2.18\n"
+"X-Generator: Weblate 3.0.1\n"
 "X-Launchpad-Export-Date: 2017-02-12 06:23+0000\n"
 
 #: src/Plug.vala:37
@@ -43,44 +43,36 @@ msgid "Default Application"
 msgstr "デフォルトのアプリケーション"
 
 #: src/Plug.vala:99
-#, fuzzy
 msgid "Web Browser"
-msgstr "Web ブラウザー:"
+msgstr "Web ブラウザー"
 
 #: src/Plug.vala:100
-#, fuzzy
 msgid "Email Client"
-msgstr "メールクライアント:"
+msgstr "メールクライアント"
 
 #: src/Plug.vala:101
-#, fuzzy
 msgid "Calendar"
-msgstr "カレンダー:"
+msgstr "カレンダー"
 
 #: src/Plug.vala:102
-#, fuzzy
 msgid "Video Player"
-msgstr "ビデオプレーヤー:"
+msgstr "ビデオプレーヤー"
 
 #: src/Plug.vala:103
-#, fuzzy
 msgid "Music Player"
-msgstr "ミュージックプレーヤー:"
+msgstr "ミュージックプレーヤー"
 
 #: src/Plug.vala:104
-#, fuzzy
 msgid "Text Editor"
-msgstr "テキストエディター:"
+msgstr "テキストエディター"
 
 #: src/Plug.vala:105
-#, fuzzy
 msgid "Image Viewer"
-msgstr "画像ビューアー:"
+msgstr "画像ビューアー"
 
 #: src/Plug.vala:106
-#, fuzzy
 msgid "File Browser"
-msgstr "ファイルブラウザー:"
+msgstr "ファイルブラウザー"
 
 #: src/Startup/Backend/KeyFile.vala:98
 msgid "Custom Command"
