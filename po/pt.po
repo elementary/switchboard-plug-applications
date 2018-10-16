@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-15 20:03-0500\n"
-"PO-Revision-Date: 2018-09-19 00:09+0000\n"
-"Last-Translator: Nuno Alexandre MS ribeiro <nuno.anarresti@gmail.com>\n"
+"PO-Revision-Date: 2018-10-16 12:44+0000\n"
+"Last-Translator: Nuno Alexandre MS Ribeiro <nuno.anarresti@gmail.com>\n"
 "Language-Team: Portuguese <https://weblate.elementary.io/projects/"
 "switchboard/switchboard-plug-applications/pt/>\n"
 "Language: pt\n"
@@ -42,44 +42,36 @@ msgid "Default Application"
 msgstr "Aplicação Predefinida"
 
 #: src/Plug.vala:99
-#, fuzzy
 msgid "Web Browser"
-msgstr "Navegador Web:"
+msgstr "Navegador Web"
 
 #: src/Plug.vala:100
-#, fuzzy
 msgid "Email Client"
-msgstr "Correio Eletrónico:"
+msgstr "Cliente de email"
 
 #: src/Plug.vala:101
-#, fuzzy
 msgid "Calendar"
-msgstr "Calendário:"
+msgstr "Calendário"
 
 #: src/Plug.vala:102
-#, fuzzy
 msgid "Video Player"
-msgstr "Reprodutor de Vídeo:"
+msgstr "Reprodutor de Vídeo"
 
 #: src/Plug.vala:103
-#, fuzzy
 msgid "Music Player"
-msgstr "Reprodutor de Música:"
+msgstr "Reprodutor de Música"
 
 #: src/Plug.vala:104
-#, fuzzy
 msgid "Text Editor"
-msgstr "Editor de Texto:"
+msgstr "Editor de Texto"
 
 #: src/Plug.vala:105
-#, fuzzy
 msgid "Image Viewer"
-msgstr "Visualizador de Imagens:"
+msgstr "Visualizador de Imagens"
 
 #: src/Plug.vala:106
-#, fuzzy
 msgid "File Browser"
-msgstr "Explorador de Ficheiros:"
+msgstr "Explorador de Ficheiros"
 
 #: src/Startup/Backend/KeyFile.vala:98
 msgid "Custom Command"
