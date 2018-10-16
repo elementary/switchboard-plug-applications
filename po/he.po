@@ -3,16 +3,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-15 20:03-0500\n"
-"PO-Revision-Date: 2017-05-23 07:20+0000\n"
+"PO-Revision-Date: 2018-10-16 08:20+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
-"Language-Team: Hebrew <https://l10n.elementary.io/projects/switchboard/"
+"Language-Team: Hebrew <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-applications/he/>\n"
 "Language: he\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.14\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Weblate 3.0.1\n"
 "X-Launchpad-Export-Date: 2016-11-26 05:52+0000\n"
 
 #: src/Plug.vala:37
@@ -42,44 +42,36 @@ msgid "Default Application"
 msgstr "יישום בררת מחדל"
 
 #: src/Plug.vala:99
-#, fuzzy
 msgid "Web Browser"
-msgstr "דפדפן האינטרנט:"
+msgstr "דפדפן אינטרנט"
 
 #: src/Plug.vala:100
-#, fuzzy
 msgid "Email Client"
-msgstr "לקוח הדואר האלקטרוני:"
+msgstr "לקוח דוא״ל"
 
 #: src/Plug.vala:101
-#, fuzzy
 msgid "Calendar"
-msgstr "יומן:"
+msgstr "יומן"
 
 #: src/Plug.vala:102
-#, fuzzy
 msgid "Video Player"
-msgstr "נגן הווידאו:"
+msgstr "נגן וידאו"
 
 #: src/Plug.vala:103
-#, fuzzy
 msgid "Music Player"
-msgstr "נגן המוזיקה:"
+msgstr "נגן מוזיקה"
 
 #: src/Plug.vala:104
-#, fuzzy
 msgid "Text Editor"
-msgstr "עורך טקסט:"
+msgstr "עורך טקסט"
 
 #: src/Plug.vala:105
-#, fuzzy
 msgid "Image Viewer"
-msgstr "מציג התמונות:"
+msgstr "מציג תמונות"
 
 #: src/Plug.vala:106
-#, fuzzy
 msgid "File Browser"
-msgstr "דפדפן קבצים:"
+msgstr "דפדפן קבצים"
 
 #: src/Startup/Backend/KeyFile.vala:98
 msgid "Custom Command"
