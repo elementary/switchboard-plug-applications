@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-15 20:03-0500\n"
-"PO-Revision-Date: 2018-10-16 09:07+0000\n"
+"PO-Revision-Date: 2018-10-17 00:07+0000\n"
 "Last-Translator: Kaj Printz Madsen <kajprintz@gmail.com>\n"
 "Language-Team: Danish <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-applications/da/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 
 #: src/Plug.vala:37
 msgid "Applications"
-msgstr "Programmer"
+msgstr "Applikationer"
 
 #: src/Plug.vala:38
 msgid "Manage default and startup applications"
@@ -63,7 +63,7 @@ msgstr "Musikafspiller"
 
 #: src/Plug.vala:104
 msgid "Text Editor"
-msgstr "Tekst Editor"
+msgstr "Teksteditor"
 
 #: src/Plug.vala:105
 msgid "Image Viewer"
@@ -75,15 +75,15 @@ msgstr "Filbrowser"
 
 #: src/Startup/Backend/KeyFile.vala:98
 msgid "Custom Command"
-msgstr "Brugerdefineret kommando"
+msgstr "Brugerdefineret Kommando"
 
 #: src/Startup/Widgets/Scrolled.vala:56
 msgid "Add Startup App…"
-msgstr "Tilføj opstartsprogram…"
+msgstr "Tilføj Opstartsapplikation…"
 
 #: src/Startup/Widgets/Scrolled.vala:60
 msgid "Remove Selected Startup App"
-msgstr "Fjern valgte opstartningsapplikationer"
+msgstr "Fjern Valgte Opstartsapplikation"
 
 #: src/Startup/Widgets/List.vala:52
 msgid "Launch Apps on Startup"
@@ -92,7 +92,7 @@ msgstr "Start Apps ved Opstart"
 #: src/Startup/Widgets/List.vala:52
 msgid "Add apps to the Startup list by clicking the icon in the toolbar below."
 msgstr ""
-"Tilføj Apps til Startlisten ved at klikke på ikonet i værktøjslinjen "
+"Tilføj Apps til Opstartslisten ved at klikke på ikonet i værktøjslinjen "
 "nedenfor."
 
 #: src/Startup/Widgets/AppRow.vala:49
@@ -102,7 +102,7 @@ msgstr "Start %s ved opstart"
 
 #: src/Startup/Widgets/AppChooser.vala:39
 msgid "Search Applications"
-msgstr "Søg efter applikationer"
+msgstr "Søg efter Applikationer"
 
 #: src/Startup/Widgets/AppChooser.vala:55
 msgid "Type in a custom command"
@@ -134,11 +134,11 @@ msgstr "Billedfremviser:"
 
 #: src/Defaults/DefaultPlug.vala:78
 msgid "Text Editor:"
-msgstr "Tekstredigering:"
+msgstr "Teksteditor:"
 
 #: src/Defaults/DefaultPlug.vala:83
 msgid "File Browser:"
-msgstr "Filhåndtering:"
+msgstr "Filbrowser:"
 
 #~ msgid "Default Web Browser"
 #~ msgstr "Standard Web Browser"
