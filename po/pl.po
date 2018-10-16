@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-15 20:03-0500\n"
-"PO-Revision-Date: 2017-09-14 11:04+0000\n"
-"Last-Translator: Piotr Strebski <strebski@o2.pl>\n"
+"PO-Revision-Date: 2018-10-16 10:29+0000\n"
+"Last-Translator: Piotr Strebski <strebski@gmail.com>\n"
 "Language-Team: Polish <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-applications/pl/>\n"
 "Language: pl\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 2.16\n"
+"X-Generator: Weblate 3.0.1\n"
 "X-Launchpad-Export-Date: 2016-12-13 05:50+0000\n"
 
 #: src/Plug.vala:37
@@ -43,44 +43,36 @@ msgid "Default Application"
 msgstr "Domyślny program"
 
 #: src/Plug.vala:99
-#, fuzzy
 msgid "Web Browser"
-msgstr "Przeglądarka internetowa:"
+msgstr "Przeglądarka internetowa"
 
 #: src/Plug.vala:100
-#, fuzzy
 msgid "Email Client"
-msgstr "Klient poczty e-mail:"
+msgstr "Klient poczty e-mail"
 
 #: src/Plug.vala:101
-#, fuzzy
 msgid "Calendar"
-msgstr "Kalendarz:"
+msgstr "Kalendarz"
 
 #: src/Plug.vala:102
-#, fuzzy
 msgid "Video Player"
-msgstr "Odtwarzacz filmów:"
+msgstr "Odtwarzacz filmów"
 
 #: src/Plug.vala:103
-#, fuzzy
 msgid "Music Player"
-msgstr "Odtwarzacz muzyki:"
+msgstr "Odtwarzacz muzyki"
 
 #: src/Plug.vala:104
-#, fuzzy
 msgid "Text Editor"
-msgstr "Edytor tekstu:"
+msgstr "Edytor tekstu"
 
 #: src/Plug.vala:105
-#, fuzzy
 msgid "Image Viewer"
-msgstr "Przeglądarka zdjęć:"
+msgstr "Przeglądarka obrazów"
 
 #: src/Plug.vala:106
-#, fuzzy
 msgid "File Browser"
-msgstr "Przeglądarka plików:"
+msgstr "Przeglądarka plików"
 
 #: src/Startup/Backend/KeyFile.vala:98
 msgid "Custom Command"
