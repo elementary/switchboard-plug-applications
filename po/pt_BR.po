@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-08 09:10-0700\n"
+"POT-Creation-Date: 2018-10-13 15:05-0700\n"
 "PO-Revision-Date: 2017-03-16 23:37+0000\n"
 "Last-Translator: Leonardo <leonardo@elementary.io>\n"
 "Language-Team: Portuguese (Brazil) <http://weblate.elementary.io/projects/"
@@ -89,7 +89,7 @@ msgstr ""
 "Adicione aplicativos na lista de inicialização clicando no ícone da barra de "
 "ferramentas abaixo."
 
-#: src/Startup/Widgets/AppRow.vala:48
+#: src/Startup/Widgets/AppRow.vala:49
 #, c-format
 msgid "Launch %s on startup"
 msgstr "Executar %s na inicialização"
