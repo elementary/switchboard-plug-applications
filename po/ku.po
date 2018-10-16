@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-applications\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-13 15:05-0700\n"
+"POT-Creation-Date: 2018-10-15 20:03-0500\n"
 "PO-Revision-Date: 2018-06-20 00:06+0000\n"
 "Last-Translator: janus tolkien <janustolkien@gmail.com>\n"
 "Language-Team: Kurdish <https://weblate.elementary.io/projects/switchboard/"
@@ -28,7 +28,9 @@ msgstr "Sepan"
 msgid "Manage default and startup applications"
 msgstr "Sepanên jixweber û bijartî bi rê ve bibin"
 
-#: src/Plug.vala:54
+#: src/Plug.vala:54 src/Plug.vala:99 src/Plug.vala:100 src/Plug.vala:101
+#: src/Plug.vala:102 src/Plug.vala:103 src/Plug.vala:104 src/Plug.vala:105
+#: src/Plug.vala:106
 msgid "Default"
 msgstr "Jixweber"
 
@@ -45,32 +47,44 @@ msgid "Default Application"
 msgstr "Sepana jixweber"
 
 #: src/Plug.vala:99
-msgid "Default Web Browser"
-msgstr "Geroka Torê ya Jixweber"
+#, fuzzy
+msgid "Web Browser"
+msgstr "Geroka Torê:"
 
 #: src/Plug.vala:100
-msgid "Default Music Player"
-msgstr "Lêdera Muzîkê ya Jixweber"
+#, fuzzy
+msgid "Email Client"
+msgstr "bikirre E-Peyam:"
 
 #: src/Plug.vala:101
-msgid "Default Email Client"
-msgstr "bikirre E-Peyam standard"
+#, fuzzy
+msgid "Calendar"
+msgstr "Salname:"
 
 #: src/Plug.vala:102
-msgid "Default Text Editor"
-msgstr "Rêvebira Nivîsê ya Jixweber"
+#, fuzzy
+msgid "Video Player"
+msgstr "Lêdera Vîdyoyê:"
 
 #: src/Plug.vala:103
-msgid "Default File Browser"
-msgstr "Peldanka Gerokê ya Jixweber"
+#, fuzzy
+msgid "Music Player"
+msgstr "Lêdera Muzîkê:"
 
 #: src/Plug.vala:104
-msgid "Default Video Player"
-msgstr "Lêdera Vîdyoyê ya Jixweber"
+#, fuzzy
+msgid "Text Editor"
+msgstr "Rêvebira Nivîsê:"
 
 #: src/Plug.vala:105
-msgid "Default Calendar"
-msgstr "Demnameya Jixweber"
+#, fuzzy
+msgid "Image Viewer"
+msgstr "Dîmendera Wêneyê:"
+
+#: src/Plug.vala:106
+#, fuzzy
+msgid "File Browser"
+msgstr "Peldanka Gerokê:"
 
 #: src/Startup/Backend/KeyFile.vala:98
 msgid "Custom Command"
@@ -136,3 +150,24 @@ msgstr "Rêvebira Nivîsê:"
 #: src/Defaults/DefaultPlug.vala:83
 msgid "File Browser:"
 msgstr "Peldanka Gerokê:"
+
+#~ msgid "Default Web Browser"
+#~ msgstr "Geroka Torê ya Jixweber"
+
+#~ msgid "Default Music Player"
+#~ msgstr "Lêdera Muzîkê ya Jixweber"
+
+#~ msgid "Default Email Client"
+#~ msgstr "bikirre E-Peyam standard"
+
+#~ msgid "Default Text Editor"
+#~ msgstr "Rêvebira Nivîsê ya Jixweber"
+
+#~ msgid "Default File Browser"
+#~ msgstr "Peldanka Gerokê ya Jixweber"
+
+#~ msgid "Default Video Player"
+#~ msgstr "Lêdera Vîdyoyê ya Jixweber"
+
+#~ msgid "Default Calendar"
+#~ msgstr "Demnameya Jixweber"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-applications\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-13 15:05-0700\n"
+"POT-Creation-Date: 2018-10-15 20:03-0500\n"
 "PO-Revision-Date: 2016-08-09 20:14+0000\n"
 "Last-Translator: yavinfour <anjelo.passionist@gmail.com>\n"
 "Language-Team: Tagalog <tl@li.org>\n"
@@ -26,7 +26,9 @@ msgstr ""
 msgid "Manage default and startup applications"
 msgstr ""
 
-#: src/Plug.vala:54
+#: src/Plug.vala:54 src/Plug.vala:99 src/Plug.vala:100 src/Plug.vala:101
+#: src/Plug.vala:102 src/Plug.vala:103 src/Plug.vala:104 src/Plug.vala:105
+#: src/Plug.vala:106
 msgid "Default"
 msgstr ""
 
@@ -43,32 +45,44 @@ msgid "Default Application"
 msgstr ""
 
 #: src/Plug.vala:99
-msgid "Default Web Browser"
-msgstr ""
+#, fuzzy
+msgid "Web Browser"
+msgstr "Browser ng Web:"
 
 #: src/Plug.vala:100
-msgid "Default Music Player"
-msgstr ""
+#, fuzzy
+msgid "Email Client"
+msgstr "Email Client:"
 
 #: src/Plug.vala:101
-msgid "Default Email Client"
-msgstr ""
+#, fuzzy
+msgid "Calendar"
+msgstr "Kalendaryo:"
 
 #: src/Plug.vala:102
-msgid "Default Text Editor"
-msgstr ""
+#, fuzzy
+msgid "Video Player"
+msgstr "Player ng Video:"
 
 #: src/Plug.vala:103
-msgid "Default File Browser"
-msgstr ""
+#, fuzzy
+msgid "Music Player"
+msgstr "Player ng Musika:"
 
 #: src/Plug.vala:104
-msgid "Default Video Player"
-msgstr ""
+#, fuzzy
+msgid "Text Editor"
+msgstr "Editor ng Teksto"
 
 #: src/Plug.vala:105
-msgid "Default Calendar"
-msgstr ""
+#, fuzzy
+msgid "Image Viewer"
+msgstr "Viewer ng mga Imahe"
+
+#: src/Plug.vala:106
+#, fuzzy
+msgid "File Browser"
+msgstr "Pangbrowse ng mga File:"
 
 #: src/Startup/Backend/KeyFile.vala:98
 msgid "Custom Command"

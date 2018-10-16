@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-13 15:05-0700\n"
+"POT-Creation-Date: 2018-10-15 20:03-0500\n"
 "PO-Revision-Date: 2017-06-05 10:22+0000\n"
 "Last-Translator: Uwe S <saabisto@gmx.de>\n"
 "Language-Team: German <https://l10n.elementary.io/projects/switchboard/"
@@ -23,7 +23,9 @@ msgstr "Anwendungen"
 msgid "Manage default and startup applications"
 msgstr "Voreingestellte und automatisch gestartete Anwendungen verwalten"
 
-#: src/Plug.vala:54
+#: src/Plug.vala:54 src/Plug.vala:99 src/Plug.vala:100 src/Plug.vala:101
+#: src/Plug.vala:102 src/Plug.vala:103 src/Plug.vala:104 src/Plug.vala:105
+#: src/Plug.vala:106
 msgid "Default"
 msgstr "Voreingestellte Anwendungen"
 
@@ -40,32 +42,44 @@ msgid "Default Application"
 msgstr "Voreingestellte Anwendung"
 
 #: src/Plug.vala:99
-msgid "Default Web Browser"
-msgstr "Voreingestellter Internet-Browser"
+#, fuzzy
+msgid "Web Browser"
+msgstr "Internet-Browser:"
 
 #: src/Plug.vala:100
-msgid "Default Music Player"
-msgstr "Voreingestellte Anwendung zur Musikwiedergabe"
+#, fuzzy
+msgid "Email Client"
+msgstr "E-Mail-Anwendung:"
 
 #: src/Plug.vala:101
-msgid "Default Email Client"
-msgstr "Voreingestellte E-Mail-Anwendung"
+#, fuzzy
+msgid "Calendar"
+msgstr "Kalender:"
 
 #: src/Plug.vala:102
-msgid "Default Text Editor"
-msgstr "Voreingestellter Texteditor"
+#, fuzzy
+msgid "Video Player"
+msgstr "Videowiedergabe:"
 
 #: src/Plug.vala:103
-msgid "Default File Browser"
-msgstr "Voreingestellte Dateiverwaltung"
+#, fuzzy
+msgid "Music Player"
+msgstr "Musikwiedergabe:"
 
 #: src/Plug.vala:104
-msgid "Default Video Player"
-msgstr "Voreingestellte Anwendung zur Videowiedergabe"
+#, fuzzy
+msgid "Text Editor"
+msgstr "Texteditor:"
 
 #: src/Plug.vala:105
-msgid "Default Calendar"
-msgstr "Voreingestellter Kalender"
+#, fuzzy
+msgid "Image Viewer"
+msgstr "Bildbetrachter:"
+
+#: src/Plug.vala:106
+#, fuzzy
+msgid "File Browser"
+msgstr "Dateiverwaltung:"
 
 #: src/Startup/Backend/KeyFile.vala:98
 msgid "Custom Command"
@@ -133,3 +147,24 @@ msgstr "Texteditor:"
 #: src/Defaults/DefaultPlug.vala:83
 msgid "File Browser:"
 msgstr "Dateiverwaltung:"
+
+#~ msgid "Default Web Browser"
+#~ msgstr "Voreingestellter Internet-Browser"
+
+#~ msgid "Default Music Player"
+#~ msgstr "Voreingestellte Anwendung zur Musikwiedergabe"
+
+#~ msgid "Default Email Client"
+#~ msgstr "Voreingestellte E-Mail-Anwendung"
+
+#~ msgid "Default Text Editor"
+#~ msgstr "Voreingestellter Texteditor"
+
+#~ msgid "Default File Browser"
+#~ msgstr "Voreingestellte Dateiverwaltung"
+
+#~ msgid "Default Video Player"
+#~ msgstr "Voreingestellte Anwendung zur Videowiedergabe"
+
+#~ msgid "Default Calendar"
+#~ msgstr "Voreingestellter Kalender"

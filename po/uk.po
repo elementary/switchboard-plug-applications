@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-13 15:05-0700\n"
+"POT-Creation-Date: 2018-10-15 20:03-0500\n"
 "PO-Revision-Date: 2017-04-10 19:09+0000\n"
 "Last-Translator: Oleh Astappiev <astappev@gmail.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/switchboard/"
@@ -24,7 +24,9 @@ msgstr "Додатки"
 msgid "Manage default and startup applications"
 msgstr "Керування стандартними додатками та додатками автозапуску"
 
-#: src/Plug.vala:54
+#: src/Plug.vala:54 src/Plug.vala:99 src/Plug.vala:100 src/Plug.vala:101
+#: src/Plug.vala:102 src/Plug.vala:103 src/Plug.vala:104 src/Plug.vala:105
+#: src/Plug.vala:106
 msgid "Default"
 msgstr "Типові"
 
@@ -41,32 +43,44 @@ msgid "Default Application"
 msgstr "Додаток за замовчуванням"
 
 #: src/Plug.vala:99
-msgid "Default Web Browser"
-msgstr "Веб-браузер за замовчуванням"
+#, fuzzy
+msgid "Web Browser"
+msgstr "Веб-переглядач:"
 
 #: src/Plug.vala:100
-msgid "Default Music Player"
-msgstr "Музичний плеєр за замовчуванням"
+#, fuzzy
+msgid "Email Client"
+msgstr "Клієнт електронної пошти:"
 
 #: src/Plug.vala:101
-msgid "Default Email Client"
-msgstr "Поштовий клієнт за замовчуванням"
+#, fuzzy
+msgid "Calendar"
+msgstr "Календар:"
 
 #: src/Plug.vala:102
-msgid "Default Text Editor"
-msgstr "Текстовий редактор за замовчуванням"
+#, fuzzy
+msgid "Video Player"
+msgstr "Відео програвач:"
 
 #: src/Plug.vala:103
-msgid "Default File Browser"
-msgstr "Файловий менеджер за замовчуванням"
+#, fuzzy
+msgid "Music Player"
+msgstr "Музичний програвач:"
 
 #: src/Plug.vala:104
-msgid "Default Video Player"
-msgstr "Відео плеєр за замовчуванням"
+#, fuzzy
+msgid "Text Editor"
+msgstr "Текстовий редактор:"
 
 #: src/Plug.vala:105
-msgid "Default Calendar"
-msgstr "Календар за замовчуванням"
+#, fuzzy
+msgid "Image Viewer"
+msgstr "Переглядач зображень:"
+
+#: src/Plug.vala:106
+#, fuzzy
+msgid "File Browser"
+msgstr "Переглядач файлів:"
 
 #: src/Startup/Backend/KeyFile.vala:98
 msgid "Custom Command"
@@ -134,3 +148,24 @@ msgstr "Текстовий редактор:"
 #: src/Defaults/DefaultPlug.vala:83
 msgid "File Browser:"
 msgstr "Переглядач файлів:"
+
+#~ msgid "Default Web Browser"
+#~ msgstr "Веб-браузер за замовчуванням"
+
+#~ msgid "Default Music Player"
+#~ msgstr "Музичний плеєр за замовчуванням"
+
+#~ msgid "Default Email Client"
+#~ msgstr "Поштовий клієнт за замовчуванням"
+
+#~ msgid "Default Text Editor"
+#~ msgstr "Текстовий редактор за замовчуванням"
+
+#~ msgid "Default File Browser"
+#~ msgstr "Файловий менеджер за замовчуванням"
+
+#~ msgid "Default Video Player"
+#~ msgstr "Відео плеєр за замовчуванням"
+
+#~ msgid "Default Calendar"
+#~ msgstr "Календар за замовчуванням"

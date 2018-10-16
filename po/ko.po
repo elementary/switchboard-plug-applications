@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-13 15:05-0700\n"
+"POT-Creation-Date: 2018-10-15 20:03-0500\n"
 "PO-Revision-Date: 2017-01-25 20:59+0000\n"
 "Last-Translator: Jung-Kyu Park <bagjunggyu@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,7 +21,9 @@ msgstr "애플리케이션"
 msgid "Manage default and startup applications"
 msgstr "기본 및 시작 애플리케이션 관리하기"
 
-#: src/Plug.vala:54
+#: src/Plug.vala:54 src/Plug.vala:99 src/Plug.vala:100 src/Plug.vala:101
+#: src/Plug.vala:102 src/Plug.vala:103 src/Plug.vala:104 src/Plug.vala:105
+#: src/Plug.vala:106
 msgid "Default"
 msgstr "기본"
 
@@ -38,32 +40,44 @@ msgid "Default Application"
 msgstr "기본 애플리케이션"
 
 #: src/Plug.vala:99
-msgid "Default Web Browser"
-msgstr "기본 웹 브라우저"
+#, fuzzy
+msgid "Web Browser"
+msgstr "웹:"
 
 #: src/Plug.vala:100
-msgid "Default Music Player"
-msgstr "기본 음악 플레이어"
+#, fuzzy
+msgid "Email Client"
+msgstr "이메일:"
 
 #: src/Plug.vala:101
-msgid "Default Email Client"
-msgstr "기본 이메일 프로그램"
+#, fuzzy
+msgid "Calendar"
+msgstr "일정 관리:"
 
 #: src/Plug.vala:102
-msgid "Default Text Editor"
-msgstr "기본 텍스트 편집 프로그램"
+#, fuzzy
+msgid "Video Player"
+msgstr "동영상:"
 
 #: src/Plug.vala:103
-msgid "Default File Browser"
-msgstr "기본 파일 브라우저"
+#, fuzzy
+msgid "Music Player"
+msgstr "음악:"
 
 #: src/Plug.vala:104
-msgid "Default Video Player"
-msgstr "기본 비디오 플레이어"
+#, fuzzy
+msgid "Text Editor"
+msgstr "텍스트:"
 
 #: src/Plug.vala:105
-msgid "Default Calendar"
-msgstr "기본 일정 관리 프로그램"
+#, fuzzy
+msgid "Image Viewer"
+msgstr "사진:"
+
+#: src/Plug.vala:106
+#, fuzzy
+msgid "File Browser"
+msgstr "파일:"
 
 #: src/Startup/Backend/KeyFile.vala:98
 msgid "Custom Command"
@@ -129,3 +143,24 @@ msgstr "텍스트:"
 #: src/Defaults/DefaultPlug.vala:83
 msgid "File Browser:"
 msgstr "파일:"
+
+#~ msgid "Default Web Browser"
+#~ msgstr "기본 웹 브라우저"
+
+#~ msgid "Default Music Player"
+#~ msgstr "기본 음악 플레이어"
+
+#~ msgid "Default Email Client"
+#~ msgstr "기본 이메일 프로그램"
+
+#~ msgid "Default Text Editor"
+#~ msgstr "기본 텍스트 편집 프로그램"
+
+#~ msgid "Default File Browser"
+#~ msgstr "기본 파일 브라우저"
+
+#~ msgid "Default Video Player"
+#~ msgstr "기본 비디오 플레이어"
+
+#~ msgid "Default Calendar"
+#~ msgstr "기본 일정 관리 프로그램"

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-13 15:05-0700\n"
+"POT-Creation-Date: 2018-10-15 20:03-0500\n"
 "PO-Revision-Date: 2017-06-15 22:19+0000\n"
 "Last-Translator: Nathan Issartel <issartel.nathan@icloud.com>\n"
 "Language-Team: French <https://l10n.elementary.io/projects/switchboard/"
@@ -23,7 +23,9 @@ msgstr "Applications"
 msgid "Manage default and startup applications"
 msgstr "Gérer les applications au démarrage et celles par défaut"
 
-#: src/Plug.vala:54
+#: src/Plug.vala:54 src/Plug.vala:99 src/Plug.vala:100 src/Plug.vala:101
+#: src/Plug.vala:102 src/Plug.vala:103 src/Plug.vala:104 src/Plug.vala:105
+#: src/Plug.vala:106
 msgid "Default"
 msgstr "Par défaut"
 
@@ -40,32 +42,44 @@ msgid "Default Application"
 msgstr "Application par défaut"
 
 #: src/Plug.vala:99
-msgid "Default Web Browser"
-msgstr "Navigateur web par défaut"
+#, fuzzy
+msgid "Web Browser"
+msgstr "Navigateur web :"
 
 #: src/Plug.vala:100
-msgid "Default Music Player"
-msgstr "Lecteur de musique par défaut"
+#, fuzzy
+msgid "Email Client"
+msgstr "Messagerie :"
 
 #: src/Plug.vala:101
-msgid "Default Email Client"
-msgstr "Client mail par défaut"
+#, fuzzy
+msgid "Calendar"
+msgstr "Calendrier :"
 
 #: src/Plug.vala:102
-msgid "Default Text Editor"
-msgstr "Éditeur texte par défaut"
+#, fuzzy
+msgid "Video Player"
+msgstr "Lecteur vidéo :"
 
 #: src/Plug.vala:103
-msgid "Default File Browser"
-msgstr "Explorateur de fichiers par défaut"
+#, fuzzy
+msgid "Music Player"
+msgstr "Lecteur audio :"
 
 #: src/Plug.vala:104
-msgid "Default Video Player"
-msgstr "Lecteur vidéo par défaut"
+#, fuzzy
+msgid "Text Editor"
+msgstr "Éditeur de texte :"
 
 #: src/Plug.vala:105
-msgid "Default Calendar"
-msgstr "Calendrier par défaut"
+#, fuzzy
+msgid "Image Viewer"
+msgstr "Visionneuse d'images :"
+
+#: src/Plug.vala:106
+#, fuzzy
+msgid "File Browser"
+msgstr "Explorateur de fichiers :"
 
 #: src/Startup/Backend/KeyFile.vala:98
 msgid "Custom Command"
@@ -133,3 +147,24 @@ msgstr "Éditeur de texte :"
 #: src/Defaults/DefaultPlug.vala:83
 msgid "File Browser:"
 msgstr "Explorateur de fichiers :"
+
+#~ msgid "Default Web Browser"
+#~ msgstr "Navigateur web par défaut"
+
+#~ msgid "Default Music Player"
+#~ msgstr "Lecteur de musique par défaut"
+
+#~ msgid "Default Email Client"
+#~ msgstr "Client mail par défaut"
+
+#~ msgid "Default Text Editor"
+#~ msgstr "Éditeur texte par défaut"
+
+#~ msgid "Default File Browser"
+#~ msgstr "Explorateur de fichiers par défaut"
+
+#~ msgid "Default Video Player"
+#~ msgstr "Lecteur vidéo par défaut"
+
+#~ msgid "Default Calendar"
+#~ msgstr "Calendrier par défaut"

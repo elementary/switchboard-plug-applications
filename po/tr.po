@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-13 15:05-0700\n"
+"POT-Creation-Date: 2018-10-15 20:03-0500\n"
 "PO-Revision-Date: 2016-12-31 08:34+0000\n"
 "Last-Translator: İbrahim Ethem Göl <Unknown>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,7 +21,9 @@ msgstr "Uygulamalar"
 msgid "Manage default and startup applications"
 msgstr "Varsayılan ve başlangıç uygulamarını ayarla"
 
-#: src/Plug.vala:54
+#: src/Plug.vala:54 src/Plug.vala:99 src/Plug.vala:100 src/Plug.vala:101
+#: src/Plug.vala:102 src/Plug.vala:103 src/Plug.vala:104 src/Plug.vala:105
+#: src/Plug.vala:106
 msgid "Default"
 msgstr "Varsayılan"
 
@@ -38,32 +40,44 @@ msgid "Default Application"
 msgstr "Varsayılan Uygulama"
 
 #: src/Plug.vala:99
-msgid "Default Web Browser"
-msgstr "Varsayılan Web Tarayıcısı"
+#, fuzzy
+msgid "Web Browser"
+msgstr "Web Tarayıcı:"
 
 #: src/Plug.vala:100
-msgid "Default Music Player"
-msgstr "Varsayılan Müzik Çalar"
+#, fuzzy
+msgid "Email Client"
+msgstr "E-Posta İstemcisi:"
 
 #: src/Plug.vala:101
-msgid "Default Email Client"
-msgstr "Varsayılan E-posta İstemcisi"
+#, fuzzy
+msgid "Calendar"
+msgstr "Ajanda:"
 
 #: src/Plug.vala:102
-msgid "Default Text Editor"
-msgstr "Varsayılan Metin Düzenleyicisi"
+#, fuzzy
+msgid "Video Player"
+msgstr "Video Oynatıcı:"
 
 #: src/Plug.vala:103
-msgid "Default File Browser"
-msgstr "Varsayılan Dosya Tarayıcısı"
+#, fuzzy
+msgid "Music Player"
+msgstr "Müzik Çalar:"
 
 #: src/Plug.vala:104
-msgid "Default Video Player"
-msgstr "Varsayılan Video Oynatıcı"
+#, fuzzy
+msgid "Text Editor"
+msgstr "Metin Düzenleyici:"
 
 #: src/Plug.vala:105
-msgid "Default Calendar"
-msgstr "Varsayılan Takvim"
+#, fuzzy
+msgid "Image Viewer"
+msgstr "Resim Görüntüleyici:"
+
+#: src/Plug.vala:106
+#, fuzzy
+msgid "File Browser"
+msgstr "Dosya Tarayıcı:"
 
 #: src/Startup/Backend/KeyFile.vala:98
 msgid "Custom Command"
@@ -131,3 +145,24 @@ msgstr "Metin Düzenleyici:"
 #: src/Defaults/DefaultPlug.vala:83
 msgid "File Browser:"
 msgstr "Dosya Tarayıcı:"
+
+#~ msgid "Default Web Browser"
+#~ msgstr "Varsayılan Web Tarayıcısı"
+
+#~ msgid "Default Music Player"
+#~ msgstr "Varsayılan Müzik Çalar"
+
+#~ msgid "Default Email Client"
+#~ msgstr "Varsayılan E-posta İstemcisi"
+
+#~ msgid "Default Text Editor"
+#~ msgstr "Varsayılan Metin Düzenleyicisi"
+
+#~ msgid "Default File Browser"
+#~ msgstr "Varsayılan Dosya Tarayıcısı"
+
+#~ msgid "Default Video Player"
+#~ msgstr "Varsayılan Video Oynatıcı"
+
+#~ msgid "Default Calendar"
+#~ msgstr "Varsayılan Takvim"

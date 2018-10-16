@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-13 15:05-0700\n"
+"POT-Creation-Date: 2018-10-15 20:03-0500\n"
 "PO-Revision-Date: 2017-05-23 12:27+0000\n"
 "Last-Translator: Sergiu Pruteanu <sergiup26@gmail.com>\n"
 "Language-Team: Romanian <https://l10n.elementary.io/projects/switchboard/"
@@ -24,7 +24,9 @@ msgstr "Aplicaţii"
 msgid "Manage default and startup applications"
 msgstr ""
 
-#: src/Plug.vala:54
+#: src/Plug.vala:54 src/Plug.vala:99 src/Plug.vala:100 src/Plug.vala:101
+#: src/Plug.vala:102 src/Plug.vala:103 src/Plug.vala:104 src/Plug.vala:105
+#: src/Plug.vala:106
 msgid "Default"
 msgstr "Implicit"
 
@@ -42,32 +44,44 @@ msgid "Default Application"
 msgstr "Program Implicit"
 
 #: src/Plug.vala:99
-msgid "Default Web Browser"
-msgstr "Web Browser Implicit"
+#, fuzzy
+msgid "Web Browser"
+msgstr "Browser Web:"
 
 #: src/Plug.vala:100
-msgid "Default Music Player"
-msgstr "Player Audio Implicit"
+#, fuzzy
+msgid "Email Client"
+msgstr "Aplicaţie de Email:"
 
 #: src/Plug.vala:101
-msgid "Default Email Client"
-msgstr "Program de Email Implicit"
+#, fuzzy
+msgid "Calendar"
+msgstr "Calendar:"
 
 #: src/Plug.vala:102
-msgid "Default Text Editor"
-msgstr "Editor de Text Implicit"
+#, fuzzy
+msgid "Video Player"
+msgstr "Player Video:"
 
 #: src/Plug.vala:103
-msgid "Default File Browser"
-msgstr "Gestionator de Fişiere Implicit"
+#, fuzzy
+msgid "Music Player"
+msgstr "Player Audio:"
 
 #: src/Plug.vala:104
-msgid "Default Video Player"
-msgstr "Player Video Implicit"
+#, fuzzy
+msgid "Text Editor"
+msgstr "Editor de text:"
 
 #: src/Plug.vala:105
-msgid "Default Calendar"
-msgstr "Calendar Implicit"
+#, fuzzy
+msgid "Image Viewer"
+msgstr "Vizualizator de imagini:"
+
+#: src/Plug.vala:106
+#, fuzzy
+msgid "File Browser"
+msgstr "Gestionator de fişiere:"
 
 #: src/Startup/Backend/KeyFile.vala:98
 msgid "Custom Command"
@@ -139,3 +153,24 @@ msgstr "Editor de text:"
 #: src/Defaults/DefaultPlug.vala:83
 msgid "File Browser:"
 msgstr "Gestionator de fişiere:"
+
+#~ msgid "Default Web Browser"
+#~ msgstr "Web Browser Implicit"
+
+#~ msgid "Default Music Player"
+#~ msgstr "Player Audio Implicit"
+
+#~ msgid "Default Email Client"
+#~ msgstr "Program de Email Implicit"
+
+#~ msgid "Default Text Editor"
+#~ msgstr "Editor de Text Implicit"
+
+#~ msgid "Default File Browser"
+#~ msgstr "Gestionator de Fişiere Implicit"
+
+#~ msgid "Default Video Player"
+#~ msgstr "Player Video Implicit"
+
+#~ msgid "Default Calendar"
+#~ msgstr "Calendar Implicit"

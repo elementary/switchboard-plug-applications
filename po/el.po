@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-13 15:05-0700\n"
+"POT-Creation-Date: 2018-10-15 20:03-0500\n"
 "PO-Revision-Date: 2017-02-09 12:44+0000\n"
 "Last-Translator: Christos Iatropoulos <Unknown>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,7 +23,9 @@ msgstr ""
 "Διαχείριση προεπιλεγμένων εφαρμογών και εφαρμογών που εκτελούνται κατά την "
 "εκκίνηση"
 
-#: src/Plug.vala:54
+#: src/Plug.vala:54 src/Plug.vala:99 src/Plug.vala:100 src/Plug.vala:101
+#: src/Plug.vala:102 src/Plug.vala:103 src/Plug.vala:104 src/Plug.vala:105
+#: src/Plug.vala:106
 msgid "Default"
 msgstr "Προεπιλογή"
 
@@ -40,32 +42,44 @@ msgid "Default Application"
 msgstr "Προεπιλεγμένη εφαρμογή"
 
 #: src/Plug.vala:99
-msgid "Default Web Browser"
-msgstr "Προεπιλεγμένος περιηγητής ιστού"
+#, fuzzy
+msgid "Web Browser"
+msgstr "Περιηγητής ιστού:"
 
 #: src/Plug.vala:100
-msgid "Default Music Player"
-msgstr "Προεπιλεγμένος αναπαραγωγέας μουσικής"
+#, fuzzy
+msgid "Email Client"
+msgstr "Πελάτης email:"
 
 #: src/Plug.vala:101
-msgid "Default Email Client"
-msgstr "Προεπιλεγμένος πελάτης Email"
+#, fuzzy
+msgid "Calendar"
+msgstr "Ημερολόγιο:"
 
 #: src/Plug.vala:102
-msgid "Default Text Editor"
-msgstr "Προεπιλεγμένος επεξεργαστής κειμένου"
+#, fuzzy
+msgid "Video Player"
+msgstr "Αναπαραγωγέας βίντεο:"
 
 #: src/Plug.vala:103
-msgid "Default File Browser"
-msgstr "Προεπιλεγμένος περιηγητής αρχείων"
+#, fuzzy
+msgid "Music Player"
+msgstr "Αναπαραγωγέας μουσικής:"
 
 #: src/Plug.vala:104
-msgid "Default Video Player"
-msgstr "Προεπιλεγμένος αναπαραγωγέας βίντεο"
+#, fuzzy
+msgid "Text Editor"
+msgstr "Επεξεργαστής κειμένου:"
 
 #: src/Plug.vala:105
-msgid "Default Calendar"
-msgstr "Προεπιλεγμένο ημερολόγιο"
+#, fuzzy
+msgid "Image Viewer"
+msgstr "Προβολέας εικόνων:"
+
+#: src/Plug.vala:106
+#, fuzzy
+msgid "File Browser"
+msgstr "Περιηγητής αρχείων:"
 
 #: src/Startup/Backend/KeyFile.vala:98
 msgid "Custom Command"
@@ -133,3 +147,24 @@ msgstr "Επεξεργαστής κειμένου:"
 #: src/Defaults/DefaultPlug.vala:83
 msgid "File Browser:"
 msgstr "Περιηγητής αρχείων:"
+
+#~ msgid "Default Web Browser"
+#~ msgstr "Προεπιλεγμένος περιηγητής ιστού"
+
+#~ msgid "Default Music Player"
+#~ msgstr "Προεπιλεγμένος αναπαραγωγέας μουσικής"
+
+#~ msgid "Default Email Client"
+#~ msgstr "Προεπιλεγμένος πελάτης Email"
+
+#~ msgid "Default Text Editor"
+#~ msgstr "Προεπιλεγμένος επεξεργαστής κειμένου"
+
+#~ msgid "Default File Browser"
+#~ msgstr "Προεπιλεγμένος περιηγητής αρχείων"
+
+#~ msgid "Default Video Player"
+#~ msgstr "Προεπιλεγμένος αναπαραγωγέας βίντεο"
+
+#~ msgid "Default Calendar"
+#~ msgstr "Προεπιλεγμένο ημερολόγιο"

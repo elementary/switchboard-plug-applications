@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-13 15:05-0700\n"
+"POT-Creation-Date: 2018-10-15 20:03-0500\n"
 "PO-Revision-Date: 2018-03-10 00:04+0000\n"
 "Last-Translator: Fabio Zaramella <fabiozaramella@hotmail.it>\n"
 "Language-Team: Italian <https://weblate.elementary.io/projects/switchboard/"
@@ -23,7 +23,9 @@ msgstr "Applicazioni"
 msgid "Manage default and startup applications"
 msgstr "Gestisci le applicazioni predefinite e di avvio"
 
-#: src/Plug.vala:54
+#: src/Plug.vala:54 src/Plug.vala:99 src/Plug.vala:100 src/Plug.vala:101
+#: src/Plug.vala:102 src/Plug.vala:103 src/Plug.vala:104 src/Plug.vala:105
+#: src/Plug.vala:106
 msgid "Default"
 msgstr "Predefinite"
 
@@ -40,32 +42,44 @@ msgid "Default Application"
 msgstr "Applicazione predefinita"
 
 #: src/Plug.vala:99
-msgid "Default Web Browser"
-msgstr "Browser Internet predefinito"
+#, fuzzy
+msgid "Web Browser"
+msgstr "Programma di navigazione in rete:"
 
 #: src/Plug.vala:100
-msgid "Default Music Player"
-msgstr "Lettore musicale predefinito"
+#, fuzzy
+msgid "Email Client"
+msgstr "Posta elettronica:"
 
 #: src/Plug.vala:101
-msgid "Default Email Client"
-msgstr "Client di posta predefinito"
+#, fuzzy
+msgid "Calendar"
+msgstr "Calendario:"
 
 #: src/Plug.vala:102
-msgid "Default Text Editor"
-msgstr "Editor di testi predefinito"
+#, fuzzy
+msgid "Video Player"
+msgstr "Riproduttore video:"
 
 #: src/Plug.vala:103
-msgid "Default File Browser"
-msgstr "Gestore dei file predefinito"
+#, fuzzy
+msgid "Music Player"
+msgstr "Riproduttore musicale:"
 
 #: src/Plug.vala:104
-msgid "Default Video Player"
-msgstr "Riproduttore video predefinito"
+#, fuzzy
+msgid "Text Editor"
+msgstr "Editor di testi:"
 
 #: src/Plug.vala:105
-msgid "Default Calendar"
-msgstr "Calendario predefinito"
+#, fuzzy
+msgid "Image Viewer"
+msgstr "Visualizzatore di immagini:"
+
+#: src/Plug.vala:106
+#, fuzzy
+msgid "File Browser"
+msgstr "Gestore dei file:"
 
 #: src/Startup/Backend/KeyFile.vala:98
 msgid "Custom Command"
@@ -133,3 +147,24 @@ msgstr "Editor di testi:"
 #: src/Defaults/DefaultPlug.vala:83
 msgid "File Browser:"
 msgstr "Gestore dei file:"
+
+#~ msgid "Default Web Browser"
+#~ msgstr "Browser Internet predefinito"
+
+#~ msgid "Default Music Player"
+#~ msgstr "Lettore musicale predefinito"
+
+#~ msgid "Default Email Client"
+#~ msgstr "Client di posta predefinito"
+
+#~ msgid "Default Text Editor"
+#~ msgstr "Editor di testi predefinito"
+
+#~ msgid "Default File Browser"
+#~ msgstr "Gestore dei file predefinito"
+
+#~ msgid "Default Video Player"
+#~ msgstr "Riproduttore video predefinito"
+
+#~ msgid "Default Calendar"
+#~ msgstr "Calendario predefinito"

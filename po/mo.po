@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: applications-plug\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-13 15:05-0700\n"
+"POT-Creation-Date: 2018-10-15 20:03-0500\n"
 "PO-Revision-Date: 2018-05-27 12:54+0000\n"
 "Last-Translator: Romanic Ion Nicușor <contact.romanic@gmail.com>\n"
 "Language-Team: Moldovan <https://weblate.elementary.io/projects/switchboard/"
@@ -27,7 +27,9 @@ msgstr "Aplicații"
 msgid "Manage default and startup applications"
 msgstr "Gestionați aplicațiile implicite și de pornire"
 
-#: src/Plug.vala:54
+#: src/Plug.vala:54 src/Plug.vala:99 src/Plug.vala:100 src/Plug.vala:101
+#: src/Plug.vala:102 src/Plug.vala:103 src/Plug.vala:104 src/Plug.vala:105
+#: src/Plug.vala:106
 msgid "Default"
 msgstr "Mod implicit"
 
@@ -44,32 +46,44 @@ msgid "Default Application"
 msgstr "Aplicație implicită"
 
 #: src/Plug.vala:99
-msgid "Default Web Browser"
-msgstr "Web Browser implicit"
+#, fuzzy
+msgid "Web Browser"
+msgstr "Browser web:"
 
 #: src/Plug.vala:100
-msgid "Default Music Player"
-msgstr "Playerul implicit de muzică"
+#, fuzzy
+msgid "Email Client"
+msgstr "Client de email:"
 
 #: src/Plug.vala:101
-msgid "Default Email Client"
-msgstr "Clientul implicit de e-mail"
+#, fuzzy
+msgid "Calendar"
+msgstr "Calendarul:"
 
 #: src/Plug.vala:102
-msgid "Default Text Editor"
-msgstr "Editorul de text implicit"
+#, fuzzy
+msgid "Video Player"
+msgstr "Reproductor de Video:"
 
 #: src/Plug.vala:103
-msgid "Default File Browser"
-msgstr "Fișier implicit de browser"
+#, fuzzy
+msgid "Music Player"
+msgstr "Reproductor de muzică:"
 
 #: src/Plug.vala:104
-msgid "Default Video Player"
-msgstr "Player video prestabilit"
+#, fuzzy
+msgid "Text Editor"
+msgstr "Editor de text:"
 
 #: src/Plug.vala:105
-msgid "Default Calendar"
-msgstr "Calendarul implicit"
+#, fuzzy
+msgid "Image Viewer"
+msgstr "Vizualizator de imagini:"
+
+#: src/Plug.vala:106
+#, fuzzy
+msgid "File Browser"
+msgstr "Browser de fișiere:"
 
 #: src/Startup/Backend/KeyFile.vala:98
 msgid "Custom Command"
@@ -137,3 +151,24 @@ msgstr "Editor de text:"
 #: src/Defaults/DefaultPlug.vala:83
 msgid "File Browser:"
 msgstr "Browser de fișiere:"
+
+#~ msgid "Default Web Browser"
+#~ msgstr "Web Browser implicit"
+
+#~ msgid "Default Music Player"
+#~ msgstr "Playerul implicit de muzică"
+
+#~ msgid "Default Email Client"
+#~ msgstr "Clientul implicit de e-mail"
+
+#~ msgid "Default Text Editor"
+#~ msgstr "Editorul de text implicit"
+
+#~ msgid "Default File Browser"
+#~ msgstr "Fișier implicit de browser"
+
+#~ msgid "Default Video Player"
+#~ msgstr "Player video prestabilit"
+
+#~ msgid "Default Calendar"
+#~ msgstr "Calendarul implicit"
