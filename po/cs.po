@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-15 20:03-0500\n"
-"PO-Revision-Date: 2018-07-24 00:05+0000\n"
+"PO-Revision-Date: 2018-10-18 06:44+0000\n"
 "Last-Translator: Jan Marek <janmarek28@gmail.com>\n"
 "Language-Team: Czech <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-applications/cs/>\n"
@@ -42,44 +42,36 @@ msgid "Default Application"
 msgstr "Výchozí aplikace"
 
 #: src/Plug.vala:99
-#, fuzzy
 msgid "Web Browser"
-msgstr "Webový prohlížeč:"
+msgstr "Webový prohlížeč"
 
 #: src/Plug.vala:100
-#, fuzzy
 msgid "Email Client"
-msgstr "Emailový klient:"
+msgstr "Emailový klient"
 
 #: src/Plug.vala:101
-#, fuzzy
 msgid "Calendar"
-msgstr "Kalendář:"
+msgstr "Kalendář"
 
 #: src/Plug.vala:102
-#, fuzzy
 msgid "Video Player"
-msgstr "Přehrávač videa:"
+msgstr "Přehrávač videa"
 
 #: src/Plug.vala:103
-#, fuzzy
 msgid "Music Player"
-msgstr "Hudební přehrávač:"
+msgstr "Hudební přehrávač"
 
 #: src/Plug.vala:104
-#, fuzzy
 msgid "Text Editor"
-msgstr "Textový editor:"
+msgstr "Textový editor"
 
 #: src/Plug.vala:105
-#, fuzzy
 msgid "Image Viewer"
-msgstr "Prohlížeč obrázků:"
+msgstr "Prohlížeč obrázků"
 
 #: src/Plug.vala:106
-#, fuzzy
 msgid "File Browser"
-msgstr "Správce souborů:"
+msgstr "Správce souborů"
 
 #: src/Startup/Backend/KeyFile.vala:98
 msgid "Custom Command"
