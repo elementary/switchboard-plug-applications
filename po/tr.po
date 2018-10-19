@@ -3,15 +3,17 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-15 20:03-0500\n"
-"PO-Revision-Date: 2016-12-31 08:34+0000\n"
-"Last-Translator: İbrahim Ethem Göl <Unknown>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2018-10-19 22:23+0000\n"
+"Last-Translator: İbrahim Ethem Göl <ethem578@gmail.com>\n"
+"Language-Team: Turkish <https://weblate.elementary.io/projects/switchboard/"
+"switchboard-plug-applications/tr/>\n"
+"Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 3.0.1\n"
 "X-Launchpad-Export-Date: 2017-01-01 05:40+0000\n"
-"X-Generator: Launchpad (build 18298)\n"
 
 #: src/Plug.vala:37
 msgid "Applications"
@@ -40,44 +42,36 @@ msgid "Default Application"
 msgstr "Varsayılan Uygulama"
 
 #: src/Plug.vala:99
-#, fuzzy
 msgid "Web Browser"
-msgstr "Web Tarayıcı:"
+msgstr "Web Tarayıcısı"
 
 #: src/Plug.vala:100
-#, fuzzy
 msgid "Email Client"
-msgstr "E-Posta İstemcisi:"
+msgstr "E-Posta İstemcisi"
 
 #: src/Plug.vala:101
-#, fuzzy
 msgid "Calendar"
-msgstr "Ajanda:"
+msgstr "Takvim"
 
 #: src/Plug.vala:102
-#, fuzzy
 msgid "Video Player"
-msgstr "Video Oynatıcı:"
+msgstr "Video Oynatıcı"
 
 #: src/Plug.vala:103
-#, fuzzy
 msgid "Music Player"
-msgstr "Müzik Çalar:"
+msgstr "Müzik Çalar"
 
 #: src/Plug.vala:104
-#, fuzzy
 msgid "Text Editor"
-msgstr "Metin Düzenleyici:"
+msgstr "Metin Düzenleyici"
 
 #: src/Plug.vala:105
-#, fuzzy
 msgid "Image Viewer"
-msgstr "Resim Görüntüleyici:"
+msgstr "Resim Görüntüleyici"
 
 #: src/Plug.vala:106
-#, fuzzy
 msgid "File Browser"
-msgstr "Dosya Tarayıcı:"
+msgstr "Dosya Tarayıcısı"
 
 #: src/Startup/Backend/KeyFile.vala:98
 msgid "Custom Command"
