@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-15 20:03-0500\n"
-"PO-Revision-Date: 2018-10-16 01:52+0000\n"
+"PO-Revision-Date: 2018-11-07 01:52+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-applications/ja/>\n"
@@ -92,14 +92,12 @@ msgstr "起動時にアプリを起動"
 
 #: src/Startup/Widgets/List.vala:52
 msgid "Add apps to the Startup list by clicking the icon in the toolbar below."
-msgstr ""
-"下にあるツールバーのアイコンをクリックして起動時のリストにアプリを追加しま"
-"す。"
+msgstr "下のツールバーのアイコンをクリックして起動時のリストにアプリを追加します。"
 
 #: src/Startup/Widgets/AppRow.vala:49
 #, c-format
 msgid "Launch %s on startup"
-msgstr "起動時に %s を起動"
+msgstr "起動時に %s を起動します"
 
 #: src/Startup/Widgets/AppChooser.vala:39
 msgid "Search Applications"
