@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-15 20:03-0500\n"
-"PO-Revision-Date: 2018-11-04 13:21+0000\n"
+"PO-Revision-Date: 2018-11-07 01:52+0000\n"
 "Last-Translator: Elvis Mujanović <elvis.mujanovic@gmail.com>\n"
 "Language-Team: Bosnian <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-applications/bs/>\n"
@@ -80,7 +80,7 @@ msgstr "Vlastita komanda"
 
 #: src/Startup/Widgets/Scrolled.vala:56
 msgid "Add Startup App…"
-msgstr "Unesite vlastitu komandu"
+msgstr "Dodaj automatsko pokretanje aplikacije…"
 
 #: src/Startup/Widgets/Scrolled.vala:60
 msgid "Remove Selected Startup App"
