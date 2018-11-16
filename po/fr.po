@@ -4,7 +4,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-15 20:03-0500\n"
 "PO-Revision-Date: 2018-11-16 08:14+0000\n"
-"Last-Translator: Eliott Lavier <eliott.lavier@gmail.com>\n"
+"Last-Translator: Corentin Noël <corentin@elementary.io>\n"
 "Language-Team: French <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-applications/fr/>\n"
 "Language: fr\n"
@@ -46,39 +46,32 @@ msgid "Web Browser"
 msgstr "Navigateur web"
 
 #: src/Plug.vala:100
-#, fuzzy
 msgid "Email Client"
-msgstr "Messagerie :"
+msgstr "Client E-Mail"
 
 #: src/Plug.vala:101
-#, fuzzy
 msgid "Calendar"
-msgstr "Calendrier :"
+msgstr "Calendrier"
 
 #: src/Plug.vala:102
-#, fuzzy
 msgid "Video Player"
-msgstr "Lecteur vidéo :"
+msgstr "Lecteur vidéo"
 
 #: src/Plug.vala:103
-#, fuzzy
 msgid "Music Player"
-msgstr "Lecteur audio :"
+msgstr "Lecteur audio"
 
 #: src/Plug.vala:104
-#, fuzzy
 msgid "Text Editor"
-msgstr "Éditeur de texte :"
+msgstr "Éditeur de texte"
 
 #: src/Plug.vala:105
-#, fuzzy
 msgid "Image Viewer"
-msgstr "Visionneuse d'images :"
+msgstr "Visionneuse d'images"
 
 #: src/Plug.vala:106
-#, fuzzy
 msgid "File Browser"
-msgstr "Explorateur de fichiers :"
+msgstr "Explorateur de fichiers"
 
 #: src/Startup/Backend/KeyFile.vala:98
 msgid "Custom Command"
