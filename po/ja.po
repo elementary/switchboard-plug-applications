@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-15 20:03-0500\n"
-"PO-Revision-Date: 2018-11-24 13:08+0000\n"
+"PO-Revision-Date: 2018-12-02 06:33+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-applications/ja/>\n"
@@ -109,35 +109,35 @@ msgstr "カスタムコマンドを入力"
 
 #: src/Defaults/DefaultPlug.vala:50
 msgid "Web Browser:"
-msgstr "Web ブラウザー："
+msgstr "Web ブラウザー:"
 
 #: src/Defaults/DefaultPlug.vala:54
 msgid "Email Client:"
-msgstr "メールクライアント："
+msgstr "メールクライアント:"
 
 #: src/Defaults/DefaultPlug.vala:58
 msgid "Calendar:"
-msgstr "カレンダー："
+msgstr "カレンダー:"
 
 #: src/Defaults/DefaultPlug.vala:62
 msgid "Video Player:"
-msgstr "ビデオプレーヤー："
+msgstr "ビデオプレーヤー:"
 
 #: src/Defaults/DefaultPlug.vala:68
 msgid "Music Player:"
-msgstr "ミュージックプレーヤー："
+msgstr "ミュージックプレーヤー:"
 
 #: src/Defaults/DefaultPlug.vala:73
 msgid "Image Viewer:"
-msgstr "画像ビューアー："
+msgstr "画像ビューアー:"
 
 #: src/Defaults/DefaultPlug.vala:78
 msgid "Text Editor:"
-msgstr "テキストエディター："
+msgstr "テキストエディター:"
 
 #: src/Defaults/DefaultPlug.vala:83
 msgid "File Browser:"
-msgstr "ファイルブラウザー："
+msgstr "ファイルブラウザー:"
 
 #~ msgid "Default Web Browser"
 #~ msgstr "デフォルトの Web ブラウザー"
