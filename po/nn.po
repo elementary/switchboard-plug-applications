@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-15 20:03-0500\n"
-"PO-Revision-Date: 2019-01-06 12:27+0000\n"
+"PO-Revision-Date: 2019-01-07 00:03+0000\n"
 "Last-Translator: Simon Dagfinrud <semonje@gmail.com>\n"
 "Language-Team: Norwegian Nynorsk <https://weblate.elementary.io/projects/"
 "switchboard/switchboard-plug-applications/nn/>\n"
@@ -75,37 +75,38 @@ msgstr "Filbehandlar"
 
 #: src/Startup/Backend/KeyFile.vala:98
 msgid "Custom Command"
-msgstr "Sjølvvald kommando"
+msgstr "Eigendefinert kommando"
 
 #: src/Startup/Widgets/Scrolled.vala:56
 msgid "Add Startup App…"
-msgstr "Legg til applikasjon ved oppstart…"
+msgstr "Legg til oppstartapplikasjon…"
 
 #: src/Startup/Widgets/Scrolled.vala:60
 msgid "Remove Selected Startup App"
-msgstr "Fjern valde oppstart-applikasjon"
+msgstr "Fjern vald oppstartsapplikasjon"
 
 #: src/Startup/Widgets/List.vala:52
 msgid "Launch Apps on Startup"
-msgstr "Køyr appar etter oppstart"
+msgstr "Køyr applikasjonar ved oppstart"
 
 #: src/Startup/Widgets/List.vala:52
 msgid "Add apps to the Startup list by clicking the icon in the toolbar below."
 msgstr ""
-"Legg til appar i oppstartslista ved å klikka på ikonet i verktøylinja under."
+"Legg til applikasjonar i oppstartslista ved å klikke på ikonet i "
+"verktøylinja nedanfor."
 
 #: src/Startup/Widgets/AppRow.vala:49
 #, c-format
 msgid "Launch %s on startup"
-msgstr "Køyr %s etter oppstart"
+msgstr "Køyr %s ved oppstart"
 
 #: src/Startup/Widgets/AppChooser.vala:39
 msgid "Search Applications"
-msgstr "Søk etter applikasjonar"
+msgstr "Søk i applikasjonar"
 
 #: src/Startup/Widgets/AppChooser.vala:55
 msgid "Type in a custom command"
-msgstr "Skriv inn ein sjølvvald kommando"
+msgstr "Skriv inn ein eigendefinert kommando"
 
 #: src/Defaults/DefaultPlug.vala:50
 msgid "Web Browser:"
@@ -113,7 +114,7 @@ msgstr "Nettlesar:"
 
 #: src/Defaults/DefaultPlug.vala:54
 msgid "Email Client:"
-msgstr "Epostklient:"
+msgstr "E-postklient:"
 
 #: src/Defaults/DefaultPlug.vala:58
 msgid "Calendar:"
@@ -129,15 +130,15 @@ msgstr "Musikkspelar:"
 
 #: src/Defaults/DefaultPlug.vala:73
 msgid "Image Viewer:"
-msgstr "Biletevisar:"
+msgstr "Biletframvisar:"
 
 #: src/Defaults/DefaultPlug.vala:78
 msgid "Text Editor:"
-msgstr "Tekstredigerar:"
+msgstr "Tekstbehandlar:"
 
 #: src/Defaults/DefaultPlug.vala:83
 msgid "File Browser:"
-msgstr "Filhandsamar:"
+msgstr "Filbehandlar:"
 
 #~ msgid "Default Web Browser"
 #~ msgstr "Standard nettlesar"
