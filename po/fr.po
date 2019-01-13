@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-15 20:03-0500\n"
-"PO-Revision-Date: 2018-11-16 08:14+0000\n"
-"Last-Translator: Corentin Noël <corentin@elementary.io>\n"
+"PO-Revision-Date: 2019-01-14 00:09+0000\n"
+"Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
 "Language-Team: French <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-applications/fr/>\n"
 "Language: fr\n"
@@ -47,7 +47,7 @@ msgstr "Navigateur web"
 
 #: src/Plug.vala:100
 msgid "Email Client"
-msgstr "Client E-Mail"
+msgstr "Messagerie"
 
 #: src/Plug.vala:101
 msgid "Calendar"
