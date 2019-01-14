@@ -3,16 +3,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-15 20:03-0500\n"
-"PO-Revision-Date: 2017-04-13 08:51+0000\n"
+"PO-Revision-Date: 2019-01-14 13:22+0000\n"
 "Last-Translator: colindemian <colindemian@outlook.com>\n"
-"Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
-"switchboard/switchboard-plug-applications/zh_CN/>\n"
+"Language-Team: Chinese (Simplified) <https://weblate.elementary.io/projects/"
+"switchboard/switchboard-plug-applications/zh_Hans/>\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 2.13-dev\n"
+"X-Generator: Weblate 3.0.1\n"
 "X-Launchpad-Export-Date: 2016-12-02 05:37+0000\n"
 
 #: src/Plug.vala:37
@@ -42,44 +42,36 @@ msgid "Default Application"
 msgstr "默认应用程序"
 
 #: src/Plug.vala:99
-#, fuzzy
 msgid "Web Browser"
-msgstr "网络浏览器："
+msgstr "网络浏览器"
 
 #: src/Plug.vala:100
-#, fuzzy
 msgid "Email Client"
-msgstr "邮件客户端："
+msgstr "邮件客户端"
 
 #: src/Plug.vala:101
-#, fuzzy
 msgid "Calendar"
-msgstr "日历查看器："
+msgstr "日历查看器"
 
 #: src/Plug.vala:102
-#, fuzzy
 msgid "Video Player"
-msgstr "视频播放器："
+msgstr "视频播放器"
 
 #: src/Plug.vala:103
-#, fuzzy
 msgid "Music Player"
-msgstr "音乐播放器："
+msgstr "音乐播放器"
 
 #: src/Plug.vala:104
-#, fuzzy
 msgid "Text Editor"
-msgstr "文本编辑器："
+msgstr "文本编辑器"
 
 #: src/Plug.vala:105
-#, fuzzy
 msgid "Image Viewer"
-msgstr "图像查看器："
+msgstr "图像查看器"
 
 #: src/Plug.vala:106
-#, fuzzy
 msgid "File Browser"
-msgstr "文件浏览器："
+msgstr "文件浏览器"
 
 #: src/Startup/Backend/KeyFile.vala:98
 msgid "Custom Command"
