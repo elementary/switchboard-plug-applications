@@ -14,7 +14,8 @@ plug_files = files(
     'Startup/Widgets/AppChooserRow.vala',
     'Startup/Widgets/AppChooser.vala',
     'Defaults/Utils.vala',
-    'Defaults/DefaultPlug.vala'
+    'Defaults/DefaultPlug.vala',
+    'WebSearch/WebSearch.vala'
 )
 
 switchboard_dep = dependency('switchboard-2.0')

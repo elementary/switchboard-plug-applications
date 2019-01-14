@@ -14,3 +14,4 @@ src/Startup/Widgets/AppChooserRow.vala
 src/Startup/Widgets/AppChooser.vala
 src/Defaults/Utils.vala
 src/Defaults/DefaultPlug.vala
+src/WebSearch/WebSearch.vala

@@ -23,6 +23,7 @@ public class ApplicationsPlug : Switchboard.Plug {
 
     private const string DEFAULTS = "defaults";
     private const string STARTUP = "startup";
+    private const string WEB_SEARCH = "web_search";
 
     private Gtk.Grid grid;
     private Gtk.Stack stack;
@@ -32,6 +33,7 @@ public class ApplicationsPlug : Switchboard.Plug {
         settings.set ("applications", null);
         settings.set ("applications/defaults", DEFAULTS);
         settings.set ("applications/startup", STARTUP);
+        settings.set ("applications/websearch", WEB_SEARCH);
         Object (category: Category.PERSONAL,
                 code_name: "personal-pantheon-applications",
                 display_name: _("Applications"),
@@ -47,12 +49,14 @@ public class ApplicationsPlug : Switchboard.Plug {
 
         var defaults_plug = new Defaults.Plug ();
         var startup_plug = new Startup.Plug ();
+        var websearch_plug = new WebSearch.Plug ();
 
         stack = new Gtk.Stack ();
         stack.expand = true;
 
         stack.add_titled (defaults_plug, DEFAULTS, _("Default"));
         stack.add_titled (startup_plug, STARTUP, _("Startup"));
+        stack.add_titled (websearch_plug, WEB_SEARCH, _("Web Search"));
 
         var stack_switcher = new Gtk.StackSwitcher ();
         stack_switcher.halign = Gtk.Align.CENTER;
@@ -72,17 +76,18 @@ public class ApplicationsPlug : Switchboard.Plug {
     }
 
     public override void shown () {
-    
+
     }
 
     public override void hidden () {
-    
+
     }
 
     public override void search_callback (string location) {
         switch (location) {
             case STARTUP:
             case DEFAULTS:
+            case WEB_SEARCH:
                 stack.set_visible_child_name (location);
                 break;
             default:
@@ -92,9 +97,11 @@ public class ApplicationsPlug : Switchboard.Plug {
     }
 
     public override async Gee.TreeMap<string, string> search (string search) {
-        var search_results = new Gee.TreeMap<string, string> ((GLib.CompareDataFunc<string>)strcmp, (Gee.EqualDataFunc<string>)str_equal);
+        var search_results = new Gee.TreeMap<string, string> ((a, b) => strcmp (a, b), (a, b) => str_equal (a, b));
         search_results.set ("%s → %s".printf (display_name, _("Startup")), STARTUP);
         search_results.set ("%s → %s".printf (display_name, _("Default Apps")), DEFAULTS);
+        search_results.set ("%s → %s".printf (display_name, _("Web Search")), WEB_SEARCH);
+        search_results.set ("%s → %s → %s".printf (display_name, _("Web Search"), _("Search Engine")), WEB_SEARCH);
         search_results.set ("%s → %s".printf (display_name, _("Default Application")), DEFAULTS);
         search_results.set ("%s → %s → %s".printf (display_name, _("Default"), _("Web Browser")), DEFAULTS);
         search_results.set ("%s → %s → %s".printf (display_name, _("Default"), _("Email Client")), DEFAULTS);
