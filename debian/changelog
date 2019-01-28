@@ -1,3 +1,9 @@
+switchboard-plug-applications (2.1.5) bionic; urgency=medium
+
+  * New upstream release.
+
+ -- Cody Garver <codygarver@gmail.com>  Mon, 28 Jan 2019 07:18:32 -0600
+
 switchboard-plug-applications (2.1.4) bionic; urgency=medium
 
   * New upstream release.
