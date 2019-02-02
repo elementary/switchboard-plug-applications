@@ -164,8 +164,10 @@ public class WebSearch.Plug : Gtk.Grid {
             halign = Gtk.Align.START
         };
 
-        var enabled_label = new Gtk.Label (_("Enable Web Search:"));
-        enabled_label.get_style_context ().add_class (Granite.STYLE_CLASS_H3_LABEL);
+        var enabled_label = new Gtk.Label (null) {
+            label = "<span size='large'>" + _("Enable Web Search:") + "</span>",
+            use_markup = true
+        };
 
         enabled_switch = new Gtk.Switch ();
         gsettings.bind ("web-search-enabled", enabled_switch, "active", SettingsBindFlags.DEFAULT);
