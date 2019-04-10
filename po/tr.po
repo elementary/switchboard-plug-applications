@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-15 20:03-0500\n"
-"PO-Revision-Date: 2019-04-08 00:53+0000\n"
+"PO-Revision-Date: 2019-04-11 21:53+0000\n"
 "Last-Translator: Ozgur Baskin <bebeto_baskin@yahoo.com>\n"
 "Language-Team: Turkish <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-applications/tr/>\n"
@@ -47,7 +47,7 @@ msgstr "Web Tarayıcısı"
 
 #: src/Plug.vala:100
 msgid "Email Client"
-msgstr "E-Posta İstemcisi"
+msgstr "E-posta İstemcisi"
 
 #: src/Plug.vala:101
 msgid "Calendar"
@@ -114,7 +114,7 @@ msgstr "Web Tarayıcı:"
 
 #: src/Defaults/DefaultPlug.vala:54
 msgid "Email Client:"
-msgstr "E-Posta İstemcisi:"
+msgstr "E-posta İstemcisi:"
 
 #: src/Defaults/DefaultPlug.vala:58
 msgid "Calendar:"
