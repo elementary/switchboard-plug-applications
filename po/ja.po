@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-15 20:03-0500\n"
+"POT-Creation-Date: 2019-06-26 22:44+0200\n"
 "PO-Revision-Date: 2018-12-02 06:33+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://weblate.elementary.io/projects/switchboard/"
@@ -92,7 +92,8 @@ msgstr "起動時にアプリを起動"
 
 #: src/Startup/Widgets/List.vala:52
 msgid "Add apps to the Startup list by clicking the icon in the toolbar below."
-msgstr "下のツールバーのアイコンをクリックして起動時のリストにアプリを追加します。"
+msgstr ""
+"下のツールバーのアイコンをクリックして起動時のリストにアプリを追加します。"
 
 #: src/Startup/Widgets/AppRow.vala:49
 #, c-format
