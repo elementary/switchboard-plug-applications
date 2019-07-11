@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-15 20:03-0500\n"
-"PO-Revision-Date: 2019-07-04 01:46+0000\n"
+"PO-Revision-Date: 2019-07-13 08:28+0000\n"
 "Last-Translator: Shtonchjo <shtonchjo@gmail.com>\n"
 "Language-Team: Esperanto <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-applications/eo/>\n"
@@ -59,7 +59,7 @@ msgstr "Filmospektilo"
 
 #: src/Plug.vala:103
 msgid "Music Player"
-msgstr "Muzik-ludilo"
+msgstr "Muzikilo"
 
 #: src/Plug.vala:104
 msgid "Text Editor"
@@ -126,11 +126,11 @@ msgstr "Film-spektilo:"
 
 #: src/Defaults/DefaultPlug.vala:68
 msgid "Music Player:"
-msgstr "Muzik-ludilo:"
+msgstr "Muzikilo:"
 
 #: src/Defaults/DefaultPlug.vala:73
 msgid "Image Viewer:"
-msgstr "Bildo-spektilo:"
+msgstr "Vidilo de bildoj:"
 
 #: src/Defaults/DefaultPlug.vala:78
 msgid "Text Editor:"
