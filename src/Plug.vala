@@ -33,7 +33,7 @@ public class ApplicationsPlug : Switchboard.Plug {
         settings.set ("applications/defaults", DEFAULTS);
         settings.set ("applications/startup", STARTUP);
         Object (category: Category.PERSONAL,
-                code_name: "personal-pantheon-applications",
+                code_name: "io.elementary.switchboard.applications",
                 display_name: _("Applications"),
                 description: _("Manage default and startup applications"),
                 icon: "preferences-desktop-applications",
