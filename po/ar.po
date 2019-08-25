@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-06-26 22:44+0200\n"
-"PO-Revision-Date: 2019-03-12 21:27+0000\n"
+"PO-Revision-Date: 2019-08-26 06:22+0000\n"
 "Last-Translator: nasserbinlaboun <nasser1990com@gmail.com>\n"
 "Language-Team: Arabic <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-applications/ar/>\n"
@@ -13,12 +13,12 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
 "&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
-"X-Generator: Weblate 3.4\n"
+"X-Generator: Weblate 3.7.1\n"
 "X-Launchpad-Export-Date: 2016-11-26 05:52+0000\n"
 
 #: src/Plug.vala:37
 msgid "Applications"
-msgstr ""
+msgstr "التطبيقات"
 
 #: src/Plug.vala:38
 msgid "Manage default and startup applications"
@@ -36,11 +36,11 @@ msgstr "بدء التشغيل"
 
 #: src/Plug.vala:97
 msgid "Default Apps"
-msgstr ""
+msgstr "التطبيقات الإفتراضية"
 
 #: src/Plug.vala:98
 msgid "Default Application"
-msgstr ""
+msgstr "التطبيق الإفتراضي"
 
 #: src/Plug.vala:99
 msgid "Web Browser"
@@ -48,7 +48,7 @@ msgstr "متصفح الويب"
 
 #: src/Plug.vala:100
 msgid "Email Client"
-msgstr "برنامج البريد الاكتروني"
+msgstr "برنامج البريد الالكتروني"
 
 #: src/Plug.vala:101
 msgid "Calendar"
@@ -89,7 +89,7 @@ msgstr "إزالة التطبيق المحدد من بدء التشغيل"
 
 #: src/Startup/Widgets/List.vala:52
 msgid "Launch Apps on Startup"
-msgstr ""
+msgstr "شغل التطبيقات عند الإقلاع"
 
 #: src/Startup/Widgets/List.vala:52
 msgid "Add apps to the Startup list by clicking the icon in the toolbar below."
@@ -98,7 +98,7 @@ msgstr ""
 #: src/Startup/Widgets/AppRow.vala:49
 #, c-format
 msgid "Launch %s on startup"
-msgstr ""
+msgstr "شغل %s عند الإقلاع"
 
 #: src/Startup/Widgets/AppChooser.vala:39
 msgid "Search Applications"
@@ -126,7 +126,7 @@ msgstr "مشغل الفيديو:"
 
 #: src/Defaults/DefaultPlug.vala:68
 msgid "Music Player:"
-msgstr ""
+msgstr "مشغل الموسيقى:"
 
 #: src/Defaults/DefaultPlug.vala:73
 msgid "Image Viewer:"
