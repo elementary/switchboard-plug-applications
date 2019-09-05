@@ -3,15 +3,17 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-06-26 22:44+0200\n"
-"PO-Revision-Date: 2016-02-25 20:36+0000\n"
-"Last-Translator: Jaizu <jaizu85@gmail.com>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2019-09-06 15:22+0000\n"
+"Last-Translator: Daniel <riesp@protonmail.com>\n"
+"Language-Team: Galician <https://l10n.elementary.io/projects/switchboard/"
+"switchboard-plug-applications/gl/>\n"
+"Language: gl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 3.7.1\n"
 "X-Launchpad-Export-Date: 2016-11-26 05:52+0000\n"
-"X-Generator: Launchpad (build 18282)\n"
 
 #: src/Plug.vala:37
 msgid "Applications"
@@ -33,51 +35,43 @@ msgstr "Inicio"
 
 #: src/Plug.vala:97
 msgid "Default Apps"
-msgstr ""
+msgstr "Aplicacións por defecto"
 
 #: src/Plug.vala:98
 msgid "Default Application"
-msgstr ""
+msgstr "Aplicación por defecto"
 
 #: src/Plug.vala:99
-#, fuzzy
 msgid "Web Browser"
-msgstr "Navegador web:"
+msgstr "Navegador web"
 
 #: src/Plug.vala:100
-#, fuzzy
 msgid "Email Client"
-msgstr "Cliente de correo:"
+msgstr "Cliente de correo"
 
 #: src/Plug.vala:101
-#, fuzzy
 msgid "Calendar"
-msgstr "Calendario:"
+msgstr "Calendario"
 
 #: src/Plug.vala:102
-#, fuzzy
 msgid "Video Player"
-msgstr "Reprodutor de vídeo:"
+msgstr "Reprodutor de vídeo"
 
 #: src/Plug.vala:103
-#, fuzzy
 msgid "Music Player"
-msgstr "Reprodutor musical:"
+msgstr "Reprodutor de música"
 
 #: src/Plug.vala:104
-#, fuzzy
 msgid "Text Editor"
-msgstr "Editor de texto:"
+msgstr "Editor de texto"
 
 #: src/Plug.vala:105
-#, fuzzy
 msgid "Image Viewer"
-msgstr "Visor de imaxes:"
+msgstr "Visor de imaxes"
 
 #: src/Plug.vala:106
-#, fuzzy
 msgid "File Browser"
-msgstr "Navegador de ficheiros:"
+msgstr "Navegador de ficheiros"
 
 #: src/Startup/Backend/KeyFile.vala:98
 msgid "Custom Command"
@@ -93,16 +87,18 @@ msgstr "Retirar o aplicativo seleccionado do inicio"
 
 #: src/Startup/Widgets/List.vala:52
 msgid "Launch Apps on Startup"
-msgstr ""
+msgstr "Executar aplicacións ao iniciar"
 
 #: src/Startup/Widgets/List.vala:52
 msgid "Add apps to the Startup list by clicking the icon in the toolbar below."
 msgstr ""
+"Engade aplicacións á lista de inicio facendo clic na icona na barra de "
+"ferramentas de abaixo."
 
 #: src/Startup/Widgets/AppRow.vala:49
 #, c-format
 msgid "Launch %s on startup"
-msgstr ""
+msgstr "Executar %s ao iniciar"
 
 #: src/Startup/Widgets/AppChooser.vala:39
 msgid "Search Applications"
