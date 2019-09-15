@@ -41,7 +41,7 @@ public class Startup.Widgets.AppChooserRow : Gtk.Grid {
         if (icon_theme.lookup_by_gicon (icon, 32, Gtk.IconLookupFlags.USE_BUILTIN) == null) {
             try {
                 var pixbuf = new Gdk.Pixbuf.from_file (app_info.icon).scale_simple (32, 32, Gdk.InterpType.BILINEAR);
-                image = new Gtk.Image.from_pixbuf ( pixbuf );
+                image = new Gtk.Image.from_pixbuf (pixbuf);
             } catch (GLib.Error err) {
                 icon = new ThemedIcon (FALLBACK_ICON);
                 image = new Gtk.Image.from_gicon (icon, Gtk.IconSize.DND);
