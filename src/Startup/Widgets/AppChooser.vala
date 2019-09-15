@@ -49,7 +49,7 @@ public class Startup.Widgets.AppChooser : Gtk.Popover {
         list.set_filter_func (filter_function);
         scrolled.add (list);
 
-        custom_entry = new Gtk.Entry();
+        custom_entry = new Gtk.Entry ();
         custom_entry.margin_end = 12;
         custom_entry.margin_start = 12;
         custom_entry.placeholder_text = _("Type in a custom command");

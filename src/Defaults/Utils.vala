@@ -24,10 +24,10 @@ namespace Defaults {
     void map_types_to_app (string[] types, GLib.AppInfo app) {
         try {
             for (int i=0; i < types.length; i++) {
-                app.set_as_default_for_type(types[i]);
+                app.set_as_default_for_type (types[i]);
             }
         } catch (GLib.Error e) {
-            stdout.printf("Error: %s\n", e.message);
+            stdout.printf ("Error: %s\n", e.message);
         }
 
     }
@@ -49,7 +49,7 @@ namespace Defaults {
                 };
 
             case "email_client":
-                return  { "x-scheme-handler/mailto"
+                return { "x-scheme-handler/mailto"
                 };
 
             case "calendar":
@@ -57,7 +57,7 @@ namespace Defaults {
                 };
 
             case "video_player":
-                return {    "application/x-quicktimeplayer",
+                return { "application/x-quicktimeplayer",
                         "application/vnd.rn-realmedia",
                         "application/asx",
                         "application/x-mplayer2",
@@ -93,7 +93,7 @@ namespace Defaults {
                 };
 
             case "music_player":
-                return  {   "audio/ogg",
+                return { "audio/ogg",
                         "audio/mpeg",
                         "audio/mp4",
                         "audio/flac",
@@ -153,9 +153,9 @@ namespace Defaults {
                         "audio/webm",
                         "audio/x-webm"
                 };
- 
+
             case "image_viewer":
-                return {    "image/jpeg",
+                return { "image/jpeg",
                         "image/jpg",
                         "image/pjpeg",
                         "image/png",

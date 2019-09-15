@@ -21,8 +21,8 @@
 
 public class Startup.Controller : Object {
 
-    public Startup.Widgets.Scrolled view  { get; construct; }
-    public Port.Monitor monitor  { get; construct; }
+    public Startup.Widgets.Scrolled view { get; construct; }
+    public Port.Monitor monitor { get; construct; }
 
     public Controller (Startup.Widgets.Scrolled view, Port.Monitor monitor) {
         Object (view: view, monitor: monitor);

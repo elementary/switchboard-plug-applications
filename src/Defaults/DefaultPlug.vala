@@ -120,12 +120,12 @@ public class Defaults.Plug : Gtk.Grid {
         }));
 
         ec_chooser.changed.connect (() => run_in_thread ( () => {
-            change_default(ec_old, ec_chooser.get_app_info (), "email_client");
+            change_default (ec_old, ec_chooser.get_app_info (), "email_client");
             return null;
         }));
 
         c_chooser.changed.connect (() => run_in_thread ( () => {
-            change_default(c_old, c_chooser.get_app_info (), "calendar");
+            change_default (c_old, c_chooser.get_app_info (), "calendar");
             return null;
         }));
 
@@ -148,9 +148,9 @@ public class Defaults.Plug : Gtk.Grid {
             change_default (te_old, te_chooser.get_app_info (), "text_editor");
             return null;
         }));
-        
+
         fb_chooser.changed.connect (() => run_in_thread ( () => {
-            change_default(fb_old, fb_chooser.get_app_info (), "file_browser");
+            change_default (fb_old, fb_chooser.get_app_info (), "file_browser");
             return null;
         }));
 
