@@ -31,15 +31,17 @@ public class Startup.Controller : Object {
     construct {
         foreach (var path in Utils.get_auto_start_files ()) {
             var key_file = get_key_file_from_path (path);
-            if (key_file.show)
+            if (key_file.show) {
                 view.add_app (key_file.create_app_info ());
+            }
         }
 
         var app_infos = new Gee.ArrayList <Entity.AppInfo?> ();
         foreach (var path in Utils.get_application_files ()) {
             var key_file = get_key_file_from_path (path);
-            if (key_file.show)
+            if (key_file.show) {
                 app_infos.add (key_file.create_app_info ());
+            }
         }
 
         view.init_app_chooser (app_infos);
