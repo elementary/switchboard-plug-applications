@@ -94,7 +94,7 @@ public class ApplicationsPlug : Switchboard.Plug {
     public override async Gee.TreeMap<string, string> search (string search) {
         var search_results = new Gee.TreeMap<string, string> (
             (GLib.CompareDataFunc<string>)strcmp,
-                (Gee.EqualDataFunc<string>)str_equal
+            (Gee.EqualDataFunc<string>)str_equal
         );
         search_results.set ("%s → %s".printf (display_name, _("Startup")), STARTUP);
         search_results.set ("%s → %s".printf (display_name, _("Default Apps")), DEFAULTS);
