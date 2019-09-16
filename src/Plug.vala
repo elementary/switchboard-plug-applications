@@ -72,11 +72,11 @@ public class ApplicationsPlug : Switchboard.Plug {
     }
 
     public override void shown () {
-    
+
     }
 
     public override void hidden () {
-    
+
     }
 
     public override void search_callback (string location) {
@@ -92,7 +92,10 @@ public class ApplicationsPlug : Switchboard.Plug {
     }
 
     public override async Gee.TreeMap<string, string> search (string search) {
-        var search_results = new Gee.TreeMap<string, string> ((GLib.CompareDataFunc<string>)strcmp, (Gee.EqualDataFunc<string>)str_equal);
+        var search_results = new Gee.TreeMap<string, string> (
+            (GLib.CompareDataFunc<string>)strcmp,
+            (Gee.EqualDataFunc<string>)str_equal
+        );
         search_results.set ("%s → %s".printf (display_name, _("Startup")), STARTUP);
         search_results.set ("%s → %s".printf (display_name, _("Default Apps")), DEFAULTS);
         search_results.set ("%s → %s".printf (display_name, _("Default Application")), DEFAULTS);

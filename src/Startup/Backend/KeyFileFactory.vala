@@ -26,10 +26,12 @@ class Startup.Backend.KeyFileFactory : GLib.Object {
     public static void init () {
         cache = new Gee.HashMap <string, KeyFile> ();
     }
-    
+
     public static KeyFile get_or_create (string path) {
-        if (cache [path] == null)
+        if (cache [path] == null) {
             cache [path] = new KeyFile (path);
+        }
+
         return cache [path];
     }
 }

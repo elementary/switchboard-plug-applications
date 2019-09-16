@@ -111,8 +111,10 @@ public class Startup.Backend.KeyFile : GLib.Object {
 
         for (int i = 0; i < 100; i++) {
             var filename = Path.build_filename (startup_dir, @"custom-command$i.desktop");
-            if (FileUtils.test (filename, FileTest.EXISTS) == false)
+            if (FileUtils.test (filename, FileTest.EXISTS) == false) {
                 return filename;
+            }
+
         }
 
         return "";
@@ -159,17 +161,19 @@ public class Startup.Backend.KeyFile : GLib.Object {
     }
 
     void set_key (string key, string value) {
-        if (key_is_localized (key))
+        if (key_is_localized (key)) {
             keyfile_set_locale_string (key, value);
-        else
+        } else {
             keyfile_set_string (key, value);
+        }
     }
 
     string get_key (string key) {
-        if (key_is_localized (key))
+        if (key_is_localized (key)) {
             return keyfile_get_locale_string (key);
-        else
+        } else {
             return keyfile_get_string (key);
+        }
     }
 
     bool key_is_localized (string key) {

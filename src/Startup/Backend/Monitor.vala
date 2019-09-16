@@ -49,14 +49,20 @@ public class Startup.Backend.Monitor : Object, Port.Monitor {
     void on_change_occurred (File file, File? dest, FileMonitorEvent event) {
         var path = file.get_path ();
 
-        if (Utils.is_desktop_file (path) == false)
+        if (Utils.is_desktop_file (path) == false) {
             return;
+        }
 
-        if (event == FileMonitorEvent.CREATED)
-            file_created (path);
-        else if (event == FileMonitorEvent.DELETED)
-            file_deleted (path);
-        else if (event == FileMonitorEvent.CHANGED)
-            file_edited (path);
+        switch (event) {
+            case FileMonitorEvent.CREATED:
+                file_created (path);
+                break;
+            case FileMonitorEvent.DELETED:
+                file_deleted (path);
+                break;
+            case FileMonitorEvent.CHANGED:
+                file_edited (path);
+                break;
+        }
     }
 }
