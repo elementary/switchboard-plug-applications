@@ -52,13 +52,17 @@ public class Startup.Widgets.Scrolled : Gtk.Grid {
         toolbar.get_style_context ().add_class (Gtk.STYLE_CLASS_INLINE_TOOLBAR);
         toolbar.icon_size = Gtk.IconSize.SMALL_TOOLBAR;
 
-        var add_button = new Gtk.ToolButton (new Gtk.Image.from_icon_name ("application-add-symbolic",
-                            Gtk.IconSize.BUTTON), null);
+        var add_button = new Gtk.ToolButton (
+            new Gtk.Image.from_icon_name ("application-add-symbolic", Gtk.IconSize.BUTTON),
+                null
+        );
         add_button.tooltip_text = _("Add Startup App…");
         add_button.clicked.connect (() => {app_chooser.show_all ();});
 
-        var remove_button = new Gtk.ToolButton (new Gtk.Image.from_icon_name ("list-remove-symbolic",
-                                Gtk.IconSize.BUTTON), null);
+        var remove_button = new Gtk.ToolButton (
+            new Gtk.Image.from_icon_name ("list-remove-symbolic", Gtk.IconSize.BUTTON),
+                null
+        );
         remove_button.tooltip_text = _("Remove Selected Startup App");
         remove_button.clicked.connect (() => {list.remove_selected_app ();});
         remove_button.sensitive = false;

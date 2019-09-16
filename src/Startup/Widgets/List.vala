@@ -49,8 +49,11 @@ public class Startup.Widgets.List : Gtk.ListBox {
         Gtk.drag_dest_set (this, Gtk.DestDefaults.ALL, TARGET_LIST, Gdk.DragAction.COPY);
         drag_data_received.connect (on_drag_data_received);
 
-        var empty_alert = new Granite.Widgets.AlertView (_("Launch Apps on Startup"), _("Add apps to the Startup list by
-                            clicking the icon in the toolbar below."), "system-restart");
+        var empty_alert = new Granite.Widgets.AlertView (
+            _("Launch Apps on Startup"),
+            _("Add apps to the Startup list by clicking the icon in the toolbar below."),
+            "system-restart"
+        );
         empty_alert.show_all ();
         set_placeholder (empty_alert);
     }
