@@ -226,15 +226,11 @@ public class Startup.Backend.KeyFile : GLib.Object {
 
         var session = Environment.get_variable ("DESKTOP_SESSION").down ();
 
-        if (session in only_show_in) {
-            return true;
-        }
-
         if (session in not_show_in) {
             return false;
         }
 
-        if (only_show_in == "") {
+        if (only_show_in == "" || session in only_show_in) {
             return true;
         }
 
