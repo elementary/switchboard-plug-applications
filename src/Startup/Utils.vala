@@ -98,8 +98,6 @@ namespace Startup.Utils {
         var image = new Gtk.Image ();
         image.pixel_size = pixel_size;
 
-        debug (app_info.icon);
-
         if (icon_theme.lookup_by_gicon (icon, pixel_size, Gtk.IconLookupFlags.USE_BUILTIN) == null) {
             try {
                 var pixbuf = new Gdk.Pixbuf.from_file (app_info.icon)
