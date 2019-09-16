@@ -105,16 +105,16 @@ public class Startup.Backend.KeyFile : GLib.Object {
 
         write_to_file ();
     }
-    
+
     string create_path_for_custom_command () {
         var startup_dir = Utils.get_user_startup_dir ();
-        
+
         for (int i = 0; i < 100; i++) {
             var filename = Path.build_filename (startup_dir, @"custom-command$i.desktop");
             if (FileUtils.test (filename, FileTest.EXISTS) == false)
                 return filename;
         }
-        
+
         return "";
     }
 
@@ -221,18 +221,23 @@ public class Startup.Backend.KeyFile : GLib.Object {
     }
 
     bool show_in_environment () {
-        var only_show_in = get_key (KEY_ONLY_SHOW_IN);
-        var not_show_in = get_key (KEY_NOT_SHOW_IN);
+        var only_show_in = get_key (KEY_ONLY_SHOW_IN).down ();
+        var not_show_in = get_key (KEY_NOT_SHOW_IN).down ();
 
-        var session = Environment.get_variable ("DESKTOP_SESSION");
+        var session = Environment.get_variable ("DESKTOP_SESSION").down ();
 
-        if (session in only_show_in)
+        if (session in only_show_in) {
             return true;
-        if (session in not_show_in)
+        }
+
+        if (session in not_show_in) {
             return false;
+        }
 
-        if (only_show_in == "")
+        if (only_show_in == "") {
             return true;
+        }
+
         return false;
     }
 
@@ -249,7 +254,7 @@ public class Startup.Backend.KeyFile : GLib.Object {
 
         return @"<span font_weight=\"bold\" size=\"large\">$escaped_name</span>\n$escaped_comment";
     }
-    
+
     public Entity.AppInfo create_app_info () {
         return Entity.AppInfo () {
             name = name,
@@ -257,6 +262,6 @@ public class Startup.Backend.KeyFile : GLib.Object {
             icon = icon,
             active = active,
             path = path
-        }; 
+        };
     }
 }
