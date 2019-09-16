@@ -225,10 +225,10 @@ public class Startup.Backend.KeyFile : GLib.Object {
     }
 
     bool show_in_environment () {
-        var only_show_in = get_key (KEY_ONLY_SHOW_IN);
-        var not_show_in = get_key (KEY_NOT_SHOW_IN);
+        var only_show_in = get_key (KEY_ONLY_SHOW_IN).down ();
+        var not_show_in = get_key (KEY_NOT_SHOW_IN).down ();
 
-        var session = Environment.get_variable ("DESKTOP_SESSION");
+        var session = Environment.get_variable ("DESKTOP_SESSION").down ();
 
         if (session in only_show_in) {
             return true;
