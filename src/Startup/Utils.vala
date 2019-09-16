@@ -96,7 +96,6 @@ namespace Startup.Utils {
         }
 
         var image = new Gtk.Image ();
-        image.pixel_size = pixel_size;
 
         if (icon_theme.lookup_by_gicon (icon, pixel_size, Gtk.IconLookupFlags.USE_BUILTIN) == null) {
             try {
@@ -111,6 +110,8 @@ namespace Startup.Utils {
         } else {
             image = new Gtk.Image.from_gicon (icon, icon_size);
         }
+
+        image.pixel_size = pixel_size;
 
         return image;
     }
