@@ -25,31 +25,12 @@ public class Startup.Widgets.AppChooserRow : Gtk.Grid {
 
     public signal void deleted ();
 
-    private const string FALLBACK_ICON = "application-default-icon";
-
     public AppChooserRow (Entity.AppInfo app_info) {
         Object (app_info: app_info);
     }
 
     construct {
-        var icon = new ThemedIcon.with_default_fallbacks (app_info.icon);
-        var icon_theme = Gtk.IconTheme.get_default ();
-
-        var image = new Gtk.Image ();
-        image.pixel_size = 32;
-
-        if (icon_theme.lookup_by_gicon (icon, 32, Gtk.IconLookupFlags.USE_BUILTIN) == null) {
-            try {
-                var pixbuf = new Gdk.Pixbuf.from_file (app_info.icon).scale_simple (32, 32, Gdk.InterpType.BILINEAR);
-                image = new Gtk.Image.from_pixbuf (pixbuf);
-            } catch (GLib.Error err) {
-                icon = new ThemedIcon (FALLBACK_ICON);
-                image = new Gtk.Image.from_gicon (icon, Gtk.IconSize.DND);
-                debug (err.message);
-            }
-        } else {
-            image = new Gtk.Image.from_gicon (icon, Gtk.IconSize.DND);
-        }
+        var image = Utils.create_icon (app_info, Gtk.IconSize.DND);
 
         var app_name = new Gtk.Label (app_info.name);
         app_name.get_style_context ().add_class ("h3");
