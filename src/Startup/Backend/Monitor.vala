@@ -62,6 +62,7 @@ public class Startup.Backend.Monitor : Object, Port.Monitor {
                 break;
             case FileMonitorEvent.CHANGED:
                 file_edited (path);
+                break;
         }
     }
 }
