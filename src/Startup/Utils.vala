@@ -102,7 +102,8 @@ namespace Startup.Utils {
 
         if (icon_theme.lookup_by_gicon (icon, pixel_size, Gtk.IconLookupFlags.USE_BUILTIN) == null) {
             try {
-                var pixbuf = new Gdk.Pixbuf.from_file (app_info.icon).scale_simple (pixel_size, pixel_size, Gdk.InterpType.BILINEAR);
+                var pixbuf = new Gdk.Pixbuf.from_file (app_info.icon)
+                    .scale_simple (pixel_size, pixel_size, Gdk.InterpType.BILINEAR);
                 image = new Gtk.Image.from_pixbuf (pixbuf);
             } catch (GLib.Error err) {
                 icon = new ThemedIcon (FALLBACK_ICON);
