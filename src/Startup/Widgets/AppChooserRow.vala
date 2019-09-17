@@ -30,10 +30,7 @@ public class Startup.Widgets.AppChooserRow : Gtk.Grid {
     }
 
     construct {
-        var icon = Utils.create_icon (app_info);
-
-        var image = new Gtk.Image.from_icon_name (icon, Gtk.IconSize.DND);
-        image.pixel_size = 32;
+        var image = Utils.create_icon (app_info, Gtk.IconSize.DND);
 
         var app_name = new Gtk.Label (app_info.name);
         app_name.get_style_context ().add_class ("h3");

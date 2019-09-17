@@ -31,10 +31,7 @@ public class Startup.Widgets.AppRow : Gtk.ListBoxRow {
     }
 
     construct {
-        var icon = Utils.create_icon (app_info);
-
-        var image = new Gtk.Image.from_icon_name (icon, Gtk.IconSize.DIALOG);
-        image.pixel_size = 48;
+        var image = Utils.create_icon (app_info, Gtk.IconSize.DIALOG);
 
         var app_name = new Gtk.Label (app_info.name);
         app_name.get_style_context ().add_class ("h3");
