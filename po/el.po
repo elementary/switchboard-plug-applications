@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-26 22:44+0200\n"
+"POT-Creation-Date: 2019-11-07 00:20+0000\n"
 "PO-Revision-Date: 2017-02-09 12:44+0000\n"
 "Last-Translator: Christos Iatropoulos <Unknown>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,60 +23,60 @@ msgstr ""
 "Διαχείριση προεπιλεγμένων εφαρμογών και εφαρμογών που εκτελούνται κατά την "
 "εκκίνηση"
 
-#: src/Plug.vala:54 src/Plug.vala:99 src/Plug.vala:100 src/Plug.vala:101
-#: src/Plug.vala:102 src/Plug.vala:103 src/Plug.vala:104 src/Plug.vala:105
-#: src/Plug.vala:106
+#: src/Plug.vala:54 src/Plug.vala:102 src/Plug.vala:103 src/Plug.vala:104
+#: src/Plug.vala:105 src/Plug.vala:106 src/Plug.vala:107 src/Plug.vala:108
+#: src/Plug.vala:109
 msgid "Default"
 msgstr "Προεπιλογή"
 
-#: src/Plug.vala:55 src/Plug.vala:96
+#: src/Plug.vala:55 src/Plug.vala:99
 msgid "Startup"
 msgstr "Εκκίνηση"
 
-#: src/Plug.vala:97
+#: src/Plug.vala:100
 msgid "Default Apps"
 msgstr "Προεπιλεγμένες εφαρμογές"
 
-#: src/Plug.vala:98
+#: src/Plug.vala:101
 msgid "Default Application"
 msgstr "Προεπιλεγμένη εφαρμογή"
 
-#: src/Plug.vala:99
+#: src/Plug.vala:102
 #, fuzzy
 msgid "Web Browser"
 msgstr "Περιηγητής ιστού:"
 
-#: src/Plug.vala:100
+#: src/Plug.vala:103
 #, fuzzy
 msgid "Email Client"
 msgstr "Πελάτης email:"
 
-#: src/Plug.vala:101
+#: src/Plug.vala:104
 #, fuzzy
 msgid "Calendar"
 msgstr "Ημερολόγιο:"
 
-#: src/Plug.vala:102
+#: src/Plug.vala:105
 #, fuzzy
 msgid "Video Player"
 msgstr "Αναπαραγωγέας βίντεο:"
 
-#: src/Plug.vala:103
+#: src/Plug.vala:106
 #, fuzzy
 msgid "Music Player"
 msgstr "Αναπαραγωγέας μουσικής:"
 
-#: src/Plug.vala:104
+#: src/Plug.vala:107
 #, fuzzy
 msgid "Text Editor"
 msgstr "Επεξεργαστής κειμένου:"
 
-#: src/Plug.vala:105
+#: src/Plug.vala:108
 #, fuzzy
 msgid "Image Viewer"
 msgstr "Προβολέας εικόνων:"
 
-#: src/Plug.vala:106
+#: src/Plug.vala:109
 #, fuzzy
 msgid "File Browser"
 msgstr "Περιηγητής αρχείων:"
@@ -85,25 +85,25 @@ msgstr "Περιηγητής αρχείων:"
 msgid "Custom Command"
 msgstr "Προσαρμοσμένη εντολή"
 
-#: src/Startup/Widgets/Scrolled.vala:56
+#: src/Startup/Widgets/Scrolled.vala:59
 msgid "Add Startup App…"
 msgstr "Προσθήκη εφαρμογής στην εκκίνηση..."
 
-#: src/Startup/Widgets/Scrolled.vala:60
+#: src/Startup/Widgets/Scrolled.vala:66
 msgid "Remove Selected Startup App"
 msgstr "Αφαίρεση εφαρμογής από την εκκίνηση..."
 
-#: src/Startup/Widgets/List.vala:52
+#: src/Startup/Widgets/List.vala:53
 msgid "Launch Apps on Startup"
 msgstr "Εκτέλεση εφαρμογών στην εκκίνηση"
 
-#: src/Startup/Widgets/List.vala:52
+#: src/Startup/Widgets/List.vala:54
 msgid "Add apps to the Startup list by clicking the icon in the toolbar below."
 msgstr ""
 "Προσθέστε εφαρμογές στη λίστα εκκίνησης κάνοντας κλικ στο εικονίδιο που "
 "βρίσκεται κάτω στη γραμμή εργαλείων."
 
-#: src/Startup/Widgets/AppRow.vala:49
+#: src/Startup/Widgets/AppRow.vala:46
 #, c-format
 msgid "Launch %s on startup"
 msgstr "Εκτέλεση %s στην εκκίνηση"

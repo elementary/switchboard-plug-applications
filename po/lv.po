@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-26 22:44+0200\n"
+"POT-Creation-Date: 2019-11-07 00:20+0000\n"
 "PO-Revision-Date: 2014-12-22 12:52+0000\n"
 "Last-Translator: ERX <eriksh@inbox.lv>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,60 +21,60 @@ msgstr "Lietotnes"
 msgid "Manage default and startup applications"
 msgstr ""
 
-#: src/Plug.vala:54 src/Plug.vala:99 src/Plug.vala:100 src/Plug.vala:101
-#: src/Plug.vala:102 src/Plug.vala:103 src/Plug.vala:104 src/Plug.vala:105
-#: src/Plug.vala:106
+#: src/Plug.vala:54 src/Plug.vala:102 src/Plug.vala:103 src/Plug.vala:104
+#: src/Plug.vala:105 src/Plug.vala:106 src/Plug.vala:107 src/Plug.vala:108
+#: src/Plug.vala:109
 msgid "Default"
 msgstr "Pēc noklusējuma"
 
-#: src/Plug.vala:55 src/Plug.vala:96
+#: src/Plug.vala:55 src/Plug.vala:99
 msgid "Startup"
 msgstr "Startēšana"
 
-#: src/Plug.vala:97
+#: src/Plug.vala:100
 msgid "Default Apps"
 msgstr ""
 
-#: src/Plug.vala:98
+#: src/Plug.vala:101
 msgid "Default Application"
 msgstr ""
 
-#: src/Plug.vala:99
+#: src/Plug.vala:102
 #, fuzzy
 msgid "Web Browser"
 msgstr "Interneta pārlūks:"
 
-#: src/Plug.vala:100
+#: src/Plug.vala:103
 #, fuzzy
 msgid "Email Client"
 msgstr "Epasta klients:"
 
-#: src/Plug.vala:101
+#: src/Plug.vala:104
 #, fuzzy
 msgid "Calendar"
 msgstr "Kalendārs:"
 
-#: src/Plug.vala:102
+#: src/Plug.vala:105
 #, fuzzy
 msgid "Video Player"
 msgstr "Video atskaņotājs:"
 
-#: src/Plug.vala:103
+#: src/Plug.vala:106
 #, fuzzy
 msgid "Music Player"
 msgstr "Mūzikas atskaņotājs:"
 
-#: src/Plug.vala:104
+#: src/Plug.vala:107
 #, fuzzy
 msgid "Text Editor"
 msgstr "Teksta redaktors:"
 
-#: src/Plug.vala:105
+#: src/Plug.vala:108
 #, fuzzy
 msgid "Image Viewer"
 msgstr "Attēlu skatītājs:"
 
-#: src/Plug.vala:106
+#: src/Plug.vala:109
 #, fuzzy
 msgid "File Browser"
 msgstr "Failu pārlūks:"
@@ -83,23 +83,23 @@ msgstr "Failu pārlūks:"
 msgid "Custom Command"
 msgstr "Pielāgota komanda"
 
-#: src/Startup/Widgets/Scrolled.vala:56
+#: src/Startup/Widgets/Scrolled.vala:59
 msgid "Add Startup App…"
 msgstr "Pievienot starta lietotni ..."
 
-#: src/Startup/Widgets/Scrolled.vala:60
+#: src/Startup/Widgets/Scrolled.vala:66
 msgid "Remove Selected Startup App"
 msgstr "Noņemt starta lietotni ..."
 
-#: src/Startup/Widgets/List.vala:52
+#: src/Startup/Widgets/List.vala:53
 msgid "Launch Apps on Startup"
 msgstr ""
 
-#: src/Startup/Widgets/List.vala:52
+#: src/Startup/Widgets/List.vala:54
 msgid "Add apps to the Startup list by clicking the icon in the toolbar below."
 msgstr ""
 
-#: src/Startup/Widgets/AppRow.vala:49
+#: src/Startup/Widgets/AppRow.vala:46
 #, c-format
 msgid "Launch %s on startup"
 msgstr ""

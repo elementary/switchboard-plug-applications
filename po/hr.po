@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-26 22:44+0200\n"
+"POT-Creation-Date: 2019-11-07 00:20+0000\n"
 "PO-Revision-Date: 2017-04-17 14:11+0000\n"
 "Last-Translator: gogogogi <trebelnik2@gmail.com>\n"
 "Language-Team: Croatian <https://l10n.elementary.io/projects/switchboard/"
@@ -24,60 +24,60 @@ msgstr "Aplikacije"
 msgid "Manage default and startup applications"
 msgstr "Upravljajte zadanim aplikacijama i pokretanjem aplikacija"
 
-#: src/Plug.vala:54 src/Plug.vala:99 src/Plug.vala:100 src/Plug.vala:101
-#: src/Plug.vala:102 src/Plug.vala:103 src/Plug.vala:104 src/Plug.vala:105
-#: src/Plug.vala:106
+#: src/Plug.vala:54 src/Plug.vala:102 src/Plug.vala:103 src/Plug.vala:104
+#: src/Plug.vala:105 src/Plug.vala:106 src/Plug.vala:107 src/Plug.vala:108
+#: src/Plug.vala:109
 msgid "Default"
 msgstr "Uobičajeno"
 
-#: src/Plug.vala:55 src/Plug.vala:96
+#: src/Plug.vala:55 src/Plug.vala:99
 msgid "Startup"
 msgstr "Pokretanje"
 
-#: src/Plug.vala:97
+#: src/Plug.vala:100
 msgid "Default Apps"
 msgstr "Zadane aplikacije"
 
-#: src/Plug.vala:98
+#: src/Plug.vala:101
 msgid "Default Application"
 msgstr "Zadana aplikacija"
 
-#: src/Plug.vala:99
+#: src/Plug.vala:102
 #, fuzzy
 msgid "Web Browser"
 msgstr "Web preglednik:"
 
-#: src/Plug.vala:100
+#: src/Plug.vala:103
 #, fuzzy
 msgid "Email Client"
 msgstr "E-pošta:"
 
-#: src/Plug.vala:101
+#: src/Plug.vala:104
 #, fuzzy
 msgid "Calendar"
 msgstr "Kalendar:"
 
-#: src/Plug.vala:102
+#: src/Plug.vala:105
 #, fuzzy
 msgid "Video Player"
 msgstr "Video:"
 
-#: src/Plug.vala:103
+#: src/Plug.vala:106
 #, fuzzy
 msgid "Music Player"
 msgstr "Glazba:"
 
-#: src/Plug.vala:104
+#: src/Plug.vala:107
 #, fuzzy
 msgid "Text Editor"
 msgstr "Uređivač teksta:"
 
-#: src/Plug.vala:105
+#: src/Plug.vala:108
 #, fuzzy
 msgid "Image Viewer"
 msgstr "Preglednik slika:"
 
-#: src/Plug.vala:106
+#: src/Plug.vala:109
 #, fuzzy
 msgid "File Browser"
 msgstr "Preglednik datoteka:"
@@ -86,24 +86,24 @@ msgstr "Preglednik datoteka:"
 msgid "Custom Command"
 msgstr "Prilagođena naredba"
 
-#: src/Startup/Widgets/Scrolled.vala:56
+#: src/Startup/Widgets/Scrolled.vala:59
 msgid "Add Startup App…"
 msgstr "Dodaj pokretanje aplikacije…"
 
-#: src/Startup/Widgets/Scrolled.vala:60
+#: src/Startup/Widgets/Scrolled.vala:66
 msgid "Remove Selected Startup App"
 msgstr "Ukloni odabrano pokretanje aplikacije"
 
-#: src/Startup/Widgets/List.vala:52
+#: src/Startup/Widgets/List.vala:53
 msgid "Launch Apps on Startup"
 msgstr "Pokreni aplikaciju pri pokretanju računala"
 
-#: src/Startup/Widgets/List.vala:52
+#: src/Startup/Widgets/List.vala:54
 msgid "Add apps to the Startup list by clicking the icon in the toolbar below."
 msgstr ""
 "Dodaj aplikaciju na popis pokretanja klikom na ikonu u alatnoj traci ispod."
 
-#: src/Startup/Widgets/AppRow.vala:49
+#: src/Startup/Widgets/AppRow.vala:46
 #, c-format
 msgid "Launch %s on startup"
 msgstr "Pokreni %s pri pokretanju računala"

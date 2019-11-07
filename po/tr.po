@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-26 22:44+0200\n"
+"POT-Creation-Date: 2019-11-07 00:20+0000\n"
 "PO-Revision-Date: 2019-05-13 23:02+0000\n"
 "Last-Translator: Ozgur Baskin <bebeto_baskin@yahoo.com>\n"
 "Language-Team: Turkish <https://l10n.elementary.io/projects/switchboard/"
@@ -23,53 +23,53 @@ msgstr "Uygulamalar"
 msgid "Manage default and startup applications"
 msgstr "Varsayılan ve başlangıç uygulamalarını yönetin"
 
-#: src/Plug.vala:54 src/Plug.vala:99 src/Plug.vala:100 src/Plug.vala:101
-#: src/Plug.vala:102 src/Plug.vala:103 src/Plug.vala:104 src/Plug.vala:105
-#: src/Plug.vala:106
+#: src/Plug.vala:54 src/Plug.vala:102 src/Plug.vala:103 src/Plug.vala:104
+#: src/Plug.vala:105 src/Plug.vala:106 src/Plug.vala:107 src/Plug.vala:108
+#: src/Plug.vala:109
 msgid "Default"
 msgstr "Varsayılan"
 
-#: src/Plug.vala:55 src/Plug.vala:96
+#: src/Plug.vala:55 src/Plug.vala:99
 msgid "Startup"
 msgstr "Başlangıç"
 
-#: src/Plug.vala:97
+#: src/Plug.vala:100
 msgid "Default Apps"
 msgstr "Varsayılan Uygulamalar"
 
-#: src/Plug.vala:98
+#: src/Plug.vala:101
 msgid "Default Application"
 msgstr "Varsayılan Uygulama"
 
-#: src/Plug.vala:99
+#: src/Plug.vala:102
 msgid "Web Browser"
 msgstr "Web Tarayıcısı"
 
-#: src/Plug.vala:100
+#: src/Plug.vala:103
 msgid "Email Client"
 msgstr "E-posta İstemcisi"
 
-#: src/Plug.vala:101
+#: src/Plug.vala:104
 msgid "Calendar"
 msgstr "Takvim"
 
-#: src/Plug.vala:102
+#: src/Plug.vala:105
 msgid "Video Player"
 msgstr "Video Oynatıcı"
 
-#: src/Plug.vala:103
+#: src/Plug.vala:106
 msgid "Music Player"
 msgstr "Müzik Çalar"
 
-#: src/Plug.vala:104
+#: src/Plug.vala:107
 msgid "Text Editor"
 msgstr "Metin Düzenleyici"
 
-#: src/Plug.vala:105
+#: src/Plug.vala:108
 msgid "Image Viewer"
 msgstr "Resim Görüntüleyici"
 
-#: src/Plug.vala:106
+#: src/Plug.vala:109
 msgid "File Browser"
 msgstr "Dosya Tarayıcısı"
 
@@ -77,25 +77,25 @@ msgstr "Dosya Tarayıcısı"
 msgid "Custom Command"
 msgstr "Özel Komut"
 
-#: src/Startup/Widgets/Scrolled.vala:56
+#: src/Startup/Widgets/Scrolled.vala:59
 msgid "Add Startup App…"
 msgstr "Başlangıç Uygulaması Ekle…"
 
-#: src/Startup/Widgets/Scrolled.vala:60
+#: src/Startup/Widgets/Scrolled.vala:66
 msgid "Remove Selected Startup App"
 msgstr "Seçili Başlangıç Uygulamasını Kaldır"
 
-#: src/Startup/Widgets/List.vala:52
+#: src/Startup/Widgets/List.vala:53
 msgid "Launch Apps on Startup"
 msgstr "Uygulamaları Başlangıçta Başlat"
 
-#: src/Startup/Widgets/List.vala:52
+#: src/Startup/Widgets/List.vala:54
 msgid "Add apps to the Startup list by clicking the icon in the toolbar below."
 msgstr ""
 "Aşağıdaki araç çubuğundaki simgeyi tıklayarak Başlangıç listesine "
 "uygulamalar ekleyin."
 
-#: src/Startup/Widgets/AppRow.vala:49
+#: src/Startup/Widgets/AppRow.vala:46
 #, c-format
 msgid "Launch %s on startup"
 msgstr "%s uygulamasını başlangıçta başlat"

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-26 22:44+0200\n"
+"POT-Creation-Date: 2019-11-07 00:20+0000\n"
 "PO-Revision-Date: 2019-05-16 17:14+0000\n"
 "Last-Translator: David M <rbndavid@gmail.com>\n"
 "Language-Team: Catalan <https://l10n.elementary.io/projects/switchboard/"
@@ -23,53 +23,53 @@ msgstr "Aplicacions"
 msgid "Manage default and startup applications"
 msgstr "Gestioneu les aplicacions per defecte i d'inici."
 
-#: src/Plug.vala:54 src/Plug.vala:99 src/Plug.vala:100 src/Plug.vala:101
-#: src/Plug.vala:102 src/Plug.vala:103 src/Plug.vala:104 src/Plug.vala:105
-#: src/Plug.vala:106
+#: src/Plug.vala:54 src/Plug.vala:102 src/Plug.vala:103 src/Plug.vala:104
+#: src/Plug.vala:105 src/Plug.vala:106 src/Plug.vala:107 src/Plug.vala:108
+#: src/Plug.vala:109
 msgid "Default"
 msgstr "Per defecte"
 
-#: src/Plug.vala:55 src/Plug.vala:96
+#: src/Plug.vala:55 src/Plug.vala:99
 msgid "Startup"
 msgstr "Inici"
 
-#: src/Plug.vala:97
+#: src/Plug.vala:100
 msgid "Default Apps"
 msgstr "Aplicacions per defecte"
 
-#: src/Plug.vala:98
+#: src/Plug.vala:101
 msgid "Default Application"
 msgstr "Aplicació per defecte"
 
-#: src/Plug.vala:99
+#: src/Plug.vala:102
 msgid "Web Browser"
 msgstr "Navegador web"
 
-#: src/Plug.vala:100
+#: src/Plug.vala:103
 msgid "Email Client"
 msgstr "Client de correu"
 
-#: src/Plug.vala:101
+#: src/Plug.vala:104
 msgid "Calendar"
 msgstr "Calendari"
 
-#: src/Plug.vala:102
+#: src/Plug.vala:105
 msgid "Video Player"
 msgstr "Reproductor de vídeo"
 
-#: src/Plug.vala:103
+#: src/Plug.vala:106
 msgid "Music Player"
 msgstr "Reproductor de música"
 
-#: src/Plug.vala:104
+#: src/Plug.vala:107
 msgid "Text Editor"
 msgstr "Editor de textos"
 
-#: src/Plug.vala:105
+#: src/Plug.vala:108
 msgid "Image Viewer"
 msgstr "Visualitzador d'imatges"
 
-#: src/Plug.vala:106
+#: src/Plug.vala:109
 msgid "File Browser"
 msgstr "Navegador de fitxers"
 
@@ -77,25 +77,25 @@ msgstr "Navegador de fitxers"
 msgid "Custom Command"
 msgstr "Ordre personalitzada"
 
-#: src/Startup/Widgets/Scrolled.vala:56
+#: src/Startup/Widgets/Scrolled.vala:59
 msgid "Add Startup App…"
 msgstr "Afegeix una aplicació d'inici…"
 
-#: src/Startup/Widgets/Scrolled.vala:60
+#: src/Startup/Widgets/Scrolled.vala:66
 msgid "Remove Selected Startup App"
 msgstr "Suprimeix l'aplicació d'inici seleccionada"
 
-#: src/Startup/Widgets/List.vala:52
+#: src/Startup/Widgets/List.vala:53
 msgid "Launch Apps on Startup"
 msgstr "Obre aplicacions a l'inici"
 
-#: src/Startup/Widgets/List.vala:52
+#: src/Startup/Widgets/List.vala:54
 msgid "Add apps to the Startup list by clicking the icon in the toolbar below."
 msgstr ""
 "Afegiu aplicacions a la llista d'inici clicant a la icona de la barra "
 "d'eines de sota."
 
-#: src/Startup/Widgets/AppRow.vala:49
+#: src/Startup/Widgets/AppRow.vala:46
 #, c-format
 msgid "Launch %s on startup"
 msgstr "Obre %s a l'inici"

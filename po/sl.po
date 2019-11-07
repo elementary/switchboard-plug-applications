@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-26 22:44+0200\n"
+"POT-Creation-Date: 2019-11-07 00:20+0000\n"
 "PO-Revision-Date: 2017-05-31 22:24+0000\n"
 "Last-Translator: Jernej Virag <jernej@virag.si>\n"
 "Language-Team: Slovenian <https://l10n.elementary.io/projects/switchboard/"
@@ -24,60 +24,60 @@ msgstr "Aplikacije"
 msgid "Manage default and startup applications"
 msgstr "Nastavitve za privzete in zagonske aplikacije"
 
-#: src/Plug.vala:54 src/Plug.vala:99 src/Plug.vala:100 src/Plug.vala:101
-#: src/Plug.vala:102 src/Plug.vala:103 src/Plug.vala:104 src/Plug.vala:105
-#: src/Plug.vala:106
+#: src/Plug.vala:54 src/Plug.vala:102 src/Plug.vala:103 src/Plug.vala:104
+#: src/Plug.vala:105 src/Plug.vala:106 src/Plug.vala:107 src/Plug.vala:108
+#: src/Plug.vala:109
 msgid "Default"
 msgstr "Privzeto"
 
-#: src/Plug.vala:55 src/Plug.vala:96
+#: src/Plug.vala:55 src/Plug.vala:99
 msgid "Startup"
 msgstr "Zagon"
 
-#: src/Plug.vala:97
+#: src/Plug.vala:100
 msgid "Default Apps"
 msgstr "Privzete aplikacije"
 
-#: src/Plug.vala:98
+#: src/Plug.vala:101
 msgid "Default Application"
 msgstr "Privzeta aplikacija"
 
-#: src/Plug.vala:99
+#: src/Plug.vala:102
 #, fuzzy
 msgid "Web Browser"
 msgstr "Spletni brskalnik:"
 
-#: src/Plug.vala:100
+#: src/Plug.vala:103
 #, fuzzy
 msgid "Email Client"
 msgstr "Odjemalec e-pošte:"
 
-#: src/Plug.vala:101
+#: src/Plug.vala:104
 #, fuzzy
 msgid "Calendar"
 msgstr "Koledar:"
 
-#: src/Plug.vala:102
+#: src/Plug.vala:105
 #, fuzzy
 msgid "Video Player"
 msgstr "Predvajalnik videa:"
 
-#: src/Plug.vala:103
+#: src/Plug.vala:106
 #, fuzzy
 msgid "Music Player"
 msgstr "Predvajalnik glasbe:"
 
-#: src/Plug.vala:104
+#: src/Plug.vala:107
 #, fuzzy
 msgid "Text Editor"
 msgstr "Urejevalnik besedil:"
 
-#: src/Plug.vala:105
+#: src/Plug.vala:108
 #, fuzzy
 msgid "Image Viewer"
 msgstr "Pregledovalnik slik:"
 
-#: src/Plug.vala:106
+#: src/Plug.vala:109
 #, fuzzy
 msgid "File Browser"
 msgstr "Upravljalnik datotek:"
@@ -86,23 +86,23 @@ msgstr "Upravljalnik datotek:"
 msgid "Custom Command"
 msgstr "Ukaz po meri"
 
-#: src/Startup/Widgets/Scrolled.vala:56
+#: src/Startup/Widgets/Scrolled.vala:59
 msgid "Add Startup App…"
 msgstr "Dodaj aplikacijo ob zagonu…"
 
-#: src/Startup/Widgets/Scrolled.vala:60
+#: src/Startup/Widgets/Scrolled.vala:66
 msgid "Remove Selected Startup App"
 msgstr "Odstrani izbrano aplikacijo"
 
-#: src/Startup/Widgets/List.vala:52
+#: src/Startup/Widgets/List.vala:53
 msgid "Launch Apps on Startup"
 msgstr "Poženi aplikacije ob zagonu"
 
-#: src/Startup/Widgets/List.vala:52
+#: src/Startup/Widgets/List.vala:54
 msgid "Add apps to the Startup list by clicking the icon in the toolbar below."
 msgstr "Dodajte aplikacijo na seznam s klikom na ikono spodaj."
 
-#: src/Startup/Widgets/AppRow.vala:49
+#: src/Startup/Widgets/AppRow.vala:46
 #, c-format
 msgid "Launch %s on startup"
 msgstr "Poženi %s ob zagonu"
