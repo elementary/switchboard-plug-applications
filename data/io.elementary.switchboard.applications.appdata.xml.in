@@ -4,10 +4,18 @@
   <extends>io.elementary.switchboard</extends>
   <name>Applications</name>
   <summary>Manage default and startup applications</summary>
+  <releases>
+    <release version="2.1.6" date="2019-11-05" urgency="medium">
+      <description>
+        <p>Fix issues with OnlyShowIn and Snap apps</p>
+        <p>Updated translations</p>
+      </description>
+    </release>
+  </releases>
   <screenshots>
-      <screenshot type="default">
-          <image>https://raw.githubusercontent.com/elementary/switchboard-plug-applications/master/data/screenshot.png</image>
-      </screenshot>
+    <screenshot type="default">
+      <image>https://raw.githubusercontent.com/elementary/switchboard-plug-applications/master/data/screenshot.png</image>
+    </screenshot>
   </screenshots>
   <url type="homepage">https://elementary.io</url>
   <url type="bugtracker">https://github.com/elementary/switchboard-plug-applications/issues</url>
