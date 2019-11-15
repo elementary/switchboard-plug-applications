@@ -1,3 +1,28 @@
+switchboard-plug-applications (2.1.6) bionic; urgency=medium
+
+  * Release 2.1.6 (#52)
+  * Update translation template
+  * Appdata: Add 2.1.6 release info
+  * Add Release to Actions
+  * Add Gettext Updates to Actions
+  * Split deb packaging into its own branch
+  * run installation in CI (#51)
+  * Add Lint to CI (#50)
+  * Build with GitHub CI (#49)
+  * Delete CODE_OF_CONDUCT.md
+  * Delete FUNDING.yml
+  * Fix snap icons in AppChooserRow and AppRow (#43)
+  * Lint src (#44)
+  * Keyfile: Check if only_show_in is empty before searching for strings
+    inside it (#46)
+  * Fix missing apps (#45)
+  * build: fix install path for switchboard plug (#42)
+  * Plug: Change code name to RDNN
+  * Add Silesian and update translation template
+  * Create FUNDING.yml
+
+ -- elementary OS Team <builds@elementary.io>  Fri, 15 Nov 2019 22:19:28 +0000
+
 switchboard-plug-applications (2.1.5) bionic; urgency=medium
 
   * New upstream release.
