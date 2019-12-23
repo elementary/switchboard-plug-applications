@@ -3,17 +3,17 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-11-07 00:20+0000\n"
-"PO-Revision-Date: 2017-05-31 22:24+0000\n"
-"Last-Translator: Jernej Virag <jernej@virag.si>\n"
+"PO-Revision-Date: 2019-12-24 22:07+0000\n"
+"Last-Translator: Marko <marko.dolar@gmail.com>\n"
 "Language-Team: Slovenian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-applications/sl/>\n"
 "Language: sl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || n"
-"%100==4 ? 2 : 3;\n"
-"X-Generator: Weblate 2.14\n"
+"Plural-Forms: nplurals=4; plural=n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || "
+"n%100==4 ? 2 : 3;\n"
+"X-Generator: Weblate 3.9.1\n"
 "X-Launchpad-Export-Date: 2016-12-11 05:23+0000\n"
 
 #: src/Plug.vala:37
@@ -43,48 +43,40 @@ msgid "Default Application"
 msgstr "Privzeta aplikacija"
 
 #: src/Plug.vala:102
-#, fuzzy
 msgid "Web Browser"
-msgstr "Spletni brskalnik:"
+msgstr "Spletni brskalnik"
 
 #: src/Plug.vala:103
-#, fuzzy
 msgid "Email Client"
-msgstr "Odjemalec e-pošte:"
+msgstr "Odjemalec e-pošte"
 
 #: src/Plug.vala:104
-#, fuzzy
 msgid "Calendar"
-msgstr "Koledar:"
+msgstr "Koledar"
 
 #: src/Plug.vala:105
-#, fuzzy
 msgid "Video Player"
-msgstr "Predvajalnik videa:"
+msgstr "Predvajalnik videa"
 
 #: src/Plug.vala:106
-#, fuzzy
 msgid "Music Player"
-msgstr "Predvajalnik glasbe:"
+msgstr "Predvajalnik glasbe"
 
 #: src/Plug.vala:107
-#, fuzzy
 msgid "Text Editor"
-msgstr "Urejevalnik besedil:"
+msgstr "Urejevalnik besedil"
 
 #: src/Plug.vala:108
-#, fuzzy
 msgid "Image Viewer"
-msgstr "Pregledovalnik slik:"
+msgstr "Pregledovalnik slik"
 
 #: src/Plug.vala:109
-#, fuzzy
 msgid "File Browser"
-msgstr "Upravljalnik datotek:"
+msgstr "Upravljalnik datotek"
 
 #: src/Startup/Backend/KeyFile.vala:98
 msgid "Custom Command"
-msgstr "Ukaz po meri"
+msgstr "Poljuben ukaz"
 
 #: src/Startup/Widgets/Scrolled.vala:59
 msgid "Add Startup App…"
@@ -113,7 +105,7 @@ msgstr "Išči med programi"
 
 #: src/Startup/Widgets/AppChooser.vala:55
 msgid "Type in a custom command"
-msgstr "Vpiši ukaz"
+msgstr "Vpišite poljuben ukaz"
 
 #: src/Defaults/DefaultPlug.vala:50
 msgid "Web Browser:"
