@@ -16,6 +16,8 @@ plug_files = files(
     'Defaults/Utils.vala',
     'Defaults/DefaultPlug.vala',
     'Permissions/Widgets/AppEntry.vala',
+    'Permissions/Widgets/AppSettingsView.vala',
+    'Permissions/Widgets/BooleanSetting.vala',
     'Permissions/Widgets/Sidebar.vala',
     'Permissions/Application.vala',
     'Permissions/FlatpakApplication.vala',

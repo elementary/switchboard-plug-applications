@@ -23,10 +23,11 @@ public class Permissions.Plug : Gtk.Paned {
     construct {
         var sidebar = new Widgets.Sidebar ();
 
-        var stack = new Gtk.Stack ();
+        var app_settings_view = new Widgets.AppSettingsView ();
+        app_settings_view.show_all ();
 
         pack1 (sidebar, true, false);
-        pack2 (stack, true, false);
+        pack2 (app_settings_view, true, false);
         set_position (240);
 
         show_all ();

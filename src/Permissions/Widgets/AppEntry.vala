@@ -15,14 +15,11 @@
  * License along with this program; if not, write to the
  * Free Software Foundation, Inc., 51 Franklin Street - Fifth Floor,
  * Boston, MA 02110-1301, USA.
+ * 
  * Authored by: Marius Meisenzahl <mariusmeisenzahl@gmail.com>
  */
 
 public class Permissions.Widgets.AppEntry : Gtk.ListBoxRow {
-    private const string BUBBLES_KEY = "bubbles";
-    private const string SOUNDS_KEY = "sounds";
-    private const string REMEMBER_KEY = "remember";
-
     public Permissions.Application app { get; construct; }
 
     public AppEntry (Permissions.Application app) {
