@@ -47,7 +47,7 @@ public class Permissions.Widgets.BooleanSetting : Gtk.Box {
         pack_start (vbox, false, false, 0);
 
         var s = new Gtk.Switch ();
-        s.state = enabled;
+        bind_property ("enabled", s, "active", BindingFlags.BIDIRECTIONAL);
         pack_end (s, false, false, 0);
     }
 }

@@ -20,13 +20,10 @@
  */
 
 public class Permissions.Widgets.Sidebar : Gtk.Grid {
-    private const string FALLBACK_APP_ID = "gala-other.desktop";
-
     construct {
         var app_list = new Gtk.ListBox ();
         app_list.expand = true;
         app_list.selection_mode = Gtk.SelectionMode.SINGLE;
-        app_list.set_sort_func (sort_func);
 
         var scrolled_window = new Gtk.ScrolledWindow (null, null);
         scrolled_window.add (app_list);
@@ -50,28 +47,11 @@ public class Permissions.Widgets.Sidebar : Gtk.Grid {
         }
     }
 
-    private int sort_func (Gtk.ListBoxRow row1, Gtk.ListBoxRow row2) {
-        if (!(row1 is AppEntry && row2 is AppEntry)) {
-            return 0;
-        }
-
-        if (((AppEntry)row1).app.id == FALLBACK_APP_ID) {
-            return 1;
-        } else if (((AppEntry)row2).app.id == FALLBACK_APP_ID) {
-            return -1;
-        }
-
-        string row_name1 = ((AppEntry)row1).app.name;
-        string row_name2 = ((AppEntry)row2).app.name;
-
-        int order = strcmp (row_name1, row_name2);
-
-        return order.clamp (-1, 1);
-    }
-
     private void show_row (Gtk.ListBoxRow? row) {
         if (row == null || !(row is AppEntry)) {
             return;
         }
+
+        Backend.AppManager.get_default ().selected_app = ((AppEntry)row).app.id;
     }
 }

@@ -20,6 +20,7 @@ plug_files = files(
     'Permissions/Widgets/BooleanSetting.vala',
     'Permissions/Widgets/Sidebar.vala',
     'Permissions/Application.vala',
+    'Permissions/AppManager.vala',
     'Permissions/FlatpakApplication.vala',
     'Permissions/FlatpakManager.vala',
     'Permissions/PermissionsPlug.vala'
