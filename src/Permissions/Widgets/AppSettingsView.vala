@@ -65,7 +65,7 @@ public class Permissions.Widgets.AppSettingsView : Gtk.ScrolledWindow {
         selected_app = Backend.AppManager.get_default ().selected_app;
         reset_settings ();
 
-        var app = new Backend.FlatpakApplication (selected_app);
+        var app = Backend.AppManager.get_default ().apps.get (selected_app);
         var permissions = app.get_current_permissions ();
         permissions.foreach ((permission) => {
             enable_option (permission);

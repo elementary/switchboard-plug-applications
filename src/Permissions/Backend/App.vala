@@ -19,9 +19,14 @@
 * Authored by: Marius Meisenzahl <mariusmeisenzahl@gmail.com>
 */
 
-public class Permissions.Backend.FlatpakApplication : Permissions.Backend.Application {
-    public FlatpakApplication (string id) {
-        base (id);
+public class Permissions.Backend.App : GLib.Object {
+    public string id { get; construct set; }
+    public string name { get; construct set; }
+
+    public App (string id) {
+        GLib.Object(
+            id: id
+        );
 
         find_name ();
     }
@@ -29,7 +34,7 @@ public class Permissions.Backend.FlatpakApplication : Permissions.Backend.Applic
     public string get_overrides_path () {
         return GLib.Path.build_path (
             GLib.Path.DIR_SEPARATOR_S,
-            FlatpakManager.get_user_installation_path (),
+            AppManager.get_user_installation_path (),
             "overrides",
             id
         );
@@ -38,17 +43,17 @@ public class Permissions.Backend.FlatpakApplication : Permissions.Backend.Applic
     public string get_metadata_path () {
         return GLib.Path.build_path (
             GLib.Path.DIR_SEPARATOR_S,
-            FlatpakManager.get_bundle_path_for_app (id),
+            AppManager.get_bundle_path_for_app (id),
             "metadata"
         );
     }
 
     public GenericArray<Backend.Permission> get_permissions () {
-        return FlatpakManager.get_permissions_for_path (get_metadata_path ());
+        return AppManager.get_permissions_for_path (get_metadata_path ());
     }
 
     public GenericArray<Backend.Permission> get_overrides () {
-        return FlatpakManager.get_permissions_for_path (get_overrides_path ());
+        return AppManager.get_permissions_for_path (get_overrides_path ());
     }
 
     public bool check_if_changed() {
@@ -58,7 +63,7 @@ public class Permissions.Backend.FlatpakApplication : Permissions.Backend.Applic
     private void find_name () {
         var path = GLib.Path.build_path (
             GLib.Path.DIR_SEPARATOR_S,
-            FlatpakManager.get_bundle_path_for_app (id),
+            AppManager.get_bundle_path_for_app (id),
             "files",
             "share",
             "applications",

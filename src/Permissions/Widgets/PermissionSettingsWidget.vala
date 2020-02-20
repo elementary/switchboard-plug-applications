@@ -45,5 +45,9 @@ public class Permissions.Widgets.PermissionSettingsWidget : Gtk.Box {
         var s = new Gtk.Switch ();
         settings.bind_property ("enabled", s, "active", BindingFlags.BIDIRECTIONAL);
         pack_end (s, false, false, 0);
+
+        settings.notify["enabled"].connect (() => {
+            GLib.warning ("State of %s changed to: %s", settings.context, settings.enabled ? "true" : "false");
+        });
     }
 }
