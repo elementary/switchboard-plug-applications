@@ -20,9 +20,9 @@
  */
 
 public class Permissions.Widgets.AppEntry : Gtk.ListBoxRow {
-    public Permissions.Application app { get; construct; }
+    public Permissions.Backend.Application app { get; construct; }
 
-    public AppEntry (Permissions.Application app) {
+    public AppEntry (Permissions.Backend.Application app) {
         Object (app: app);
     }
 

@@ -19,7 +19,7 @@
 * Authored by: Marius Meisenzahl <mariusmeisenzahl@gmail.com>
 */
 
-public class Permissions.FlatpakManager {
+public class Permissions.Backend.FlatpakManager {
     public static string get_user_installation_path () {
         return GLib.Path.build_path (
             GLib.Path.DIR_SEPARATOR_S,

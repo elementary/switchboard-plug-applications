@@ -33,7 +33,7 @@ public class Permissions.Widgets.Sidebar : Gtk.Grid {
 
         app_list.row_selected.connect (show_row);
 
-        FlatpakManager.get_applications ().@foreach ((app) => {
+        Backend.FlatpakManager.get_applications ().@foreach ((app) => {
             AppEntry app_entry = new AppEntry (app);
             app_list.add (app_entry);
         });

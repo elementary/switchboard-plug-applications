@@ -19,7 +19,7 @@
 * Authored by: Marius Meisenzahl <mariusmeisenzahl@gmail.com>
 */
 
-public class Permissions.FlatpakApplication : Permissions.Application {
+public class Permissions.Backend.FlatpakApplication : Permissions.Backend.Application {
     public FlatpakApplication (string id) {
         base (id);
 

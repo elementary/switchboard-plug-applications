@@ -15,14 +15,14 @@ plug_files = files(
     'Startup/Widgets/AppChooser.vala',
     'Defaults/Utils.vala',
     'Defaults/DefaultPlug.vala',
+    'Permissions/Backend/Application.vala',
+    'Permissions/Backend/AppManager.vala',
+    'Permissions/Backend/FlatpakApplication.vala',
+    'Permissions/Backend/FlatpakManager.vala',
     'Permissions/Widgets/AppEntry.vala',
     'Permissions/Widgets/AppSettingsView.vala',
     'Permissions/Widgets/BooleanSetting.vala',
     'Permissions/Widgets/Sidebar.vala',
-    'Permissions/Application.vala',
-    'Permissions/AppManager.vala',
-    'Permissions/FlatpakApplication.vala',
-    'Permissions/FlatpakManager.vala',
     'Permissions/PermissionsPlug.vala'
 )
 

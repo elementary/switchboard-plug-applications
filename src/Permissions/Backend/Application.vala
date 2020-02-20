@@ -19,7 +19,7 @@
 * Authored by: Marius Meisenzahl <mariusmeisenzahl@gmail.com>
 */
 
-public class Permissions.Application : GLib.Object {
+public class Permissions.Backend.Application : GLib.Object {
     public string id { get; construct set; }
     public string name { get; construct set; }
 
