@@ -1,5 +1,5 @@
 /*
-* Copyright (c) 2014-2017 elementary LLC. (http://launchpad.net/switchboard-plug-applications)
+* Copyright (c) 2014-2020 elementary LLC. (http://launchpad.net/switchboard-plug-applications)
 *
 * This program is free software; you can redistribute it and/or
 * modify it under the terms of the GNU General Public
@@ -17,12 +17,14 @@
 * Boston, MA 02110-1301 USA
 *
 * Authored by: Akshay Shekher <voldyman666@gmail.com>
+*              Marius Meisenzahl <mariusmeisenzahl@gmail.com>
 */
 
 public class ApplicationsPlug : Switchboard.Plug {
 
     private const string DEFAULTS = "defaults";
     private const string STARTUP = "startup";
+    private const string PERMISSIONS = "permissions";
 
     private Gtk.Grid grid;
     private Gtk.Stack stack;
@@ -32,6 +34,7 @@ public class ApplicationsPlug : Switchboard.Plug {
         settings.set ("applications", null);
         settings.set ("applications/defaults", DEFAULTS);
         settings.set ("applications/startup", STARTUP);
+        settings.set ("applications/permissions", PERMISSIONS);
         Object (category: Category.PERSONAL,
                 code_name: "io.elementary.switchboard.applications",
                 display_name: _("Applications"),
@@ -47,12 +50,14 @@ public class ApplicationsPlug : Switchboard.Plug {
 
         var defaults_plug = new Defaults.Plug ();
         var startup_plug = new Startup.Plug ();
+        var permissions_plug = new Permissions.Plug ();
 
         stack = new Gtk.Stack ();
         stack.expand = true;
 
         stack.add_titled (defaults_plug, DEFAULTS, _("Default"));
         stack.add_titled (startup_plug, STARTUP, _("Startup"));
+        stack.add_titled (permissions_plug, PERMISSIONS, _("Permissions"));
 
         var stack_switcher = new Gtk.StackSwitcher ();
         stack_switcher.halign = Gtk.Align.CENTER;

@@ -14,7 +14,13 @@ plug_files = files(
     'Startup/Widgets/AppChooserRow.vala',
     'Startup/Widgets/AppChooser.vala',
     'Defaults/Utils.vala',
-    'Defaults/DefaultPlug.vala'
+    'Defaults/DefaultPlug.vala',
+    'Permissions/Widgets/AppEntry.vala',
+    'Permissions/Widgets/Sidebar.vala',
+    'Permissions/Application.vala',
+    'Permissions/FlatpakApplication.vala',
+    'Permissions/FlatpakManager.vala',
+    'Permissions/PermissionsPlug.vala'
 )
 
 switchboard_dep = dependency('switchboard-2.0')
