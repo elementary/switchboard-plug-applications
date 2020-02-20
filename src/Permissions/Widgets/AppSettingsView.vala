@@ -35,6 +35,7 @@ public class Permissions.Widgets.AppSettingsView : Gtk.ScrolledWindow {
             add_setting (new BooleanSetting (_("Access network"), "shared=network", false));
             add_setting (new BooleanSetting (_("Access inter-process communications"), "shared=ipc", false));
             add_setting (new BooleanSetting (_("Access X11 windowing system"), "sockets=x11", false));
+            add_setting (new BooleanSetting (_("Access X11 windowing system (as fallback)"), "sockets=fallback-x11", false));
             add_setting (new BooleanSetting (_("Access Wayland windowing system"), "sockets=wayland", false));
             add_setting (new BooleanSetting (_("Access PulseAudio sound server"), "sockets=pulseaudio", false));
             add_setting (new BooleanSetting (_("Access D-Bus system bus (unrestricted)"), "sockets=system-bus", false));
