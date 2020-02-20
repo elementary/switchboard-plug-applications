@@ -21,9 +21,10 @@ plug_files = files(
     'Permissions/Backend/FlatpakManager.vala',
     'Permissions/Backend/Permission.vala',
     'Permissions/Backend/PermissionManager.vala',
+    'Permissions/Backend/PermissionSettings.vala',
     'Permissions/Widgets/AppEntry.vala',
     'Permissions/Widgets/AppSettingsView.vala',
-    'Permissions/Widgets/BooleanSetting.vala',
+    'Permissions/Widgets/PermissionSettingsWidget.vala',
     'Permissions/Widgets/Sidebar.vala',
     'Permissions/PermissionsPlug.vala'
 )

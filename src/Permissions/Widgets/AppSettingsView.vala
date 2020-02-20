@@ -33,7 +33,7 @@ public class Permissions.Widgets.AppSettingsView : Gtk.ScrolledWindow {
 
         var permission_manager = Backend.PermissionManager.get_default ();
         permission_manager.keys().foreach ((key) => {
-            add_setting (new BooleanSetting (permission_manager.get (key), key, false));
+            add_settings (new PermissionSettingsWidget (new Backend.PermissionSettings (key)));
         });
 
         add (grid);
@@ -41,22 +41,22 @@ public class Permissions.Widgets.AppSettingsView : Gtk.ScrolledWindow {
         update_view ();
     }
 
-    private void add_setting (BooleanSetting setting) {
-        grid.add (setting);
+    private void add_settings (PermissionSettingsWidget widget) {
+        grid.add (widget);
     }
 
     private void reset_settings () {
         grid.@foreach ((child) => {
-            var setting = (BooleanSetting) child;
-            setting.enabled = false;
+            var widget = (PermissionSettingsWidget) child;
+            widget.settings.enabled = false;
         });
     }
 
     private void enable_option (Backend.Permission option) {
         grid.@foreach ((child) => {
-            var setting = (BooleanSetting) child;
-            if (setting.option == option.context) {
-                setting.enabled = true;
+            var widget = (PermissionSettingsWidget) child;
+            if (widget.settings.context == option.context) {
+                widget.settings.enabled = true;
             }
         });
     }
