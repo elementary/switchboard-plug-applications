@@ -31,26 +31,10 @@ public class Permissions.Widgets.AppSettingsView : Gtk.ScrolledWindow {
 
         Backend.AppManager.get_default ().notify["selected-app"].connect (update_view);
 
-        {
-            add_setting (new BooleanSetting (_("Access network"), "shared=network", false));
-            add_setting (new BooleanSetting (_("Access inter-process communications"), "shared=ipc", false));
-            add_setting (new BooleanSetting (_("Access X11 windowing system"), "sockets=x11", false));
-            add_setting (new BooleanSetting (_("Access X11 windowing system (as fallback)"), "sockets=fallback-x11", false));
-            add_setting (new BooleanSetting (_("Access Wayland windowing system"), "sockets=wayland", false));
-            add_setting (new BooleanSetting (_("Access PulseAudio sound server"), "sockets=pulseaudio", false));
-            add_setting (new BooleanSetting (_("Access D-Bus system bus (unrestricted)"), "sockets=system-bus", false));
-            add_setting (new BooleanSetting (_("Access D-Bus session bus (unrestricted)"), "sockets=session-bus", false));
-            add_setting (new BooleanSetting (_("Access Secure Shell agent"), "sockets=ssh-auth", false));
-            add_setting (new BooleanSetting (_("Access printing system"), "sockets=cups", false));
-            add_setting (new BooleanSetting (_("Access GPU acceleration"), "devices=dri", false));
-            add_setting (new BooleanSetting (_("Access all devices (e.g. webcam)"), "devices=all", false));
-            add_setting (new BooleanSetting (_("Access all system directories (unrestricted)"), "filesystems=host", false));
-            add_setting (new BooleanSetting (_("Access home directory (unrestricted)"), "filesystems=home", false));
-            add_setting (new BooleanSetting (_("Access Bluetooth"), "features=bluetooth", false));
-            add_setting (new BooleanSetting (_("Access other syscalls (e.g. ptrace)"), "features=devel", false));
-            add_setting (new BooleanSetting (_("Access programs from other architectures"), "features=multiarch", false));
-            //  add_setting (new BooleanSetting (_("Access other directories"), "filesystems=custom", false));
-        }
+        var permission_manager = Backend.PermissionManager.get_default ();
+        permission_manager.keys().foreach ((key) => {
+            add_setting (new BooleanSetting (permission_manager.get (key), key, false));
+        });
 
         add (grid);
 
@@ -68,10 +52,10 @@ public class Permissions.Widgets.AppSettingsView : Gtk.ScrolledWindow {
         });
     }
 
-    private void enable_option (string option) {
+    private void enable_option (Backend.Permission option) {
         grid.@foreach ((child) => {
             var setting = (BooleanSetting) child;
-            if (setting.option == option) {
+            if (setting.option == option.context) {
                 setting.enabled = true;
             }
         });
@@ -82,7 +66,7 @@ public class Permissions.Widgets.AppSettingsView : Gtk.ScrolledWindow {
         reset_settings ();
 
         var app = new Backend.FlatpakApplication (selected_app);
-        var permissions = app.get_permissions ();
+        var permissions = app.get_current_permissions ();
         permissions.foreach ((permission) => {
             enable_option (permission);
         });

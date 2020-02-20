@@ -43,11 +43,11 @@ public class Permissions.Backend.FlatpakApplication : Permissions.Backend.Applic
         );
     }
 
-    public GenericArray<string> get_permissions () {
+    public GenericArray<Backend.Permission> get_permissions () {
         return FlatpakManager.get_permissions_for_path (get_metadata_path ());
     }
 
-    public GenericArray<string> get_overrides () {
+    public GenericArray<Backend.Permission> get_overrides () {
         return FlatpakManager.get_permissions_for_path (get_overrides_path ());
     }
 
@@ -75,5 +75,79 @@ public class Permissions.Backend.FlatpakApplication : Permissions.Backend.Applic
         } catch (GLib.FileError e) {
             GLib.error ("Error: %s\n", e.message);
         }
+    }
+
+    private bool real_is_overridden_path (GenericArray<Backend.Permission> overrides, Backend.Permission permission) {
+        if (!permission.context.has_prefix ("filesystems=")) {
+            return false;
+        }
+
+        // TODO: implement logic for overriden path
+
+        return false;
+    }
+
+    private bool is_overridden_path (GenericArray<Backend.Permission> overrides, Backend.Permission permission) {
+        return real_is_overridden_path (overrides, permission) ||
+               real_is_overridden_path (overrides, negate_permission (permission));
+    }
+
+    private bool is_negated_permission (Backend.Permission permission) {
+        return permission.context.contains ("=!");
+    }
+
+    private Backend.Permission negate_permission (Backend.Permission permission) {
+        var new_permission = new Backend.Permission (permission.context);
+
+        if (is_negated_permission (new_permission)) {
+            new_permission.context = new_permission.context.replace ("=!", "=");
+            return new_permission;
+        }
+
+        new_permission.context = new_permission.context.replace("=", "=!");
+        return new_permission;
+    }
+
+    private bool is_permission_overridden (GenericArray<Backend.Permission> overrides, Backend.Permission permission) {
+        var negated_permission = negate_permission (permission);
+
+        for (var i = 0; i < overrides.length; i++) {
+            var o = overrides.get (i);
+            if (o.context == negated_permission.context) {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    public GenericArray<Backend.Permission> get_current_permissions () {
+        var permissions = get_permissions ();
+        var overrides = get_overrides ();
+        var current = new GenericArray<Backend.Permission> ();
+
+        for (var i = 0; i < permissions.length; i++) {
+            var permission = permissions.get (i);
+            if (is_permission_overridden (overrides, permission)) {
+                continue;
+            }
+
+            if (is_overridden_path (overrides, permission)) {
+                continue;
+            }
+
+            current.add (permission);
+        }
+
+        for (var i = 0; i < overrides.length; i++) {
+            var permission = overrides.get (i);
+            if (is_negated_permission (permission)) {
+                continue;
+            }
+
+            current.add (permission);
+        }
+
+        return current;
     }
 }

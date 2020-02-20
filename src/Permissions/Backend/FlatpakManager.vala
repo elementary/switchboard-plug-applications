@@ -78,8 +78,8 @@ public class Permissions.Backend.FlatpakManager {
         );
     }
 
-    public static GenericArray<string> get_permissions_for_path (string path) {
-        var array = new GenericArray<string> ();
+    public static GenericArray<Backend.Permission> get_permissions_for_path (string path) {
+        var array = new GenericArray<Backend.Permission> ();
         string GROUP = "Context";
 
         try {
@@ -99,13 +99,14 @@ public class Permissions.Backend.FlatpakManager {
                         break;
                     }
 
-                    array.add ("%s=%s".printf (key, value));
+                    array.add (new Backend.Permission ("%s=%s".printf (key, value)));
                 }
             }
         } catch (GLib.KeyFileError e) {
-            GLib.error ("Error: %s\n", e.message);
+            GLib.warning (e.message);
         } catch (GLib.FileError e) {
-            GLib.error ("Error: %s\n", e.message);
+            GLib.warning (path);
+            GLib.warning (e.message);
         }
 
         return array;
