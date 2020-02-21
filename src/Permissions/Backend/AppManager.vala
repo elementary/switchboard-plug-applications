@@ -163,7 +163,7 @@ public class Permissions.Backend.AppManager : GLib.Object {
                 info = enumerator.next_file (null);
             }
         } catch (GLib.Error e) {
-            GLib.error ("Error: %s\n", e.message);
+            GLib.error (e.message);
         }
 
         return array;

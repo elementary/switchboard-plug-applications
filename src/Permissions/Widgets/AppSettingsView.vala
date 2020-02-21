@@ -29,6 +29,17 @@ public class Permissions.Widgets.AppSettingsView : Gtk.ScrolledWindow {
         grid.row_spacing = 32;
         grid.orientation = Gtk.Orientation.VERTICAL;
 
+        var box = new Gtk.Box (Gtk.Orientation.VERTICAL, 0);
+        var reset_button = new Gtk.Button.with_label (_("Reset"));
+        reset_button.set_tooltip_text (_("Reset this application permissions"));
+        reset_button.clicked.connect (() => {
+            var app = Backend.AppManager.get_default ().apps.get (selected_app);
+            app.reset_settings_to_standard ();
+            update_view ();
+        });
+        box.pack_end (reset_button, false, false);
+        grid.add (box);
+
         Backend.AppManager.get_default ().notify["selected-app"].connect (update_view);
 
         var permission_manager = Backend.PermissionManager.get_default ();
@@ -47,31 +58,35 @@ public class Permissions.Widgets.AppSettingsView : Gtk.ScrolledWindow {
         grid.add (widget);
     }
 
-    private void reset_settings () {
+    private void initialize_settings_view () {
         grid.@foreach ((child) => {
-            var widget = (PermissionSettingsWidget) child;
-            widget.do_notify = false;
-            widget.settings.standard = false;
-            widget.settings.enabled = false;
-            widget.do_notify = true;
+            if (child is PermissionSettingsWidget) {
+                var widget = child as PermissionSettingsWidget;
+                widget.do_notify = false;
+                widget.settings.standard = false;
+                widget.settings.enabled = false;
+                widget.do_notify = true;
+            }
         });
     }
 
     private void set_settings (Backend.PermissionSettings settings) {
         grid.@foreach ((child) => {
-            var widget = (PermissionSettingsWidget) child;
-            if (widget.settings.context == settings.context) {
-                widget.do_notify = false;
-                widget.settings.standard = settings.standard;
-                widget.settings.enabled = settings.enabled;
-                widget.do_notify = true;
+            if (child is PermissionSettingsWidget) {
+                var widget = child as PermissionSettingsWidget;
+                if (widget.settings.context == settings.context) {
+                    widget.do_notify = false;
+                    widget.settings.standard = settings.standard;
+                    widget.settings.enabled = settings.enabled;
+                    widget.do_notify = true;
+                }
             }
         });
     }
 
     private void update_view () {
         selected_app = Backend.AppManager.get_default ().selected_app;
-        reset_settings ();
+        initialize_settings_view ();
 
         var app = Backend.AppManager.get_default ().apps.get (selected_app);
         app.settings.foreach ((setting) => {
@@ -80,8 +95,6 @@ public class Permissions.Widgets.AppSettingsView : Gtk.ScrolledWindow {
     }
 
     private void change_permission_settings (Backend.PermissionSettings settings) {
-        GLib.warning ("[%s] change_permission_settings: %s - %s - %s", selected_app, settings.context, settings.standard ? "true" : "false", settings.enabled ? "true" : "false");
-
         var app = Backend.AppManager.get_default ().apps.get (selected_app);
         for (var i = 0; i < app.settings.length; i++) {
             var s = app.settings.get (i);
