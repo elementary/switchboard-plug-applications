@@ -178,7 +178,9 @@ public class Permissions.Backend.AppManager : GLib.Object {
             }
         });
 
-        array.sort (strcmp);
+        array.sort_with_data ((a, b) => {
+            return strcmp (a.name, b.name);
+        });
 
         return array;
     }
