@@ -33,7 +33,9 @@ public class Permissions.Widgets.AppSettingsView : Gtk.ScrolledWindow {
 
         var permission_manager = Backend.PermissionManager.get_default ();
         permission_manager.keys().foreach ((key) => {
-            add_settings (new PermissionSettingsWidget (new Backend.PermissionSettings (key)));
+            var widget = new PermissionSettingsWidget (new Backend.PermissionSettings (key, false));
+            add_settings (widget);
+            widget.changed_permission_settings.connect (change_permission_settings);
         });
 
         add (grid);
@@ -48,15 +50,21 @@ public class Permissions.Widgets.AppSettingsView : Gtk.ScrolledWindow {
     private void reset_settings () {
         grid.@foreach ((child) => {
             var widget = (PermissionSettingsWidget) child;
+            widget.do_notify = false;
+            widget.settings.standard = false;
             widget.settings.enabled = false;
+            widget.do_notify = true;
         });
     }
 
-    private void enable_option (Backend.Permission option) {
+    private void set_settings (Backend.PermissionSettings settings) {
         grid.@foreach ((child) => {
             var widget = (PermissionSettingsWidget) child;
-            if (widget.settings.context == option.context) {
-                widget.settings.enabled = true;
+            if (widget.settings.context == settings.context) {
+                widget.do_notify = false;
+                widget.settings.standard = settings.standard;
+                widget.settings.enabled = settings.enabled;
+                widget.do_notify = true;
             }
         });
     }
@@ -66,9 +74,23 @@ public class Permissions.Widgets.AppSettingsView : Gtk.ScrolledWindow {
         reset_settings ();
 
         var app = Backend.AppManager.get_default ().apps.get (selected_app);
-        var permissions = app.get_current_permissions ();
-        permissions.foreach ((permission) => {
-            enable_option (permission);
+        app.settings.foreach ((setting) => {
+            set_settings (setting);
         });
+    }
+
+    private void change_permission_settings (Backend.PermissionSettings settings) {
+        GLib.warning ("[%s] change_permission_settings: %s - %s - %s", selected_app, settings.context, settings.standard ? "true" : "false", settings.enabled ? "true" : "false");
+
+        var app = Backend.AppManager.get_default ().apps.get (selected_app);
+        for (var i = 0; i < app.settings.length; i++) {
+            var s = app.settings.get (i);
+            if (s.context == settings.context) {
+                s.enabled = settings.enabled;
+                break;
+            }
+        }
+
+        app.save_overrides ();
     }
 }

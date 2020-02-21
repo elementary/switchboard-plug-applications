@@ -66,9 +66,10 @@ public class Permissions.Backend.PermissionManager {
     }
 
     public string get (string key) {
-        uint index = 0;
-        if (_keys.find (key, out index)) {
-            return _values.get (index);
+        for (var i = 0; i < _keys.length; i++) {
+            if (_keys.get (i) == key) {
+                return _values.get (i);
+            }
         }
 
         return "";

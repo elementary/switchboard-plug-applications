@@ -21,6 +21,8 @@
 
 public class Permissions.Widgets.PermissionSettingsWidget : Gtk.Box {
     public Backend.PermissionSettings settings { get; construct set; }
+    public signal void changed_permission_settings (Backend.PermissionSettings settings);
+    public bool do_notify { get; set; default = true; }
 
     public PermissionSettingsWidget (Backend.PermissionSettings settings) {
         GLib.Object (
@@ -47,7 +49,9 @@ public class Permissions.Widgets.PermissionSettingsWidget : Gtk.Box {
         pack_end (s, false, false, 0);
 
         settings.notify["enabled"].connect (() => {
-            GLib.warning ("State of %s changed to: %s", settings.context, settings.enabled ? "true" : "false");
+            if (do_notify) {
+                changed_permission_settings (settings);
+            }
         });
     }
 }

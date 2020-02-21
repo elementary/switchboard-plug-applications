@@ -22,6 +22,7 @@
 public class Permissions.Backend.App : GLib.Object {
     public string id { get; construct set; }
     public string name { get; construct set; }
+    public GenericArray<Backend.PermissionSettings> settings;
 
     public App (string id) {
         GLib.Object(
@@ -29,6 +30,39 @@ public class Permissions.Backend.App : GLib.Object {
         );
 
         find_name ();
+
+        settings = new GenericArray<Backend.PermissionSettings> ();
+        var permissions = get_permissions ();
+        var current_permissions = get_current_permissions ();
+        Backend.PermissionManager.get_default ().keys ().foreach ((key) => {
+            bool standard = false;
+            bool enabled = false;
+
+            for (var i = 0; i < permissions.length; i++) {
+                var permission = permissions.get (i);
+                if (key == permission.context) {
+                    standard = true;
+                    break;
+                }
+            }
+
+            for (var i = 0; i < current_permissions.length; i++) {
+                var permission = current_permissions.get (i);
+                if (key == permission.context) {
+                    enabled = true;
+                    break;
+                }
+            }
+
+            var s = new Backend.PermissionSettings (key, standard);
+            s.enabled = enabled;
+
+            settings.add (s);
+        });
+
+        notify["settings"].connect (save_overrides);
+
+        save_overrides ();
     }
 
     public string get_overrides_path () {
@@ -154,5 +188,37 @@ public class Permissions.Backend.App : GLib.Object {
         }
 
         return current;
+    }
+
+    public void save_overrides () {
+        string GROUP = "Context";
+
+        try {
+            var key_file = new GLib.KeyFile();
+
+            for (var i = 0; i < settings.length; i++) {
+                var setting = settings.get (i);
+                if (setting.enabled != setting.standard) {
+                    GLib.print ("[%s] %s %s %s\n", id, setting.context, setting.standard ? "true" : "false", setting.enabled ? "true" : "false");
+
+                    var kv = setting.context.split ("=");
+                    var key = kv[0];
+                    var value = "%s%s".printf (!setting.enabled ? "!" : "", kv[1]);
+
+                    try {
+                        var _value = key_file.get_value (GROUP, key);
+                        value = "%s;%s".printf (_value, value);
+                    } catch (GLib.KeyFileError e) {
+                        GLib.warning (e.message);
+                    }
+    
+                    key_file.set_value (GROUP, key, value);
+                }
+            }
+
+            key_file.save_to_file (get_overrides_path ());
+        } catch (GLib.FileError e) {
+            GLib.warning (e.message);
+        }
     }
 }

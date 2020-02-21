@@ -20,9 +20,13 @@
  */
 
 public class Permissions.Backend.PermissionSettings : Permissions.Backend.Permission {
+    public bool standard { get; construct set; }
     public bool enabled { get; set; }
 
-    public PermissionSettings (string context) {
+    public PermissionSettings (string context, bool standard) {
         base(context);
+
+        this.standard = standard;
+        this.enabled = standard;
     }
 }
