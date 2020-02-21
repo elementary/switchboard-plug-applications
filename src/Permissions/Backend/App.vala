@@ -25,7 +25,7 @@ public class Permissions.Backend.App : GLib.Object {
     public GenericArray<Backend.PermissionSettings> settings;
 
     public App (string id) {
-        GLib.Object(
+        GLib.Object (
             id: id
         );
 
@@ -90,7 +90,7 @@ public class Permissions.Backend.App : GLib.Object {
         return AppManager.get_permissions_for_path (get_overrides_path ());
     }
 
-    public bool check_if_changed() {
+    public bool check_if_changed () {
         return GLib.File.new_for_path (get_overrides_path ()).query_exists ();
     }
 
@@ -105,7 +105,7 @@ public class Permissions.Backend.App : GLib.Object {
         );
 
         try {
-            var key_file = new GLib.KeyFile();
+            var key_file = new GLib.KeyFile ();
             key_file.load_from_file (path, GLib.KeyFileFlags.NONE);
 
             name = key_file.get_string ("Desktop Entry", "Name");
@@ -143,7 +143,7 @@ public class Permissions.Backend.App : GLib.Object {
             return new_permission;
         }
 
-        new_permission.context = new_permission.context.replace("=", "=!");
+        new_permission.context = new_permission.context.replace ("=", "=!");
         return new_permission;
     }
 
@@ -205,16 +205,14 @@ public class Permissions.Backend.App : GLib.Object {
     }
 
     public void save_overrides () {
-        string GROUP = "Context";
+        const string GROUP = "Context";
 
         try {
-            var key_file = new GLib.KeyFile();
+            var key_file = new GLib.KeyFile ();
 
             for (var i = 0; i < settings.length; i++) {
                 var setting = settings.get (i);
                 if (setting.enabled != setting.standard) {
-                    GLib.print ("[%s] %s %s %s\n", id, setting.context, setting.standard ? "true" : "false", setting.enabled ? "true" : "false");
-
                     var kv = setting.context.split ("=");
                     var key = kv[0];
                     var value = "%s%s".printf (!setting.enabled ? "!" : "", kv[1]);
@@ -225,7 +223,7 @@ public class Permissions.Backend.App : GLib.Object {
                     } catch (GLib.KeyFileError e) {
                         GLib.warning (e.message);
                     }
-    
+
                     key_file.set_value (GROUP, key, value);
                 }
             }

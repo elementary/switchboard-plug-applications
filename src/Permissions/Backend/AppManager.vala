@@ -102,10 +102,10 @@ public class Permissions.Backend.AppManager : GLib.Object {
 
     public static GenericArray<Backend.Permission> get_permissions_for_path (string path) {
         var array = new GenericArray<Backend.Permission> ();
-        string GROUP = "Context";
+        const string GROUP = "Context";
 
         try {
-            var key_file = new GLib.KeyFile();
+            var key_file = new GLib.KeyFile ();
             key_file.load_from_file (path, GLib.KeyFileFlags.NONE);
 
             if (!key_file.has_group (GROUP)) {

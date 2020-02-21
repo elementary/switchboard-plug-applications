@@ -23,7 +23,7 @@ public class Permissions.Backend.Permission : GLib.Object {
     public string context { get; construct set; }
 
     public Permission (string context) {
-        Object(
+        GLib.Object (
             context: context
         );
     }

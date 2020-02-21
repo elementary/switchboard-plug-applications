@@ -24,7 +24,7 @@ public class Permissions.Backend.PermissionSettings : Permissions.Backend.Permis
     public bool enabled { get; set; }
 
     public PermissionSettings (string context, bool standard) {
-        base(context);
+        base (context);
 
         this.standard = standard;
         this.enabled = standard;

@@ -43,7 +43,7 @@ public class Permissions.Widgets.AppSettingsView : Gtk.ScrolledWindow {
         Backend.AppManager.get_default ().notify["selected-app"].connect (update_view);
 
         var permission_manager = Backend.PermissionManager.get_default ();
-        permission_manager.keys().foreach ((key) => {
+        permission_manager.keys ().foreach ((key) => {
             var widget = new PermissionSettingsWidget (new Backend.PermissionSettings (key, false));
             add_settings (widget);
             widget.changed_permission_settings.connect (change_permission_settings);
