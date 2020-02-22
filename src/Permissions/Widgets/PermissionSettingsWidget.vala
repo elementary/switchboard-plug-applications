@@ -31,18 +31,12 @@ public class Permissions.Widgets.PermissionSettingsWidget : Gtk.Box {
 
         orientation = Gtk.Orientation.HORIZONTAL;
         hexpand = true;
-        var vbox = new Gtk.Box (Gtk.Orientation.VERTICAL, 0);
 
         var title_label = new Gtk.Label (Backend.PermissionManager.get_default ().get (settings.context));
+        title_label.set_tooltip_text (settings.context);
         title_label.get_style_context ().add_class (Granite.STYLE_CLASS_H3_LABEL);
         title_label.halign = Gtk.Align.START;
-        vbox.pack_start (title_label, true, true, 0);
-
-        var option_label = new Gtk.Label (settings.context);
-        option_label.halign = Gtk.Align.START;
-        vbox.pack_end (option_label, true, true, 0);
-
-        pack_start (vbox, false, false, 0);
+        pack_start (title_label, true, true, 0);
 
         var s = new Gtk.Switch ();
         s.valign = Gtk.Align.CENTER;
