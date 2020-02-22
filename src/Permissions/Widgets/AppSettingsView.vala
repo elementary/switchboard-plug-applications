@@ -29,16 +29,15 @@ public class Permissions.Widgets.AppSettingsView : Gtk.ScrolledWindow {
         grid.row_spacing = 32;
         grid.orientation = Gtk.Orientation.VERTICAL;
 
-        var box = new Gtk.Box (Gtk.Orientation.VERTICAL, 0);
         var reset_button = new Gtk.Button.with_label (_("Reset"));
+        reset_button.halign = Gtk.Align.END;
         reset_button.set_tooltip_text (_("Reset this application permissions"));
         reset_button.clicked.connect (() => {
             var app = Backend.AppManager.get_default ().apps.get (selected_app);
             app.reset_settings_to_standard ();
             update_view ();
         });
-        box.pack_end (reset_button, false, false);
-        grid.add (box);
+        grid.add (reset_button);
 
         Backend.AppManager.get_default ().notify["selected-app"].connect (update_view);
 
