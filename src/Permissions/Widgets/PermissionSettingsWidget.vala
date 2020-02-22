@@ -45,6 +45,7 @@ public class Permissions.Widgets.PermissionSettingsWidget : Gtk.Box {
         pack_start (vbox, false, false, 0);
 
         var s = new Gtk.Switch ();
+        s.valign = Gtk.Align.CENTER;
         settings.bind_property ("enabled", s, "active", BindingFlags.BIDIRECTIONAL);
         pack_end (s, false, false, 0);
 
