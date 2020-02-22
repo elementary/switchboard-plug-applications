@@ -22,7 +22,7 @@
 public class Permissions.Backend.PermissionManager {
     private static PermissionManager? instance;
     private GenericArray<string> _keys;
-    private GenericArray<string> _values;
+    private GenericArray<PermissionDescription> _values;
 
     public static PermissionManager get_default () {
         if (instance == null) {
@@ -34,29 +34,101 @@ public class Permissions.Backend.PermissionManager {
 
     private PermissionManager () {
         _keys = new GenericArray<string> ();
-        _values = new GenericArray<string> ();
+        _values = new GenericArray<PermissionDescription> ();
 
-        insert ("shared=network", _("Access network"));
-        insert ("shared=ipc", _("Access inter-process communications"));
-        insert ("sockets=x11", _("Access X11 windowing system"));
-        insert ("sockets=fallback-x11", _("Access X11 windowing system (as fallback)"));
-        insert ("sockets=wayland", _("Access Wayland windowing system"));
-        insert ("sockets=pulseaudio", _("Access PulseAudio sound server"));
-        insert ("sockets=system-bus", _("Access D-Bus system bus (unrestricted)"));
-        insert ("sockets=session-bus", _("Access D-Bus session bus (unrestricted)"));
-        insert ("sockets=ssh-auth", _("Access Secure Shell agent"));
-        insert ("sockets=cups", _("Access printing system"));
-        insert ("devices=dri", _("Access GPU acceleration"));
-        insert ("devices=all", _("Access all devices (e.g. webcam)"));
-        insert ("filesystems=host", _("Access all system directories (unrestricted)"));
-        insert ("filesystems=home", _("Access home directory (unrestricted)"));
-        insert ("features=bluetooth", _("Access Bluetooth"));
-        insert ("features=devel", _("Access other syscalls (e.g. ptrace)"));
-        insert ("features=multiarch", _("Access programs from other architectures"));
-        insert ("filesystems=custom", _("Access other directories"));
+        insert ("shared=network", new PermissionDescription (
+            _("Network"),
+            _("App may be able to access other devices on the network"),
+            "preferences-system-network"
+        ));
+        insert ("shared=ipc", new PermissionDescription (
+            _("Communication between apps"),
+            _("App may be able to talk to, control and read information from other apps or system components"),
+            "internet-chat"
+        ));
+        insert ("sockets=x11", new PermissionDescription (
+            _("Graphical output"),
+            _("App may be able to show graphical windows"),
+            "video-display"
+        ));
+        //  insert ("sockets=fallback-x11", new PermissionDescription (
+        //      _("Access X11 windowing system (as fallback)"),
+        //      _("App is able to show graphical windows"),
+        //      "video-display"
+        //  ));
+        //  insert ("sockets=wayland", new PermissionDescription (
+        //      _("Access Wayland windowing system"),
+        //      _("App is able to show graphical windows"),
+        //      "video-display"
+        //  ));
+        insert ("sockets=pulseaudio", new PermissionDescription (
+            _("Sounds"),
+            _("App may be able to play sounds"),
+            "preferences-desktop-sound"
+        ));
+        insert ("sockets=system-bus", new PermissionDescription (
+            _("D-Bus system bus"),
+            _("App may be able to talk to, control and read information from system components via D-Bus"),
+            "internet-chat"
+        ));
+        insert ("sockets=session-bus", new PermissionDescription (
+            _("D-Bus session bus"),
+            _("App may be able to talk to, control and read information from other apps via D-Bus"),
+            "internet-chat"
+        ));
+        insert ("sockets=ssh-auth", new PermissionDescription (
+            _("Secure Shell agent"),
+            _("App may be able to access other devices on the network via SSH"),
+            "utilities-terminal"
+        ));
+        insert ("sockets=cups", new PermissionDescription (
+            _("Print"),
+            _("App may be able to access printers"),
+            "printer-printing"
+        ));
+        insert ("devices=dri", new PermissionDescription (
+            _("GPU acceleration"),
+            _("App may be able to accelerate graphical output"),
+            "applications-graphics"
+        ));
+        insert ("devices=all", new PermissionDescription (
+            _("Devices"),
+            _("App may be able to access devices like webcams"),
+            "accessories-camera"
+        ));
+        insert ("filesystems=host", new PermissionDescription (
+            _("System directories"),
+            _("App may be able to access system directories"),
+            "drive-harddisk"
+        ));
+        insert ("filesystems=home", new PermissionDescription (
+            _("Home directory"),
+            _("App may be able to access your home directory"),
+            "user-home"
+        ));
+        insert ("features=bluetooth", new PermissionDescription (
+            _("Bluetooth"),
+            _("App may be able to access devices via Bluetooth"),
+            "preferences-bluetooth"
+        ));
+        insert ("features=devel", new PermissionDescription (
+            _("System calls"),
+            _("App may be able to access other syscalls (e.g. ptrace)"),
+            "system-run"
+        ));
+        insert ("features=multiarch", new PermissionDescription (
+            _("Multiarch"),
+            _("App may be able to access programs from other architectures"),
+            "system-run"
+        ));
+        insert ("filesystems=custom", new PermissionDescription (
+            _("Other directories"),
+            _("App may be able to access custom directories"),
+            "system-file-manager"
+        ));
     }
 
-    private void insert (string key, string value) {
+    private void insert (string key, PermissionDescription value) {
         _keys.add (key);
         _values.add (value);
     }
@@ -65,13 +137,13 @@ public class Permissions.Backend.PermissionManager {
         return _keys;
     }
 
-    public string get (string key) {
+    public PermissionDescription? get (string key) {
         for (var i = 0; i < _keys.length; i++) {
             if (_keys.get (i) == key) {
                 return _values.get (i);
             }
         }
 
-        return "";
+        return null;
     }
 }
