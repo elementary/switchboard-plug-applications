@@ -21,6 +21,7 @@
 
 public class Permissions.Widgets.AppEntry : Gtk.ListBoxRow {
     public Permissions.Backend.App app { get; construct; }
+    private Gtk.Label description_label;
 
     public AppEntry (Permissions.Backend.App app) {
         Object (app: app);
@@ -36,7 +37,7 @@ public class Permissions.Widgets.AppEntry : Gtk.ListBoxRow {
         title_label.xalign = 0;
         title_label.valign = Gtk.Align.END;
 
-        var description_label = new Gtk.Label (app.id);
+        description_label = new Gtk.Label ("");
         description_label.use_markup = true;
         description_label.ellipsize = Pango.EllipsizeMode.END;
         description_label.xalign = 0;
@@ -50,5 +51,25 @@ public class Permissions.Widgets.AppEntry : Gtk.ListBoxRow {
         grid.attach (description_label, 1, 1, 1, 1);
 
         this.add (grid);
+
+        for (var i = 0; i < app.settings.length; i++) {
+            app.settings.get (i).notify.connect (update_description);
+        }
+
+        update_description ();
+    }
+
+    private void update_description () {
+        var current_permissions = new GenericArray<string> ();
+        for (var i = 0; i < app.settings.length; i++) {
+            var settings = app.settings.get (i);
+            if (settings.enabled) {
+                current_permissions.add (Backend.PermissionManager.get_default ().get (settings.context));
+            }
+        }
+
+        var description = string.joinv (", ", current_permissions.data);
+        description_label.label = description;
+        set_tooltip_text (description);
     }
 }
