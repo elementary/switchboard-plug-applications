@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-11-07 00:20+0000\n"
-"PO-Revision-Date: 2019-05-13 23:02+0000\n"
+"PO-Revision-Date: 2020-03-30 18:09+0000\n"
 "Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
 "Language-Team: Portuguese <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-applications/pt/>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 3.6.1\n"
+"X-Generator: Weblate 3.9.1\n"
 "X-Launchpad-Export-Date: 2017-01-01 05:40+0000\n"
 
 #: src/Plug.vala:37
@@ -35,11 +35,11 @@ msgstr "Arranque"
 
 #: src/Plug.vala:100
 msgid "Default Apps"
-msgstr "Aplicações Predefinidas"
+msgstr "Aplicações predefinidas"
 
 #: src/Plug.vala:101
 msgid "Default Application"
-msgstr "Aplicação Predefinida"
+msgstr "Aplicação predefinida"
 
 #: src/Plug.vala:102
 msgid "Web Browser"
@@ -75,24 +75,24 @@ msgstr "Explorador de Ficheiros"
 
 #: src/Startup/Backend/KeyFile.vala:98
 msgid "Custom Command"
-msgstr "Comando Personalizado"
+msgstr "Comando personalizado"
 
 #: src/Startup/Widgets/Scrolled.vala:59
 msgid "Add Startup App…"
-msgstr "Adicionar Aplicação no Arranque…"
+msgstr "Adicionar aplicação no arranque…"
 
 #: src/Startup/Widgets/Scrolled.vala:66
 msgid "Remove Selected Startup App"
-msgstr "Remover a Aplicação Seleccionada do Arranque"
+msgstr "Remover a aplicação seleccionada do arranque"
 
 #: src/Startup/Widgets/List.vala:53
 msgid "Launch Apps on Startup"
-msgstr "Executar Aplicações no Arranque"
+msgstr "Executar aplicações no arranque"
 
 #: src/Startup/Widgets/List.vala:54
 msgid "Add apps to the Startup list by clicking the icon in the toolbar below."
 msgstr ""
-"Adicione aplicações à lista de Arranque clicando no ícone na barra de "
+"Adicione aplicações à lista de arranque ao clicar no ícone na barra de "
 "ferramentas abaixo."
 
 #: src/Startup/Widgets/AppRow.vala:46
