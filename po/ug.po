@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-applications\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-07 00:20+0000\n"
+"POT-Creation-Date: 2020-04-08 20:14+0000\n"
 "PO-Revision-Date: 2017-01-02 04:06+0000\n"
 "Last-Translator: ablimet <Unknown>\n"
 "Language-Team: Uyghur <ug@li.org>\n"
@@ -88,11 +88,11 @@ msgstr "ھۆججەت كۆرگۈچ؛"
 msgid "Custom Command"
 msgstr "ئۆزگىچىلەشتۈرۈلگەن بۇيرۇق"
 
-#: src/Startup/Widgets/Scrolled.vala:59
+#: src/Startup/Widgets/Scrolled.vala:52
 msgid "Add Startup App…"
 msgstr "كومپىيۇتىر بىلەن تەڭ قوزغىتىلىدىغان ئەپلەرنى قىتىش...."
 
-#: src/Startup/Widgets/Scrolled.vala:66
+#: src/Startup/Widgets/Scrolled.vala:56
 msgid "Remove Selected Startup App"
 msgstr "تاللانغان كومپىيۇتىر بىلەن تەڭ قوزغىتىلىدىغان ئەپلەرنى ئۆچۈرۈش"
 

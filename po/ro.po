@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-07 00:20+0000\n"
+"POT-Creation-Date: 2020-04-08 20:14+0000\n"
 "PO-Revision-Date: 2017-05-23 12:27+0000\n"
 "Last-Translator: Sergiu Pruteanu <sergiup26@gmail.com>\n"
 "Language-Team: Romanian <https://l10n.elementary.io/projects/switchboard/"
@@ -87,12 +87,12 @@ msgstr "Gestionator de fişiere:"
 msgid "Custom Command"
 msgstr "Comandă personalizată"
 
-#: src/Startup/Widgets/Scrolled.vala:59
+#: src/Startup/Widgets/Scrolled.vala:52
 #, fuzzy
 msgid "Add Startup App…"
 msgstr "Adaugă aplicaţie care va rula la pornire sistemului…"
 
-#: src/Startup/Widgets/Scrolled.vala:66
+#: src/Startup/Widgets/Scrolled.vala:56
 #, fuzzy
 msgid "Remove Selected Startup App"
 msgstr "Dezactivează pornirea automată a aplicaţiilor selectate"
