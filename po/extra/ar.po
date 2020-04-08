@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-11-07 00:20+0000\n"
-"PO-Revision-Date: 2019-08-26 06:22+0000\n"
+"PO-Revision-Date: 2020-04-08 20:13+0000\n"
 "Last-Translator: nasserbinlaboun <nasser1990com@gmail.com>\n"
 "Language-Team: Arabic <https://l10n.elementary.io/projects/switchboard/"
 "applications-plug-extra/ar/>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
 "&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
-"X-Generator: Weblate 3.7.1\n"
+"X-Generator: Weblate 3.9.1\n"
 
 #: data/io.elementary.switchboard.applications.appdata.xml.in:5
 msgid "Applications"
@@ -34,4 +34,4 @@ msgstr ""
 
 #: data/io.elementary.switchboard.applications.appdata.xml.in:11
 msgid "Updated translations"
-msgstr ""
+msgstr "ترجمات محدثة"
