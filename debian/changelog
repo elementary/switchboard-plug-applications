@@ -1,3 +1,10 @@
+switchboard-plug-applications (2.1.7) bionic; urgency=medium
+
+  * Release 2.1.7 (#61)
+  * Scrolled: Replace Gtk.Toolbar (#58)
+
+ -- elementary OS Team <builds@elementary.io>  Wed, 08 Apr 2020 20:14:51 +0000
+
 switchboard-plug-applications (2.1.6) bionic; urgency=medium
 
   * Release 2.1.6 (#52)
