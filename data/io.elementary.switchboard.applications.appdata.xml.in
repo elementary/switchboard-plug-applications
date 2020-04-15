@@ -4,6 +4,8 @@
   <extends>io.elementary.switchboard</extends>
   <name>Applications</name>
   <summary>Manage default and startup applications</summary>
+  <icon type="stock">preferences-desktop-applications</icon>
+  <translation type="gettext">applications-plug</translation>
   <releases>
     <release version="2.1.7" date="2020-04-08" urgency="medium">
       <description>
