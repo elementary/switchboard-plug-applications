@@ -2,7 +2,7 @@
 <component type="addon">
   <id>io.elementary.switchboard.applications</id>
   <extends>io.elementary.switchboard</extends>
-  <name>Applications</name>
+  <name>Applications Settings</name>
   <summary>Manage default and startup applications</summary>
   <icon type="stock">preferences-desktop-applications</icon>
   <translation type="gettext">applications-plug</translation>
