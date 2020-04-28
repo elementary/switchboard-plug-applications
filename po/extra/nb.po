@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-08 20:14+0000\n"
+"POT-Creation-Date: 2020-04-28 22:16+0000\n"
 "PO-Revision-Date: 2019-06-26 23:10+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål <https://l10n.elementary.io/projects/"
@@ -20,18 +20,20 @@ msgstr ""
 "X-Generator: Weblate 3.6.1\n"
 
 #: data/io.elementary.switchboard.applications.appdata.xml.in:5
-msgid "Applications"
+#, fuzzy
+#| msgid "Applications"
+msgid "Applications Settings"
 msgstr "Programmer"
 
 #: data/io.elementary.switchboard.applications.appdata.xml.in:6
 msgid "Manage default and startup applications"
 msgstr "Håndter forvalgte og oppstarts-programmer"
 
-#: data/io.elementary.switchboard.applications.appdata.xml.in:10
-#: data/io.elementary.switchboard.applications.appdata.xml.in:16
+#: data/io.elementary.switchboard.applications.appdata.xml.in:12
+#: data/io.elementary.switchboard.applications.appdata.xml.in:18
 msgid "Updated translations"
 msgstr ""
 
-#: data/io.elementary.switchboard.applications.appdata.xml.in:15
+#: data/io.elementary.switchboard.applications.appdata.xml.in:17
 msgid "Fix issues with OnlyShowIn and Snap apps"
 msgstr ""
