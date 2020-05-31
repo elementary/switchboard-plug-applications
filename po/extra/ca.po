@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-28 22:16+0000\n"
+"POT-Creation-Date: 2020-05-31 21:23+0000\n"
 "PO-Revision-Date: 2020-05-01 09:52+0000\n"
 "Last-Translator: David M <rbndavid@gmail.com>\n"
 "Language-Team: Catalan <https://l10n.elementary.io/projects/switchboard/"
@@ -28,10 +28,15 @@ msgid "Manage default and startup applications"
 msgstr "Gestioneu les aplicacions per defecte i d'inici."
 
 #: data/io.elementary.switchboard.applications.appdata.xml.in:12
+msgid "Fix user's desktop files is not shown"
+msgstr ""
+
+#: data/io.elementary.switchboard.applications.appdata.xml.in:13
 #: data/io.elementary.switchboard.applications.appdata.xml.in:18
+#: data/io.elementary.switchboard.applications.appdata.xml.in:24
 msgid "Updated translations"
 msgstr "Traduccions actualitzades"
 
-#: data/io.elementary.switchboard.applications.appdata.xml.in:17
+#: data/io.elementary.switchboard.applications.appdata.xml.in:23
 msgid "Fix issues with OnlyShowIn and Snap apps"
 msgstr "Correcció d'errors d'aplicacions d'OnlyShowIn i Snap"
