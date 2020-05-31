@@ -40,6 +40,7 @@ namespace Startup.Utils {
         string[] result = {};
 
         var data_dirs = Environment.get_system_data_dirs ();
+        data_dirs += Environment.get_user_data_dir ();
         foreach (var data_dir in data_dirs) {
             var app_dir = Path.build_filename (data_dir, APPLICATION_DIRS);
             if (FileUtils.test (app_dir, FileTest.EXISTS)) {
