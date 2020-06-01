@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-05-31 21:23+0000\n"
-"PO-Revision-Date: 2020-05-28 13:11+0000\n"
+"PO-Revision-Date: 2020-06-04 16:11+0000\n"
 "Last-Translator: Rantyrant <diseasemonger@gmail.com>\n"
 "Language-Team: Danish <https://l10n.elementary.io/projects/switchboard/"
 "applications-plug-extra/da/>\n"
@@ -21,15 +21,15 @@ msgstr ""
 
 #: data/io.elementary.switchboard.applications.appdata.xml.in:5
 msgid "Applications Settings"
-msgstr ""
+msgstr "Applikations Indstillinger"
 
 #: data/io.elementary.switchboard.applications.appdata.xml.in:6
 msgid "Manage default and startup applications"
-msgstr ""
+msgstr "Administrer standard- og opstartsapplikationer"
 
 #: data/io.elementary.switchboard.applications.appdata.xml.in:12
 msgid "Fix user's desktop files is not shown"
-msgstr ""
+msgstr "Ret at brugerens.desktop filer ikke vises"
 
 #: data/io.elementary.switchboard.applications.appdata.xml.in:13
 #: data/io.elementary.switchboard.applications.appdata.xml.in:18
@@ -39,4 +39,4 @@ msgstr "Opdaterede oversættelser"
 
 #: data/io.elementary.switchboard.applications.appdata.xml.in:23
 msgid "Fix issues with OnlyShowIn and Snap apps"
-msgstr ""
+msgstr "Ret problemer med \"OnlyShowIn\" og Snap applikationer"
