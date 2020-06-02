@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-05-31 21:23+0000\n"
-"PO-Revision-Date: 2020-05-11 03:10+0000\n"
+"PO-Revision-Date: 2020-06-04 16:11+0000\n"
 "Last-Translator: Adolfo Jayme Barrientos <fitojb@ubuntu.com>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/switchboard/"
 "applications-plug-extra/es/>\n"
@@ -30,6 +30,8 @@ msgstr "Gestione las aplicaciones predeterminadas y de arranque"
 #: data/io.elementary.switchboard.applications.appdata.xml.in:12
 msgid "Fix user's desktop files is not shown"
 msgstr ""
+"Se solventó un problema que causaba que no se mostrasen los archivos del "
+"escritorio del usuario"
 
 #: data/io.elementary.switchboard.applications.appdata.xml.in:13
 #: data/io.elementary.switchboard.applications.appdata.xml.in:18
@@ -39,4 +41,4 @@ msgstr "Traducciones actualizadas"
 
 #: data/io.elementary.switchboard.applications.appdata.xml.in:23
 msgid "Fix issues with OnlyShowIn and Snap apps"
-msgstr "Corrección de problemas con las aplicaciones OnlyShowIn y Snap"
+msgstr "Corrección de problemas con OnlyShowIn y las aplicaciones snap"
