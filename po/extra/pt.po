@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-05-31 21:23+0000\n"
-"PO-Revision-Date: 2020-05-01 09:52+0000\n"
+"PO-Revision-Date: 2020-06-04 16:11+0000\n"
 "Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
 "Language-Team: Portuguese <https://l10n.elementary.io/projects/switchboard/"
 "applications-plug-extra/pt/>\n"
@@ -30,6 +30,8 @@ msgstr "Gerir aplicações predefinidas e de arranque"
 #: data/io.elementary.switchboard.applications.appdata.xml.in:12
 msgid "Fix user's desktop files is not shown"
 msgstr ""
+"Corrige os ficheiros do ambiente de trabalho do utilizador não são "
+"apresentados"
 
 #: data/io.elementary.switchboard.applications.appdata.xml.in:13
 #: data/io.elementary.switchboard.applications.appdata.xml.in:18
