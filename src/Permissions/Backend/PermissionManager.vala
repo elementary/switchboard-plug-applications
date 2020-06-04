@@ -74,7 +74,7 @@ public class Permissions.Backend.PermissionManager {
         ));
 
         insert ("sockets=cups", new PermissionDescription (
-            _("Print"),
+            _("Printing"),
             _("Access printers"),
             "printer"
         ));
