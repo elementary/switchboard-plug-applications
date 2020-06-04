@@ -39,7 +39,7 @@ public class Permissions.Backend.PermissionManager {
 
         insert ("filesystems=home", new PermissionDescription (
             _("Home Folder"),
-            _("Access your entire home folder, including any hidden folders"),
+            _("Access your entire home folder, including any hidden folders."),
             "user-home"
         ));
 
@@ -51,7 +51,7 @@ public class Permissions.Backend.PermissionManager {
 
         insert ("devices=all", new PermissionDescription (
             _("Devices"),
-            _("Access all devices, such as webcams, microphones, and connected USB devices"),
+            _("Access all devices, such as webcams, microphones, and connected USB devices."),
             "accessories-camera"
         ));
 
@@ -63,7 +63,7 @@ public class Permissions.Backend.PermissionManager {
 
         insert ("features=bluetooth", new PermissionDescription (
             _("Bluetooth"),
-            _("Access devices via Bluetooth"),
+            _("Manage bluetooth devices including pairing, unpairing, and discovery."),
             "bluetooth"
         ));
 
@@ -75,13 +75,13 @@ public class Permissions.Backend.PermissionManager {
 
         insert ("sockets=ssh-auth", new PermissionDescription (
             _("Secure Shell Agent"),
-            _("Access other devices on the network via SSH"),
+            _("Access other devices on the network via SSH."),
             "utilities-terminal"
         ));
 
         insert ("devices=dri", new PermissionDescription (
             _("GPU Acceleration"),
-            _("Accelerate graphical output"),
+            _("Accelerate graphical output."),
             "application-x-firmware"
         ));
     }
