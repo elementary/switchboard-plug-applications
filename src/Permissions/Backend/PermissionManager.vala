@@ -51,7 +51,7 @@ public class Permissions.Backend.PermissionManager {
 
         insert ("devices=all", new PermissionDescription (
             _("Devices"),
-            _("Access devices like webcams and microphones"),
+            _("Access all devices, such as webcams, microphones, and connected USB devices"),
             "accessories-camera"
         ));
 
