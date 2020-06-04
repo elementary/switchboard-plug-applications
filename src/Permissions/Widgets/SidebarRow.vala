@@ -19,11 +19,11 @@
  * Authored by: Marius Meisenzahl <mariusmeisenzahl@gmail.com>
  */
 
-public class Permissions.Widgets.AppEntry : Gtk.ListBoxRow {
+public class Permissions.SidebarRow : Gtk.ListBoxRow {
     public Permissions.Backend.App app { get; construct; }
     private Gtk.Label description_label;
 
-    public AppEntry (Permissions.Backend.App app) {
+    public SidebarRow (Permissions.Backend.App app) {
         Object (app: app);
     }
 
