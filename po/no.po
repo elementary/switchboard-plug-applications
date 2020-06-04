@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: applications-plug\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-08 20:14+0000\n"
+"POT-Creation-Date: 2020-06-04 17:46+0000\n"
 "PO-Revision-Date: 2018-02-20 14:33-0800\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -17,61 +17,65 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: src/Plug.vala:37
+#: src/Plug.vala:40
 msgid "Applications"
 msgstr ""
 
-#: src/Plug.vala:38
+#: src/Plug.vala:41
 msgid "Manage default and startup applications"
 msgstr ""
 
-#: src/Plug.vala:54 src/Plug.vala:102 src/Plug.vala:103 src/Plug.vala:104
-#: src/Plug.vala:105 src/Plug.vala:106 src/Plug.vala:107 src/Plug.vala:108
-#: src/Plug.vala:109
+#: src/Plug.vala:58 src/Plug.vala:107 src/Plug.vala:108 src/Plug.vala:109
+#: src/Plug.vala:110 src/Plug.vala:111 src/Plug.vala:112 src/Plug.vala:113
+#: src/Plug.vala:114
 msgid "Default"
 msgstr ""
 
-#: src/Plug.vala:55 src/Plug.vala:99
+#: src/Plug.vala:59 src/Plug.vala:104
 msgid "Startup"
 msgstr ""
 
-#: src/Plug.vala:100
-msgid "Default Apps"
-msgstr ""
-
-#: src/Plug.vala:101
-msgid "Default Application"
-msgstr ""
-
-#: src/Plug.vala:102
-msgid "Web Browser"
-msgstr ""
-
-#: src/Plug.vala:103
-msgid "Email Client"
-msgstr ""
-
-#: src/Plug.vala:104
-msgid "Calendar"
+#: src/Plug.vala:60
+msgid "Permissions"
 msgstr ""
 
 #: src/Plug.vala:105
-msgid "Video Player"
+msgid "Default Apps"
 msgstr ""
 
 #: src/Plug.vala:106
-msgid "Music Player"
+msgid "Default Application"
 msgstr ""
 
 #: src/Plug.vala:107
-msgid "Text Editor"
+msgid "Web Browser"
 msgstr ""
 
 #: src/Plug.vala:108
-msgid "Image Viewer"
+msgid "Email Client"
 msgstr ""
 
 #: src/Plug.vala:109
+msgid "Calendar"
+msgstr ""
+
+#: src/Plug.vala:110
+msgid "Video Player"
+msgstr ""
+
+#: src/Plug.vala:111
+msgid "Music Player"
+msgstr ""
+
+#: src/Plug.vala:112
+msgid "Text Editor"
+msgstr ""
+
+#: src/Plug.vala:113
+msgid "Image Viewer"
+msgstr ""
+
+#: src/Plug.vala:114
 msgid "File Browser"
 msgstr ""
 

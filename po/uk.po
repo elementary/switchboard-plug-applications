@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-08 20:14+0000\n"
+"POT-Creation-Date: 2020-06-04 17:46+0000\n"
 "PO-Revision-Date: 2017-04-10 19:09+0000\n"
 "Last-Translator: Oleh Astappiev <astappev@gmail.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/switchboard/"
@@ -16,68 +16,72 @@ msgstr ""
 "X-Generator: Weblate 2.13-dev\n"
 "X-Launchpad-Export-Date: 2016-11-26 05:53+0000\n"
 
-#: src/Plug.vala:37
+#: src/Plug.vala:40
 msgid "Applications"
 msgstr "Додатки"
 
-#: src/Plug.vala:38
+#: src/Plug.vala:41
 msgid "Manage default and startup applications"
 msgstr "Керування стандартними додатками та додатками автозапуску"
 
-#: src/Plug.vala:54 src/Plug.vala:102 src/Plug.vala:103 src/Plug.vala:104
-#: src/Plug.vala:105 src/Plug.vala:106 src/Plug.vala:107 src/Plug.vala:108
-#: src/Plug.vala:109
+#: src/Plug.vala:58 src/Plug.vala:107 src/Plug.vala:108 src/Plug.vala:109
+#: src/Plug.vala:110 src/Plug.vala:111 src/Plug.vala:112 src/Plug.vala:113
+#: src/Plug.vala:114
 msgid "Default"
 msgstr "Типові"
 
-#: src/Plug.vala:55 src/Plug.vala:99
+#: src/Plug.vala:59 src/Plug.vala:104
 msgid "Startup"
 msgstr "Запускаються при вході"
 
-#: src/Plug.vala:100
+#: src/Plug.vala:60
+msgid "Permissions"
+msgstr ""
+
+#: src/Plug.vala:105
 msgid "Default Apps"
 msgstr "Додатки за замовчуванням"
 
-#: src/Plug.vala:101
+#: src/Plug.vala:106
 msgid "Default Application"
 msgstr "Додаток за замовчуванням"
 
-#: src/Plug.vala:102
+#: src/Plug.vala:107
 #, fuzzy
 msgid "Web Browser"
 msgstr "Веб-переглядач:"
 
-#: src/Plug.vala:103
+#: src/Plug.vala:108
 #, fuzzy
 msgid "Email Client"
 msgstr "Клієнт електронної пошти:"
 
-#: src/Plug.vala:104
+#: src/Plug.vala:109
 #, fuzzy
 msgid "Calendar"
 msgstr "Календар:"
 
-#: src/Plug.vala:105
+#: src/Plug.vala:110
 #, fuzzy
 msgid "Video Player"
 msgstr "Відео програвач:"
 
-#: src/Plug.vala:106
+#: src/Plug.vala:111
 #, fuzzy
 msgid "Music Player"
 msgstr "Музичний програвач:"
 
-#: src/Plug.vala:107
+#: src/Plug.vala:112
 #, fuzzy
 msgid "Text Editor"
 msgstr "Текстовий редактор:"
 
-#: src/Plug.vala:108
+#: src/Plug.vala:113
 #, fuzzy
 msgid "Image Viewer"
 msgstr "Переглядач зображень:"
 
-#: src/Plug.vala:109
+#: src/Plug.vala:114
 #, fuzzy
 msgid "File Browser"
 msgstr "Переглядач файлів:"

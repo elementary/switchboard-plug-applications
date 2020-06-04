@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-08 20:14+0000\n"
+"POT-Creation-Date: 2020-06-04 17:46+0000\n"
 "PO-Revision-Date: 2018-02-15 15:34+0000\n"
 "Last-Translator: Вагиф Кязым <vaqif134@gmail.com>\n"
 "Language-Team: Azerbaijani <https://weblate.elementary.io/projects/"
@@ -15,68 +15,72 @@ msgstr ""
 "X-Generator: Weblate 2.18\n"
 "X-Launchpad-Export-Date: 2016-11-26 05:52+0000\n"
 
-#: src/Plug.vala:37
+#: src/Plug.vala:40
 msgid "Applications"
 msgstr "Proqramlar"
 
-#: src/Plug.vala:38
+#: src/Plug.vala:41
 msgid "Manage default and startup applications"
 msgstr "Varsayılan və başlanğıc proqramları idarə et"
 
-#: src/Plug.vala:54 src/Plug.vala:102 src/Plug.vala:103 src/Plug.vala:104
-#: src/Plug.vala:105 src/Plug.vala:106 src/Plug.vala:107 src/Plug.vala:108
-#: src/Plug.vala:109
+#: src/Plug.vala:58 src/Plug.vala:107 src/Plug.vala:108 src/Plug.vala:109
+#: src/Plug.vala:110 src/Plug.vala:111 src/Plug.vala:112 src/Plug.vala:113
+#: src/Plug.vala:114
 msgid "Default"
 msgstr "Varsayılan"
 
-#: src/Plug.vala:55 src/Plug.vala:99
+#: src/Plug.vala:59 src/Plug.vala:104
 msgid "Startup"
 msgstr "Başlanğıc"
 
-#: src/Plug.vala:100
+#: src/Plug.vala:60
+msgid "Permissions"
+msgstr ""
+
+#: src/Plug.vala:105
 msgid "Default Apps"
 msgstr "Əzəli tətbiqetmələr"
 
-#: src/Plug.vala:101
+#: src/Plug.vala:106
 msgid "Default Application"
 msgstr "Əzəli tətbiqetmə"
 
-#: src/Plug.vala:102
+#: src/Plug.vala:107
 #, fuzzy
 msgid "Web Browser"
 msgstr "Veb səyyahı:"
 
-#: src/Plug.vala:103
+#: src/Plug.vala:108
 #, fuzzy
 msgid "Email Client"
 msgstr "E-poçt klienti:"
 
-#: src/Plug.vala:104
+#: src/Plug.vala:109
 #, fuzzy
 msgid "Calendar"
 msgstr "Təqvim:"
 
-#: src/Plug.vala:105
+#: src/Plug.vala:110
 #, fuzzy
 msgid "Video Player"
 msgstr "Video oynadıcı:"
 
-#: src/Plug.vala:106
+#: src/Plug.vala:111
 #, fuzzy
 msgid "Music Player"
 msgstr "Musiqi çaldırıcı:"
 
-#: src/Plug.vala:107
+#: src/Plug.vala:112
 #, fuzzy
 msgid "Text Editor"
 msgstr "Mətn redaktoru:"
 
-#: src/Plug.vala:108
+#: src/Plug.vala:113
 #, fuzzy
 msgid "Image Viewer"
 msgstr "Şəkil göstəricisi:"
 
-#: src/Plug.vala:109
+#: src/Plug.vala:114
 #, fuzzy
 msgid "File Browser"
 msgstr "Fayl səyyahı"
