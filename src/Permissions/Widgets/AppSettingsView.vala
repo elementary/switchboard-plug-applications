@@ -20,23 +20,17 @@
  */
 
 public class Permissions.Widgets.AppSettingsView : Gtk.ScrolledWindow {
-    Gtk.Grid grid;
+    private Gtk.Grid grid;
     private string selected_app;
 
     construct {
+        var reset_button = new Gtk.Button.with_label (_("Reset to Defaults"));
+        reset_button.halign = Gtk.Align.END;
+
         grid = new Gtk.Grid ();
         grid.margin = 12;
-        grid.row_spacing = 32;
+        grid.row_spacing = 24;
         grid.orientation = Gtk.Orientation.VERTICAL;
-
-        var reset_button = new Gtk.Button.with_label (_("Reset"));
-        reset_button.halign = Gtk.Align.END;
-        reset_button.set_tooltip_text (_("Reset this application permissions"));
-        reset_button.clicked.connect (() => {
-            var app = Backend.AppManager.get_default ().apps.get (selected_app);
-            app.reset_settings_to_standard ();
-            update_view ();
-        });
         grid.add (reset_button);
 
         Backend.AppManager.get_default ().notify["selected-app"].connect (update_view);
@@ -44,17 +38,19 @@ public class Permissions.Widgets.AppSettingsView : Gtk.ScrolledWindow {
         var permission_manager = Backend.PermissionManager.get_default ();
         permission_manager.keys ().foreach ((key) => {
             var widget = new PermissionSettingsWidget (new Backend.PermissionSettings (key, false));
-            add_settings (widget);
+            grid.add (widget);
             widget.changed_permission_settings.connect (change_permission_settings);
         });
 
         add (grid);
 
         update_view ();
-    }
 
-    private void add_settings (PermissionSettingsWidget widget) {
-        grid.add (widget);
+        reset_button.clicked.connect (() => {
+            var app = Backend.AppManager.get_default ().apps.get (selected_app);
+            app.reset_settings_to_standard ();
+            update_view ();
+        });
     }
 
     private void initialize_settings_view () {
@@ -69,27 +65,23 @@ public class Permissions.Widgets.AppSettingsView : Gtk.ScrolledWindow {
         });
     }
 
-    private void set_settings (Backend.PermissionSettings settings) {
-        grid.@foreach ((child) => {
-            if (child is PermissionSettingsWidget) {
-                var widget = child as PermissionSettingsWidget;
-                if (widget.settings.context == settings.context) {
-                    widget.do_notify = false;
-                    widget.settings.standard = settings.standard;
-                    widget.settings.enabled = settings.enabled;
-                    widget.do_notify = true;
-                }
-            }
-        });
-    }
-
     private void update_view () {
         selected_app = Backend.AppManager.get_default ().selected_app;
         initialize_settings_view ();
 
         var app = Backend.AppManager.get_default ().apps.get (selected_app);
-        app.settings.foreach ((setting) => {
-            set_settings (setting);
+        app.settings.foreach ((settings) => {
+            grid.@foreach ((child) => {
+                if (child is PermissionSettingsWidget) {
+                    var widget = (PermissionSettingsWidget) child;
+                    if (widget.settings.context == settings.context) {
+                        widget.do_notify = false;
+                        widget.settings.standard = settings.standard;
+                        widget.settings.enabled = settings.enabled;
+                        widget.do_notify = true;
+                    }
+                }
+            });
         });
     }
 
