@@ -47,8 +47,8 @@ public class Permissions.Widgets.AppEntry : Gtk.ListBoxRow {
         grid.margin = 6;
         grid.column_spacing = 6;
         grid.attach (image, 0, 0, 1, 2);
-        grid.attach (title_label, 1, 0, 1, 1);
-        grid.attach (description_label, 1, 1, 1, 1);
+        grid.attach (title_label, 1, 0);
+        grid.attach (description_label, 1, 1);
 
         this.add (grid);
 
@@ -69,7 +69,7 @@ public class Permissions.Widgets.AppEntry : Gtk.ListBoxRow {
         }
 
         var description = string.joinv (", ", current_permissions.data);
-        description_label.label = description;
+        description_label.label = "<small>%s</small>".printf (description);
         set_tooltip_text (description);
     }
 }
