@@ -14,7 +14,18 @@ plug_files = files(
     'Startup/Widgets/AppChooserRow.vala',
     'Startup/Widgets/AppChooser.vala',
     'Defaults/Utils.vala',
-    'Defaults/DefaultPlug.vala'
+    'Defaults/DefaultPlug.vala',
+    'Permissions/Backend/App.vala',
+    'Permissions/Backend/AppManager.vala',
+    'Permissions/Backend/Permission.vala',
+    'Permissions/Backend/PermissionDescription.vala',
+    'Permissions/Backend/PermissionManager.vala',
+    'Permissions/Backend/PermissionSettings.vala',
+    'Permissions/Widgets/AppEntry.vala',
+    'Permissions/Widgets/AppSettingsView.vala',
+    'Permissions/Widgets/PermissionSettingsWidget.vala',
+    'Permissions/Widgets/Sidebar.vala',
+    'Permissions/PermissionsPlug.vala'
 )
 
 switchboard_dep = dependency('switchboard-2.0')
