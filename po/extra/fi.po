@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-07 00:20+0000\n"
+"POT-Creation-Date: 2020-05-31 21:23+0000\n"
 "PO-Revision-Date: 2020-02-22 14:09+0000\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
 "Language-Team: Finnish <https://l10n.elementary.io/projects/switchboard/"
@@ -20,7 +20,9 @@ msgstr ""
 "X-Generator: Weblate 3.9.1\n"
 
 #: data/io.elementary.switchboard.applications.appdata.xml.in:5
-msgid "Applications"
+#, fuzzy
+#| msgid "Applications"
+msgid "Applications Settings"
 msgstr "Sovellukset"
 
 #: data/io.elementary.switchboard.applications.appdata.xml.in:6
@@ -29,10 +31,16 @@ msgstr ""
 "Hallitse oletussovelluksia ja käynnistyksen yhteydessä käynnistettäviä "
 "sovelluksia"
 
-#: data/io.elementary.switchboard.applications.appdata.xml.in:10
-msgid "Fix issues with OnlyShowIn and Snap apps"
+#: data/io.elementary.switchboard.applications.appdata.xml.in:12
+msgid "Fix user's desktop files is not shown"
 msgstr ""
 
-#: data/io.elementary.switchboard.applications.appdata.xml.in:11
+#: data/io.elementary.switchboard.applications.appdata.xml.in:13
+#: data/io.elementary.switchboard.applications.appdata.xml.in:18
+#: data/io.elementary.switchboard.applications.appdata.xml.in:24
 msgid "Updated translations"
 msgstr "Päivitetyt käännökset"
+
+#: data/io.elementary.switchboard.applications.appdata.xml.in:23
+msgid "Fix issues with OnlyShowIn and Snap apps"
+msgstr ""

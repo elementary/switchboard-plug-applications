@@ -7,9 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-07 00:20+0000\n"
-"PO-Revision-Date: 2019-11-14 16:24+0000\n"
-"Last-Translator: Daniel R. <riesp@pm.me>\n"
+"POT-Creation-Date: 2020-05-31 21:23+0000\n"
+"PO-Revision-Date: 2020-06-04 16:11+0000\n"
+"Last-Translator: Adolfo Jayme Barrientos <fitojb@ubuntu.com>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/switchboard/"
 "applications-plug-extra/es/>\n"
 "Language: es\n"
@@ -17,20 +17,28 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.7.1\n"
+"X-Generator: Weblate 3.9.1\n"
 
 #: data/io.elementary.switchboard.applications.appdata.xml.in:5
-msgid "Applications"
-msgstr "Aplicaciones"
+msgid "Applications Settings"
+msgstr "Configuración de aplicaciones"
 
 #: data/io.elementary.switchboard.applications.appdata.xml.in:6
 msgid "Manage default and startup applications"
-msgstr "Administrar las aplicaciones predeterminadas y de arranque"
+msgstr "Gestione las aplicaciones predeterminadas y de arranque"
 
-#: data/io.elementary.switchboard.applications.appdata.xml.in:10
-msgid "Fix issues with OnlyShowIn and Snap apps"
-msgstr "Corrección de problemas con las aplicaciones OnlyShowIn y Snap"
+#: data/io.elementary.switchboard.applications.appdata.xml.in:12
+msgid "Fix user's desktop files is not shown"
+msgstr ""
+"Se solventó un problema que causaba que no se mostrasen los archivos del "
+"escritorio del usuario"
 
-#: data/io.elementary.switchboard.applications.appdata.xml.in:11
+#: data/io.elementary.switchboard.applications.appdata.xml.in:13
+#: data/io.elementary.switchboard.applications.appdata.xml.in:18
+#: data/io.elementary.switchboard.applications.appdata.xml.in:24
 msgid "Updated translations"
 msgstr "Traducciones actualizadas"
+
+#: data/io.elementary.switchboard.applications.appdata.xml.in:23
+msgid "Fix issues with OnlyShowIn and Snap apps"
+msgstr "Corrección de problemas con OnlyShowIn y las aplicaciones snap"

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-07 00:20+0000\n"
+"POT-Creation-Date: 2020-04-08 20:14+0000\n"
 "PO-Revision-Date: 2015-11-14 14:23+0000\n"
 "Last-Translator: Beqa Arabuli <arabulibeqa@yahoo.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -83,11 +83,11 @@ msgstr "ფაილების ბრაუზერი:"
 msgid "Custom Command"
 msgstr "ბრძანების შეყვანა ხელით"
 
-#: src/Startup/Widgets/Scrolled.vala:59
+#: src/Startup/Widgets/Scrolled.vala:52
 msgid "Add Startup App…"
 msgstr "პროგრამის დამატება..."
 
-#: src/Startup/Widgets/Scrolled.vala:66
+#: src/Startup/Widgets/Scrolled.vala:56
 msgid "Remove Selected Startup App"
 msgstr "არჩეული პროგრამის წაშლა"
 

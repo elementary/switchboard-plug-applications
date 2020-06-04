@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-07 00:20+0000\n"
+"POT-Creation-Date: 2020-05-31 21:23+0000\n"
 "PO-Revision-Date: 2019-05-13 23:02+0000\n"
 "Last-Translator: Jung-Kyu Park <bagjunggyu@gmail.com>\n"
 "Language-Team: Korean <https://l10n.elementary.io/projects/switchboard/"
@@ -20,17 +20,25 @@ msgstr ""
 "X-Generator: Weblate 3.6.1\n"
 
 #: data/io.elementary.switchboard.applications.appdata.xml.in:5
-msgid "Applications"
+#, fuzzy
+#| msgid "Applications"
+msgid "Applications Settings"
 msgstr "애플리케이션"
 
 #: data/io.elementary.switchboard.applications.appdata.xml.in:6
 msgid "Manage default and startup applications"
 msgstr "기본 및 시작 애플리케이션 관리"
 
-#: data/io.elementary.switchboard.applications.appdata.xml.in:10
-msgid "Fix issues with OnlyShowIn and Snap apps"
+#: data/io.elementary.switchboard.applications.appdata.xml.in:12
+msgid "Fix user's desktop files is not shown"
 msgstr ""
 
-#: data/io.elementary.switchboard.applications.appdata.xml.in:11
+#: data/io.elementary.switchboard.applications.appdata.xml.in:13
+#: data/io.elementary.switchboard.applications.appdata.xml.in:18
+#: data/io.elementary.switchboard.applications.appdata.xml.in:24
 msgid "Updated translations"
+msgstr ""
+
+#: data/io.elementary.switchboard.applications.appdata.xml.in:23
+msgid "Fix issues with OnlyShowIn and Snap apps"
 msgstr ""

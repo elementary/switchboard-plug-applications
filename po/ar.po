@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-07 00:20+0000\n"
+"POT-Creation-Date: 2020-04-08 20:14+0000\n"
 "PO-Revision-Date: 2019-08-26 06:22+0000\n"
 "Last-Translator: nasserbinlaboun <nasser1990com@gmail.com>\n"
 "Language-Team: Arabic <https://l10n.elementary.io/projects/switchboard/"
@@ -79,11 +79,11 @@ msgstr "مستعرض الملفات"
 msgid "Custom Command"
 msgstr "أمر مخصص"
 
-#: src/Startup/Widgets/Scrolled.vala:59
+#: src/Startup/Widgets/Scrolled.vala:52
 msgid "Add Startup App…"
 msgstr "أضِف تطبيق يعمل عند بدء التشغيل…"
 
-#: src/Startup/Widgets/Scrolled.vala:66
+#: src/Startup/Widgets/Scrolled.vala:56
 msgid "Remove Selected Startup App"
 msgstr "إزالة التطبيق المحدد من بدء التشغيل"
 

@@ -2,9 +2,22 @@
 <component type="addon">
   <id>io.elementary.switchboard.applications</id>
   <extends>io.elementary.switchboard</extends>
-  <name>Applications</name>
+  <name>Applications Settings</name>
   <summary>Manage default and startup applications</summary>
+  <icon type="stock">preferences-desktop-applications</icon>
+  <translation type="gettext">applications-plug</translation>
   <releases>
+    <release version="2.1.8" date="2020-05-31" urgency="medium">
+      <description>
+        <p>Fix user's desktop files is not shown</p>
+        <p>Updated translations</p>
+      </description>
+    </release>
+    <release version="2.1.7" date="2020-04-08" urgency="medium">
+      <description>
+        <p>Updated translations</p>
+      </description>
+    </release>
     <release version="2.1.6" date="2019-11-15" urgency="medium">
       <description>
         <p>Fix issues with OnlyShowIn and Snap apps</p>

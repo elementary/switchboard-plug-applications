@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-07 00:20+0000\n"
+"POT-Creation-Date: 2020-04-08 20:14+0000\n"
 "PO-Revision-Date: 2019-01-07 00:03+0000\n"
 "Last-Translator: Simon Dagfinrud <semonje@gmail.com>\n"
 "Language-Team: Norwegian Nynorsk <https://weblate.elementary.io/projects/"
@@ -77,11 +77,11 @@ msgstr "Filbehandlar"
 msgid "Custom Command"
 msgstr "Eigendefinert kommando"
 
-#: src/Startup/Widgets/Scrolled.vala:59
+#: src/Startup/Widgets/Scrolled.vala:52
 msgid "Add Startup App…"
 msgstr "Legg til oppstartapplikasjon…"
 
-#: src/Startup/Widgets/Scrolled.vala:66
+#: src/Startup/Widgets/Scrolled.vala:56
 msgid "Remove Selected Startup App"
 msgstr "Fjern vald oppstartsapplikasjon"
 

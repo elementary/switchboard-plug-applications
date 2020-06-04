@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-07 00:20+0000\n"
+"POT-Creation-Date: 2020-04-08 20:14+0000\n"
 "PO-Revision-Date: 2018-10-18 20:32+0000\n"
 "Last-Translator: Kirill Romanov <djaler1@gmail.com>\n"
 "Language-Team: Russian <https://weblate.elementary.io/projects/switchboard/"
@@ -78,11 +78,11 @@ msgstr "Файловый менеджер"
 msgid "Custom Command"
 msgstr "Пользовательская команда"
 
-#: src/Startup/Widgets/Scrolled.vala:59
+#: src/Startup/Widgets/Scrolled.vala:52
 msgid "Add Startup App…"
 msgstr "Добавить программу в автозапуск…"
 
-#: src/Startup/Widgets/Scrolled.vala:66
+#: src/Startup/Widgets/Scrolled.vala:56
 msgid "Remove Selected Startup App"
 msgstr "Удалить выделенную программу из автозапуска"
 

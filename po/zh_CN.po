@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-07 00:20+0000\n"
+"POT-Creation-Date: 2020-04-08 20:14+0000\n"
 "PO-Revision-Date: 2019-01-14 13:22+0000\n"
 "Last-Translator: colindemian <colindemian@outlook.com>\n"
 "Language-Team: Chinese (Simplified) <https://weblate.elementary.io/projects/"
@@ -77,11 +77,11 @@ msgstr "文件浏览器"
 msgid "Custom Command"
 msgstr "自定义命令"
 
-#: src/Startup/Widgets/Scrolled.vala:59
+#: src/Startup/Widgets/Scrolled.vala:52
 msgid "Add Startup App…"
 msgstr "添加启动项…"
 
-#: src/Startup/Widgets/Scrolled.vala:66
+#: src/Startup/Widgets/Scrolled.vala:56
 msgid "Remove Selected Startup App"
 msgstr "移除选中的启动项"
 
