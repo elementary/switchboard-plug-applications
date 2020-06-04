@@ -15,7 +15,7 @@
  * License along with this program; if not, write to the
  * Free Software Foundation, Inc., 51 Franklin Street - Fifth Floor,
  * Boston, MA 02110-1301, USA.
- * 
+ *
  * Authored by: Marius Meisenzahl <mariusmeisenzahl@gmail.com>
  */
 
@@ -51,6 +51,8 @@ public class Permissions.Widgets.PermissionSettingsWidget : Gtk.Grid {
         var description_label = new Gtk.Label (permission_description.description);
         description_label.halign = Gtk.Align.START;
         description_label.hexpand = true;
+        description_label.wrap = true;
+        description_label.xalign = 0;
         box.pack_start (description_label, false, false);
 
         attach (box, 1, 0);
