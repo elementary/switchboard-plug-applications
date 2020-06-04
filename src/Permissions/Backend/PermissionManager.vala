@@ -39,7 +39,7 @@ public class Permissions.Backend.PermissionManager {
 
         insert ("filesystems=home", new PermissionDescription (
             _("Home Folder"),
-            _("Access your entire home folder"),
+            _("Access your entire home folder, including any hidden folders"),
             "user-home"
         ));
 
