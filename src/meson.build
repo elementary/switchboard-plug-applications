@@ -24,7 +24,6 @@ plug_files = files(
     'Permissions/Widgets/AppEntry.vala',
     'Permissions/Widgets/AppSettingsView.vala',
     'Permissions/Widgets/PermissionSettingsWidget.vala',
-    'Permissions/Widgets/Sidebar.vala',
     'Permissions/PermissionsPlug.vala'
 )
 
