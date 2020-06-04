@@ -65,27 +65,23 @@ public class Permissions.Widgets.AppSettingsView : Gtk.ScrolledWindow {
         });
     }
 
-    private void set_settings (Backend.PermissionSettings settings) {
-        grid.@foreach ((child) => {
-            if (child is PermissionSettingsWidget) {
-                var widget = child as PermissionSettingsWidget;
-                if (widget.settings.context == settings.context) {
-                    widget.do_notify = false;
-                    widget.settings.standard = settings.standard;
-                    widget.settings.enabled = settings.enabled;
-                    widget.do_notify = true;
-                }
-            }
-        });
-    }
-
     private void update_view () {
         selected_app = Backend.AppManager.get_default ().selected_app;
         initialize_settings_view ();
 
         var app = Backend.AppManager.get_default ().apps.get (selected_app);
-        app.settings.foreach ((setting) => {
-            set_settings (setting);
+        app.settings.foreach ((settings) => {
+            grid.@foreach ((child) => {
+                if (child is PermissionSettingsWidget) {
+                    var widget = (PermissionSettingsWidget) child;
+                    if (widget.settings.context == settings.context) {
+                        widget.do_notify = false;
+                        widget.settings.standard = settings.standard;
+                        widget.settings.enabled = settings.enabled;
+                        widget.do_notify = true;
+                    }
+                }
+            });
         });
     }
 
