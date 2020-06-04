@@ -45,7 +45,7 @@ public class Permissions.Backend.PermissionManager {
 
         insert ("filesystems=host", new PermissionDescription (
             _("System Folders"),
-            _("Access system folders, not including the operating system or system internals"),
+            _("Access system folders, not including the operating system or system internals. This includes users' Home folders."),
             "drive-harddisk"
         ));
 
