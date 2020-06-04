@@ -45,15 +45,12 @@ public class Permissions.Widgets.PermissionSettingsWidget : Gtk.Grid {
         name_label.hexpand = true;
 
         var description_label = new Gtk.Label (permission_description.description);
-        description_label.halign = Gtk.Align.START;
-        description_label.hexpand = true;
         description_label.wrap = true;
         description_label.xalign = 0;
 
         var allow_switch = new Gtk.Switch ();
         allow_switch.valign = Gtk.Align.CENTER;
 
-        hexpand = true;
         column_spacing = 12;
         attach (icon, 0, 0, 1, 2);
         attach (name_label, 1, 0);
