@@ -55,12 +55,6 @@ public class Permissions.Backend.PermissionManager {
             "accessories-camera"
         ));
 
-        insert ("sockets=pulseaudio", new PermissionDescription (
-            _("Sounds"),
-            _("Play sounds"),
-            "preferences-desktop-sound"
-        ));
-
         insert ("shared=network", new PermissionDescription (
             _("Network"),
             _("Access the Internet and local networks"),
