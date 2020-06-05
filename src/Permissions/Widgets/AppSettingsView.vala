@@ -19,14 +19,11 @@
  * Authored by: Marius Meisenzahl <mariusmeisenzahl@gmail.com>
  */
 
-public class Permissions.Widgets.AppSettingsView : Gtk.ScrolledWindow {
-    private Gtk.Grid grid;
+public class Permissions.Widgets.AppSettingsView : Gtk.Grid {
+    private Gtk.ListBox list_box;
     private string selected_app;
 
     construct {
-        var reset_button = new Gtk.Button.with_label (_("Reset to Defaults"));
-        reset_button.halign = Gtk.Align.END;
-
         Backend.AppManager.get_default ().notify["selected-app"].connect (update_view);
 
         var homefolder_widget = new PermissionSettingsWidget (
@@ -85,21 +82,30 @@ public class Permissions.Widgets.AppSettingsView : Gtk.ScrolledWindow {
             new Backend.PermissionSettings ("devices=dri", false)
         );
 
-        grid = new Gtk.Grid ();
-        grid.margin = 12;
-        grid.row_spacing = 24;
-        grid.orientation = Gtk.Orientation.VERTICAL;
-        grid.add (homefolder_widget);
-        grid.add (sysfolders_widget);
-        grid.add (devices_widget);
-        grid.add (network_widget);
-        grid.add (bluetooth_widget);
-        grid.add (printing_widget);
-        grid.add (ssh_widget);
-        grid.add (gpu_widget);
-        grid.add (reset_button);
+        list_box = new Gtk.ListBox ();
+        list_box.expand = true;
+        list_box.add (homefolder_widget);
+        list_box.add (sysfolders_widget);
+        list_box.add (devices_widget);
+        list_box.add (network_widget);
+        list_box.add (bluetooth_widget);
+        list_box.add (printing_widget);
+        list_box.add (ssh_widget);
+        list_box.add (gpu_widget);
 
-        add (grid);
+        var scrolled_window = new Gtk.ScrolledWindow (null, null);
+        scrolled_window.add (list_box);
+
+        var frame = new Gtk.Frame (null);
+        frame.get_style_context ().add_class (Gtk.STYLE_CLASS_VIEW);
+        frame.add (scrolled_window);
+
+        var reset_button = new Gtk.Button.with_label (_("Reset to Defaults"));
+        reset_button.halign = Gtk.Align.END;
+
+        row_spacing = 24;
+        attach (frame, 0, 0);
+        attach (reset_button, 0, 1);
 
         update_view ();
 
@@ -120,15 +126,15 @@ public class Permissions.Widgets.AppSettingsView : Gtk.ScrolledWindow {
     }
 
     private void initialize_settings_view () {
-        grid.@foreach ((child) => {
+        foreach (unowned Gtk.Widget child in list_box.get_children ()) {
             if (child is PermissionSettingsWidget) {
-                var widget = child as PermissionSettingsWidget;
+                var widget = (PermissionSettingsWidget) child;
                 widget.do_notify = false;
                 widget.settings.standard = false;
                 widget.settings.enabled = false;
                 widget.do_notify = true;
             }
-        });
+        }
     }
 
     private void update_view () {
@@ -137,7 +143,7 @@ public class Permissions.Widgets.AppSettingsView : Gtk.ScrolledWindow {
 
         var app = Backend.AppManager.get_default ().apps.get (selected_app);
         app.settings.foreach ((settings) => {
-            grid.@foreach ((child) => {
+            foreach (unowned Gtk.Widget child in list_box.get_children ()) {
                 if (child is PermissionSettingsWidget) {
                     var widget = (PermissionSettingsWidget) child;
                     if (widget.settings.context == settings.context) {
@@ -147,7 +153,7 @@ public class Permissions.Widgets.AppSettingsView : Gtk.ScrolledWindow {
                         widget.do_notify = true;
                     }
                 }
-            });
+            }
         });
     }
 
