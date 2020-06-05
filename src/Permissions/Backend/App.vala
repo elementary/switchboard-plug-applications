@@ -20,15 +20,15 @@
 */
 
 public class Permissions.Backend.App : GLib.Object {
-    public string id { get; construct set; }
-    public string name { get; construct set; }
+    public string id { get; construct; }
+    public string name { get; private set; }
     public GenericArray<Backend.PermissionSettings> settings;
 
     public App (string id) {
-        GLib.Object (
-            id: id
-        );
+        Object (id: id);
+    }
 
+    construct {
         find_name ();
 
         settings = new GenericArray<Backend.PermissionSettings> ();
