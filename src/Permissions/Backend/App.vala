@@ -74,16 +74,14 @@ public class Permissions.Backend.App : GLib.Object {
         );
     }
 
-    public string get_metadata_path () {
-        return GLib.Path.build_path (
+    private GenericArray<Backend.Permission> get_permissions () {
+        var metadata_path = GLib.Path.build_path (
             GLib.Path.DIR_SEPARATOR_S,
             AppManager.get_bundle_path_for_app (id),
             "metadata"
         );
-    }
 
-    public GenericArray<Backend.Permission> get_permissions () {
-        return AppManager.get_permissions_for_path (get_metadata_path ());
+        return AppManager.get_permissions_for_path (metadata_path);
     }
 
     public bool check_if_changed () {
