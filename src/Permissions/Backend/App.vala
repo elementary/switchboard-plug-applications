@@ -29,7 +29,14 @@ public class Permissions.Backend.App : GLib.Object {
     }
 
     construct {
-        var appinfo = new GLib.DesktopAppInfo (id + ".desktop");
+        var path = GLib.Path.build_filename (
+            AppManager.get_bundle_path_for_app (id),
+            "files",
+            "share",
+            "applications",
+            id + ".desktop"
+        );
+        var appinfo = new GLib.DesktopAppInfo.from_filename (path);
         name = appinfo.get_display_name ();
 
         settings = new GenericArray<Backend.PermissionSettings> ();
