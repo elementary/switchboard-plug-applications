@@ -1,5 +1,5 @@
 /*
- * Copyright 2011-2020 elementary, Inc (https://elementary.io)
+ * Copyright 2020 elementary, Inc (https://elementary.io)
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public
@@ -20,10 +20,10 @@
  */
 
 public class Permissions.Backend.AppManager : GLib.Object {
-    private static AppManager? instance;
     public string selected_app { get; set; }
-    public HashTable<string, Backend.App> apps { get; construct set; }
+    public HashTable<string, Backend.App> apps { get; private set; }
 
+    private static AppManager? instance;
     public static AppManager get_default () {
         if (instance == null) {
             instance = new AppManager ();
@@ -32,9 +32,7 @@ public class Permissions.Backend.AppManager : GLib.Object {
         return instance;
     }
 
-    private AppManager () {
-        GLib.Object ();
-
+    construct {
         apps = new HashTable<string, Backend.App> (str_hash, str_equal);
 
         get_applications ().foreach ((app) => {
@@ -52,7 +50,7 @@ public class Permissions.Backend.AppManager : GLib.Object {
         );
     }
 
-    public static string get_user_application_path () {
+    private static string get_user_application_path () {
         return GLib.Path.build_path (
             GLib.Path.DIR_SEPARATOR_S,
             get_user_installation_path (),
@@ -83,19 +81,12 @@ public class Permissions.Backend.AppManager : GLib.Object {
         );
     }
 
-    public static string get_system_installation_path () {
+    private static string get_system_application_path () {
         return GLib.Path.build_path (
             GLib.Path.DIR_SEPARATOR_S,
             "var",
             "lib",
-            "flatpak"
-        );
-    }
-
-    public static string get_system_application_path () {
-        return GLib.Path.build_path (
-            GLib.Path.DIR_SEPARATOR_S,
-            get_system_installation_path (),
+            "flatpak",
             "app"
         );
     }
@@ -134,7 +125,7 @@ public class Permissions.Backend.AppManager : GLib.Object {
         return array;
     }
 
-    public static GenericArray<Backend.App> get_applications_for_path (string path) {
+    private static GenericArray<Backend.App> get_applications_for_path (string path) {
         var array = new GenericArray<Backend.App> ();
 
         var directory = GLib.File.new_for_path (path);
@@ -169,7 +160,7 @@ public class Permissions.Backend.AppManager : GLib.Object {
         return array;
     }
 
-    public static GenericArray<Backend.App> get_applications () {
+    private static GenericArray<Backend.App> get_applications () {
         var array = get_applications_for_path (get_user_application_path ());
 
         get_applications_for_path (get_system_application_path ()).foreach ((app) => {
