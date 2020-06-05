@@ -22,7 +22,7 @@
 public class Permissions.Backend.PermissionManager {
     private static PermissionManager? instance;
     private GenericArray<string> _keys;
-    private GenericArray<PermissionDescription> _values;
+    private GenericArray<string> _values;
 
     public static PermissionManager get_default () {
         if (instance == null) {
@@ -34,59 +34,19 @@ public class Permissions.Backend.PermissionManager {
 
     private PermissionManager () {
         _keys = new GenericArray<string> ();
-        _values = new GenericArray<PermissionDescription> ();
+        _values = new GenericArray<string> ();
 
-
-        insert ("filesystems=home", new PermissionDescription (
-            _("Home Folder"),
-            _("Access your entire home folder, including any hidden folders."),
-            "user-home"
-        ));
-
-        insert ("filesystems=host", new PermissionDescription (
-            _("System Folders"),
-            _("Access system folders, not including the operating system or system internals. This includes users' Home folders."),
-            "drive-harddisk"
-        ));
-
-        insert ("devices=all", new PermissionDescription (
-            _("Devices"),
-            _("Access all devices, such as webcams, microphones, and connected USB devices."),
-            "accessories-camera"
-        ));
-
-        insert ("shared=network", new PermissionDescription (
-            _("Network"),
-            _("Access the Internet and local networks"),
-            "preferences-system-network"
-        ));
-
-        insert ("features=bluetooth", new PermissionDescription (
-            _("Bluetooth"),
-            _("Manage bluetooth devices including pairing, unpairing, and discovery."),
-            "bluetooth"
-        ));
-
-        insert ("sockets=cups", new PermissionDescription (
-            _("Printing"),
-            _("Access printers"),
-            "printer"
-        ));
-
-        insert ("sockets=ssh-auth", new PermissionDescription (
-            _("Secure Shell Agent"),
-            _("Access other devices on the network via SSH."),
-            "utilities-terminal"
-        ));
-
-        insert ("devices=dri", new PermissionDescription (
-            _("GPU Acceleration"),
-            _("Accelerate graphical output."),
-            "application-x-firmware"
-        ));
+        insert ("filesystems=home", _("Home Folder"));
+        insert ("filesystems=host", _("System Folders"));
+        insert ("devices=all", _("Devices"));
+        insert ("shared=network", _("Network"));
+        insert ("features=bluetooth", _("Bluetooth"));
+        insert ("sockets=cups", _("Printing"));
+        insert ("sockets=ssh-auth", _("Secure Shell Agent"));
+        insert ("devices=dri", _("GPU Acceleration"));
     }
 
-    private void insert (string key, PermissionDescription value) {
+    private void insert (string key, string value) {
         _keys.add (key);
         _values.add (value);
     }
@@ -95,7 +55,7 @@ public class Permissions.Backend.PermissionManager {
         return _keys;
     }
 
-    public PermissionDescription? get (string key) {
+    public string? get (string key) {
         for (var i = 0; i < _keys.length; i++) {
             if (_keys.get (i) == key) {
                 return _values.get (i);
