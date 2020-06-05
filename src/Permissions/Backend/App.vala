@@ -127,14 +127,10 @@ public class Permissions.Backend.App : GLib.Object {
                real_is_overridden_path (overrides, negate_permission (permission));
     }
 
-    private bool is_negated_permission (Backend.Permission permission) {
-        return permission.context.contains ("=!");
-    }
-
     private Backend.Permission negate_permission (Backend.Permission permission) {
         var new_permission = new Backend.Permission (permission.context);
 
-        if (is_negated_permission (new_permission)) {
+        if (new_permission.context.contains ("=!")) {
             new_permission.context = new_permission.context.replace ("=!", "=");
             return new_permission;
         }
@@ -176,7 +172,7 @@ public class Permissions.Backend.App : GLib.Object {
 
         for (var i = 0; i < overrides.length; i++) {
             var permission = overrides.get (i);
-            if (is_negated_permission (permission)) {
+            if (permission.context.contains ("=!")) {
                 continue;
             }
 
