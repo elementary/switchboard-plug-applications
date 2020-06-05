@@ -20,15 +20,15 @@
 */
 
 public class Permissions.Backend.App : GLib.Object {
-    public string id { get; construct set; }
-    public string name { get; construct set; }
+    public string id { get; construct; }
+    public string name { get; private set; }
     public GenericArray<Backend.PermissionSettings> settings;
 
     public App (string id) {
-        GLib.Object (
-            id: id
-        );
+        Object (id: id);
+    }
 
+    construct {
         find_name ();
 
         settings = new GenericArray<Backend.PermissionSettings> ();
@@ -86,10 +86,6 @@ public class Permissions.Backend.App : GLib.Object {
         return AppManager.get_permissions_for_path (get_metadata_path ());
     }
 
-    public GenericArray<Backend.Permission> get_overrides () {
-        return AppManager.get_permissions_for_path (get_overrides_path ());
-    }
-
     public bool check_if_changed () {
         return GLib.File.new_for_path (get_overrides_path ()).query_exists ();
     }
@@ -131,14 +127,10 @@ public class Permissions.Backend.App : GLib.Object {
                real_is_overridden_path (overrides, negate_permission (permission));
     }
 
-    private bool is_negated_permission (Backend.Permission permission) {
-        return permission.context.contains ("=!");
-    }
-
     private Backend.Permission negate_permission (Backend.Permission permission) {
         var new_permission = new Backend.Permission (permission.context);
 
-        if (is_negated_permission (new_permission)) {
+        if (new_permission.context.contains ("=!")) {
             new_permission.context = new_permission.context.replace ("=!", "=");
             return new_permission;
         }
@@ -162,7 +154,7 @@ public class Permissions.Backend.App : GLib.Object {
 
     public GenericArray<Backend.Permission> get_current_permissions () {
         var permissions = get_permissions ();
-        var overrides = get_overrides ();
+        var overrides = AppManager.get_permissions_for_path (get_overrides_path ());
         var current = new GenericArray<Backend.Permission> ();
 
         for (var i = 0; i < permissions.length; i++) {
@@ -180,7 +172,7 @@ public class Permissions.Backend.App : GLib.Object {
 
         for (var i = 0; i < overrides.length; i++) {
             var permission = overrides.get (i);
-            if (is_negated_permission (permission)) {
+            if (permission.context.contains ("=!")) {
                 continue;
             }
 
