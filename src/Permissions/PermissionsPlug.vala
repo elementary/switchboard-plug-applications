@@ -19,14 +19,21 @@
 * Authored by: Marius Meisenzahl <mariusmeisenzahl@gmail.com>
 */
 
-public class Permissions.Plug : Gtk.Paned {
+public class Permissions.Plug : Gtk.Grid {
     construct {
         var app_list = new Gtk.ListBox ();
-        app_list.expand = true;
+        app_list.vexpand = true;
         app_list.selection_mode = Gtk.SelectionMode.SINGLE;
 
         var scrolled_window = new Gtk.ScrolledWindow (null, null);
         scrolled_window.add (app_list);
+
+        var frame = new Gtk.Frame (null);
+        frame.halign = Gtk.Align.START;
+        frame.margin = 12;
+        frame.margin_top = 0;
+        frame.width_request = 240;
+        frame.add (scrolled_window);
 
         Permissions.Backend.AppManager.get_default ().apps.foreach ((id, app) => {
             var app_entry = new Permissions.SidebarRow (app);
@@ -43,10 +50,8 @@ public class Permissions.Plug : Gtk.Paned {
 
         var app_settings_view = new Widgets.AppSettingsView ();
 
-        pack1 (scrolled_window, true, false);
-        pack2 (app_settings_view, true, false);
-        set_position (240);
-
+        add (frame);
+        add (app_settings_view);
         show_all ();
 
         app_list.row_selected.connect (show_row);
