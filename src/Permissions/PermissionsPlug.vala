@@ -30,8 +30,6 @@ public class Permissions.Plug : Gtk.Grid {
 
         var frame = new Gtk.Frame (null);
         frame.halign = Gtk.Align.START;
-        frame.margin = 12;
-        frame.margin_top = 0;
         frame.width_request = 240;
         frame.add (scrolled_window);
 
@@ -50,6 +48,9 @@ public class Permissions.Plug : Gtk.Grid {
 
         var app_settings_view = new Widgets.AppSettingsView ();
 
+        column_spacing = 12;
+        margin = 12;
+        margin_top = 0;
         add (frame);
         add (app_settings_view);
         show_all ();
