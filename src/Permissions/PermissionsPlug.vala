@@ -36,7 +36,7 @@ public class Permissions.Plug : Gtk.Grid {
         frame.add (scrolled_window);
 
         Permissions.Backend.AppManager.get_default ().apps.foreach ((id, app) => {
-            var app_entry = new Permissions.Widgets.AppEntry (app);
+            var app_entry = new Permissions.SidebarRow (app);
             app_list.add (app_entry);
         });
 
@@ -58,10 +58,10 @@ public class Permissions.Plug : Gtk.Grid {
     }
 
     private void show_row (Gtk.ListBoxRow? row) {
-        if (row == null || !(row is Permissions.Widgets.AppEntry)) {
+        if (row == null || !(row is Permissions.SidebarRow)) {
             return;
         }
 
-        Permissions.Backend.AppManager.get_default ().selected_app = ((Permissions.Widgets.AppEntry)row).app.id;
+        Permissions.Backend.AppManager.get_default ().selected_app = ((Permissions.SidebarRow)row).app.id;
     }
 }
