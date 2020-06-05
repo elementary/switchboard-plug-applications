@@ -22,29 +22,33 @@
 public class Permissions.Widgets.PermissionSettingsWidget : Gtk.Grid {
     public signal void changed_permission_settings (Backend.PermissionSettings settings);
 
+    public string description { get; construct set; }
+    public string icon_name { get; construct set; }
+    public string primary_text { get; construct set; }
     public Backend.PermissionSettings settings { get; construct set; }
 
     public bool do_notify { get; set; default = true; }
 
-    public PermissionSettingsWidget (Backend.PermissionSettings settings) {
+    public PermissionSettingsWidget (string primary_text, string description, string icon_name, Backend.PermissionSettings settings) {
         GLib.Object (
+            description: description,
+            icon_name: icon_name,
+            primary_text: primary_text,
             settings: settings
         );
     }
 
     construct {
-        var permission_description = Backend.PermissionManager.get_default ().get (settings.context);
-
-        var icon = new Gtk.Image.from_icon_name (permission_description.icon, Gtk.IconSize.DND);
+        var icon = new Gtk.Image.from_icon_name (icon_name, Gtk.IconSize.DND);
         icon.pixel_size = 32;
         icon.tooltip_text = settings.context;
 
-        var name_label = new Gtk.Label (permission_description.name);
+        var name_label = new Gtk.Label (primary_text);
         name_label.get_style_context ().add_class (Granite.STYLE_CLASS_H3_LABEL);
         name_label.halign = Gtk.Align.START;
         name_label.hexpand = true;
 
-        var description_label = new Gtk.Label (permission_description.description);
+        var description_label = new Gtk.Label (description);
         description_label.halign = Gtk.Align.START;
         description_label.hexpand = true;
         description_label.wrap = true;
