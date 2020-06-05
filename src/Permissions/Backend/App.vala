@@ -106,24 +106,18 @@ public class Permissions.Backend.App : GLib.Object {
         }
     }
 
-    private Backend.Permission negate_permission (Backend.Permission permission) {
-        var new_permission = new Backend.Permission (permission.context);
+    private bool is_permission_overridden (GenericArray<Backend.Permission> overrides, string permission) {
+        var negated_permission = permission;
 
-        if (new_permission.context.contains ("=!")) {
-            new_permission.context = new_permission.context.replace ("=!", "=");
-            return new_permission;
+        if (negated_permission.contains ("=!")) {
+            negated_permission = negated_permission.replace ("=!", "=");
+        } else {
+            negated_permission = negated_permission.replace ("=", "=!");
         }
-
-        new_permission.context = new_permission.context.replace ("=", "=!");
-        return new_permission;
-    }
-
-    private bool is_permission_overridden (GenericArray<Backend.Permission> overrides, Backend.Permission permission) {
-        var negated_permission = negate_permission (permission);
 
         for (var i = 0; i < overrides.length; i++) {
             var o = overrides.get (i);
-            if (o.context == negated_permission.context) {
+            if (o.context == negated_permission) {
                 return true;
             }
         }
@@ -138,7 +132,7 @@ public class Permissions.Backend.App : GLib.Object {
 
         for (var i = 0; i < permissions.length; i++) {
             var permission = permissions.get (i);
-            if (is_permission_overridden (overrides, permission)) {
+            if (is_permission_overridden (overrides, permission.context)) {
                 continue;
             }
 
