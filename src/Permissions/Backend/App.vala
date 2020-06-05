@@ -84,10 +84,6 @@ public class Permissions.Backend.App : GLib.Object {
         return AppManager.get_permissions_for_path (metadata_path);
     }
 
-    public bool check_if_changed () {
-        return GLib.File.new_for_path (get_overrides_path ()).query_exists ();
-    }
-
     private void find_name () {
         var path = GLib.Path.build_path (
             GLib.Path.DIR_SEPARATOR_S,
