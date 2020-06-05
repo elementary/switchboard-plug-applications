@@ -106,21 +106,6 @@ public class Permissions.Backend.App : GLib.Object {
         }
     }
 
-    private bool real_is_overridden_path (GenericArray<Backend.Permission> overrides, Backend.Permission permission) {
-        if (!permission.context.has_prefix ("filesystems=")) {
-            return false;
-        }
-
-        // TODO: implement logic for overriden path
-
-        return false;
-    }
-
-    private bool is_overridden_path (GenericArray<Backend.Permission> overrides, Backend.Permission permission) {
-        return real_is_overridden_path (overrides, permission) ||
-               real_is_overridden_path (overrides, negate_permission (permission));
-    }
-
     private Backend.Permission negate_permission (Backend.Permission permission) {
         var new_permission = new Backend.Permission (permission.context);
 
@@ -154,10 +139,6 @@ public class Permissions.Backend.App : GLib.Object {
         for (var i = 0; i < permissions.length; i++) {
             var permission = permissions.get (i);
             if (is_permission_overridden (overrides, permission)) {
-                continue;
-            }
-
-            if (is_overridden_path (overrides, permission)) {
                 continue;
             }
 
