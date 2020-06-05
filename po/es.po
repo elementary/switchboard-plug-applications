@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-06-04 17:46+0000\n"
-"PO-Revision-Date: 2020-05-11 03:10+0000\n"
+"PO-Revision-Date: 2020-06-05 17:03+0000\n"
 "Last-Translator: Adolfo Jayme Barrientos <fitojb@ubuntu.com>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-applications/es/>\n"
@@ -35,7 +35,7 @@ msgstr "Arranque"
 
 #: src/Plug.vala:60
 msgid "Permissions"
-msgstr ""
+msgstr "Permisos"
 
 #: src/Plug.vala:105
 msgid "Default Apps"
@@ -96,8 +96,8 @@ msgstr "Ejecutar aplicaciones al inicio"
 #: src/Startup/Widgets/List.vala:54
 msgid "Add apps to the Startup list by clicking the icon in the toolbar below."
 msgstr ""
-"Agrega aplicaciones a la lista de Inicio haciendo click en el icono en la "
-"barra de herramientas debajo."
+"Añada aplicaciones a la lista de arranque pulsando el icono de la barra de "
+"herramientas siguiente."
 
 #: src/Startup/Widgets/AppRow.vala:46
 #, c-format
