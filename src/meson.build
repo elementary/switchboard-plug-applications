@@ -20,9 +20,9 @@ plug_files = files(
     'Permissions/Backend/Permission.vala',
     'Permissions/Backend/PermissionManager.vala',
     'Permissions/Backend/PermissionSettings.vala',
-    'Permissions/Widgets/AppEntry.vala',
     'Permissions/Widgets/AppSettingsView.vala',
     'Permissions/Widgets/PermissionSettingsWidget.vala',
+    'Permissions/Widgets/SidebarRow.vala',
     'Permissions/PermissionsPlug.vala'
 )
 
