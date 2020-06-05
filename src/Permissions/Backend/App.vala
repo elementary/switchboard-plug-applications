@@ -86,10 +86,6 @@ public class Permissions.Backend.App : GLib.Object {
         return AppManager.get_permissions_for_path (get_metadata_path ());
     }
 
-    public GenericArray<Backend.Permission> get_overrides () {
-        return AppManager.get_permissions_for_path (get_overrides_path ());
-    }
-
     public bool check_if_changed () {
         return GLib.File.new_for_path (get_overrides_path ()).query_exists ();
     }
@@ -162,7 +158,7 @@ public class Permissions.Backend.App : GLib.Object {
 
     public GenericArray<Backend.Permission> get_current_permissions () {
         var permissions = get_permissions ();
-        var overrides = get_overrides ();
+        var overrides = AppManager.get_permissions_for_path (get_overrides_path ());
         var current = new GenericArray<Backend.Permission> ();
 
         for (var i = 0; i < permissions.length; i++) {
