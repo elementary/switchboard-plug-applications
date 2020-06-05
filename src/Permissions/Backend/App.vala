@@ -29,7 +29,8 @@ public class Permissions.Backend.App : GLib.Object {
             id: id
         );
 
-        find_name ();
+        var appinfo = new GLib.DesktopAppInfo (id + ".desktop");
+        name = appinfo.get_display_name ();
 
         settings = new GenericArray<Backend.PermissionSettings> ();
         var permissions = get_permissions ();
@@ -92,28 +93,6 @@ public class Permissions.Backend.App : GLib.Object {
 
     public bool check_if_changed () {
         return GLib.File.new_for_path (get_overrides_path ()).query_exists ();
-    }
-
-    private void find_name () {
-        var path = GLib.Path.build_path (
-            GLib.Path.DIR_SEPARATOR_S,
-            AppManager.get_bundle_path_for_app (id),
-            "files",
-            "share",
-            "applications",
-            id + ".desktop"
-        );
-
-        try {
-            var key_file = new GLib.KeyFile ();
-            key_file.load_from_file (path, GLib.KeyFileFlags.NONE);
-
-            name = key_file.get_string ("Desktop Entry", "Name");
-        } catch (GLib.KeyFileError e) {
-            GLib.error (e.message);
-        } catch (GLib.FileError e) {
-            GLib.error (e.message);
-        }
     }
 
     private bool real_is_overridden_path (GenericArray<Backend.Permission> overrides, Backend.Permission permission) {
