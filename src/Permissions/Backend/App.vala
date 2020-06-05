@@ -1,5 +1,5 @@
 /*
-* Copyright (c) 2011-2020 elementary LLC. (https://elementary.io)
+* Copyright 2020 elementary, Inc. (https://elementary.io)
 *
 * This program is free software; you can redistribute it and/or
 * modify it under the terms of the GNU General Public
@@ -21,15 +21,34 @@
 
 public class Permissions.Backend.App : GLib.Object {
     public string id { get; construct set; }
-    public string name { get; construct set; }
+    public string name { get; private set; }
+
     public GenericArray<Backend.PermissionSettings> settings;
 
     public App (string id) {
-        GLib.Object (
-            id: id
+        Object (id: id);
+    }
+
+    construct {
+        var path = GLib.Path.build_path (
+            GLib.Path.DIR_SEPARATOR_S,
+            get_bundle_path_for_app (id),
+            "files",
+            "share",
+            "applications",
+            id + ".desktop"
         );
 
-        find_name ();
+        try {
+            var key_file = new GLib.KeyFile ();
+            key_file.load_from_file (path, GLib.KeyFileFlags.NONE);
+
+            name = key_file.get_string ("Desktop Entry", "Name");
+        } catch (GLib.KeyFileError e) {
+            GLib.error (e.message);
+        } catch (GLib.FileError e) {
+            GLib.error (e.message);
+        }
 
         settings = new GenericArray<Backend.PermissionSettings> ();
         var permissions = get_permissions ();
@@ -65,7 +84,7 @@ public class Permissions.Backend.App : GLib.Object {
         save_overrides ();
     }
 
-    public string get_overrides_path () {
+    private string get_overrides_path () {
         return GLib.Path.build_path (
             GLib.Path.DIR_SEPARATOR_S,
             AppManager.get_user_installation_path (),
@@ -74,81 +93,24 @@ public class Permissions.Backend.App : GLib.Object {
         );
     }
 
-    public string get_metadata_path () {
-        return GLib.Path.build_path (
+    private GenericArray<Backend.Permission> get_permissions () {
+        var metadata_path = GLib.Path.build_path (
             GLib.Path.DIR_SEPARATOR_S,
-            AppManager.get_bundle_path_for_app (id),
+            get_bundle_path_for_app (id),
             "metadata"
         );
-    }
 
-    public GenericArray<Backend.Permission> get_permissions () {
-        return AppManager.get_permissions_for_path (get_metadata_path ());
-    }
-
-    public GenericArray<Backend.Permission> get_overrides () {
-        return AppManager.get_permissions_for_path (get_overrides_path ());
-    }
-
-    public bool check_if_changed () {
-        return GLib.File.new_for_path (get_overrides_path ()).query_exists ();
-    }
-
-    private void find_name () {
-        var path = GLib.Path.build_path (
-            GLib.Path.DIR_SEPARATOR_S,
-            AppManager.get_bundle_path_for_app (id),
-            "files",
-            "share",
-            "applications",
-            id + ".desktop"
-        );
-
-        try {
-            var key_file = new GLib.KeyFile ();
-            key_file.load_from_file (path, GLib.KeyFileFlags.NONE);
-
-            name = key_file.get_string ("Desktop Entry", "Name");
-        } catch (GLib.KeyFileError e) {
-            GLib.error (e.message);
-        } catch (GLib.FileError e) {
-            GLib.error (e.message);
-        }
-    }
-
-    private bool real_is_overridden_path (GenericArray<Backend.Permission> overrides, Backend.Permission permission) {
-        if (!permission.context.has_prefix ("filesystems=")) {
-            return false;
-        }
-
-        // TODO: implement logic for overriden path
-
-        return false;
-    }
-
-    private bool is_overridden_path (GenericArray<Backend.Permission> overrides, Backend.Permission permission) {
-        return real_is_overridden_path (overrides, permission) ||
-               real_is_overridden_path (overrides, negate_permission (permission));
-    }
-
-    private bool is_negated_permission (Backend.Permission permission) {
-        return permission.context.contains ("=!");
-    }
-
-    private Backend.Permission negate_permission (Backend.Permission permission) {
-        var new_permission = new Backend.Permission (permission.context);
-
-        if (is_negated_permission (new_permission)) {
-            new_permission.context = new_permission.context.replace ("=!", "=");
-            return new_permission;
-        }
-
-        new_permission.context = new_permission.context.replace ("=", "=!");
-        return new_permission;
+        return AppManager.get_permissions_for_path (metadata_path);
     }
 
     private bool is_permission_overridden (GenericArray<Backend.Permission> overrides, Backend.Permission permission) {
-        var negated_permission = negate_permission (permission);
+        var negated_permission = new Backend.Permission (permission.context);
+
+        if (negated_permission.context.contains ("=!")) {
+            negated_permission.context = negated_permission.context.replace ("=!", "=");
+        } else {
+            negated_permission.context = negated_permission.context.replace ("=", "=!");
+        }
 
         for (var i = 0; i < overrides.length; i++) {
             var o = overrides.get (i);
@@ -160,9 +122,9 @@ public class Permissions.Backend.App : GLib.Object {
         return false;
     }
 
-    public GenericArray<Backend.Permission> get_current_permissions () {
+    private GenericArray<Backend.Permission> get_current_permissions () {
         var permissions = get_permissions ();
-        var overrides = get_overrides ();
+        var overrides = AppManager.get_permissions_for_path (get_overrides_path ());
         var current = new GenericArray<Backend.Permission> ();
 
         for (var i = 0; i < permissions.length; i++) {
@@ -171,16 +133,12 @@ public class Permissions.Backend.App : GLib.Object {
                 continue;
             }
 
-            if (is_overridden_path (overrides, permission)) {
-                continue;
-            }
-
             current.add (permission);
         }
 
         for (var i = 0; i < overrides.length; i++) {
             var permission = overrides.get (i);
-            if (is_negated_permission (permission)) {
+            if (permission.context.contains ("=!")) {
                 continue;
             }
 
@@ -232,5 +190,28 @@ public class Permissions.Backend.App : GLib.Object {
         } catch (GLib.FileError e) {
             GLib.warning (e.message);
         }
+    }
+
+    private static string get_bundle_path_for_app (string id) {
+        var path = GLib.Path.build_path (
+            GLib.Path.DIR_SEPARATOR_S,
+            AppManager.get_user_application_path (),
+            id,
+            "current",
+            "active"
+        );
+
+        var file = GLib.File.new_for_path (path);
+        if (file.query_exists ()) {
+            return path;
+        }
+
+        return GLib.Path.build_path (
+            GLib.Path.DIR_SEPARATOR_S,
+            AppManager.get_system_application_path (),
+            id,
+            "current",
+            "active"
+        );
     }
 }
