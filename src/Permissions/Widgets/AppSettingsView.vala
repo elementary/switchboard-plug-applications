@@ -30,56 +30,56 @@ public class Permissions.Widgets.AppSettingsView : Gtk.Grid {
             _("Home Folder"),
             _("Access your entire home folder, including any hidden folders."),
             "user-home",
-            new Backend.PermissionSettings ("filesystems=home", false)
+            new Backend.PermissionSettings ("filesystems=home")
         );
 
         var sysfolders_widget = new PermissionSettingsWidget (
             _("System Folders"),
             _("Access system folders, not including the operating system or system internals. This includes users' Home folders."),
             "drive-harddisk",
-            new Backend.PermissionSettings ("filesystems=host", false)
+            new Backend.PermissionSettings ("filesystems=host")
         );
 
         var devices_widget = new PermissionSettingsWidget (
             _("Devices"),
             _("Access all devices, such as webcams, microphones, and connected USB devices."),
             "accessories-camera",
-            new Backend.PermissionSettings ("devices=all", false)
+            new Backend.PermissionSettings ("devices=all")
         );
 
         var network_widget = new PermissionSettingsWidget (
             _("Network"),
             _("Access the Internet and local networks"),
             "preferences-system-network",
-            new Backend.PermissionSettings ("shared=network", false)
+            new Backend.PermissionSettings ("shared=network")
         );
 
         var bluetooth_widget = new PermissionSettingsWidget (
             _("Bluetooth"),
             _("Manage bluetooth devices including pairing, unpairing, and discovery."),
             "bluetooth",
-            new Backend.PermissionSettings ("features=bluetooth", false)
+            new Backend.PermissionSettings ("features=bluetooth")
         );
 
         var printing_widget = new PermissionSettingsWidget (
             _("Printing"),
             _("Access printers"),
             "printer",
-            new Backend.PermissionSettings ("sockets=cups", false)
+            new Backend.PermissionSettings ("sockets=cups")
         );
 
         var ssh_widget = new PermissionSettingsWidget (
             _("Secure Shell Agent"),
             _("Access other devices on the network via SSH."),
             "utilities-terminal",
-            new Backend.PermissionSettings ("sockets=ssh-auth", false)
+            new Backend.PermissionSettings ("sockets=ssh-auth")
         );
 
         var gpu_widget = new PermissionSettingsWidget (
             _("GPU Acceleration"),
             _("Accelerate graphical output."),
             "application-x-firmware",
-            new Backend.PermissionSettings ("devices=dri", false)
+            new Backend.PermissionSettings ("devices=dri")
         );
 
         list_box = new Gtk.ListBox ();
