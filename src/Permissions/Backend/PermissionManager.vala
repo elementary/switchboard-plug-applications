@@ -20,10 +20,9 @@
  */
 
 public class Permissions.Backend.PermissionManager {
-    private static PermissionManager? instance;
-    private GenericArray<string> _keys;
-    private GenericArray<string> _values;
+    public GLib.HashTable <string, string> permissions { get; private set; }
 
+    private static PermissionManager? instance;
     public static PermissionManager get_default () {
         if (instance == null) {
             instance = new PermissionManager ();
@@ -33,35 +32,14 @@ public class Permissions.Backend.PermissionManager {
     }
 
     private PermissionManager () {
-        _keys = new GenericArray<string> ();
-        _values = new GenericArray<string> ();
-
-        insert ("filesystems=home", _("Home Folder"));
-        insert ("filesystems=host", _("System Folders"));
-        insert ("devices=all", _("Devices"));
-        insert ("shared=network", _("Network"));
-        insert ("features=bluetooth", _("Bluetooth"));
-        insert ("sockets=cups", _("Printing"));
-        insert ("sockets=ssh-auth", _("Secure Shell Agent"));
-        insert ("devices=dri", _("GPU Acceleration"));
-    }
-
-    private void insert (string key, string value) {
-        _keys.add (key);
-        _values.add (value);
-    }
-
-    public GenericArray<string> keys () {
-        return _keys;
-    }
-
-    public string? get (string key) {
-        for (var i = 0; i < _keys.length; i++) {
-            if (_keys.get (i) == key) {
-                return _values.get (i);
-            }
-        }
-
-        return null;
+        permissions = new GLib.HashTable <string, string> (str_hash, str_equal);
+        permissions["filesystems=home"] = _("Home Folder");
+        permissions["filesystems=host"] = _("System Folders");
+        permissions["devices=all"] = _("Devices");
+        permissions["shared=network"] = _("Network");
+        permissions["features=bluetooth"] = _("Bluetooth");
+        permissions["sockets=cups"] = _("Printing");
+        permissions["sockets=ssh-auth"] = _("Secure Shell Agent");
+        permissions["devices=dri"] = _("GPU Acceleration");
     }
 }
