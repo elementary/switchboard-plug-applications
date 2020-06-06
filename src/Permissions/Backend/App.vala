@@ -39,7 +39,7 @@ public class Permissions.Backend.App : GLib.Object {
             "metadata"
         );
 
-        var permissions =  AppManager.get_permissions_for_path (metadata_path);
+        var permissions = AppManager.get_permissions_for_path (metadata_path);
         var overrides = AppManager.get_permissions_for_path (get_overrides_path ());
         var current_permissions = new GenericArray<Backend.Permission> ();
 
