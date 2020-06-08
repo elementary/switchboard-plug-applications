@@ -1,5 +1,6 @@
 /*
 * Copyright 2020 elementary, Inc. (https://elementary.io)
+*           2020 Martin Abente Lahaye
 *
 * This program is free software; you can redistribute it and/or
 * modify it under the terms of the GNU General Public
@@ -91,6 +92,7 @@ public class Permissions.Backend.AppManager : GLib.Object {
         );
     }
 
+    /* Adapted from Flatseal (src/models/application.js) https://github.com/tchx84/Flatseal */
     public static GenericArray<Backend.Permission> get_permissions_for_path (string path) {
         var array = new GenericArray<Backend.Permission> ();
         const string GROUP = "Context";
@@ -125,6 +127,7 @@ public class Permissions.Backend.AppManager : GLib.Object {
         return array;
     }
 
+    /* Adapted from Flatseal (src/models/application.js) https://github.com/tchx84/Flatseal */
     private static GenericArray<Backend.App> get_applications_for_path (string path) {
         var array = new GenericArray<Backend.App> ();
 
