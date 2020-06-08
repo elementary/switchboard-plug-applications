@@ -120,7 +120,18 @@ public class Permissions.Widgets.AppSettingsView : Gtk.Grid {
 
         reset_button.clicked.connect (() => {
             var app = Backend.AppManager.get_default ().apps.get (selected_app);
-            app.reset_settings_to_standard ();
+            for (var i = 0; i < app.settings.length; i++) {
+                var setting = app.settings.get (i);
+                setting.enabled = setting.standard;
+            }
+
+            var file = GLib.File.new_for_path (app.get_overrides_path ());
+            try {
+                file.delete ();
+            } catch (GLib.Error e) {
+                GLib.warning (e.message);
+            }
+
             update_view ();
         });
     }

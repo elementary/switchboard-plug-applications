@@ -143,20 +143,6 @@ public class Permissions.Backend.App : GLib.Object {
         return current;
     }
 
-    public void reset_settings_to_standard () {
-        for (var i = 0; i < settings.length; i++) {
-            var setting = settings.get (i);
-            setting.enabled = setting.standard;
-        }
-
-        var file = GLib.File.new_for_path (get_overrides_path ());
-        try {
-            file.delete ();
-        } catch (GLib.Error e) {
-            GLib.warning (e.message);
-        }
-    }
-
     public void save_overrides () {
         const string GROUP = "Context";
 
