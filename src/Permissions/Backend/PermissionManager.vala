@@ -20,7 +20,7 @@
  */
 
 public class Permissions.Backend.PermissionManager {
-    public GLib.HashTable <string, string> permissions { get; private set; }
+    public GLib.HashTable <unowned string, unowned string> permissions { get; private set; }
 
     private static PermissionManager? instance;
     public static PermissionManager get_default () {
@@ -32,7 +32,7 @@ public class Permissions.Backend.PermissionManager {
     }
 
     private PermissionManager () {
-        permissions = new GLib.HashTable <string, string> (str_hash, str_equal);
+        permissions = new GLib.HashTable <unowned string, unowned string> (str_hash, str_equal);
         permissions["filesystems=home"] = _("Home Folder");
         permissions["filesystems=host"] = _("System Folders");
         permissions["devices=all"] = _("Devices");
