@@ -29,7 +29,15 @@ public class Permissions.Backend.App : GLib.Object {
     }
 
     construct {
-        find_name ();
+        var path = GLib.Path.build_filename (
+            AppManager.get_bundle_path_for_app (id),
+            "files",
+            "share",
+            "applications",
+            id + ".desktop"
+        );
+        var appinfo = new GLib.DesktopAppInfo.from_filename (path);
+        name = appinfo.get_display_name ();
 
         settings = new GenericArray<Backend.PermissionSettings> ();
         var permissions = get_permissions ();
@@ -82,28 +90,6 @@ public class Permissions.Backend.App : GLib.Object {
         );
 
         return AppManager.get_permissions_for_path (metadata_path);
-    }
-
-    private void find_name () {
-        var path = GLib.Path.build_path (
-            GLib.Path.DIR_SEPARATOR_S,
-            AppManager.get_bundle_path_for_app (id),
-            "files",
-            "share",
-            "applications",
-            id + ".desktop"
-        );
-
-        try {
-            var key_file = new GLib.KeyFile ();
-            key_file.load_from_file (path, GLib.KeyFileFlags.NONE);
-
-            name = key_file.get_string ("Desktop Entry", "Name");
-        } catch (GLib.KeyFileError e) {
-            GLib.error (e.message);
-        } catch (GLib.FileError e) {
-            GLib.error (e.message);
-        }
     }
 
     private Backend.Permission negate_permission (Backend.Permission permission) {

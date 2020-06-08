@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-06-04 17:46+0000\n"
-"PO-Revision-Date: 2020-05-29 15:23+0000\n"
+"PO-Revision-Date: 2020-06-07 09:11+0000\n"
 "Last-Translator: p-bo <pavel.borecki@gmail.com>\n"
 "Language-Team: Czech <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-applications/cs/>\n"
@@ -35,7 +35,7 @@ msgstr "Po spuštění"
 
 #: src/Plug.vala:60
 msgid "Permissions"
-msgstr ""
+msgstr "Oprávnění"
 
 #: src/Plug.vala:105
 msgid "Default Apps"
