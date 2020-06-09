@@ -64,7 +64,7 @@ public class Permissions.SidebarRow : Gtk.ListBoxRow {
         for (var i = 0; i < app.settings.length; i++) {
             var settings = app.settings.get (i);
             if (settings.enabled) {
-                current_permissions.add (Backend.PermissionManager.get_default ().get (settings.context));
+                current_permissions.add (Backend.PermissionManager.get_default ().permissions[settings.context]);
             }
         }
 
