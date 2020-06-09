@@ -1,5 +1,6 @@
 /*
 * Copyright 2020 elementary, Inc. (https://elementary.io)
+*           2020 Martin Abente Lahaye
 *
 * This program is free software; you can redistribute it and/or
 * modify it under the terms of the GNU General Public
