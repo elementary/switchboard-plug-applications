@@ -42,7 +42,7 @@ public class Permissions.Backend.App : GLib.Object {
         settings = new GenericArray<Backend.PermissionSettings> ();
         var permissions = get_permissions ();
         var current_permissions = get_current_permissions ();
-        Backend.PermissionManager.get_default ().keys ().foreach ((key) => {
+        Backend.PermissionManager.get_default ().permissions.foreach ((key) => {
             bool standard = false;
             bool enabled = false;
 
