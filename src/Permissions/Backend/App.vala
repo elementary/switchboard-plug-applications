@@ -1,10 +1,11 @@
 /*
-* Copyright (c) 2011-2020 elementary LLC. (https://elementary.io)
+* Copyright 2020 elementary, Inc. (https://elementary.io)
+*           2020 Martin Abente Lahaye
 *
 * This program is free software; you can redistribute it and/or
 * modify it under the terms of the GNU General Public
 * License as published by the Free Software Foundation; either
-* version 2 of the License, or (at your option) any later version.
+* version 3 of the License, or (at your option) any later version.
 *
 * This program is distributed in the hope that it will be useful,
 * but WITHOUT ANY WARRANTY; without even the implied warranty of
@@ -69,7 +70,7 @@ public class Permissions.Backend.App : GLib.Object {
             current_permissions.add (permission);
         }
 
-        Backend.PermissionManager.get_default ().keys ().foreach ((key) => {
+        Backend.PermissionManager.get_default ().permissions.foreach ((key) => {
             bool standard = false;
             bool enabled = false;
 
