@@ -22,6 +22,7 @@
 public class Permissions.SidebarRow : Gtk.ListBoxRow {
     public Permissions.Backend.App app { get; construct; }
     private Gtk.Label description_label;
+    private Gtk.Revealer badge_revealer;
 
     public SidebarRow (Permissions.Backend.App app) {
         Object (app: app);
@@ -30,6 +31,17 @@ public class Permissions.SidebarRow : Gtk.ListBoxRow {
     construct {
         var image = new Gtk.Image.from_gicon (new ThemedIcon (app.id), Gtk.IconSize.DND);
         image.pixel_size = 32;
+
+        var badge = new Gtk.Image.from_icon_name ("security-medium", Gtk.IconSize.MENU);
+        badge.halign = badge.valign = Gtk.Align.END;
+
+        badge_revealer = new Gtk.Revealer ();
+        badge_revealer.transition_type = Gtk.RevealerTransitionType.CROSSFADE;
+        badge_revealer.add (badge);
+
+        var overlay = new Gtk.Overlay ();
+        overlay.add (image);
+        overlay.add_overlay (badge_revealer);
 
         var title_label = new Gtk.Label (app.name);
         title_label.get_style_context ().add_class (Granite.STYLE_CLASS_H3_LABEL);
@@ -46,7 +58,7 @@ public class Permissions.SidebarRow : Gtk.ListBoxRow {
         var grid = new Gtk.Grid ();
         grid.margin = 6;
         grid.column_spacing = 6;
-        grid.attach (image, 0, 0, 1, 2);
+        grid.attach (overlay, 0, 0, 1, 2);
         grid.attach (title_label, 1, 0);
         grid.attach (description_label, 1, 1);
 
@@ -69,7 +81,13 @@ public class Permissions.SidebarRow : Gtk.ListBoxRow {
         }
 
         var description = string.joinv (", ", current_permissions.data);
+
+        badge_revealer.reveal_child = description == "";
+        if (description == "") {
+            description = _("No Exceptions");
+        }
+
         description_label.label = "<small>%s</small>".printf (description);
-        set_tooltip_text (description);
+        tooltip_text = description;
     }
 }
