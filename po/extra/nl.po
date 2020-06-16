@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-05-31 21:23+0000\n"
-"PO-Revision-Date: 2020-01-01 16:07+0000\n"
+"PO-Revision-Date: 2020-06-12 19:11+0000\n"
 "Last-Translator: Jaimie85 <alsemgeest@gmail.com>\n"
 "Language-Team: Dutch <https://l10n.elementary.io/projects/switchboard/"
 "applications-plug-extra/nl/>\n"
@@ -20,10 +20,8 @@ msgstr ""
 "X-Generator: Weblate 3.9.1\n"
 
 #: data/io.elementary.switchboard.applications.appdata.xml.in:5
-#, fuzzy
-#| msgid "Applications"
 msgid "Applications Settings"
-msgstr "Toepassingen"
+msgstr "Toepassingen instellingen"
 
 #: data/io.elementary.switchboard.applications.appdata.xml.in:6
 msgid "Manage default and startup applications"
@@ -32,6 +30,8 @@ msgstr "Beheer standaardapplicaties en applicaties die automatisch opstarten"
 #: data/io.elementary.switchboard.applications.appdata.xml.in:12
 msgid "Fix user's desktop files is not shown"
 msgstr ""
+"Een probleem opgelost waarbij een gebruikers bestanden op het bureaublad "
+"niet werden getoond"
 
 #: data/io.elementary.switchboard.applications.appdata.xml.in:13
 #: data/io.elementary.switchboard.applications.appdata.xml.in:18
