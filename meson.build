@@ -12,6 +12,12 @@ prefix = get_option('prefix')
 datadir = join_paths(prefix, get_option('datadir'))
 libdir = join_paths(prefix, get_option('libdir'))
 
+vapi_dir = join_paths(meson.current_source_dir(), 'vapi')
+add_project_arguments(
+    ['--vapidir', vapi_dir],
+    language: 'vala'
+)
+
 add_project_arguments(
     '-DGETTEXT_PACKAGE="@0@"'.format(gettext_name),
     language:'c'
