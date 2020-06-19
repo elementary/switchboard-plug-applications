@@ -8,6 +8,7 @@
 You'll need the following dependencies:
 
 * libswitchboard-2.0-dev
+* libflatpak-dev
 * libgranite-dev
 * libgtk-3-dev
 * meson
