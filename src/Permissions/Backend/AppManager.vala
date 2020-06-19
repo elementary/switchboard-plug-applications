@@ -38,20 +38,20 @@ public class Permissions.Backend.AppManager : GLib.Object {
 
         try {
             var installation = new Flatpak.Installation.user ();
-            get_app_for_installation (installation);
+            get_apps_for_installation (installation);
         } catch (Error e) {
             critical ("Unable to get flatpak user installation : %s", e.message);
         }
 
         try {
             var installation = new Flatpak.Installation.system ();
-            get_app_for_installation (installation);
+            get_apps_for_installation (installation);
         } catch (Error e) {
             critical ("Unable to get flatpak system installation : %s", e.message);
         }
     }
 
-    private void get_app_for_installation (Flatpak.Installation installation) {
+    private void get_apps_for_installation (Flatpak.Installation installation) {
         try {
             installation.list_installed_refs_by_kind (Flatpak.RefKind.APP).foreach ((installed_ref) => {
                 var id = installed_ref.get_name ();
