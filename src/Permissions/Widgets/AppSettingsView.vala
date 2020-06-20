@@ -27,56 +27,56 @@ public class Permissions.Widgets.AppSettingsView : Gtk.Grid {
         Backend.AppManager.get_default ().notify["selected-app"].connect (update_view);
 
         var homefolder_widget = new PermissionSettingsWidget (
-            _("Home Folder"),
+            Plug.permission_names["filesystems=home"],
             _("Access your entire home folder, including any hidden folders."),
             "user-home",
             new Backend.PermissionSettings ("filesystems=home", false)
         );
 
         var sysfolders_widget = new PermissionSettingsWidget (
-            _("System Folders"),
+            Plug.permission_names["filesystems=host"],
             _("Access system folders, not including the operating system or system internals. This includes users' Home folders."),
             "drive-harddisk",
             new Backend.PermissionSettings ("filesystems=host", false)
         );
 
         var devices_widget = new PermissionSettingsWidget (
-            _("Devices"),
+            Plug.permission_names["devices=all"],
             _("Access all devices, such as webcams, microphones, and connected USB devices."),
             "accessories-camera",
             new Backend.PermissionSettings ("devices=all", false)
         );
 
         var network_widget = new PermissionSettingsWidget (
-            _("Network"),
+            Plug.permission_names["shared=network"],
             _("Access the Internet and local networks"),
             "preferences-system-network",
             new Backend.PermissionSettings ("shared=network", false)
         );
 
         var bluetooth_widget = new PermissionSettingsWidget (
-            _("Bluetooth"),
+            Plug.permission_names["features=bluetooth"],
             _("Manage bluetooth devices including pairing, unpairing, and discovery."),
             "bluetooth",
             new Backend.PermissionSettings ("features=bluetooth", false)
         );
 
         var printing_widget = new PermissionSettingsWidget (
-            _("Printing"),
+            Plug.permission_names["sockets=cups"],
             _("Access printers"),
             "printer",
             new Backend.PermissionSettings ("sockets=cups", false)
         );
 
         var ssh_widget = new PermissionSettingsWidget (
-            _("Secure Shell Agent"),
+            Plug.permission_names["sockets=ssh-auth"],
             _("Access other devices on the network via SSH."),
             "utilities-terminal",
             new Backend.PermissionSettings ("sockets=ssh-auth", false)
         );
 
         var gpu_widget = new PermissionSettingsWidget (
-            _("GPU Acceleration"),
+            Plug.permission_names["devices=dri"],
             _("Accelerate graphical output."),
             "application-x-firmware",
             new Backend.PermissionSettings ("devices=dri", false)

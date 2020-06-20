@@ -17,7 +17,6 @@ plug_files = files(
     'Defaults/DefaultPlug.vala',
     'Permissions/Backend/App.vala',
     'Permissions/Backend/AppManager.vala',
-    'Permissions/Backend/PermissionManager.vala',
     'Permissions/Backend/PermissionSettings.vala',
     'Permissions/Widgets/AppSettingsView.vala',
     'Permissions/Widgets/PermissionSettingsWidget.vala',
