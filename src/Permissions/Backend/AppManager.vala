@@ -54,7 +54,7 @@ public class Permissions.Backend.AppManager : GLib.Object {
     private void get_apps_for_installation (Flatpak.Installation installation) {
         try {
             installation.list_installed_refs_by_kind (Flatpak.RefKind.APP).foreach ((installed_ref) => {
-                var id = installed_ref.get_name ();
+                unowned string id = installed_ref.get_name ();
                 if (apps[id] == null) {
                     apps.insert (id, new Backend.App (id));
                 }
