@@ -36,9 +36,32 @@ public class Permissions.Backend.AppManager : GLib.Object {
     construct {
         apps = new HashTable<string, Backend.App> (str_hash, str_equal);
 
-        get_applications ().foreach ((app) => {
-            apps.insert (app.id, app);
-        });
+        try {
+            var installation = new Flatpak.Installation.user ();
+            get_apps_for_installation (installation);
+        } catch (Error e) {
+            critical ("Unable to get flatpak user installation : %s", e.message);
+        }
+
+        try {
+            var installation = new Flatpak.Installation.system ();
+            get_apps_for_installation (installation);
+        } catch (Error e) {
+            critical ("Unable to get flatpak system installation : %s", e.message);
+        }
+    }
+
+    private void get_apps_for_installation (Flatpak.Installation installation) {
+        try {
+            installation.list_installed_refs_by_kind (Flatpak.RefKind.APP).foreach ((installed_ref) => {
+                unowned string id = installed_ref.get_name ();
+                if (apps[id] == null) {
+                    apps.insert (id, new Backend.App (id));
+                }
+            });
+        } catch (Error e) {
+            critical ("Unable to get installed flatpaks: %s", e.message);
+        }
     }
 
     public static string get_user_installation_path () {
@@ -122,57 +145,6 @@ public class Permissions.Backend.AppManager : GLib.Object {
             GLib.warning (path);
             GLib.warning (e.message);
         }
-
-        return array;
-    }
-
-    private static GenericArray<Backend.App> get_applications_for_path (string path) {
-        var array = new GenericArray<Backend.App> ();
-
-        var directory = GLib.File.new_for_path (path);
-        if (!directory.query_exists ()) {
-            return array;
-        }
-
-        try {
-            var enumerator = directory.enumerate_children ("*", GLib.FileQueryInfoFlags.NONE, null);
-            var info = enumerator.next_file (null);
-
-            while (info != null) {
-                var file = enumerator.get_child (info);
-                var app_id = GLib.Path.get_basename (file.get_path ());
-                var active_path = GLib.Path.build_path (
-                    GLib.Path.DIR_SEPARATOR_S,
-                    file.get_path (),
-                    "current",
-                    "active"
-                );
-
-                if (!app_id.has_suffix (".BaseApp") && GLib.File.new_for_path (active_path).query_exists ()) {
-                    array.add (new Backend.App (app_id));
-                }
-
-                info = enumerator.next_file (null);
-            }
-        } catch (GLib.Error e) {
-            GLib.error (e.message);
-        }
-
-        return array;
-    }
-
-    private static GenericArray<Backend.App> get_applications () {
-        var array = get_applications_for_path (get_user_application_path ());
-
-        get_applications_for_path (get_system_application_path ()).foreach ((app) => {
-            if (!array.find (app)) {
-                array.add (app);
-            }
-        });
-
-        array.sort_with_data ((a, b) => {
-            return strcmp (a.name, b.name);
-        });
 
         return array;
     }
