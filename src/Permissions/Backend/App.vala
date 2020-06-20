@@ -26,6 +26,8 @@ public class Permissions.Backend.App : GLib.Object {
     public string name { get; private set; }
     public GenericArray<Backend.PermissionSettings> settings;
 
+    private const string GROUP = "Context";
+
     public App (Flatpak.InstalledRef installed_ref) {
         Object (installed_ref: installed_ref);
     }
@@ -43,7 +45,6 @@ public class Permissions.Backend.App : GLib.Object {
                 var key_file = new GLib.KeyFile ();
                 key_file.load_from_bytes (metadata, GLib.KeyFileFlags.NONE);
 
-                var GROUP = "Context";
                 if (key_file.has_group (GROUP)) {
                     var keys = key_file.get_keys (GROUP);
 
