@@ -21,27 +21,18 @@
 */
 
 public class Permissions.Backend.App : GLib.Object {
-    public Flatpak.Ref flatpak_ref { get; construct; }
+    public Flatpak.InstalledRef installed_ref { get; construct; }
     public string id { get; private set; }
     public string name { get; private set; }
     public GenericArray<Backend.PermissionSettings> settings;
 
-    public App (Flatpak.Ref flatpak_ref) {
-        Object (flatpak_ref: flatpak_ref);
+    public App (Flatpak.InstalledRef installed_ref) {
+        Object (installed_ref: installed_ref);
     }
 
     construct {
-        id = flatpak_ref.get_name ();
-
-        var path = GLib.Path.build_filename (
-            AppManager.get_bundle_path_for_app (id),
-            "files",
-            "share",
-            "applications",
-            id + ".desktop"
-        );
-        var appinfo = new GLib.DesktopAppInfo.from_filename (path);
-        name = appinfo.get_display_name ();
+        id = installed_ref.get_name ();
+        name = installed_ref.get_appdata_name ();
 
         settings = new GenericArray<Backend.PermissionSettings> ();
 
