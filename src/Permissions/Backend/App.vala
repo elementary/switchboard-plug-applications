@@ -101,7 +101,7 @@ public class Permissions.Backend.App : GLib.Object {
         save_overrides ();
     }
 
-    private string get_overrides_path () {
+    public string get_overrides_path () {
         return GLib.Path.build_path (
             GLib.Path.DIR_SEPARATOR_S,
             AppManager.get_user_installation_path (),
@@ -133,20 +133,6 @@ public class Permissions.Backend.App : GLib.Object {
         }
 
         return false;
-    }
-
-    public void reset_settings_to_standard () {
-        for (var i = 0; i < settings.length; i++) {
-            var setting = settings.get (i);
-            setting.enabled = setting.standard;
-        }
-
-        var file = GLib.File.new_for_path (get_overrides_path ());
-        try {
-            file.delete ();
-        } catch (GLib.Error e) {
-            GLib.warning (e.message);
-        }
     }
 
     public void save_overrides () {
