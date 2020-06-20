@@ -50,7 +50,7 @@ public class Permissions.Backend.App : GLib.Object {
 
         var permissions = AppManager.get_permissions_for_path (metadata_path);
         var overrides = AppManager.get_permissions_for_path (get_overrides_path ());
-        var current_permissions = new GenericArray<Backend.Permission> ();
+        var current_permissions = new GenericArray<string> ();
 
         for (var i = 0; i < permissions.length; i++) {
             var permission = permissions.get (i);
@@ -63,20 +63,20 @@ public class Permissions.Backend.App : GLib.Object {
 
         for (var i = 0; i < overrides.length; i++) {
             var permission = overrides.get (i);
-            if (permission.context.contains ("=!")) {
+            if (permission.contains ("=!")) {
                 continue;
             }
 
             current_permissions.add (permission);
         }
 
-        Backend.PermissionManager.get_default ().permissions.foreach ((key) => {
+        Plug.permission_names.foreach ((key) => {
             bool standard = false;
             bool enabled = false;
 
             for (var i = 0; i < permissions.length; i++) {
                 var permission = permissions.get (i);
-                if (key == permission.context) {
+                if (key == permission) {
                     standard = true;
                     break;
                 }
@@ -84,7 +84,7 @@ public class Permissions.Backend.App : GLib.Object {
 
             for (var i = 0; i < current_permissions.length; i++) {
                 var permission = current_permissions.get (i);
-                if (key == permission.context) {
+                if (key == permission) {
                     enabled = true;
                     break;
                 }
@@ -110,24 +110,24 @@ public class Permissions.Backend.App : GLib.Object {
         );
     }
 
-    private Backend.Permission negate_permission (Backend.Permission permission) {
-        var new_permission = new Backend.Permission (permission.context);
+    private string negate_permission (string permission) {
+        var new_permission = permission;
 
-        if (new_permission.context.contains ("=!")) {
-            new_permission.context = new_permission.context.replace ("=!", "=");
+        if (new_permission.contains ("=!")) {
+            new_permission = new_permission.replace ("=!", "=");
             return new_permission;
         }
 
-        new_permission.context = new_permission.context.replace ("=", "=!");
+        new_permission = new_permission.replace ("=", "=!");
         return new_permission;
     }
 
-    private bool is_permission_overridden (GenericArray<Backend.Permission> overrides, Backend.Permission permission) {
+    private bool is_permission_overridden (GenericArray<string> overrides, string permission) {
         var negated_permission = negate_permission (permission);
 
         for (var i = 0; i < overrides.length; i++) {
             var o = overrides.get (i);
-            if (o.context == negated_permission.context) {
+            if (o == negated_permission) {
                 return true;
             }
         }
