@@ -24,12 +24,12 @@ public class Permissions.Backend.PermissionSettings : GLib.Object {
     public bool standard { get; construct set; }
     public bool enabled { get; set; }
 
-    public PermissionSettings (string context, bool standard) {
+    public PermissionSettings (string context, bool standard = false) {
         Object (
-            context: context
+            context: context,
+            standard: standard
         );
 
-        this.standard = standard;
         this.enabled = standard;
     }
 }
