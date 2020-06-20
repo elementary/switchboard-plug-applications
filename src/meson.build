@@ -17,8 +17,6 @@ plug_files = files(
     'Defaults/DefaultPlug.vala',
     'Permissions/Backend/App.vala',
     'Permissions/Backend/AppManager.vala',
-    'Permissions/Backend/Permission.vala',
-    'Permissions/Backend/PermissionManager.vala',
     'Permissions/Backend/PermissionSettings.vala',
     'Permissions/Widgets/AppSettingsView.vala',
     'Permissions/Widgets/PermissionSettingsWidget.vala',
@@ -33,6 +31,7 @@ shared_module(
     meson.project_name(),
     plug_files,
     dependencies: [
+        dependency('flatpak', version: '>=1.1.2'),
         dependency('glib-2.0'),
         dependency('gio-2.0'),
         dependency('gobject-2.0'),
