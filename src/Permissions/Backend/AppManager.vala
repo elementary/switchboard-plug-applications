@@ -74,47 +74,6 @@ public class Permissions.Backend.AppManager : GLib.Object {
         );
     }
 
-    private static string get_user_application_path () {
-        return GLib.Path.build_path (
-            GLib.Path.DIR_SEPARATOR_S,
-            get_user_installation_path (),
-            "app"
-        );
-    }
-
-    public static string get_bundle_path_for_app (string id) {
-        var path = GLib.Path.build_path (
-            GLib.Path.DIR_SEPARATOR_S,
-            get_user_application_path (),
-            id,
-            "current",
-            "active"
-        );
-
-        var file = GLib.File.new_for_path (path);
-        if (file.query_exists ()) {
-            return path;
-        }
-
-        return GLib.Path.build_path (
-            GLib.Path.DIR_SEPARATOR_S,
-            get_system_application_path (),
-            id,
-            "current",
-            "active"
-        );
-    }
-
-    private static string get_system_application_path () {
-        return GLib.Path.build_path (
-            GLib.Path.DIR_SEPARATOR_S,
-            "var",
-            "lib",
-            "flatpak",
-            "app"
-        );
-    }
-
     public static GenericArray<string> get_permissions_for_path (string path) {
         var array = new GenericArray<string> ();
         const string GROUP = "Context";

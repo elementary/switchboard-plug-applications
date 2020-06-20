@@ -36,13 +36,37 @@ public class Permissions.Backend.App : GLib.Object {
 
         settings = new GenericArray<Backend.PermissionSettings> ();
 
-        var metadata_path = GLib.Path.build_path (
-            GLib.Path.DIR_SEPARATOR_S,
-            AppManager.get_bundle_path_for_app (id),
-            "metadata"
-        );
+        var permissions = new GenericArray<string> ();
+        try {
+            var metadata = installed_ref.load_metadata ();
+            try {
+                var key_file = new GLib.KeyFile ();
+                key_file.load_from_bytes (metadata, GLib.KeyFileFlags.NONE);
 
-        var permissions = AppManager.get_permissions_for_path (metadata_path);
+                var GROUP = "Context";
+                if (key_file.has_group (GROUP)) {
+                    var keys = key_file.get_keys (GROUP);
+
+                    foreach (var key in keys ) {
+                        var values = key_file.get_value (GROUP, key).split (";");
+                        foreach (var value in values) {
+                            if (value.length == 0) {
+                                break;
+                            }
+
+                            permissions.add ("%s=%s".printf (key, value));
+                        }
+                    }
+                }
+            } catch (GLib.KeyFileError e) {
+                critical (e.message);
+            } catch (GLib.FileError e) {
+                critical (e.message);
+            }
+        } catch (Error e) {
+            critical ("Couldn't load metadata: %s", e.message);
+        }
+
         var overrides = AppManager.get_permissions_for_path (get_overrides_path ());
         var current_permissions = new GenericArray<string> ();
 
