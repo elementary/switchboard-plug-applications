@@ -41,8 +41,35 @@ public class Permissions.Backend.App : GLib.Object {
         name = appinfo.get_display_name ();
 
         settings = new GenericArray<Backend.PermissionSettings> ();
-        var permissions = get_permissions ();
-        var current_permissions = get_current_permissions ();
+
+        var metadata_path = GLib.Path.build_path (
+            GLib.Path.DIR_SEPARATOR_S,
+            AppManager.get_bundle_path_for_app (id),
+            "metadata"
+        );
+
+        var permissions = AppManager.get_permissions_for_path (metadata_path);
+        var overrides = AppManager.get_permissions_for_path (get_overrides_path ());
+        var current_permissions = new GenericArray<string> ();
+
+        for (var i = 0; i < permissions.length; i++) {
+            var permission = permissions.get (i);
+            if (is_permission_overridden (overrides, permission)) {
+                continue;
+            }
+
+            current_permissions.add (permission);
+        }
+
+        for (var i = 0; i < overrides.length; i++) {
+            var permission = overrides.get (i);
+            if (permission.contains ("=!")) {
+                continue;
+            }
+
+            current_permissions.add (permission);
+        }
+
         Plug.permission_names.foreach ((key) => {
             bool standard = false;
             bool enabled = false;
@@ -74,23 +101,13 @@ public class Permissions.Backend.App : GLib.Object {
         save_overrides ();
     }
 
-    public string get_overrides_path () {
+    private string get_overrides_path () {
         return GLib.Path.build_path (
             GLib.Path.DIR_SEPARATOR_S,
             AppManager.get_user_installation_path (),
             "overrides",
             id
         );
-    }
-
-    private GenericArray<string> get_permissions () {
-        var metadata_path = GLib.Path.build_path (
-            GLib.Path.DIR_SEPARATOR_S,
-            AppManager.get_bundle_path_for_app (id),
-            "metadata"
-        );
-
-        return AppManager.get_permissions_for_path (metadata_path);
     }
 
     private string negate_permission (string permission) {
@@ -116,32 +133,6 @@ public class Permissions.Backend.App : GLib.Object {
         }
 
         return false;
-    }
-
-    public GenericArray<string> get_current_permissions () {
-        var permissions = get_permissions ();
-        var overrides = AppManager.get_permissions_for_path (get_overrides_path ());
-        var current = new GenericArray<string> ();
-
-        for (var i = 0; i < permissions.length; i++) {
-            var permission = permissions.get (i);
-            if (is_permission_overridden (overrides, permission)) {
-                continue;
-            }
-
-            current.add (permission);
-        }
-
-        for (var i = 0; i < overrides.length; i++) {
-            var permission = overrides.get (i);
-            if (permission.contains ("=!")) {
-                continue;
-            }
-
-            current.add (permission);
-        }
-
-        return current;
     }
 
     public void reset_settings_to_standard () {
