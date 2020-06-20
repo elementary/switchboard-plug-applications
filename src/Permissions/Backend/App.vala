@@ -21,15 +21,18 @@
 */
 
 public class Permissions.Backend.App : GLib.Object {
-    public string id { get; construct; }
+    public Flatpak.Ref flatpak_ref { get; construct; }
+    public string id { get; private set; }
     public string name { get; private set; }
     public GenericArray<Backend.PermissionSettings> settings;
 
-    public App (string id) {
-        Object (id: id);
+    public App (Flatpak.Ref flatpak_ref) {
+        Object (flatpak_ref: flatpak_ref);
     }
 
     construct {
+        id = flatpak_ref.get_name ();
+
         var path = GLib.Path.build_filename (
             AppManager.get_bundle_path_for_app (id),
             "files",
