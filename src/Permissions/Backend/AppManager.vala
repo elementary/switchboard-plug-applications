@@ -92,8 +92,8 @@ public class Permissions.Backend.AppManager : GLib.Object {
         );
     }
 
-    public static GenericArray<Backend.Permission> get_permissions_for_path (string path) {
-        var array = new GenericArray<Backend.Permission> ();
+    public static GenericArray<string> get_permissions_for_path (string path) {
+        var array = new GenericArray<string> ();
         const string GROUP = "Context";
 
         try {
@@ -113,7 +113,7 @@ public class Permissions.Backend.AppManager : GLib.Object {
                         break;
                     }
 
-                    array.add (new Backend.Permission ("%s=%s".printf (key, value)));
+                    array.add ("%s=%s".printf (key, value));
                 }
             }
         } catch (GLib.KeyFileError e) {

@@ -19,12 +19,15 @@
 * Authored by: Marius Meisenzahl <mariusmeisenzahl@gmail.com>
 */
 
-public class Permissions.Backend.PermissionSettings : Permissions.Backend.Permission {
+public class Permissions.Backend.PermissionSettings : GLib.Object {
+    public string context { get; construct; }
     public bool standard { get; construct set; }
     public bool enabled { get; set; }
 
     public PermissionSettings (string context, bool standard) {
-        base (context);
+        Object (
+            context: context
+        );
 
         this.standard = standard;
         this.enabled = standard;
