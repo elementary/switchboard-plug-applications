@@ -123,7 +123,7 @@ public class Permissions.Backend.App : GLib.Object {
     private string get_overrides_path () {
         return GLib.Path.build_path (
             GLib.Path.DIR_SEPARATOR_S,
-            AppManager.get_user_installation_path (),
+            AppManager.get_default ().user_installation_path,
             "overrides",
             id
         );

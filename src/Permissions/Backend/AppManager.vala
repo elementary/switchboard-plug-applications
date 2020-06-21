@@ -23,6 +23,7 @@
 public class Permissions.Backend.AppManager : GLib.Object {
     public string selected_app { get; set; }
     public HashTable<string, Backend.App> apps { get; private set; }
+    public string user_installation_path { get; private set; }
 
     private static AppManager? instance;
     public static AppManager get_default () {
@@ -38,6 +39,7 @@ public class Permissions.Backend.AppManager : GLib.Object {
 
         try {
             var installation = new Flatpak.Installation.user ();
+            user_installation_path = installation.get_path ().get_path ();
             get_apps_for_installation (installation);
         } catch (Error e) {
             critical ("Unable to get flatpak user installation : %s", e.message);
@@ -62,16 +64,6 @@ public class Permissions.Backend.AppManager : GLib.Object {
         } catch (Error e) {
             critical ("Unable to get installed flatpaks: %s", e.message);
         }
-    }
-
-    public static string get_user_installation_path () {
-        return GLib.Path.build_path (
-            GLib.Path.DIR_SEPARATOR_S,
-            GLib.Environment.get_home_dir (),
-            ".local",
-            "share",
-            "flatpak"
-        );
     }
 
     public static GenericArray<string> get_permissions_for_path (string path) {
