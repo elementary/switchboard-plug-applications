@@ -38,6 +38,7 @@ public class Permissions.Plug : Gtk.Grid {
         var app_list = new Gtk.ListBox ();
         app_list.vexpand = true;
         app_list.selection_mode = Gtk.SelectionMode.SINGLE;
+        app_list.set_sort_func ((Gtk.ListBoxSortFunc) sort_func);
 
         var scrolled_window = new Gtk.ScrolledWindow (null, null);
         scrolled_window.add (app_list);
@@ -70,6 +71,11 @@ public class Permissions.Plug : Gtk.Grid {
         show_all ();
 
         app_list.row_selected.connect (show_row);
+    }
+
+    [CCode (instance_pos = -1)]
+    private int sort_func (SidebarRow row1, SidebarRow row2) {
+        return row1.app.name.collate (row2.app.name);
     }
 
     private void show_row (Gtk.ListBoxRow? row) {
