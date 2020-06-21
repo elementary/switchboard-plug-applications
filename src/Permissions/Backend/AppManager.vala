@@ -65,38 +65,4 @@ public class Permissions.Backend.AppManager : GLib.Object {
             critical ("Unable to get installed flatpaks: %s", e.message);
         }
     }
-
-    public static GenericArray<string> get_permissions_for_path (string path) {
-        var array = new GenericArray<string> ();
-        const string GROUP = "Context";
-
-        try {
-            var key_file = new GLib.KeyFile ();
-            key_file.load_from_file (path, GLib.KeyFileFlags.NONE);
-
-            if (!key_file.has_group (GROUP)) {
-                return array;
-            }
-
-            var keys = key_file.get_keys (GROUP);
-
-            foreach (var key in keys ) {
-                var values = key_file.get_value (GROUP, key).split (";");
-                foreach (var value in values) {
-                    if (value.length == 0) {
-                        break;
-                    }
-
-                    array.add ("%s=%s".printf (key, value));
-                }
-            }
-        } catch (GLib.KeyFileError e) {
-            GLib.warning (e.message);
-        } catch (GLib.FileError e) {
-            GLib.warning (path);
-            GLib.warning (e.message);
-        }
-
-        return array;
-    }
 }

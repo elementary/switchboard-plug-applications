@@ -45,20 +45,7 @@ public class Permissions.Backend.App : GLib.Object {
                 var key_file = new GLib.KeyFile ();
                 key_file.load_from_bytes (metadata, GLib.KeyFileFlags.NONE);
 
-                if (key_file.has_group (GROUP)) {
-                    var keys = key_file.get_keys (GROUP);
-
-                    foreach (var key in keys ) {
-                        var values = key_file.get_value (GROUP, key).split (";");
-                        foreach (var value in values) {
-                            if (value.length == 0) {
-                                break;
-                            }
-
-                            permissions.add ("%s=%s".printf (key, value));
-                        }
-                    }
-                }
+                permissions = get_permissions_for_keyfile (key_file);
             } catch (GLib.KeyFileError e) {
                 critical (e.message);
             } catch (GLib.FileError e) {
@@ -68,7 +55,18 @@ public class Permissions.Backend.App : GLib.Object {
             critical ("Couldn't load metadata: %s", e.message);
         }
 
-        var overrides = AppManager.get_permissions_for_path (get_overrides_path ());
+        var overrides = new GenericArray<string> ();
+        try {
+            var key_file = new GLib.KeyFile ();
+            key_file.load_from_file (get_overrides_path (), GLib.KeyFileFlags.NONE);
+
+            overrides = get_permissions_for_keyfile (key_file);
+        } catch (GLib.KeyFileError e) {
+            critical (e.message);
+        } catch (GLib.FileError e) {
+            critical (e.message);
+        }
+
         var current_permissions = new GenericArray<string> ();
 
         for (var i = 0; i < permissions.length; i++) {
@@ -196,5 +194,32 @@ public class Permissions.Backend.App : GLib.Object {
         } catch (GLib.FileError e) {
             GLib.warning (e.message);
         }
+    }
+
+    private GenericArray<string> get_permissions_for_keyfile (GLib.KeyFile key_file) {
+        var permissions = new GenericArray<string> ();
+
+        if (!key_file.has_group (GROUP)) {
+            return permissions;
+        }
+
+        try {
+            var keys = key_file.get_keys (GROUP);
+
+            foreach (var key in keys ) {
+                var values = key_file.get_value (GROUP, key).split (";");
+                foreach (var value in values) {
+                    if (value.length == 0) {
+                        break;
+                    }
+
+                    permissions.add ("%s=%s".printf (key, value));
+                }
+            }
+        } catch (Error e) {
+            critical (e.message);
+        }
+
+        return permissions;
     }
 }
