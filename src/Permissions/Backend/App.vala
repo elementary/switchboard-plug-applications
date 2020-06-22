@@ -206,9 +206,9 @@ public class Permissions.Backend.App : GLib.Object {
         try {
             var keys = key_file.get_keys (GROUP);
 
-            foreach (var key in keys ) {
-                var values = key_file.get_value (GROUP, key).split (";");
-                foreach (var value in values) {
+            foreach (unowned string key in keys) {
+                var values = key_file.get_string_list (GROUP, key);
+                foreach (unowned value in values) {
                     if (value.length == 0) {
                         break;
                     }
