@@ -26,6 +26,8 @@ public class Permissions.Backend.App : GLib.Object {
     public string name { get; private set; }
     public GenericArray<Backend.PermissionSettings> settings;
 
+    private const string GROUP = "Context";
+
     public App (Flatpak.InstalledRef installed_ref) {
         Object (installed_ref: installed_ref);
     }
@@ -36,14 +38,35 @@ public class Permissions.Backend.App : GLib.Object {
 
         settings = new GenericArray<Backend.PermissionSettings> ();
 
-        var metadata_path = GLib.Path.build_path (
-            GLib.Path.DIR_SEPARATOR_S,
-            AppManager.get_bundle_path_for_app (id),
-            "metadata"
-        );
+        var permissions = new GenericArray<string> ();
+        try {
+            var metadata = installed_ref.load_metadata ();
+            try {
+                var key_file = new GLib.KeyFile ();
+                key_file.load_from_bytes (metadata, GLib.KeyFileFlags.NONE);
 
-        var permissions = AppManager.get_permissions_for_path (metadata_path);
-        var overrides = AppManager.get_permissions_for_path (get_overrides_path ());
+                permissions = get_permissions_for_keyfile (key_file);
+            } catch (GLib.KeyFileError e) {
+                critical (e.message);
+            } catch (GLib.FileError e) {
+                critical (e.message);
+            }
+        } catch (Error e) {
+            critical ("Couldn't load metadata: %s", e.message);
+        }
+
+        var overrides = new GenericArray<string> ();
+        try {
+            var key_file = new GLib.KeyFile ();
+            key_file.load_from_file (get_overrides_path (), GLib.KeyFileFlags.NONE);
+
+            overrides = get_permissions_for_keyfile (key_file);
+        } catch (GLib.KeyFileError e) {
+            critical (e.message);
+        } catch (GLib.FileError e) {
+            critical (e.message);
+        }
+
         var current_permissions = new GenericArray<string> ();
 
         for (var i = 0; i < permissions.length; i++) {
@@ -98,7 +121,7 @@ public class Permissions.Backend.App : GLib.Object {
     private string get_overrides_path () {
         return GLib.Path.build_path (
             GLib.Path.DIR_SEPARATOR_S,
-            AppManager.get_user_installation_path (),
+            AppManager.get_default ().user_installation_path,
             "overrides",
             id
         );
@@ -171,5 +194,32 @@ public class Permissions.Backend.App : GLib.Object {
         } catch (GLib.FileError e) {
             GLib.warning (e.message);
         }
+    }
+
+    private GenericArray<string> get_permissions_for_keyfile (GLib.KeyFile key_file) {
+        var permissions = new GenericArray<string> ();
+
+        if (!key_file.has_group (GROUP)) {
+            return permissions;
+        }
+
+        try {
+            var keys = key_file.get_keys (GROUP);
+
+            foreach (unowned string key in keys) {
+                var values = key_file.get_string_list (GROUP, key);
+                foreach (unowned string value in values) {
+                    if (value.length == 0) {
+                        break;
+                    }
+
+                    permissions.add ("%s=%s".printf (key, value));
+                }
+            }
+        } catch (Error e) {
+            critical (e.message);
+        }
+
+        return permissions;
     }
 }
