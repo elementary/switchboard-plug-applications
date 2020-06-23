@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: applications-plug\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-04 17:46+0000\n"
+"POT-Creation-Date: 2020-06-23 18:29+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,60 +22,67 @@ msgid "Applications"
 msgstr ""
 
 #: src/Plug.vala:41
-msgid "Manage default and startup applications"
+msgid "Manage default apps, startup apps, and app permissions"
 msgstr ""
 
-#: src/Plug.vala:58 src/Plug.vala:107 src/Plug.vala:108 src/Plug.vala:109
-#: src/Plug.vala:110 src/Plug.vala:111 src/Plug.vala:112 src/Plug.vala:113
-#: src/Plug.vala:114
-msgid "Default"
+#: src/Plug.vala:58
+msgid "Defaults"
 msgstr ""
 
-#: src/Plug.vala:59 src/Plug.vala:104
+#: src/Plug.vala:59 src/Plug.vala:105
 msgid "Startup"
 msgstr ""
 
-#: src/Plug.vala:60
+#: src/Plug.vala:60 src/Plug.vala:107
 msgid "Permissions"
 msgstr ""
 
-#: src/Plug.vala:105
+#: src/Plug.vala:106
 msgid "Default Apps"
 msgstr ""
 
-#: src/Plug.vala:106
-msgid "Default Application"
-msgstr ""
-
-#: src/Plug.vala:107
-msgid "Web Browser"
-msgstr ""
-
 #: src/Plug.vala:108
-msgid "Email Client"
+msgid "Sandboxing"
 msgstr ""
 
 #: src/Plug.vala:109
-msgid "Calendar"
+msgid "Confinement"
+msgstr ""
+
+#: src/Plug.vala:110 src/Plug.vala:111 src/Plug.vala:112 src/Plug.vala:113
+#: src/Plug.vala:114 src/Plug.vala:115 src/Plug.vala:116 src/Plug.vala:117
+msgid "Default"
 msgstr ""
 
 #: src/Plug.vala:110
-msgid "Video Player"
+msgid "Web Browser"
 msgstr ""
 
 #: src/Plug.vala:111
-msgid "Music Player"
+msgid "Email Client"
 msgstr ""
 
 #: src/Plug.vala:112
-msgid "Text Editor"
+msgid "Calendar"
 msgstr ""
 
 #: src/Plug.vala:113
-msgid "Image Viewer"
+msgid "Video Player"
 msgstr ""
 
 #: src/Plug.vala:114
+msgid "Music Player"
+msgstr ""
+
+#: src/Plug.vala:115
+msgid "Text Editor"
+msgstr ""
+
+#: src/Plug.vala:116
+msgid "Image Viewer"
+msgstr ""
+
+#: src/Plug.vala:117
 msgid "File Browser"
 msgstr ""
 
