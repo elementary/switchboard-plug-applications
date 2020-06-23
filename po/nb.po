@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-04 17:46+0000\n"
+"POT-Creation-Date: 2020-06-23 18:29+0000\n"
 "PO-Revision-Date: 2019-01-10 00:07+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål <https://weblate.elementary.io/projects/"
@@ -20,60 +20,71 @@ msgid "Applications"
 msgstr "Programmer"
 
 #: src/Plug.vala:41
-msgid "Manage default and startup applications"
+#, fuzzy
+#| msgid "Manage default and startup applications"
+msgid "Manage default apps, startup apps, and app permissions"
 msgstr "Administrer standard og oppstartsprogrammer"
 
-#: src/Plug.vala:58 src/Plug.vala:107 src/Plug.vala:108 src/Plug.vala:109
-#: src/Plug.vala:110 src/Plug.vala:111 src/Plug.vala:112 src/Plug.vala:113
-#: src/Plug.vala:114
-msgid "Default"
+#: src/Plug.vala:58
+#, fuzzy
+#| msgid "Default"
+msgid "Defaults"
 msgstr "Forvalg"
 
-#: src/Plug.vala:59 src/Plug.vala:104
+#: src/Plug.vala:59 src/Plug.vala:105
 msgid "Startup"
 msgstr "Oppstart"
 
-#: src/Plug.vala:60
+#: src/Plug.vala:60 src/Plug.vala:107
 msgid "Permissions"
 msgstr ""
 
-#: src/Plug.vala:105
+#: src/Plug.vala:106
 msgid "Default Apps"
 msgstr "Forvalgte programmer"
 
-#: src/Plug.vala:106
-msgid "Default Application"
-msgstr "Forvalgt program"
+#: src/Plug.vala:108
+msgid "Sandboxing"
+msgstr ""
 
-#: src/Plug.vala:107
+#: src/Plug.vala:109
+msgid "Confinement"
+msgstr ""
+
+#: src/Plug.vala:110 src/Plug.vala:111 src/Plug.vala:112 src/Plug.vala:113
+#: src/Plug.vala:114 src/Plug.vala:115 src/Plug.vala:116 src/Plug.vala:117
+msgid "Default"
+msgstr "Forvalg"
+
+#: src/Plug.vala:110
 msgid "Web Browser"
 msgstr "Nettleser"
 
-#: src/Plug.vala:108
+#: src/Plug.vala:111
 msgid "Email Client"
 msgstr "E-postklient"
 
-#: src/Plug.vala:109
+#: src/Plug.vala:112
 msgid "Calendar"
 msgstr "Kalender"
 
-#: src/Plug.vala:110
+#: src/Plug.vala:113
 msgid "Video Player"
 msgstr "Videoavspiller"
 
-#: src/Plug.vala:111
+#: src/Plug.vala:114
 msgid "Music Player"
 msgstr "Musikkavspiller"
 
-#: src/Plug.vala:112
+#: src/Plug.vala:115
 msgid "Text Editor"
 msgstr "Tekstbehandler"
 
-#: src/Plug.vala:113
+#: src/Plug.vala:116
 msgid "Image Viewer"
 msgstr "Bildefremviser"
 
-#: src/Plug.vala:114
+#: src/Plug.vala:117
 msgid "File Browser"
 msgstr "Filbehandler"
 
@@ -143,6 +154,9 @@ msgstr "Tekstbehandler:"
 #: src/Defaults/DefaultPlug.vala:83
 msgid "File Browser:"
 msgstr "Filbehandler:"
+
+#~ msgid "Default Application"
+#~ msgstr "Forvalgt program"
 
 #~ msgid "Default Web Browser"
 #~ msgstr "Forvalgt nettleser"

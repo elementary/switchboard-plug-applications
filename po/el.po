@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-04 17:46+0000\n"
+"POT-Creation-Date: 2020-06-23 18:29+0000\n"
 "PO-Revision-Date: 2017-02-09 12:44+0000\n"
 "Last-Translator: Christos Iatropoulos <Unknown>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,69 +18,80 @@ msgid "Applications"
 msgstr "Εφαρμογές"
 
 #: src/Plug.vala:41
-msgid "Manage default and startup applications"
+#, fuzzy
+#| msgid "Manage default and startup applications"
+msgid "Manage default apps, startup apps, and app permissions"
 msgstr ""
 "Διαχείριση προεπιλεγμένων εφαρμογών και εφαρμογών που εκτελούνται κατά την "
 "εκκίνηση"
 
-#: src/Plug.vala:58 src/Plug.vala:107 src/Plug.vala:108 src/Plug.vala:109
-#: src/Plug.vala:110 src/Plug.vala:111 src/Plug.vala:112 src/Plug.vala:113
-#: src/Plug.vala:114
-msgid "Default"
+#: src/Plug.vala:58
+#, fuzzy
+#| msgid "Default"
+msgid "Defaults"
 msgstr "Προεπιλογή"
 
-#: src/Plug.vala:59 src/Plug.vala:104
+#: src/Plug.vala:59 src/Plug.vala:105
 msgid "Startup"
 msgstr "Εκκίνηση"
 
-#: src/Plug.vala:60
+#: src/Plug.vala:60 src/Plug.vala:107
 msgid "Permissions"
 msgstr ""
 
-#: src/Plug.vala:105
+#: src/Plug.vala:106
 msgid "Default Apps"
 msgstr "Προεπιλεγμένες εφαρμογές"
 
-#: src/Plug.vala:106
-msgid "Default Application"
-msgstr "Προεπιλεγμένη εφαρμογή"
+#: src/Plug.vala:108
+msgid "Sandboxing"
+msgstr ""
 
-#: src/Plug.vala:107
+#: src/Plug.vala:109
+msgid "Confinement"
+msgstr ""
+
+#: src/Plug.vala:110 src/Plug.vala:111 src/Plug.vala:112 src/Plug.vala:113
+#: src/Plug.vala:114 src/Plug.vala:115 src/Plug.vala:116 src/Plug.vala:117
+msgid "Default"
+msgstr "Προεπιλογή"
+
+#: src/Plug.vala:110
 #, fuzzy
 msgid "Web Browser"
 msgstr "Περιηγητής ιστού:"
 
-#: src/Plug.vala:108
+#: src/Plug.vala:111
 #, fuzzy
 msgid "Email Client"
 msgstr "Πελάτης email:"
 
-#: src/Plug.vala:109
+#: src/Plug.vala:112
 #, fuzzy
 msgid "Calendar"
 msgstr "Ημερολόγιο:"
 
-#: src/Plug.vala:110
+#: src/Plug.vala:113
 #, fuzzy
 msgid "Video Player"
 msgstr "Αναπαραγωγέας βίντεο:"
 
-#: src/Plug.vala:111
+#: src/Plug.vala:114
 #, fuzzy
 msgid "Music Player"
 msgstr "Αναπαραγωγέας μουσικής:"
 
-#: src/Plug.vala:112
+#: src/Plug.vala:115
 #, fuzzy
 msgid "Text Editor"
 msgstr "Επεξεργαστής κειμένου:"
 
-#: src/Plug.vala:113
+#: src/Plug.vala:116
 #, fuzzy
 msgid "Image Viewer"
 msgstr "Προβολέας εικόνων:"
 
-#: src/Plug.vala:114
+#: src/Plug.vala:117
 #, fuzzy
 msgid "File Browser"
 msgstr "Περιηγητής αρχείων:"
@@ -151,6 +162,9 @@ msgstr "Επεξεργαστής κειμένου:"
 #: src/Defaults/DefaultPlug.vala:83
 msgid "File Browser:"
 msgstr "Περιηγητής αρχείων:"
+
+#~ msgid "Default Application"
+#~ msgstr "Προεπιλεγμένη εφαρμογή"
 
 #~ msgid "Default Web Browser"
 #~ msgstr "Προεπιλεγμένος περιηγητής ιστού"

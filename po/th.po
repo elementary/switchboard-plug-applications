@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-04 17:46+0000\n"
+"POT-Creation-Date: 2020-06-23 18:29+0000\n"
 "PO-Revision-Date: 2016-03-06 06:42+0000\n"
 "Last-Translator: Rockworld <sumoisrock@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,67 +18,78 @@ msgid "Applications"
 msgstr "โปรแกรม"
 
 #: src/Plug.vala:41
-msgid "Manage default and startup applications"
+#, fuzzy
+#| msgid "Manage default and startup applications"
+msgid "Manage default apps, startup apps, and app permissions"
 msgstr "จัดการโปรแกรมปริยายและเริ่มต้นระบบ"
 
-#: src/Plug.vala:58 src/Plug.vala:107 src/Plug.vala:108 src/Plug.vala:109
-#: src/Plug.vala:110 src/Plug.vala:111 src/Plug.vala:112 src/Plug.vala:113
-#: src/Plug.vala:114
-msgid "Default"
+#: src/Plug.vala:58
+#, fuzzy
+#| msgid "Default"
+msgid "Defaults"
 msgstr "ค่าเริ่มต้น"
 
-#: src/Plug.vala:59 src/Plug.vala:104
+#: src/Plug.vala:59 src/Plug.vala:105
 msgid "Startup"
 msgstr "เริ่มระบบ"
 
-#: src/Plug.vala:60
+#: src/Plug.vala:60 src/Plug.vala:107
 msgid "Permissions"
 msgstr ""
 
-#: src/Plug.vala:105
+#: src/Plug.vala:106
 msgid "Default Apps"
 msgstr ""
 
-#: src/Plug.vala:106
-msgid "Default Application"
+#: src/Plug.vala:108
+msgid "Sandboxing"
 msgstr ""
 
-#: src/Plug.vala:107
+#: src/Plug.vala:109
+msgid "Confinement"
+msgstr ""
+
+#: src/Plug.vala:110 src/Plug.vala:111 src/Plug.vala:112 src/Plug.vala:113
+#: src/Plug.vala:114 src/Plug.vala:115 src/Plug.vala:116 src/Plug.vala:117
+msgid "Default"
+msgstr "ค่าเริ่มต้น"
+
+#: src/Plug.vala:110
 #, fuzzy
 msgid "Web Browser"
 msgstr "เว็บเบราว์เซอร์:"
 
-#: src/Plug.vala:108
+#: src/Plug.vala:111
 #, fuzzy
 msgid "Email Client"
 msgstr "Email Client:"
 
-#: src/Plug.vala:109
+#: src/Plug.vala:112
 #, fuzzy
 msgid "Calendar"
 msgstr "ปฏิทิน:"
 
-#: src/Plug.vala:110
+#: src/Plug.vala:113
 #, fuzzy
 msgid "Video Player"
 msgstr "เครื่องเล่นวิดีโอ:"
 
-#: src/Plug.vala:111
+#: src/Plug.vala:114
 #, fuzzy
 msgid "Music Player"
 msgstr "เครื่องเล่นเพลง:"
 
-#: src/Plug.vala:112
+#: src/Plug.vala:115
 #, fuzzy
 msgid "Text Editor"
 msgstr "ตัวแก้ไขข้อความ:"
 
-#: src/Plug.vala:113
+#: src/Plug.vala:116
 #, fuzzy
 msgid "Image Viewer"
 msgstr "ตัวแสดงภาพ:"
 
-#: src/Plug.vala:114
+#: src/Plug.vala:117
 #, fuzzy
 msgid "File Browser"
 msgstr "ไฟล์เบราว์เซอร์:"

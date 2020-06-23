@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-04 17:46+0000\n"
+"POT-Creation-Date: 2020-06-23 18:29+0000\n"
 "PO-Revision-Date: 2020-06-05 17:03+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
@@ -20,61 +20,72 @@ msgid "Applications"
 msgstr "アプリケーション"
 
 #: src/Plug.vala:41
-msgid "Manage default and startup applications"
+#, fuzzy
+#| msgid "Manage default and startup applications"
+msgid "Manage default apps, startup apps, and app permissions"
 msgstr ""
 "デフォルトのアプリケーションと起動時に実行するアプリケーションを管理します"
 
-#: src/Plug.vala:58 src/Plug.vala:107 src/Plug.vala:108 src/Plug.vala:109
-#: src/Plug.vala:110 src/Plug.vala:111 src/Plug.vala:112 src/Plug.vala:113
-#: src/Plug.vala:114
-msgid "Default"
+#: src/Plug.vala:58
+#, fuzzy
+#| msgid "Default"
+msgid "Defaults"
 msgstr "デフォルト"
 
-#: src/Plug.vala:59 src/Plug.vala:104
+#: src/Plug.vala:59 src/Plug.vala:105
 msgid "Startup"
 msgstr "起動時に実行"
 
-#: src/Plug.vala:60
+#: src/Plug.vala:60 src/Plug.vala:107
 msgid "Permissions"
 msgstr "パーミッション"
 
-#: src/Plug.vala:105
+#: src/Plug.vala:106
 msgid "Default Apps"
 msgstr "デフォルトのアプリ"
 
-#: src/Plug.vala:106
-msgid "Default Application"
-msgstr "デフォルトのアプリケーション"
+#: src/Plug.vala:108
+msgid "Sandboxing"
+msgstr ""
 
-#: src/Plug.vala:107
+#: src/Plug.vala:109
+msgid "Confinement"
+msgstr ""
+
+#: src/Plug.vala:110 src/Plug.vala:111 src/Plug.vala:112 src/Plug.vala:113
+#: src/Plug.vala:114 src/Plug.vala:115 src/Plug.vala:116 src/Plug.vala:117
+msgid "Default"
+msgstr "デフォルト"
+
+#: src/Plug.vala:110
 msgid "Web Browser"
 msgstr "Web ブラウザー"
 
-#: src/Plug.vala:108
+#: src/Plug.vala:111
 msgid "Email Client"
 msgstr "メールクライアント"
 
-#: src/Plug.vala:109
+#: src/Plug.vala:112
 msgid "Calendar"
 msgstr "カレンダー"
 
-#: src/Plug.vala:110
+#: src/Plug.vala:113
 msgid "Video Player"
 msgstr "ビデオプレーヤー"
 
-#: src/Plug.vala:111
+#: src/Plug.vala:114
 msgid "Music Player"
 msgstr "ミュージックプレーヤー"
 
-#: src/Plug.vala:112
+#: src/Plug.vala:115
 msgid "Text Editor"
 msgstr "テキストエディター"
 
-#: src/Plug.vala:113
+#: src/Plug.vala:116
 msgid "Image Viewer"
 msgstr "画像ビューアー"
 
-#: src/Plug.vala:114
+#: src/Plug.vala:117
 msgid "File Browser"
 msgstr "ファイルブラウザー"
 
@@ -143,6 +154,9 @@ msgstr "テキストエディター:"
 #: src/Defaults/DefaultPlug.vala:83
 msgid "File Browser:"
 msgstr "ファイルブラウザー:"
+
+#~ msgid "Default Application"
+#~ msgstr "デフォルトのアプリケーション"
 
 #~ msgid "Default Web Browser"
 #~ msgstr "デフォルトの Web ブラウザー"

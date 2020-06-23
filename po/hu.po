@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-04 17:46+0000\n"
+"POT-Creation-Date: 2020-06-23 18:29+0000\n"
 "PO-Revision-Date: 2018-06-18 00:05+0000\n"
 "Last-Translator: Majer Tamás <mtamas@disroot.org>\n"
 "Language-Team: Hungarian <https://weblate.elementary.io/projects/switchboard/"
@@ -20,67 +20,78 @@ msgid "Applications"
 msgstr "Alkalmazások"
 
 #: src/Plug.vala:41
-msgid "Manage default and startup applications"
+#, fuzzy
+#| msgid "Manage default and startup applications"
+msgid "Manage default apps, startup apps, and app permissions"
 msgstr "Az alapértelmezett és az automatikusan induló alkalmazások beállítása"
 
-#: src/Plug.vala:58 src/Plug.vala:107 src/Plug.vala:108 src/Plug.vala:109
-#: src/Plug.vala:110 src/Plug.vala:111 src/Plug.vala:112 src/Plug.vala:113
-#: src/Plug.vala:114
-msgid "Default"
+#: src/Plug.vala:58
+#, fuzzy
+#| msgid "Default"
+msgid "Defaults"
 msgstr "Alapértelmezett"
 
-#: src/Plug.vala:59 src/Plug.vala:104
+#: src/Plug.vala:59 src/Plug.vala:105
 msgid "Startup"
 msgstr "Automatikusan induló"
 
-#: src/Plug.vala:60
+#: src/Plug.vala:60 src/Plug.vala:107
 msgid "Permissions"
 msgstr ""
 
-#: src/Plug.vala:105
+#: src/Plug.vala:106
 msgid "Default Apps"
 msgstr "Alapértelmezett alkalmazások"
 
-#: src/Plug.vala:106
-msgid "Default Application"
-msgstr "Alapértelmezett alkalmazás"
+#: src/Plug.vala:108
+msgid "Sandboxing"
+msgstr ""
 
-#: src/Plug.vala:107
+#: src/Plug.vala:109
+msgid "Confinement"
+msgstr ""
+
+#: src/Plug.vala:110 src/Plug.vala:111 src/Plug.vala:112 src/Plug.vala:113
+#: src/Plug.vala:114 src/Plug.vala:115 src/Plug.vala:116 src/Plug.vala:117
+msgid "Default"
+msgstr "Alapértelmezett"
+
+#: src/Plug.vala:110
 #, fuzzy
 msgid "Web Browser"
 msgstr "Böngésző:"
 
-#: src/Plug.vala:108
+#: src/Plug.vala:111
 #, fuzzy
 msgid "Email Client"
 msgstr "E-mail kliens:"
 
-#: src/Plug.vala:109
+#: src/Plug.vala:112
 #, fuzzy
 msgid "Calendar"
 msgstr "Naptár:"
 
-#: src/Plug.vala:110
+#: src/Plug.vala:113
 #, fuzzy
 msgid "Video Player"
 msgstr "Videólejátszó:"
 
-#: src/Plug.vala:111
+#: src/Plug.vala:114
 #, fuzzy
 msgid "Music Player"
 msgstr "Zenelejátszó:"
 
-#: src/Plug.vala:112
+#: src/Plug.vala:115
 #, fuzzy
 msgid "Text Editor"
 msgstr "Szövegszerkesztő:"
 
-#: src/Plug.vala:113
+#: src/Plug.vala:116
 #, fuzzy
 msgid "Image Viewer"
 msgstr "Képnézegető:"
 
-#: src/Plug.vala:114
+#: src/Plug.vala:117
 #, fuzzy
 msgid "File Browser"
 msgstr "Fájlkezelő:"
@@ -151,6 +162,9 @@ msgstr "Szövegszerkesztő:"
 #: src/Defaults/DefaultPlug.vala:83
 msgid "File Browser:"
 msgstr "Fájlkezelő:"
+
+#~ msgid "Default Application"
+#~ msgstr "Alapértelmezett alkalmazás"
 
 #~ msgid "Default Web Browser"
 #~ msgstr "Alapértelmezett böngésző"
