@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-06-23 18:29+0000\n"
-"PO-Revision-Date: 2020-06-08 10:11+0000\n"
+"PO-Revision-Date: 2020-06-27 19:12+0000\n"
 "Last-Translator: Jaimie85 <alsemgeest@gmail.com>\n"
 "Language-Team: Dutch <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-applications/nl/>\n"
@@ -20,16 +20,14 @@ msgid "Applications"
 msgstr "Toepassingen"
 
 #: src/Plug.vala:41
-#, fuzzy
-#| msgid "Manage default and startup applications"
 msgid "Manage default apps, startup apps, and app permissions"
-msgstr "Beheer standaardapplicaties en applicaties die automatisch opstarten"
+msgstr ""
+"Beheer standaardapplicaties, applicaties die automatisch opstarten en "
+"rechten van applicaties"
 
 #: src/Plug.vala:58
-#, fuzzy
-#| msgid "Default"
 msgid "Defaults"
-msgstr "Standaard"
+msgstr "Standaarden"
 
 #: src/Plug.vala:59 src/Plug.vala:105
 msgid "Startup"
@@ -45,11 +43,11 @@ msgstr "Standaardapplicaties"
 
 #: src/Plug.vala:108
 msgid "Sandboxing"
-msgstr ""
+msgstr "Sandboxes"
 
 #: src/Plug.vala:109
 msgid "Confinement"
-msgstr ""
+msgstr "Opsluiten"
 
 #: src/Plug.vala:110 src/Plug.vala:111 src/Plug.vala:112 src/Plug.vala:113
 #: src/Plug.vala:114 src/Plug.vala:115 src/Plug.vala:116 src/Plug.vala:117
