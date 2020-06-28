@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-04 17:46+0000\n"
+"POT-Creation-Date: 2020-06-23 18:29+0000\n"
 "PO-Revision-Date: 2015-11-14 14:23+0000\n"
 "Last-Translator: Beqa Arabuli <arabulibeqa@yahoo.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,67 +18,76 @@ msgid "Applications"
 msgstr "პროგრამები"
 
 #: src/Plug.vala:41
-msgid "Manage default and startup applications"
+msgid "Manage default apps, startup apps, and app permissions"
 msgstr ""
 
-#: src/Plug.vala:58 src/Plug.vala:107 src/Plug.vala:108 src/Plug.vala:109
-#: src/Plug.vala:110 src/Plug.vala:111 src/Plug.vala:112 src/Plug.vala:113
-#: src/Plug.vala:114
-msgid "Default"
+#: src/Plug.vala:58
+#, fuzzy
+#| msgid "Default"
+msgid "Defaults"
 msgstr "ნაგულისხმევი"
 
-#: src/Plug.vala:59 src/Plug.vala:104
+#: src/Plug.vala:59 src/Plug.vala:105
 msgid "Startup"
 msgstr "ჩართვის დროს"
 
-#: src/Plug.vala:60
+#: src/Plug.vala:60 src/Plug.vala:107
 msgid "Permissions"
 msgstr ""
 
-#: src/Plug.vala:105
+#: src/Plug.vala:106
 msgid "Default Apps"
 msgstr ""
 
-#: src/Plug.vala:106
-msgid "Default Application"
+#: src/Plug.vala:108
+msgid "Sandboxing"
 msgstr ""
 
-#: src/Plug.vala:107
+#: src/Plug.vala:109
+msgid "Confinement"
+msgstr ""
+
+#: src/Plug.vala:110 src/Plug.vala:111 src/Plug.vala:112 src/Plug.vala:113
+#: src/Plug.vala:114 src/Plug.vala:115 src/Plug.vala:116 src/Plug.vala:117
+msgid "Default"
+msgstr "ნაგულისხმევი"
+
+#: src/Plug.vala:110
 #, fuzzy
 msgid "Web Browser"
 msgstr "ვებ ბრაუზერი:"
 
-#: src/Plug.vala:108
+#: src/Plug.vala:111
 #, fuzzy
 msgid "Email Client"
 msgstr "ელ-ფოსტის კლიენტი:"
 
-#: src/Plug.vala:109
+#: src/Plug.vala:112
 #, fuzzy
 msgid "Calendar"
 msgstr "კალენდარი:"
 
-#: src/Plug.vala:110
+#: src/Plug.vala:113
 #, fuzzy
 msgid "Video Player"
 msgstr "ვიდეოს დამკვრელი:"
 
-#: src/Plug.vala:111
+#: src/Plug.vala:114
 #, fuzzy
 msgid "Music Player"
 msgstr "მუსიკის დამკვრელი:"
 
-#: src/Plug.vala:112
+#: src/Plug.vala:115
 #, fuzzy
 msgid "Text Editor"
 msgstr "ტექსტის რედაქტორი:"
 
-#: src/Plug.vala:113
+#: src/Plug.vala:116
 #, fuzzy
 msgid "Image Viewer"
 msgstr "სურათების მნახველი:"
 
-#: src/Plug.vala:114
+#: src/Plug.vala:117
 #, fuzzy
 msgid "File Browser"
 msgstr "ფაილების ბრაუზერი:"

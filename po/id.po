@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-04 17:46+0000\n"
+"POT-Creation-Date: 2020-06-23 18:29+0000\n"
 "PO-Revision-Date: 2018-10-20 20:56+0000\n"
 "Last-Translator: Eri Hidayat <eriwhidayat@gmail.com>\n"
 "Language-Team: Indonesian <https://weblate.elementary.io/projects/"
@@ -20,60 +20,71 @@ msgid "Applications"
 msgstr "Aplikasi"
 
 #: src/Plug.vala:41
-msgid "Manage default and startup applications"
+#, fuzzy
+#| msgid "Manage default and startup applications"
+msgid "Manage default apps, startup apps, and app permissions"
 msgstr "Kelola aplikasi bawaan dan awal mula"
 
-#: src/Plug.vala:58 src/Plug.vala:107 src/Plug.vala:108 src/Plug.vala:109
-#: src/Plug.vala:110 src/Plug.vala:111 src/Plug.vala:112 src/Plug.vala:113
-#: src/Plug.vala:114
-msgid "Default"
+#: src/Plug.vala:58
+#, fuzzy
+#| msgid "Default"
+msgid "Defaults"
 msgstr "Bawaan"
 
-#: src/Plug.vala:59 src/Plug.vala:104
+#: src/Plug.vala:59 src/Plug.vala:105
 msgid "Startup"
 msgstr "Mulai"
 
-#: src/Plug.vala:60
+#: src/Plug.vala:60 src/Plug.vala:107
 msgid "Permissions"
 msgstr ""
 
-#: src/Plug.vala:105
+#: src/Plug.vala:106
 msgid "Default Apps"
 msgstr "Aplikasi Default"
 
-#: src/Plug.vala:106
-msgid "Default Application"
-msgstr "Aplikasi Default"
+#: src/Plug.vala:108
+msgid "Sandboxing"
+msgstr ""
 
-#: src/Plug.vala:107
+#: src/Plug.vala:109
+msgid "Confinement"
+msgstr ""
+
+#: src/Plug.vala:110 src/Plug.vala:111 src/Plug.vala:112 src/Plug.vala:113
+#: src/Plug.vala:114 src/Plug.vala:115 src/Plug.vala:116 src/Plug.vala:117
+msgid "Default"
+msgstr "Bawaan"
+
+#: src/Plug.vala:110
 msgid "Web Browser"
 msgstr "Peramban Web"
 
-#: src/Plug.vala:108
+#: src/Plug.vala:111
 msgid "Email Client"
 msgstr "Klien Surel"
 
-#: src/Plug.vala:109
+#: src/Plug.vala:112
 msgid "Calendar"
 msgstr "Kalender"
 
-#: src/Plug.vala:110
+#: src/Plug.vala:113
 msgid "Video Player"
 msgstr "Pemutar Video"
 
-#: src/Plug.vala:111
+#: src/Plug.vala:114
 msgid "Music Player"
 msgstr "Pemutar Musik"
 
-#: src/Plug.vala:112
+#: src/Plug.vala:115
 msgid "Text Editor"
 msgstr "Penyunting Teks"
 
-#: src/Plug.vala:113
+#: src/Plug.vala:116
 msgid "Image Viewer"
 msgstr "Penampil Gambar"
 
-#: src/Plug.vala:114
+#: src/Plug.vala:117
 msgid "File Browser"
 msgstr "Peramban Berkas"
 
@@ -143,6 +154,9 @@ msgstr "Penyunting Teks:"
 #: src/Defaults/DefaultPlug.vala:83
 msgid "File Browser:"
 msgstr "Peramban Berkas:"
+
+#~ msgid "Default Application"
+#~ msgstr "Aplikasi Default"
 
 #~ msgid "Default Web Browser"
 #~ msgstr "Peramban Web Default"

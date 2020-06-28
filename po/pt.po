@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-04 17:46+0000\n"
-"PO-Revision-Date: 2020-06-08 10:11+0000\n"
+"POT-Creation-Date: 2020-06-23 18:29+0000\n"
+"PO-Revision-Date: 2020-06-26 09:12+0000\n"
 "Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
 "Language-Team: Portuguese <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-applications/pt/>\n"
@@ -20,60 +20,69 @@ msgid "Applications"
 msgstr "Aplicações"
 
 #: src/Plug.vala:41
-msgid "Manage default and startup applications"
-msgstr "Gerir aplicações predefinidas e de arranque"
+msgid "Manage default apps, startup apps, and app permissions"
+msgstr ""
+"Gerir aplicações predefinidas, aplicações de arranque e permissões de "
+"aplicações"
 
-#: src/Plug.vala:58 src/Plug.vala:107 src/Plug.vala:108 src/Plug.vala:109
-#: src/Plug.vala:110 src/Plug.vala:111 src/Plug.vala:112 src/Plug.vala:113
-#: src/Plug.vala:114
-msgid "Default"
-msgstr "Predefinição"
+#: src/Plug.vala:58
+msgid "Defaults"
+msgstr "Predefinições"
 
-#: src/Plug.vala:59 src/Plug.vala:104
+#: src/Plug.vala:59 src/Plug.vala:105
 msgid "Startup"
 msgstr "Arranque"
 
-#: src/Plug.vala:60
+#: src/Plug.vala:60 src/Plug.vala:107
 msgid "Permissions"
 msgstr "Permissões"
 
-#: src/Plug.vala:105
+#: src/Plug.vala:106
 msgid "Default Apps"
 msgstr "Aplicações predefinidas"
 
-#: src/Plug.vala:106
-msgid "Default Application"
-msgstr "Aplicação predefinida"
+#: src/Plug.vala:108
+msgid "Sandboxing"
+msgstr "Sandboxing"
 
-#: src/Plug.vala:107
+#: src/Plug.vala:109
+msgid "Confinement"
+msgstr "Confinamento"
+
+#: src/Plug.vala:110 src/Plug.vala:111 src/Plug.vala:112 src/Plug.vala:113
+#: src/Plug.vala:114 src/Plug.vala:115 src/Plug.vala:116 src/Plug.vala:117
+msgid "Default"
+msgstr "Predefinição"
+
+#: src/Plug.vala:110
 msgid "Web Browser"
 msgstr "Navegador de Internet"
 
-#: src/Plug.vala:108
+#: src/Plug.vala:111
 msgid "Email Client"
 msgstr "Correio Eletrónico"
 
-#: src/Plug.vala:109
+#: src/Plug.vala:112
 msgid "Calendar"
 msgstr "Calendário"
 
-#: src/Plug.vala:110
+#: src/Plug.vala:113
 msgid "Video Player"
 msgstr "Reprodutor de Vídeo"
 
-#: src/Plug.vala:111
+#: src/Plug.vala:114
 msgid "Music Player"
 msgstr "Reprodutor de Música"
 
-#: src/Plug.vala:112
+#: src/Plug.vala:115
 msgid "Text Editor"
 msgstr "Editor de Texto"
 
-#: src/Plug.vala:113
+#: src/Plug.vala:116
 msgid "Image Viewer"
 msgstr "Visualizador de Imagens"
 
-#: src/Plug.vala:114
+#: src/Plug.vala:117
 msgid "File Browser"
 msgstr "Explorador de Ficheiros"
 
@@ -143,6 +152,9 @@ msgstr "Editor de Texto:"
 #: src/Defaults/DefaultPlug.vala:83
 msgid "File Browser:"
 msgstr "Explorador de Ficheiros:"
+
+#~ msgid "Default Application"
+#~ msgstr "Aplicação predefinida"
 
 #~ msgid "Default Web Browser"
 #~ msgstr "Navegador Web Predefinido"

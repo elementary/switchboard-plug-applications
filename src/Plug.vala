@@ -38,7 +38,7 @@ public class ApplicationsPlug : Switchboard.Plug {
         Object (category: Category.PERSONAL,
                 code_name: "io.elementary.switchboard.applications",
                 display_name: _("Applications"),
-                description: _("Manage default and startup applications"),
+                description: _("Manage default apps, startup apps, and app permissions"),
                 icon: "preferences-desktop-applications",
                 supported_settings: settings);
     }
@@ -55,7 +55,7 @@ public class ApplicationsPlug : Switchboard.Plug {
         stack = new Gtk.Stack ();
         stack.expand = true;
 
-        stack.add_titled (defaults_plug, DEFAULTS, _("Default"));
+        stack.add_titled (defaults_plug, DEFAULTS, _("Defaults"));
         stack.add_titled (startup_plug, STARTUP, _("Startup"));
         stack.add_titled (permissions_plug, PERMISSIONS, _("Permissions"));
 
@@ -88,6 +88,7 @@ public class ApplicationsPlug : Switchboard.Plug {
         switch (location) {
             case STARTUP:
             case DEFAULTS:
+            case PERMISSIONS:
                 stack.set_visible_child_name (location);
                 break;
             default:
@@ -103,7 +104,9 @@ public class ApplicationsPlug : Switchboard.Plug {
         );
         search_results.set ("%s → %s".printf (display_name, _("Startup")), STARTUP);
         search_results.set ("%s → %s".printf (display_name, _("Default Apps")), DEFAULTS);
-        search_results.set ("%s → %s".printf (display_name, _("Default Application")), DEFAULTS);
+        search_results.set ("%s → %s".printf (display_name, _("Permissions")), PERMISSIONS);
+        search_results.set ("%s → %s".printf (display_name, _("Sandboxing")), PERMISSIONS);
+        search_results.set ("%s → %s".printf (display_name, _("Confinement")), PERMISSIONS);
         search_results.set ("%s → %s → %s".printf (display_name, _("Default"), _("Web Browser")), DEFAULTS);
         search_results.set ("%s → %s → %s".printf (display_name, _("Default"), _("Email Client")), DEFAULTS);
         search_results.set ("%s → %s → %s".printf (display_name, _("Default"), _("Calendar")), DEFAULTS);
