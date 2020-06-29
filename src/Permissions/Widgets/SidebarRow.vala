@@ -73,7 +73,8 @@ public class Permissions.SidebarRow : Gtk.ListBoxRow {
         }
 
         if (current_permissions.length > 0) {
-            var description = string.joinv (", ", current_permissions.data);
+            /// Translators: This is a delimeter that separates types of permissions in the sidebar description
+            var description = string.joinv (_(", "), current_permissions.data);
             description_label.label = "<small>%s</small>".printf (description);
             description_revealer.reveal_child = true;
             tooltip_text = description;
