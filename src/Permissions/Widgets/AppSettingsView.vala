@@ -142,6 +142,10 @@ public class Permissions.Widgets.AppSettingsView : Gtk.Grid {
         initialize_settings_view ();
 
         var app = Backend.AppManager.get_default ().apps.get (selected_app);
+        if (app == null) {
+            return;
+        }
+
         app.settings.foreach ((settings) => {
             foreach (unowned Gtk.Widget child in list_box.get_children ()) {
                 if (child is PermissionSettingsWidget) {
