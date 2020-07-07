@@ -51,7 +51,7 @@ public class Permissions.SidebarRow : Gtk.ListBoxRow {
         };
         grid.attach (image, 0, 0, 1, 2);
         grid.attach (title_label, 1, 0);
-        grid.attach (description_label);
+        grid.attach (description_label, 1, 1);
 
         add (grid);
 
