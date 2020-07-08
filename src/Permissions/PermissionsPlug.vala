@@ -22,6 +22,8 @@
 public class Permissions.Plug : Gtk.Grid {
     public static GLib.HashTable <unowned string, unowned string> permission_names { get; private set; }
 
+    private Widgets.AppSettingsView app_settings_view;
+
     static construct {
         permission_names = new GLib.HashTable <unowned string, unowned string> (str_hash, str_equal);
         permission_names["filesystems=home"] = _("Home Folder");
@@ -53,6 +55,8 @@ public class Permissions.Plug : Gtk.Grid {
             app_list.add (app_entry);
         });
 
+        app_settings_view = new Widgets.AppSettingsView ();
+
         List<weak Gtk.Widget> children = app_list.get_children ();
         if (children.length () > 0) {
             var row = ((Gtk.ListBoxRow)children.nth_data (0));
@@ -62,8 +66,6 @@ public class Permissions.Plug : Gtk.Grid {
         } else {
             app_list.set_placeholder (new Gtk.Label (_("No Flatpak apps installed")));
         }
-
-        var app_settings_view = new Widgets.AppSettingsView ();
 
         column_spacing = 12;
         margin = 12;
@@ -85,6 +87,6 @@ public class Permissions.Plug : Gtk.Grid {
             return;
         }
 
-        Permissions.Backend.AppManager.get_default ().selected_app = ((Permissions.SidebarRow)row).app.id;
+        app_settings_view.selected_app = ((Permissions.SidebarRow)row).app;
     }
 }
