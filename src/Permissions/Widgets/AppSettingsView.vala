@@ -20,11 +20,12 @@
 */
 
 public class Permissions.Widgets.AppSettingsView : Gtk.Grid {
+    public Backend.App? selected_app { get; set; default = null; }
+
     private Gtk.ListBox list_box;
-    private string selected_app;
 
     construct {
-        Backend.AppManager.get_default ().notify["selected-app"].connect (update_view);
+        notify["selected-app"].connect (update_view);
 
         var homefolder_widget = new PermissionSettingsWidget (
             Plug.permission_names["filesystems=home"],
@@ -119,8 +120,7 @@ public class Permissions.Widgets.AppSettingsView : Gtk.Grid {
         gpu_widget.changed_permission_settings.connect (change_permission_settings);
 
         reset_button.clicked.connect (() => {
-            var app = Backend.AppManager.get_default ().apps.get (selected_app);
-            app.reset_settings_to_standard ();
+            selected_app.reset_settings_to_standard ();
             update_view ();
         });
     }
@@ -138,15 +138,13 @@ public class Permissions.Widgets.AppSettingsView : Gtk.Grid {
     }
 
     private void update_view () {
-        selected_app = Backend.AppManager.get_default ().selected_app;
         initialize_settings_view ();
 
-        var app = Backend.AppManager.get_default ().apps.get (selected_app);
-        if (app == null) {
+        if (selected_app == null) {
             return;
         }
 
-        app.settings.foreach ((settings) => {
+        selected_app.settings.foreach ((settings) => {
             foreach (unowned Gtk.Widget child in list_box.get_children ()) {
                 if (child is PermissionSettingsWidget) {
                     var widget = (PermissionSettingsWidget) child;
@@ -162,15 +160,14 @@ public class Permissions.Widgets.AppSettingsView : Gtk.Grid {
     }
 
     private void change_permission_settings (Backend.PermissionSettings settings) {
-        var app = Backend.AppManager.get_default ().apps.get (selected_app);
-        for (var i = 0; i < app.settings.length; i++) {
-            var s = app.settings.get (i);
+        for (var i = 0; i < selected_app.settings.length; i++) {
+            var s = selected_app.settings.get (i);
             if (s.context == settings.context) {
                 s.enabled = settings.enabled;
                 break;
             }
         }
 
-        app.save_overrides ();
+        selected_app.save_overrides ();
     }
 }

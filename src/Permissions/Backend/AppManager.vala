@@ -20,7 +20,6 @@
 */
 
 public class Permissions.Backend.AppManager : GLib.Object {
-    public string selected_app { get; set; default = "";}
     public HashTable<string, Backend.App> apps { get; private set; }
     public string user_installation_path { get; private set; }
 
