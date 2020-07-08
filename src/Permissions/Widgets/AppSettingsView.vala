@@ -21,7 +21,8 @@
 
 public class Permissions.Widgets.AppSettingsView : Gtk.Grid {
     private Gtk.ListBox list_box;
-    private string selected_app;
+    private Gtk.Button reset_button;
+    private string selected_app { get; set; }
 
     construct {
         Backend.AppManager.get_default ().notify["selected-app"].connect (update_view);
@@ -100,7 +101,7 @@ public class Permissions.Widgets.AppSettingsView : Gtk.Grid {
         frame.get_style_context ().add_class (Gtk.STYLE_CLASS_VIEW);
         frame.add (scrolled_window);
 
-        var reset_button = new Gtk.Button.with_label (_("Reset to Defaults"));
+        reset_button = new Gtk.Button.with_label (_("Reset to Defaults"));
         reset_button.halign = Gtk.Align.END;
 
         row_spacing = 24;
@@ -145,6 +146,15 @@ public class Permissions.Widgets.AppSettingsView : Gtk.Grid {
 
         var app = Backend.AppManager.get_default ().apps.get (selected_app);
         if (app == null) {
+            foreach (unowned Gtk.Widget child in list_box.get_children ()) {
+                if (child is PermissionSettingsWidget) {
+                    var widget = (PermissionSettingsWidget) child;
+                    widget.sensitive = false;
+                    widget.do_notify = true;
+                }
+            }
+
+            reset_button.sensitive = false;
             return;
         }
 
@@ -153,6 +163,7 @@ public class Permissions.Widgets.AppSettingsView : Gtk.Grid {
                 if (child is PermissionSettingsWidget) {
                     var widget = (PermissionSettingsWidget) child;
                     if (widget.settings.context == settings.context) {
+                        widget.sensitive = true;
                         widget.do_notify = false;
                         widget.settings.standard = settings.standard;
                         widget.settings.enabled = settings.enabled;
@@ -160,6 +171,8 @@ public class Permissions.Widgets.AppSettingsView : Gtk.Grid {
                     }
                 }
             }
+
+            reset_button.sensitive = true;
         });
     }
 
