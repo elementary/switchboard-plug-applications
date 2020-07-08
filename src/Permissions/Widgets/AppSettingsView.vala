@@ -120,8 +120,10 @@ public class Permissions.Widgets.AppSettingsView : Gtk.Grid {
 
         reset_button.clicked.connect (() => {
             var app = Backend.AppManager.get_default ().apps.get (selected_app);
-            app.reset_settings_to_standard ();
-            update_view ();
+            if (selected_app != null) {
+                app.reset_settings_to_standard ();
+                update_view ();
+            }
         });
     }
 
@@ -163,6 +165,10 @@ public class Permissions.Widgets.AppSettingsView : Gtk.Grid {
 
     private void change_permission_settings (Backend.PermissionSettings settings) {
         var app = Backend.AppManager.get_default ().apps.get (selected_app);
+        if (app == null) {
+            return;
+        }
+
         for (var i = 0; i < app.settings.length; i++) {
             var s = app.settings.get (i);
             if (s.context == settings.context) {
