@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-23 18:29+0000\n"
+"POT-Creation-Date: 2020-07-08 19:03+0000\n"
 "PO-Revision-Date: 2020-06-26 09:12+0000\n"
 "Last-Translator: David M <rbndavid@gmail.com>\n"
 "Language-Team: Catalan <https://l10n.elementary.io/projects/switchboard/"
@@ -15,73 +15,73 @@ msgstr ""
 "X-Generator: Weblate 3.9.1\n"
 "X-Launchpad-Export-Date: 2016-12-03 05:18+0000\n"
 
-#: src/Plug.vala:40
-msgid "Applications"
-msgstr "Aplicacions"
-
 #: src/Plug.vala:41
 msgid "Manage default apps, startup apps, and app permissions"
 msgstr ""
 "Gestioneu les aplicacions per defecte, les d'inici i els permisos que tenen."
 
-#: src/Plug.vala:58
+#: src/Plug.vala:42
+msgid "Applications"
+msgstr "Aplicacions"
+
+#: src/Plug.vala:53
 msgid "Defaults"
 msgstr "Per defecte"
 
-#: src/Plug.vala:59 src/Plug.vala:105
+#: src/Plug.vala:54 src/Plug.vala:99
 msgid "Startup"
 msgstr "Inici"
 
-#: src/Plug.vala:60 src/Plug.vala:107
+#: src/Plug.vala:55 src/Plug.vala:101
 msgid "Permissions"
 msgstr "Permisos"
 
-#: src/Plug.vala:106
+#: src/Plug.vala:100
 msgid "Default Apps"
 msgstr "Aplicacions per defecte"
 
-#: src/Plug.vala:108
+#: src/Plug.vala:102
 msgid "Sandboxing"
 msgstr "Caixa de sorra"
 
-#: src/Plug.vala:109
+#: src/Plug.vala:103
 msgid "Confinement"
 msgstr "Confinament"
 
-#: src/Plug.vala:110 src/Plug.vala:111 src/Plug.vala:112 src/Plug.vala:113
-#: src/Plug.vala:114 src/Plug.vala:115 src/Plug.vala:116 src/Plug.vala:117
+#: src/Plug.vala:104 src/Plug.vala:105 src/Plug.vala:106 src/Plug.vala:107
+#: src/Plug.vala:108 src/Plug.vala:109 src/Plug.vala:110 src/Plug.vala:111
 msgid "Default"
 msgstr "Per defecte"
 
-#: src/Plug.vala:110
+#: src/Plug.vala:104
 msgid "Web Browser"
 msgstr "Navegador web"
 
-#: src/Plug.vala:111
+#: src/Plug.vala:105
 msgid "Email Client"
 msgstr "Client de correu"
 
-#: src/Plug.vala:112
+#: src/Plug.vala:106
 msgid "Calendar"
 msgstr "Calendari"
 
-#: src/Plug.vala:113
+#: src/Plug.vala:107
 msgid "Video Player"
 msgstr "Reproductor de vídeo"
 
-#: src/Plug.vala:114
+#: src/Plug.vala:108
 msgid "Music Player"
 msgstr "Reproductor de música"
 
-#: src/Plug.vala:115
+#: src/Plug.vala:109
 msgid "Text Editor"
 msgstr "Editor de textos"
 
-#: src/Plug.vala:116
+#: src/Plug.vala:110
 msgid "Image Viewer"
 msgstr "Visualitzador d'imatges"
 
-#: src/Plug.vala:117
+#: src/Plug.vala:111
 msgid "File Browser"
 msgstr "Navegador de fitxers"
 
