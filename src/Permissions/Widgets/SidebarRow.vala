@@ -22,6 +22,7 @@
 public class Permissions.SidebarRow : Gtk.ListBoxRow {
     public Permissions.Backend.App app { get; construct; }
     private Gtk.Label description_label;
+    private Gtk.Revealer description_revealer;
 
     public SidebarRow (Permissions.Backend.App app) {
         Object (app: app);
@@ -45,13 +46,16 @@ public class Permissions.SidebarRow : Gtk.ListBoxRow {
             xalign = 0
         };
 
+        description_revealer = new Gtk.Revealer ();
+        description_revealer.add (description_label);
+
         var grid = new Gtk.Grid () {
             column_spacing = 6,
             margin = 6
         };
         grid.attach (image, 0, 0, 1, 2);
         grid.attach (title_label, 1, 0);
-        grid.attach (description_label, 1, 1);
+        grid.attach (description_revealer, 1, 1);
 
         add (grid);
 
@@ -71,8 +75,15 @@ public class Permissions.SidebarRow : Gtk.ListBoxRow {
             }
         }
 
-        var description = string.joinv (", ", current_permissions.data);
-        description_label.label = "<small>%s</small>".printf (description);
-        set_tooltip_text (description);
+        if (current_permissions.length > 0) {
+            /// Translators: This is a delimiter that separates types of permissions in the sidebar description
+            var description = string.joinv (_(", "), current_permissions.data);
+            description_label.label = "<small>%s</small>".printf (description);
+            description_revealer.reveal_child = true;
+            tooltip_text = description;
+        } else {
+            description_revealer.reveal_child = false;
+            tooltip_text = null;
+        }
     }
 }
