@@ -59,6 +59,8 @@ public class Permissions.Plug : Gtk.Grid {
 
             app_list.select_row (row);
             show_row (row);
+        } else {
+            app_list.set_placeholder (new Gtk.Label (_("No Flatpak apps installed")));
         }
 
         var app_settings_view = new Widgets.AppSettingsView ();
