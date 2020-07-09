@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-23 18:29+0000\n"
+"POT-Creation-Date: 2020-07-08 19:03+0000\n"
 "PO-Revision-Date: 2014-11-06 08:14+0000\n"
 "Last-Translator: Vahan Harutyunyan <Unknown>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -13,81 +13,81 @@ msgstr ""
 "X-Launchpad-Export-Date: 2016-11-26 05:52+0000\n"
 "X-Generator: Launchpad (build 18282)\n"
 
-#: src/Plug.vala:40
-msgid "Applications"
-msgstr "Ծրագրեր"
-
 #: src/Plug.vala:41
 msgid "Manage default apps, startup apps, and app permissions"
 msgstr ""
 
-#: src/Plug.vala:58
+#: src/Plug.vala:42
+msgid "Applications"
+msgstr "Ծրագրեր"
+
+#: src/Plug.vala:53
 #, fuzzy
 #| msgid "Default"
 msgid "Defaults"
 msgstr "Նախնական"
 
-#: src/Plug.vala:59 src/Plug.vala:105
+#: src/Plug.vala:54 src/Plug.vala:99
 msgid "Startup"
 msgstr "Մեկնարկ"
 
-#: src/Plug.vala:60 src/Plug.vala:107
+#: src/Plug.vala:55 src/Plug.vala:101
 msgid "Permissions"
 msgstr ""
 
-#: src/Plug.vala:106
+#: src/Plug.vala:100
 msgid "Default Apps"
 msgstr ""
 
-#: src/Plug.vala:108
+#: src/Plug.vala:102
 msgid "Sandboxing"
 msgstr ""
 
-#: src/Plug.vala:109
+#: src/Plug.vala:103
 msgid "Confinement"
 msgstr ""
 
-#: src/Plug.vala:110 src/Plug.vala:111 src/Plug.vala:112 src/Plug.vala:113
-#: src/Plug.vala:114 src/Plug.vala:115 src/Plug.vala:116 src/Plug.vala:117
+#: src/Plug.vala:104 src/Plug.vala:105 src/Plug.vala:106 src/Plug.vala:107
+#: src/Plug.vala:108 src/Plug.vala:109 src/Plug.vala:110 src/Plug.vala:111
 msgid "Default"
 msgstr "Նախնական"
 
-#: src/Plug.vala:110
+#: src/Plug.vala:104
 #, fuzzy
 msgid "Web Browser"
 msgstr "Վեբ բրոուզեր"
 
-#: src/Plug.vala:111
+#: src/Plug.vala:105
 #, fuzzy
 msgid "Email Client"
 msgstr "Էլ. փոստի կլիենտ՝"
 
-#: src/Plug.vala:112
+#: src/Plug.vala:106
 #, fuzzy
 msgid "Calendar"
 msgstr "Օրացույց"
 
-#: src/Plug.vala:113
+#: src/Plug.vala:107
 #, fuzzy
 msgid "Video Player"
 msgstr "Վիդեո նվագարկիչ՝"
 
-#: src/Plug.vala:114
+#: src/Plug.vala:108
 #, fuzzy
 msgid "Music Player"
 msgstr "Նվագարկիչ"
 
-#: src/Plug.vala:115
+#: src/Plug.vala:109
 #, fuzzy
 msgid "Text Editor"
 msgstr "Տեքստային խմբագրիչ"
 
-#: src/Plug.vala:116
+#: src/Plug.vala:110
 #, fuzzy
 msgid "Image Viewer"
 msgstr "Պատկերներ ցուցադրող"
 
-#: src/Plug.vala:117
+#: src/Plug.vala:111
 #, fuzzy
 msgid "File Browser"
 msgstr "Ֆայլային բրուզեր"
