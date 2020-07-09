@@ -37,9 +37,29 @@ public class Permissions.Plug : Gtk.Grid {
     }
 
     construct {
+        var placeholder_title = new Gtk.Label (_("No Flatpak apps installed")) {
+            xalign = 0
+        };
+        placeholder_title.get_style_context ().add_class (Granite.STYLE_CLASS_H3_LABEL);
+
+        var placeholder_description = new Gtk.Label (_("Apps whose permissions can be adjusted will automatically appear here when installed")) {
+            wrap = true,
+            xalign = 0
+        };
+
+        var placeholder = new Gtk.Grid () {
+            margin = 12,
+            row_spacing = 3,
+            valign = Gtk.Align.CENTER
+        };
+        placeholder.attach (placeholder_title, 0, 0);
+        placeholder.attach (placeholder_description, 0, 1);
+        placeholder.show_all ();
+
         var app_list = new Gtk.ListBox ();
         app_list.vexpand = true;
         app_list.selection_mode = Gtk.SelectionMode.SINGLE;
+        app_list.set_placeholder (placeholder);
         app_list.set_sort_func ((Gtk.ListBoxSortFunc) sort_func);
 
         var scrolled_window = new Gtk.ScrolledWindow (null, null);
@@ -63,8 +83,6 @@ public class Permissions.Plug : Gtk.Grid {
 
             app_list.select_row (row);
             show_row (row);
-        } else {
-            app_list.set_placeholder (new Gtk.Label (_("No Flatpak apps installed")));
         }
 
         column_spacing = 12;
