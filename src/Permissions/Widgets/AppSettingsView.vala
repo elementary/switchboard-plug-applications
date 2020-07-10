@@ -144,14 +144,7 @@ public class Permissions.Widgets.AppSettingsView : Gtk.Grid {
         initialize_settings_view ();
 
         if (selected_app == null) {
-            foreach (unowned Gtk.Widget child in list_box.get_children ()) {
-                if (child is PermissionSettingsWidget) {
-                    var widget = (PermissionSettingsWidget) child;
-                    widget.sensitive = false;
-                    widget.do_notify = true;
-                }
-            }
-
+            list_box.sensitive = false;
             reset_button.sensitive = false;
             return;
         }
@@ -161,7 +154,6 @@ public class Permissions.Widgets.AppSettingsView : Gtk.Grid {
                 if (child is PermissionSettingsWidget) {
                     var widget = (PermissionSettingsWidget) child;
                     if (widget.settings.context == settings.context) {
-                        widget.sensitive = true;
                         widget.do_notify = false;
                         widget.settings.standard = settings.standard;
                         widget.settings.enabled = settings.enabled;
@@ -170,6 +162,7 @@ public class Permissions.Widgets.AppSettingsView : Gtk.Grid {
                 }
             }
 
+            list_box.sensitive = true;
             reset_button.sensitive = true;
         });
     }
