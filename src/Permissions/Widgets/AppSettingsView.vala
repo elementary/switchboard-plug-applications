@@ -23,6 +23,7 @@ public class Permissions.Widgets.AppSettingsView : Gtk.Grid {
     public Backend.App? selected_app { get; set; default = null; }
 
     private Gtk.ListBox list_box;
+    private Gtk.Button reset_button;
 
     construct {
         notify["selected-app"].connect (update_view);
@@ -101,7 +102,7 @@ public class Permissions.Widgets.AppSettingsView : Gtk.Grid {
         frame.get_style_context ().add_class (Gtk.STYLE_CLASS_VIEW);
         frame.add (scrolled_window);
 
-        var reset_button = new Gtk.Button.with_label (_("Reset to Defaults"));
+        reset_button = new Gtk.Button.with_label (_("Reset to Defaults"));
         reset_button.halign = Gtk.Align.END;
 
         row_spacing = 24;
@@ -120,8 +121,10 @@ public class Permissions.Widgets.AppSettingsView : Gtk.Grid {
         gpu_widget.changed_permission_settings.connect (change_permission_settings);
 
         reset_button.clicked.connect (() => {
-            selected_app.reset_settings_to_standard ();
-            update_view ();
+            if (selected_app != null) {
+                selected_app.reset_settings_to_standard ();
+                update_view ();
+            }
         });
     }
 
@@ -141,6 +144,8 @@ public class Permissions.Widgets.AppSettingsView : Gtk.Grid {
         initialize_settings_view ();
 
         if (selected_app == null) {
+            list_box.sensitive = false;
+            reset_button.sensitive = false;
             return;
         }
 
@@ -156,10 +161,17 @@ public class Permissions.Widgets.AppSettingsView : Gtk.Grid {
                     }
                 }
             }
+
+            list_box.sensitive = true;
+            reset_button.sensitive = true;
         });
     }
 
     private void change_permission_settings (Backend.PermissionSettings settings) {
+        if (selected_app == null) {
+            return;
+        }
+
         for (var i = 0; i < selected_app.settings.length; i++) {
             var s = selected_app.settings.get (i);
             if (s.context == settings.context) {
