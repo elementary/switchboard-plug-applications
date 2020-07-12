@@ -49,7 +49,7 @@ public class Permissions.Backend.App : GLib.Object {
             } catch (GLib.KeyFileError e) {
                 debug ("Couldn't create permissions keyfile: %s", e.message);
             } catch (GLib.FileError e) {
-                debug ("Couldn't load permissions file: %s",e.message);
+                debug ("Couldn't load permissions file: %s", e.message);
             }
         } catch (Error e) {
             critical ("Couldn't load metadata: %s", e.message);
