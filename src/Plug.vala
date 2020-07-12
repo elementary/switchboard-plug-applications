@@ -21,7 +21,6 @@
 */
 
 public class ApplicationsPlug : Switchboard.Plug {
-
     private const string DEFAULTS = "defaults";
     private const string STARTUP = "startup";
     private const string PERMISSIONS = "permissions";
@@ -35,53 +34,48 @@ public class ApplicationsPlug : Switchboard.Plug {
         settings.set ("applications/defaults", DEFAULTS);
         settings.set ("applications/startup", STARTUP);
         settings.set ("applications/permissions", PERMISSIONS);
-        Object (category: Category.PERSONAL,
-                code_name: "io.elementary.switchboard.applications",
-                display_name: _("Applications"),
-                description: _("Manage default apps, startup apps, and app permissions"),
-                icon: "preferences-desktop-applications",
-                supported_settings: settings);
+
+        Object (
+            category: Category.PERSONAL,
+            code_name: "io.elementary.switchboard.applications",
+            description: _("Manage default apps, startup apps, and app permissions"),
+            display_name: _("Applications"),
+            icon: "preferences-desktop-applications",
+            supported_settings: settings
+        );
     }
 
     public override Gtk.Widget get_widget () {
-        if (grid != null) {
-            return grid;
+        if (grid == null) {
+            stack = new Gtk.Stack () {
+                expand = true
+            };
+            stack.add_titled (new Defaults.Plug (), DEFAULTS, _("Defaults"));
+            stack.add_titled (new Startup.Plug (), STARTUP, _("Startup"));
+            stack.add_titled (new Permissions.Plug (), PERMISSIONS, _("Permissions"));
+
+            var stack_switcher = new Gtk.StackSwitcher () {
+                halign = Gtk.Align.CENTER,
+                homogeneous = true,
+                margin_top = 12,
+                stack = stack
+            };
+
+            grid = new Gtk.Grid () {
+                row_spacing = 24
+            };
+            grid.attach (stack_switcher, 0, 0);
+            grid.attach (stack, 0, 1);
+            grid.show_all ();
         }
 
-        var defaults_plug = new Defaults.Plug ();
-        var startup_plug = new Startup.Plug ();
-        var permissions_plug = new Permissions.Plug ();
-
-        stack = new Gtk.Stack ();
-        stack.expand = true;
-
-        stack.add_titled (defaults_plug, DEFAULTS, _("Defaults"));
-        stack.add_titled (startup_plug, STARTUP, _("Startup"));
-        stack.add_titled (permissions_plug, PERMISSIONS, _("Permissions"));
-
-        var stack_switcher = new Gtk.StackSwitcher ();
-        stack_switcher.halign = Gtk.Align.CENTER;
-        stack_switcher.homogeneous = true;
-        stack_switcher.margin_top = 12;
-        stack_switcher.stack = stack;
-
-        grid = new Gtk.Grid ();
-        grid.margin_top = 1;
-        grid.row_spacing = 24;
-
-        grid.attach (stack_switcher, 0, 0, 1, 1);
-        grid.attach (stack, 0, 1, 1, 1);
-
-        grid.show_all ();
         return grid;
     }
 
     public override void shown () {
-
     }
 
     public override void hidden () {
-
     }
 
     public override void search_callback (string location) {
@@ -121,7 +115,5 @@ public class ApplicationsPlug : Switchboard.Plug {
 }
 
 public Switchboard.Plug get_plug (Module module) {
-    debug ("Activating Applications plug");
-    var plug = new ApplicationsPlug ();
-    return plug;
+    return new ApplicationsPlug ();
 }

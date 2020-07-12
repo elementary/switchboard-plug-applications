@@ -22,6 +22,8 @@
 public class Permissions.Plug : Gtk.Grid {
     public static GLib.HashTable <unowned string, unowned string> permission_names { get; private set; }
 
+    private Widgets.AppSettingsView app_settings_view;
+
     static construct {
         permission_names = new GLib.HashTable <unowned string, unowned string> (str_hash, str_equal);
         permission_names["filesystems=home"] = _("Home Folder");
@@ -35,9 +37,29 @@ public class Permissions.Plug : Gtk.Grid {
     }
 
     construct {
+        var placeholder_title = new Gtk.Label (_("No Flatpak apps installed")) {
+            xalign = 0
+        };
+        placeholder_title.get_style_context ().add_class (Granite.STYLE_CLASS_H3_LABEL);
+
+        var placeholder_description = new Gtk.Label (_("Apps whose permissions can be adjusted will automatically appear here when installed")) {
+            wrap = true,
+            xalign = 0
+        };
+
+        var placeholder = new Gtk.Grid () {
+            margin = 12,
+            row_spacing = 3,
+            valign = Gtk.Align.CENTER
+        };
+        placeholder.attach (placeholder_title, 0, 0);
+        placeholder.attach (placeholder_description, 0, 1);
+        placeholder.show_all ();
+
         var app_list = new Gtk.ListBox ();
         app_list.vexpand = true;
         app_list.selection_mode = Gtk.SelectionMode.SINGLE;
+        app_list.set_placeholder (placeholder);
         app_list.set_sort_func ((Gtk.ListBoxSortFunc) sort_func);
 
         var scrolled_window = new Gtk.ScrolledWindow (null, null);
@@ -53,6 +75,8 @@ public class Permissions.Plug : Gtk.Grid {
             app_list.add (app_entry);
         });
 
+        app_settings_view = new Widgets.AppSettingsView ();
+
         List<weak Gtk.Widget> children = app_list.get_children ();
         if (children.length () > 0) {
             var row = ((Gtk.ListBoxRow)children.nth_data (0));
@@ -60,8 +84,6 @@ public class Permissions.Plug : Gtk.Grid {
             app_list.select_row (row);
             show_row (row);
         }
-
-        var app_settings_view = new Widgets.AppSettingsView ();
 
         column_spacing = 12;
         margin = 12;
@@ -83,6 +105,6 @@ public class Permissions.Plug : Gtk.Grid {
             return;
         }
 
-        Permissions.Backend.AppManager.get_default ().selected_app = ((Permissions.SidebarRow)row).app.id;
+        app_settings_view.selected_app = ((Permissions.SidebarRow)row).app;
     }
 }

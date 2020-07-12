@@ -22,35 +22,42 @@
 public class Permissions.SidebarRow : Gtk.ListBoxRow {
     public Permissions.Backend.App app { get; construct; }
     private Gtk.Label description_label;
+    private Gtk.Revealer description_revealer;
 
     public SidebarRow (Permissions.Backend.App app) {
         Object (app: app);
     }
 
     construct {
-        var image = new Gtk.Image.from_gicon (new ThemedIcon (app.id), Gtk.IconSize.DND);
+        var image = new Gtk.Image.from_icon_name (app.id, Gtk.IconSize.DND);
         image.pixel_size = 32;
 
-        var title_label = new Gtk.Label (app.name);
+        var title_label = new Gtk.Label (app.name) {
+            ellipsize = Pango.EllipsizeMode.END,
+            valign = Gtk.Align.END,
+            xalign = 0
+        };
         title_label.get_style_context ().add_class (Granite.STYLE_CLASS_H3_LABEL);
-        title_label.ellipsize = Pango.EllipsizeMode.END;
-        title_label.xalign = 0;
-        title_label.valign = Gtk.Align.END;
 
-        description_label = new Gtk.Label ("");
-        description_label.use_markup = true;
-        description_label.ellipsize = Pango.EllipsizeMode.END;
-        description_label.xalign = 0;
-        description_label.valign = Gtk.Align.START;
+        description_label = new Gtk.Label ("") {
+            ellipsize = Pango.EllipsizeMode.END,
+            use_markup = true,
+            valign = Gtk.Align.START,
+            xalign = 0
+        };
 
-        var grid = new Gtk.Grid ();
-        grid.margin = 6;
-        grid.column_spacing = 6;
+        description_revealer = new Gtk.Revealer ();
+        description_revealer.add (description_label);
+
+        var grid = new Gtk.Grid () {
+            column_spacing = 6,
+            margin = 6
+        };
         grid.attach (image, 0, 0, 1, 2);
         grid.attach (title_label, 1, 0);
-        grid.attach (description_label, 1, 1);
+        grid.attach (description_revealer, 1, 1);
 
-        this.add (grid);
+        add (grid);
 
         for (var i = 0; i < app.settings.length; i++) {
             app.settings.get (i).notify.connect (update_description);
@@ -68,8 +75,15 @@ public class Permissions.SidebarRow : Gtk.ListBoxRow {
             }
         }
 
-        var description = string.joinv (", ", current_permissions.data);
-        description_label.label = "<small>%s</small>".printf (description);
-        set_tooltip_text (description);
+        if (current_permissions.length > 0) {
+            /// Translators: This is a delimiter that separates types of permissions in the sidebar description
+            var description = string.joinv (_(", "), current_permissions.data);
+            description_label.label = "<small>%s</small>".printf (description);
+            description_revealer.reveal_child = true;
+            tooltip_text = description;
+        } else {
+            description_revealer.reveal_child = false;
+            tooltip_text = null;
+        }
     }
 }
