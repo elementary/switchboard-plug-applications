@@ -47,9 +47,9 @@ public class Permissions.Backend.App : GLib.Object {
 
                 permissions = get_permissions_for_keyfile (key_file);
             } catch (GLib.KeyFileError e) {
-                critical (e.message);
+                debug ("Couldn't create permissions keyfile: %s", e.message);
             } catch (GLib.FileError e) {
-                critical (e.message);
+                debug ("Couldn't load permissions file: %s", e.message);
             }
         } catch (Error e) {
             critical ("Couldn't load metadata: %s", e.message);
@@ -62,9 +62,9 @@ public class Permissions.Backend.App : GLib.Object {
 
             overrides = get_permissions_for_keyfile (key_file);
         } catch (GLib.KeyFileError e) {
-            critical (e.message);
+            debug ("Couldn't create overrides keyfile: %s", e.message);
         } catch (GLib.FileError e) {
-            critical (e.message);
+            debug ("Couldn't load overrides file: %s", e.message);
         }
 
         var current_permissions = new GenericArray<string> ();
@@ -119,10 +119,24 @@ public class Permissions.Backend.App : GLib.Object {
     }
 
     private string get_overrides_path () {
-        return GLib.Path.build_path (
+        var overrides_folder_path = GLib.Path.build_path (
             GLib.Path.DIR_SEPARATOR_S,
             AppManager.get_default ().user_installation_path,
-            "overrides",
+            "overrides"
+        );
+
+        var overrides_folder = File.new_for_path (overrides_folder_path);
+        if (!overrides_folder.query_exists ()) {
+            try {
+                overrides_folder.make_directory ();
+            } catch (Error e) {
+                critical ("Couldn't create overrides folder: %s", e.message);
+            }
+        }
+
+        return GLib.Path.build_path (
+            GLib.Path.DIR_SEPARATOR_S,
+            overrides_folder_path,
             id
         );
     }
@@ -192,7 +206,7 @@ public class Permissions.Backend.App : GLib.Object {
 
             key_file.save_to_file (get_overrides_path ());
         } catch (GLib.FileError e) {
-            GLib.warning (e.message);
+            debug (e.message);
         }
     }
 
