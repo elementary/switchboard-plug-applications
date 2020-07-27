@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-07-08 19:03+0000\n"
-"PO-Revision-Date: 2019-05-13 23:02+0000\n"
-"Last-Translator: Ozgur Baskin <bebeto_baskin@yahoo.com>\n"
+"PO-Revision-Date: 2020-07-28 10:12+0000\n"
+"Last-Translator: Sinan Decron <intenfinitia@gmail.com>\n"
 "Language-Team: Turkish <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-applications/tr/>\n"
 "Language: tr\n"
@@ -12,24 +12,22 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.6.1\n"
+"X-Generator: Weblate 3.9.1\n"
 "X-Launchpad-Export-Date: 2017-01-01 05:40+0000\n"
 
 #: src/Plug.vala:41
-#, fuzzy
-#| msgid "Manage default and startup applications"
 msgid "Manage default apps, startup apps, and app permissions"
-msgstr "Varsayılan ve başlangıç uygulamalarını yönetin"
+msgstr ""
+"Varsayılan uygulamaları, başlangıç uygulamalarını ve uygulama izinlerini "
+"yönetin"
 
 #: src/Plug.vala:42
 msgid "Applications"
 msgstr "Uygulamalar"
 
 #: src/Plug.vala:53
-#, fuzzy
-#| msgid "Default"
 msgid "Defaults"
-msgstr "Varsayılan"
+msgstr "Varsayılanlar"
 
 #: src/Plug.vala:54 src/Plug.vala:99
 msgid "Startup"
@@ -37,7 +35,7 @@ msgstr "Başlangıç"
 
 #: src/Plug.vala:55 src/Plug.vala:101
 msgid "Permissions"
-msgstr ""
+msgstr "İzinler"
 
 #: src/Plug.vala:100
 msgid "Default Apps"
@@ -45,11 +43,11 @@ msgstr "Varsayılan Uygulamalar"
 
 #: src/Plug.vala:102
 msgid "Sandboxing"
-msgstr ""
+msgstr "Sanallaştırılma"
 
 #: src/Plug.vala:103
 msgid "Confinement"
-msgstr ""
+msgstr "Sınırlandırmak"
 
 #: src/Plug.vala:104 src/Plug.vala:105 src/Plug.vala:106 src/Plug.vala:107
 #: src/Plug.vala:108 src/Plug.vala:109 src/Plug.vala:110 src/Plug.vala:111
