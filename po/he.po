@@ -3,33 +3,29 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-07-08 19:03+0000\n"
-"PO-Revision-Date: 2018-10-16 08:20+0000\n"
+"PO-Revision-Date: 2020-07-31 03:13+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
-"Language-Team: Hebrew <https://weblate.elementary.io/projects/switchboard/"
+"Language-Team: Hebrew <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-applications/he/>\n"
 "Language: he\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Weblate 3.0.1\n"
+"X-Generator: Weblate 3.9.1\n"
 "X-Launchpad-Export-Date: 2016-11-26 05:52+0000\n"
 
 #: src/Plug.vala:41
-#, fuzzy
-#| msgid "Manage default and startup applications"
 msgid "Manage default apps, startup apps, and app permissions"
-msgstr "ניהול בררות המחדל ויישומי ההפעלה"
+msgstr "ניהול יישומי בררת מחדל, יישומי הפעלה והרשאות יישומים"
 
 #: src/Plug.vala:42
 msgid "Applications"
 msgstr "יישומים"
 
 #: src/Plug.vala:53
-#, fuzzy
-#| msgid "Default"
 msgid "Defaults"
-msgstr "בררת מחדל"
+msgstr "בררות מחדל"
 
 #: src/Plug.vala:54 src/Plug.vala:99
 msgid "Startup"
@@ -37,7 +33,7 @@ msgstr "הפעלה"
 
 #: src/Plug.vala:55 src/Plug.vala:101
 msgid "Permissions"
-msgstr ""
+msgstr "הרשאות"
 
 #: src/Plug.vala:100
 msgid "Default Apps"
