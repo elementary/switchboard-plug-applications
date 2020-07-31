@@ -26,7 +26,8 @@
  */
 public class Startup.Backend.KeyFile : GLib.Object {
 
-    const string FALLBACK_ICON = "application-default-icon";
+    public const string FALLBACK_ICON = "application-default-icon";
+    public const string FALLBACK_CUSTOM_NAME = N_("Custom Command");
 
     const string KEY_NAME = KeyFileDesktop.KEY_NAME;
     const string KEY_COMMAND = KeyFileDesktop.KEY_EXEC;
@@ -38,6 +39,7 @@ public class Startup.Backend.KeyFile : GLib.Object {
     const string KEY_HIDDEN = KeyFileDesktop.KEY_HIDDEN;
     const string KEY_NOT_SHOW_IN = KeyFileDesktop.KEY_NOT_SHOW_IN;
     const string KEY_ONLY_SHOW_IN = KeyFileDesktop.KEY_ONLY_SHOW_IN;
+    const string KEY_CUSTOM = "Custom-command";
 
     public string name {
         owned get { return get_key (KEY_NAME); }
@@ -62,6 +64,11 @@ public class Startup.Backend.KeyFile : GLib.Object {
     public bool active {
         get { return get_bool_key (KEY_ACTIVE); }
         set { set_bool_key (KEY_ACTIVE, value); }
+    }
+
+    public bool is_custom {
+        get { return get_bool_key (KEY_CUSTOM); }
+        set { set_bool_key (KEY_CUSTOM, value); }
     }
 
     public bool show {
@@ -95,11 +102,12 @@ public class Startup.Backend.KeyFile : GLib.Object {
         keyfile = new GLib.KeyFile ();
 
         this.path = create_path_for_custom_command ();
-        this.name = _("Custom Command");
+        this.name = _(FALLBACK_CUSTOM_NAME);
         this.comment = command;
         this.command = command;
         this.icon = FALLBACK_ICON;
         this.active = true;
+        this.is_custom = true;
 
         set_key (KEY_TYPE, KeyFileDesktop.TYPE_APPLICATION);
 
@@ -132,12 +140,14 @@ public class Startup.Backend.KeyFile : GLib.Object {
             warning (e.message);
         }
 
+warning ("-- Saving to %s --", path);
         message ("-- Saving to %s --", path);
         message ("Name:    %s", name);
         message ("Comment: %s", comment);
         message ("Command: %s", command);
         message ("Icon:    %s", icon);
         message ("Active:  %s", active.to_string ());
+        message ("Is Custom:  %s", is_custom.to_string ());
         message ("-- Done --");
     }
 
@@ -261,7 +271,9 @@ public class Startup.Backend.KeyFile : GLib.Object {
             comment = comment,
             icon = icon,
             active = active,
-            path = path
+            path = path,
+            is_custom = is_custom,
+            custom_exec = is_custom ? command : ""
         };
     }
 }

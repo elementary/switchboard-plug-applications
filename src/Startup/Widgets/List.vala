@@ -85,6 +85,15 @@ public class Startup.Widgets.List : Gtk.ListBox {
         app_removed (((AppRow)row).app_info.path);
     }
 
+    public void edit_selected_row () {
+        var row = get_selected_row ();
+        if (row == null) {
+            return;
+        }
+
+        ((AppRow)row).start_editing ();
+    }
+
     public void add_app (Entity.AppInfo app_info) {
         if (app_info.path in paths)
             return;

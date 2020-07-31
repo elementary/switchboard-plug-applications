@@ -26,4 +26,6 @@ public struct Startup.Entity.AppInfo {
     public string icon;
     public bool active;
     public string path;
+    public bool is_custom;
+    public string custom_exec;
 }

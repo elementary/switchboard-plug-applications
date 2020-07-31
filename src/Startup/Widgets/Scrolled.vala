@@ -28,6 +28,7 @@ public class Startup.Widgets.Scrolled : Gtk.Grid {
     public signal void app_added_from_command (string command);
     public signal void app_removed (string path);
     public signal void app_active_changed (string path, bool active);
+    public signal void app_info_changed (string path, Entity.AppInfo new_info);
 
     public List list { get; private set; }
     public AppChooser app_chooser;
@@ -57,8 +58,16 @@ public class Startup.Widgets.Scrolled : Gtk.Grid {
         remove_button.clicked.connect (() => {list.remove_selected_app ();});
         remove_button.sensitive = false;
 
+        var edit_button = new Gtk.Button.from_icon_name ("edit-symbolic", Gtk.IconSize.BUTTON) {
+            tooltip_text = _("Edit the selected Custom Command"),
+            sensitive = false
+        };
+
+        edit_button.clicked.connect (() => {list.edit_selected_row ();});
+
         actionbar.add (add_button);
         actionbar.add (remove_button);
+        actionbar.add (edit_button);
 
         var grid = new Gtk.Grid ();
         grid.attach (scrolled, 0, 0, 1, 1);
@@ -73,11 +82,16 @@ public class Startup.Widgets.Scrolled : Gtk.Grid {
         app_chooser.modal = true;
 
         app_chooser.app_chosen.connect ((p) => app_added (p));
+        /* Chain signal up to Controller */
         app_chooser.custom_command_chosen.connect ((c) => app_added_from_command (c));
 
         list.app_removed.connect ((p) => app_removed (p));
         list.app_added.connect ((p) => app_added (p));
-        list.row_selected.connect ((row) => {remove_button.sensitive = (row != null);});
+        list.row_selected.connect ((row) => {
+            remove_button.sensitive = (row != null);
+            edit_button.sensitive = ((AppRow)row).can_edit;
+        });
+
         list.app_active_changed.connect ((p, a) => app_active_changed (p, a));
     }
 

@@ -53,7 +53,8 @@ public class Startup.Controller : Object {
         view.app_added.connect (create_file);
         view.app_added_from_command.connect (create_file_from_command);
         view.app_removed.connect (delete_file);
-        view.app_active_changed.connect (edit_file);
+        view.app_active_changed.connect (edit_file_active);
+        view.app_info_changed.connect (edit_file_info);
     }
 
     void add_app_to_view (string path) {
@@ -75,9 +76,17 @@ public class Startup.Controller : Object {
         key_file.delete_file ();
     }
 
-    void edit_file (string path, bool active) {
+    void edit_file_active (string path, bool active) {
         var key_file = get_key_file_from_path (path);
         key_file.active = active;
+        key_file.write_to_file ();
+    }
+
+    void edit_file_info (string path, Entity.AppInfo new_info) {
+        var key_file = get_key_file_from_path (path);
+        key_file.name = new_info.name;
+        key_file.comment = new_info.comment;
+        key_file.command = new_info.custom_exec;
         key_file.write_to_file ();
     }
 

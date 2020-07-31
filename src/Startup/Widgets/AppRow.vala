@@ -25,6 +25,9 @@ public class Startup.Widgets.AppRow : Gtk.ListBoxRow {
     public Entity.AppInfo app_info { get; construct; }
 
     private Gtk.Switch active_switch;
+    private Gtk.Button edit_button;
+
+    public bool can_edit { get; set; default = false; }
 
     public AppRow (Entity.AppInfo app_info) {
         Object (app_info: app_info);
@@ -41,6 +44,10 @@ public class Startup.Widgets.AppRow : Gtk.ListBoxRow {
         app_comment.ellipsize = Pango.EllipsizeMode.END;
         app_comment.hexpand = true;
         app_comment.xalign = 0;
+
+        can_edit = app_info.is_custom ||
+                   app_info.name == Backend.KeyFile.FALLBACK_CUSTOM_NAME ||
+                   app_info.icon == Backend.KeyFile.FALLBACK_ICON; //FIXME is there a better way of identifying pre-existing custom commands?
 
         active_switch = new Gtk.Switch ();
         active_switch.tooltip_text = _("Launch %s on startup").printf (app_info.name);
@@ -63,5 +70,8 @@ public class Startup.Widgets.AppRow : Gtk.ListBoxRow {
 
     private void on_active_changed () {
         active_changed (active_switch.active);
+    }
+
+    public void start_editing () {
     }
 }
