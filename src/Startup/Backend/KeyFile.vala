@@ -140,7 +140,6 @@ public class Startup.Backend.KeyFile : GLib.Object {
             warning (e.message);
         }
 
-warning ("-- Saving to %s --", path);
         message ("-- Saving to %s --", path);
         message ("Name:    %s", name);
         message ("Comment: %s", comment);
@@ -157,6 +156,10 @@ warning ("-- Saving to %s --", path);
         } catch (Error e) {
             warning ("Failed to load contents of file '%s'", path);
             warning (e.message);
+        }
+
+        if (path.contains ("custom")) { //Deal with pre-existing custom commands
+            is_custom = true;
         }
     }
 

@@ -73,5 +73,11 @@ public class Startup.Widgets.AppRow : Gtk.ListBoxRow {
     }
 
     public void start_editing () {
+        var popover = new CustomCommandEditor (this, app_info);
+        popover.changed.connect (() => {
+warning ("info changed");
+        });
+
+        popover.popup ();
     }
 }

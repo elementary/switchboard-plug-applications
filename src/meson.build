@@ -13,6 +13,7 @@ plug_files = files(
     'Startup/Widgets/AppRow.vala',
     'Startup/Widgets/AppChooserRow.vala',
     'Startup/Widgets/AppChooser.vala',
+    'Startup/Widgets/CustomCommandEditor.vala',
     'Defaults/Utils.vala',
     'Defaults/DefaultPlug.vala',
     'Permissions/Backend/App.vala',
