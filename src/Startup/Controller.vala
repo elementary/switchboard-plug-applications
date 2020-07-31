@@ -82,8 +82,8 @@ public class Startup.Controller : Object {
         key_file.write_to_file ();
     }
 
-    void edit_file_info (string path, Entity.AppInfo new_info) {
-        var key_file = get_key_file_from_path (path);
+    void edit_file_info (Entity.AppInfo new_info) {
+        var key_file = get_key_file_from_path (new_info.path);
         key_file.name = new_info.name;
         key_file.comment = new_info.comment;
         key_file.command = new_info.custom_exec;

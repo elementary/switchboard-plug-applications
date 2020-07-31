@@ -23,6 +23,7 @@ public class Startup.Widgets.List : Gtk.ListBox {
     public signal void app_added (string path);
     public signal void app_removed (string path);
     public signal void app_active_changed (string path, bool active);
+    public signal void app_info_changed (Entity.AppInfo new_info);
 
     enum Target {
         URI_LIST
@@ -94,6 +95,10 @@ public class Startup.Widgets.List : Gtk.ListBox {
         ((AppRow)row).start_editing ();
     }
 
+    private void on_app_info_changed (AppRow row, Entity.AppInfo new_info) {
+        app_info_changed (new_info);
+    }
+
     public void add_app (Entity.AppInfo app_info) {
         if (app_info.path in paths)
             return;
@@ -106,6 +111,8 @@ public class Startup.Widgets.List : Gtk.ListBox {
         row.active_changed.connect ((active) => {
             app_active_changed (row.app_info.path, active);
         });
+
+        row.app_info_changed.connect (on_app_info_changed);
     }
 
     void on_drag_data_received (Gdk.DragContext context, int x, int y,

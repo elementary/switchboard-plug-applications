@@ -56,7 +56,11 @@ public class Startup.Widgets.CustomCommandEditor : Gtk.Popover {
                 name = name_entry.text,
                 comment = comment_entry.text,
                 icon = icon_entry.text,
-                custom_exec = command_entry.text
+                custom_exec = command_entry.text,
+                // Cannot be editied
+                active = old_info.active,
+                path = old_info.path,
+                is_custom = old_info.is_custom
             };
 
             changed (new_info);

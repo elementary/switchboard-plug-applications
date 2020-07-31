@@ -28,7 +28,7 @@ public class Startup.Widgets.Scrolled : Gtk.Grid {
     public signal void app_added_from_command (string command);
     public signal void app_removed (string path);
     public signal void app_active_changed (string path, bool active);
-    public signal void app_info_changed (string path, Entity.AppInfo new_info);
+    public signal void app_info_changed (Entity.AppInfo new_info);
 
     public List list { get; private set; }
     public AppChooser app_chooser;
@@ -93,6 +93,7 @@ public class Startup.Widgets.Scrolled : Gtk.Grid {
         });
 
         list.app_active_changed.connect ((p, a) => app_active_changed (p, a));
+        list.app_info_changed.connect ((ai) => app_info_changed (ai));
     }
 
     public void add_app (Entity.AppInfo app_info) {

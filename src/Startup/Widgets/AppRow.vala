@@ -21,11 +21,16 @@
 
 public class Startup.Widgets.AppRow : Gtk.ListBoxRow {
     public signal void active_changed (bool active);
+    public signal void app_info_changed (Entity.AppInfo new_info);
 
     public Entity.AppInfo app_info { get; construct; }
 
     private Gtk.Switch active_switch;
     private Gtk.Button edit_button;
+
+    public Gtk.Image image { get; set construct; }
+    public Gtk.Label app_name { get; set construct; }
+    public Gtk.Label app_comment { get; set construct; }
 
     public bool can_edit { get; set; default = false; }
 
@@ -34,13 +39,13 @@ public class Startup.Widgets.AppRow : Gtk.ListBoxRow {
     }
 
     construct {
-        var image = Utils.create_icon (app_info, Gtk.IconSize.DIALOG);
+        image = Utils.create_icon (app_info, Gtk.IconSize.DIALOG);
 
-        var app_name = new Gtk.Label (app_info.name);
+        app_name = new Gtk.Label (app_info.name);
         app_name.get_style_context ().add_class ("h3");
         app_name.xalign = 0;
 
-        var app_comment = new Gtk.Label (app_info.comment);
+        app_comment = new Gtk.Label (app_info.comment);
         app_comment.ellipsize = Pango.EllipsizeMode.END;
         app_comment.hexpand = true;
         app_comment.xalign = 0;
@@ -72,10 +77,17 @@ public class Startup.Widgets.AppRow : Gtk.ListBoxRow {
         active_changed (active_switch.active);
     }
 
+    private void on_app_info_changed (Entity.AppInfo new_info) {
+        image.set_from_icon_name (new_info.icon, (Gtk.IconSize)(image.icon_size));
+        app_name.label = new_info.name;
+        app_comment.label = new_info.comment;
+        app_info_changed (new_info);
+    }
+
     public void start_editing () {
         var popover = new CustomCommandEditor (this, app_info);
-        popover.changed.connect (() => {
-warning ("info changed");
+        popover.changed.connect ((new_info) => {
+            app_info_changed (new_info);
         });
 
         popover.popup ();
