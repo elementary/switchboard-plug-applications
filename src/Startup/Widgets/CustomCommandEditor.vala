@@ -42,16 +42,16 @@ public class Startup.Widgets.CustomCommandEditor : Gtk.Popover {
     }
 
     construct {
-        name_entry = new InfoEntry (old_info.name)  {
+        name_entry = new InfoEntry (old_info.name) {
             placeholder_text = _("Enter an optional name for the command (default: 'Custom Command')"),
             hexpand = true
         };
 
-        comment_entry = new InfoEntry (old_info.comment)  {
+        comment_entry = new InfoEntry (old_info.comment) {
             placeholder_text = _("Enter an optional description (default: <commandline>)")
         };
 
-        icon_entry = new InfoEntry (old_info.icon)  {
+        icon_entry = new InfoEntry (old_info.icon) {
             placeholder_text = _("Enter an optional icon name (default: 'application-default-icon')")
         };
 
