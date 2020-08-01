@@ -68,7 +68,12 @@ public class Startup.Widgets.List : Gtk.ListBox {
     }
 
     public void reload_app_from_path (string path) {
-        // TODO
+        foreach (var app_row in get_children ()) {
+            if (((AppRow) app_row).app_info.path == path) {
+                var key_file = Backend.KeyFileFactory.get_or_create (path);
+                ((AppRow) app_row).update_row_from_info (key_file.create_app_info ());
+            }
+        }
     }
 
     public void remove_app_from_path (string path) {

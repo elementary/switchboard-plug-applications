@@ -77,11 +77,10 @@ public class Startup.Widgets.AppRow : Gtk.ListBoxRow {
         active_changed (active_switch.active);
     }
 
-    private void on_app_info_changed (Entity.AppInfo new_info) {
+    public void update_row_from_info (Entity.AppInfo new_info) {
         image.set_from_icon_name (new_info.icon, (Gtk.IconSize)(image.icon_size));
         app_name.label = new_info.name;
         app_comment.label = new_info.comment;
-        app_info_changed (new_info);
     }
 
     public void start_editing () {

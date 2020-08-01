@@ -49,7 +49,7 @@ public class Startup.Backend.Monitor : Object, Port.Monitor {
     void on_change_occurred (File file, File? dest, FileMonitorEvent event) {
         var path = file.get_path ();
 
-        if (Utils.is_desktop_file (path) == false) {
+        if (!Utils.is_desktop_file (path)) {
             return;
         }
 
@@ -61,7 +61,12 @@ public class Startup.Backend.Monitor : Object, Port.Monitor {
                 file_deleted (path);
                 break;
             case FileMonitorEvent.CHANGED:
+            case FileMonitorEvent.CHANGES_DONE_HINT:
                 file_edited (path);
+                break;
+            default:
+                //TODO Check whether any other events need to be handled
+                warning ("File %s unhandled event %s", path, event.to_string ());
                 break;
         }
     }

@@ -86,6 +86,7 @@ public class Startup.Controller : Object {
         var key_file = get_key_file_from_path (new_info.path);
         key_file.name = new_info.name;
         key_file.comment = new_info.comment;
+        key_file.icon = new_info.icon;
         key_file.command = new_info.custom_exec;
         key_file.write_to_file ();
     }

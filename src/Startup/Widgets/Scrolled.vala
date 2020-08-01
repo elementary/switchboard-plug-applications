@@ -89,7 +89,7 @@ public class Startup.Widgets.Scrolled : Gtk.Grid {
         list.app_added.connect ((p) => app_added (p));
         list.row_selected.connect ((row) => {
             remove_button.sensitive = (row != null);
-            edit_button.sensitive = ((AppRow)row).can_edit;
+            edit_button.sensitive = row != null && ((AppRow)row).can_edit;
         });
 
         list.app_active_changed.connect ((p, a) => app_active_changed (p, a));
