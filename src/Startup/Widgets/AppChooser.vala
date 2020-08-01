@@ -23,10 +23,10 @@ public class Startup.Widgets.AppChooser : Gtk.Popover {
 
     Gtk.ListBox list;
     Gtk.SearchEntry search_entry;
-    Gtk.Entry custom_entry;
+    Gtk.Button custom_button;
 
     public signal void app_chosen (string path);
-    public signal void custom_command_chosen (string command);
+    public signal void custom_command_chosen ();
 
     public AppChooser (Gtk.Widget widget) {
         Object (relative_to: widget);
@@ -49,12 +49,7 @@ public class Startup.Widgets.AppChooser : Gtk.Popover {
         list.set_filter_func (filter_function);
         scrolled.add (list);
 
-        custom_entry = new Gtk.Entry ();
-        custom_entry.margin_end = 12;
-        custom_entry.margin_start = 12;
-        custom_entry.placeholder_text = _("Type in a custom command");
-        custom_entry.primary_icon_name = "utilities-terminal-symbolic";
-        custom_entry.primary_icon_activatable = false;
+        custom_button = new Gtk.Button.with_label (_("Custom Command"));
 
         var grid = new Gtk.Grid ();
         grid.margin_bottom = 12;
@@ -62,14 +57,14 @@ public class Startup.Widgets.AppChooser : Gtk.Popover {
         grid.row_spacing = 6;
         grid.attach (search_entry, 0, 0, 1, 1);
         grid.attach (scrolled, 0, 1, 1, 1);
-        grid.attach (custom_entry, 0, 2, 1, 1);
+        grid.attach (custom_button, 0, 2, 1, 1);
 
         add (grid);
 
         search_entry.grab_focus ();
         list.row_activated.connect (on_app_selected);
         search_entry.search_changed.connect (apply_filter);
-        custom_entry.activate.connect (on_custom_command_entered);
+        custom_button.clicked.connect (on_custom_button_clicked);
     }
 
     public void init_list (Gee.Collection <Entity.AppInfo?> app_infos) {
@@ -109,8 +104,8 @@ public class Startup.Widgets.AppChooser : Gtk.Popover {
         list.set_filter_func (filter_function);
     }
 
-    void on_custom_command_entered () {
-        custom_command_chosen (custom_entry.text);
+    void on_custom_button_clicked () {
+        custom_command_chosen ();
         hide ();
     }
 }

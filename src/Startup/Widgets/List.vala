@@ -91,25 +91,20 @@ public class Startup.Widgets.List : Gtk.ListBox {
         app_removed (((AppRow)row).app_info.path);
     }
 
-    public void edit_selected_row () {
-        var row = get_selected_row ();
-        if (row == null) {
-            return;
-        }
-
-        ((AppRow)row).start_editing ();
-    }
-
     private void on_app_info_changed (AppRow row, Entity.AppInfo new_info) {
         app_info_changed (new_info);
     }
 
-    public void add_app (Entity.AppInfo app_info) {
-        if (app_info.path in paths)
-            return;
+    public AppRow? add_app (Entity.AppInfo app_info) {
+        if (app_info.path in paths) {
+            return null;
+        }
+
         var row = new AppRow (app_info);
         add (row);
         connect_row_signals (row);
+
+        return row;
     }
 
     void connect_row_signals (AppRow row) {

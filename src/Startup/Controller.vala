@@ -83,11 +83,14 @@ public class Startup.Controller : Object {
     }
 
     void edit_file_info (Entity.AppInfo new_info) {
-        var key_file = get_key_file_from_path (new_info.path);
-        key_file.name = new_info.name;
-        key_file.comment = new_info.comment;
-        key_file.icon = new_info.icon;
+        var key_file = Backend.KeyFileFactory.get_or_create (new_info.path);
+        key_file.name = new_info.name == "" ? Backend.KeyFile.FALLBACK_CUSTOM_NAME : new_info.name;
+        key_file.comment = new_info.comment == "" ? new_info.custom_exec : new_info.comment;
+        key_file.icon = new_info.icon == "" ? Backend.KeyFile.FALLBACK_ICON : new_info.icon;
         key_file.command = new_info.custom_exec;
+        key_file.is_custom = true;
+        key_file.active = new_info.active;
+
         key_file.write_to_file ();
     }
 
@@ -99,10 +102,10 @@ public class Startup.Controller : Object {
         view.add_app (app_info);
     }
 
-    void create_file_from_command (string command) {
-        var key_file = new Backend.KeyFile.from_command (command);
+    void create_file_from_command () {
+        var key_file = new Backend.KeyFile.custom ();
         var app_info = key_file.create_app_info ();
-        view.add_app (app_info);
+        view.add_app (app_info, true);
     }
 
     static Backend.KeyFile get_key_file_from_path (string path) {

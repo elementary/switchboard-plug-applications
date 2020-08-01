@@ -24,15 +24,13 @@ public class Startup.Widgets.AppRow : Gtk.ListBoxRow {
     public signal void app_info_changed (Entity.AppInfo new_info);
 
     public Entity.AppInfo app_info { get; construct; }
-
-    private Gtk.Switch active_switch;
-    private Gtk.Button edit_button;
-
     public Gtk.Image image { get; set construct; }
     public Gtk.Label app_name { get; set construct; }
     public Gtk.Label app_comment { get; set construct; }
 
     public bool can_edit { get; set; default = false; }
+
+    private Gtk.Switch active_switch;
 
     public AppRow (Entity.AppInfo app_info) {
         Object (app_info: app_info);
@@ -81,14 +79,5 @@ public class Startup.Widgets.AppRow : Gtk.ListBoxRow {
         image.set_from_icon_name (new_info.icon, (Gtk.IconSize)(image.icon_size));
         app_name.label = new_info.name;
         app_comment.label = new_info.comment;
-    }
-
-    public void start_editing () {
-        var popover = new CustomCommandEditor (this, app_info);
-        popover.changed.connect ((new_info) => {
-            app_info_changed (new_info);
-        });
-
-        popover.popup ();
     }
 }

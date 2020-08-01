@@ -42,13 +42,26 @@ public class Startup.Widgets.CustomCommandEditor : Gtk.Popover {
     }
 
     construct {
-        name_entry = new InfoEntry (old_info.name);
-        comment_entry = new InfoEntry (old_info.comment);
-        icon_entry = new InfoEntry (old_info.icon);
-        command_entry = new InfoEntry (old_info.custom_exec);
+        name_entry = new InfoEntry (old_info.name)  {
+            placeholder_text = _("Enter an optional name for the command (default: 'Custom Command')"),
+            hexpand = true
+        };
+
+        comment_entry = new InfoEntry (old_info.comment)  {
+            placeholder_text = _("Enter an optional description (default: <commandline>)")
+        };
+
+        icon_entry = new InfoEntry (old_info.icon)  {
+            placeholder_text = _("Enter an optional icon name (default: 'application-default-icon')")
+        };
+
+        command_entry = new InfoEntry (old_info.custom_exec) {
+            placeholder_text = _("Enter the commandline to execute (required)")
+        };
 
         apply_button = new Gtk.Button.with_label (_("Apply")) { //TODO Styling
-            hexpand = true
+            hexpand = true,
+            sensitive = false
         };
 
         apply_button.clicked.connect (() => {
@@ -68,8 +81,16 @@ public class Startup.Widgets.CustomCommandEditor : Gtk.Popover {
             popdown ();
         });
 
+        command_entry.changed.connect (() => {
+            apply_button.sensitive = command_entry.text.length > 1;
+        });
+
+        command_entry.changed (); //Ensure correct state when editing existing command
+
         var cancel_button = new Gtk.Button.with_label (_("Cancel")) { hexpand = true };
-        cancel_button.clicked.connect (() => { popdown (); });
+        cancel_button.clicked.connect (() => {
+            popdown ();
+        });
 
         var button_box = new Gtk.ButtonBox (Gtk.Orientation.HORIZONTAL) { margin = 3 };
         button_box.add (cancel_button);
@@ -81,15 +102,16 @@ public class Startup.Widgets.CustomCommandEditor : Gtk.Popover {
         var command_label = new Gtk.Label (_("Command")) { margin = 3, halign = Gtk.Align.END };
 
         var grid = new Gtk.Grid ();
+        grid.width_request = 500; //Match AppChooser popover
         grid.row_spacing = 6;
-        grid.attach (name_label, 0, 0, 1, 1);
-        grid.attach (comment_label, 0, 1, 1, 1);
-        grid.attach (icon_label, 0, 2, 1, 1);
-        grid.attach (command_label, 0, 3, 1, 1);
-        grid.attach (name_entry, 1, 0, 1, 1);
-        grid.attach (comment_entry, 1, 1, 1, 1);
-        grid.attach (icon_entry, 1, 2, 1, 1);
-        grid.attach (command_entry, 1, 3, 1, 1);
+        grid.attach (command_label, 0, 0, 1, 1);
+        grid.attach (name_label, 0, 1, 1, 1);
+        grid.attach (comment_label, 0, 2, 1, 1);
+        grid.attach (icon_label, 0, 3, 1, 1);
+        grid.attach (command_entry, 1, 0, 1, 1);
+        grid.attach (name_entry, 1, 1, 1, 1);
+        grid.attach (comment_entry, 1, 2, 1, 1);
+        grid.attach (icon_entry, 1, 3, 1, 1);
         grid.attach (button_box, 0, 4, 2, 1);
 
         add (grid);

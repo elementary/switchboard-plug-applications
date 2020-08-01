@@ -60,7 +60,6 @@ public class Startup.Backend.Monitor : Object, Port.Monitor {
             case FileMonitorEvent.DELETED:
                 file_deleted (path);
                 break;
-            case FileMonitorEvent.CHANGED:
             case FileMonitorEvent.CHANGES_DONE_HINT:
                 file_edited (path);
                 break;

@@ -98,20 +98,21 @@ public class Startup.Backend.KeyFile : GLib.Object {
         load_from_file ();
     }
 
-    public KeyFile.from_command (string command) {
+    public KeyFile.custom () {
         keyfile = new GLib.KeyFile ();
 
         this.path = create_path_for_custom_command ();
-        this.name = _(FALLBACK_CUSTOM_NAME);
-        this.comment = command;
-        this.command = command;
-        this.icon = FALLBACK_ICON;
+        this.name = "";
+        this.comment = "";
+        this.command = "";
+        this.icon = "";
         this.active = true;
         this.is_custom = true;
 
         set_key (KEY_TYPE, KeyFileDesktop.TYPE_APPLICATION);
 
-        write_to_file ();
+        /* New custom KeyFile entries must be completed by the user or default values inserted
+         * before writing to file. */
     }
 
     string create_path_for_custom_command () {
