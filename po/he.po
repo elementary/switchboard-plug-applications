@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-07-08 19:03+0000\n"
-"PO-Revision-Date: 2020-07-31 03:13+0000\n"
+"PO-Revision-Date: 2020-08-09 18:13+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-applications/he/>\n"
@@ -41,11 +41,11 @@ msgstr "יישומי בררת מחדל"
 
 #: src/Plug.vala:102
 msgid "Sandboxing"
-msgstr ""
+msgstr "סביבת בדיקות"
 
 #: src/Plug.vala:103
 msgid "Confinement"
-msgstr ""
+msgstr "ריתוק"
 
 #: src/Plug.vala:104 src/Plug.vala:105 src/Plug.vala:106 src/Plug.vala:107
 #: src/Plug.vala:108 src/Plug.vala:109 src/Plug.vala:110 src/Plug.vala:111
