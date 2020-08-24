@@ -192,7 +192,7 @@ public class Permissions.Backend.App : GLib.Object {
 
                     var value = key_value_pair[1];
                     if (!setting.enabled) {
-                        value = "!%s".printf (key_value_pair[1]);
+                        value = "!%s".printf (value);
                     }
 
                     if (key_file.has_group (GROUP)) {
