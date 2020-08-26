@@ -10,6 +10,7 @@
     <release version="2.1.8" date="2020-05-31" urgency="medium">
       <description>
         <p>Fix user's desktop files is not shown</p>
+        <p>Implement editing custom startup commands</p>
         <p>Updated translations</p>
       </description>
     </release>
