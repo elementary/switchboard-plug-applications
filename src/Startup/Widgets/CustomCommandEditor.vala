@@ -1,5 +1,5 @@
 /*
-* Copyright 2013-2017 elementary, Inc. (https://elementary.io)
+* Copyright 2020 elementary, Inc. (https://elementary.io)
 *
 * This program is free software; you can redistribute it and/or
 * modify it under the terms of the GNU General Public
@@ -16,7 +16,7 @@
 * Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor,
 * Boston, MA 02110-1301 USA
 *
-* Authored by: Julien Spautz <spautz.julien@gmail.com>
+* Authored by: Jeremy Wootten <jeremywootten@gmail.com>
 */
 
 public class Startup.Widgets.CustomCommandEditor : Gtk.Popover {
