@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-07-08 19:03+0000\n"
-"PO-Revision-Date: 2020-06-30 15:12+0000\n"
+"PO-Revision-Date: 2020-08-24 18:13+0000\n"
 "Last-Translator: p-bo <pavel.borecki@gmail.com>\n"
 "Language-Team: Czech <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-applications/cs/>\n"
@@ -16,10 +16,8 @@ msgstr ""
 "X-Launchpad-Export-Date: 2017-02-27 05:51+0000\n"
 
 #: src/Plug.vala:41
-#, fuzzy
-#| msgid "Manage default and startup applications"
 msgid "Manage default apps, startup apps, and app permissions"
-msgstr "Spravovat výchozí aplikace a aplikace po spuštění"
+msgstr "Spravovat výchozí aplikace, aplikace po spuštění a oprávnění aplikací"
 
 #: src/Plug.vala:42
 msgid "Applications"
@@ -43,11 +41,11 @@ msgstr "Výchozí aplikace"
 
 #: src/Plug.vala:102
 msgid "Sandboxing"
-msgstr ""
+msgstr "Spouštění v ohraničeném prostředí"
 
 #: src/Plug.vala:103
 msgid "Confinement"
-msgstr ""
+msgstr "Ohrazení"
 
 #: src/Plug.vala:104 src/Plug.vala:105 src/Plug.vala:106 src/Plug.vala:107
 #: src/Plug.vala:108 src/Plug.vala:109 src/Plug.vala:110 src/Plug.vala:111
