@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-05-31 21:23+0000\n"
-"PO-Revision-Date: 2020-09-17 00:14+0000\n"
+"PO-Revision-Date: 2020-09-18 23:14+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/switchboard/"
 "applications-plug-extra/uk/>\n"
@@ -22,15 +22,15 @@ msgstr ""
 
 #: data/io.elementary.switchboard.applications.appdata.xml.in:5
 msgid "Applications Settings"
-msgstr ""
+msgstr "Параметри застосунків"
 
 #: data/io.elementary.switchboard.applications.appdata.xml.in:6
 msgid "Manage default and startup applications"
-msgstr ""
+msgstr "Керування типовими застосунками та автозапуском"
 
 #: data/io.elementary.switchboard.applications.appdata.xml.in:12
 msgid "Fix user's desktop files is not shown"
-msgstr ""
+msgstr "Виправлено перегляд файлів стільниці користувача"
 
 #: data/io.elementary.switchboard.applications.appdata.xml.in:13
 #: data/io.elementary.switchboard.applications.appdata.xml.in:18
@@ -40,4 +40,4 @@ msgstr "Оновлено переклади"
 
 #: data/io.elementary.switchboard.applications.appdata.xml.in:23
 msgid "Fix issues with OnlyShowIn and Snap apps"
-msgstr ""
+msgstr "Розв'язано проблеми з застосунками OnlyShowIn та Snap"
