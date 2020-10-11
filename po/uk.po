@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-10-11 13:25+0000\n"
-"PO-Revision-Date: 2020-09-18 23:14+0000\n"
+"PO-Revision-Date: 2020-10-11 21:36+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-applications/uk/>\n"
@@ -11,15 +11,14 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
+"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 3.9.1\n"
 "X-Launchpad-Export-Date: 2016-11-26 05:53+0000\n"
 
 #: src/Plug.vala:41
 msgid "Manage default apps, startup apps, and app permissions"
-msgstr ""
-"Керування типовими застосунками,  автозапуском та дозволами застосунків"
+msgstr "Керування типовими застосунками, автозапуском та дозволами застосунків"
 
 #: src/Plug.vala:42
 msgid "Applications"
@@ -88,91 +87,97 @@ msgstr "Переглядач файлів"
 
 #: src/Permissions/PermissionsPlug.vala:29
 msgid "Home Folder"
-msgstr ""
+msgstr "Домівка"
 
 #: src/Permissions/PermissionsPlug.vala:30
 msgid "System Folders"
-msgstr ""
+msgstr "Системні теки"
 
 #: src/Permissions/PermissionsPlug.vala:31
 msgid "Devices"
-msgstr ""
+msgstr "Пристрої"
 
 #: src/Permissions/PermissionsPlug.vala:32
 msgid "Network"
-msgstr ""
+msgstr "Мережа"
 
 #: src/Permissions/PermissionsPlug.vala:33
 msgid "Bluetooth"
-msgstr ""
+msgstr "Bluetooth"
 
 #: src/Permissions/PermissionsPlug.vala:34
 msgid "Printing"
-msgstr ""
+msgstr "Друк"
 
 #: src/Permissions/PermissionsPlug.vala:35
 msgid "Secure Shell Agent"
-msgstr ""
+msgstr "Захищений агент оболонки"
 
 #: src/Permissions/PermissionsPlug.vala:36
 msgid "GPU Acceleration"
-msgstr ""
+msgstr "Прискорення графічного процесора"
 
 #: src/Permissions/PermissionsPlug.vala:40
 msgid "No Flatpak apps installed"
-msgstr ""
+msgstr "Застосунків Flatpak не встановлено"
 
 #: src/Permissions/PermissionsPlug.vala:45
 msgid ""
 "Apps whose permissions can be adjusted will automatically appear here when "
 "installed"
 msgstr ""
+"Застосунки, дозволами яких можна керувати, автоматично з’являтимуться тут "
+"після встановлення"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:33
 msgid "Access your entire home folder, including any hidden folders."
-msgstr ""
+msgstr "Доступ до всієї домашньої теки, включно з прихованими теками."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:40
 msgid ""
 "Access system folders, not including the operating system or system "
 "internals. This includes users' Home folders."
 msgstr ""
+"Доступ до системних тек, за винятком тек операційної системи або "
+"внутрішньосистемних. Сюди входять домашні теки користувачів."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:47
 msgid ""
 "Access all devices, such as webcams, microphones, and connected USB devices."
 msgstr ""
+"Доступ до всіх пристроїв, таких як вебкамери, мікрофони та під'єднані "
+"USB-пристрої."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:54
 msgid "Access the Internet and local networks"
-msgstr ""
+msgstr "Доступ до Інтернету та локальних мереж"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:61
 msgid "Manage bluetooth devices including pairing, unpairing, and discovery."
 msgstr ""
+"Керувати пристроями Bluetooth, включно зі сполученням, роз'єднанням та "
+"виявленням."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:68
 msgid "Access printers"
-msgstr ""
+msgstr "Доступ до пристроїв друку"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:75
 msgid "Access other devices on the network via SSH."
-msgstr ""
+msgstr "Доступ до інших пристроїв у мережі через SSH."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:82
 msgid "Accelerate graphical output."
-msgstr ""
+msgstr "Прискорення графічного виводу."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:105
-#, fuzzy
-#| msgid "Defaults"
 msgid "Reset to Defaults"
-msgstr "Типові"
+msgstr "Відновити типові"
 
 #. / Translators: This is a delimiter that separates types of permissions in the sidebar description
 #: src/Permissions/Widgets/SidebarRow.vala:80
 msgid ", "
-msgstr ""
+msgstr ", "
 
 #: src/Startup/Backend/KeyFile.vala:98
 msgid "Custom Command"
