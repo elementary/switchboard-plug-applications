@@ -3,15 +3,18 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-10-11 13:25+0000\n"
-"PO-Revision-Date: 2014-12-22 12:52+0000\n"
-"Last-Translator: ERX <eriksh@inbox.lv>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2020-10-11 21:36+0000\n"
+"Last-Translator: anonymous <noreply@weblate.org>\n"
+"Language-Team: Latvian <https://l10n.elementary.io/projects/switchboard/"
+"switchboard-plug-applications/lv/>\n"
+"Language: lv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n % 10 == 0 || n % 100 >= 11 && n % 100 <= "
+"19) ? 0 : ((n % 10 == 1 && n % 100 != 11) ? 1 : 2);\n"
+"X-Generator: Weblate 3.9.1\n"
 "X-Launchpad-Export-Date: 2016-11-26 05:52+0000\n"
-"X-Generator: Launchpad (build 18282)\n"
 
 #: src/Plug.vala:41
 msgid "Manage default apps, startup apps, and app permissions"
@@ -94,7 +97,7 @@ msgstr "Failu pārlūks:"
 
 #: src/Permissions/PermissionsPlug.vala:29
 msgid "Home Folder"
-msgstr ""
+msgstr "Mājas mape"
 
 #: src/Permissions/PermissionsPlug.vala:30
 msgid "System Folders"
@@ -110,7 +113,7 @@ msgstr ""
 
 #: src/Permissions/PermissionsPlug.vala:33
 msgid "Bluetooth"
-msgstr ""
+msgstr "Bluetooth"
 
 #: src/Permissions/PermissionsPlug.vala:34
 msgid "Printing"
