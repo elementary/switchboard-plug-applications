@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-10-11 13:25+0000\n"
-"PO-Revision-Date: 2020-08-24 18:13+0000\n"
-"Last-Translator: p-bo <pavel.borecki@gmail.com>\n"
+"PO-Revision-Date: 2020-10-11 21:36+0000\n"
+"Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Czech <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-applications/cs/>\n"
 "Language: cs\n"
@@ -86,7 +86,7 @@ msgstr "Správce souborů"
 
 #: src/Permissions/PermissionsPlug.vala:29
 msgid "Home Folder"
-msgstr ""
+msgstr "Domovská složka"
 
 #: src/Permissions/PermissionsPlug.vala:30
 msgid "System Folders"
@@ -94,15 +94,15 @@ msgstr ""
 
 #: src/Permissions/PermissionsPlug.vala:31
 msgid "Devices"
-msgstr ""
+msgstr "Zařízení"
 
 #: src/Permissions/PermissionsPlug.vala:32
 msgid "Network"
-msgstr ""
+msgstr "Síť"
 
 #: src/Permissions/PermissionsPlug.vala:33
 msgid "Bluetooth"
-msgstr ""
+msgstr "Bluetooth"
 
 #: src/Permissions/PermissionsPlug.vala:34
 msgid "Printing"
@@ -170,7 +170,7 @@ msgstr "Výchozí"
 #. / Translators: This is a delimiter that separates types of permissions in the sidebar description
 #: src/Permissions/Widgets/SidebarRow.vala:80
 msgid ", "
-msgstr ""
+msgstr ", "
 
 #: src/Startup/Backend/KeyFile.vala:98
 msgid "Custom Command"
