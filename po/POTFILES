@@ -1,4 +1,7 @@
 src/Plug.vala
+src/Permissions/PermissionsPlug.vala
+src/Permissions/Widgets/AppSettingsView.vala
+src/Permissions/Widgets/SidebarRow.vala
 src/Startup/Utils.vala
 src/Startup/Startup.vala
 src/Startup/Controller.vala
