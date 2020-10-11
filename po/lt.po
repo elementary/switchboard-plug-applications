@@ -3,10 +3,10 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-10-11 13:25+0000\n"
-"PO-Revision-Date: 2018-10-16 19:49+0000\n"
-"Last-Translator: Moo <hazap@hotmail.com>\n"
-"Language-Team: Lithuanian <https://weblate.elementary.io/projects/"
-"switchboard/switchboard-plug-applications/lt/>\n"
+"PO-Revision-Date: 2020-10-11 21:36+0000\n"
+"Last-Translator: anonymous <noreply@weblate.org>\n"
+"Language-Team: Lithuanian <https://l10n.elementary.io/projects/switchboard/"
+"switchboard-plug-applications/lt/>\n"
 "Language: lt\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n % 10 == 1 && (n % 100 < 11 || n % 100 > "
 "19)) ? 0 : ((n % 10 >= 2 && n % 10 <= 9 && (n % 100 < 11 || n % 100 > 19)) ? "
 "1 : 2);\n"
-"X-Generator: Weblate 3.0.1\n"
+"X-Generator: Weblate 3.9.1\n"
 "X-Launchpad-Export-Date: 2016-12-20 05:10+0000\n"
 
 #: src/Plug.vala:41
@@ -92,7 +92,7 @@ msgstr "Failų naršyklė"
 
 #: src/Permissions/PermissionsPlug.vala:29
 msgid "Home Folder"
-msgstr ""
+msgstr "Namų aplankas"
 
 #: src/Permissions/PermissionsPlug.vala:30
 msgid "System Folders"
@@ -100,15 +100,15 @@ msgstr ""
 
 #: src/Permissions/PermissionsPlug.vala:31
 msgid "Devices"
-msgstr ""
+msgstr "Įrenginiai"
 
 #: src/Permissions/PermissionsPlug.vala:32
 msgid "Network"
-msgstr ""
+msgstr "Tinklas"
 
 #: src/Permissions/PermissionsPlug.vala:33
 msgid "Bluetooth"
-msgstr ""
+msgstr "Bluetooth"
 
 #: src/Permissions/PermissionsPlug.vala:34
 msgid "Printing"
