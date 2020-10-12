@@ -51,7 +51,7 @@ public class Permissions.Widgets.AppSettingsView : Gtk.Grid {
 
         var network_widget = new PermissionSettingsWidget (
             Plug.permission_names["shared=network"],
-            _("Access the Internet and local networks"),
+            _("Access the Internet and local networks."),
             "preferences-system-network",
             new Backend.PermissionSettings ("shared=network")
         );
@@ -65,7 +65,7 @@ public class Permissions.Widgets.AppSettingsView : Gtk.Grid {
 
         var printing_widget = new PermissionSettingsWidget (
             Plug.permission_names["sockets=cups"],
-            _("Access printers"),
+            _("Access printers."),
             "printer",
             new Backend.PermissionSettings ("sockets=cups")
         );
