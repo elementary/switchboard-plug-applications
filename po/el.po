@@ -2,16 +2,18 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-08 19:03+0000\n"
-"PO-Revision-Date: 2017-02-09 12:44+0000\n"
-"Last-Translator: Christos Iatropoulos <Unknown>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"POT-Creation-Date: 2020-10-11 13:25+0000\n"
+"PO-Revision-Date: 2020-10-11 21:36+0000\n"
+"Last-Translator: anonymous <noreply@weblate.org>\n"
+"Language-Team: Greek <https://l10n.elementary.io/projects/switchboard/"
+"switchboard-plug-applications/el/>\n"
+"Language: el\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 3.9.1\n"
 "X-Launchpad-Export-Date: 2017-02-10 05:58+0000\n"
-"X-Generator: Launchpad (build 18326)\n"
 
 #: src/Plug.vala:41
 #, fuzzy
@@ -95,6 +97,94 @@ msgstr "Προβολέας εικόνων:"
 #, fuzzy
 msgid "File Browser"
 msgstr "Περιηγητής αρχείων:"
+
+#: src/Permissions/PermissionsPlug.vala:29
+msgid "Home Folder"
+msgstr "Προσωπικός Φάκελος"
+
+#: src/Permissions/PermissionsPlug.vala:30
+msgid "System Folders"
+msgstr ""
+
+#: src/Permissions/PermissionsPlug.vala:31
+msgid "Devices"
+msgstr "Συσκευές"
+
+#: src/Permissions/PermissionsPlug.vala:32
+msgid "Network"
+msgstr "Δίκτυο"
+
+#: src/Permissions/PermissionsPlug.vala:33
+msgid "Bluetooth"
+msgstr "Bluetooth"
+
+#: src/Permissions/PermissionsPlug.vala:34
+msgid "Printing"
+msgstr ""
+
+#: src/Permissions/PermissionsPlug.vala:35
+msgid "Secure Shell Agent"
+msgstr ""
+
+#: src/Permissions/PermissionsPlug.vala:36
+msgid "GPU Acceleration"
+msgstr ""
+
+#: src/Permissions/PermissionsPlug.vala:40
+msgid "No Flatpak apps installed"
+msgstr ""
+
+#: src/Permissions/PermissionsPlug.vala:45
+msgid ""
+"Apps whose permissions can be adjusted will automatically appear here when "
+"installed"
+msgstr ""
+
+#: src/Permissions/Widgets/AppSettingsView.vala:33
+msgid "Access your entire home folder, including any hidden folders."
+msgstr ""
+
+#: src/Permissions/Widgets/AppSettingsView.vala:40
+msgid ""
+"Access system folders, not including the operating system or system "
+"internals. This includes users' Home folders."
+msgstr ""
+
+#: src/Permissions/Widgets/AppSettingsView.vala:47
+msgid ""
+"Access all devices, such as webcams, microphones, and connected USB devices."
+msgstr ""
+
+#: src/Permissions/Widgets/AppSettingsView.vala:54
+msgid "Access the Internet and local networks"
+msgstr ""
+
+#: src/Permissions/Widgets/AppSettingsView.vala:61
+msgid "Manage bluetooth devices including pairing, unpairing, and discovery."
+msgstr ""
+
+#: src/Permissions/Widgets/AppSettingsView.vala:68
+msgid "Access printers"
+msgstr ""
+
+#: src/Permissions/Widgets/AppSettingsView.vala:75
+msgid "Access other devices on the network via SSH."
+msgstr ""
+
+#: src/Permissions/Widgets/AppSettingsView.vala:82
+msgid "Accelerate graphical output."
+msgstr ""
+
+#: src/Permissions/Widgets/AppSettingsView.vala:105
+#, fuzzy
+#| msgid "Default"
+msgid "Reset to Defaults"
+msgstr "Προεπιλογή"
+
+#. / Translators: This is a delimiter that separates types of permissions in the sidebar description
+#: src/Permissions/Widgets/SidebarRow.vala:80
+msgid ", "
+msgstr ""
 
 #: src/Startup/Backend/KeyFile.vala:98
 msgid "Custom Command"
