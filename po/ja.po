@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-10-11 13:25+0000\n"
+"POT-Creation-Date: 2020-10-12 17:04+0000\n"
 "PO-Revision-Date: 2020-10-12 17:03+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
@@ -126,7 +126,9 @@ msgstr "Flatpak アプリがインストールされていません"
 msgid ""
 "Apps whose permissions can be adjusted will automatically appear here when "
 "installed"
-msgstr "パーミッションの変更が可能なアプリをインストールすると、自動的にここに表示されます"
+msgstr ""
+"パーミッションの変更が可能なアプリをインストールすると、自動的にここに表示さ"
+"れます"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:33
 msgid "Access your entire home folder, including any hidden folders."
@@ -136,23 +138,33 @@ msgstr "隠しフォルダーを含む、ホームフォルダー全体へのア
 msgid ""
 "Access system folders, not including the operating system or system "
 "internals. This includes users' Home folders."
-msgstr "オペレーティングシステムやシステム内部のフォルダー以外のシステムフォルダーへのアクセスを許可します。ユーザーのホームフォルダーも含まれます。"
+msgstr ""
+"オペレーティングシステムやシステム内部のフォルダー以外のシステムフォルダーへ"
+"のアクセスを許可します。ユーザーのホームフォルダーも含まれます。"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:47
 msgid ""
 "Access all devices, such as webcams, microphones, and connected USB devices."
-msgstr "Web カメラやマイク、接続済みの USB デバイスなどの、すべてのデバイスへのアクセスを許可します。"
+msgstr ""
+"Web カメラやマイク、接続済みの USB デバイスなどの、すべてのデバイスへのアクセ"
+"スを許可します。"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:54
-msgid "Access the Internet and local networks"
+#, fuzzy
+#| msgid "Access the Internet and local networks"
+msgid "Access the Internet and local networks."
 msgstr "インターネットとローカルネットワークへのアクセスを許可します。"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:61
 msgid "Manage bluetooth devices including pairing, unpairing, and discovery."
-msgstr "ペアリング、ペアリング解除、デバイスの検索を含む、Bluetooth デバイスの管理を許可します。"
+msgstr ""
+"ペアリング、ペアリング解除、デバイスの検索を含む、Bluetooth デバイスの管理を"
+"許可します。"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:68
-msgid "Access printers"
+#, fuzzy
+#| msgid "Access printers"
+msgid "Access printers."
 msgstr "プリンターへのアクセスを許可します。"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:75

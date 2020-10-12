@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-10-11 13:25+0000\n"
+"POT-Creation-Date: 2020-10-12 17:04+0000\n"
 "PO-Revision-Date: 2020-10-12 17:03+0000\n"
 "Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
 "Language-Team: French <https://l10n.elementary.io/projects/switchboard/"
@@ -152,7 +152,9 @@ msgstr ""
 "périphériques USB connectés."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:54
-msgid "Access the Internet and local networks"
+#, fuzzy
+#| msgid "Access the Internet and local networks"
+msgid "Access the Internet and local networks."
 msgstr "Accéder à Internet er aux réseaux locaux"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:61
@@ -161,7 +163,9 @@ msgstr ""
 "Gérer les périphériques Bluetooth, y compris l'appairage et la découverte."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:68
-msgid "Access printers"
+#, fuzzy
+#| msgid "Access printers"
+msgid "Access printers."
 msgstr "Accéder aux imprimantes"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:75

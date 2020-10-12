@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-10-11 13:25+0000\n"
+"POT-Creation-Date: 2020-10-12 17:04+0000\n"
 "PO-Revision-Date: 2014-08-01 07:24+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -140,7 +140,7 @@ msgid ""
 msgstr ""
 
 #: src/Permissions/Widgets/AppSettingsView.vala:54
-msgid "Access the Internet and local networks"
+msgid "Access the Internet and local networks."
 msgstr ""
 
 #: src/Permissions/Widgets/AppSettingsView.vala:61
@@ -148,7 +148,7 @@ msgid "Manage bluetooth devices including pairing, unpairing, and discovery."
 msgstr ""
 
 #: src/Permissions/Widgets/AppSettingsView.vala:68
-msgid "Access printers"
+msgid "Access printers."
 msgstr ""
 
 #: src/Permissions/Widgets/AppSettingsView.vala:75
