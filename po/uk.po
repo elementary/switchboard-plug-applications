@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-10-12 17:04+0000\n"
-"PO-Revision-Date: 2020-10-11 21:36+0000\n"
+"PO-Revision-Date: 2020-10-12 19:05+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-applications/uk/>\n"
@@ -11,8 +11,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
+"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 3.9.1\n"
 "X-Launchpad-Export-Date: 2016-11-26 05:53+0000\n"
 
@@ -149,10 +149,8 @@ msgstr ""
 "пристрої."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:54
-#, fuzzy
-#| msgid "Access the Internet and local networks"
 msgid "Access the Internet and local networks."
-msgstr "Доступ до Інтернету та локальних мереж"
+msgstr "Доступ до Інтернету та локальних мереж."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:61
 msgid "Manage bluetooth devices including pairing, unpairing, and discovery."
@@ -161,10 +159,8 @@ msgstr ""
 "виявленням."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:68
-#, fuzzy
-#| msgid "Access printers"
 msgid "Access printers."
-msgstr "Доступ до пристроїв друку"
+msgstr "Доступ до пристроїв друку."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:75
 msgid "Access other devices on the network via SSH."
