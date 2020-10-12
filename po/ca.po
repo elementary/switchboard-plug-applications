@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-10-11 13:25+0000\n"
-"PO-Revision-Date: 2020-10-11 21:36+0000\n"
-"Last-Translator: anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2020-10-12 17:03+0000\n"
+"Last-Translator: David M <rbndavid@gmail.com>\n"
 "Language-Team: Catalan <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-applications/ca/>\n"
 "Language: ca\n"
@@ -91,7 +91,7 @@ msgstr "Carpeta de l'usuari"
 
 #: src/Permissions/PermissionsPlug.vala:30
 msgid "System Folders"
-msgstr ""
+msgstr "Carpetes del sistema"
 
 #: src/Permissions/PermissionsPlug.vala:31
 msgid "Devices"
@@ -107,66 +107,73 @@ msgstr "Bluetooth"
 
 #: src/Permissions/PermissionsPlug.vala:34
 msgid "Printing"
-msgstr ""
+msgstr "Impressió"
 
 #: src/Permissions/PermissionsPlug.vala:35
 msgid "Secure Shell Agent"
-msgstr ""
+msgstr "Agent d'intèrpret d'ordres segur"
 
 #: src/Permissions/PermissionsPlug.vala:36
 msgid "GPU Acceleration"
-msgstr ""
+msgstr "Acceleració de GPU"
 
 #: src/Permissions/PermissionsPlug.vala:40
 msgid "No Flatpak apps installed"
-msgstr ""
+msgstr "No hi ha aplicacions de Flatpak instal·lades."
 
 #: src/Permissions/PermissionsPlug.vala:45
 msgid ""
 "Apps whose permissions can be adjusted will automatically appear here when "
 "installed"
 msgstr ""
+"Les aplicacions els permisos de les quals es poden ajustar apareixeran "
+"automàticament aquí quan s’instal·lin."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:33
 msgid "Access your entire home folder, including any hidden folders."
-msgstr ""
+msgstr "Accedeix a tota la carpeta de l'usuari, incloses les carpetes ocultes."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:40
 msgid ""
 "Access system folders, not including the operating system or system "
 "internals. This includes users' Home folders."
 msgstr ""
+"Accedeix a les carpetes del sistema, sense incloure el sistema operatiu ni "
+"les funcions internes del sistema. Això inclou les carpetes personals dels "
+"usuaris."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:47
 msgid ""
 "Access all devices, such as webcams, microphones, and connected USB devices."
 msgstr ""
+"Accedeix a tots els dispositius, com ara càmeres web, micròfons i "
+"dispositius USB connectats."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:54
 msgid "Access the Internet and local networks"
-msgstr ""
+msgstr "Accedeix a Internet i a les xarxes locals."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:61
 msgid "Manage bluetooth devices including pairing, unpairing, and discovery."
 msgstr ""
+"Gestiona els dispositius Bluetooth, inclosos l’aparellament, la separació i "
+"el descobriment."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:68
 msgid "Access printers"
-msgstr ""
+msgstr "Accedeix a les impressores."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:75
 msgid "Access other devices on the network via SSH."
-msgstr ""
+msgstr "Accedeix a altres dispositius de la xarxa mitjançant SSH."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:82
 msgid "Accelerate graphical output."
-msgstr ""
+msgstr "Accelera la sortida gràfica."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:105
-#, fuzzy
-#| msgid "Defaults"
 msgid "Reset to Defaults"
-msgstr "Per defecte"
+msgstr "Restableix els valors per defecte"
 
 #. / Translators: This is a delimiter that separates types of permissions in the sidebar description
 #: src/Permissions/Widgets/SidebarRow.vala:80
