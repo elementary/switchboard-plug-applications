@@ -29,7 +29,7 @@ public class Permissions.SidebarRow : Gtk.ListBoxRow {
     }
 
     construct {
-        var appinfo = new GLib.AppInfo (app.id + ".desktop");
+        var appinfo = new GLib.DesktopAppInfo (app.id + ".desktop");
 
         var image = new Gtk.Image.from_gicon (appinfo.get_icon (), Gtk.IconSize.DND);
         image.pixel_size = 32;
