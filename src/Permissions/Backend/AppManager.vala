@@ -21,7 +21,6 @@
 
 public class Permissions.Backend.AppManager : GLib.Object {
     public HashTable<string, Backend.App> apps { get; private set; }
-    public string user_installation_path { get; private set; }
 
     private static AppManager? instance;
     public static AppManager get_default () {
@@ -37,7 +36,6 @@ public class Permissions.Backend.AppManager : GLib.Object {
 
         try {
             var installation = new Flatpak.Installation.user ();
-            user_installation_path = installation.get_path ().get_path ();
             get_apps_for_installation (installation);
         } catch (Error e) {
             critical ("Unable to get flatpak user installation : %s", e.message);
