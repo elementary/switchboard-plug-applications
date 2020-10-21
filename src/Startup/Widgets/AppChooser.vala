@@ -20,72 +20,74 @@
 */
 
 public class Startup.Widgets.AppChooser : Gtk.Popover {
-
-    Gtk.ListBox list;
-    Gtk.SearchEntry search_entry;
-    Gtk.Entry custom_entry;
-
     public signal void app_chosen (string path);
     public signal void custom_command_chosen (string command);
+
+    private Gtk.ListBox list;
+    private Gtk.SearchEntry search_entry;
+    private Gtk.Entry custom_entry;
 
     public AppChooser (Gtk.Widget widget) {
         Object (relative_to: widget);
     }
 
     construct {
-        search_entry = new Gtk.SearchEntry ();
-        search_entry.margin_end = 12;
-        search_entry.margin_start = 12;
-        search_entry.placeholder_text = _("Search Applications");
+        search_entry = new Gtk.SearchEntry () {
+            margin_end = 12,
+            margin_start = 12,
+            placeholder_text = _("Search Applications")
+        };
 
-        var scrolled = new Gtk.ScrolledWindow (null, null);
-        scrolled.height_request = 200;
-        scrolled.width_request = 500;
-        scrolled.vscrollbar_policy = Gtk.PolicyType.AUTOMATIC;
-
-        list = new Gtk.ListBox ();
-        list.expand = true;
+        list = new Gtk.ListBox () {
+            expand = true
+        };
         list.set_sort_func (sort_function);
         list.set_filter_func (filter_function);
+
+        var scrolled = new Gtk.ScrolledWindow (null, null) {
+            height_request = 200,
+            width_request = 500
+        };
         scrolled.add (list);
 
-        custom_entry = new Gtk.Entry ();
-        custom_entry.margin_end = 12;
-        custom_entry.margin_start = 12;
-        custom_entry.placeholder_text = _("Type in a custom command");
-        custom_entry.primary_icon_name = "utilities-terminal-symbolic";
-        custom_entry.primary_icon_activatable = false;
+        custom_entry = new Gtk.Entry () {
+            margin_end = 12,
+            margin_start = 12,
+            placeholder_text = _("Type in a custom command"),
+            primary_icon_activatable = false,
+            primary_icon_name = "utilities-terminal-symbolic"
+        };
 
-        var grid = new Gtk.Grid ();
-        grid.margin_bottom = 12;
-        grid.margin_top = 12;
-        grid.row_spacing = 6;
-        grid.attach (search_entry, 0, 0, 1, 1);
-        grid.attach (scrolled, 0, 1, 1, 1);
-        grid.attach (custom_entry, 0, 2, 1, 1);
+        var grid = new Gtk.Grid () {
+            margin_bottom = 12,
+            margin_top = 12,
+            row_spacing = 6
+        };
+        grid.attach (search_entry, 0, 0);
+        grid.attach (scrolled, 0, 1);
+        grid.attach (custom_entry, 0, 2);
 
         add (grid);
 
         search_entry.grab_focus ();
+        search_entry.search_changed.connect (() => {
+            list.set_filter_func (filter_function);
+        });
+
         list.row_activated.connect (on_app_selected);
-        search_entry.search_changed.connect (apply_filter);
         custom_entry.activate.connect (on_custom_command_entered);
     }
 
     public void init_list (Gee.Collection <Entity.AppInfo?> app_infos) {
-        foreach (var app_info in app_infos)
-            append_item_from_app_info (app_info);
+        foreach (var app_info in app_infos) {
+            var app_row = new AppChooserRow (app_info);
+            list.prepend (app_row);
+        }
     }
 
-    void append_item_from_app_info (Entity.AppInfo app_info) {
-        var app_row = new AppChooserRow (app_info);
-        list.prepend (app_row);
-    }
-
-    int sort_function (Gtk.ListBoxRow list_box_row_1,
-                       Gtk.ListBoxRow list_box_row_2) {
-        var row_1 = list_box_row_1.get_child () as AppChooserRow;
-        var row_2 = list_box_row_2.get_child () as AppChooserRow;
+    private int sort_function (Gtk.ListBoxRow row1, Gtk.ListBoxRow row2) {
+        var row_1 = row1.get_child () as AppChooserRow;
+        var row_2 = row2.get_child () as AppChooserRow;
 
         var name_1 = row_1.app_info.name;
         var name_2 = row_2.app_info.name;
@@ -93,23 +95,19 @@ public class Startup.Widgets.AppChooser : Gtk.Popover {
         return name_1.collate (name_2);
     }
 
-    bool filter_function (Gtk.ListBoxRow list_box_row) {
+    private bool filter_function (Gtk.ListBoxRow list_box_row) {
         var app_row = list_box_row.get_child () as AppChooserRow;
         return search_entry.text.down () in app_row.app_info.name.down ()
             || search_entry.text.down () in app_row.app_info.comment.down ();
     }
 
-    void on_app_selected (Gtk.ListBoxRow list_box_row) {
+    private void on_app_selected (Gtk.ListBoxRow list_box_row) {
         var app_row = list_box_row.get_child () as AppChooserRow;
         app_chosen (app_row.app_info.path);
         hide ();
     }
 
-    void apply_filter () {
-        list.set_filter_func (filter_function);
-    }
-
-    void on_custom_command_entered () {
+    private void on_custom_command_entered () {
         custom_command_chosen (custom_entry.text);
         hide ();
     }
