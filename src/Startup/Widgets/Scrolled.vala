@@ -89,10 +89,6 @@ public class Startup.Widgets.Scrolled : Gtk.Grid {
         list.remove_app_from_path (path);
     }
 
-    public void reload_app_from_path (string path) {
-        list.reload_app_from_path (path);
-    }
-
     public void init_app_chooser (Gee.Collection <Entity.AppInfo?> app_infos) {
         app_chooser.init_list (app_infos);
     }

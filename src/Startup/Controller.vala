@@ -48,7 +48,6 @@ public class Startup.Controller : Object {
 
         monitor.file_created.connect (add_app_to_view);
         monitor.file_deleted.connect (remove_app_from_view);
-        monitor.file_edited.connect (edit_app_in_view);
 
         view.app_added.connect (create_file);
         view.app_added_from_command.connect (create_file_from_command);
@@ -64,10 +63,6 @@ public class Startup.Controller : Object {
 
     void remove_app_from_view (string path) {
         view.remove_app_from_path (path);
-    }
-
-    void edit_app_in_view (string path) {
-        view.reload_app_from_path (path);
     }
 
     void delete_file (string path) {
