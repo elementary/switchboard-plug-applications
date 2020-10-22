@@ -30,7 +30,7 @@ public class Startup.Controller : Object {
     }
 
     construct {
-        foreach (var path in get_auto_start_files ()) {
+        foreach (unowned string path in get_auto_start_files ()) {
             var key_file = get_key_file_from_path (path);
             if (key_file.show) {
                 view.add_app (key_file.create_app_info ());
@@ -38,7 +38,7 @@ public class Startup.Controller : Object {
         }
 
         var app_infos = new Gee.ArrayList <Entity.AppInfo?> ();
-        foreach (var path in get_application_files ()) {
+        foreach (unowned string path in get_application_files ()) {
             var key_file = get_key_file_from_path (path);
             if (key_file.show) {
                 app_infos.add (key_file.create_app_info ());
