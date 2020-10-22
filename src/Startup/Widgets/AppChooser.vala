@@ -71,7 +71,7 @@ public class Startup.Widgets.AppChooser : Gtk.Popover {
 
         search_entry.grab_focus ();
         search_entry.search_changed.connect (() => {
-            list.set_filter_func (filter_function);
+            list.invalidate_filter ();
         });
 
         list.row_activated.connect (on_app_selected);
@@ -86,8 +86,8 @@ public class Startup.Widgets.AppChooser : Gtk.Popover {
     }
 
     private int sort_function (Gtk.ListBoxRow row1, Gtk.ListBoxRow row2) {
-        var row_1 = row1.get_child () as AppChooserRow;
-        var row_2 = row2.get_child () as AppChooserRow;
+        unowned AppChooserRow row_1 = (AppChooserRow) row1.get_child ();
+        unowned AppChooserRow row_2 = (AppChooserRow) row2.get_child ();
 
         var name_1 = row_1.app_info.name;
         var name_2 = row_2.app_info.name;
