@@ -103,14 +103,14 @@ public class Startup.Widgets.Scrolled : Gtk.Grid {
     }
 
     public void add_app (Entity.AppInfo app_info) {
-        foreach (unowned Gtk.Widget app_row in get_children ()) {
+        foreach (unowned Gtk.Widget app_row in list.get_children ()) {
             if (((AppRow) app_row).app_info == app_info) {
                 return;
             }
         }
 
         var row = new AppRow (app_info);
-        add (row);
+        list.add (row);
 
         row.active_changed.connect ((active) => {
             app_active_changed (row.app_info.path, active);
@@ -118,9 +118,9 @@ public class Startup.Widgets.Scrolled : Gtk.Grid {
     }
 
     public void remove_app_from_path (string path) {
-        foreach (unowned Gtk.Widget app_row in get_children ()) {
+        foreach (unowned Gtk.Widget app_row in list.get_children ()) {
             if (((AppRow) app_row).app_info.path == path) {
-                remove (app_row);
+                list.remove (app_row);
             }
         }
     }
@@ -135,7 +135,7 @@ public class Startup.Widgets.Scrolled : Gtk.Grid {
             return;
         }
 
-        remove (row);
+        list.remove (row);
         app_removed (((AppRow)row).app_info.path);
     }
 
