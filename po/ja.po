@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-08 19:03+0000\n"
-"PO-Revision-Date: 2020-06-26 09:12+0000\n"
+"POT-Creation-Date: 2020-10-12 17:04+0000\n"
+"PO-Revision-Date: 2020-10-16 21:15+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-applications/ja/>\n"
@@ -85,6 +85,100 @@ msgstr "画像ビューアー"
 #: src/Plug.vala:111
 msgid "File Browser"
 msgstr "ファイルブラウザー"
+
+#: src/Permissions/PermissionsPlug.vala:29
+msgid "Home Folder"
+msgstr "ホームフォルダー"
+
+#: src/Permissions/PermissionsPlug.vala:30
+msgid "System Folders"
+msgstr "システムフォルダー"
+
+#: src/Permissions/PermissionsPlug.vala:31
+msgid "Devices"
+msgstr "デバイス"
+
+#: src/Permissions/PermissionsPlug.vala:32
+msgid "Network"
+msgstr "ネットワーク"
+
+#: src/Permissions/PermissionsPlug.vala:33
+msgid "Bluetooth"
+msgstr "Bluetooth"
+
+#: src/Permissions/PermissionsPlug.vala:34
+msgid "Printing"
+msgstr "印刷"
+
+#: src/Permissions/PermissionsPlug.vala:35
+msgid "Secure Shell Agent"
+msgstr "セキュアシェルエージェント"
+
+#: src/Permissions/PermissionsPlug.vala:36
+msgid "GPU Acceleration"
+msgstr "GPU アクセラレーション"
+
+#: src/Permissions/PermissionsPlug.vala:40
+msgid "No Flatpak apps installed"
+msgstr "Flatpak アプリがインストールされていません"
+
+#: src/Permissions/PermissionsPlug.vala:45
+msgid ""
+"Apps whose permissions can be adjusted will automatically appear here when "
+"installed"
+msgstr ""
+"パーミッションの変更が可能なアプリをインストールすると、自動的にここに表示さ"
+"れます"
+
+#: src/Permissions/Widgets/AppSettingsView.vala:33
+msgid "Access your entire home folder, including any hidden folders."
+msgstr "隠しフォルダーを含む、ホームフォルダー全体へのアクセスを許可します。"
+
+#: src/Permissions/Widgets/AppSettingsView.vala:40
+msgid ""
+"Access system folders, not including the operating system or system "
+"internals. This includes users' Home folders."
+msgstr ""
+"オペレーティングシステムやシステム内部のフォルダー以外のシステムフォルダーへ"
+"のアクセスを許可します。ユーザーのホームフォルダーも含まれます。"
+
+#: src/Permissions/Widgets/AppSettingsView.vala:47
+msgid ""
+"Access all devices, such as webcams, microphones, and connected USB devices."
+msgstr ""
+"Web カメラやマイク、接続済みの USB デバイスなどの、すべてのデバイスへのアクセ"
+"スを許可します。"
+
+#: src/Permissions/Widgets/AppSettingsView.vala:54
+msgid "Access the Internet and local networks."
+msgstr "インターネットとローカルネットワークへのアクセスを許可します。"
+
+#: src/Permissions/Widgets/AppSettingsView.vala:61
+msgid "Manage bluetooth devices including pairing, unpairing, and discovery."
+msgstr ""
+"ペアリング、ペアリング解除、デバイスの検索を含む、Bluetooth デバイスの管理を"
+"許可します。"
+
+#: src/Permissions/Widgets/AppSettingsView.vala:68
+msgid "Access printers."
+msgstr "プリンターへのアクセスを許可します。"
+
+#: src/Permissions/Widgets/AppSettingsView.vala:75
+msgid "Access other devices on the network via SSH."
+msgstr "SSH を使用したネットワーク上のほかのデバイスへのアクセスを許可します。"
+
+#: src/Permissions/Widgets/AppSettingsView.vala:82
+msgid "Accelerate graphical output."
+msgstr "グラフィック出力のアクセラレーションを許可します。"
+
+#: src/Permissions/Widgets/AppSettingsView.vala:105
+msgid "Reset to Defaults"
+msgstr "デフォルトにリセット"
+
+#. / Translators: This is a delimiter that separates types of permissions in the sidebar description
+#: src/Permissions/Widgets/SidebarRow.vala:80
+msgid ", "
+msgstr "、 "
 
 #: src/Startup/Backend/KeyFile.vala:98
 msgid "Custom Command"

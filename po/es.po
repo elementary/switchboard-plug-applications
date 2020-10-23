@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-08 19:03+0000\n"
-"PO-Revision-Date: 2020-07-02 03:12+0000\n"
+"POT-Creation-Date: 2020-10-12 17:04+0000\n"
+"PO-Revision-Date: 2020-10-16 21:15+0000\n"
 "Last-Translator: Adolfo Jayme Barrientos <fitojb@ubuntu.com>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-applications/es/>\n"
@@ -84,6 +84,101 @@ msgstr "Visor de imágenes"
 msgid "File Browser"
 msgstr "Gestor de archivos"
 
+#: src/Permissions/PermissionsPlug.vala:29
+msgid "Home Folder"
+msgstr "Carpeta personal"
+
+#: src/Permissions/PermissionsPlug.vala:30
+msgid "System Folders"
+msgstr "Carpetas del sistema"
+
+#: src/Permissions/PermissionsPlug.vala:31
+msgid "Devices"
+msgstr "Dispositivos"
+
+#: src/Permissions/PermissionsPlug.vala:32
+msgid "Network"
+msgstr "Red"
+
+#: src/Permissions/PermissionsPlug.vala:33
+msgid "Bluetooth"
+msgstr "Bluetooth"
+
+#: src/Permissions/PermissionsPlug.vala:34
+msgid "Printing"
+msgstr "Impresión"
+
+#: src/Permissions/PermissionsPlug.vala:35
+msgid "Secure Shell Agent"
+msgstr "Agente de Secure Shell"
+
+#: src/Permissions/PermissionsPlug.vala:36
+msgid "GPU Acceleration"
+msgstr "Aceleración por GPU"
+
+#: src/Permissions/PermissionsPlug.vala:40
+msgid "No Flatpak apps installed"
+msgstr "No se instaló ninguna aplicación Flatpak"
+
+#: src/Permissions/PermissionsPlug.vala:45
+msgid ""
+"Apps whose permissions can be adjusted will automatically appear here when "
+"installed"
+msgstr ""
+"Aquellas aplicaciones cuyos permisos puedan ajustarse aparecerán aquí tras "
+"su instalación"
+
+#: src/Permissions/Widgets/AppSettingsView.vala:33
+msgid "Access your entire home folder, including any hidden folders."
+msgstr ""
+"Acceso a su carpeta personal completa, incluidas las subcarpetas ocultas."
+
+#: src/Permissions/Widgets/AppSettingsView.vala:40
+msgid ""
+"Access system folders, not including the operating system or system "
+"internals. This includes users' Home folders."
+msgstr ""
+"Acceso a carpetas del sistema, excepto las internas del sistema operativo. "
+"Esto incluye las carpetas personales de los usuarios."
+
+#: src/Permissions/Widgets/AppSettingsView.vala:47
+msgid ""
+"Access all devices, such as webcams, microphones, and connected USB devices."
+msgstr ""
+"Acceso a todos los dispositivos, tales como cámaras web, micrófonos y "
+"dispositivos USB conectados."
+
+#: src/Permissions/Widgets/AppSettingsView.vala:54
+msgid "Access the Internet and local networks."
+msgstr "Acceso a la Internet y a las redes locales."
+
+#: src/Permissions/Widgets/AppSettingsView.vala:61
+msgid "Manage bluetooth devices including pairing, unpairing, and discovery."
+msgstr ""
+"Gestión de dispositivos Bluetooth, incluidos el emparejamiento, el "
+"desemparejamiento y la detección."
+
+#: src/Permissions/Widgets/AppSettingsView.vala:68
+msgid "Access printers."
+msgstr "Acceso a las impresoras."
+
+#: src/Permissions/Widgets/AppSettingsView.vala:75
+msgid "Access other devices on the network via SSH."
+msgstr "Acceso a otros dispositivos en la red mediante SSH."
+
+#: src/Permissions/Widgets/AppSettingsView.vala:82
+msgid "Accelerate graphical output."
+msgstr "Aceleración de la salida gráfica."
+
+#: src/Permissions/Widgets/AppSettingsView.vala:105
+msgid "Reset to Defaults"
+msgstr "Restablecer a valores predets."
+
+#. / Translators: This is a delimiter that separates types of permissions in the sidebar description
+#: src/Permissions/Widgets/SidebarRow.vala:80
+msgid ", "
+msgstr ", "
+
 #: src/Startup/Backend/KeyFile.vala:98
 msgid "Custom Command"
 msgstr "Orden personalizada"
@@ -133,7 +228,7 @@ msgstr "Calendario:"
 
 #: src/Defaults/DefaultPlug.vala:62
 msgid "Video Player:"
-msgstr "Reproductor de vídeo:"
+msgstr "Reproductor de vídeos:"
 
 #: src/Defaults/DefaultPlug.vala:68
 msgid "Music Player:"

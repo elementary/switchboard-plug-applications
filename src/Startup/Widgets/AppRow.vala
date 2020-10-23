@@ -1,5 +1,5 @@
 /*
-* Copyright 2013-2017 elementary, Inc. (https://elementary.io)
+* Copyright 2013-2020 elementary, Inc. (https://elementary.io)
 *
 * This program is free software; you can redistribute it and/or
 * modify it under the terms of the GNU General Public
@@ -24,8 +24,6 @@ public class Startup.Widgets.AppRow : Gtk.ListBoxRow {
 
     public Entity.AppInfo app_info { get; construct; }
 
-    private Gtk.Switch active_switch;
-
     public AppRow (Entity.AppInfo app_info) {
         Object (app_info: app_info);
     }
@@ -33,35 +31,37 @@ public class Startup.Widgets.AppRow : Gtk.ListBoxRow {
     construct {
         var image = Utils.create_icon (app_info, Gtk.IconSize.DIALOG);
 
-        var app_name = new Gtk.Label (app_info.name);
-        app_name.get_style_context ().add_class ("h3");
-        app_name.xalign = 0;
+        var app_name = new Gtk.Label (app_info.name) {
+            xalign = 0
+        };
+        app_name.get_style_context ().add_class (Granite.STYLE_CLASS_H3_LABEL);
 
-        var app_comment = new Gtk.Label (app_info.comment);
-        app_comment.ellipsize = Pango.EllipsizeMode.END;
-        app_comment.hexpand = true;
-        app_comment.xalign = 0;
+        var app_comment = new Gtk.Label (app_info.comment) {
+            ellipsize = Pango.EllipsizeMode.END,
+            hexpand = true,
+            xalign = 0
+        };
 
-        active_switch = new Gtk.Switch ();
-        active_switch.tooltip_text = _("Launch %s on startup").printf (app_info.name);
-        active_switch.valign = Gtk.Align.CENTER;
-        active_switch.active = app_info.active;
-        active_switch.notify["active"].connect (on_active_changed);
+        var active_switch = new Gtk.Switch () {
+            active = app_info.active,
+            tooltip_text = _("Launch %s on startup").printf (app_info.name),
+            valign = Gtk.Align.CENTER
+        };
 
-        var main_grid = new Gtk.Grid ();
-        main_grid.margin = 6;
-        main_grid.column_spacing = 12;
+        var main_grid = new Gtk.Grid () {
+            column_spacing = 12,
+            margin = 6
+        };
         main_grid.attach (image, 0, 0, 1, 2);
-        main_grid.attach (app_name, 1, 0, 1, 1);
-        main_grid.attach (app_comment, 1, 1, 1, 1);
+        main_grid.attach (app_name, 1, 0);
+        main_grid.attach (app_comment, 1, 1);
         main_grid.attach (active_switch, 2, 0, 1, 2);
 
         add (main_grid);
         show_all ();
-        on_active_changed ();
-    }
 
-    private void on_active_changed () {
-        active_changed (active_switch.active);
+        active_switch.notify["active"].connect (() => {
+            active_changed (active_switch.active);
+        });
     }
 }
