@@ -2,9 +2,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-08 19:03+0000\n"
-"PO-Revision-Date: 2017-04-10 19:09+0000\n"
-"Last-Translator: Oleh Astappiev <astappev@gmail.com>\n"
+"POT-Creation-Date: 2020-10-25 18:30+0000\n"
+"PO-Revision-Date: 2020-10-12 19:05+0000\n"
+"Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-applications/uk/>\n"
 "Language: uk\n"
@@ -13,44 +13,40 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 2.13-dev\n"
+"X-Generator: Weblate 3.9.1\n"
 "X-Launchpad-Export-Date: 2016-11-26 05:53+0000\n"
 
 #: src/Plug.vala:41
-#, fuzzy
-#| msgid "Manage default and startup applications"
 msgid "Manage default apps, startup apps, and app permissions"
-msgstr "Керування стандартними додатками та додатками автозапуску"
+msgstr "Керування типовими застосунками, автозапуском та дозволами застосунків"
 
 #: src/Plug.vala:42
 msgid "Applications"
-msgstr "Додатки"
+msgstr "Застосунки"
 
 #: src/Plug.vala:53
-#, fuzzy
-#| msgid "Default"
 msgid "Defaults"
 msgstr "Типові"
 
 #: src/Plug.vala:54 src/Plug.vala:99
 msgid "Startup"
-msgstr "Запускаються при вході"
+msgstr "Автозапуск під час входу"
 
 #: src/Plug.vala:55 src/Plug.vala:101
 msgid "Permissions"
-msgstr ""
+msgstr "Дозволи"
 
 #: src/Plug.vala:100
 msgid "Default Apps"
-msgstr "Додатки за замовчуванням"
+msgstr "Типові застосунки"
 
 #: src/Plug.vala:102
 msgid "Sandboxing"
-msgstr ""
+msgstr "Ізолювання"
 
 #: src/Plug.vala:103
 msgid "Confinement"
-msgstr ""
+msgstr "Обмеження"
 
 #: src/Plug.vala:104 src/Plug.vala:105 src/Plug.vala:106 src/Plug.vala:107
 #: src/Plug.vala:108 src/Plug.vala:109 src/Plug.vala:110 src/Plug.vala:111
@@ -58,83 +54,169 @@ msgid "Default"
 msgstr "Типові"
 
 #: src/Plug.vala:104
-#, fuzzy
 msgid "Web Browser"
-msgstr "Веб-переглядач:"
+msgstr "Переглядач"
 
 #: src/Plug.vala:105
-#, fuzzy
 msgid "Email Client"
-msgstr "Клієнт електронної пошти:"
+msgstr "Клієнт електронної пошти"
 
 #: src/Plug.vala:106
-#, fuzzy
 msgid "Calendar"
-msgstr "Календар:"
+msgstr "Календар"
 
 #: src/Plug.vala:107
-#, fuzzy
 msgid "Video Player"
-msgstr "Відео програвач:"
+msgstr "Програвач відео"
 
 #: src/Plug.vala:108
-#, fuzzy
 msgid "Music Player"
-msgstr "Музичний програвач:"
+msgstr "Музичний програвач"
 
 #: src/Plug.vala:109
-#, fuzzy
 msgid "Text Editor"
-msgstr "Текстовий редактор:"
+msgstr "Текстовий редактор"
 
 #: src/Plug.vala:110
-#, fuzzy
 msgid "Image Viewer"
-msgstr "Переглядач зображень:"
+msgstr "Переглядач зображень"
 
 #: src/Plug.vala:111
-#, fuzzy
 msgid "File Browser"
-msgstr "Переглядач файлів:"
+msgstr "Переглядач файлів"
+
+#: src/Permissions/PermissionsPlug.vala:29
+msgid "Home Folder"
+msgstr "Домівка"
+
+#: src/Permissions/PermissionsPlug.vala:30
+msgid "System Folders"
+msgstr "Системні теки"
+
+#: src/Permissions/PermissionsPlug.vala:31
+msgid "Devices"
+msgstr "Пристрої"
+
+#: src/Permissions/PermissionsPlug.vala:32
+msgid "Network"
+msgstr "Мережа"
+
+#: src/Permissions/PermissionsPlug.vala:33
+msgid "Bluetooth"
+msgstr "Bluetooth"
+
+#: src/Permissions/PermissionsPlug.vala:34
+msgid "Printing"
+msgstr "Друк"
+
+#: src/Permissions/PermissionsPlug.vala:35
+msgid "Secure Shell Agent"
+msgstr "Захищений агент оболонки"
+
+#: src/Permissions/PermissionsPlug.vala:36
+msgid "GPU Acceleration"
+msgstr "Прискорення графічного процесора"
+
+#: src/Permissions/PermissionsPlug.vala:40
+msgid "No Flatpak apps installed"
+msgstr "Застосунків Flatpak не встановлено"
+
+#: src/Permissions/PermissionsPlug.vala:45
+msgid ""
+"Apps whose permissions can be adjusted will automatically appear here when "
+"installed"
+msgstr ""
+"Застосунки, дозволами яких можна керувати, автоматично з’являтимуться тут "
+"після встановлення"
+
+#: src/Permissions/Widgets/AppSettingsView.vala:33
+msgid "Access your entire home folder, including any hidden folders."
+msgstr "Доступ до всієї домашньої теки, включно з прихованими теками."
+
+#: src/Permissions/Widgets/AppSettingsView.vala:40
+msgid ""
+"Access system folders, not including the operating system or system "
+"internals. This includes users' Home folders."
+msgstr ""
+"Доступ до системних тек, за винятком тек операційної системи або "
+"внутрішньосистемних. Сюди входять домашні теки користувачів."
+
+#: src/Permissions/Widgets/AppSettingsView.vala:47
+msgid ""
+"Access all devices, such as webcams, microphones, and connected USB devices."
+msgstr ""
+"Доступ до всіх пристроїв, таких як вебкамери, мікрофони та під'єднані USB-"
+"пристрої."
+
+#: src/Permissions/Widgets/AppSettingsView.vala:54
+msgid "Access the Internet and local networks."
+msgstr "Доступ до Інтернету та локальних мереж."
+
+#: src/Permissions/Widgets/AppSettingsView.vala:61
+msgid "Manage bluetooth devices including pairing, unpairing, and discovery."
+msgstr ""
+"Керувати пристроями Bluetooth, включно зі сполученням, роз'єднанням та "
+"виявленням."
+
+#: src/Permissions/Widgets/AppSettingsView.vala:68
+msgid "Access printers."
+msgstr "Доступ до пристроїв друку."
+
+#: src/Permissions/Widgets/AppSettingsView.vala:75
+msgid "Access other devices on the network via SSH."
+msgstr "Доступ до інших пристроїв у мережі через SSH."
+
+#: src/Permissions/Widgets/AppSettingsView.vala:82
+msgid "Accelerate graphical output."
+msgstr "Прискорення графічного виводу."
+
+#: src/Permissions/Widgets/AppSettingsView.vala:105
+msgid "Reset to Defaults"
+msgstr "Відновити типові"
+
+#. / Translators: This is a delimiter that separates types of permissions in the sidebar description
+#: src/Permissions/Widgets/SidebarRow.vala:82
+msgid ", "
+msgstr ", "
 
 #: src/Startup/Backend/KeyFile.vala:98
 msgid "Custom Command"
 msgstr "Власна команда"
 
-#: src/Startup/Widgets/Scrolled.vala:52
-msgid "Add Startup App…"
-msgstr "Додати додаток в автозапуск…"
-
-#: src/Startup/Widgets/Scrolled.vala:56
-msgid "Remove Selected Startup App"
-msgstr "Вилучити з автозапуску"
-
-#: src/Startup/Widgets/List.vala:53
+#: src/Startup/Widgets/Scrolled.vala:49
 msgid "Launch Apps on Startup"
-msgstr "Починати додатки при старті"
+msgstr "Запуск застосунків під час запуску"
 
-#: src/Startup/Widgets/List.vala:54
+#: src/Startup/Widgets/Scrolled.vala:50
 msgid "Add apps to the Startup list by clicking the icon in the toolbar below."
 msgstr ""
-"Додайте додатки до списку автозавантаження, натиснувши на іконку в панелі "
-"інструментів нижче."
+"Додайте застосунки до переліку автозапуску, натиснувши на піктограму на "
+"панелі інструментів внизу."
 
-#: src/Startup/Widgets/AppRow.vala:46
+#: src/Startup/Widgets/Scrolled.vala:70
+msgid "Add Startup App…"
+msgstr "Додати застосунок до автозапуску…"
+
+#: src/Startup/Widgets/Scrolled.vala:74
+msgid "Remove Selected Startup App"
+msgstr "Вилучити вибраний застосунок з автозапуску"
+
+#: src/Startup/Widgets/AppRow.vala:47
 #, c-format
 msgid "Launch %s on startup"
-msgstr "Починати %s при старті"
+msgstr "Запускати %s під час запуску"
 
 #: src/Startup/Widgets/AppChooser.vala:39
 msgid "Search Applications"
-msgstr "Пошук додатків"
+msgstr "Шукати застосунки"
 
 #: src/Startup/Widgets/AppChooser.vala:55
 msgid "Type in a custom command"
-msgstr "Введіть власну команду"
+msgstr "Ввести власну команду"
 
 #: src/Defaults/DefaultPlug.vala:50
 msgid "Web Browser:"
-msgstr "Веб-переглядач:"
+msgstr "Переглядач:"
 
 #: src/Defaults/DefaultPlug.vala:54
 msgid "Email Client:"
@@ -146,7 +228,7 @@ msgstr "Календар:"
 
 #: src/Defaults/DefaultPlug.vala:62
 msgid "Video Player:"
-msgstr "Відео програвач:"
+msgstr "Програвач відео:"
 
 #: src/Defaults/DefaultPlug.vala:68
 msgid "Music Player:"

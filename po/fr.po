@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-08 19:03+0000\n"
-"PO-Revision-Date: 2020-06-26 09:12+0000\n"
+"POT-Creation-Date: 2020-10-25 18:30+0000\n"
+"PO-Revision-Date: 2020-10-16 21:15+0000\n"
 "Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
 "Language-Team: French <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-applications/fr/>\n"
@@ -86,29 +86,124 @@ msgstr "Visionneuse d'images"
 msgid "File Browser"
 msgstr "Explorateur de fichiers"
 
+#: src/Permissions/PermissionsPlug.vala:29
+msgid "Home Folder"
+msgstr "Dossier personnel"
+
+#: src/Permissions/PermissionsPlug.vala:30
+msgid "System Folders"
+msgstr "Dossiers système"
+
+#: src/Permissions/PermissionsPlug.vala:31
+msgid "Devices"
+msgstr "Périphériques"
+
+#: src/Permissions/PermissionsPlug.vala:32
+msgid "Network"
+msgstr "Réseau"
+
+#: src/Permissions/PermissionsPlug.vala:33
+msgid "Bluetooth"
+msgstr "Bluetooth"
+
+#: src/Permissions/PermissionsPlug.vala:34
+msgid "Printing"
+msgstr "Impression"
+
+#: src/Permissions/PermissionsPlug.vala:35
+msgid "Secure Shell Agent"
+msgstr "Agent de l'invite de commande"
+
+#: src/Permissions/PermissionsPlug.vala:36
+msgid "GPU Acceleration"
+msgstr "Accélération du processeur"
+
+#: src/Permissions/PermissionsPlug.vala:40
+msgid "No Flatpak apps installed"
+msgstr "Aucune application Flatpak installée"
+
+#: src/Permissions/PermissionsPlug.vala:45
+msgid ""
+"Apps whose permissions can be adjusted will automatically appear here when "
+"installed"
+msgstr ""
+"Les applications pour lesquelles les autorisations peuvent être ajustées "
+"apparaîtrons ici automatiquement une fois installées"
+
+#: src/Permissions/Widgets/AppSettingsView.vala:33
+msgid "Access your entire home folder, including any hidden folders."
+msgstr ""
+"Accéder à l'ensemble de votre dossier personnel, y compris les dossiers "
+"cachés."
+
+#: src/Permissions/Widgets/AppSettingsView.vala:40
+msgid ""
+"Access system folders, not including the operating system or system "
+"internals. This includes users' Home folders."
+msgstr ""
+"Accéder aux dossiers du système, sans inclure les fichiers du système "
+"d'exploitation. Cela inclue les dossiers personnels de l'utilisateur."
+
+#: src/Permissions/Widgets/AppSettingsView.vala:47
+msgid ""
+"Access all devices, such as webcams, microphones, and connected USB devices."
+msgstr ""
+"Accéder à tous les périphériques, telles que les webcams, microphones et "
+"périphériques USB connectés."
+
+#: src/Permissions/Widgets/AppSettingsView.vala:54
+msgid "Access the Internet and local networks."
+msgstr "Accéder à Internet et aux réseaux locaux."
+
+#: src/Permissions/Widgets/AppSettingsView.vala:61
+msgid "Manage bluetooth devices including pairing, unpairing, and discovery."
+msgstr ""
+"Gérer les périphériques Bluetooth, y compris l'appairage et la découverte."
+
+#: src/Permissions/Widgets/AppSettingsView.vala:68
+msgid "Access printers."
+msgstr "Accéder aux imprimantes."
+
+#: src/Permissions/Widgets/AppSettingsView.vala:75
+msgid "Access other devices on the network via SSH."
+msgstr "Accéder à d'autres périphériques sur le réseau via SSH."
+
+#: src/Permissions/Widgets/AppSettingsView.vala:82
+msgid "Accelerate graphical output."
+msgstr "Accélérer la sortie vidéo."
+
+#: src/Permissions/Widgets/AppSettingsView.vala:105
+msgid "Reset to Defaults"
+msgstr "Réinitialiser les valeurs par défaut"
+
+#. / Translators: This is a delimiter that separates types of permissions in the sidebar description
+#: src/Permissions/Widgets/SidebarRow.vala:82
+msgid ", "
+msgstr ", "
+
 #: src/Startup/Backend/KeyFile.vala:98
 msgid "Custom Command"
 msgstr "Commande personnalisée"
 
-#: src/Startup/Widgets/Scrolled.vala:52
-msgid "Add Startup App…"
-msgstr "Ajouter une application à démarrer automatiquement…"
-
-#: src/Startup/Widgets/Scrolled.vala:56
-msgid "Remove Selected Startup App"
-msgstr "Supprimer l'application sélectionnée du démarrage automatique"
-
-#: src/Startup/Widgets/List.vala:53
+#: src/Startup/Widgets/Scrolled.vala:49
 msgid "Launch Apps on Startup"
 msgstr "Lancer des applications au démarrage"
 
-#: src/Startup/Widgets/List.vala:54
+#: src/Startup/Widgets/Scrolled.vala:50
 msgid "Add apps to the Startup list by clicking the icon in the toolbar below."
 msgstr ""
 "Ajouter des applications à la liste de démarrage en cliquant sur l'icône "
 "dans la barre ci-dessous."
 
-#: src/Startup/Widgets/AppRow.vala:46
+#: src/Startup/Widgets/Scrolled.vala:70
+msgid "Add Startup App…"
+msgstr "Ajouter une application à démarrer automatiquement…"
+
+#: src/Startup/Widgets/Scrolled.vala:74
+msgid "Remove Selected Startup App"
+msgstr "Supprimer l'application sélectionnée du démarrage automatique"
+
+#: src/Startup/Widgets/AppRow.vala:47
 #, c-format
 msgid "Launch %s on startup"
 msgstr "Lancer %s au démarrage"

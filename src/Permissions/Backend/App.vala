@@ -121,7 +121,7 @@ public class Permissions.Backend.App : GLib.Object {
     private string get_overrides_path () {
         var overrides_folder_path = GLib.Path.build_path (
             GLib.Path.DIR_SEPARATOR_S,
-            AppManager.get_default ().user_installation_path,
+            FlatpakManager.get_default ().user_installation_path,
             "overrides"
         );
 
@@ -175,23 +175,26 @@ public class Permissions.Backend.App : GLib.Object {
     }
 
     public void save_overrides () {
-        const string GROUP = "Context";
-
         try {
             var key_file = new GLib.KeyFile ();
 
             for (var i = 0; i < settings.length; i++) {
                 var setting = settings.get (i);
                 if (setting.enabled != setting.standard) {
-                    var kv = setting.context.split ("=");
-                    var key = kv[0];
-                    var value = "%s%s".printf (!setting.enabled ? "!" : "", kv[1]);
+                    var key_value_pair = setting.context.split ("=");
+                    var key = key_value_pair[0];
 
-                    try {
-                        var _value = key_file.get_value (GROUP, key);
-                        value = "%s;%s".printf (_value, value);
-                    } catch (GLib.KeyFileError e) {
-                        GLib.warning (e.message);
+                    var value = key_value_pair[1];
+                    if (!setting.enabled) {
+                        value = "!%s".printf (value);
+                    }
+
+                    if (key_file.has_group (GROUP)) {
+                        try {
+                            value = "%s;%s".printf (key_file.get_value (GROUP, key), value);
+                        } catch (GLib.KeyFileError e) {
+                            debug (e.message);
+                        }
                     }
 
                     key_file.set_value (GROUP, key, value);

@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-08 19:03+0000\n"
-"PO-Revision-Date: 2020-06-26 09:12+0000\n"
+"POT-Creation-Date: 2020-10-25 18:30+0000\n"
+"PO-Revision-Date: 2020-10-16 21:15+0000\n"
 "Last-Translator: David M <rbndavid@gmail.com>\n"
 "Language-Team: Catalan <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-applications/ca/>\n"
@@ -85,29 +85,124 @@ msgstr "Visualitzador d'imatges"
 msgid "File Browser"
 msgstr "Navegador de fitxers"
 
+#: src/Permissions/PermissionsPlug.vala:29
+msgid "Home Folder"
+msgstr "Carpeta de l'usuari"
+
+#: src/Permissions/PermissionsPlug.vala:30
+msgid "System Folders"
+msgstr "Carpetes del sistema"
+
+#: src/Permissions/PermissionsPlug.vala:31
+msgid "Devices"
+msgstr "Dispositius"
+
+#: src/Permissions/PermissionsPlug.vala:32
+msgid "Network"
+msgstr "Xarxa"
+
+#: src/Permissions/PermissionsPlug.vala:33
+msgid "Bluetooth"
+msgstr "Bluetooth"
+
+#: src/Permissions/PermissionsPlug.vala:34
+msgid "Printing"
+msgstr "Impressió"
+
+#: src/Permissions/PermissionsPlug.vala:35
+msgid "Secure Shell Agent"
+msgstr "Agent d'intèrpret d'ordres segur"
+
+#: src/Permissions/PermissionsPlug.vala:36
+msgid "GPU Acceleration"
+msgstr "Acceleració de GPU"
+
+#: src/Permissions/PermissionsPlug.vala:40
+msgid "No Flatpak apps installed"
+msgstr "No hi ha aplicacions de Flatpak instal·lades."
+
+#: src/Permissions/PermissionsPlug.vala:45
+msgid ""
+"Apps whose permissions can be adjusted will automatically appear here when "
+"installed"
+msgstr ""
+"Les aplicacions els permisos de les quals es poden ajustar apareixeran "
+"automàticament aquí quan s’instal·lin."
+
+#: src/Permissions/Widgets/AppSettingsView.vala:33
+msgid "Access your entire home folder, including any hidden folders."
+msgstr "Accedeix a tota la carpeta de l'usuari, incloses les carpetes ocultes."
+
+#: src/Permissions/Widgets/AppSettingsView.vala:40
+msgid ""
+"Access system folders, not including the operating system or system "
+"internals. This includes users' Home folders."
+msgstr ""
+"Accedeix a les carpetes del sistema, sense incloure el sistema operatiu ni "
+"les funcions internes del sistema. Això inclou les carpetes personals dels "
+"usuaris."
+
+#: src/Permissions/Widgets/AppSettingsView.vala:47
+msgid ""
+"Access all devices, such as webcams, microphones, and connected USB devices."
+msgstr ""
+"Accedeix a tots els dispositius, com ara càmeres web, micròfons i "
+"dispositius USB connectats."
+
+#: src/Permissions/Widgets/AppSettingsView.vala:54
+msgid "Access the Internet and local networks."
+msgstr "Accedeix a Internet i a les xarxes locals."
+
+#: src/Permissions/Widgets/AppSettingsView.vala:61
+msgid "Manage bluetooth devices including pairing, unpairing, and discovery."
+msgstr ""
+"Gestiona els dispositius Bluetooth, inclosos l’aparellament, la separació i "
+"el descobriment."
+
+#: src/Permissions/Widgets/AppSettingsView.vala:68
+msgid "Access printers."
+msgstr "Accedeix a les impressores."
+
+#: src/Permissions/Widgets/AppSettingsView.vala:75
+msgid "Access other devices on the network via SSH."
+msgstr "Accedeix a altres dispositius de la xarxa mitjançant SSH."
+
+#: src/Permissions/Widgets/AppSettingsView.vala:82
+msgid "Accelerate graphical output."
+msgstr "Accelera la sortida gràfica."
+
+#: src/Permissions/Widgets/AppSettingsView.vala:105
+msgid "Reset to Defaults"
+msgstr "Restableix els valors per defecte"
+
+#. / Translators: This is a delimiter that separates types of permissions in the sidebar description
+#: src/Permissions/Widgets/SidebarRow.vala:82
+msgid ", "
+msgstr ", "
+
 #: src/Startup/Backend/KeyFile.vala:98
 msgid "Custom Command"
 msgstr "Ordre personalitzada"
 
-#: src/Startup/Widgets/Scrolled.vala:52
-msgid "Add Startup App…"
-msgstr "Afegeix una aplicació d'inici…"
-
-#: src/Startup/Widgets/Scrolled.vala:56
-msgid "Remove Selected Startup App"
-msgstr "Suprimeix l'aplicació d'inici seleccionada"
-
-#: src/Startup/Widgets/List.vala:53
+#: src/Startup/Widgets/Scrolled.vala:49
 msgid "Launch Apps on Startup"
 msgstr "Obre aplicacions a l'inici"
 
-#: src/Startup/Widgets/List.vala:54
+#: src/Startup/Widgets/Scrolled.vala:50
 msgid "Add apps to the Startup list by clicking the icon in the toolbar below."
 msgstr ""
 "Afegiu aplicacions a la llista d'inici clicant a la icona de la barra "
 "d'eines de sota."
 
-#: src/Startup/Widgets/AppRow.vala:46
+#: src/Startup/Widgets/Scrolled.vala:70
+msgid "Add Startup App…"
+msgstr "Afegeix una aplicació d'inici…"
+
+#: src/Startup/Widgets/Scrolled.vala:74
+msgid "Remove Selected Startup App"
+msgstr "Suprimeix l'aplicació d'inici seleccionada"
+
+#: src/Startup/Widgets/AppRow.vala:47
 #, c-format
 msgid "Launch %s on startup"
 msgstr "Obre %s a l'inici"

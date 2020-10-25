@@ -2,17 +2,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-08 19:03+0000\n"
-"PO-Revision-Date: 2019-01-14 13:22+0000\n"
-"Last-Translator: colindemian <colindemian@outlook.com>\n"
-"Language-Team: Chinese (Simplified) <https://weblate.elementary.io/projects/"
+"POT-Creation-Date: 2020-10-25 18:30+0000\n"
+"PO-Revision-Date: 2020-10-11 21:36+0000\n"
+"Last-Translator: anonymous <noreply@weblate.org>\n"
+"Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
 "switchboard/switchboard-plug-applications/zh_Hans/>\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 3.0.1\n"
+"X-Generator: Weblate 3.9.1\n"
 "X-Launchpad-Export-Date: 2016-12-02 05:37+0000\n"
 
 #: src/Plug.vala:41
@@ -88,27 +88,115 @@ msgstr "图像查看器"
 msgid "File Browser"
 msgstr "文件浏览器"
 
+#: src/Permissions/PermissionsPlug.vala:29
+msgid "Home Folder"
+msgstr "主文件夹"
+
+#: src/Permissions/PermissionsPlug.vala:30
+msgid "System Folders"
+msgstr ""
+
+#: src/Permissions/PermissionsPlug.vala:31
+msgid "Devices"
+msgstr "设备"
+
+#: src/Permissions/PermissionsPlug.vala:32
+msgid "Network"
+msgstr "网络"
+
+#: src/Permissions/PermissionsPlug.vala:33
+msgid "Bluetooth"
+msgstr "蓝牙"
+
+#: src/Permissions/PermissionsPlug.vala:34
+msgid "Printing"
+msgstr ""
+
+#: src/Permissions/PermissionsPlug.vala:35
+msgid "Secure Shell Agent"
+msgstr ""
+
+#: src/Permissions/PermissionsPlug.vala:36
+msgid "GPU Acceleration"
+msgstr ""
+
+#: src/Permissions/PermissionsPlug.vala:40
+msgid "No Flatpak apps installed"
+msgstr ""
+
+#: src/Permissions/PermissionsPlug.vala:45
+msgid ""
+"Apps whose permissions can be adjusted will automatically appear here when "
+"installed"
+msgstr ""
+
+#: src/Permissions/Widgets/AppSettingsView.vala:33
+msgid "Access your entire home folder, including any hidden folders."
+msgstr ""
+
+#: src/Permissions/Widgets/AppSettingsView.vala:40
+msgid ""
+"Access system folders, not including the operating system or system "
+"internals. This includes users' Home folders."
+msgstr ""
+
+#: src/Permissions/Widgets/AppSettingsView.vala:47
+msgid ""
+"Access all devices, such as webcams, microphones, and connected USB devices."
+msgstr ""
+
+#: src/Permissions/Widgets/AppSettingsView.vala:54
+msgid "Access the Internet and local networks."
+msgstr ""
+
+#: src/Permissions/Widgets/AppSettingsView.vala:61
+msgid "Manage bluetooth devices including pairing, unpairing, and discovery."
+msgstr ""
+
+#: src/Permissions/Widgets/AppSettingsView.vala:68
+msgid "Access printers."
+msgstr ""
+
+#: src/Permissions/Widgets/AppSettingsView.vala:75
+msgid "Access other devices on the network via SSH."
+msgstr ""
+
+#: src/Permissions/Widgets/AppSettingsView.vala:82
+msgid "Accelerate graphical output."
+msgstr ""
+
+#: src/Permissions/Widgets/AppSettingsView.vala:105
+#, fuzzy
+#| msgid "Default"
+msgid "Reset to Defaults"
+msgstr "默认程序"
+
+#. / Translators: This is a delimiter that separates types of permissions in the sidebar description
+#: src/Permissions/Widgets/SidebarRow.vala:82
+msgid ", "
+msgstr ""
+
 #: src/Startup/Backend/KeyFile.vala:98
 msgid "Custom Command"
 msgstr "自定义命令"
 
-#: src/Startup/Widgets/Scrolled.vala:52
-msgid "Add Startup App…"
-msgstr "添加启动项…"
-
-#: src/Startup/Widgets/Scrolled.vala:56
-msgid "Remove Selected Startup App"
-msgstr "移除选中的启动项"
-
-#: src/Startup/Widgets/List.vala:53
+#: src/Startup/Widgets/Scrolled.vala:49
 msgid "Launch Apps on Startup"
 msgstr "开机启动"
 
-#: src/Startup/Widgets/List.vala:54
+#: src/Startup/Widgets/Scrolled.vala:50
 msgid "Add apps to the Startup list by clicking the icon in the toolbar below."
 msgstr "点击下方工具栏中的图标将应用程序设置为开机启动。"
 
-#: src/Startup/Widgets/AppRow.vala:46
+#: src/Startup/Widgets/Scrolled.vala:70
+msgid "Add Startup App…"
+msgstr "添加启动项…"
+
+#: src/Startup/Widgets/Scrolled.vala:74
+msgid "Remove Selected Startup App"
+msgstr "移除选中的启动项"
+
+#: src/Startup/Widgets/AppRow.vala:47
 #, c-format
 msgid "Launch %s on startup"
 msgstr "开机时启动 %s"

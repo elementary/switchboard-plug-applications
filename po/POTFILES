@@ -1,4 +1,7 @@
 src/Plug.vala
+src/Permissions/PermissionsPlug.vala
+src/Permissions/Widgets/AppSettingsView.vala
+src/Permissions/Widgets/SidebarRow.vala
 src/Startup/Utils.vala
 src/Startup/Startup.vala
 src/Startup/Controller.vala
@@ -8,7 +11,6 @@ src/Startup/Backend/KeyFile.vala
 src/Startup/Backend/DesktopFileEnumerator.vala
 src/Startup/Entities/AppInfo.vala
 src/Startup/Widgets/Scrolled.vala
-src/Startup/Widgets/List.vala
 src/Startup/Widgets/AppRow.vala
 src/Startup/Widgets/AppChooserRow.vala
 src/Startup/Widgets/AppChooser.vala

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-08 19:03+0000\n"
+"POT-Creation-Date: 2020-10-25 18:30+0000\n"
 "PO-Revision-Date: 2018-02-15 15:34+0000\n"
 "Last-Translator: Вагиф Кязым <vaqif134@gmail.com>\n"
 "Language-Team: Azerbaijani <https://weblate.elementary.io/projects/"
@@ -96,29 +96,117 @@ msgstr "Şəkil göstəricisi:"
 msgid "File Browser"
 msgstr "Fayl səyyahı"
 
+#: src/Permissions/PermissionsPlug.vala:29
+msgid "Home Folder"
+msgstr ""
+
+#: src/Permissions/PermissionsPlug.vala:30
+msgid "System Folders"
+msgstr ""
+
+#: src/Permissions/PermissionsPlug.vala:31
+msgid "Devices"
+msgstr ""
+
+#: src/Permissions/PermissionsPlug.vala:32
+msgid "Network"
+msgstr ""
+
+#: src/Permissions/PermissionsPlug.vala:33
+msgid "Bluetooth"
+msgstr ""
+
+#: src/Permissions/PermissionsPlug.vala:34
+msgid "Printing"
+msgstr ""
+
+#: src/Permissions/PermissionsPlug.vala:35
+msgid "Secure Shell Agent"
+msgstr ""
+
+#: src/Permissions/PermissionsPlug.vala:36
+msgid "GPU Acceleration"
+msgstr ""
+
+#: src/Permissions/PermissionsPlug.vala:40
+msgid "No Flatpak apps installed"
+msgstr ""
+
+#: src/Permissions/PermissionsPlug.vala:45
+msgid ""
+"Apps whose permissions can be adjusted will automatically appear here when "
+"installed"
+msgstr ""
+
+#: src/Permissions/Widgets/AppSettingsView.vala:33
+msgid "Access your entire home folder, including any hidden folders."
+msgstr ""
+
+#: src/Permissions/Widgets/AppSettingsView.vala:40
+msgid ""
+"Access system folders, not including the operating system or system "
+"internals. This includes users' Home folders."
+msgstr ""
+
+#: src/Permissions/Widgets/AppSettingsView.vala:47
+msgid ""
+"Access all devices, such as webcams, microphones, and connected USB devices."
+msgstr ""
+
+#: src/Permissions/Widgets/AppSettingsView.vala:54
+msgid "Access the Internet and local networks."
+msgstr ""
+
+#: src/Permissions/Widgets/AppSettingsView.vala:61
+msgid "Manage bluetooth devices including pairing, unpairing, and discovery."
+msgstr ""
+
+#: src/Permissions/Widgets/AppSettingsView.vala:68
+msgid "Access printers."
+msgstr ""
+
+#: src/Permissions/Widgets/AppSettingsView.vala:75
+msgid "Access other devices on the network via SSH."
+msgstr ""
+
+#: src/Permissions/Widgets/AppSettingsView.vala:82
+msgid "Accelerate graphical output."
+msgstr ""
+
+#: src/Permissions/Widgets/AppSettingsView.vala:105
+#, fuzzy
+#| msgid "Default"
+msgid "Reset to Defaults"
+msgstr "Varsayılan"
+
+#. / Translators: This is a delimiter that separates types of permissions in the sidebar description
+#: src/Permissions/Widgets/SidebarRow.vala:82
+msgid ", "
+msgstr ""
+
 #: src/Startup/Backend/KeyFile.vala:98
 msgid "Custom Command"
 msgstr "Xüsusi komanda"
 
-#: src/Startup/Widgets/Scrolled.vala:52
-msgid "Add Startup App…"
-msgstr "Başlanğıc proqramı əlavə et…"
-
-#: src/Startup/Widgets/Scrolled.vala:56
-msgid "Remove Selected Startup App"
-msgstr "Seçilmiş başlanğıc proqramını sil"
-
-#: src/Startup/Widgets/List.vala:53
+#: src/Startup/Widgets/Scrolled.vala:49
 msgid "Launch Apps on Startup"
 msgstr "Qoşularkən tətbiqetmələrin işə salınması"
 
-#: src/Startup/Widgets/List.vala:54
+#: src/Startup/Widgets/Scrolled.vala:50
 msgid "Add apps to the Startup list by clicking the icon in the toolbar below."
 msgstr ""
 "Aşağıdakı alətlər panelindəki nişana basmaqla tətbiqetmələri avtomatik açma "
 "siyahısına əlavə edin."
 
-#: src/Startup/Widgets/AppRow.vala:46
+#: src/Startup/Widgets/Scrolled.vala:70
+msgid "Add Startup App…"
+msgstr "Başlanğıc proqramı əlavə et…"
+
+#: src/Startup/Widgets/Scrolled.vala:74
+msgid "Remove Selected Startup App"
+msgstr "Seçilmiş başlanğıc proqramını sil"
+
+#: src/Startup/Widgets/AppRow.vala:47
 #, c-format
 msgid "Launch %s on startup"
 msgstr "Qoşulandan sonra %s işə sal"
