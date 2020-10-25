@@ -66,8 +66,6 @@ public class Permissions.Plug : Gtk.Grid {
         scrolled_window.add (app_list);
 
         var frame = new Gtk.Frame (null);
-        frame.halign = Gtk.Align.START;
-        frame.width_request = 240;
         frame.add (scrolled_window);
 
         Permissions.Backend.AppManager.get_default ().apps.foreach ((id, app) => {
@@ -88,8 +86,8 @@ public class Permissions.Plug : Gtk.Grid {
         column_spacing = 12;
         margin = 12;
         margin_top = 0;
-        add (frame);
-        add (app_settings_view);
+        attach (frame, 0, 0, 1, 1);
+        attach (app_settings_view, 1, 0, 2, 1);
         show_all ();
 
         app_list.row_selected.connect (show_row);

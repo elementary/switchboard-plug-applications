@@ -34,7 +34,7 @@ public class Permissions.Backend.App : GLib.Object {
 
     construct {
         id = installed_ref.get_name ();
-        name = installed_ref.get_appdata_name ();
+        name = installed_ref.get_appdata_name () ?? id;
 
         settings = new GenericArray<Backend.PermissionSettings> ();
 
