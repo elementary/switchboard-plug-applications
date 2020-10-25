@@ -2,9 +2,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-10-12 17:04+0000\n"
-"PO-Revision-Date: 2020-10-11 21:36+0000\n"
-"Last-Translator: anonymous <noreply@weblate.org>\n"
+"POT-Creation-Date: 2020-10-25 18:30+0000\n"
+"PO-Revision-Date: 2020-10-24 11:15+0000\n"
+"Last-Translator: Fabio Zaramella <fabiozaramella@hotmail.it>\n"
 "Language-Team: Italian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-applications/it/>\n"
 "Language: it\n"
@@ -16,18 +16,16 @@ msgstr ""
 "X-Launchpad-Export-Date: 2017-03-03 06:05+0000\n"
 
 #: src/Plug.vala:41
-#, fuzzy
-#| msgid "Manage default and startup applications"
 msgid "Manage default apps, startup apps, and app permissions"
-msgstr "Gestisci le applicazioni predefinite e di avvio"
+msgstr ""
+"Gestisci le applicazioni predefinite, quelle di avvio e i permessi delle "
+"applicazioni"
 
 #: src/Plug.vala:42
 msgid "Applications"
 msgstr "Applicazioni"
 
 #: src/Plug.vala:53
-#, fuzzy
-#| msgid "Default"
 msgid "Defaults"
 msgstr "Predefinite"
 
@@ -37,7 +35,7 @@ msgstr "Avvio"
 
 #: src/Plug.vala:55 src/Plug.vala:101
 msgid "Permissions"
-msgstr ""
+msgstr "Permessi"
 
 #: src/Plug.vala:100
 msgid "Default Apps"
@@ -45,20 +43,20 @@ msgstr "Applicazioni predefinite"
 
 #: src/Plug.vala:102
 msgid "Sandboxing"
-msgstr ""
+msgstr "Isolamento delle applicazioni"
 
 #: src/Plug.vala:103
 msgid "Confinement"
-msgstr ""
+msgstr "Confinamento"
 
 #: src/Plug.vala:104 src/Plug.vala:105 src/Plug.vala:106 src/Plug.vala:107
 #: src/Plug.vala:108 src/Plug.vala:109 src/Plug.vala:110 src/Plug.vala:111
 msgid "Default"
-msgstr "Predefinite"
+msgstr "Predefinito"
 
 #: src/Plug.vala:104
 msgid "Web Browser"
-msgstr "Browser web"
+msgstr "Programma di navigazione in rete"
 
 #: src/Plug.vala:105
 msgid "Email Client"
@@ -94,7 +92,7 @@ msgstr "Apri cartella iniziale"
 
 #: src/Permissions/PermissionsPlug.vala:30
 msgid "System Folders"
-msgstr ""
+msgstr "Cartelle di sistema"
 
 #: src/Permissions/PermissionsPlug.vala:31
 msgid "Devices"
@@ -110,95 +108,103 @@ msgstr "Bluetooth"
 
 #: src/Permissions/PermissionsPlug.vala:34
 msgid "Printing"
-msgstr ""
+msgstr "Stampa"
 
 #: src/Permissions/PermissionsPlug.vala:35
 msgid "Secure Shell Agent"
-msgstr ""
+msgstr "Accesso al protocollo Secure Shell"
 
 #: src/Permissions/PermissionsPlug.vala:36
 msgid "GPU Acceleration"
-msgstr ""
+msgstr "Accelerazione GPU"
 
 #: src/Permissions/PermissionsPlug.vala:40
 msgid "No Flatpak apps installed"
-msgstr ""
+msgstr "Nessuna applicazione Flatpak installata"
 
 #: src/Permissions/PermissionsPlug.vala:45
 msgid ""
 "Apps whose permissions can be adjusted will automatically appear here when "
 "installed"
 msgstr ""
+"Le applicazioni i cui permessi possono essere regolati appariranno "
+"automaticamente qui una volta installate"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:33
 msgid "Access your entire home folder, including any hidden folders."
 msgstr ""
+"Accesso alla tua intera cartella Inizio, comprese le cartelle nascoste."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:40
 msgid ""
 "Access system folders, not including the operating system or system "
 "internals. This includes users' Home folders."
 msgstr ""
+"Accesso alle cartelle di sistema a esclusione di quelle relative al sistema "
+"operativo o a componenti interni dello stesso. Ciò include le cartelle "
+"Inizio degli utenti."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:47
 msgid ""
 "Access all devices, such as webcams, microphones, and connected USB devices."
 msgstr ""
+"Accesso a tutti i dispositivi, come webcam, microfoni e dispositivi USB "
+"collegati."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:54
 msgid "Access the Internet and local networks."
-msgstr ""
+msgstr "Accesso a Internet e alle reti locali."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:61
 msgid "Manage bluetooth devices including pairing, unpairing, and discovery."
 msgstr ""
+"Gestione dei dispositivi Bluetooth incluso il rilevamento, l'accoppiamento e "
+"il disaccoppiamento."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:68
 msgid "Access printers."
-msgstr ""
+msgstr "Accesso alle stampanti."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:75
 msgid "Access other devices on the network via SSH."
-msgstr ""
+msgstr "Accesso ad altri dispositivi sulla rete tramite SSH."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:82
 msgid "Accelerate graphical output."
-msgstr ""
+msgstr "Utilizzo dell'accelerazione grafica."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:105
-#, fuzzy
-#| msgid "Default"
 msgid "Reset to Defaults"
-msgstr "Predefinite"
+msgstr "Ripristina impostazioni predefinite"
 
 #. / Translators: This is a delimiter that separates types of permissions in the sidebar description
-#: src/Permissions/Widgets/SidebarRow.vala:80
+#: src/Permissions/Widgets/SidebarRow.vala:82
 msgid ", "
-msgstr ""
+msgstr ", "
 
 #: src/Startup/Backend/KeyFile.vala:98
 msgid "Custom Command"
 msgstr "Comando personalizzato"
 
-#: src/Startup/Widgets/Scrolled.vala:52
-msgid "Add Startup App…"
-msgstr "Aggiungi un'applicazione di avvio…"
-
-#: src/Startup/Widgets/Scrolled.vala:56
-msgid "Remove Selected Startup App"
-msgstr "Rimuovi l'applicazione di avvio selezionata"
-
-#: src/Startup/Widgets/List.vala:53
+#: src/Startup/Widgets/Scrolled.vala:49
 msgid "Launch Apps on Startup"
 msgstr "Avvia applicazioni all'accensione"
 
-#: src/Startup/Widgets/List.vala:54
+#: src/Startup/Widgets/Scrolled.vala:50
 msgid "Add apps to the Startup list by clicking the icon in the toolbar below."
 msgstr ""
 "Aggiungi applicazioni alla lista d'avvio cliccando sull'icona nella barra "
 "degli strumenti sottostante."
 
-#: src/Startup/Widgets/AppRow.vala:46
+#: src/Startup/Widgets/Scrolled.vala:70
+msgid "Add Startup App…"
+msgstr "Aggiungi un'applicazione di avvio…"
+
+#: src/Startup/Widgets/Scrolled.vala:74
+msgid "Remove Selected Startup App"
+msgstr "Rimuovi l'applicazione di avvio selezionata"
+
+#: src/Startup/Widgets/AppRow.vala:47
 #, c-format
 msgid "Launch %s on startup"
 msgstr "Avvia %s all'accensione"
