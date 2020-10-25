@@ -9,7 +9,6 @@ plug_files = files(
     'Startup/Backend/DesktopFileEnumerator.vala',
     'Startup/Entities/AppInfo.vala',
     'Startup/Widgets/Scrolled.vala',
-    'Startup/Widgets/List.vala',
     'Startup/Widgets/AppRow.vala',
     'Startup/Widgets/AppChooserRow.vala',
     'Startup/Widgets/AppChooser.vala',

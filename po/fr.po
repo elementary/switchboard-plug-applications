@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-10-12 17:04+0000\n"
+"POT-Creation-Date: 2020-10-25 18:30+0000\n"
 "PO-Revision-Date: 2020-10-16 21:15+0000\n"
 "Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
 "Language-Team: French <https://l10n.elementary.io/projects/switchboard/"
@@ -177,7 +177,7 @@ msgid "Reset to Defaults"
 msgstr "Réinitialiser les valeurs par défaut"
 
 #. / Translators: This is a delimiter that separates types of permissions in the sidebar description
-#: src/Permissions/Widgets/SidebarRow.vala:80
+#: src/Permissions/Widgets/SidebarRow.vala:82
 msgid ", "
 msgstr ", "
 
@@ -185,25 +185,25 @@ msgstr ", "
 msgid "Custom Command"
 msgstr "Commande personnalisée"
 
-#: src/Startup/Widgets/Scrolled.vala:52
-msgid "Add Startup App…"
-msgstr "Ajouter une application à démarrer automatiquement…"
-
-#: src/Startup/Widgets/Scrolled.vala:56
-msgid "Remove Selected Startup App"
-msgstr "Supprimer l'application sélectionnée du démarrage automatique"
-
-#: src/Startup/Widgets/List.vala:53
+#: src/Startup/Widgets/Scrolled.vala:49
 msgid "Launch Apps on Startup"
 msgstr "Lancer des applications au démarrage"
 
-#: src/Startup/Widgets/List.vala:54
+#: src/Startup/Widgets/Scrolled.vala:50
 msgid "Add apps to the Startup list by clicking the icon in the toolbar below."
 msgstr ""
 "Ajouter des applications à la liste de démarrage en cliquant sur l'icône "
 "dans la barre ci-dessous."
 
-#: src/Startup/Widgets/AppRow.vala:46
+#: src/Startup/Widgets/Scrolled.vala:70
+msgid "Add Startup App…"
+msgstr "Ajouter une application à démarrer automatiquement…"
+
+#: src/Startup/Widgets/Scrolled.vala:74
+msgid "Remove Selected Startup App"
+msgstr "Supprimer l'application sélectionnée du démarrage automatique"
+
+#: src/Startup/Widgets/AppRow.vala:47
 #, c-format
 msgid "Launch %s on startup"
 msgstr "Lancer %s au démarrage"

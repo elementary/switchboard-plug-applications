@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-10-12 17:04+0000\n"
+"POT-Creation-Date: 2020-10-25 18:30+0000\n"
 "PO-Revision-Date: 2020-10-11 21:36+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Greek <https://l10n.elementary.io/projects/switchboard/"
@@ -182,7 +182,7 @@ msgid "Reset to Defaults"
 msgstr "Προεπιλογή"
 
 #. / Translators: This is a delimiter that separates types of permissions in the sidebar description
-#: src/Permissions/Widgets/SidebarRow.vala:80
+#: src/Permissions/Widgets/SidebarRow.vala:82
 msgid ", "
 msgstr ""
 
@@ -190,25 +190,25 @@ msgstr ""
 msgid "Custom Command"
 msgstr "Προσαρμοσμένη εντολή"
 
-#: src/Startup/Widgets/Scrolled.vala:52
-msgid "Add Startup App…"
-msgstr "Προσθήκη εφαρμογής στην εκκίνηση..."
-
-#: src/Startup/Widgets/Scrolled.vala:56
-msgid "Remove Selected Startup App"
-msgstr "Αφαίρεση εφαρμογής από την εκκίνηση..."
-
-#: src/Startup/Widgets/List.vala:53
+#: src/Startup/Widgets/Scrolled.vala:49
 msgid "Launch Apps on Startup"
 msgstr "Εκτέλεση εφαρμογών στην εκκίνηση"
 
-#: src/Startup/Widgets/List.vala:54
+#: src/Startup/Widgets/Scrolled.vala:50
 msgid "Add apps to the Startup list by clicking the icon in the toolbar below."
 msgstr ""
 "Προσθέστε εφαρμογές στη λίστα εκκίνησης κάνοντας κλικ στο εικονίδιο που "
 "βρίσκεται κάτω στη γραμμή εργαλείων."
 
-#: src/Startup/Widgets/AppRow.vala:46
+#: src/Startup/Widgets/Scrolled.vala:70
+msgid "Add Startup App…"
+msgstr "Προσθήκη εφαρμογής στην εκκίνηση..."
+
+#: src/Startup/Widgets/Scrolled.vala:74
+msgid "Remove Selected Startup App"
+msgstr "Αφαίρεση εφαρμογής από την εκκίνηση..."
+
+#: src/Startup/Widgets/AppRow.vala:47
 #, c-format
 msgid "Launch %s on startup"
 msgstr "Εκτέλεση %s στην εκκίνηση"

@@ -11,7 +11,6 @@ src/Startup/Backend/KeyFile.vala
 src/Startup/Backend/DesktopFileEnumerator.vala
 src/Startup/Entities/AppInfo.vala
 src/Startup/Widgets/Scrolled.vala
-src/Startup/Widgets/List.vala
 src/Startup/Widgets/AppRow.vala
 src/Startup/Widgets/AppChooserRow.vala
 src/Startup/Widgets/AppChooser.vala
