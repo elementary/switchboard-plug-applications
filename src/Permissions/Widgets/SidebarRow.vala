@@ -36,7 +36,7 @@ public class Permissions.SidebarRow : Gtk.ListBoxRow {
         if (appinfo != null && appinfo.get_icon () != null) {
             image = new Gtk.Image.from_gicon (appinfo.get_icon (), Gtk.IconSize.DND);
         } else {
-            image = new Gtk.Image.from_gicon (new ThemedIcon ("application-vnd.flatpak.ref"), Gtk.IconSize.DND);
+            image = new Gtk.Image.from_icon_name ("application-default-icon", Gtk.IconSize.DND);
         }
 
         image.pixel_size = 32;
