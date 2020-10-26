@@ -1,5 +1,5 @@
 /*
-* Copyright 2013-2017 elementary, Inc. (https://elementary.io)
+* Copyright 2013-2020 elementary, Inc. (https://elementary.io)
 *
 * This program is free software; you can redistribute it and/or
 * modify it under the terms of the GNU General Public
@@ -29,20 +29,38 @@ public class Startup.Widgets.Scrolled : Gtk.Grid {
     public signal void app_removed (string path);
     public signal void app_active_changed (string path, bool active);
 
-    public List list { get; private set; }
-    public AppChooser app_chooser;
+    private Gtk.ListBox list;
+    private AppChooser app_chooser;
 
-    private Gtk.ScrolledWindow scrolled;
+    private enum Target {
+        URI_LIST
+    }
 
-    public Scrolled () {
+    private const Gtk.TargetEntry[] TARGET_LIST = {
+        { "text/uri-list", 0, Target.URI_LIST }
+    };
+
+    construct {
         orientation = Gtk.Orientation.VERTICAL;
         margin = 12;
         margin_top = 0;
 
-        list = new List ();
-        list.expand = true;
+        var empty_alert = new Granite.Widgets.AlertView (
+            _("Launch Apps on Startup"),
+            _("Add apps to the Startup list by clicking the icon in the toolbar below."),
+            "system-restart"
+        );
+        empty_alert.show_all ();
 
-        scrolled = new Gtk.ScrolledWindow (null, null);
+        list = new Gtk.ListBox () {
+            expand = true
+        };
+        list.set_placeholder (empty_alert);
+        list.set_sort_func (sort_function);
+
+        Gtk.drag_dest_set (list, Gtk.DestDefaults.ALL, TARGET_LIST, Gdk.DragAction.COPY);
+
+        var scrolled = new Gtk.ScrolledWindow (null, null);
         scrolled.add (list);
 
         var actionbar = new Gtk.ActionBar ();
@@ -54,7 +72,6 @@ public class Startup.Widgets.Scrolled : Gtk.Grid {
 
         var remove_button = new Gtk.Button.from_icon_name ("list-remove-symbolic", Gtk.IconSize.BUTTON);
         remove_button.tooltip_text = _("Remove Selected Startup App");
-        remove_button.clicked.connect (() => {list.remove_selected_app ();});
         remove_button.sensitive = false;
 
         actionbar.add (add_button);
@@ -75,21 +92,88 @@ public class Startup.Widgets.Scrolled : Gtk.Grid {
         app_chooser.app_chosen.connect ((p) => app_added (p));
         app_chooser.custom_command_chosen.connect ((c) => app_added_from_command (c));
 
-        list.app_removed.connect ((p) => app_removed (p));
-        list.app_added.connect ((p) => app_added (p));
-        list.row_selected.connect ((row) => {remove_button.sensitive = (row != null);});
-        list.app_active_changed.connect ((p, a) => app_active_changed (p, a));
+        list.drag_data_received.connect (on_drag_data_received);
+        list.row_selected.connect ((row) => {
+            remove_button.sensitive = (row != null);
+        });
+
+        remove_button.clicked.connect (() => {
+            remove_selected_app ();
+        });
     }
 
     public void add_app (Entity.AppInfo app_info) {
-        list.add_app (app_info);
+        foreach (unowned Gtk.Widget app_row in list.get_children ()) {
+            if (((AppRow) app_row).app_info == app_info) {
+                return;
+            }
+        }
+
+        var row = new AppRow (app_info);
+        list.add (row);
+
+        row.active_changed.connect ((active) => {
+            app_active_changed (row.app_info.path, active);
+        });
     }
 
     public void remove_app_from_path (string path) {
-        list.remove_app_from_path (path);
+        foreach (unowned Gtk.Widget app_row in list.get_children ()) {
+            if (((AppRow) app_row).app_info.path == path) {
+                list.remove (app_row);
+            }
+        }
     }
 
     public void init_app_chooser (Gee.Collection <Entity.AppInfo?> app_infos) {
         app_chooser.init_list (app_infos);
+    }
+
+    private void remove_selected_app () {
+        var row = list.get_selected_row ();
+        if (row == null) {
+            return;
+        }
+
+        list.remove (row);
+        app_removed (((AppRow)row).app_info.path);
+    }
+
+    private string? get_path_from_uri (string uri) {
+        if (uri.has_prefix ("#") || uri.strip () == "")
+            return null;
+
+        try {
+            return GLib.Filename.from_uri (uri);
+        } catch (Error e) {
+            warning ("Could not convert URI of dropped item to filename");
+            warning (e.message);
+        }
+
+        return null;
+    }
+
+    private int sort_function (Gtk.ListBoxRow row1, Gtk.ListBoxRow row2) {
+        var name_1 = ((AppRow) row1).app_info.name;
+        var name_2 = ((AppRow) row2).app_info.name;
+
+        return name_1.collate (name_2);
+    }
+
+    private void on_drag_data_received (Gdk.DragContext context, int x, int y,
+                                Gtk.SelectionData selection_data,
+                                uint info, uint time_) {
+
+        if (info != Target.URI_LIST) {
+            return;
+        }
+
+        var uris = (string) selection_data.get_data ();
+        foreach (unowned string uri in uris.split ("\r\n")) {
+            var path = get_path_from_uri (uri);
+            if (path != null) {
+                app_added (path);
+            }
+        }
     }
 }

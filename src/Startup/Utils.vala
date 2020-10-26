@@ -20,42 +20,9 @@
 */
 
 namespace Startup.Utils {
+    private const string AUTOSTART_DIR = "autostart";
 
-    const string AUTOSTART_DIR = "autostart";
-    const string APPLICATION_DIRS = "applications";
-
-    string[] get_application_files () {
-        var app_dirs = Utils.get_application_dirs ();
-        var enumerator = new Backend.DesktopFileEnumerator (app_dirs);
-        return enumerator.get_desktop_files ();
-    }
-
-    string[] get_auto_start_files () {
-        var startup_dir = Utils.get_user_startup_dir ();
-        var enumerator = new Backend.DesktopFileEnumerator ({ startup_dir });
-        return enumerator.get_desktop_files ();
-    }
-
-    string[] get_application_dirs () {
-        string[] result = {};
-
-        var data_dirs = Environment.get_system_data_dirs ();
-        data_dirs += Environment.get_user_data_dir ();
-        foreach (var data_dir in data_dirs) {
-            var app_dir = Path.build_filename (data_dir, APPLICATION_DIRS);
-            if (FileUtils.test (app_dir, FileTest.EXISTS)) {
-                result += app_dir;
-            }
-        }
-
-        if (result.length == 0) {
-            warning ("No application directories found");
-        }
-
-        return result;
-    }
-
-    string get_user_startup_dir () {
+    public string get_user_startup_dir () {
         var config_dir = Environment.get_user_config_dir ();
         var startup_dir = Path.build_filename (config_dir, AUTOSTART_DIR);
 
@@ -72,13 +39,13 @@ namespace Startup.Utils {
         return startup_dir;
     }
 
-    bool is_desktop_file (string name) {
+    public bool is_desktop_file (string name) {
         return !name.contains ("~") && name.has_suffix (".desktop");
     }
 
-    const string FALLBACK_ICON = "application-default-icon";
+    private const string FALLBACK_ICON = "application-default-icon";
 
-    Gtk.Image create_icon (Entity.AppInfo app_info, Gtk.IconSize icon_size) {
+    public Gtk.Image create_icon (Entity.AppInfo app_info, Gtk.IconSize icon_size) {
         var icon = new ThemedIcon.with_default_fallbacks (app_info.icon);
         var icon_theme = Gtk.IconTheme.get_default ();
 
