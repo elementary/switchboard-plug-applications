@@ -20,12 +20,12 @@
 */
 
 public class Startup.Controller : Object {
-    public Startup.Widgets.Scrolled view { get; construct; }
+    public Startup.Plug view { get; construct; }
     public Port.Monitor monitor { get; construct; }
 
     private const string APPLICATION_DIRS = "applications";
 
-    public Controller (Startup.Widgets.Scrolled view, Port.Monitor monitor) {
+    public Controller (Startup.Plug view, Port.Monitor monitor) {
         Object (view: view, monitor: monitor);
     }
 
