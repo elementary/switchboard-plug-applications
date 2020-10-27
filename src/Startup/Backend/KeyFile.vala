@@ -124,10 +124,6 @@ public class Startup.Backend.KeyFile : GLib.Object {
         return "";
     }
 
-    public void delete_file () {
-        GLib.FileUtils.remove (path);
-    }
-
     public void write_to_file () {
         try {
             GLib.FileUtils.set_contents (path, keyfile.to_data ());
