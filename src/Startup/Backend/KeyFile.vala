@@ -28,22 +28,6 @@ public class Startup.Backend.KeyFile : GLib.Object {
     private const string FALLBACK_ICON = "application-default-icon";
     private const string KEY_ACTIVE = "X-GNOME-Autostart-enabled";
 
-    public string name {
-        owned get { return keyfile_get_locale_string (KeyFileDesktop.KEY_NAME); }
-    }
-
-    public string command {
-        owned get { return keyfile_get_string (KeyFileDesktop.KEY_EXEC); }
-    }
-
-    public string comment {
-        owned get { return keyfile_get_locale_string (KeyFileDesktop.KEY_COMMENT); }
-    }
-
-    public string icon {
-        owned get { return keyfile_get_string (KeyFileDesktop.KEY_ICON); }
-    }
-
     public bool active {
         get {
             return keyfile_get_string (KEY_ACTIVE) == "true";
@@ -67,8 +51,8 @@ public class Startup.Backend.KeyFile : GLib.Object {
     public string path { get; set; }
 
     private GLib.KeyFile keyfile;
-    static string[] languages;
-    static string preferred_language;
+    private static string[] languages;
+    private static string preferred_language;
 
     static construct {
         languages = Intl.get_language_names ();
@@ -125,10 +109,10 @@ public class Startup.Backend.KeyFile : GLib.Object {
         }
 
         message ("-- Saving to %s --", path);
-        message ("Name:    %s", name);
-        message ("Comment: %s", comment);
-        message ("Command: %s", command);
-        message ("Icon:    %s", icon);
+        message ("Name:    %s", keyfile_get_locale_string (KeyFileDesktop.KEY_NAME));
+        message ("Comment: %s", keyfile_get_locale_string (KeyFileDesktop.KEY_COMMENT));
+        message ("Command: %s", keyfile_get_string (KeyFileDesktop.KEY_EXEC));
+        message ("Icon:    %s", keyfile_get_string (KeyFileDesktop.KEY_ICON));
         message ("Active:  %s", active.to_string ());
         message ("-- Done --");
     }
@@ -179,9 +163,9 @@ public class Startup.Backend.KeyFile : GLib.Object {
 
     public Entity.AppInfo create_app_info () {
         return Entity.AppInfo () {
-            name = name,
-            comment = comment,
-            icon = icon,
+            name = keyfile_get_locale_string (KeyFileDesktop.KEY_NAME),
+            comment = keyfile_get_locale_string (KeyFileDesktop.KEY_COMMENT),
+            icon = keyfile_get_string (KeyFileDesktop.KEY_ICON),
             active = active,
             path = path
         };
