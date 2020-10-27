@@ -45,7 +45,9 @@ public class Startup.Backend.KeyFile : GLib.Object {
     }
 
     public bool active {
-        get { return get_bool_key (KEY_ACTIVE); }
+        get {
+            return keyfile_get_string (KEY_ACTIVE) == "true";
+        }
         set {
             var as_string = value ? "true" : "false";
             keyfile.set_string (KeyFileDesktop.GROUP, KEY_ACTIVE, as_string);
@@ -54,7 +56,7 @@ public class Startup.Backend.KeyFile : GLib.Object {
 
     public bool show {
         get {
-            if (get_bool_key (KeyFileDesktop.KEY_NO_DISPLAY) || get_bool_key (KeyFileDesktop.KEY_HIDDEN)) {
+            if (keyfile_get_string (KeyFileDesktop.KEY_NO_DISPLAY) == "true" || keyfile_get_string (KeyFileDesktop.KEY_HIDDEN) == "true") {
                 return false;
             }
 
@@ -129,11 +131,6 @@ public class Startup.Backend.KeyFile : GLib.Object {
         message ("Icon:    %s", icon);
         message ("Active:  %s", active.to_string ());
         message ("-- Done --");
-    }
-
-    private bool get_bool_key (string key) {
-        var as_string = keyfile_get_string (key);
-        return as_string == "true";
     }
 
     private string keyfile_get_string (string key) {
