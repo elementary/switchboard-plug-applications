@@ -99,7 +99,7 @@ public class Startup.Backend.KeyFile : GLib.Object {
         keyfile = new GLib.KeyFile ();
 
         this.path = create_path_for_custom_command ();
-        keyfile.set_locale_string (KeyFileDesktop.GROUP, KEY_NAME, preferred_language, ("Custom Command"));
+        keyfile.set_locale_string (KeyFileDesktop.GROUP, KEY_NAME, preferred_language, _("Custom Command"));
         keyfile.set_locale_string (KeyFileDesktop.GROUP, KEY_COMMENT, preferred_language, command);
         keyfile.set_string (KeyFileDesktop.GROUP, KEY_COMMAND, command);
         keyfile.set_string (KeyFileDesktop.GROUP, KEY_ICON, FALLBACK_ICON);
