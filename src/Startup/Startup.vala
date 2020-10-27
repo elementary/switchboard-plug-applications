@@ -83,7 +83,7 @@ public class Startup.Plug : Gtk.Grid {
         app_chooser.modal = true;
 
         var monitor = new Backend.Monitor ();
-        controller = new Controller (this, monitor);
+        controller = new Controller (this);
 
         add_button.clicked.connect (() => {
             app_chooser.show_all ();
@@ -100,6 +100,16 @@ public class Startup.Plug : Gtk.Grid {
         list.drag_data_received.connect (on_drag_data_received);
         list.row_selected.connect ((row) => {
             remove_button.sensitive = (row != null);
+        });
+
+        monitor.file_created.connect ((path) => {
+            var key_file = Controller.get_key_file_from_path (path);
+            var app_info = key_file.create_app_info ();
+            add_app (app_info);
+        });
+
+        monitor.file_deleted.connect ((path) => {
+            remove_app_from_path (path);
         });
 
         remove_button.clicked.connect (() => {

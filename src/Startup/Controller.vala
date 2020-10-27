@@ -21,12 +21,11 @@
 
 public class Startup.Controller : Object {
     public Startup.Plug view { get; construct; }
-    public Port.Monitor monitor { get; construct; }
 
     private const string APPLICATION_DIRS = "applications";
 
-    public Controller (Startup.Plug view, Port.Monitor monitor) {
-        Object (view: view, monitor: monitor);
+    public Controller (Startup.Plug view) {
+        Object (view: view);
     }
 
     construct {
@@ -46,19 +45,6 @@ public class Startup.Controller : Object {
         }
 
         view.init_app_chooser (app_infos);
-
-        monitor.file_created.connect (add_app_to_view);
-        monitor.file_deleted.connect (remove_app_from_view);
-    }
-
-    void add_app_to_view (string path) {
-        var key_file = get_key_file_from_path (path);
-        var app_info = key_file.create_app_info ();
-        view.add_app (app_info);
-    }
-
-    void remove_app_from_view (string path) {
-        view.remove_app_from_path (path);
     }
 
     public void delete_file (string path) {
@@ -86,7 +72,7 @@ public class Startup.Controller : Object {
         view.add_app (app_info);
     }
 
-    static Backend.KeyFile get_key_file_from_path (string path) {
+    public static Backend.KeyFile get_key_file_from_path (string path) {
         return Backend.KeyFileFactory.get_or_create (path);
     }
 
