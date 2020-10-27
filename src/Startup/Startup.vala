@@ -90,11 +90,11 @@ public class Startup.Plug : Gtk.Grid {
         });
 
         app_chooser.app_chosen.connect ((path) => {
-            controller.create_file (path);
+            create_file (path);
         });
 
         app_chooser.custom_command_chosen.connect ((command) => {
-            controller.create_file_from_command (command);
+            add_app (new Backend.KeyFile.from_command (command));
         });
 
         list.drag_data_received.connect (on_drag_data_received);
@@ -103,9 +103,7 @@ public class Startup.Plug : Gtk.Grid {
         });
 
         monitor.file_created.connect ((path) => {
-            var key_file = Controller.get_key_file_from_path (path);
-            var app_info = key_file.create_app_info ();
-            add_app (app_info);
+            add_app (Backend.KeyFileFactory.get_or_create (path));
         });
 
         monitor.file_deleted.connect ((path) => {
@@ -117,7 +115,8 @@ public class Startup.Plug : Gtk.Grid {
         });
     }
 
-    public void add_app (Entity.AppInfo app_info) {
+    public void add_app (Backend.KeyFile key_file) {
+        var app_info = key_file.create_app_info ();
         foreach (unowned Gtk.Widget app_row in list.get_children ()) {
             if (((Widgets.AppRow) app_row).app_info.equal (app_info)) {
                 return;
@@ -128,7 +127,8 @@ public class Startup.Plug : Gtk.Grid {
         list.add (row);
 
         row.active_changed.connect ((active) => {
-            controller.edit_file (row.app_info.path, active);
+            key_file.active = active;
+            key_file.write_to_file ();
         });
     }
 
@@ -144,6 +144,14 @@ public class Startup.Plug : Gtk.Grid {
         app_chooser.init_list (app_infos);
     }
 
+    private void create_file (string path) {
+        var key_file = Backend.KeyFileFactory.get_or_create (path);
+        key_file.active = true;
+        key_file.copy_to_local ();
+
+        add_app (key_file);
+    }
+
     private void remove_selected_app () {
         var row = list.get_selected_row ();
         if (row == null) {
@@ -151,7 +159,9 @@ public class Startup.Plug : Gtk.Grid {
         }
 
         list.remove (row);
-        controller.delete_file (((Widgets.AppRow)row).app_info.path);
+
+        var key_file = Backend.KeyFileFactory.get_or_create (((Widgets.AppRow)row).app_info.path);
+        key_file.delete_file ();
     }
 
     private string? get_path_from_uri (string uri) {
@@ -187,7 +197,7 @@ public class Startup.Plug : Gtk.Grid {
         foreach (unowned string uri in uris.split ("\r\n")) {
             var path = get_path_from_uri (uri);
             if (path != null) {
-                controller.create_file (path);
+                create_file (path);
             }
         }
     }
