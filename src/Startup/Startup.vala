@@ -106,7 +106,7 @@ public class Startup.Plug : Gtk.Grid {
 
     public void add_app (Entity.AppInfo app_info) {
         foreach (unowned Gtk.Widget app_row in list.get_children ()) {
-            if (((Widgets.AppRow) app_row).app_info == app_info) {
+            if (((Widgets.AppRow) app_row).app_info.equal (app_info)) {
                 return;
             }
         }
