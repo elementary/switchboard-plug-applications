@@ -49,11 +49,6 @@ public class Startup.Controller : Object {
 
         monitor.file_created.connect (add_app_to_view);
         monitor.file_deleted.connect (remove_app_from_view);
-
-        view.app_added.connect (create_file);
-        view.app_added_from_command.connect (create_file_from_command);
-        view.app_removed.connect (delete_file);
-        view.app_active_changed.connect (edit_file);
     }
 
     void add_app_to_view (string path) {
@@ -66,18 +61,18 @@ public class Startup.Controller : Object {
         view.remove_app_from_path (path);
     }
 
-    void delete_file (string path) {
+    public void delete_file (string path) {
         var key_file = get_key_file_from_path (path);
         key_file.delete_file ();
     }
 
-    void edit_file (string path, bool active) {
+    public void edit_file (string path, bool active) {
         var key_file = get_key_file_from_path (path);
         key_file.active = active;
         key_file.write_to_file ();
     }
 
-    void create_file (string path) {
+    public void create_file (string path) {
         var key_file = get_key_file_from_path (path);
         key_file.active = true;
         key_file.copy_to_local ();
@@ -85,7 +80,7 @@ public class Startup.Controller : Object {
         view.add_app (app_info);
     }
 
-    void create_file_from_command (string command) {
+    public void create_file_from_command (string command) {
         var key_file = new Backend.KeyFile.from_command (command);
         var app_info = key_file.create_app_info ();
         view.add_app (app_info);

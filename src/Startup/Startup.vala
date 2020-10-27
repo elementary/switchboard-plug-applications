@@ -21,11 +21,6 @@
 */
 
 public class Startup.Plug : Gtk.Grid {
-    public signal void app_added (string path);
-    public signal void app_added_from_command (string command);
-    public signal void app_removed (string path);
-    public signal void app_active_changed (string path, bool active);
-
     private Controller controller;
     private Gtk.ListBox list;
     private Widgets.AppChooser app_chooser;
@@ -64,7 +59,6 @@ public class Startup.Plug : Gtk.Grid {
 
         var add_button = new Gtk.Button.from_icon_name ("application-add-symbolic", Gtk.IconSize.BUTTON);
         add_button.tooltip_text = _("Add Startup App…");
-        add_button.clicked.connect (() => {app_chooser.show_all ();});
 
         var remove_button = new Gtk.Button.from_icon_name ("list-remove-symbolic", Gtk.IconSize.BUTTON);
         remove_button.tooltip_text = _("Remove Selected Startup App");
@@ -91,8 +85,17 @@ public class Startup.Plug : Gtk.Grid {
         var monitor = new Backend.Monitor ();
         controller = new Controller (this, monitor);
 
-        app_chooser.app_chosen.connect ((p) => app_added (p));
-        app_chooser.custom_command_chosen.connect ((c) => app_added_from_command (c));
+        add_button.clicked.connect (() => {
+            app_chooser.show_all ();
+        });
+
+        app_chooser.app_chosen.connect ((path) => {
+            controller.create_file (path);
+        });
+
+        app_chooser.custom_command_chosen.connect ((command) => {
+            controller.create_file_from_command (command);
+        });
 
         list.drag_data_received.connect (on_drag_data_received);
         list.row_selected.connect ((row) => {
@@ -115,7 +118,7 @@ public class Startup.Plug : Gtk.Grid {
         list.add (row);
 
         row.active_changed.connect ((active) => {
-            app_active_changed (row.app_info.path, active);
+            controller.edit_file (row.app_info.path, active);
         });
     }
 
@@ -138,7 +141,7 @@ public class Startup.Plug : Gtk.Grid {
         }
 
         list.remove (row);
-        app_removed (((Widgets.AppRow)row).app_info.path);
+        controller.delete_file (((Widgets.AppRow)row).app_info.path);
     }
 
     private string? get_path_from_uri (string uri) {
@@ -174,7 +177,7 @@ public class Startup.Plug : Gtk.Grid {
         foreach (unowned string uri in uris.split ("\r\n")) {
             var path = get_path_from_uri (uri);
             if (path != null) {
-                app_added (path);
+                controller.create_file (path);
             }
         }
     }
