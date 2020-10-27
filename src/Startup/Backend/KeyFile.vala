@@ -25,7 +25,6 @@
  * http://standards.freedesktop.org/desktop-entry-spec/latest/index.html
  */
 public class Startup.Backend.KeyFile : GLib.Object {
-
     const string FALLBACK_ICON = "application-default-icon";
 
     const string KEY_NAME = KeyFileDesktop.KEY_NAME;
@@ -40,43 +39,42 @@ public class Startup.Backend.KeyFile : GLib.Object {
     const string KEY_ONLY_SHOW_IN = KeyFileDesktop.KEY_ONLY_SHOW_IN;
 
     public string name {
-        owned get { return get_key (KEY_NAME); }
-        set { set_key (KEY_NAME, value); }
+        owned get { return keyfile_get_locale_string (KEY_NAME); }
     }
 
     public string command {
-        owned get { return get_key (KEY_COMMAND); }
-        set { set_key (KEY_COMMAND, value); }
+        owned get { return keyfile_get_string (KEY_COMMAND); }
     }
 
     public string comment {
-        owned get { return get_key (KEY_COMMENT); }
-        set { set_key (KEY_COMMENT, value); }
+        owned get { return keyfile_get_locale_string (KEY_COMMENT); }
     }
 
     public string icon {
-        owned get { return get_key (KEY_ICON); }
-        set { set_key (KEY_ICON, value); }
+        owned get { return keyfile_get_string (KEY_ICON); }
     }
 
     public bool active {
         get { return get_bool_key (KEY_ACTIVE); }
-        set { set_bool_key (KEY_ACTIVE, value); }
+        set {
+            var as_string = value ? "true" : "false";
+            keyfile.set_string (KeyFileDesktop.GROUP, KEY_ACTIVE, as_string);
+        }
     }
 
     public bool show {
         get {
-            if (get_bool_key (KEY_NO_DISPLAY))
+            if (get_bool_key (KEY_NO_DISPLAY) || get_bool_key (KEY_HIDDEN)) {
                 return false;
-            if (get_bool_key (KEY_HIDDEN))
-                return false;
+            }
+
             return show_in_environment ();
         }
     }
 
     public string path { get; set; }
 
-    GLib.KeyFile keyfile;
+    private GLib.KeyFile keyfile;
     static string[] languages;
     static string preferred_language;
 
@@ -88,25 +86,31 @@ public class Startup.Backend.KeyFile : GLib.Object {
     public KeyFile (string path) {
         Object (path: path);
         keyfile = new GLib.KeyFile ();
-        load_from_file ();
+
+        try {
+            keyfile.load_from_file (path, GLib.KeyFileFlags.KEEP_TRANSLATIONS);
+        } catch (Error e) {
+            warning ("Failed to load contents of file '%s'", path);
+            warning (e.message);
+        }
     }
 
     public KeyFile.from_command (string command) {
         keyfile = new GLib.KeyFile ();
 
         this.path = create_path_for_custom_command ();
-        this.name = _("Custom Command");
-        this.comment = command;
-        this.command = command;
-        this.icon = FALLBACK_ICON;
+        keyfile.set_locale_string (KeyFileDesktop.GROUP, KEY_NAME, preferred_language, ("Custom Command"));
+        keyfile.set_locale_string (KeyFileDesktop.GROUP, KEY_COMMENT, preferred_language, command);
+        keyfile.set_string (KeyFileDesktop.GROUP, KEY_COMMAND, command);
+        keyfile.set_string (KeyFileDesktop.GROUP, KEY_ICON, FALLBACK_ICON);
         this.active = true;
 
-        set_key (KEY_TYPE, KeyFileDesktop.TYPE_APPLICATION);
+        keyfile.set_string (KeyFileDesktop.GROUP, KEY_TYPE, KeyFileDesktop.TYPE_APPLICATION);
 
         write_to_file ();
     }
 
-    string create_path_for_custom_command () {
+    private string create_path_for_custom_command () {
         var startup_dir = Utils.get_user_startup_dir ();
 
         for (int i = 0; i < 100; i++) {
@@ -141,80 +145,22 @@ public class Startup.Backend.KeyFile : GLib.Object {
         message ("-- Done --");
     }
 
-    void load_from_file () {
-        try {
-            keyfile.load_from_file (path, GLib.KeyFileFlags.KEEP_TRANSLATIONS);
-        } catch (Error e) {
-            warning ("Failed to load contents of file '%s'", path);
-            warning (e.message);
-        }
-    }
-
-    void set_bool_key (string key, bool value) {
-        var as_string = value ? "true" : "false";
-        keyfile_set_string (key, as_string);
-    }
-
-    bool get_bool_key (string key) {
+    private bool get_bool_key (string key) {
         var as_string = keyfile_get_string (key);
         return as_string == "true";
     }
 
-    void set_key (string key, string value) {
-        if (key_is_localized (key)) {
-            keyfile_set_locale_string (key, value);
-        } else {
-            keyfile_set_string (key, value);
-        }
-    }
-
-    string get_key (string key) {
-        if (key_is_localized (key)) {
-            return keyfile_get_locale_string (key);
-        } else {
-            return keyfile_get_string (key);
-        }
-    }
-
-    bool key_is_localized (string key) {
-        switch (key) {
-            case KEY_NAME:
-            case KEY_COMMENT:
-                return true;
-
-            case KEY_COMMAND:
-            case KEY_ICON:
-            case KEY_ACTIVE:
-            case KEY_NO_DISPLAY:
-            case KEY_TYPE:
-            case KEY_ONLY_SHOW_IN:
-            case KEY_NOT_SHOW_IN:
-            case KEY_HIDDEN:
-                return false;
-
-            default:
-                warn_if_reached ();
-                return false;
-        }
-    }
-
-    void keyfile_set_string (string key, string value) {
-        keyfile.set_string (KeyFileDesktop.GROUP, key, value);
-    }
-
-    void keyfile_set_locale_string (string key, string value) {
-        keyfile.set_locale_string (KeyFileDesktop.GROUP, key, preferred_language, value);
-    }
-
-    string keyfile_get_string (string key) {
+    private string keyfile_get_string (string key) {
         try {
             return keyfile.get_string (KeyFileDesktop.GROUP, key);
-        } catch (KeyFileError e) { }
+        } catch (KeyFileError e) {
+            critical (e.message);
+        }
 
         return "";
     }
 
-    string keyfile_get_locale_string (string key) {
+    private string keyfile_get_locale_string (string key) {
         foreach (string lang in languages) {
             try {
                 return keyfile.get_locale_string (KeyFileDesktop.GROUP, key, lang);
@@ -224,9 +170,9 @@ public class Startup.Backend.KeyFile : GLib.Object {
         return "";
     }
 
-    bool show_in_environment () {
-        var only_show_in = get_key (KEY_ONLY_SHOW_IN).down ();
-        var not_show_in = get_key (KEY_NOT_SHOW_IN).down ();
+    private bool show_in_environment () {
+        var only_show_in = keyfile_get_string (KEY_ONLY_SHOW_IN).down ();
+        var not_show_in = keyfile_get_string (KEY_NOT_SHOW_IN).down ();
 
         var session = Environment.get_variable ("DESKTOP_SESSION").down ();
 
@@ -246,13 +192,6 @@ public class Startup.Backend.KeyFile : GLib.Object {
         var startup_dir = Utils.get_user_startup_dir ();
         path = Path.build_filename (startup_dir, basename);
         write_to_file ();
-    }
-
-    public string create_markup () {
-        var escaped_name = Markup.escape_text (name);
-        var escaped_comment = Markup.escape_text (comment);
-
-        return @"<span font_weight=\"bold\" size=\"large\">$escaped_name</span>\n$escaped_comment";
     }
 
     public Entity.AppInfo create_app_info () {
