@@ -108,13 +108,13 @@ public class Startup.Backend.KeyFile : GLib.Object {
             warning (e.message);
         }
 
-        message ("-- Saving to %s --", path);
-        message ("Name:    %s", keyfile_get_locale_string (KeyFileDesktop.KEY_NAME));
-        message ("Comment: %s", keyfile_get_locale_string (KeyFileDesktop.KEY_COMMENT));
-        message ("Command: %s", keyfile_get_string (KeyFileDesktop.KEY_EXEC));
-        message ("Icon:    %s", keyfile_get_string (KeyFileDesktop.KEY_ICON));
-        message ("Active:  %s", active.to_string ());
-        message ("-- Done --");
+        debug ("-- Saving to %s --", path);
+        debug ("Name:    %s", keyfile_get_locale_string (KeyFileDesktop.KEY_NAME));
+        debug ("Comment: %s", keyfile_get_locale_string (KeyFileDesktop.KEY_COMMENT));
+        debug ("Command: %s", keyfile_get_string (KeyFileDesktop.KEY_EXEC));
+        debug ("Icon:    %s", keyfile_get_string (KeyFileDesktop.KEY_ICON));
+        debug ("Active:  %s", active.to_string ());
+        debug ("-- Done --");
     }
 
     private string keyfile_get_string (string key) {
