@@ -30,50 +30,21 @@ public class Startup.Controller : Object {
 
     construct {
         foreach (unowned string path in get_auto_start_files ()) {
-            var key_file = get_key_file_from_path (path);
+            var key_file = Backend.KeyFileFactory.get_or_create (path);
             if (key_file.show) {
-                view.add_app (key_file.create_app_info ());
+                view.add_app (key_file);
             }
         }
 
         var app_infos = new Gee.ArrayList <Entity.AppInfo?> ();
         foreach (unowned string path in get_application_files ()) {
-            var key_file = get_key_file_from_path (path);
+            var key_file = Backend.KeyFileFactory.get_or_create (path);
             if (key_file.show) {
                 app_infos.add (key_file.create_app_info ());
             }
         }
 
         view.init_app_chooser (app_infos);
-    }
-
-    public void delete_file (string path) {
-        var key_file = get_key_file_from_path (path);
-        key_file.delete_file ();
-    }
-
-    public void edit_file (string path, bool active) {
-        var key_file = get_key_file_from_path (path);
-        key_file.active = active;
-        key_file.write_to_file ();
-    }
-
-    public void create_file (string path) {
-        var key_file = get_key_file_from_path (path);
-        key_file.active = true;
-        key_file.copy_to_local ();
-        var app_info = key_file.create_app_info ();
-        view.add_app (app_info);
-    }
-
-    public void create_file_from_command (string command) {
-        var key_file = new Backend.KeyFile.from_command (command);
-        var app_info = key_file.create_app_info ();
-        view.add_app (app_info);
-    }
-
-    public static Backend.KeyFile get_key_file_from_path (string path) {
-        return Backend.KeyFileFactory.get_or_create (path);
     }
 
     private string[] get_application_files () {
