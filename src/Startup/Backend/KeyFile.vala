@@ -25,33 +25,23 @@
  * http://standards.freedesktop.org/desktop-entry-spec/latest/index.html
  */
 public class Startup.Backend.KeyFile : GLib.Object {
-    const string FALLBACK_ICON = "application-default-icon";
-
-    const string KEY_NAME = KeyFileDesktop.KEY_NAME;
-    const string KEY_COMMAND = KeyFileDesktop.KEY_EXEC;
-    const string KEY_COMMENT = KeyFileDesktop.KEY_COMMENT;
-    const string KEY_ICON = KeyFileDesktop.KEY_ICON;
-    const string KEY_ACTIVE = "X-GNOME-Autostart-enabled";
-    const string KEY_TYPE = KeyFileDesktop.KEY_TYPE;
-    const string KEY_NO_DISPLAY = KeyFileDesktop.KEY_NO_DISPLAY;
-    const string KEY_HIDDEN = KeyFileDesktop.KEY_HIDDEN;
-    const string KEY_NOT_SHOW_IN = KeyFileDesktop.KEY_NOT_SHOW_IN;
-    const string KEY_ONLY_SHOW_IN = KeyFileDesktop.KEY_ONLY_SHOW_IN;
+    private const string FALLBACK_ICON = "application-default-icon";
+    private const string KEY_ACTIVE = "X-GNOME-Autostart-enabled";
 
     public string name {
-        owned get { return keyfile_get_locale_string (KEY_NAME); }
+        owned get { return keyfile_get_locale_string (KeyFileDesktop.KEY_NAME); }
     }
 
     public string command {
-        owned get { return keyfile_get_string (KEY_COMMAND); }
+        owned get { return keyfile_get_string (KeyFileDesktop.KEY_EXEC); }
     }
 
     public string comment {
-        owned get { return keyfile_get_locale_string (KEY_COMMENT); }
+        owned get { return keyfile_get_locale_string (KeyFileDesktop.KEY_COMMENT); }
     }
 
     public string icon {
-        owned get { return keyfile_get_string (KEY_ICON); }
+        owned get { return keyfile_get_string (KeyFileDesktop.KEY_ICON); }
     }
 
     public bool active {
@@ -64,7 +54,7 @@ public class Startup.Backend.KeyFile : GLib.Object {
 
     public bool show {
         get {
-            if (get_bool_key (KEY_NO_DISPLAY) || get_bool_key (KEY_HIDDEN)) {
+            if (get_bool_key (KeyFileDesktop.KEY_NO_DISPLAY) || get_bool_key (KeyFileDesktop.KEY_HIDDEN)) {
                 return false;
             }
 
@@ -99,13 +89,13 @@ public class Startup.Backend.KeyFile : GLib.Object {
         keyfile = new GLib.KeyFile ();
 
         this.path = create_path_for_custom_command ();
-        keyfile.set_locale_string (KeyFileDesktop.GROUP, KEY_NAME, preferred_language, _("Custom Command"));
-        keyfile.set_locale_string (KeyFileDesktop.GROUP, KEY_COMMENT, preferred_language, command);
-        keyfile.set_string (KeyFileDesktop.GROUP, KEY_COMMAND, command);
-        keyfile.set_string (KeyFileDesktop.GROUP, KEY_ICON, FALLBACK_ICON);
+        keyfile.set_locale_string (KeyFileDesktop.GROUP, KeyFileDesktop.KEY_NAME, preferred_language, _("Custom Command"));
+        keyfile.set_locale_string (KeyFileDesktop.GROUP, KeyFileDesktop.KEY_COMMENT, preferred_language, command);
+        keyfile.set_string (KeyFileDesktop.GROUP, KeyFileDesktop.KEY_EXEC, command);
+        keyfile.set_string (KeyFileDesktop.GROUP, KeyFileDesktop.KEY_ICON, FALLBACK_ICON);
         this.active = true;
 
-        keyfile.set_string (KeyFileDesktop.GROUP, KEY_TYPE, KeyFileDesktop.TYPE_APPLICATION);
+        keyfile.set_string (KeyFileDesktop.GROUP, KeyFileDesktop.KEY_TYPE, KeyFileDesktop.TYPE_APPLICATION);
 
         write_to_file ();
     }
@@ -167,8 +157,8 @@ public class Startup.Backend.KeyFile : GLib.Object {
     }
 
     private bool show_in_environment () {
-        var only_show_in = keyfile_get_string (KEY_ONLY_SHOW_IN).down ();
-        var not_show_in = keyfile_get_string (KEY_NOT_SHOW_IN).down ();
+        var only_show_in = keyfile_get_string (KeyFileDesktop.KEY_ONLY_SHOW_IN).down ();
+        var not_show_in = keyfile_get_string (KeyFileDesktop.KEY_NOT_SHOW_IN).down ();
 
         var session = Environment.get_variable ("DESKTOP_SESSION").down ();
 
