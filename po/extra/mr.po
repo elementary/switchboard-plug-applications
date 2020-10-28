@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-05-31 21:23+0000\n"
-"PO-Revision-Date: 2019-11-25 10:25+0000\n"
+"PO-Revision-Date: 2020-10-29 01:23+0000\n"
 "Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
 "Language-Team: Marathi <https://l10n.elementary.io/projects/switchboard/"
 "applications-plug-extra/mr/>\n"
@@ -17,13 +17,11 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 3.7.1\n"
+"X-Generator: Weblate 3.9.1\n"
 
 #: data/io.elementary.switchboard.applications.appdata.xml.in:5
-#, fuzzy
-#| msgid "Applications"
 msgid "Applications Settings"
-msgstr "ॲप्लिकेशन्स्"
+msgstr "ॲप्लिकेशन्स् सेटिंग्ज"
 
 #: data/io.elementary.switchboard.applications.appdata.xml.in:6
 msgid "Manage default and startup applications"
@@ -32,6 +30,8 @@ msgstr "डीफॉल्ट आणि स्टार्टअप अप्ल
 #: data/io.elementary.switchboard.applications.appdata.xml.in:12
 msgid "Fix user's desktop files is not shown"
 msgstr ""
+"वापरकर्त्याच्या डेस्कटॉप फायली दर्शविल्या जात नाहीत संबंधित समस्यांचे निरा"
+"करण करा"
 
 #: data/io.elementary.switchboard.applications.appdata.xml.in:13
 #: data/io.elementary.switchboard.applications.appdata.xml.in:18
