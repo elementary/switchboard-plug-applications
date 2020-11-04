@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-10-27 17:38+0000\n"
-"PO-Revision-Date: 2020-10-29 01:23+0000\n"
+"PO-Revision-Date: 2020-10-30 09:15+0000\n"
 "Last-Translator: Ozgur Baskin <bebeto_baskin@yahoo.com>\n"
 "Language-Team: Turkish <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-applications/tr/>\n"
@@ -127,47 +127,52 @@ msgid ""
 "Apps whose permissions can be adjusted will automatically appear here when "
 "installed"
 msgstr ""
+"İzinleri ayarlanabilen uygulamalar yüklendiğinde burada otomatik olarak "
+"görünecektir"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:33
 msgid "Access your entire home folder, including any hidden folders."
-msgstr ""
+msgstr "Gizli klasörler dahil tüm ana klasörünüze erişin."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:40
 msgid ""
 "Access system folders, not including the operating system or system "
 "internals. This includes users' Home folders."
 msgstr ""
+"İşletim sistemi veya sistem iç bileşenleri hariç sistem klasörlerine erişin. "
+"Bu, kullanıcıların Ana klasörlerini içerir."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:47
 msgid ""
 "Access all devices, such as webcams, microphones, and connected USB devices."
 msgstr ""
+"Web kameraları, mikrofonlar ve bağlı USB cihazları gibi tüm cihazlara erişin."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:54
 msgid "Access the Internet and local networks."
-msgstr ""
+msgstr "İnternete ve yerel ağlara erişin."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:61
 msgid "Manage bluetooth devices including pairing, unpairing, and discovery."
 msgstr ""
+"Eşleştirme, eşleştirme kaldırma ve keşif dahil olmak üzere bluetooth "
+"cihazlarını yönetin."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:68
 msgid "Access printers."
-msgstr ""
+msgstr "Yazıcılara erişin."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:75
 msgid "Access other devices on the network via SSH."
-msgstr ""
+msgstr "Ağdaki diğer cihazlara SSH aracılığıyla erişin."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:82
 msgid "Accelerate graphical output."
-msgstr ""
+msgstr "Grafik çıktıyı hızlandırın."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:105
-#, fuzzy
-#| msgid "Defaults"
 msgid "Reset to Defaults"
-msgstr "Varsayılanlar"
+msgstr "Varsayılanlara Sıfırla"
 
 #. / Translators: This is a delimiter that separates types of permissions in the sidebar description
 #: src/Permissions/Widgets/SidebarRow.vala:89
@@ -211,7 +216,7 @@ msgstr "Özel komut gir"
 
 #: src/Defaults/DefaultPlug.vala:50
 msgid "Web Browser:"
-msgstr "Web Tarayıcı:"
+msgstr "Web Tarayıcısı:"
 
 #: src/Defaults/DefaultPlug.vala:54
 msgid "Email Client:"
