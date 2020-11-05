@@ -159,7 +159,7 @@ public class Defaults.Plug : Gtk.Grid {
 
     private void run_in_thread (owned ThreadFunc<void*> func) {
         try {
-            new Thread<void*>.try (null, func);
+            new Thread<void*>.try (null, (owned) func);
         } catch (Error e) {
             warning ("Could not create a new thread: %s", e.message);
         }
