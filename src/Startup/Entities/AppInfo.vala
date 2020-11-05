@@ -26,4 +26,8 @@ public struct Startup.Entity.AppInfo {
     public string icon;
     public bool active;
     public string path;
+
+    public bool equal (Entity.AppInfo other_app_info) {
+        return this.name == other_app_info.name && this.path == other_app_info.path;
+    }
 }

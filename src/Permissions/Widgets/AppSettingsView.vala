@@ -45,7 +45,7 @@ public class Permissions.Widgets.AppSettingsView : Gtk.Grid {
         var devices_widget = new PermissionSettingsWidget (
             Plug.permission_names["devices=all"],
             _("Access all devices, such as webcams, microphones, and connected USB devices."),
-            "accessories-camera",
+            "camera-web",
             new Backend.PermissionSettings ("devices=all")
         );
 

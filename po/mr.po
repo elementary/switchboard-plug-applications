@@ -2,9 +2,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-10-25 18:30+0000\n"
-"PO-Revision-Date: 2020-10-11 21:36+0000\n"
-"Last-Translator: anonymous <noreply@weblate.org>\n"
+"POT-Creation-Date: 2020-10-27 17:38+0000\n"
+"PO-Revision-Date: 2020-11-03 19:15+0000\n"
+"Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
 "Language-Team: Marathi <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-applications/mr/>\n"
 "Language: mr\n"
@@ -16,18 +16,14 @@ msgstr ""
 "X-Launchpad-Export-Date: 2016-11-26 05:52+0000\n"
 
 #: src/Plug.vala:41
-#, fuzzy
-#| msgid "Manage default and startup applications"
 msgid "Manage default apps, startup apps, and app permissions"
-msgstr "डीफॉल्ट आणि स्टार्टअप अप्लिकेशन व्यवस्थापित करा"
+msgstr "डीफॉल्ट अ‍ॅप्स, स्टार्टअप अ‍ॅप्स आणि अ‍ॅप परवानग्या व्यवस्थापित करा"
 
 #: src/Plug.vala:42
 msgid "Applications"
 msgstr "ॲप्लिकेशन्स्"
 
 #: src/Plug.vala:53
-#, fuzzy
-#| msgid "Default"
 msgid "Defaults"
 msgstr "डीफॉल्ट"
 
@@ -37,7 +33,7 @@ msgstr "स्टार्टअप"
 
 #: src/Plug.vala:55 src/Plug.vala:101
 msgid "Permissions"
-msgstr ""
+msgstr "परवानग्या"
 
 #: src/Plug.vala:100
 msgid "Default Apps"
@@ -45,11 +41,11 @@ msgstr "डीफॉल्ट अॅप्स"
 
 #: src/Plug.vala:102
 msgid "Sandboxing"
-msgstr ""
+msgstr "सँडबॉक्सिंग"
 
 #: src/Plug.vala:103
 msgid "Confinement"
-msgstr ""
+msgstr "कारावास"
 
 #: src/Plug.vala:104 src/Plug.vala:105 src/Plug.vala:106 src/Plug.vala:107
 #: src/Plug.vala:108 src/Plug.vala:109 src/Plug.vala:110 src/Plug.vala:111
@@ -94,7 +90,7 @@ msgstr "होम फोल्डर"
 
 #: src/Permissions/PermissionsPlug.vala:30
 msgid "System Folders"
-msgstr ""
+msgstr "सिस्टम फोल्डर्स"
 
 #: src/Permissions/PermissionsPlug.vala:31
 msgid "Devices"
@@ -110,29 +106,32 @@ msgstr "ब्लूटुथ"
 
 #: src/Permissions/PermissionsPlug.vala:34
 msgid "Printing"
-msgstr ""
+msgstr "मुद्रण"
 
 #: src/Permissions/PermissionsPlug.vala:35
 msgid "Secure Shell Agent"
-msgstr ""
+msgstr "सुरक्षित शेल एजंट"
 
 #: src/Permissions/PermissionsPlug.vala:36
 msgid "GPU Acceleration"
-msgstr ""
+msgstr "GPU प्रवेग"
 
 #: src/Permissions/PermissionsPlug.vala:40
 msgid "No Flatpak apps installed"
-msgstr ""
+msgstr "कोणतेही फ्लॅटपॅक अ‍ॅप्स स्थापित केलेले नाहीत"
 
 #: src/Permissions/PermissionsPlug.vala:45
 msgid ""
 "Apps whose permissions can be adjusted will automatically appear here when "
 "installed"
 msgstr ""
+"ज्यांच्या परवानग्या समायोजित केल्या जाऊ शकतात असे  अ‍ॅप्स स्थापित केल्यावर "
+"स्वयंचलितपणे येथे दिसून येतील"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:33
 msgid "Access your entire home folder, including any hidden folders."
 msgstr ""
+"कोणत्याही लपविलेल्या फोल्डर्ससह आपल्या संपूर्ण मुख्य फोल्डरमध्ये प्रवेश करा."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:40
 msgid ""
@@ -172,40 +171,40 @@ msgid "Reset to Defaults"
 msgstr "डीफॉल्ट"
 
 #. / Translators: This is a delimiter that separates types of permissions in the sidebar description
-#: src/Permissions/Widgets/SidebarRow.vala:82
+#: src/Permissions/Widgets/SidebarRow.vala:89
 msgid ", "
-msgstr ""
+msgstr ", "
+
+#: src/Startup/Startup.vala:45
+msgid "Launch Apps on Startup"
+msgstr "स्टार्टअप वर अॅप्स लॉन्च करा"
+
+#: src/Startup/Startup.vala:46
+msgid "Add apps to the Startup list by clicking the icon in the toolbar below."
+msgstr "खालील टूलबारमधील चिन्हावर क्लिक करून स्टार्टअप सूचीमध्ये अॅप्स जोडा."
+
+#: src/Startup/Startup.vala:66
+msgid "Add Startup App…"
+msgstr "स्टार्टअप अॅप जोडा…"
+
+#: src/Startup/Startup.vala:70
+msgid "Remove Selected Startup App"
+msgstr "निवडलेले स्टार्टअप अॅप काढा"
 
 #: src/Startup/Backend/KeyFile.vala:98
 msgid "Custom Command"
 msgstr "सानुकूल आदेश"
-
-#: src/Startup/Widgets/Scrolled.vala:49
-msgid "Launch Apps on Startup"
-msgstr "स्टार्टअप वर अॅप्स लॉन्च करा"
-
-#: src/Startup/Widgets/Scrolled.vala:50
-msgid "Add apps to the Startup list by clicking the icon in the toolbar below."
-msgstr "खालील टूलबारमधील चिन्हावर क्लिक करून स्टार्टअप सूचीमध्ये अॅप्स जोडा."
-
-#: src/Startup/Widgets/Scrolled.vala:70
-msgid "Add Startup App…"
-msgstr "स्टार्टअप अॅप जोडा…"
-
-#: src/Startup/Widgets/Scrolled.vala:74
-msgid "Remove Selected Startup App"
-msgstr "निवडलेले स्टार्टअप अॅप काढा"
 
 #: src/Startup/Widgets/AppRow.vala:47
 #, c-format
 msgid "Launch %s on startup"
 msgstr "स्टार्टअपवर %s लॉन्च करा"
 
-#: src/Startup/Widgets/AppChooser.vala:39
+#: src/Startup/Widgets/AppChooser.vala:38
 msgid "Search Applications"
 msgstr "अप्लिकेशन शोधा"
 
-#: src/Startup/Widgets/AppChooser.vala:55
+#: src/Startup/Widgets/AppChooser.vala:56
 msgid "Type in a custom command"
 msgstr "सानुकूल आज्ञा टाइप करा"
 

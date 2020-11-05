@@ -29,9 +29,16 @@ public class Permissions.SidebarRow : Gtk.ListBoxRow {
     }
 
     construct {
+        hexpand = true;
         var appinfo = new GLib.DesktopAppInfo (app.id + ".desktop");
 
-        var image = new Gtk.Image.from_gicon (appinfo.get_icon (), Gtk.IconSize.DND);
+        Gtk.Image image;
+        if (appinfo != null && appinfo.get_icon () != null) {
+            image = new Gtk.Image.from_gicon (appinfo.get_icon (), Gtk.IconSize.DND);
+        } else {
+            image = new Gtk.Image.from_icon_name ("application-default-icon", Gtk.IconSize.DND);
+        }
+
         image.pixel_size = 32;
 
         var title_label = new Gtk.Label (app.name) {

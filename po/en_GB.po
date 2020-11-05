@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-10-25 18:30+0000\n"
+"POT-Creation-Date: 2020-10-27 17:38+0000\n"
 "PO-Revision-Date: 2020-10-11 21:36+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: English (United Kingdom) <https://l10n.elementary.io/projects/"
@@ -168,41 +168,41 @@ msgid "Reset to Defaults"
 msgstr "Defaults"
 
 #. / Translators: This is a delimiter that separates types of permissions in the sidebar description
-#: src/Permissions/Widgets/SidebarRow.vala:82
+#: src/Permissions/Widgets/SidebarRow.vala:89
 msgid ", "
 msgstr ""
 
-#: src/Startup/Backend/KeyFile.vala:98
-msgid "Custom Command"
-msgstr "Custom Command"
-
-#: src/Startup/Widgets/Scrolled.vala:49
+#: src/Startup/Startup.vala:45
 msgid "Launch Apps on Startup"
 msgstr "Launch Apps on Startup"
 
-#: src/Startup/Widgets/Scrolled.vala:50
+#: src/Startup/Startup.vala:46
 msgid "Add apps to the Startup list by clicking the icon in the toolbar below."
 msgstr ""
 "Add apps to the Startup list by clicking the icon in the toolbar below."
 
-#: src/Startup/Widgets/Scrolled.vala:70
+#: src/Startup/Startup.vala:66
 msgid "Add Startup App…"
 msgstr "Add Startup App…"
 
-#: src/Startup/Widgets/Scrolled.vala:74
+#: src/Startup/Startup.vala:70
 msgid "Remove Selected Startup App"
 msgstr "Remove Selected Startup App"
+
+#: src/Startup/Backend/KeyFile.vala:98
+msgid "Custom Command"
+msgstr "Custom Command"
 
 #: src/Startup/Widgets/AppRow.vala:47
 #, c-format
 msgid "Launch %s on startup"
 msgstr "Launch %s on startup"
 
-#: src/Startup/Widgets/AppChooser.vala:39
+#: src/Startup/Widgets/AppChooser.vala:38
 msgid "Search Applications"
 msgstr "Search Applications"
 
-#: src/Startup/Widgets/AppChooser.vala:55
+#: src/Startup/Widgets/AppChooser.vala:56
 msgid "Type in a custom command"
 msgstr "Type in a custom command"
 

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-10-25 18:30+0000\n"
+"POT-Creation-Date: 2020-10-27 17:38+0000\n"
 "PO-Revision-Date: 2020-10-11 21:36+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Dutch <https://l10n.elementary.io/projects/switchboard/"
@@ -170,42 +170,42 @@ msgid "Reset to Defaults"
 msgstr "Standaarden"
 
 #. / Translators: This is a delimiter that separates types of permissions in the sidebar description
-#: src/Permissions/Widgets/SidebarRow.vala:82
+#: src/Permissions/Widgets/SidebarRow.vala:89
 msgid ", "
 msgstr ", "
 
-#: src/Startup/Backend/KeyFile.vala:98
-msgid "Custom Command"
-msgstr "Aangepast commando"
-
-#: src/Startup/Widgets/Scrolled.vala:49
+#: src/Startup/Startup.vala:45
 msgid "Launch Apps on Startup"
 msgstr "Start applicaties bij het opstarten"
 
-#: src/Startup/Widgets/Scrolled.vala:50
+#: src/Startup/Startup.vala:46
 msgid "Add apps to the Startup list by clicking the icon in the toolbar below."
 msgstr ""
 "Voeg applicaties aan de opstartlijst toe door op het icoon in de werkbalk "
 "hieronder te klikken."
 
-#: src/Startup/Widgets/Scrolled.vala:70
+#: src/Startup/Startup.vala:66
 msgid "Add Startup App…"
 msgstr "Voeg een opstarttoepassing toe…"
 
-#: src/Startup/Widgets/Scrolled.vala:74
+#: src/Startup/Startup.vala:70
 msgid "Remove Selected Startup App"
 msgstr "Verwijder de geselecteerde opstarttoepassing"
+
+#: src/Startup/Backend/KeyFile.vala:98
+msgid "Custom Command"
+msgstr "Aangepast commando"
 
 #: src/Startup/Widgets/AppRow.vala:47
 #, c-format
 msgid "Launch %s on startup"
 msgstr "Start %s bij het opstarten"
 
-#: src/Startup/Widgets/AppChooser.vala:39
+#: src/Startup/Widgets/AppChooser.vala:38
 msgid "Search Applications"
 msgstr "Zoek toepassingen"
 
-#: src/Startup/Widgets/AppChooser.vala:55
+#: src/Startup/Widgets/AppChooser.vala:56
 msgid "Type in a custom command"
 msgstr "Voer een aangepast commando in"
 

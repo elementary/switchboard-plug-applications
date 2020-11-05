@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-10-25 18:30+0000\n"
+"POT-Creation-Date: 2020-10-27 17:38+0000\n"
 "PO-Revision-Date: 2020-10-11 21:36+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Bosnian <https://l10n.elementary.io/projects/switchboard/"
@@ -173,42 +173,42 @@ msgid "Reset to Defaults"
 msgstr "Podrazumijevano"
 
 #. / Translators: This is a delimiter that separates types of permissions in the sidebar description
-#: src/Permissions/Widgets/SidebarRow.vala:82
+#: src/Permissions/Widgets/SidebarRow.vala:89
 msgid ", "
 msgstr ""
 
-#: src/Startup/Backend/KeyFile.vala:98
-msgid "Custom Command"
-msgstr "Vlastita komanda"
-
-#: src/Startup/Widgets/Scrolled.vala:49
+#: src/Startup/Startup.vala:45
 msgid "Launch Apps on Startup"
 msgstr "Pokreni aplikacije prilikom pokretanja uređaja"
 
-#: src/Startup/Widgets/Scrolled.vala:50
+#: src/Startup/Startup.vala:46
 msgid "Add apps to the Startup list by clicking the icon in the toolbar below."
 msgstr ""
 "Dodajte aplikacije na listu automatskog pokretanja klikom na ikonu na donjoj "
 "traci alata."
 
-#: src/Startup/Widgets/Scrolled.vala:70
+#: src/Startup/Startup.vala:66
 msgid "Add Startup App…"
 msgstr "Dodaj automatsko pokretanje aplikacije…"
 
-#: src/Startup/Widgets/Scrolled.vala:74
+#: src/Startup/Startup.vala:70
 msgid "Remove Selected Startup App"
 msgstr "Uklonite označenu aplikaciju prilikom pokretanja"
+
+#: src/Startup/Backend/KeyFile.vala:98
+msgid "Custom Command"
+msgstr "Vlastita komanda"
 
 #: src/Startup/Widgets/AppRow.vala:47
 #, c-format
 msgid "Launch %s on startup"
 msgstr "Pokreni %s prilikom pokretanja uređaja"
 
-#: src/Startup/Widgets/AppChooser.vala:39
+#: src/Startup/Widgets/AppChooser.vala:38
 msgid "Search Applications"
 msgstr "Pretraži aplikacije"
 
-#: src/Startup/Widgets/AppChooser.vala:55
+#: src/Startup/Widgets/AppChooser.vala:56
 msgid "Type in a custom command"
 msgstr "Unesite vlastitu komandu"
 
