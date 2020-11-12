@@ -176,7 +176,7 @@ public class Startup.Backend.KeyFile : GLib.Object {
         return Entity.AppInfo () {
             name = keyfile_get_locale_string (KeyFileDesktop.KEY_NAME),
             comment = keyfile_get_locale_string (KeyFileDesktop.KEY_COMMENT),
-            icon = keyfile_get_string (KeyFileDesktop.KEY_ICON),
+            icon = keyfile_get_locale_string (KeyFileDesktop.KEY_ICON),
             active = active,
             path = path
         };
