@@ -1,5 +1,5 @@
 /*
-* Copyright 2013-2017 elementary, Inc. (https://elementary.io)
+* Copyright 2013-2020 elementary, Inc. (https://elementary.io)
 *
 * This program is free software; you can redistribute it and/or
 * modify it under the terms of the GNU General Public
@@ -43,7 +43,18 @@ public class Startup.Backend.KeyFile : GLib.Object {
                 return false;
             }
 
-            return show_in_environment ();
+            var session = Environment.get_variable ("DESKTOP_SESSION").down ();
+            var not_show_in = keyfile_get_string (KeyFileDesktop.KEY_NOT_SHOW_IN).down ();
+            if (session in not_show_in) {
+                return false;
+            }
+
+            var only_show_in = keyfile_get_string (KeyFileDesktop.KEY_ONLY_SHOW_IN).down ();
+            if (only_show_in == "" || session in only_show_in) {
+                return true;
+            }
+
+            return false;
         }
     }
 
@@ -146,23 +157,6 @@ public class Startup.Backend.KeyFile : GLib.Object {
         }
 
         return "";
-    }
-
-    private bool show_in_environment () {
-        var only_show_in = keyfile_get_string (KeyFileDesktop.KEY_ONLY_SHOW_IN).down ();
-        var not_show_in = keyfile_get_string (KeyFileDesktop.KEY_NOT_SHOW_IN).down ();
-
-        var session = Environment.get_variable ("DESKTOP_SESSION").down ();
-
-        if (session in not_show_in) {
-            return false;
-        }
-
-        if (only_show_in == "" || session in only_show_in) {
-            return true;
-        }
-
-        return false;
     }
 
     public void copy_to_local () requires (path != null) {
