@@ -83,15 +83,14 @@ public class Startup.Backend.KeyFile : GLib.Object {
 
     public KeyFile.from_command (string command) {
         keyfile = new GLib.KeyFile ();
-
-        this.path = create_path_for_custom_command ();
         keyfile.set_locale_string (KeyFileDesktop.GROUP, KeyFileDesktop.KEY_NAME, preferred_language, _("Custom Command"));
         keyfile.set_locale_string (KeyFileDesktop.GROUP, KeyFileDesktop.KEY_COMMENT, preferred_language, command);
         keyfile.set_string (KeyFileDesktop.GROUP, KeyFileDesktop.KEY_EXEC, command);
         keyfile.set_string (KeyFileDesktop.GROUP, KeyFileDesktop.KEY_ICON, FALLBACK_ICON);
-        this.active = true;
-
         keyfile.set_string (KeyFileDesktop.GROUP, KeyFileDesktop.KEY_TYPE, KeyFileDesktop.TYPE_APPLICATION);
+
+        active = true;
+        path = create_path_for_custom_command ();
 
         write_to_file ();
     }
