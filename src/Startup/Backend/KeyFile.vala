@@ -30,17 +30,16 @@ public class Startup.Backend.KeyFile : GLib.Object {
 
     public bool active {
         get {
-            return keyfile_get_string (KEY_ACTIVE) == "true";
+            return keyfile_get_bool (KEY_ACTIVE);
         }
         set {
-            var as_string = value ? "true" : "false";
-            keyfile.set_string (KeyFileDesktop.GROUP, KEY_ACTIVE, as_string);
+            keyfile.set_boolean (KeyFileDesktop.GROUP, KEY_ACTIVE, value);
         }
     }
 
     public bool show {
         get {
-            if (keyfile_get_string (KeyFileDesktop.KEY_NO_DISPLAY) == "true" || keyfile_get_string (KeyFileDesktop.KEY_HIDDEN) == "true") {
+            if (keyfile_get_bool (KeyFileDesktop.KEY_NO_DISPLAY) || keyfile_get_bool (KeyFileDesktop.KEY_HIDDEN)) {
                 return false;
             }
 
@@ -117,6 +116,16 @@ public class Startup.Backend.KeyFile : GLib.Object {
         debug ("-- Done --");
     }
 
+    private bool keyfile_get_bool (string key) {
+        try {
+            return keyfile.get_boolean (KeyFileDesktop.GROUP, key);
+        } catch (KeyFileError e) {
+            critical (e.message);
+        }
+
+        return false;
+    }
+
     private string keyfile_get_string (string key) {
         try {
             return keyfile.get_string (KeyFileDesktop.GROUP, key);
@@ -131,7 +140,9 @@ public class Startup.Backend.KeyFile : GLib.Object {
         foreach (string lang in languages) {
             try {
                 return keyfile.get_locale_string (KeyFileDesktop.GROUP, key, lang);
-            } catch (KeyFileError e) { }
+            } catch (KeyFileError e) {
+                critical (e.message);
+            }
         }
 
         return "";
