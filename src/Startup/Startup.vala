@@ -160,8 +160,7 @@ public class Startup.Plug : Gtk.Grid {
 
         list.remove (row);
 
-        var key_file = Backend.KeyFileFactory.get_or_create (((Widgets.AppRow)row).app_info.path);
-        key_file.delete_file ();
+        GLib.FileUtils.remove (((Widgets.AppRow)row).app_info.path);
     }
 
     private string? get_path_from_uri (string uri) {
