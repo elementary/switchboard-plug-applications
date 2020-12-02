@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-10-27 17:38+0000\n"
-"PO-Revision-Date: 2020-10-11 21:36+0000\n"
-"Last-Translator: anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2020-11-27 07:15+0000\n"
+"Last-Translator: colindemian <colindemian@outlook.com>\n"
 "Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
 "switchboard/switchboard-plug-applications/zh_Hans/>\n"
 "Language: zh_CN\n"
@@ -16,28 +16,24 @@ msgstr ""
 "X-Launchpad-Export-Date: 2016-12-02 05:37+0000\n"
 
 #: src/Plug.vala:41
-#, fuzzy
-#| msgid "Manage default and startup applications"
 msgid "Manage default apps, startup apps, and app permissions"
-msgstr "管理默认程序和启动项"
+msgstr "管理默认程序、启动项和应用权限"
 
 #: src/Plug.vala:42
 msgid "Applications"
 msgstr "应用程序"
 
 #: src/Plug.vala:53
-#, fuzzy
-#| msgid "Default"
 msgid "Defaults"
 msgstr "默认程序"
 
 #: src/Plug.vala:54 src/Plug.vala:99
 msgid "Startup"
-msgstr "启动项"
+msgstr "开机启动"
 
 #: src/Plug.vala:55 src/Plug.vala:101
 msgid "Permissions"
-msgstr ""
+msgstr "应用权限"
 
 #: src/Plug.vala:100
 msgid "Default Apps"
@@ -45,11 +41,11 @@ msgstr "默认应用"
 
 #: src/Plug.vala:102
 msgid "Sandboxing"
-msgstr ""
+msgstr "沙盒运行"
 
 #: src/Plug.vala:103
 msgid "Confinement"
-msgstr ""
+msgstr "限制"
 
 #: src/Plug.vala:104 src/Plug.vala:105 src/Plug.vala:106 src/Plug.vala:107
 #: src/Plug.vala:108 src/Plug.vala:109 src/Plug.vala:110 src/Plug.vala:111
@@ -94,7 +90,7 @@ msgstr "主文件夹"
 
 #: src/Permissions/PermissionsPlug.vala:30
 msgid "System Folders"
-msgstr ""
+msgstr "系统目录"
 
 #: src/Permissions/PermissionsPlug.vala:31
 msgid "Devices"
@@ -110,71 +106,69 @@ msgstr "蓝牙"
 
 #: src/Permissions/PermissionsPlug.vala:34
 msgid "Printing"
-msgstr ""
+msgstr "打印服务"
 
 #: src/Permissions/PermissionsPlug.vala:35
 msgid "Secure Shell Agent"
-msgstr ""
+msgstr "SSH 权限"
 
 #: src/Permissions/PermissionsPlug.vala:36
 msgid "GPU Acceleration"
-msgstr ""
+msgstr "GPU 加速"
 
 #: src/Permissions/PermissionsPlug.vala:40
 msgid "No Flatpak apps installed"
-msgstr ""
+msgstr "未安装任何 Flatpak 应用"
 
 #: src/Permissions/PermissionsPlug.vala:45
 msgid ""
 "Apps whose permissions can be adjusted will automatically appear here when "
 "installed"
-msgstr ""
+msgstr "安装应用程序后其可管理的权限会自动出现在此处"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:33
 msgid "Access your entire home folder, including any hidden folders."
-msgstr ""
+msgstr "访问您的主文件夹，包括其中的隐藏文件夹。"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:40
 msgid ""
 "Access system folders, not including the operating system or system "
 "internals. This includes users' Home folders."
-msgstr ""
+msgstr "访问系统目录，包含所有用户的文件夹但不包括操作系统目录。"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:47
 msgid ""
 "Access all devices, such as webcams, microphones, and connected USB devices."
-msgstr ""
+msgstr "访问所有设备，包括相机、麦克风和已连接的 USB 设备。"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:54
 msgid "Access the Internet and local networks."
-msgstr ""
+msgstr "访问因特网和本地局域网。"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:61
 msgid "Manage bluetooth devices including pairing, unpairing, and discovery."
-msgstr ""
+msgstr "管理蓝牙设备，包括匹配、断开和查找。"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:68
 msgid "Access printers."
-msgstr ""
+msgstr "访问打印机。"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:75
 msgid "Access other devices on the network via SSH."
-msgstr ""
+msgstr "通过 SSH 访问网络中的其他设备。"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:82
 msgid "Accelerate graphical output."
-msgstr ""
+msgstr "加速图形输出。"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:105
-#, fuzzy
-#| msgid "Default"
 msgid "Reset to Defaults"
-msgstr "默认程序"
+msgstr "恢复默认"
 
 #. / Translators: This is a delimiter that separates types of permissions in the sidebar description
 #: src/Permissions/Widgets/SidebarRow.vala:89
 msgid ", "
-msgstr ""
+msgstr "， "
 
 #: src/Startup/Startup.vala:45
 msgid "Launch Apps on Startup"

@@ -19,34 +19,26 @@
 * Authored by: Julien Spautz <spautz.julien@gmail.com>
 */
 
-public interface Startup.Port.Monitor : Object {
-
+public class Startup.Backend.Monitor : Object {
     public signal void file_created (string path);
     public signal void file_deleted (string path);
     public signal void file_edited (string path);
-}
 
-public class Startup.Backend.Monitor : Object, Port.Monitor {
+    private FileMonitor monitor;
 
-    FileMonitor monitor;
-
-    public Monitor () {
-        setup ();
-    }
-
-    void setup () {
+    construct {
         var startup_dir = Utils.get_user_startup_dir ();
         var file = File.new_for_path (startup_dir);
         try {
             monitor = file.monitor (FileMonitorFlags.NONE);
             monitor.changed.connect (on_change_occurred);
         } catch (Error e) {
-            warning (@"Failed monitoring startup directory $startup_dir");
-            warning (e.message);
+            critical ("Failed monitoring startup directory: %s", startup_dir);
+            critical (e.message);
         }
     }
 
-    void on_change_occurred (File file, File? dest, FileMonitorEvent event) {
+    private void on_change_occurred (File file, File? dest, FileMonitorEvent event) {
         var path = file.get_path ();
 
         if (Utils.is_desktop_file (path) == false) {
