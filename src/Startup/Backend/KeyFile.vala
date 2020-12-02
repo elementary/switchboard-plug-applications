@@ -40,17 +40,41 @@ public class Startup.Backend.KeyFile : GLib.Object {
     const string KEY_ONLY_SHOW_IN = KeyFileDesktop.KEY_ONLY_SHOW_IN;
 
     public string name {
-        owned get { return get_key (KEY_NAME); }
+        owned get {
+            var key_name = get_key (KeyFileDesktop.KEY_NAME).strip ();
+            if (key_name != null && key_name != "") {
+                return key_name;
+            } else {
+                return command;
+            }
+        }
+
         set { set_key (KEY_NAME, value); }
     }
 
     public string command {
-        owned get { return get_key (KEY_COMMAND); }
+        owned get {
+            var key_command = get_key (KeyFileDesktop.KEY_EXEC).strip ();
+            if (key_command != null && key_command != "") {
+                return key_command;
+            } else {
+                return _("Command");
+            }
+        }
+
         set { set_key (KEY_COMMAND, value); }
     }
 
     public string comment {
-        owned get { return get_key (KEY_COMMENT); }
+        owned get {
+            var key_comment = get_key (KeyFileDesktop.KEY_COMMENT).strip ();
+            if (key_comment != null && key_comment != "") {
+                return key_comment;
+            } else {
+                return path;
+            }
+        }
+
         set { set_key (KEY_COMMENT, value); }
     }
 
