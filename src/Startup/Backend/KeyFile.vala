@@ -170,7 +170,7 @@ public class Startup.Backend.KeyFile : GLib.Object {
         if (key_name == null || key_name == "") {
             key_name = keyfile_get_string (KeyFileDesktop.KEY_EXEC).strip ();
             if (key_name == null || key_name == "") {
-                key_name = _("Command");
+                key_name = _("Custom Command");
             }
         }
 
