@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-10-27 17:38+0000\n"
-"PO-Revision-Date: 2020-12-14 20:16+0000\n"
+"PO-Revision-Date: 2020-12-29 08:16+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-applications/he/>\n"
@@ -135,37 +135,37 @@ msgid ""
 "Access system folders, not including the operating system or system "
 "internals. This includes users' Home folders."
 msgstr ""
+"גישה לתיקיות המערכת, לא כולל מערכת ההפעלה או רכיבי מערכת פנימיים. לרבות "
+"תיקיות הבית של המשתמשים."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:47
 msgid ""
 "Access all devices, such as webcams, microphones, and connected USB devices."
-msgstr ""
+msgstr "גישה לכל ההתקנים כגון מצלמות, מיקרופונים ומכשירי USB מחוברים."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:54
 msgid "Access the Internet and local networks."
-msgstr ""
+msgstr "גישה לאינטרנט ולרשתות מקומיות."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:61
 msgid "Manage bluetooth devices including pairing, unpairing, and discovery."
-msgstr ""
+msgstr "ניהול מכשירי בלוטות׳ לרבות צימוד, ניתוק וגילוי."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:68
 msgid "Access printers."
-msgstr ""
+msgstr "גישה למדפסות."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:75
 msgid "Access other devices on the network via SSH."
-msgstr ""
+msgstr "גישה לציוד ברשת דרך SSH."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:82
 msgid "Accelerate graphical output."
-msgstr ""
+msgstr "האצת הפלט הגרפי."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:105
-#, fuzzy
-#| msgid "Defaults"
 msgid "Reset to Defaults"
-msgstr "בררות מחדל"
+msgstr "איפוס לבררות מחדל"
 
 #. / Translators: This is a delimiter that separates types of permissions in the sidebar description
 #: src/Permissions/Widgets/SidebarRow.vala:89
