@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-10-27 17:38+0000\n"
-"PO-Revision-Date: 2020-10-11 21:36+0000\n"
-"Last-Translator: anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2020-12-19 11:16+0000\n"
+"Last-Translator: Мирослав Николић <miroslavnikolic@rocketmail.com>\n"
 "Language-Team: Serbian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-applications/sr/>\n"
 "Language: sr\n"
@@ -16,20 +16,16 @@ msgstr ""
 "X-Launchpad-Export-Date: 2017-01-07 06:43+0000\n"
 
 #: src/Plug.vala:41
-#, fuzzy
-#| msgid "Manage default and startup applications"
 msgid "Manage default apps, startup apps, and app permissions"
-msgstr "Управљајте основним и почетним програмима"
+msgstr "Управљајте основним и почетним програмима и овлашћењима програма"
 
 #: src/Plug.vala:42
 msgid "Applications"
 msgstr "Програми"
 
 #: src/Plug.vala:53
-#, fuzzy
-#| msgid "Default"
 msgid "Defaults"
-msgstr "Подразумевано"
+msgstr "Основности"
 
 #: src/Plug.vala:54 src/Plug.vala:99
 msgid "Startup"
@@ -37,7 +33,7 @@ msgstr "Покретање"
 
 #: src/Plug.vala:55 src/Plug.vala:101
 msgid "Permissions"
-msgstr ""
+msgstr "Овлашћења"
 
 #: src/Plug.vala:100
 msgid "Default Apps"
@@ -45,72 +41,64 @@ msgstr "Основни програми"
 
 #: src/Plug.vala:102
 msgid "Sandboxing"
-msgstr ""
+msgstr "Безбедно окружење"
 
 #: src/Plug.vala:103
 msgid "Confinement"
-msgstr ""
+msgstr "Ограничење"
 
 #: src/Plug.vala:104 src/Plug.vala:105 src/Plug.vala:106 src/Plug.vala:107
 #: src/Plug.vala:108 src/Plug.vala:109 src/Plug.vala:110 src/Plug.vala:111
 msgid "Default"
-msgstr "Подразумевано"
+msgstr "Основно"
 
 #: src/Plug.vala:104
-#, fuzzy
 msgid "Web Browser"
-msgstr "Веб прегледник:"
+msgstr "Веб прегледник"
 
 #: src/Plug.vala:105
-#, fuzzy
 msgid "Email Client"
-msgstr "Е-пошта:"
+msgstr "Клијент е‑поште"
 
 #: src/Plug.vala:106
-#, fuzzy
 msgid "Calendar"
-msgstr "Календар:"
+msgstr "Календар"
 
 #: src/Plug.vala:107
-#, fuzzy
 msgid "Video Player"
-msgstr "Филмови:"
+msgstr "Видео плејер"
 
 #: src/Plug.vala:108
-#, fuzzy
 msgid "Music Player"
-msgstr "Музика:"
+msgstr "Музички програм"
 
 #: src/Plug.vala:109
-#, fuzzy
 msgid "Text Editor"
-msgstr "Уређивач текста:"
+msgstr "Уређивач текста"
 
 #: src/Plug.vala:110
-#, fuzzy
 msgid "Image Viewer"
-msgstr "Слике:"
+msgstr "Прегледач слика"
 
 #: src/Plug.vala:111
-#, fuzzy
 msgid "File Browser"
-msgstr "Прегледач датотека:"
+msgstr "Разгледач датотека"
 
 #: src/Permissions/PermissionsPlug.vala:29
 msgid "Home Folder"
-msgstr ""
+msgstr "Лична фасцикла"
 
 #: src/Permissions/PermissionsPlug.vala:30
 msgid "System Folders"
-msgstr ""
+msgstr "Системске фасцикле"
 
 #: src/Permissions/PermissionsPlug.vala:31
 msgid "Devices"
-msgstr ""
+msgstr "Уређаји"
 
 #: src/Permissions/PermissionsPlug.vala:32
 msgid "Network"
-msgstr ""
+msgstr "Мрежа"
 
 #: src/Permissions/PermissionsPlug.vala:33
 msgid "Bluetooth"
@@ -118,71 +106,77 @@ msgstr "Блутут"
 
 #: src/Permissions/PermissionsPlug.vala:34
 msgid "Printing"
-msgstr ""
+msgstr "Штампање"
 
 #: src/Permissions/PermissionsPlug.vala:35
 msgid "Secure Shell Agent"
-msgstr ""
+msgstr "Агент безбедне шкољке"
 
 #: src/Permissions/PermissionsPlug.vala:36
 msgid "GPU Acceleration"
-msgstr ""
+msgstr "Убрзање графичког процесора"
 
 #: src/Permissions/PermissionsPlug.vala:40
 msgid "No Flatpak apps installed"
-msgstr ""
+msgstr "Нема инсталираних Флатпак програма"
 
 #: src/Permissions/PermissionsPlug.vala:45
 msgid ""
 "Apps whose permissions can be adjusted will automatically appear here when "
 "installed"
 msgstr ""
+"Програми чија овлашћења могу бити дотерана самостално ће се појавити овде "
+"када се инсталирају"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:33
 msgid "Access your entire home folder, including any hidden folders."
 msgstr ""
+"Приступите вашој читавој личној фасцикли, укључујући све скривене фасцикле."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:40
 msgid ""
 "Access system folders, not including the operating system or system "
 "internals. This includes users' Home folders."
 msgstr ""
+"Приступите фасциклама система, не укључујући оперативни систем или унутрашње "
+"система. Ово укључује корисникову личну фасциклу."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:47
 msgid ""
 "Access all devices, such as webcams, microphones, and connected USB devices."
 msgstr ""
+"Приступите свим уређајима, као што су веб камере, микрофони и повезани УСБ "
+"уређаји."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:54
 msgid "Access the Internet and local networks."
-msgstr ""
+msgstr "Приступите Интернету и локалним мрежама."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:61
 msgid "Manage bluetooth devices including pairing, unpairing, and discovery."
 msgstr ""
+"Управљајте блутут уређајима укључујући упаривање, распаривање и откривање."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:68
 msgid "Access printers."
-msgstr ""
+msgstr "Приступите штампачима."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:75
 msgid "Access other devices on the network via SSH."
-msgstr ""
+msgstr "Приступите другим уређајима на мрежи путем безбедне шкољке."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:82
 msgid "Accelerate graphical output."
-msgstr ""
+msgstr "Убрзајте графички излаз."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:105
-#, fuzzy
-#| msgid "Default"
 msgid "Reset to Defaults"
-msgstr "Подразумевано"
+msgstr "Врати на основно"
 
 #. / Translators: This is a delimiter that separates types of permissions in the sidebar description
 #: src/Permissions/Widgets/SidebarRow.vala:89
 msgid ", "
-msgstr ""
+msgstr ", "
 
 #: src/Startup/Startup.vala:45
 msgid "Launch Apps on Startup"
@@ -213,11 +207,11 @@ msgstr "Покрени „%s“ при покретању"
 
 #: src/Startup/Widgets/AppChooser.vala:38
 msgid "Search Applications"
-msgstr "Тражи програме"
+msgstr "Тражите програме"
 
 #: src/Startup/Widgets/AppChooser.vala:56
 msgid "Type in a custom command"
-msgstr "Укуцајте произвољну наредбу"
+msgstr "Упишите произвољну наредбу"
 
 #: src/Defaults/DefaultPlug.vala:50
 msgid "Web Browser:"
