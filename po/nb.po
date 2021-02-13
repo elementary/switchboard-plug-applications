@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-10-27 17:38+0000\n"
-"PO-Revision-Date: 2020-10-11 21:36+0000\n"
-"Last-Translator: anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2021-02-13 11:49+0000\n"
+"Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål <https://l10n.elementary.io/projects/"
 "switchboard/switchboard-plug-applications/nb/>\n"
 "Language: nb\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2016-11-26 05:52+0000\n"
 
 #: src/Plug.vala:41
@@ -37,7 +37,7 @@ msgstr "Oppstart"
 
 #: src/Plug.vala:55 src/Plug.vala:101
 msgid "Permissions"
-msgstr ""
+msgstr "Tilganger"
 
 #: src/Plug.vala:100
 msgid "Default Apps"
@@ -94,7 +94,7 @@ msgstr "Hjemmemappe"
 
 #: src/Permissions/PermissionsPlug.vala:30
 msgid "System Folders"
-msgstr ""
+msgstr "Systemmapper"
 
 #: src/Permissions/PermissionsPlug.vala:31
 msgid "Devices"
@@ -110,7 +110,7 @@ msgstr "Blåtann"
 
 #: src/Permissions/PermissionsPlug.vala:34
 msgid "Printing"
-msgstr ""
+msgstr "Utskrift"
 
 #: src/Permissions/PermissionsPlug.vala:35
 msgid "Secure Shell Agent"
@@ -118,11 +118,11 @@ msgstr ""
 
 #: src/Permissions/PermissionsPlug.vala:36
 msgid "GPU Acceleration"
-msgstr ""
+msgstr "GPU-akselerasjon"
 
 #: src/Permissions/PermissionsPlug.vala:40
 msgid "No Flatpak apps installed"
-msgstr ""
+msgstr "Ingen Flatpak-programmer installert"
 
 #: src/Permissions/PermissionsPlug.vala:45
 msgid ""
@@ -147,7 +147,7 @@ msgstr ""
 
 #: src/Permissions/Widgets/AppSettingsView.vala:54
 msgid "Access the Internet and local networks."
-msgstr ""
+msgstr "Tilgang til Internett og lokalnettverk."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:61
 msgid "Manage bluetooth devices including pairing, unpairing, and discovery."
