@@ -30,7 +30,7 @@ public class Permissions.Widgets.AppSettingsView : Gtk.Grid {
 
         var homefolder_widget = new PermissionSettingsWidget (
             Plug.permission_names["filesystems=home"],
-            _("Access your entire home folder, including any hidden folders."),
+            _("Access your entire Home folder, including any hidden folders in it."),
             "user-home",
             new Backend.PermissionSettings ("filesystems=home")
         );
@@ -58,7 +58,7 @@ public class Permissions.Widgets.AppSettingsView : Gtk.Grid {
 
         var bluetooth_widget = new PermissionSettingsWidget (
             Plug.permission_names["features=bluetooth"],
-            _("Manage bluetooth devices including pairing, unpairing, and discovery."),
+            _("Manage Bluetooth devices including pairing, unpairing, and discovery."),
             "bluetooth",
             new Backend.PermissionSettings ("features=bluetooth")
         );
