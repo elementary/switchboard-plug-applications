@@ -31,7 +31,7 @@ shared_module(
     plug_files,
     dependencies: [
         dependency('flatpak', version: '>=1.1.2'),
-        dependency('glib-2.0'),
+        dependency('glib-2.0', version: '>=2.34'),
         dependency('gio-2.0'),
         dependency('gobject-2.0'),
         dependency('granite'),
