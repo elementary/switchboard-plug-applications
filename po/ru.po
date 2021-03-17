@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-10-27 17:38+0000\n"
-"PO-Revision-Date: 2021-03-13 21:11+0000\n"
+"PO-Revision-Date: 2021-03-18 02:32+0000\n"
 "Last-Translator: DartDeaDia <jorydit@gmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-applications/ru/>\n"
@@ -44,7 +44,7 @@ msgstr "Приложения по умолчанию"
 
 #: src/Plug.vala:102
 msgid "Sandboxing"
-msgstr ""
+msgstr "Песочница"
 
 #: src/Plug.vala:103
 msgid "Confinement"
