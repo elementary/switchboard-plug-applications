@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-10-27 17:38+0000\n"
-"PO-Revision-Date: 2021-02-16 07:38+0000\n"
-"Last-Translator: anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2021-03-19 05:27+0000\n"
+"Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål <https://l10n.elementary.io/projects/"
 "switchboard/switchboard-plug-applications/nb/>\n"
 "Language: nb\n"
@@ -16,18 +16,15 @@ msgstr ""
 "X-Launchpad-Export-Date: 2016-11-26 05:52+0000\n"
 
 #: src/Plug.vala:41
-#, fuzzy
-#| msgid "Manage default and startup applications"
 msgid "Manage default apps, startup apps, and app permissions"
-msgstr "Administrer standard og oppstartsprogrammer"
+msgstr ""
+"Administrer forvalgte programmer, oppstartsprogrammer, og oppstartstilganger"
 
 #: src/Plug.vala:42
 msgid "Applications"
 msgstr "Programmer"
 
 #: src/Plug.vala:53
-#, fuzzy
-#| msgid "Default"
 msgid "Defaults"
 msgstr "Forvalg"
 
@@ -166,10 +163,8 @@ msgid "Accelerate graphical output."
 msgstr ""
 
 #: src/Permissions/Widgets/AppSettingsView.vala:105
-#, fuzzy
-#| msgid "Default"
 msgid "Reset to Defaults"
-msgstr "Forvalg"
+msgstr "Tilbakestill til forvalg"
 
 #. / Translators: This is a delimiter that separates types of permissions in the sidebar description
 #: src/Permissions/Widgets/SidebarRow.vala:89
