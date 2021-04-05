@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-10-27 17:38+0000\n"
-"PO-Revision-Date: 2021-03-18 02:32+0000\n"
+"PO-Revision-Date: 2021-04-05 18:56+0000\n"
 "Last-Translator: DartDeaDia <jorydit@gmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-applications/ru/>\n"
@@ -113,7 +113,7 @@ msgstr "Печать"
 
 #: src/Permissions/PermissionsPlug.vala:35
 msgid "Secure Shell Agent"
-msgstr ""
+msgstr "Агент Secure Shell"
 
 #: src/Permissions/PermissionsPlug.vala:36
 msgid "GPU Acceleration"
