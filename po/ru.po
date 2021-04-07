@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-07 20:37+0000\n"
-"PO-Revision-Date: 2021-04-05 18:56+0000\n"
+"PO-Revision-Date: 2021-04-08 01:00+0000\n"
 "Last-Translator: DartDeaDia <jorydit@gmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-applications/ru/>\n"
@@ -132,10 +132,8 @@ msgstr ""
 "здесь после установки"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:33
-#, fuzzy
-#| msgid "Access your entire home folder, including any hidden folders."
 msgid "Access your entire Home folder, including any hidden folders."
-msgstr "Доступ ко всей домашней папке, включая все скрытые папки."
+msgstr "Доступ ко всей Домашней папке, включая все скрытые папки."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:40
 msgid ""
@@ -157,9 +155,6 @@ msgid "Access the Internet and local networks."
 msgstr "Доступ к Интернету и локальным сетям."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:61
-#, fuzzy
-#| msgid ""
-#| "Manage bluetooth devices including pairing, unpairing, and discovery."
 msgid "Manage Bluetooth devices including pairing, unpairing, and discovery."
 msgstr ""
 "Управление устройствами Bluetooth, включая сопряжение, разъединение и "
