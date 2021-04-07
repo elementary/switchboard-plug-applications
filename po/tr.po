@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-10-27 17:38+0000\n"
+"POT-Creation-Date: 2021-04-07 20:37+0000\n"
 "PO-Revision-Date: 2020-10-30 09:15+0000\n"
 "Last-Translator: Ozgur Baskin <bebeto_baskin@yahoo.com>\n"
 "Language-Team: Turkish <https://l10n.elementary.io/projects/switchboard/"
@@ -131,7 +131,9 @@ msgstr ""
 "görünecektir"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:33
-msgid "Access your entire home folder, including any hidden folders."
+#, fuzzy
+#| msgid "Access your entire home folder, including any hidden folders."
+msgid "Access your entire Home folder, including any hidden folders."
 msgstr "Gizli klasörler dahil tüm ana klasörünüze erişin."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:40
@@ -153,7 +155,10 @@ msgid "Access the Internet and local networks."
 msgstr "İnternete ve yerel ağlara erişin."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:61
-msgid "Manage bluetooth devices including pairing, unpairing, and discovery."
+#, fuzzy
+#| msgid ""
+#| "Manage bluetooth devices including pairing, unpairing, and discovery."
+msgid "Manage Bluetooth devices including pairing, unpairing, and discovery."
 msgstr ""
 "Eşleştirme, eşleştirme kaldırma ve keşif dahil olmak üzere bluetooth "
 "cihazlarını yönetin."
@@ -179,25 +184,25 @@ msgstr "Varsayılanlara Sıfırla"
 msgid ", "
 msgstr ", "
 
-#: src/Startup/Startup.vala:45
+#: src/Startup/Startup.vala:40
 msgid "Launch Apps on Startup"
 msgstr "Uygulamaları Başlangıçta Başlat"
 
-#: src/Startup/Startup.vala:46
+#: src/Startup/Startup.vala:41
 msgid "Add apps to the Startup list by clicking the icon in the toolbar below."
 msgstr ""
 "Aşağıdaki araç çubuğundaki simgeyi tıklayarak Başlangıç listesine "
 "uygulamalar ekleyin."
 
-#: src/Startup/Startup.vala:66
+#: src/Startup/Startup.vala:61
 msgid "Add Startup App…"
 msgstr "Başlangıç Uygulaması Ekle…"
 
-#: src/Startup/Startup.vala:70
+#: src/Startup/Startup.vala:64
 msgid "Remove Selected Startup App"
 msgstr "Seçili Başlangıç Uygulamasını Kaldır"
 
-#: src/Startup/Backend/KeyFile.vala:98
+#: src/Startup/Backend/KeyFile.vala:86
 msgid "Custom Command"
 msgstr "Özel Komut"
 

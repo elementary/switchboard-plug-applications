@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-10-27 17:38+0000\n"
+"POT-Creation-Date: 2021-04-07 20:37+0000\n"
 "PO-Revision-Date: 2020-12-02 18:17+0000\n"
 "Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
 "Language-Team: Marathi <https://l10n.elementary.io/projects/switchboard/"
@@ -125,35 +125,38 @@ msgid ""
 "Apps whose permissions can be adjusted will automatically appear here when "
 "installed"
 msgstr ""
-"ज्यांच्या परवानग्या समायोजित केल्या जाऊ शकतात असे  अ‍ॅप्स स्थापित केल्यावर "
-"स्वयंचलितपणे येथे दिसून येतील"
+"ज्यांच्या परवानग्या समायोजित केल्या जाऊ शकतात असे  अ‍ॅप्स स्थापित केल्यावर स्वयंचलितपणे येथे "
+"दिसून येतील"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:33
-msgid "Access your entire home folder, including any hidden folders."
-msgstr ""
-"कोणत्याही लपविलेल्या फोल्डर्ससह आपल्या संपूर्ण मुख्य फोल्डरमध्ये प्रवेश करा."
+#, fuzzy
+#| msgid "Access your entire home folder, including any hidden folders."
+msgid "Access your entire Home folder, including any hidden folders."
+msgstr "कोणत्याही लपविलेल्या फोल्डर्ससह आपल्या संपूर्ण मुख्य फोल्डरमध्ये प्रवेश करा."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:40
 msgid ""
 "Access system folders, not including the operating system or system "
 "internals. This includes users' Home folders."
 msgstr ""
-"ऑपरेटिंग सिस्टम किंवा सिस्टम इंटर्नल्स व्यतिरिक्त सिस्टम फोल्डर्समध्ये प्रवे"
-"श करा. यात वापरकर्त्यांच्या होम फोल्डर्सचा समावेश आहे."
+"ऑपरेटिंग सिस्टम किंवा सिस्टम इंटर्नल्स व्यतिरिक्त सिस्टम फोल्डर्समध्ये प्रवेश करा. यात "
+"वापरकर्त्यांच्या होम फोल्डर्सचा समावेश आहे."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:47
 msgid ""
 "Access all devices, such as webcams, microphones, and connected USB devices."
 msgstr ""
-"वेबकॅम, मायक्रोफोन आणि कनेक्ट केलेल्या यूएसबी डिव्हाइससारख्या सर्व डिव्हा"
-"इसवर प्रवेश करा."
+"वेबकॅम, मायक्रोफोन आणि कनेक्ट केलेल्या यूएसबी डिव्हाइससारख्या सर्व डिव्हाइसवर प्रवेश करा."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:54
 msgid "Access the Internet and local networks."
 msgstr "इंटरनेट आणि स्थानिक नेटवर्कमध्ये प्रवेश करा."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:61
-msgid "Manage bluetooth devices including pairing, unpairing, and discovery."
+#, fuzzy
+#| msgid ""
+#| "Manage bluetooth devices including pairing, unpairing, and discovery."
+msgid "Manage Bluetooth devices including pairing, unpairing, and discovery."
 msgstr "जोडणी, जोड काढणे आणि शोध यासह ब्लूटूथ डिव्हाइस व्यवस्थापित करा."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:68
@@ -177,23 +180,23 @@ msgstr "डीफॉल्टवर रीसेट करा"
 msgid ", "
 msgstr ", "
 
-#: src/Startup/Startup.vala:45
+#: src/Startup/Startup.vala:40
 msgid "Launch Apps on Startup"
 msgstr "स्टार्टअप वर अॅप्स लॉन्च करा"
 
-#: src/Startup/Startup.vala:46
+#: src/Startup/Startup.vala:41
 msgid "Add apps to the Startup list by clicking the icon in the toolbar below."
 msgstr "खालील टूलबारमधील चिन्हावर क्लिक करून स्टार्टअप सूचीमध्ये अॅप्स जोडा."
 
-#: src/Startup/Startup.vala:66
+#: src/Startup/Startup.vala:61
 msgid "Add Startup App…"
 msgstr "स्टार्टअप अॅप जोडा…"
 
-#: src/Startup/Startup.vala:70
+#: src/Startup/Startup.vala:64
 msgid "Remove Selected Startup App"
 msgstr "निवडलेले स्टार्टअप अॅप काढा"
 
-#: src/Startup/Backend/KeyFile.vala:98
+#: src/Startup/Backend/KeyFile.vala:86
 msgid "Custom Command"
 msgstr "सानुकूल आदेश"
 
