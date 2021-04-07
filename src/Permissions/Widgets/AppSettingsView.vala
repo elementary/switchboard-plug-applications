@@ -30,7 +30,7 @@ public class Permissions.Widgets.AppSettingsView : Gtk.Grid {
 
         var homefolder_widget = new PermissionSettingsWidget (
             Plug.permission_names["filesystems=home"],
-            _("Access your entire Home folder, including any hidden folders in it."),
+            _("Access your entire Home folder, including any hidden folders."),
             "user-home",
             new Backend.PermissionSettings ("filesystems=home")
         );
