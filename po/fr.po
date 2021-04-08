@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-07 20:37+0000\n"
-"PO-Revision-Date: 2020-10-16 21:15+0000\n"
+"PO-Revision-Date: 2021-04-08 17:52+0000\n"
 "Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
 "Language-Team: French <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-applications/fr/>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2016-12-07 04:58+0000\n"
 
 #: src/Plug.vala:41
@@ -131,8 +131,6 @@ msgstr ""
 "apparaîtrons ici automatiquement une fois installées"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:33
-#, fuzzy
-#| msgid "Access your entire home folder, including any hidden folders."
 msgid "Access your entire Home folder, including any hidden folders."
 msgstr ""
 "Accéder à l'ensemble de votre dossier personnel, y compris les dossiers "
@@ -158,9 +156,6 @@ msgid "Access the Internet and local networks."
 msgstr "Accéder à Internet et aux réseaux locaux."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:61
-#, fuzzy
-#| msgid ""
-#| "Manage bluetooth devices including pairing, unpairing, and discovery."
 msgid "Manage Bluetooth devices including pairing, unpairing, and discovery."
 msgstr ""
 "Gérer les périphériques Bluetooth, y compris l'appairage et la découverte."
