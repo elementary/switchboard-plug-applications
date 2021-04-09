@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-07 20:37+0000\n"
-"PO-Revision-Date: 2020-10-16 21:15+0000\n"
+"PO-Revision-Date: 2021-04-09 13:11+0000\n"
 "Last-Translator: David M <rbndavid@gmail.com>\n"
 "Language-Team: Catalan <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-applications/ca/>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2016-12-03 05:18+0000\n"
 
 #: src/Plug.vala:41
@@ -130,10 +130,8 @@ msgstr ""
 "automàticament aquí quan s’instal·lin."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:33
-#, fuzzy
-#| msgid "Access your entire home folder, including any hidden folders."
 msgid "Access your entire Home folder, including any hidden folders."
-msgstr "Accedeix a tota la carpeta de l'usuari, incloses les carpetes ocultes."
+msgstr "Accediu a tota la carpeta de l'usuari, incloses les carpetes ocultes."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:40
 msgid ""
@@ -156,13 +154,10 @@ msgid "Access the Internet and local networks."
 msgstr "Accedeix a Internet i a les xarxes locals."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:61
-#, fuzzy
-#| msgid ""
-#| "Manage bluetooth devices including pairing, unpairing, and discovery."
 msgid "Manage Bluetooth devices including pairing, unpairing, and discovery."
 msgstr ""
-"Gestiona els dispositius Bluetooth, inclosos l’aparellament, la separació i "
-"el descobriment."
+"Gestiona els dispositius de Bluetooth, inclosos l’aparellament, la separació "
+"i el descobriment."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:68
 msgid "Access printers."
