@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-07 20:37+0000\n"
-"PO-Revision-Date: 2021-04-26 11:17+0000\n"
-"Last-Translator: EpixMan <abdullahgtgt@gmail.com>\n"
+"PO-Revision-Date: 2021-04-26 17:51+0000\n"
+"Last-Translator: nasserbinlaboun <nasser1990com@gmail.com>\n"
 "Language-Team: Arabic <https://l10n.elementary.io/projects/switchboard/"
 "applications-plug-extra/ar/>\n"
 "Language: ar\n"
@@ -28,7 +28,7 @@ msgstr "التطبيقات"
 
 #: data/io.elementary.switchboard.applications.appdata.xml.in:6
 msgid "Manage default and startup applications"
-msgstr "ادارة  التطبيقات الافتراضية وتطبيقات بدء التشغيل"
+msgstr "إدارة التطبيقات الافتراضية وتطبيقات بدء التشغيل"
 
 #: data/io.elementary.switchboard.applications.appdata.xml.in:12
 msgid "Fix user's desktop files is not shown"
