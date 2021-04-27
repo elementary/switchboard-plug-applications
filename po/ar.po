@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-07 20:37+0000\n"
-"PO-Revision-Date: 2019-08-26 06:22+0000\n"
-"Last-Translator: nasserbinlaboun <nasser1990com@gmail.com>\n"
+"PO-Revision-Date: 2021-04-27 21:25+0000\n"
+"Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Arabic <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-applications/ar/>\n"
 "Language: ar\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
 "&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
-"X-Generator: Weblate 3.7.1\n"
+"X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2016-11-26 05:52+0000\n"
 
 #: src/Plug.vala:41
@@ -106,7 +106,7 @@ msgstr ""
 
 #: src/Permissions/PermissionsPlug.vala:33
 msgid "Bluetooth"
-msgstr ""
+msgstr "البلوتوث"
 
 #: src/Permissions/PermissionsPlug.vala:34
 msgid "Printing"
