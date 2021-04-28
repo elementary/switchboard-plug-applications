@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-10-27 17:38+0000\n"
-"PO-Revision-Date: 2020-10-16 21:15+0000\n"
+"POT-Creation-Date: 2021-04-07 20:37+0000\n"
+"PO-Revision-Date: 2021-04-08 09:06+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-applications/ja/>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2017-02-12 06:23+0000\n"
 
 #: src/Plug.vala:41
@@ -131,7 +131,7 @@ msgstr ""
 "れます"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:33
-msgid "Access your entire home folder, including any hidden folders."
+msgid "Access your entire Home folder, including any hidden folders."
 msgstr "隠しフォルダーを含む、ホームフォルダー全体へのアクセスを許可します。"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:40
@@ -154,10 +154,8 @@ msgid "Access the Internet and local networks."
 msgstr "インターネットとローカルネットワークへのアクセスを許可します。"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:61
-msgid "Manage bluetooth devices including pairing, unpairing, and discovery."
-msgstr ""
-"ペアリング、ペアリング解除、デバイスの検索を含む、Bluetooth デバイスの管理を"
-"許可します。"
+msgid "Manage Bluetooth devices including pairing, unpairing, and discovery."
+msgstr "ペアリング、ペアリング解除、デバイスの検索を含む、Bluetooth デバイスの管理を許可します。"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:68
 msgid "Access printers."
@@ -180,24 +178,24 @@ msgstr "デフォルトにリセット"
 msgid ", "
 msgstr "、 "
 
-#: src/Startup/Startup.vala:45
+#: src/Startup/Startup.vala:40
 msgid "Launch Apps on Startup"
 msgstr "起動時にアプリを起動"
 
-#: src/Startup/Startup.vala:46
+#: src/Startup/Startup.vala:41
 msgid "Add apps to the Startup list by clicking the icon in the toolbar below."
 msgstr ""
 "下のツールバーのアイコンをクリックして起動時のリストにアプリを追加します。"
 
-#: src/Startup/Startup.vala:66
+#: src/Startup/Startup.vala:61
 msgid "Add Startup App…"
 msgstr "起動時のアプリを追加…"
 
-#: src/Startup/Startup.vala:70
+#: src/Startup/Startup.vala:64
 msgid "Remove Selected Startup App"
 msgstr "選択された起動時のアプリを削除"
 
-#: src/Startup/Backend/KeyFile.vala:98
+#: src/Startup/Backend/KeyFile.vala:86
 msgid "Custom Command"
 msgstr "カスタムコマンド"
 

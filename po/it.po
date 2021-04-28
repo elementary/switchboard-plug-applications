@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-10-27 17:38+0000\n"
+"POT-Creation-Date: 2021-04-07 20:37+0000\n"
 "PO-Revision-Date: 2020-10-24 11:15+0000\n"
 "Last-Translator: Fabio Zaramella <fabiozaramella@hotmail.it>\n"
 "Language-Team: Italian <https://l10n.elementary.io/projects/switchboard/"
@@ -131,7 +131,9 @@ msgstr ""
 "automaticamente qui una volta installate"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:33
-msgid "Access your entire home folder, including any hidden folders."
+#, fuzzy
+#| msgid "Access your entire home folder, including any hidden folders."
+msgid "Access your entire Home folder, including any hidden folders."
 msgstr ""
 "Accesso alla tua intera cartella Inizio, comprese le cartelle nascoste."
 
@@ -156,7 +158,10 @@ msgid "Access the Internet and local networks."
 msgstr "Accesso a Internet e alle reti locali."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:61
-msgid "Manage bluetooth devices including pairing, unpairing, and discovery."
+#, fuzzy
+#| msgid ""
+#| "Manage bluetooth devices including pairing, unpairing, and discovery."
+msgid "Manage Bluetooth devices including pairing, unpairing, and discovery."
 msgstr ""
 "Gestione dei dispositivi Bluetooth incluso il rilevamento, l'accoppiamento e "
 "il disaccoppiamento."
@@ -182,25 +187,25 @@ msgstr "Ripristina impostazioni predefinite"
 msgid ", "
 msgstr ", "
 
-#: src/Startup/Startup.vala:45
+#: src/Startup/Startup.vala:40
 msgid "Launch Apps on Startup"
 msgstr "Avvia applicazioni all'accensione"
 
-#: src/Startup/Startup.vala:46
+#: src/Startup/Startup.vala:41
 msgid "Add apps to the Startup list by clicking the icon in the toolbar below."
 msgstr ""
 "Aggiungi applicazioni alla lista d'avvio cliccando sull'icona nella barra "
 "degli strumenti sottostante."
 
-#: src/Startup/Startup.vala:66
+#: src/Startup/Startup.vala:61
 msgid "Add Startup App…"
 msgstr "Aggiungi un'applicazione di avvio…"
 
-#: src/Startup/Startup.vala:70
+#: src/Startup/Startup.vala:64
 msgid "Remove Selected Startup App"
 msgstr "Rimuovi l'applicazione di avvio selezionata"
 
-#: src/Startup/Backend/KeyFile.vala:98
+#: src/Startup/Backend/KeyFile.vala:86
 msgid "Custom Command"
 msgstr "Comando personalizzato"
 

@@ -50,10 +50,10 @@ public class Permissions.SidebarRow : Gtk.ListBoxRow {
 
         description_label = new Gtk.Label ("") {
             ellipsize = Pango.EllipsizeMode.END,
-            use_markup = true,
             valign = Gtk.Align.START,
             xalign = 0
         };
+        description_label.get_style_context ().add_class (Granite.STYLE_CLASS_SMALL_LABEL);
 
         description_revealer = new Gtk.Revealer ();
         description_revealer.add (description_label);
@@ -87,7 +87,7 @@ public class Permissions.SidebarRow : Gtk.ListBoxRow {
         if (current_permissions.length > 0) {
             /// Translators: This is a delimiter that separates types of permissions in the sidebar description
             var description = string.joinv (_(", "), current_permissions.data);
-            description_label.label = "<small>%s</small>".printf (description);
+            description_label.label = description;
             description_revealer.reveal_child = true;
             tooltip_text = description;
         } else {
