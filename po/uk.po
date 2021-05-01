@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-07 20:37+0000\n"
-"PO-Revision-Date: 2021-04-08 01:00+0000\n"
+"PO-Revision-Date: 2021-05-01 19:43+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-applications/uk/>\n"
@@ -55,7 +55,7 @@ msgstr "Типові"
 
 #: src/Plug.vala:104
 msgid "Web Browser"
-msgstr "Переглядач"
+msgstr "Переглядач мережі"
 
 #: src/Plug.vala:105
 msgid "Email Client"
@@ -216,7 +216,7 @@ msgstr "Ввести власну команду"
 
 #: src/Defaults/DefaultPlug.vala:50
 msgid "Web Browser:"
-msgstr "Переглядач:"
+msgstr "Переглядач мережі:"
 
 #: src/Defaults/DefaultPlug.vala:54
 msgid "Email Client:"
