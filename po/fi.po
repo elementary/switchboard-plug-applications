@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-07 20:37+0000\n"
-"PO-Revision-Date: 2021-02-09 20:16+0000\n"
+"PO-Revision-Date: 2021-05-04 12:26+0000\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
 "Language-Team: Finnish <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-applications/fi/>\n"
@@ -18,7 +18,7 @@ msgstr ""
 #: src/Plug.vala:41
 msgid "Manage default apps, startup apps, and app permissions"
 msgstr ""
-"Hallitse oletussovelluksia, automaattisesti käynnistyviä sovelluksia sekä "
+"Hallitse oletussovelluksia, automaattisesti käynnistettäviä sovelluksia sekä "
 "sovellusten oikeuksia"
 
 #: src/Plug.vala:42
@@ -131,10 +131,8 @@ msgstr ""
 "tänne asennuksen jälkeen"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:33
-#, fuzzy
-#| msgid "Access your entire home folder, including any hidden folders."
 msgid "Access your entire Home folder, including any hidden folders."
-msgstr "Pääsy koko kotikansioon mukaan lukien piilotetut kansiot."
+msgstr "Pääsy koko kotikansion sisältöön mukaan lukien piilotetut kansiot."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:40
 msgid ""
@@ -156,9 +154,6 @@ msgid "Access the Internet and local networks."
 msgstr "Pääsy internetiin ja paikallisiin verkkoihin."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:61
-#, fuzzy
-#| msgid ""
-#| "Manage bluetooth devices including pairing, unpairing, and discovery."
 msgid "Manage Bluetooth devices including pairing, unpairing, and discovery."
 msgstr ""
 "Hallitse Bluetooth-laitteita mukaan lukien paritus, parituksen poistaminen "
@@ -187,7 +182,7 @@ msgstr ", "
 
 #: src/Startup/Startup.vala:40
 msgid "Launch Apps on Startup"
-msgstr "Käynnistä sovelluksia käynnistyksen yhteydessä"
+msgstr "Käynnistä sovelluksia järjestelmän käynnistymisen yhteydessä"
 
 #: src/Startup/Startup.vala:41
 msgid "Add apps to the Startup list by clicking the icon in the toolbar below."

@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-07 20:37+0000\n"
-"PO-Revision-Date: 2020-11-27 07:15+0000\n"
-"Last-Translator: colindemian <colindemian@outlook.com>\n"
+"PO-Revision-Date: 2021-05-05 21:17+0000\n"
+"Last-Translator: Chengyu Liu <wer5lcy@live.cn>\n"
 "Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
 "switchboard/switchboard-plug-applications/zh_Hans/>\n"
 "Language: zh_CN\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2016-12-02 05:37+0000\n"
 
 #: src/Plug.vala:41
@@ -127,8 +127,6 @@ msgid ""
 msgstr "安装应用程序后其可管理的权限会自动出现在此处"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:33
-#, fuzzy
-#| msgid "Access your entire home folder, including any hidden folders."
 msgid "Access your entire Home folder, including any hidden folders."
 msgstr "访问您的主文件夹，包括其中的隐藏文件夹。"
 
@@ -148,9 +146,6 @@ msgid "Access the Internet and local networks."
 msgstr "访问因特网和本地局域网。"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:61
-#, fuzzy
-#| msgid ""
-#| "Manage bluetooth devices including pairing, unpairing, and discovery."
 msgid "Manage Bluetooth devices including pairing, unpairing, and discovery."
 msgstr "管理蓝牙设备，包括匹配、断开和查找。"
 
