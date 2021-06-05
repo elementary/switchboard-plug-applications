@@ -2,9 +2,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-10-27 17:38+0000\n"
-"PO-Revision-Date: 2020-11-27 07:15+0000\n"
-"Last-Translator: colindemian <colindemian@outlook.com>\n"
+"POT-Creation-Date: 2021-04-07 20:37+0000\n"
+"PO-Revision-Date: 2021-05-05 21:17+0000\n"
+"Last-Translator: Chengyu Liu <wer5lcy@live.cn>\n"
 "Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
 "switchboard/switchboard-plug-applications/zh_Hans/>\n"
 "Language: zh_CN\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2016-12-02 05:37+0000\n"
 
 #: src/Plug.vala:41
@@ -127,7 +127,7 @@ msgid ""
 msgstr "安装应用程序后其可管理的权限会自动出现在此处"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:33
-msgid "Access your entire home folder, including any hidden folders."
+msgid "Access your entire Home folder, including any hidden folders."
 msgstr "访问您的主文件夹，包括其中的隐藏文件夹。"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:40
@@ -146,7 +146,7 @@ msgid "Access the Internet and local networks."
 msgstr "访问因特网和本地局域网。"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:61
-msgid "Manage bluetooth devices including pairing, unpairing, and discovery."
+msgid "Manage Bluetooth devices including pairing, unpairing, and discovery."
 msgstr "管理蓝牙设备，包括匹配、断开和查找。"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:68
@@ -170,23 +170,23 @@ msgstr "恢复默认"
 msgid ", "
 msgstr "， "
 
-#: src/Startup/Startup.vala:45
+#: src/Startup/Startup.vala:40
 msgid "Launch Apps on Startup"
 msgstr "开机启动"
 
-#: src/Startup/Startup.vala:46
+#: src/Startup/Startup.vala:41
 msgid "Add apps to the Startup list by clicking the icon in the toolbar below."
 msgstr "点击下方工具栏中的图标将应用程序设置为开机启动。"
 
-#: src/Startup/Startup.vala:66
+#: src/Startup/Startup.vala:61
 msgid "Add Startup App…"
 msgstr "添加启动项…"
 
-#: src/Startup/Startup.vala:70
+#: src/Startup/Startup.vala:64
 msgid "Remove Selected Startup App"
 msgstr "移除选中的启动项"
 
-#: src/Startup/Backend/KeyFile.vala:98
+#: src/Startup/Backend/KeyFile.vala:86
 msgid "Custom Command"
 msgstr "自定义命令"
 

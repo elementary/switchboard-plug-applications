@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-10-27 17:38+0000\n"
-"PO-Revision-Date: 2020-10-12 19:05+0000\n"
+"POT-Creation-Date: 2021-04-07 20:37+0000\n"
+"PO-Revision-Date: 2021-05-01 19:43+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-applications/uk/>\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2016-11-26 05:53+0000\n"
 
 #: src/Plug.vala:41
@@ -55,7 +55,7 @@ msgstr "Типові"
 
 #: src/Plug.vala:104
 msgid "Web Browser"
-msgstr "Переглядач"
+msgstr "Переглядач мережі"
 
 #: src/Plug.vala:105
 msgid "Email Client"
@@ -130,8 +130,8 @@ msgstr ""
 "після встановлення"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:33
-msgid "Access your entire home folder, including any hidden folders."
-msgstr "Доступ до всієї домашньої теки, включно з прихованими теками."
+msgid "Access your entire Home folder, including any hidden folders."
+msgstr "Доступ до всієї теки Домівка, включно з прихованими теками."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:40
 msgid ""
@@ -153,7 +153,7 @@ msgid "Access the Internet and local networks."
 msgstr "Доступ до Інтернету та локальних мереж."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:61
-msgid "Manage bluetooth devices including pairing, unpairing, and discovery."
+msgid "Manage Bluetooth devices including pairing, unpairing, and discovery."
 msgstr ""
 "Керувати пристроями Bluetooth, включно зі сполученням, роз'єднанням та "
 "виявленням."
@@ -179,25 +179,25 @@ msgstr "Відновити типові"
 msgid ", "
 msgstr ", "
 
-#: src/Startup/Startup.vala:45
+#: src/Startup/Startup.vala:40
 msgid "Launch Apps on Startup"
 msgstr "Запуск застосунків під час запуску"
 
-#: src/Startup/Startup.vala:46
+#: src/Startup/Startup.vala:41
 msgid "Add apps to the Startup list by clicking the icon in the toolbar below."
 msgstr ""
 "Додайте застосунки до переліку автозапуску, натиснувши на піктограму на "
 "панелі інструментів внизу."
 
-#: src/Startup/Startup.vala:66
+#: src/Startup/Startup.vala:61
 msgid "Add Startup App…"
 msgstr "Додати застосунок до автозапуску…"
 
-#: src/Startup/Startup.vala:70
+#: src/Startup/Startup.vala:64
 msgid "Remove Selected Startup App"
 msgstr "Вилучити вибраний застосунок з автозапуску"
 
-#: src/Startup/Backend/KeyFile.vala:98
+#: src/Startup/Backend/KeyFile.vala:86
 msgid "Custom Command"
 msgstr "Власна команда"
 
@@ -216,7 +216,7 @@ msgstr "Ввести власну команду"
 
 #: src/Defaults/DefaultPlug.vala:50
 msgid "Web Browser:"
-msgstr "Переглядач:"
+msgstr "Переглядач мережі:"
 
 #: src/Defaults/DefaultPlug.vala:54
 msgid "Email Client:"

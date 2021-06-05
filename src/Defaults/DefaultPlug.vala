@@ -166,28 +166,7 @@ public class Defaults.Plug : Gtk.Grid {
     }
     public void change_default (GLib.AppInfo old_app, GLib.AppInfo new_app, string item_type) {
         map_types_to_app (get_types_for_app (item_type), new_app);
-
-        /*  the code below implements ->
-            string[] old_types = old_app.get_supported_types ();
-            map_types_to_app (old_types, new_app);
-            The function AppInfo.get_supported_types () is not present in the current glib
-            and will be used when we switch to the newer version.
-        */
-        var old_app_keyfile = new KeyFile ();
-        try {
-            old_app_keyfile.load_from_file (((DesktopAppInfo) old_app).filename, KeyFileFlags.NONE);
-        } catch (Error e) {
-            warning ("An error occured %s".printf (e.message));
-        }
-        string oldapp_types;
-        try {
-            oldapp_types = old_app_keyfile.get_string (KeyFileDesktop.GROUP, KeyFileDesktop.KEY_MIME_TYPE);
-        } catch (Error e) {
-            warning ("An error occured %s".printf (e.message));
-            oldapp_types = "";
-        }
-        //end block
-        map_types_to_app (oldapp_types.split (","), new_app);
+        map_types_to_app (old_app.get_supported_types (), new_app);
 
         cache_apps ();
     }

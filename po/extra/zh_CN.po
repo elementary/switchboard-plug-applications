@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-31 21:23+0000\n"
-"PO-Revision-Date: 2019-12-20 16:09+0000\n"
+"POT-Creation-Date: 2021-04-07 20:37+0000\n"
+"PO-Revision-Date: 2021-05-05 21:17+0000\n"
 "Last-Translator: colindemian <colindemian@outlook.com>\n"
 "Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
 "switchboard/applications-plug-extra/zh_Hans/>\n"
@@ -17,17 +17,15 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 4.4.2\n"
 
 #: data/io.elementary.switchboard.applications.appdata.xml.in:5
-#, fuzzy
-#| msgid "Applications"
 msgid "Applications Settings"
-msgstr "应用程序"
+msgstr "应用程序设置"
 
 #: data/io.elementary.switchboard.applications.appdata.xml.in:6
 msgid "Manage default and startup applications"
-msgstr ""
+msgstr "管理默认应用和开机启动应用"
 
 #: data/io.elementary.switchboard.applications.appdata.xml.in:12
 msgid "Fix user's desktop files is not shown"

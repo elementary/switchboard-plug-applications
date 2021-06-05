@@ -2,9 +2,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-10-27 17:38+0000\n"
-"PO-Revision-Date: 2020-10-11 21:36+0000\n"
-"Last-Translator: anonymous <noreply@weblate.org>\n"
+"POT-Creation-Date: 2021-04-07 20:37+0000\n"
+"PO-Revision-Date: 2021-04-24 01:16+0000\n"
+"Last-Translator: Ciarán Ainsworth <ciaranainsworth@outlook.com>\n"
 "Language-Team: English (United Kingdom) <https://l10n.elementary.io/projects/"
 "switchboard/switchboard-plug-applications/en_GB/>\n"
 "Language: en_GB\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2016-11-26 05:53+0000\n"
 
 #: src/Plug.vala:41
@@ -90,7 +90,7 @@ msgstr "Home Folder"
 
 #: src/Permissions/PermissionsPlug.vala:30
 msgid "System Folders"
-msgstr ""
+msgstr "System Folders"
 
 #: src/Permissions/PermissionsPlug.vala:31
 msgid "Devices"
@@ -106,90 +106,93 @@ msgstr "Bluetooth"
 
 #: src/Permissions/PermissionsPlug.vala:34
 msgid "Printing"
-msgstr ""
+msgstr "Printing"
 
 #: src/Permissions/PermissionsPlug.vala:35
 msgid "Secure Shell Agent"
-msgstr ""
+msgstr "Secure Shell Agent"
 
 #: src/Permissions/PermissionsPlug.vala:36
 msgid "GPU Acceleration"
-msgstr ""
+msgstr "GPU Acceleration"
 
 #: src/Permissions/PermissionsPlug.vala:40
 msgid "No Flatpak apps installed"
-msgstr ""
+msgstr "No Flatpak apps installed"
 
 #: src/Permissions/PermissionsPlug.vala:45
 msgid ""
 "Apps whose permissions can be adjusted will automatically appear here when "
 "installed"
 msgstr ""
+"Apps whose permissions can be adjusted will automatically appear here when "
+"installed"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:33
-msgid "Access your entire home folder, including any hidden folders."
-msgstr ""
+msgid "Access your entire Home folder, including any hidden folders."
+msgstr "Access your entire Home folder, including any hidden folders."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:40
 msgid ""
 "Access system folders, not including the operating system or system "
 "internals. This includes users' Home folders."
 msgstr ""
+"Access system folders, not including the operating system or system "
+"internals. This includes users' Home folders."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:47
 msgid ""
 "Access all devices, such as webcams, microphones, and connected USB devices."
 msgstr ""
+"Access all devices, such as webcams, microphones, and connected USB devices."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:54
 msgid "Access the Internet and local networks."
-msgstr ""
+msgstr "Access the Internet and local networks."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:61
-msgid "Manage bluetooth devices including pairing, unpairing, and discovery."
-msgstr ""
+msgid "Manage Bluetooth devices including pairing, unpairing, and discovery."
+msgstr "Manage Bluetooth devices including pairing, unpairing, and discovery."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:68
 msgid "Access printers."
-msgstr ""
+msgstr "Access printers."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:75
 msgid "Access other devices on the network via SSH."
-msgstr ""
+msgstr "Access other devices on the network via SSH."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:82
 msgid "Accelerate graphical output."
-msgstr ""
+msgstr "Accelerate graphical output."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:105
-#, fuzzy
-#| msgid "Defaults"
 msgid "Reset to Defaults"
-msgstr "Defaults"
+msgstr "Reset to Defaults"
 
 #. / Translators: This is a delimiter that separates types of permissions in the sidebar description
 #: src/Permissions/Widgets/SidebarRow.vala:89
 msgid ", "
-msgstr ""
+msgstr ", "
 
-#: src/Startup/Startup.vala:45
+#: src/Startup/Startup.vala:40
 msgid "Launch Apps on Startup"
 msgstr "Launch Apps on Startup"
 
-#: src/Startup/Startup.vala:46
+#: src/Startup/Startup.vala:41
 msgid "Add apps to the Startup list by clicking the icon in the toolbar below."
 msgstr ""
 "Add apps to the Startup list by clicking the icon in the toolbar below."
 
-#: src/Startup/Startup.vala:66
+#: src/Startup/Startup.vala:61
 msgid "Add Startup App…"
 msgstr "Add Startup App…"
 
-#: src/Startup/Startup.vala:70
+#: src/Startup/Startup.vala:64
 msgid "Remove Selected Startup App"
 msgstr "Remove Selected Startup App"
 
-#: src/Startup/Backend/KeyFile.vala:98
+#: src/Startup/Backend/KeyFile.vala:86
 msgid "Custom Command"
 msgstr "Custom Command"
 

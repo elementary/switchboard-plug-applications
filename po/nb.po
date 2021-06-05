@@ -2,9 +2,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-10-27 17:38+0000\n"
-"PO-Revision-Date: 2020-10-11 21:36+0000\n"
-"Last-Translator: anonymous <noreply@weblate.org>\n"
+"POT-Creation-Date: 2021-04-07 20:37+0000\n"
+"PO-Revision-Date: 2021-06-03 15:50+0000\n"
+"Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål <https://l10n.elementary.io/projects/"
 "switchboard/switchboard-plug-applications/nb/>\n"
 "Language: nb\n"
@@ -12,22 +12,19 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2016-11-26 05:52+0000\n"
 
 #: src/Plug.vala:41
-#, fuzzy
-#| msgid "Manage default and startup applications"
 msgid "Manage default apps, startup apps, and app permissions"
-msgstr "Administrer standard og oppstartsprogrammer"
+msgstr ""
+"Administrer forvalgte programmer, oppstartsprogrammer, og oppstartstilganger"
 
 #: src/Plug.vala:42
 msgid "Applications"
 msgstr "Programmer"
 
 #: src/Plug.vala:53
-#, fuzzy
-#| msgid "Default"
 msgid "Defaults"
 msgstr "Forvalg"
 
@@ -37,7 +34,7 @@ msgstr "Oppstart"
 
 #: src/Plug.vala:55 src/Plug.vala:101
 msgid "Permissions"
-msgstr ""
+msgstr "Tilganger"
 
 #: src/Plug.vala:100
 msgid "Default Apps"
@@ -49,7 +46,7 @@ msgstr ""
 
 #: src/Plug.vala:103
 msgid "Confinement"
-msgstr ""
+msgstr "Innskrenkning"
 
 #: src/Plug.vala:104 src/Plug.vala:105 src/Plug.vala:106 src/Plug.vala:107
 #: src/Plug.vala:108 src/Plug.vala:109 src/Plug.vala:110 src/Plug.vala:111
@@ -94,7 +91,7 @@ msgstr "Hjemmemappe"
 
 #: src/Permissions/PermissionsPlug.vala:30
 msgid "System Folders"
-msgstr ""
+msgstr "Systemmapper"
 
 #: src/Permissions/PermissionsPlug.vala:31
 msgid "Devices"
@@ -110,7 +107,7 @@ msgstr "Blåtann"
 
 #: src/Permissions/PermissionsPlug.vala:34
 msgid "Printing"
-msgstr ""
+msgstr "Utskrift"
 
 #: src/Permissions/PermissionsPlug.vala:35
 msgid "Secure Shell Agent"
@@ -118,11 +115,11 @@ msgstr ""
 
 #: src/Permissions/PermissionsPlug.vala:36
 msgid "GPU Acceleration"
-msgstr ""
+msgstr "GPU-akselerasjon"
 
 #: src/Permissions/PermissionsPlug.vala:40
 msgid "No Flatpak apps installed"
-msgstr ""
+msgstr "Ingen Flatpak-programmer installert"
 
 #: src/Permissions/PermissionsPlug.vala:45
 msgid ""
@@ -131,7 +128,7 @@ msgid ""
 msgstr ""
 
 #: src/Permissions/Widgets/AppSettingsView.vala:33
-msgid "Access your entire home folder, including any hidden folders."
+msgid "Access your entire Home folder, including any hidden folders."
 msgstr ""
 
 #: src/Permissions/Widgets/AppSettingsView.vala:40
@@ -147,15 +144,15 @@ msgstr ""
 
 #: src/Permissions/Widgets/AppSettingsView.vala:54
 msgid "Access the Internet and local networks."
-msgstr ""
+msgstr "Tilgang til Internett og lokalnettverk."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:61
-msgid "Manage bluetooth devices including pairing, unpairing, and discovery."
-msgstr ""
+msgid "Manage Bluetooth devices including pairing, unpairing, and discovery."
+msgstr "Håndter Blåtannsenheter, inkludert parring, opphevelse, og oppdagelse."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:68
 msgid "Access printers."
-msgstr ""
+msgstr "Skrivertilgang."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:75
 msgid "Access other devices on the network via SSH."
@@ -166,35 +163,33 @@ msgid "Accelerate graphical output."
 msgstr ""
 
 #: src/Permissions/Widgets/AppSettingsView.vala:105
-#, fuzzy
-#| msgid "Default"
 msgid "Reset to Defaults"
-msgstr "Forvalg"
+msgstr "Tilbakestill til forvalg"
 
 #. / Translators: This is a delimiter that separates types of permissions in the sidebar description
 #: src/Permissions/Widgets/SidebarRow.vala:89
 msgid ", "
-msgstr ""
+msgstr ", "
 
-#: src/Startup/Startup.vala:45
+#: src/Startup/Startup.vala:40
 msgid "Launch Apps on Startup"
 msgstr "Kjør programmer ved oppstart"
 
-#: src/Startup/Startup.vala:46
+#: src/Startup/Startup.vala:41
 msgid "Add apps to the Startup list by clicking the icon in the toolbar below."
 msgstr ""
 "Legg til program på oppstartslisten ved å klikke på ikonet i verktøyslinjen "
 "nedenfor."
 
-#: src/Startup/Startup.vala:66
+#: src/Startup/Startup.vala:61
 msgid "Add Startup App…"
 msgstr "Legg til oppstartsprogram…"
 
-#: src/Startup/Startup.vala:70
+#: src/Startup/Startup.vala:64
 msgid "Remove Selected Startup App"
 msgstr "Fjern valgt oppstartsprogram"
 
-#: src/Startup/Backend/KeyFile.vala:98
+#: src/Startup/Backend/KeyFile.vala:86
 msgid "Custom Command"
 msgstr "Egendefinert kommando"
 

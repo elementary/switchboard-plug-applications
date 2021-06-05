@@ -2,9 +2,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-10-27 17:38+0000\n"
-"PO-Revision-Date: 2020-10-11 21:36+0000\n"
-"Last-Translator: anonymous <noreply@weblate.org>\n"
+"POT-Creation-Date: 2021-04-07 20:37+0000\n"
+"PO-Revision-Date: 2021-04-08 01:00+0000\n"
+"Last-Translator: DartDeaDia <jorydit@gmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-applications/ru/>\n"
 "Language: ru\n"
@@ -13,22 +13,20 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2016-12-02 05:37+0000\n"
 
 #: src/Plug.vala:41
-#, fuzzy
-#| msgid "Manage default and startup applications"
 msgid "Manage default apps, startup apps, and app permissions"
-msgstr "Управление приложениями по умолчанию и автозапуском приложений"
+msgstr ""
+"Управление приложениями по умолчанию, автозапуском и правами доступа "
+"приложений"
 
 #: src/Plug.vala:42
 msgid "Applications"
 msgstr "Приложения"
 
 #: src/Plug.vala:53
-#, fuzzy
-#| msgid "Default"
 msgid "Defaults"
 msgstr "По умолчанию"
 
@@ -38,7 +36,7 @@ msgstr "Автозапуск"
 
 #: src/Plug.vala:55 src/Plug.vala:101
 msgid "Permissions"
-msgstr ""
+msgstr "Права доступа"
 
 #: src/Plug.vala:100
 msgid "Default Apps"
@@ -46,11 +44,11 @@ msgstr "Приложения по умолчанию"
 
 #: src/Plug.vala:102
 msgid "Sandboxing"
-msgstr ""
+msgstr "Песочница"
 
 #: src/Plug.vala:103
 msgid "Confinement"
-msgstr ""
+msgstr "Ограничение"
 
 #: src/Plug.vala:104 src/Plug.vala:105 src/Plug.vala:106 src/Plug.vala:107
 #: src/Plug.vala:108 src/Plug.vala:109 src/Plug.vala:110 src/Plug.vala:111
@@ -95,7 +93,7 @@ msgstr "Домашняя папка"
 
 #: src/Permissions/PermissionsPlug.vala:30
 msgid "System Folders"
-msgstr ""
+msgstr "Системные папки"
 
 #: src/Permissions/PermissionsPlug.vala:31
 msgid "Devices"
@@ -111,91 +109,97 @@ msgstr "Bluetooth"
 
 #: src/Permissions/PermissionsPlug.vala:34
 msgid "Printing"
-msgstr ""
+msgstr "Печать"
 
 #: src/Permissions/PermissionsPlug.vala:35
 msgid "Secure Shell Agent"
-msgstr ""
+msgstr "Агент Secure Shell"
 
 #: src/Permissions/PermissionsPlug.vala:36
 msgid "GPU Acceleration"
-msgstr ""
+msgstr "Ускорение графического процессора"
 
 #: src/Permissions/PermissionsPlug.vala:40
 msgid "No Flatpak apps installed"
-msgstr ""
+msgstr "Приложений Flatpak не установлено"
 
 #: src/Permissions/PermissionsPlug.vala:45
 msgid ""
 "Apps whose permissions can be adjusted will automatically appear here when "
 "installed"
 msgstr ""
+"Приложения, разрешениями которых можно управлять, автоматически появляться "
+"здесь после установки"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:33
-msgid "Access your entire home folder, including any hidden folders."
-msgstr ""
+msgid "Access your entire Home folder, including any hidden folders."
+msgstr "Доступ ко всей Домашней папке, включая все скрытые папки."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:40
 msgid ""
 "Access system folders, not including the operating system or system "
 "internals. This includes users' Home folders."
 msgstr ""
+"Доступ к системным папкам, не включая операционную систему или внутренние "
+"компоненты системы. Сюда входят домашние папки пользователей."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:47
 msgid ""
 "Access all devices, such as webcams, microphones, and connected USB devices."
 msgstr ""
+"Доступ ко всем устройствам, таким как веб-камеры, микрофоны и подключенные "
+"USB-устройства."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:54
 msgid "Access the Internet and local networks."
-msgstr ""
+msgstr "Доступ к Интернету и локальным сетям."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:61
-msgid "Manage bluetooth devices including pairing, unpairing, and discovery."
+msgid "Manage Bluetooth devices including pairing, unpairing, and discovery."
 msgstr ""
+"Управление устройствами Bluetooth, включая сопряжение, разъединение и "
+"обнаружение."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:68
 msgid "Access printers."
-msgstr ""
+msgstr "Доступ к принтерам."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:75
 msgid "Access other devices on the network via SSH."
-msgstr ""
+msgstr "Доступ к другим устройствам в сети через SSH."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:82
 msgid "Accelerate graphical output."
-msgstr ""
+msgstr "Ускорение графического вывода."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:105
-#, fuzzy
-#| msgid "Default"
 msgid "Reset to Defaults"
-msgstr "По умолчанию"
+msgstr "Сброс к настройкам по умолчанию"
 
 #. / Translators: This is a delimiter that separates types of permissions in the sidebar description
 #: src/Permissions/Widgets/SidebarRow.vala:89
 msgid ", "
-msgstr ""
+msgstr ", "
 
-#: src/Startup/Startup.vala:45
+#: src/Startup/Startup.vala:40
 msgid "Launch Apps on Startup"
 msgstr "Запуск приложений в начале работы"
 
-#: src/Startup/Startup.vala:46
+#: src/Startup/Startup.vala:41
 msgid "Add apps to the Startup list by clicking the icon in the toolbar below."
 msgstr ""
 "Добавьте приложения в список автозагрузки, нажав на значок на панели "
 "инструментов ниже."
 
-#: src/Startup/Startup.vala:66
+#: src/Startup/Startup.vala:61
 msgid "Add Startup App…"
 msgstr "Добавить программу в автозапуск…"
 
-#: src/Startup/Startup.vala:70
+#: src/Startup/Startup.vala:64
 msgid "Remove Selected Startup App"
 msgstr "Удалить выделенную программу из автозапуска"
 
-#: src/Startup/Backend/KeyFile.vala:98
+#: src/Startup/Backend/KeyFile.vala:86
 msgid "Custom Command"
 msgstr "Пользовательская команда"
 

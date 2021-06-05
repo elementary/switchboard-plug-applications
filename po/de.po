@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-10-27 17:38+0000\n"
-"PO-Revision-Date: 2020-10-26 22:35+0000\n"
+"POT-Creation-Date: 2021-04-07 20:37+0000\n"
+"PO-Revision-Date: 2021-04-08 17:52+0000\n"
 "Last-Translator: Uwe S <saabisto@gmx.de>\n"
 "Language-Team: German <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-applications/de/>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2017-01-06 06:26+0000\n"
 
 #: src/Plug.vala:41
@@ -47,7 +47,7 @@ msgstr "Sandboxing"
 
 #: src/Plug.vala:103
 msgid "Confinement"
-msgstr ""
+msgstr "Beschränkungen"
 
 #: src/Plug.vala:104 src/Plug.vala:105 src/Plug.vala:106 src/Plug.vala:107
 #: src/Plug.vala:108 src/Plug.vala:109 src/Plug.vala:110 src/Plug.vala:111
@@ -112,7 +112,7 @@ msgstr "Drucken"
 
 #: src/Permissions/PermissionsPlug.vala:35
 msgid "Secure Shell Agent"
-msgstr ""
+msgstr "Secure Shell Agent"
 
 #: src/Permissions/PermissionsPlug.vala:36
 msgid "GPU Acceleration"
@@ -131,7 +131,7 @@ msgstr ""
 "automatisch nach ihrer Installation"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:33
-msgid "Access your entire home folder, including any hidden folders."
+msgid "Access your entire Home folder, including any hidden folders."
 msgstr ""
 "Zugriff auf den gesamten Persönlichen Ordner, inklusive aller ausgeblendeten "
 "Ordner."
@@ -148,14 +148,14 @@ msgstr ""
 msgid ""
 "Access all devices, such as webcams, microphones, and connected USB devices."
 msgstr ""
-"Zugriff auf alle Geräte wie Webcams, Mikrofone und angeschlossene USB-Geräte."
+"Zugriff auf alle Geräte wie Kameras, Mikrofone und angeschlossene USB-Geräte."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:54
 msgid "Access the Internet and local networks."
 msgstr "Zugriff auf der Internet und lokale Netzwerke."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:61
-msgid "Manage bluetooth devices including pairing, unpairing, and discovery."
+msgid "Manage Bluetooth devices including pairing, unpairing, and discovery."
 msgstr "Bluetooth-Geräte verwalten inklusive Kopplung, Trennung und Suche."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:68
@@ -179,25 +179,25 @@ msgstr "Auf Standardwerte zurücksetzen"
 msgid ", "
 msgstr ", "
 
-#: src/Startup/Startup.vala:45
+#: src/Startup/Startup.vala:40
 msgid "Launch Apps on Startup"
 msgstr "Anwendungen, die beim Anmelden gestartet werden"
 
-#: src/Startup/Startup.vala:46
+#: src/Startup/Startup.vala:41
 msgid "Add apps to the Startup list by clicking the icon in the toolbar below."
 msgstr ""
 "Einträge in die Liste mit den automatisch gestarteten Anwendungen mit Klick "
 "auf das Symbol in der Leiste unten hinzufügen."
 
-#: src/Startup/Startup.vala:66
+#: src/Startup/Startup.vala:61
 msgid "Add Startup App…"
 msgstr "Automatisch zu startende Anwendung hinzufügen …"
 
-#: src/Startup/Startup.vala:70
+#: src/Startup/Startup.vala:64
 msgid "Remove Selected Startup App"
 msgstr "Automatisch gestartete Anwendung entfernen"
 
-#: src/Startup/Backend/KeyFile.vala:98
+#: src/Startup/Backend/KeyFile.vala:86
 msgid "Custom Command"
 msgstr "Benutzerdefinierter Befehl"
 
