@@ -142,13 +142,9 @@ public class Permissions.Backend.App : GLib.Object {
     }
 
     private bool is_permission_overridden (GenericArray<string> overrides, string permission) {
-        var negated_permission = permission;
-
-        if (negated_permission.contains ("=!")) {
-            negated_permission = negated_permission.replace ("=!", "=");
-        } else {
-            negated_permission = negated_permission.replace ("=", "=!");
-        }
+        var negated_permission = permission.contains ("=!") ?
+                                 permission.replace ("=!", "=") :
+                                 permission.replace ("=", "=!");
 
         for (var i = 0; i < overrides.length; i++) {
             var o = overrides.get (i);
