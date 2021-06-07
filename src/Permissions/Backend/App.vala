@@ -141,20 +141,10 @@ public class Permissions.Backend.App : GLib.Object {
         );
     }
 
-    private string negate_permission (string permission) {
-        var new_permission = permission;
-
-        if (new_permission.contains ("=!")) {
-            new_permission = new_permission.replace ("=!", "=");
-            return new_permission;
-        }
-
-        new_permission = new_permission.replace ("=", "=!");
-        return new_permission;
-    }
-
     private bool is_permission_overridden (GenericArray<string> overrides, string permission) {
-        var negated_permission = negate_permission (permission);
+        var negated_permission = permission.contains ("=!") ?
+                                 permission.replace ("=!", "=") :
+                                 permission.replace ("=", "=!");
 
         for (var i = 0; i < overrides.length; i++) {
             var o = overrides.get (i);

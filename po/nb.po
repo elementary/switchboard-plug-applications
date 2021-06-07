@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-07 20:37+0000\n"
-"PO-Revision-Date: 2021-03-19 05:27+0000\n"
+"PO-Revision-Date: 2021-06-03 15:50+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål <https://l10n.elementary.io/projects/"
 "switchboard/switchboard-plug-applications/nb/>\n"
@@ -46,7 +46,7 @@ msgstr ""
 
 #: src/Plug.vala:103
 msgid "Confinement"
-msgstr ""
+msgstr "Innskrenkning"
 
 #: src/Plug.vala:104 src/Plug.vala:105 src/Plug.vala:106 src/Plug.vala:107
 #: src/Plug.vala:108 src/Plug.vala:109 src/Plug.vala:110 src/Plug.vala:111
@@ -148,11 +148,11 @@ msgstr "Tilgang til Internett og lokalnettverk."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:61
 msgid "Manage Bluetooth devices including pairing, unpairing, and discovery."
-msgstr ""
+msgstr "Håndter Blåtannsenheter, inkludert parring, opphevelse, og oppdagelse."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:68
 msgid "Access printers."
-msgstr ""
+msgstr "Skrivertilgang."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:75
 msgid "Access other devices on the network via SSH."
