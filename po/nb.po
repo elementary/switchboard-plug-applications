@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-07 20:37+0000\n"
-"PO-Revision-Date: 2021-06-03 15:50+0000\n"
+"PO-Revision-Date: 2021-07-03 07:44+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål <https://l10n.elementary.io/projects/"
 "switchboard/switchboard-plug-applications/nb/>\n"
@@ -41,8 +41,9 @@ msgid "Default Apps"
 msgstr "Forvalgte programmer"
 
 #: src/Plug.vala:102
+#, fuzzy
 msgid "Sandboxing"
-msgstr ""
+msgstr "Sandkassing"
 
 #: src/Plug.vala:103
 msgid "Confinement"
@@ -110,8 +111,9 @@ msgid "Printing"
 msgstr "Utskrift"
 
 #: src/Permissions/PermissionsPlug.vala:35
+#, fuzzy
 msgid "Secure Shell Agent"
-msgstr ""
+msgstr "Agent for sikkert skall"
 
 #: src/Permissions/PermissionsPlug.vala:36
 msgid "GPU Acceleration"
@@ -126,21 +128,26 @@ msgid ""
 "Apps whose permissions can be adjusted will automatically appear here when "
 "installed"
 msgstr ""
+"Programmer med tilganger som kan justeres vil vises her når de er installert"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:33
 msgid "Access your entire Home folder, including any hidden folders."
-msgstr ""
+msgstr "Tilgang til hele hjemmemappen, og skjulte mapper i den."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:40
 msgid ""
 "Access system folders, not including the operating system or system "
 "internals. This includes users' Home folders."
 msgstr ""
+"Tilgang til systemmapper, men ikke operativsystem og filer i det interne "
+"systemet. Dette inkluderer brukeres hjemmemapper."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:47
 msgid ""
 "Access all devices, such as webcams, microphones, and connected USB devices."
 msgstr ""
+"Tilgang til alle enheter, som nettkameraer, mikrofoner, og tilknyttede USB-"
+"enheter."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:54
 msgid "Access the Internet and local networks."
@@ -156,11 +163,12 @@ msgstr "Skrivertilgang."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:75
 msgid "Access other devices on the network via SSH."
-msgstr ""
+msgstr "Tilgang til andre enheter på nettverket via SSH."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:82
+#, fuzzy
 msgid "Accelerate graphical output."
-msgstr ""
+msgstr "Akselerer grafikk."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:105
 msgid "Reset to Defaults"
