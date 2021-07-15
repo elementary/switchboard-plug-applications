@@ -130,7 +130,7 @@ public class Startup.Backend.KeyFile : GLib.Object {
         try {
             return keyfile.get_boolean (KeyFileDesktop.GROUP, key);
         } catch (KeyFileError e) {
-            critical (e.message);
+            debug (e.message); //Errors are to be expected e.g. for custom commands
         }
 
         return false;
@@ -140,7 +140,7 @@ public class Startup.Backend.KeyFile : GLib.Object {
         try {
             return keyfile.get_string (KeyFileDesktop.GROUP, key);
         } catch (KeyFileError e) {
-            critical (e.message);
+            debug (e.message); //Errors are to be expected e.g. for custom commands
         }
 
         return "";
@@ -151,7 +151,7 @@ public class Startup.Backend.KeyFile : GLib.Object {
             try {
                 return keyfile.get_locale_string (KeyFileDesktop.GROUP, key, lang);
             } catch (KeyFileError e) {
-                critical (e.message);
+                debug (e.message); //Errors are to be expected for e.g. some locales and custom commands
             }
         }
 
@@ -166,9 +166,22 @@ public class Startup.Backend.KeyFile : GLib.Object {
     }
 
     public Entity.AppInfo create_app_info () {
+        var key_name = keyfile_get_string (KeyFileDesktop.KEY_NAME).strip ();
+        if (key_name == null || key_name == "") {
+            key_name = keyfile_get_string (KeyFileDesktop.KEY_EXEC).strip ();
+            if (key_name == null || key_name == "") {
+                key_name = _("Custom Command");
+            }
+        }
+
+        var key_comment = keyfile_get_string (KeyFileDesktop.KEY_COMMENT).strip ();
+        if (key_comment == null || key_comment == "") {
+            key_comment = path;
+        }
+
         return Entity.AppInfo () {
-            name = keyfile_get_locale_string (KeyFileDesktop.KEY_NAME),
-            comment = keyfile_get_locale_string (KeyFileDesktop.KEY_COMMENT),
+            name = key_name,
+            comment = key_comment,
             icon = keyfile_get_locale_string (KeyFileDesktop.KEY_ICON),
             active = active,
             path = path
