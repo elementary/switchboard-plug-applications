@@ -7,9 +7,10 @@
   <icon type="stock">preferences-desktop-applications</icon>
   <translation type="gettext">applications-plug</translation>
   <releases>
-    <release version="2.1.8" date="2020-05-31" urgency="medium">
+    <release version="6.0.0" date="2021-07-15" urgency="medium">
       <description>
-        <p>Fix user's desktop files is not shown</p>
+        <p>Manage permissions for Flatpak apps</p>
+        <p>Show custom launcher files</p>
         <p>Updated translations</p>
       </description>
     </release>
