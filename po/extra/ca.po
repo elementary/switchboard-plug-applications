@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-15 22:00+0000\n"
-"PO-Revision-Date: 2020-06-04 16:11+0000\n"
+"PO-Revision-Date: 2021-07-19 19:06+0000\n"
 "Last-Translator: David M <rbndavid@gmail.com>\n"
 "Language-Team: Catalan <https://l10n.elementary.io/projects/switchboard/"
 "applications-plug-extra/ca/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 4.4.2\n"
 
 #: data/io.elementary.switchboard.applications.appdata.xml.in:5
 msgid "Applications Settings"
@@ -29,19 +29,19 @@ msgstr "Gestioneu les aplicacions per defecte i d'inici."
 
 #: data/io.elementary.switchboard.applications.appdata.xml.in:12
 msgid "New features:"
-msgstr ""
+msgstr "Funcions noves:"
 
 #: data/io.elementary.switchboard.applications.appdata.xml.in:14
 msgid "Manage permissions for Flatpak apps"
-msgstr ""
+msgstr "Gestioneu els permisos de les aplicacions de Flatpak."
 
 #: data/io.elementary.switchboard.applications.appdata.xml.in:16
 msgid "Minor updates:"
-msgstr ""
+msgstr "Actualitzacions menors:"
 
 #: data/io.elementary.switchboard.applications.appdata.xml.in:18
 msgid "Show custom launcher files"
-msgstr ""
+msgstr "Es mostren els fitxers de llançador personalitzats"
 
 #: data/io.elementary.switchboard.applications.appdata.xml.in:19
 #: data/io.elementary.switchboard.applications.appdata.xml.in:25
