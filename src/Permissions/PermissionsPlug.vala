@@ -26,14 +26,14 @@ public class Permissions.Plug : Gtk.Grid {
 
     static construct {
         permission_names = new GLib.HashTable <unowned string, unowned string> (str_hash, str_equal);
-        permission_names["filesystems=home"] = _("Home Folder");
-        permission_names["filesystems=host"] = _("System Folders");
+        permission_names["filesystems=home"] = _("Home folder");
+        permission_names["filesystems=host"] = _("System folders");
         permission_names["devices=all"] = _("Devices");
         permission_names["shared=network"] = _("Network");
         permission_names["features=bluetooth"] = _("Bluetooth");
         permission_names["sockets=cups"] = _("Printing");
-        permission_names["sockets=ssh-auth"] = _("Secure Shell Agent");
-        permission_names["devices=dri"] = _("GPU Acceleration");
+        permission_names["sockets=ssh-auth"] = _("Agent for SSH");
+        permission_names["devices=dri"] = _("GPU acceleration");
     }
 
     construct {
@@ -42,7 +42,7 @@ public class Permissions.Plug : Gtk.Grid {
         };
         placeholder_title.get_style_context ().add_class (Granite.STYLE_CLASS_H3_LABEL);
 
-        var placeholder_description = new Gtk.Label (_("Apps whose permissions can be adjusted will automatically appear here when installed")) {
+        var placeholder_description = new Gtk.Label (_("Apps with adjustable permissions appear here once installed.")) {
             wrap = true,
             xalign = 0
         };
