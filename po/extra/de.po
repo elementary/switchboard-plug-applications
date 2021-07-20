@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-15 22:00+0000\n"
-"PO-Revision-Date: 2021-03-14 14:49+0000\n"
-"Last-Translator: Uwe S <saabisto@gmx.de>\n"
+"PO-Revision-Date: 2021-07-20 18:18+0000\n"
+"Last-Translator: supaeasy <ismo+github@wolffson.ch>\n"
 "Language-Team: German <https://l10n.elementary.io/projects/switchboard/"
 "applications-plug-extra/de/>\n"
 "Language: de\n"
@@ -21,15 +21,15 @@ msgstr ""
 
 #: data/io.elementary.switchboard.applications.appdata.xml.in:5
 msgid "Applications Settings"
-msgstr ""
+msgstr "Programmeinstellungen"
 
 #: data/io.elementary.switchboard.applications.appdata.xml.in:6
 msgid "Manage default and startup applications"
-msgstr ""
+msgstr "Verwalten von Standard- und Autostart-Programmen"
 
 #: data/io.elementary.switchboard.applications.appdata.xml.in:12
 msgid "New features:"
-msgstr ""
+msgstr "Neue Funktionen:"
 
 #: data/io.elementary.switchboard.applications.appdata.xml.in:14
 msgid "Manage permissions for Flatpak apps"
@@ -37,7 +37,7 @@ msgstr ""
 
 #: data/io.elementary.switchboard.applications.appdata.xml.in:16
 msgid "Minor updates:"
-msgstr ""
+msgstr "Kleinere Aktualisierungen:"
 
 #: data/io.elementary.switchboard.applications.appdata.xml.in:18
 msgid "Show custom launcher files"
