@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-07 20:37+0000\n"
-"PO-Revision-Date: 2021-05-01 19:43+0000\n"
+"POT-Creation-Date: 2021-07-15 22:00+0000\n"
+"PO-Revision-Date: 2021-07-08 17:34+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-applications/uk/>\n"
@@ -160,7 +160,7 @@ msgstr ""
 
 #: src/Permissions/Widgets/AppSettingsView.vala:68
 msgid "Access printers."
-msgstr "Доступ до пристроїв друку."
+msgstr "Доступ до принтерів."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:75
 msgid "Access other devices on the network via SSH."
@@ -187,7 +187,7 @@ msgstr "Запуск застосунків під час запуску"
 msgid "Add apps to the Startup list by clicking the icon in the toolbar below."
 msgstr ""
 "Додайте застосунки до переліку автозапуску, натиснувши на піктограму на "
-"панелі інструментів внизу."
+"панелі інструментів унизу."
 
 #: src/Startup/Startup.vala:61
 msgid "Add Startup App…"

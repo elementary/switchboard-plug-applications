@@ -7,10 +7,17 @@
   <icon type="stock">preferences-desktop-applications</icon>
   <translation type="gettext">applications-plug</translation>
   <releases>
-    <release version="2.1.8" date="2020-05-31" urgency="medium">
+    <release version="6.0.0" date="2021-07-15" urgency="medium">
       <description>
-        <p>Fix user's desktop files is not shown</p>
-        <p>Updated translations</p>
+        <p>New features:</p>
+        <ul>
+          <li>Manage permissions for Flatpak apps</li>
+        </ul>
+        <p>Minor updates:</p>
+        <ul>
+          <li>Show custom launcher files</li>
+          <li>Updated translations</li>
+        </ul>
       </description>
     </release>
     <release version="2.1.7" date="2020-04-08" urgency="medium">
@@ -28,6 +35,12 @@
   <screenshots>
     <screenshot type="default">
       <image>https://raw.githubusercontent.com/elementary/switchboard-plug-applications/master/data/screenshot.png</image>
+    </screenshot>
+    <screenshot>
+      <image>https://raw.githubusercontent.com/elementary/switchboard-plug-applications/master/data/screenshot-startup.png</image>
+    </screenshot>
+    <screenshot>
+      <image>https://raw.githubusercontent.com/elementary/switchboard-plug-applications/master/data/screenshot-permissions.png</image>
     </screenshot>
   </screenshots>
   <url type="homepage">https://elementary.io</url>

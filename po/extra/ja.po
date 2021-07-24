@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-07 20:37+0000\n"
-"PO-Revision-Date: 2020-06-07 09:11+0000\n"
+"POT-Creation-Date: 2021-07-15 22:00+0000\n"
+"PO-Revision-Date: 2021-07-17 13:00+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
 "applications-plug-extra/ja/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 4.4.2\n"
 
 #: data/io.elementary.switchboard.applications.appdata.xml.in:5
 msgid "Applications Settings"
@@ -29,17 +29,32 @@ msgstr ""
 "デフォルトのアプリケーションと起動時に実行するアプリケーションを管理します"
 
 #: data/io.elementary.switchboard.applications.appdata.xml.in:12
-msgid "Fix user's desktop files is not shown"
-msgstr ""
-"ユーザーフォルダ内のデスクトップファイルがアプリ一覧に表示されない不具合を修"
-"正"
+msgid "New features:"
+msgstr "新機能:"
 
-#: data/io.elementary.switchboard.applications.appdata.xml.in:13
+#: data/io.elementary.switchboard.applications.appdata.xml.in:14
+msgid "Manage permissions for Flatpak apps"
+msgstr "Flatpak アプリのパーミッションを管理できる機能を追加"
+
+#: data/io.elementary.switchboard.applications.appdata.xml.in:16
+msgid "Minor updates:"
+msgstr "軽微なアップデート:"
+
 #: data/io.elementary.switchboard.applications.appdata.xml.in:18
-#: data/io.elementary.switchboard.applications.appdata.xml.in:24
+msgid "Show custom launcher files"
+msgstr "ユーザーが作成した起動ファイルを表示するように修正"
+
+#: data/io.elementary.switchboard.applications.appdata.xml.in:19
+#: data/io.elementary.switchboard.applications.appdata.xml.in:25
+#: data/io.elementary.switchboard.applications.appdata.xml.in:31
 msgid "Updated translations"
 msgstr "翻訳の更新"
 
-#: data/io.elementary.switchboard.applications.appdata.xml.in:23
+#: data/io.elementary.switchboard.applications.appdata.xml.in:30
 msgid "Fix issues with OnlyShowIn and Snap apps"
 msgstr "OnlyShowIn プロパティーと Snap アプリに関する不具合を修正"
+
+#~ msgid "Fix user's desktop files is not shown"
+#~ msgstr ""
+#~ "ユーザーフォルダ内のデスクトップファイルがアプリ一覧に表示されない不具合を"
+#~ "修正"

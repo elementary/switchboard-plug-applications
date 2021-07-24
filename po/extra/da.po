@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-07 20:37+0000\n"
+"POT-Creation-Date: 2021-07-15 22:00+0000\n"
 "PO-Revision-Date: 2020-06-04 16:11+0000\n"
 "Last-Translator: Rantyrant <diseasemonger@gmail.com>\n"
 "Language-Team: Danish <https://l10n.elementary.io/projects/switchboard/"
@@ -28,15 +28,30 @@ msgid "Manage default and startup applications"
 msgstr "Administrer standard- og opstartsapplikationer"
 
 #: data/io.elementary.switchboard.applications.appdata.xml.in:12
-msgid "Fix user's desktop files is not shown"
-msgstr "Ret at brugerens.desktop filer ikke vises"
+msgid "New features:"
+msgstr ""
 
-#: data/io.elementary.switchboard.applications.appdata.xml.in:13
+#: data/io.elementary.switchboard.applications.appdata.xml.in:14
+msgid "Manage permissions for Flatpak apps"
+msgstr ""
+
+#: data/io.elementary.switchboard.applications.appdata.xml.in:16
+msgid "Minor updates:"
+msgstr ""
+
 #: data/io.elementary.switchboard.applications.appdata.xml.in:18
-#: data/io.elementary.switchboard.applications.appdata.xml.in:24
+msgid "Show custom launcher files"
+msgstr ""
+
+#: data/io.elementary.switchboard.applications.appdata.xml.in:19
+#: data/io.elementary.switchboard.applications.appdata.xml.in:25
+#: data/io.elementary.switchboard.applications.appdata.xml.in:31
 msgid "Updated translations"
 msgstr "Opdaterede oversættelser"
 
-#: data/io.elementary.switchboard.applications.appdata.xml.in:23
+#: data/io.elementary.switchboard.applications.appdata.xml.in:30
 msgid "Fix issues with OnlyShowIn and Snap apps"
 msgstr "Ret problemer med \"OnlyShowIn\" og Snap applikationer"
+
+#~ msgid "Fix user's desktop files is not shown"
+#~ msgstr "Ret at brugerens.desktop filer ikke vises"

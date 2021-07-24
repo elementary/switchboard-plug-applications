@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-07 20:37+0000\n"
-"PO-Revision-Date: 2021-03-13 21:11+0000\n"
+"POT-Creation-Date: 2021-07-15 22:00+0000\n"
+"PO-Revision-Date: 2021-07-22 17:45+0000\n"
 "Last-Translator: DartDeaDia <jorydit@gmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/switchboard/"
 "applications-plug-extra/ru/>\n"
@@ -29,15 +29,30 @@ msgid "Manage default and startup applications"
 msgstr "Управление приложениями по умолчанию и автозапуском"
 
 #: data/io.elementary.switchboard.applications.appdata.xml.in:12
-msgid "Fix user's desktop files is not shown"
-msgstr "Исправлено отсутствие файлов пользователя на рабочем столе"
+msgid "New features:"
+msgstr "Новые возможности:"
 
-#: data/io.elementary.switchboard.applications.appdata.xml.in:13
+#: data/io.elementary.switchboard.applications.appdata.xml.in:14
+msgid "Manage permissions for Flatpak apps"
+msgstr ""
+
+#: data/io.elementary.switchboard.applications.appdata.xml.in:16
+msgid "Minor updates:"
+msgstr "Незначительные обновления:"
+
 #: data/io.elementary.switchboard.applications.appdata.xml.in:18
-#: data/io.elementary.switchboard.applications.appdata.xml.in:24
+msgid "Show custom launcher files"
+msgstr ""
+
+#: data/io.elementary.switchboard.applications.appdata.xml.in:19
+#: data/io.elementary.switchboard.applications.appdata.xml.in:25
+#: data/io.elementary.switchboard.applications.appdata.xml.in:31
 msgid "Updated translations"
 msgstr "Обновлены переводы"
 
-#: data/io.elementary.switchboard.applications.appdata.xml.in:23
+#: data/io.elementary.switchboard.applications.appdata.xml.in:30
 msgid "Fix issues with OnlyShowIn and Snap apps"
 msgstr "Исправление проблем с приложениями OnlyShowIn и Snap"
+
+#~ msgid "Fix user's desktop files is not shown"
+#~ msgstr "Исправлено отсутствие файлов пользователя на рабочем столе"
