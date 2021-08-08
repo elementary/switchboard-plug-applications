@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-15 22:00+0000\n"
-"PO-Revision-Date: 2021-07-19 19:06+0000\n"
+"PO-Revision-Date: 2021-08-08 14:22+0000\n"
 "Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
 "Language-Team: Portuguese <https://l10n.elementary.io/projects/switchboard/"
 "applications-plug-extra/pt/>\n"
@@ -29,11 +29,11 @@ msgstr "Gerir aplicações predefinidas e de arranque"
 
 #: data/io.elementary.switchboard.applications.appdata.xml.in:12
 msgid "New features:"
-msgstr ""
+msgstr "Novas funcionalidades:"
 
 #: data/io.elementary.switchboard.applications.appdata.xml.in:14
 msgid "Manage permissions for Flatpak apps"
-msgstr ""
+msgstr "Gerir permissões para aplicações Flatpak"
 
 #: data/io.elementary.switchboard.applications.appdata.xml.in:16
 msgid "Minor updates:"
@@ -41,7 +41,7 @@ msgstr "Pequenas atualizações:"
 
 #: data/io.elementary.switchboard.applications.appdata.xml.in:18
 msgid "Show custom launcher files"
-msgstr ""
+msgstr "Mostrar ficheiros de lançadores personalizados"
 
 #: data/io.elementary.switchboard.applications.appdata.xml.in:19
 #: data/io.elementary.switchboard.applications.appdata.xml.in:25
