@@ -29,6 +29,7 @@ switchboard_plugsdir = switchboard_dep.get_pkgconfig_variable('plugsdir', define
 shared_module(
     meson.project_name(),
     plug_files,
+    conf_file,
     dependencies: [
         dependency('flatpak', version: '>=1.1.2'),
         dependency('glib-2.0', version: '>=2.34'),
