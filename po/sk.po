@@ -4,7 +4,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-15 22:00+0000\n"
 "PO-Revision-Date: 2021-08-23 13:11+0000\n"
-"Last-Translator: JohnDumpling <john_dumpling@protonmail.com>\n"
+"Last-Translator: Cleiton Floss <cleitonfloss@tutanota.de>\n"
 "Language-Team: Slovak <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-applications/sk/>\n"
 "Language: sk\n"
@@ -190,7 +190,7 @@ msgstr ""
 
 #: src/Startup/Startup.vala:61
 msgid "Add Startup App…"
-msgstr "Pridať aplikáciu pri spustení..."
+msgstr "Pridať aplikáciu pri spustení…"
 
 #: src/Startup/Startup.vala:64
 msgid "Remove Selected Startup App"
