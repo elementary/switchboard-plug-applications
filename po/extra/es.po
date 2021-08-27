@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-15 22:00+0000\n"
-"PO-Revision-Date: 2020-06-04 16:11+0000\n"
+"PO-Revision-Date: 2021-08-27 08:04+0000\n"
 "Last-Translator: Adolfo Jayme Barrientos <fitojb@ubuntu.com>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/switchboard/"
 "applications-plug-extra/es/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 4.4.2\n"
 
 #: data/io.elementary.switchboard.applications.appdata.xml.in:5
 msgid "Applications Settings"
@@ -29,7 +29,7 @@ msgstr "Gestione las aplicaciones predeterminadas y de arranque"
 
 #: data/io.elementary.switchboard.applications.appdata.xml.in:12
 msgid "New features:"
-msgstr ""
+msgstr "Funcionalidades nuevas:"
 
 #: data/io.elementary.switchboard.applications.appdata.xml.in:14
 msgid "Manage permissions for Flatpak apps"
@@ -37,7 +37,7 @@ msgstr ""
 
 #: data/io.elementary.switchboard.applications.appdata.xml.in:16
 msgid "Minor updates:"
-msgstr ""
+msgstr "Actualizaciones menores:"
 
 #: data/io.elementary.switchboard.applications.appdata.xml.in:18
 msgid "Show custom launcher files"
