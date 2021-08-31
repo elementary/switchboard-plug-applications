@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-15 22:00+0000\n"
-"PO-Revision-Date: 2020-10-11 21:36+0000\n"
-"Last-Translator: anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2021-08-27 12:11+0000\n"
+"Last-Translator: TomiOhl <ohlslager.tom@gmail.com>\n"
 "Language-Team: Hungarian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-applications/hu/>\n"
 "Language: hu\n"
@@ -12,24 +12,22 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2016-11-26 05:52+0000\n"
 
 #: src/Plug.vala:41
-#, fuzzy
-#| msgid "Manage default and startup applications"
 msgid "Manage default apps, startup apps, and app permissions"
-msgstr "Az alapértelmezett és az automatikusan induló alkalmazások beállítása"
+msgstr ""
+"Az alapértelmezett és az automatikusan induló alkalmazások, valamint "
+"engedélyeik beállítása"
 
 #: src/Plug.vala:42
 msgid "Applications"
 msgstr "Alkalmazások"
 
 #: src/Plug.vala:53
-#, fuzzy
-#| msgid "Default"
 msgid "Defaults"
-msgstr "Alapértelmezett"
+msgstr "Alapértelmezettek"
 
 #: src/Plug.vala:54 src/Plug.vala:99
 msgid "Startup"
@@ -37,7 +35,7 @@ msgstr "Automatikusan induló"
 
 #: src/Plug.vala:55 src/Plug.vala:101
 msgid "Permissions"
-msgstr ""
+msgstr "Engedélyek"
 
 #: src/Plug.vala:100
 msgid "Default Apps"
@@ -45,11 +43,11 @@ msgstr "Alapértelmezett alkalmazások"
 
 #: src/Plug.vala:102
 msgid "Sandboxing"
-msgstr ""
+msgstr "Elkülönített futtatás"
 
 #: src/Plug.vala:103
 msgid "Confinement"
-msgstr ""
+msgstr "Korlátozás"
 
 #: src/Plug.vala:104 src/Plug.vala:105 src/Plug.vala:106 src/Plug.vala:107
 #: src/Plug.vala:108 src/Plug.vala:109 src/Plug.vala:110 src/Plug.vala:111
@@ -57,44 +55,36 @@ msgid "Default"
 msgstr "Alapértelmezett"
 
 #: src/Plug.vala:104
-#, fuzzy
 msgid "Web Browser"
-msgstr "Böngésző:"
+msgstr "Böngésző"
 
 #: src/Plug.vala:105
-#, fuzzy
 msgid "Email Client"
-msgstr "E-mail kliens:"
+msgstr "E-mail kliens"
 
 #: src/Plug.vala:106
-#, fuzzy
 msgid "Calendar"
-msgstr "Naptár:"
+msgstr "Naptár"
 
 #: src/Plug.vala:107
-#, fuzzy
 msgid "Video Player"
-msgstr "Videólejátszó:"
+msgstr "Videólejátszó"
 
 #: src/Plug.vala:108
-#, fuzzy
 msgid "Music Player"
-msgstr "Zenelejátszó:"
+msgstr "Zenelejátszó"
 
 #: src/Plug.vala:109
-#, fuzzy
 msgid "Text Editor"
-msgstr "Szövegszerkesztő:"
+msgstr "Szövegszerkesztő"
 
 #: src/Plug.vala:110
-#, fuzzy
 msgid "Image Viewer"
-msgstr "Képnézegető:"
+msgstr "Képnézegető"
 
 #: src/Plug.vala:111
-#, fuzzy
 msgid "File Browser"
-msgstr "Fájlkezelő:"
+msgstr "Fájlkezelő"
 
 #: src/Permissions/PermissionsPlug.vala:29
 msgid "Home Folder"
@@ -102,7 +92,7 @@ msgstr "Saját mappa"
 
 #: src/Permissions/PermissionsPlug.vala:30
 msgid "System Folders"
-msgstr ""
+msgstr "Rendszermappák"
 
 #: src/Permissions/PermissionsPlug.vala:31
 msgid "Devices"
@@ -118,71 +108,75 @@ msgstr "Bluetooth"
 
 #: src/Permissions/PermissionsPlug.vala:34
 msgid "Printing"
-msgstr ""
+msgstr "Nyomtatás"
 
 #: src/Permissions/PermissionsPlug.vala:35
 msgid "Secure Shell Agent"
-msgstr ""
+msgstr "SSH"
 
 #: src/Permissions/PermissionsPlug.vala:36
 msgid "GPU Acceleration"
-msgstr ""
+msgstr "GPU gyorsítás"
 
 #: src/Permissions/PermissionsPlug.vala:40
 msgid "No Flatpak apps installed"
-msgstr ""
+msgstr "Nincsenek Flatpak alkalmazások telepítve"
 
 #: src/Permissions/PermissionsPlug.vala:45
 msgid ""
 "Apps whose permissions can be adjusted will automatically appear here when "
 "installed"
-msgstr ""
+msgstr "Itt fognak megjelenni azon alkalmazások, amelyek engedélyei állíthatók"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:33
 msgid "Access your entire Home folder, including any hidden folders."
-msgstr ""
+msgstr "A teljes saját mappa (home) elérése, a rejtett mappákat beleértve."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:40
 msgid ""
 "Access system folders, not including the operating system or system "
 "internals. This includes users' Home folders."
 msgstr ""
+"A rendszermappák elérése, kivéve az operációs rendszert és a belső részeket. "
+"Ez magába foglalja a felhasználok saját mappáit."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:47
 msgid ""
 "Access all devices, such as webcams, microphones, and connected USB devices."
 msgstr ""
+"Az összes eszköz elérése, mint a webkamera, mikrofon és a csatlakoztatott "
+"USB-eszközök."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:54
 msgid "Access the Internet and local networks."
-msgstr ""
+msgstr "Az internet és a helyi hálózatok elérése."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:61
 msgid "Manage Bluetooth devices including pairing, unpairing, and discovery."
 msgstr ""
+"Bluetooth-eszközök kezelése, beleértve a párosítást és annak törlését, "
+"valamint a felfedezést."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:68
 msgid "Access printers."
-msgstr ""
+msgstr "Nyomtatók elérése."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:75
 msgid "Access other devices on the network via SSH."
-msgstr ""
+msgstr "Többi készülék elérése a hálózaton keresztül SSH segítségével."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:82
 msgid "Accelerate graphical output."
-msgstr ""
+msgstr "A grafikus kimenet gyorsítása."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:105
-#, fuzzy
-#| msgid "Default"
 msgid "Reset to Defaults"
-msgstr "Alapértelmezett"
+msgstr "Alapértelmezettek visszaállítása"
 
 #. / Translators: This is a delimiter that separates types of permissions in the sidebar description
 #: src/Permissions/Widgets/SidebarRow.vala:89
 msgid ", "
-msgstr ""
+msgstr ", "
 
 #: src/Startup/Startup.vala:40
 msgid "Launch Apps on Startup"
@@ -191,8 +185,8 @@ msgstr "Alkalmazások indítása rendszerindításkor"
 #: src/Startup/Startup.vala:41
 msgid "Add apps to the Startup list by clicking the icon in the toolbar below."
 msgstr ""
-"Adjon hozzá alkalmazásokat a listához, az alábbi ikonra kattintva az "
-"eszköztáron."
+"Adjon hozzá alkalmazásokat a listához az alsó eszköztáron lévő ikonra "
+"kattintva."
 
 #: src/Startup/Startup.vala:61
 msgid "Add Startup App…"
@@ -217,7 +211,7 @@ msgstr "Alkalmazások keresése"
 
 #: src/Startup/Widgets/AppChooser.vala:56
 msgid "Type in a custom command"
-msgstr "Adjunk meg egy egyéni parancsot"
+msgstr "Adjon meg egy egyéni parancsot"
 
 #: src/Defaults/DefaultPlug.vala:50
 msgid "Web Browser:"
