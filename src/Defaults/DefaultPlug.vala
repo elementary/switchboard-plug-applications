@@ -39,7 +39,7 @@ public class Defaults.Plug : Gtk.Grid {
 
         var wb_label = new SettingsLabel (_("Web Browser:"));
         wb_chooser = new Gtk.AppChooserButton ("x-scheme-handler/https");
-        wb_chooser.show_default_item = false;
+        wb_chooser.show_default_item = true;
 
         var ec_label = new SettingsLabel (_("Email Client:"));
         ec_chooser = new Gtk.AppChooserButton ("x-scheme-handler/mailto");
