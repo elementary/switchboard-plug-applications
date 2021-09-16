@@ -161,11 +161,11 @@ public class Permissions.Backend.App : GLib.Object {
             var setting = settings.get (i);
             setting.enabled = setting.standard;
         }
-        
+
         var overrides_path = get_overrides_path ();
-        
+
         var key_file = new GLib.KeyFile ();
-        
+
         try {
             key_file.load_from_file (overrides_path, GLib.KeyFileFlags.NONE);
         } catch (GLib.KeyFileError e) {
@@ -173,11 +173,11 @@ public class Permissions.Backend.App : GLib.Object {
         } catch (GLib.FileError e) {
             debug ("Couldn't load overrides file: %s", e.message);
         }
-    
+
         try {
             for (var i = 0; i < settings.length; i++) {
                 var setting = settings.get (i);
-                
+
                 var key_value_pair = setting.context.split ("=");
                 var key = key_value_pair[0];
 
@@ -199,9 +199,9 @@ public class Permissions.Backend.App : GLib.Object {
     public void save_overrides () {
         try {
             var overrides_path = get_overrides_path ();
-            
+
             var key_file = new GLib.KeyFile ();
-            
+
             try {
                 key_file.load_from_file (overrides_path, GLib.KeyFileFlags.NONE);
             } catch (GLib.KeyFileError e) {
@@ -212,7 +212,7 @@ public class Permissions.Backend.App : GLib.Object {
 
             for (var i = 0; i < settings.length; i++) {
                 var setting = settings.get (i);
-                
+
                 var key_value_pair = setting.context.split ("=");
                 var key = key_value_pair[0];
 
@@ -221,34 +221,32 @@ public class Permissions.Backend.App : GLib.Object {
                 if (key_file.has_group (GROUP) && key_file.has_key (GROUP, key)) {
                     try {
                         var existing_value = key_file.get_value (GROUP, key);
-                    
+
                         var existing_values = existing_value.split (";");
                         var existing_values_list = new Gee.HashSet<string>();
-                        
+
                         foreach (var existing_value_entry in existing_values) {
                             existing_values_list.add (existing_value_entry);
                         }
-                        
+
                         if (existing_values_list.contains (value) && setting.enabled == setting.standard) {
                             existing_values_list.remove (value);
                         } else if (!existing_values_list.contains (value) && setting.enabled != setting.standard) {
                             existing_values_list.add (value);
                         }
-                        
+
                         var new_values = existing_values_list.to_array ();
                         var new_value = string.joinv (";", new_values);
-                    
+
                         if (new_value.length > 0) {
                             key_file.set_value (GROUP, key, new_value);
                         } else {
                             key_file.remove_key (GROUP, key);
-                            
+
                             if (key_file.get_keys (GROUP).length == 0) {
                                 key_file.remove_group (GROUP);
                             }
                         }
-                    
-                        
                     } catch (GLib.KeyFileError e) {
                         debug (e.message);
                     }
