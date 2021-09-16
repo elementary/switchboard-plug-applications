@@ -181,9 +181,7 @@ public class Permissions.Backend.App : GLib.Object {
                 var key_value_pair = setting.context.split ("=");
                 var key = key_value_pair[0];
 
-                print("removing key %s from group %s\n",key,GROUP);
-
-                if (key_file.has_group(GROUP) && key_file.has_key (GROUP, key)) {
+                if (key_file.has_group (GROUP) && key_file.has_key (GROUP, key)) {
                     key_file.remove_key (GROUP, key);
                 }
             }
@@ -223,7 +221,7 @@ public class Permissions.Backend.App : GLib.Object {
                         var existing_value = key_file.get_value (GROUP, key);
 
                         var existing_values = existing_value.split (";");
-                        var existing_values_list = new Gee.HashSet<string>();
+                        var existing_values_list = new Gee.HashSet<string> ();
 
                         foreach (var existing_value_entry in existing_values) {
                             existing_values_list.add (existing_value_entry);
