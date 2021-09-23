@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-15 22:00+0000\n"
+"POT-Creation-Date: 2021-09-23 21:58+0000\n"
 "PO-Revision-Date: 2021-07-23 10:18+0000\n"
 "Last-Translator: supaeasy <ismo+github@wolffson.ch>\n"
 "Language-Team: German <https://l10n.elementary.io/projects/switchboard/"
@@ -28,27 +28,33 @@ msgid "Manage default and startup applications"
 msgstr "Verwalten von Standard- und Autostart-Anwendungen"
 
 #: data/io.elementary.switchboard.applications.appdata.xml.in:12
-msgid "New features:"
-msgstr "Neue Funktionen:"
-
-#: data/io.elementary.switchboard.applications.appdata.xml.in:14
-msgid "Manage permissions for Flatpak apps"
-msgstr "Berechtigungen für Flatpak-Apps verwalten"
-
-#: data/io.elementary.switchboard.applications.appdata.xml.in:16
+#: data/io.elementary.switchboard.applications.appdata.xml.in:25
 msgid "Minor updates:"
 msgstr "Kleinere Aktualisierungen:"
 
-#: data/io.elementary.switchboard.applications.appdata.xml.in:18
-msgid "Show custom launcher files"
-msgstr "Zeige angepasste Launcher Dateien"
+#: data/io.elementary.switchboard.applications.appdata.xml.in:14
+msgid "Fix an issue with setting the incorrect app for certain files types"
+msgstr ""
 
-#: data/io.elementary.switchboard.applications.appdata.xml.in:19
-#: data/io.elementary.switchboard.applications.appdata.xml.in:25
-#: data/io.elementary.switchboard.applications.appdata.xml.in:31
+#: data/io.elementary.switchboard.applications.appdata.xml.in:15
+#: data/io.elementary.switchboard.applications.appdata.xml.in:28
+#: data/io.elementary.switchboard.applications.appdata.xml.in:34
+#: data/io.elementary.switchboard.applications.appdata.xml.in:40
 msgid "Updated translations"
 msgstr "Aktualisierte Übersetzungen"
 
-#: data/io.elementary.switchboard.applications.appdata.xml.in:30
+#: data/io.elementary.switchboard.applications.appdata.xml.in:21
+msgid "New features:"
+msgstr "Neue Funktionen:"
+
+#: data/io.elementary.switchboard.applications.appdata.xml.in:23
+msgid "Manage permissions for Flatpak apps"
+msgstr "Berechtigungen für Flatpak-Apps verwalten"
+
+#: data/io.elementary.switchboard.applications.appdata.xml.in:27
+msgid "Show custom launcher files"
+msgstr "Zeige angepasste Launcher Dateien"
+
+#: data/io.elementary.switchboard.applications.appdata.xml.in:39
 msgid "Fix issues with OnlyShowIn and Snap apps"
 msgstr "Fehler im Zusammenhang mit OnlyShowIn und Snap apps behoben"
