@@ -30,16 +30,6 @@ public class Defaults.Plug : Gtk.Grid {
     Gtk.AppChooserButton te_chooser;
     Gtk.AppChooserButton fb_chooser;
 
-    /* Cached AppInfo's used for switching types when default app is changed */
-    GLib.AppInfo wb_old;
-    GLib.AppInfo ec_old;
-    GLib.AppInfo c_old;
-    GLib.AppInfo vp_old;
-    GLib.AppInfo mp_old;
-    GLib.AppInfo iv_old;
-    GLib.AppInfo te_old;
-    GLib.AppInfo fb_old;
-
     construct {
         column_spacing = 12;
         row_spacing = 12;
@@ -48,7 +38,7 @@ public class Defaults.Plug : Gtk.Grid {
         margin_top = 64;
 
         var wb_label = new SettingsLabel (_("Web Browser:"));
-        wb_chooser = new Gtk.AppChooserButton ("x-scheme-handler/http");
+        wb_chooser = new Gtk.AppChooserButton ("x-scheme-handler/https");
         wb_chooser.show_default_item = true;
 
         var ec_label = new SettingsLabel (_("Email Client:"));
@@ -112,45 +102,43 @@ public class Defaults.Plug : Gtk.Grid {
         attach (fb_label, 2, 3, 1, 1);
         attach (fb_chooser, 3, 3, 1, 1);
 
-        cache_apps ();
-
         wb_chooser.changed.connect (() => run_in_thread ( () => {
-            change_default (wb_old, wb_chooser.get_app_info (), "web_browser");
+            change_default (wb_chooser.get_app_info (), "web_browser");
             return null;
         }));
 
         ec_chooser.changed.connect (() => run_in_thread ( () => {
-            change_default (ec_old, ec_chooser.get_app_info (), "email_client");
+            change_default (ec_chooser.get_app_info (), "email_client");
             return null;
         }));
 
         c_chooser.changed.connect (() => run_in_thread ( () => {
-            change_default (c_old, c_chooser.get_app_info (), "calendar");
+            change_default (c_chooser.get_app_info (), "calendar");
             return null;
         }));
 
         vp_chooser.changed.connect (() => run_in_thread ( () => {
-            change_default (vp_old, vp_chooser.get_app_info (), "video_player");
+            change_default (vp_chooser.get_app_info (), "video_player");
             return null;
         }));
 
         mp_chooser.changed.connect (() => run_in_thread ( () => {
-            change_default (mp_old, mp_chooser.get_app_info (), "music_player");
+            change_default (mp_chooser.get_app_info (), "music_player");
             return null;
         }));
 
         iv_chooser.changed.connect (() => run_in_thread ( () => {
-            change_default (iv_old, iv_chooser.get_app_info (), "image_viewer");
+            change_default (iv_chooser.get_app_info (), "image_viewer");
             return null;
         }));
 
         te_chooser.changed.connect (() => run_in_thread ( () => {
-            change_default (te_old, te_chooser.get_app_info (), "text_editor");
+            change_default (te_chooser.get_app_info (), "text_editor");
             return null;
         }));
 
         fb_chooser.changed.connect (() => run_in_thread ( () => {
-            change_default (fb_old, fb_chooser.get_app_info (), "file_browser");
+            change_default (fb_chooser.get_app_info (), "file_browser");
             return null;
         }));
 
@@ -164,23 +152,8 @@ public class Defaults.Plug : Gtk.Grid {
             warning ("Could not create a new thread: %s", e.message);
         }
     }
-    public void change_default (GLib.AppInfo old_app, GLib.AppInfo new_app, string item_type) {
+    public void change_default (GLib.AppInfo new_app, string item_type) {
         map_types_to_app (get_types_for_app (item_type), new_app);
-        map_types_to_app (old_app.get_supported_types (), new_app);
-
-        cache_apps ();
-    }
-
-    private void cache_apps () {
-        /* Cache the AppInfo of the old default apps */
-        wb_old = wb_chooser.get_app_info ();
-        ec_old = ec_chooser.get_app_info ();
-        c_old = c_chooser.get_app_info ();
-        vp_old = vp_chooser.get_app_info ();
-        mp_old = mp_chooser.get_app_info ();
-        iv_old = iv_chooser.get_app_info ();
-        te_old = te_chooser.get_app_info ();
-        fb_old = fb_chooser.get_app_info ();
     }
 
     private class SettingsLabel : Gtk.Label {

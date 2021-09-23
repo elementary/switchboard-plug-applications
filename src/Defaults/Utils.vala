@@ -22,14 +22,20 @@
 namespace Defaults {
 
     void map_types_to_app (string[] types, GLib.AppInfo app) {
+        var supported_types = app.get_supported_types ();
         try {
             for (int i=0; i < types.length; i++) {
-                app.set_as_default_for_type (types[i]);
+                AppInfo.reset_type_associations (types[i]);
+                if (types[i] in supported_types) {
+                    app.set_as_default_for_type (types[i]);
+                    debug ("%s now default for content type %s", app.get_name (), types[i]);
+                } else {
+                    debug ("%s does not support content type %s", app.get_name (), types[i]);
+                }
             }
         } catch (GLib.Error e) {
-            stdout.printf ("Error: %s\n", e.message);
+            stdout.printf ("Error setting default app: %s", e.message);
         }
-
     }
 /*
  * Get the essential types for the apps

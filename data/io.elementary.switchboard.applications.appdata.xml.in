@@ -7,6 +7,15 @@
   <icon type="stock">preferences-desktop-applications</icon>
   <translation type="gettext">applications-plug</translation>
   <releases>
+    <release version="6.0.1" date="2021-09-23" urgency="medium">
+      <description>
+        <p>Minor updates:</p>
+        <ul>
+          <li>Fix an issue with setting the incorrect app for certain files types</li>
+          <li>Updated translations</li>
+        </ul>
+      </description>
+    </release>
     <release version="6.0.0" date="2021-07-15" urgency="medium">
       <description>
         <p>New features:</p>
