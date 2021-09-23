@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-09-23 21:58+0000\n"
+"POT-Creation-Date: 2021-09-23 23:18+0000\n"
 "PO-Revision-Date: 2021-07-17 13:00+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
@@ -29,7 +29,7 @@ msgstr ""
 "デフォルトのアプリケーションと起動時に実行するアプリケーションを管理します"
 
 #: data/io.elementary.switchboard.applications.appdata.xml.in:12
-#: data/io.elementary.switchboard.applications.appdata.xml.in:25
+#: data/io.elementary.switchboard.applications.appdata.xml.in:26
 msgid "Minor updates:"
 msgstr "軽微なアップデート:"
 
@@ -38,25 +38,29 @@ msgid "Fix an issue with setting the incorrect app for certain files types"
 msgstr ""
 
 #: data/io.elementary.switchboard.applications.appdata.xml.in:15
-#: data/io.elementary.switchboard.applications.appdata.xml.in:28
-#: data/io.elementary.switchboard.applications.appdata.xml.in:34
-#: data/io.elementary.switchboard.applications.appdata.xml.in:40
+msgid "Don't overwrite custom overrides when unnecessary"
+msgstr ""
+
+#: data/io.elementary.switchboard.applications.appdata.xml.in:16
+#: data/io.elementary.switchboard.applications.appdata.xml.in:29
+#: data/io.elementary.switchboard.applications.appdata.xml.in:35
+#: data/io.elementary.switchboard.applications.appdata.xml.in:41
 msgid "Updated translations"
 msgstr "翻訳の更新"
 
-#: data/io.elementary.switchboard.applications.appdata.xml.in:21
+#: data/io.elementary.switchboard.applications.appdata.xml.in:22
 msgid "New features:"
 msgstr "新機能:"
 
-#: data/io.elementary.switchboard.applications.appdata.xml.in:23
+#: data/io.elementary.switchboard.applications.appdata.xml.in:24
 msgid "Manage permissions for Flatpak apps"
 msgstr "Flatpak アプリのパーミッションを管理できる機能を追加"
 
-#: data/io.elementary.switchboard.applications.appdata.xml.in:27
+#: data/io.elementary.switchboard.applications.appdata.xml.in:28
 msgid "Show custom launcher files"
 msgstr "ユーザーが作成した起動ファイルを表示するように修正"
 
-#: data/io.elementary.switchboard.applications.appdata.xml.in:39
+#: data/io.elementary.switchboard.applications.appdata.xml.in:40
 msgid "Fix issues with OnlyShowIn and Snap apps"
 msgstr "OnlyShowIn プロパティーと Snap アプリに関する不具合を修正"
 

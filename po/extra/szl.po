@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-09-23 21:58+0000\n"
+"POT-Creation-Date: 2021-09-23 23:18+0000\n"
 "PO-Revision-Date: 2019-06-26 18:53+0200\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -21,7 +21,7 @@ msgid "Manage default and startup applications"
 msgstr ""
 
 #: data/io.elementary.switchboard.applications.appdata.xml.in:12
-#: data/io.elementary.switchboard.applications.appdata.xml.in:25
+#: data/io.elementary.switchboard.applications.appdata.xml.in:26
 msgid "Minor updates:"
 msgstr ""
 
@@ -30,24 +30,28 @@ msgid "Fix an issue with setting the incorrect app for certain files types"
 msgstr ""
 
 #: data/io.elementary.switchboard.applications.appdata.xml.in:15
-#: data/io.elementary.switchboard.applications.appdata.xml.in:28
-#: data/io.elementary.switchboard.applications.appdata.xml.in:34
-#: data/io.elementary.switchboard.applications.appdata.xml.in:40
+msgid "Don't overwrite custom overrides when unnecessary"
+msgstr ""
+
+#: data/io.elementary.switchboard.applications.appdata.xml.in:16
+#: data/io.elementary.switchboard.applications.appdata.xml.in:29
+#: data/io.elementary.switchboard.applications.appdata.xml.in:35
+#: data/io.elementary.switchboard.applications.appdata.xml.in:41
 msgid "Updated translations"
 msgstr ""
 
-#: data/io.elementary.switchboard.applications.appdata.xml.in:21
+#: data/io.elementary.switchboard.applications.appdata.xml.in:22
 msgid "New features:"
 msgstr ""
 
-#: data/io.elementary.switchboard.applications.appdata.xml.in:23
+#: data/io.elementary.switchboard.applications.appdata.xml.in:24
 msgid "Manage permissions for Flatpak apps"
 msgstr ""
 
-#: data/io.elementary.switchboard.applications.appdata.xml.in:27
+#: data/io.elementary.switchboard.applications.appdata.xml.in:28
 msgid "Show custom launcher files"
 msgstr ""
 
-#: data/io.elementary.switchboard.applications.appdata.xml.in:39
+#: data/io.elementary.switchboard.applications.appdata.xml.in:40
 msgid "Fix issues with OnlyShowIn and Snap apps"
 msgstr ""
