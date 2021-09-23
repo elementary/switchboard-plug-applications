@@ -1,6 +1,7 @@
 /*
 * Copyright 2020 elementary, Inc. (https://elementary.io)
 *           2020 Martin Abente Lahaye
+*           2021 Justin Haygood (jhaygood86@gmail.com)
 *
 * This program is free software; you can redistribute it and/or
 * modify it under the terms of the GNU General Public
@@ -162,42 +163,104 @@ public class Permissions.Backend.App : GLib.Object {
             setting.enabled = setting.standard;
         }
 
-        var file = GLib.File.new_for_path (get_overrides_path ());
+        var overrides_path = get_overrides_path ();
+
+        var key_file = new GLib.KeyFile ();
+
         try {
-            file.delete ();
-        } catch (GLib.Error e) {
-            GLib.warning (e.message);
+            key_file.load_from_file (overrides_path, GLib.KeyFileFlags.NONE);
+        } catch (GLib.KeyFileError e) {
+            debug ("Couldn't create overrides keyfile: %s", e.message);
+        } catch (GLib.FileError e) {
+            debug ("Couldn't load overrides file: %s", e.message);
+        }
+
+        try {
+            for (var i = 0; i < settings.length; i++) {
+                var setting = settings.get (i);
+
+                var key_value_pair = setting.context.split ("=");
+                var key = key_value_pair[0];
+
+                if (key_file.has_group (GROUP) && key_file.has_key (GROUP, key)) {
+                    key_file.remove_key (GROUP, key);
+                }
+            }
+
+            key_file.save_to_file (overrides_path);
+        } catch (GLib.KeyFileError e) {
+            debug ("Couldn't remove key from overrides keyfile: %s", e.message);
+        } catch (GLib.FileError e) {
+            debug (e.message);
         }
     }
 
     public void save_overrides () {
         try {
+            var overrides_path = get_overrides_path ();
+
             var key_file = new GLib.KeyFile ();
+
+            try {
+                key_file.load_from_file (overrides_path, GLib.KeyFileFlags.NONE);
+            } catch (GLib.KeyFileError e) {
+                debug ("Couldn't create overrides keyfile: %s", e.message);
+            } catch (GLib.FileError e) {
+                debug ("Couldn't load overrides file: %s", e.message);
+            }
 
             for (var i = 0; i < settings.length; i++) {
                 var setting = settings.get (i);
-                if (setting.enabled != setting.standard) {
-                    var key_value_pair = setting.context.split ("=");
-                    var key = key_value_pair[0];
 
-                    var value = key_value_pair[1];
-                    if (!setting.enabled) {
-                        value = "!%s".printf (value);
-                    }
+                var key_value_pair = setting.context.split ("=");
+                var key = key_value_pair[0];
 
-                    if (key_file.has_group (GROUP)) {
-                        try {
-                            value = "%s;%s".printf (key_file.get_value (GROUP, key), value);
-                        } catch (GLib.KeyFileError e) {
-                            debug (e.message);
+                var value = key_value_pair[1];
+
+                if (key_file.has_group (GROUP) && key_file.has_key (GROUP, key)) {
+                    try {
+                        var existing_value = key_file.get_value (GROUP, key);
+
+                        var existing_values = existing_value.split (";");
+                        var values_list = new Gee.HashSet<string> ();
+
+                        foreach (var existing_value_entry in existing_values) {
+                            if (existing_value_entry.length > 0) {
+                                values_list.add (existing_value_entry);
+                            }
                         }
-                    }
 
-                    key_file.set_value (GROUP, key, value);
+                        if (values_list.contains (value) && setting.enabled == setting.standard) {
+                            values_list.remove (value);
+                        } else if (!values_list.contains (value) && setting.enabled != setting.standard) {
+                            values_list.add (value);
+                        }
+
+                        var new_values = values_list.to_array ();
+                        var new_value = string.joinv (";", new_values);
+
+                        if (new_value.length > 0) {
+                            key_file.set_value (GROUP, key, new_value);
+                        } else {
+                            key_file.remove_key (GROUP, key);
+
+                            if (key_file.get_keys (GROUP).length == 0) {
+                                key_file.remove_group (GROUP);
+                            }
+                        }
+                    } catch (GLib.KeyFileError e) {
+                        debug (e.message);
+                    }
+                } else {
+                    if (setting.enabled != setting.standard) {
+                        key_file.set_value (GROUP, key, value);
+                    }
                 }
             }
 
-            key_file.save_to_file (get_overrides_path ());
+            key_file.save_to_file (overrides_path);
+        } catch (GLib.KeyFileError e) {
+            debug ("Couldn't save overrides keyfile: %s", e.message);
         } catch (GLib.FileError e) {
             debug (e.message);
         }
