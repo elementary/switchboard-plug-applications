@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-15 22:00+0000\n"
+"POT-Creation-Date: 2021-09-23 21:58+0000\n"
 "PO-Revision-Date: 2021-07-17 13:00+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
@@ -29,28 +29,34 @@ msgstr ""
 "デフォルトのアプリケーションと起動時に実行するアプリケーションを管理します"
 
 #: data/io.elementary.switchboard.applications.appdata.xml.in:12
-msgid "New features:"
-msgstr "新機能:"
-
-#: data/io.elementary.switchboard.applications.appdata.xml.in:14
-msgid "Manage permissions for Flatpak apps"
-msgstr "Flatpak アプリのパーミッションを管理できる機能を追加"
-
-#: data/io.elementary.switchboard.applications.appdata.xml.in:16
+#: data/io.elementary.switchboard.applications.appdata.xml.in:25
 msgid "Minor updates:"
 msgstr "軽微なアップデート:"
 
-#: data/io.elementary.switchboard.applications.appdata.xml.in:18
-msgid "Show custom launcher files"
-msgstr "ユーザーが作成した起動ファイルを表示するように修正"
+#: data/io.elementary.switchboard.applications.appdata.xml.in:14
+msgid "Fix an issue with setting the incorrect app for certain files types"
+msgstr ""
 
-#: data/io.elementary.switchboard.applications.appdata.xml.in:19
-#: data/io.elementary.switchboard.applications.appdata.xml.in:25
-#: data/io.elementary.switchboard.applications.appdata.xml.in:31
+#: data/io.elementary.switchboard.applications.appdata.xml.in:15
+#: data/io.elementary.switchboard.applications.appdata.xml.in:28
+#: data/io.elementary.switchboard.applications.appdata.xml.in:34
+#: data/io.elementary.switchboard.applications.appdata.xml.in:40
 msgid "Updated translations"
 msgstr "翻訳の更新"
 
-#: data/io.elementary.switchboard.applications.appdata.xml.in:30
+#: data/io.elementary.switchboard.applications.appdata.xml.in:21
+msgid "New features:"
+msgstr "新機能:"
+
+#: data/io.elementary.switchboard.applications.appdata.xml.in:23
+msgid "Manage permissions for Flatpak apps"
+msgstr "Flatpak アプリのパーミッションを管理できる機能を追加"
+
+#: data/io.elementary.switchboard.applications.appdata.xml.in:27
+msgid "Show custom launcher files"
+msgstr "ユーザーが作成した起動ファイルを表示するように修正"
+
+#: data/io.elementary.switchboard.applications.appdata.xml.in:39
 msgid "Fix issues with OnlyShowIn and Snap apps"
 msgstr "OnlyShowIn プロパティーと Snap アプリに関する不具合を修正"
 
