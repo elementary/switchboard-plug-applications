@@ -12,6 +12,7 @@
         <p>Minor updates:</p>
         <ul>
           <li>Fix an issue with setting the incorrect app for certain files types</li>
+          <li>Don't overwrite custom overrides when unnecessary</li>
           <li>Updated translations</li>
         </ul>
       </description>
