@@ -1,6 +1,7 @@
 /*
 * Copyright 2020 elementary, Inc. (https://elementary.io)
 *           2020 Martin Abente Lahaye
+*           2021 Justin Haygood (jhaygood86@gmail.com)
 *
 * This program is free software; you can redistribute it and/or
 * modify it under the terms of the GNU General Public
@@ -221,19 +222,21 @@ public class Permissions.Backend.App : GLib.Object {
                         var existing_value = key_file.get_value (GROUP, key);
 
                         var existing_values = existing_value.split (";");
-                        var existing_values_list = new Gee.HashSet<string> ();
+                        var values_list = new Gee.HashSet<string> ();
 
                         foreach (var existing_value_entry in existing_values) {
-                            existing_values_list.add (existing_value_entry);
+                            if (existing_value_entry.length > 0) {
+                                values_list.add (existing_value_entry);
+                            }
                         }
 
-                        if (existing_values_list.contains (value) && setting.enabled == setting.standard) {
-                            existing_values_list.remove (value);
-                        } else if (!existing_values_list.contains (value) && setting.enabled != setting.standard) {
-                            existing_values_list.add (value);
+                        if (values_list.contains (value) && setting.enabled == setting.standard) {
+                            values_list.remove (value);
+                        } else if (!values_list.contains (value) && setting.enabled != setting.standard) {
+                            values_list.add (value);
                         }
 
-                        var new_values = existing_values_list.to_array ();
+                        var new_values = values_list.to_array ();
                         var new_value = string.joinv (";", new_values);
 
                         if (new_value.length > 0) {
