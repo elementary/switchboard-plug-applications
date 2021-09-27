@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-09-23 23:18+0000\n"
-"PO-Revision-Date: 2020-10-11 21:36+0000\n"
-"Last-Translator: anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2021-09-27 10:37+0000\n"
+"Last-Translator: DarkKnightComes <darkknightcomes@gmail.com>\n"
 "Language-Team: Polish <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-applications/pl/>\n"
 "Language: pl\n"
@@ -13,24 +13,20 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2016-12-13 05:50+0000\n"
 
 #: src/Plug.vala:44
-#, fuzzy
-#| msgid "Manage default and startup applications"
 msgid "Manage default apps, startup apps, and app permissions"
-msgstr "Zarządzaj programami domyślnymi i startowymi"
+msgstr "Zarządzaj programami domyślnymi, startowymi i uprawnieniami aplikacji"
 
 #: src/Plug.vala:45
 msgid "Applications"
 msgstr "Programy"
 
 #: src/Plug.vala:56
-#, fuzzy
-#| msgid "Default"
 msgid "Defaults"
-msgstr "Domyślny"
+msgstr "Domyślne"
 
 #: src/Plug.vala:57 src/Plug.vala:102
 msgid "Startup"
@@ -38,7 +34,7 @@ msgstr "Uruchamianie"
 
 #: src/Plug.vala:58 src/Plug.vala:104
 msgid "Permissions"
-msgstr ""
+msgstr "Uprawnienia"
 
 #: src/Plug.vala:103
 msgid "Default Apps"
@@ -46,11 +42,11 @@ msgstr "Domyślne programy"
 
 #: src/Plug.vala:105
 msgid "Sandboxing"
-msgstr ""
+msgstr "Używanie piaskownicy"
 
 #: src/Plug.vala:106
 msgid "Confinement"
-msgstr ""
+msgstr "Ograniczenie"
 
 #: src/Plug.vala:107 src/Plug.vala:108 src/Plug.vala:109 src/Plug.vala:110
 #: src/Plug.vala:111 src/Plug.vala:112 src/Plug.vala:113 src/Plug.vala:114
@@ -95,7 +91,7 @@ msgstr "Katalog domowy"
 
 #: src/Permissions/PermissionsPlug.vala:30
 msgid "System Folders"
-msgstr ""
+msgstr "Katalogi systemowe"
 
 #: src/Permissions/PermissionsPlug.vala:31
 msgid "Devices"
