@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-09-23 23:18+0000\n"
-"PO-Revision-Date: 2021-07-17 13:00+0000\n"
+"PO-Revision-Date: 2021-09-27 03:51+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
 "applications-plug-extra/ja/>\n"
@@ -35,11 +35,11 @@ msgstr "軽微なアップデート:"
 
 #: data/io.elementary.switchboard.applications.appdata.xml.in:14
 msgid "Fix an issue with setting the incorrect app for certain files types"
-msgstr ""
+msgstr "特定の種類のファイルが意図しないアプリで開くように設定されてしまう不具合を修正"
 
 #: data/io.elementary.switchboard.applications.appdata.xml.in:15
 msgid "Don't overwrite custom overrides when unnecessary"
-msgstr ""
+msgstr "必要のないときはカスタマイズされたアクセス許可を上書きしないように修正"
 
 #: data/io.elementary.switchboard.applications.appdata.xml.in:16
 #: data/io.elementary.switchboard.applications.appdata.xml.in:29
