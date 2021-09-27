@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-09-23 23:18+0000\n"
-"PO-Revision-Date: 2021-08-21 08:13+0000\n"
+"PO-Revision-Date: 2021-09-27 15:07+0000\n"
 "Last-Translator: David M <rbndavid@gmail.com>\n"
 "Language-Team: Catalan <https://l10n.elementary.io/projects/switchboard/"
 "applications-plug-extra/ca/>\n"
@@ -35,10 +35,12 @@ msgstr "Actualitzacions menors:"
 #: data/io.elementary.switchboard.applications.appdata.xml.in:14
 msgid "Fix an issue with setting the incorrect app for certain files types"
 msgstr ""
+"Correcció de l'establiment de l'aplicació incorrecta per a alguns tipus de "
+"fitxers"
 
 #: data/io.elementary.switchboard.applications.appdata.xml.in:15
 msgid "Don't overwrite custom overrides when unnecessary"
-msgstr ""
+msgstr "No se substitueixen substitucions personalitzades quan no cal."
 
 #: data/io.elementary.switchboard.applications.appdata.xml.in:16
 #: data/io.elementary.switchboard.applications.appdata.xml.in:29
