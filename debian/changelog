@@ -1,3 +1,14 @@
+switchboard-plug-applications (6.0.1) bionic; urgency=medium
+
+  * Release 6.0.1 (#170)
+  * Update translation files
+  * Update translation template
+  * Play nicely with other overrides (#168)
+  * Ensure app set as default only for supported types (#166)
+  * l10n: Correctly setup the locales (#163)
+
+ -- elementary OS Team <builds@elementary.io>  Mon, 27 Sep 2021 20:32:11 +0000
+
 switchboard-plug-applications (6.0.0) bionic; urgency=medium
 
   * Release 6.0.0 (#162)
