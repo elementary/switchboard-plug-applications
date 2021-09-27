@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-09-23 21:58+0000\n"
-"PO-Revision-Date: 2021-07-16 09:57+0000\n"
+"POT-Creation-Date: 2021-09-23 23:18+0000\n"
+"PO-Revision-Date: 2021-09-24 09:12+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://l10n.elementary.io/projects/switchboard/"
 "applications-plug-extra/he/>\n"
@@ -28,34 +28,38 @@ msgid "Manage default and startup applications"
 msgstr "ניהול יישומי בררת מחדל ועם הפעלת המערכת"
 
 #: data/io.elementary.switchboard.applications.appdata.xml.in:12
-#: data/io.elementary.switchboard.applications.appdata.xml.in:25
+#: data/io.elementary.switchboard.applications.appdata.xml.in:26
 msgid "Minor updates:"
 msgstr "עדכונים משניים:"
 
 #: data/io.elementary.switchboard.applications.appdata.xml.in:14
 msgid "Fix an issue with setting the incorrect app for certain files types"
-msgstr ""
+msgstr "תוקנה תקלה עם הגדרת יישומים שגויים לסוגי קבצים מסוימים"
 
 #: data/io.elementary.switchboard.applications.appdata.xml.in:15
-#: data/io.elementary.switchboard.applications.appdata.xml.in:28
-#: data/io.elementary.switchboard.applications.appdata.xml.in:34
-#: data/io.elementary.switchboard.applications.appdata.xml.in:40
+msgid "Don't overwrite custom overrides when unnecessary"
+msgstr "נמנע שכתוב של מעקפים מסוימים כשאין צורך"
+
+#: data/io.elementary.switchboard.applications.appdata.xml.in:16
+#: data/io.elementary.switchboard.applications.appdata.xml.in:29
+#: data/io.elementary.switchboard.applications.appdata.xml.in:35
+#: data/io.elementary.switchboard.applications.appdata.xml.in:41
 msgid "Updated translations"
 msgstr "תרגומים עודכנו"
 
-#: data/io.elementary.switchboard.applications.appdata.xml.in:21
+#: data/io.elementary.switchboard.applications.appdata.xml.in:22
 msgid "New features:"
 msgstr "יכולות חדשות:"
 
-#: data/io.elementary.switchboard.applications.appdata.xml.in:23
+#: data/io.elementary.switchboard.applications.appdata.xml.in:24
 msgid "Manage permissions for Flatpak apps"
 msgstr "ניהול הרשאות ליישומי Flatpak"
 
-#: data/io.elementary.switchboard.applications.appdata.xml.in:27
+#: data/io.elementary.switchboard.applications.appdata.xml.in:28
 msgid "Show custom launcher files"
 msgstr "קובצי הפעלה מותאמים אישית מוצגים"
 
-#: data/io.elementary.switchboard.applications.appdata.xml.in:39
+#: data/io.elementary.switchboard.applications.appdata.xml.in:40
 msgid "Fix issues with OnlyShowIn and Snap apps"
 msgstr "תיקון תקלות עם השדה OnlyShowIn ועם יישומי Snap"
 

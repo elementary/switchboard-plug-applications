@@ -2,9 +2,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-09-23 21:58+0000\n"
-"PO-Revision-Date: 2020-10-11 21:36+0000\n"
-"Last-Translator: anonymous <noreply@weblate.org>\n"
+"POT-Creation-Date: 2021-09-23 23:18+0000\n"
+"PO-Revision-Date: 2021-09-27 11:51+0000\n"
+"Last-Translator: Marcin Serwin <marcin.serwin0@protonmail.com>\n"
 "Language-Team: Polish <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-applications/pl/>\n"
 "Language: pl\n"
@@ -13,24 +13,20 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2016-12-13 05:50+0000\n"
 
 #: src/Plug.vala:44
-#, fuzzy
-#| msgid "Manage default and startup applications"
 msgid "Manage default apps, startup apps, and app permissions"
-msgstr "Zarządzaj programami domyślnymi i startowymi"
+msgstr "Zarządzaj programami domyślnymi, startowymi i uprawnieniami aplikacji"
 
 #: src/Plug.vala:45
 msgid "Applications"
 msgstr "Programy"
 
 #: src/Plug.vala:56
-#, fuzzy
-#| msgid "Default"
 msgid "Defaults"
-msgstr "Domyślny"
+msgstr "Domyślne"
 
 #: src/Plug.vala:57 src/Plug.vala:102
 msgid "Startup"
@@ -38,7 +34,7 @@ msgstr "Uruchamianie"
 
 #: src/Plug.vala:58 src/Plug.vala:104
 msgid "Permissions"
-msgstr ""
+msgstr "Uprawnienia"
 
 #: src/Plug.vala:103
 msgid "Default Apps"
@@ -46,11 +42,11 @@ msgstr "Domyślne programy"
 
 #: src/Plug.vala:105
 msgid "Sandboxing"
-msgstr ""
+msgstr "Używanie piaskownicy"
 
 #: src/Plug.vala:106
 msgid "Confinement"
-msgstr ""
+msgstr "Ograniczenie"
 
 #: src/Plug.vala:107 src/Plug.vala:108 src/Plug.vala:109 src/Plug.vala:110
 #: src/Plug.vala:111 src/Plug.vala:112 src/Plug.vala:113 src/Plug.vala:114
@@ -95,7 +91,7 @@ msgstr "Katalog domowy"
 
 #: src/Permissions/PermissionsPlug.vala:30
 msgid "System Folders"
-msgstr ""
+msgstr "Foldery systemowe"
 
 #: src/Permissions/PermissionsPlug.vala:31
 msgid "Devices"
@@ -111,71 +107,79 @@ msgstr "Bluetooth"
 
 #: src/Permissions/PermissionsPlug.vala:34
 msgid "Printing"
-msgstr ""
+msgstr "Drukowanie"
 
 #: src/Permissions/PermissionsPlug.vala:35
 msgid "Secure Shell Agent"
-msgstr ""
+msgstr "Agent bezpiecznej powłoki"
 
 #: src/Permissions/PermissionsPlug.vala:36
 msgid "GPU Acceleration"
-msgstr ""
+msgstr "Akceleracja sprzętowa"
 
 #: src/Permissions/PermissionsPlug.vala:40
 msgid "No Flatpak apps installed"
-msgstr ""
+msgstr "Nie zainstalowano żadnych aplikacji Flatpak"
 
 #: src/Permissions/PermissionsPlug.vala:45
 msgid ""
 "Apps whose permissions can be adjusted will automatically appear here when "
 "installed"
 msgstr ""
+"Aplikacje, których uprawnienia można zmodyfikować, automatycznie pojawią się "
+"tutaj po instalacji"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:33
 msgid "Access your entire Home folder, including any hidden folders."
 msgstr ""
+"Uzyskaj dostęp do twojego całego folderu domowego, włączając w to ukryte "
+"foldery."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:40
 msgid ""
 "Access system folders, not including the operating system or system "
 "internals. This includes users' Home folders."
 msgstr ""
+"Uzyskaj dostęp do folderów systemowych, nie włączając w to składników "
+"systemu lub systemu operacyjnego. To zawiera foldery domowe użytkowników."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:47
 msgid ""
 "Access all devices, such as webcams, microphones, and connected USB devices."
 msgstr ""
+"Uzyskaj dostęp do wszystkich urządzeń, takich jak kamery internetowe, "
+"mikrofony i podłączone urządzenia USB."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:54
 msgid "Access the Internet and local networks."
-msgstr ""
+msgstr "Uzyskaj dostęp do Internetu i sieci lokalnych."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:61
 msgid "Manage Bluetooth devices including pairing, unpairing, and discovery."
 msgstr ""
+"Zarządzaj urządzeniami Bluetooth, włączając w to parowanie, rozłączanie i "
+"wykrywanie."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:68
 msgid "Access printers."
-msgstr ""
+msgstr "Uzyskaj dostęp do drukarek."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:75
 msgid "Access other devices on the network via SSH."
-msgstr ""
+msgstr "Uzyskaj dostęp do innych urządzeń w sieci poprzez SSH."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:82
 msgid "Accelerate graphical output."
-msgstr ""
+msgstr "Włącz akcelerację sprzetową."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:105
-#, fuzzy
-#| msgid "Default"
 msgid "Reset to Defaults"
-msgstr "Domyślny"
+msgstr "Przywróć ustawienia domyślne"
 
 #. / Translators: This is a delimiter that separates types of permissions in the sidebar description
 #: src/Permissions/Widgets/SidebarRow.vala:89
 msgid ", "
-msgstr ""
+msgstr ", "
 
 #: src/Startup/Startup.vala:40
 msgid "Launch Apps on Startup"
