@@ -107,35 +107,41 @@ msgstr "Bluetooth"
 
 #: src/Permissions/PermissionsPlug.vala:34
 msgid "Printing"
-msgstr ""
+msgstr "Drukowanie"
 
 #: src/Permissions/PermissionsPlug.vala:35
 msgid "Secure Shell Agent"
-msgstr ""
+msgstr "Agent bezpiecznej powłoki"
 
 #: src/Permissions/PermissionsPlug.vala:36
 msgid "GPU Acceleration"
-msgstr ""
+msgstr "Akceleracja sprzętowa"
 
 #: src/Permissions/PermissionsPlug.vala:40
 msgid "No Flatpak apps installed"
-msgstr ""
+msgstr "Nie zainstalowano żadnych aplikacji Flatpak"
 
 #: src/Permissions/PermissionsPlug.vala:45
 msgid ""
 "Apps whose permissions can be adjusted will automatically appear here when "
 "installed"
 msgstr ""
+"Aplikacje, których uprawnienia można zmodyfikować, automatycznie pojawią się "
+"tutaj po instalacji"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:33
 msgid "Access your entire Home folder, including any hidden folders."
 msgstr ""
+"Uzyskaj dostęp do twojego całego katalogu domowego, włączając w to ukryte "
+"katalogi."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:40
 msgid ""
 "Access system folders, not including the operating system or system "
 "internals. This includes users' Home folders."
 msgstr ""
+"Uzyskaj dostęp do katalogów systemowych, nie włączając w to składników "
+"systemu lub systemu operacyjnego. To zawiera katalogi domowe użytkowników."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:47
 msgid ""
