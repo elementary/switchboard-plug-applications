@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-09-23 23:18+0000\n"
-"PO-Revision-Date: 2021-07-30 18:07+0000\n"
+"PO-Revision-Date: 2021-10-21 17:32+0000\n"
 "Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
 "Language-Team: French <https://l10n.elementary.io/projects/switchboard/"
 "applications-plug-extra/fr/>\n"
@@ -35,10 +35,14 @@ msgstr "Mises à jour mineures :"
 #: data/io.elementary.switchboard.applications.appdata.xml.in:14
 msgid "Fix an issue with setting the incorrect app for certain files types"
 msgstr ""
+"Correction d'un problème d'association avec la mauvaise application pour "
+"certains types de fichiers"
 
 #: data/io.elementary.switchboard.applications.appdata.xml.in:15
 msgid "Don't overwrite custom overrides when unnecessary"
 msgstr ""
+"Les directives personnalisées ne sont désormais plus écrasées si ce n'est "
+"pas nécessaire"
 
 #: data/io.elementary.switchboard.applications.appdata.xml.in:16
 #: data/io.elementary.switchboard.applications.appdata.xml.in:29
