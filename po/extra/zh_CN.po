@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-09-23 23:18+0000\n"
-"PO-Revision-Date: 2021-05-05 21:17+0000\n"
-"Last-Translator: colindemian <colindemian@outlook.com>\n"
+"PO-Revision-Date: 2021-11-01 10:01+0000\n"
+"Last-Translator: Yuchen Deng <loaden@gmail.com>\n"
 "Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
 "switchboard/applications-plug-extra/zh_Hans/>\n"
 "Language: zh_CN\n"
@@ -30,15 +30,15 @@ msgstr "管理默认应用和开机启动应用"
 #: data/io.elementary.switchboard.applications.appdata.xml.in:12
 #: data/io.elementary.switchboard.applications.appdata.xml.in:26
 msgid "Minor updates:"
-msgstr ""
+msgstr "次要更新："
 
 #: data/io.elementary.switchboard.applications.appdata.xml.in:14
 msgid "Fix an issue with setting the incorrect app for certain files types"
-msgstr ""
+msgstr "修复了为某些文件类型设置不正确的应用程序的问题"
 
 #: data/io.elementary.switchboard.applications.appdata.xml.in:15
 msgid "Don't overwrite custom overrides when unnecessary"
-msgstr ""
+msgstr "非必要不要覆盖自定义设置"
 
 #: data/io.elementary.switchboard.applications.appdata.xml.in:16
 #: data/io.elementary.switchboard.applications.appdata.xml.in:29
@@ -49,16 +49,16 @@ msgstr "翻译更新"
 
 #: data/io.elementary.switchboard.applications.appdata.xml.in:22
 msgid "New features:"
-msgstr ""
+msgstr "新特性："
 
 #: data/io.elementary.switchboard.applications.appdata.xml.in:24
 msgid "Manage permissions for Flatpak apps"
-msgstr ""
+msgstr "管理 Flatpak 应用程序的权限"
 
 #: data/io.elementary.switchboard.applications.appdata.xml.in:28
 msgid "Show custom launcher files"
-msgstr ""
+msgstr "显示自定义启动器文件"
 
 #: data/io.elementary.switchboard.applications.appdata.xml.in:40
 msgid "Fix issues with OnlyShowIn and Snap apps"
-msgstr ""
+msgstr "修复 OnlyShowIn 和 Snap 应用程序的问题"
