@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-09-23 23:18+0000\n"
-"PO-Revision-Date: 2021-08-23 13:11+0000\n"
-"Last-Translator: Cleiton Floss <cleitonfloss@tutanota.de>\n"
+"PO-Revision-Date: 2021-11-30 16:52+0000\n"
+"Last-Translator: JohnDumpling <john_dumpling@protonmail.com>\n"
 "Language-Team: Slovak <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-applications/sk/>\n"
 "Language: sk\n"
@@ -111,7 +111,7 @@ msgstr "Tlač"
 
 #: src/Permissions/PermissionsPlug.vala:35
 msgid "Secure Shell Agent"
-msgstr "Agent zabezpečeného prístupu k príkazovému interpretovaču"
+msgstr "Agent Secure Shell (SSH)"
 
 #: src/Permissions/PermissionsPlug.vala:36
 msgid "GPU Acceleration"
@@ -119,7 +119,7 @@ msgstr "Akcelerácia pomocou grafickej karty"
 
 #: src/Permissions/PermissionsPlug.vala:40
 msgid "No Flatpak apps installed"
-msgstr "Žiadne Flatpak aplikácie nainštalované"
+msgstr "Žiadne nainštalované Flatpak aplikácie"
 
 #: src/Permissions/PermissionsPlug.vala:45
 msgid ""
@@ -141,7 +141,7 @@ msgid ""
 "internals. This includes users' Home folders."
 msgstr ""
 "Prístup k systémovým súborom, okrem operačného systému a interných systémov. "
-"Toto zahŕňa užívateľove Domovské priečinky."
+"Toto zahŕňa používateľove Domovské priečinky."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:47
 msgid ""
