@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-09-23 23:18+0000\n"
-"PO-Revision-Date: 2022-01-10 13:13+0000\n"
+"PO-Revision-Date: 2022-01-10 21:58+0000\n"
 "Last-Translator: p-bo <pavel.borecki@gmail.com>\n"
 "Language-Team: Czech <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-applications/cs/>\n"
@@ -90,7 +90,7 @@ msgstr "Domovská složka"
 
 #: src/Permissions/PermissionsPlug.vala:30
 msgid "System Folders"
-msgstr ""
+msgstr "Systémové složky"
 
 #: src/Permissions/PermissionsPlug.vala:31
 msgid "Devices"
@@ -106,66 +106,71 @@ msgstr "Bluetooth"
 
 #: src/Permissions/PermissionsPlug.vala:34
 msgid "Printing"
-msgstr ""
+msgstr "Tisk"
 
 #: src/Permissions/PermissionsPlug.vala:35
 msgid "Secure Shell Agent"
-msgstr ""
+msgstr "Agent zabezpečeného shellu"
 
 #: src/Permissions/PermissionsPlug.vala:36
 msgid "GPU Acceleration"
-msgstr ""
+msgstr "Akcelerace pomocí grafického čipu"
 
 #: src/Permissions/PermissionsPlug.vala:40
 msgid "No Flatpak apps installed"
-msgstr ""
+msgstr "Nejsou nainstalované žádné Flatpak aplikace"
 
 #: src/Permissions/PermissionsPlug.vala:45
 msgid ""
 "Apps whose permissions can be adjusted will automatically appear here when "
 "installed"
 msgstr ""
+"Aplikace kterých oprávnění je možné upravit se po instalaci automaticky "
+"objeví zde"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:33
 msgid "Access your entire Home folder, including any hidden folders."
-msgstr ""
+msgstr "Přístup k celé domovské složce, včetně všech skrytých složek."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:40
 msgid ""
 "Access system folders, not including the operating system or system "
 "internals. This includes users' Home folders."
 msgstr ""
+"Přístup k systémovým složkám, kromě součástí a vnitřní části operačního "
+"systému. Toto zahrnuje domovské složky uživatelů."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:47
 msgid ""
 "Access all devices, such as webcams, microphones, and connected USB devices."
 msgstr ""
+"Přístup ke všem zařízením, jako jsou webkamery, mikrofony a připojená USB "
+"zařízení."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:54
 msgid "Access the Internet and local networks."
-msgstr ""
+msgstr "Přístup k Internetu a místním sítím."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:61
 msgid "Manage Bluetooth devices including pairing, unpairing, and discovery."
 msgstr ""
+"Spravujte Bluetooth zařízení včetně párování (a jeho zrušení) a objevování."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:68
 msgid "Access printers."
-msgstr ""
+msgstr "Přístup k tiskárnám."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:75
 msgid "Access other devices on the network via SSH."
-msgstr ""
+msgstr "Přístup k ostatním zařízením na síti prostřednictvím SSH."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:82
 msgid "Accelerate graphical output."
-msgstr ""
+msgstr "Akcelerovat grafický výstup."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:105
-#, fuzzy
-#| msgid "Defaults"
 msgid "Reset to Defaults"
-msgstr "Výchozí"
+msgstr "Vrátit na výchozí hodnoty"
 
 #. / Translators: This is a delimiter that separates types of permissions in the sidebar description
 #: src/Permissions/Widgets/SidebarRow.vala:89
