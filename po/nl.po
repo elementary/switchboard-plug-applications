@@ -133,7 +133,8 @@ msgstr ""
 #: src/Permissions/Widgets/AppSettingsView.vala:33
 msgid "Access your entire Home folder, including any hidden folders."
 msgstr ""
-"Toegang tot de volledige Persoonlijke map, inclusief alle verborgen mappen."
+"Toegang tot de volledige Persoonlijke folder, inclusief alle verborgen "
+"folders."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:40
 msgid ""
