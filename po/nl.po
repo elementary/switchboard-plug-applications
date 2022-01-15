@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-09-23 23:18+0000\n"
-"PO-Revision-Date: 2022-01-15 12:53+0000\n"
+"PO-Revision-Date: 2022-01-15 13:59+0000\n"
 "Last-Translator: Dennis ten Hoove <dennistenhoove@protonmail.com>\n"
 "Language-Team: Dutch <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-applications/nl/>\n"
@@ -157,7 +157,9 @@ msgstr "Toegang tot het internet en lokale netwerken."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:61
 msgid "Manage Bluetooth devices including pairing, unpairing, and discovery."
-msgstr "Beheer Bluetooth-apparaten met koppelen, ontkoppelen en ontdekken."
+msgstr ""
+"Beheer Bluetooth-apparaten waaronder het koppelen, ontkoppelen en ontdekken "
+"van apparaten."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:68
 msgid "Access printers."
@@ -172,10 +174,8 @@ msgid "Accelerate graphical output."
 msgstr ""
 
 #: src/Permissions/Widgets/AppSettingsView.vala:105
-#, fuzzy
-#| msgid "Defaults"
 msgid "Reset to Defaults"
-msgstr "Standaarden"
+msgstr "Terugzetten naar standaardinstellingen"
 
 #. / Translators: This is a delimiter that separates types of permissions in the sidebar description
 #: src/Permissions/Widgets/SidebarRow.vala:89
