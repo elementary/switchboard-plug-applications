@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-09-23 23:18+0000\n"
-"PO-Revision-Date: 2021-11-18 20:03+0000\n"
+"PO-Revision-Date: 2022-05-29 23:10+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/switchboard/"
 "applications-plug-extra/uk/>\n"
@@ -48,7 +48,7 @@ msgstr "Користувацькі налаштування не перезап�
 #: data/io.elementary.switchboard.applications.appdata.xml.in:35
 #: data/io.elementary.switchboard.applications.appdata.xml.in:41
 msgid "Updated translations"
-msgstr "Оновлено переклади"
+msgstr "Оновлені переклади"
 
 #: data/io.elementary.switchboard.applications.appdata.xml.in:22
 msgid "New features:"
