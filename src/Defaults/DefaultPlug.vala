@@ -34,7 +34,9 @@ public class Defaults.Plug : Gtk.Grid {
         column_spacing = 12;
         row_spacing = 12;
         halign = Gtk.Align.CENTER;
-        margin = 24;
+        margin_bottom = 24;
+        margin_start = 24;
+        margin_end = 24;
         margin_top = 64;
 
         var wb_label = new SettingsLabel (_("Web Browser:"));
@@ -142,7 +144,7 @@ public class Defaults.Plug : Gtk.Grid {
             return null;
         }));
 
-        show_all ();
+        // show_all ();
     }
 
     private void run_in_thread (owned ThreadFunc<void*> func) {
@@ -156,10 +158,28 @@ public class Defaults.Plug : Gtk.Grid {
         map_types_to_app (get_types_for_app (item_type), new_app);
     }
 
-    private class SettingsLabel : Gtk.Label {
+    private class SettingsLabel : Gtk.Widget {
+        private Gtk.Label main_widget;
+        public string label { get; construct; }
+
         public SettingsLabel (string label) {
             Object (label: label);
-            halign = Gtk.Align.END;
+        }
+
+        static construct {
+            set_layout_manager_type (typeof (Gtk.BinLayout));
+        }
+
+        construct {
+            main_widget = new Gtk.Label (label) {
+                halign = Gtk.Align.END
+            };
+        }
+
+        ~SettingsLabel () {
+            while (this.get_last_child () != null) {
+                this.get_last_child ().unparent ();
+            }
         }
     }
 }

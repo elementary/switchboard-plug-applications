@@ -29,7 +29,7 @@ public class Startup.Widgets.AppRow : Gtk.ListBoxRow {
     }
 
     construct {
-        var image = Utils.create_icon (app_info, Gtk.IconSize.DIALOG);
+        var image = Utils.create_icon (app_info, 48);
 
         var app_name = new Gtk.Label (app_info.name) {
             xalign = 0
@@ -50,15 +50,18 @@ public class Startup.Widgets.AppRow : Gtk.ListBoxRow {
 
         var main_grid = new Gtk.Grid () {
             column_spacing = 12,
-            margin = 6
+            margin_start = 6,
+            margin_end = 6,
+            margin_top = 6,
+            margin_bottom = 6
         };
         main_grid.attach (image, 0, 0, 1, 2);
         main_grid.attach (app_name, 1, 0);
         main_grid.attach (app_comment, 1, 1);
         main_grid.attach (active_switch, 2, 0, 1, 2);
 
-        add (main_grid);
-        show_all ();
+        child = main_grid;
+        // show_all ();
 
         active_switch.notify["active"].connect (() => {
             active_changed (active_switch.active);

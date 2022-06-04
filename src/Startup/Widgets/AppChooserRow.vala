@@ -30,7 +30,7 @@ public class Startup.Widgets.AppChooserRow : Gtk.Grid {
     }
 
     construct {
-        var image = Utils.create_icon (app_info, Gtk.IconSize.DND);
+        var image = Utils.create_icon (app_info, 32);
 
         var app_name = new Gtk.Label (app_info.name) {
             xalign = 0,
@@ -44,7 +44,8 @@ public class Startup.Widgets.AppChooserRow : Gtk.Grid {
         };
         app_comment.get_style_context ().add_class (Granite.STYLE_CLASS_SMALL_LABEL);
 
-        margin = 6;
+        margin_top = 6;
+        margin_bottom = 6;
         margin_end = 12;
         margin_start = 10; // Account for icon position on the canvas
         column_spacing = 12;
@@ -52,6 +53,6 @@ public class Startup.Widgets.AppChooserRow : Gtk.Grid {
         attach (app_name, 1, 0);
         attach (app_comment, 1, 1);
 
-        show_all ();
+        // show_all ();
     }
 }

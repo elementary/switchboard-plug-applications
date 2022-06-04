@@ -34,9 +34,13 @@ public class Permissions.SidebarRow : Gtk.ListBoxRow {
 
         Gtk.Image image;
         if (appinfo != null && appinfo.get_icon () != null) {
-            image = new Gtk.Image.from_gicon (appinfo.get_icon (), Gtk.IconSize.DND);
+            image = new Gtk.Image.from_gicon (appinfo.get_icon ()) {
+                pixel_size = 32
+            };
         } else {
-            image = new Gtk.Image.from_icon_name ("application-default-icon", Gtk.IconSize.DND);
+            image = new Gtk.Image.from_icon_name ("application-default-icon") {
+                pixel_size = 32
+            };
         }
 
         image.pixel_size = 32;
@@ -55,18 +59,22 @@ public class Permissions.SidebarRow : Gtk.ListBoxRow {
         };
         description_label.get_style_context ().add_class (Granite.STYLE_CLASS_SMALL_LABEL);
 
-        description_revealer = new Gtk.Revealer ();
-        description_revealer.add (description_label);
+        description_revealer = new Gtk.Revealer () {
+            child = description_label
+        };
 
         var grid = new Gtk.Grid () {
             column_spacing = 6,
-            margin = 6
+            margin_start = 6,
+            margin_end = 6,
+            margin_bottom = 6,
+            margin_top = 6
         };
         grid.attach (image, 0, 0, 1, 2);
         grid.attach (title_label, 1, 0);
         grid.attach (description_revealer, 1, 1);
 
-        add (grid);
+        child = grid;
 
         for (var i = 0; i < app.settings.length; i++) {
             app.settings.get (i).notify.connect (update_description);

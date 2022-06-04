@@ -48,13 +48,16 @@ public class Permissions.Plug : Gtk.Grid {
         };
 
         var placeholder = new Gtk.Grid () {
-            margin = 12,
+            margin_start = 12,
+            margin_end = 12,
+            margin_top = 12,
+            margin_bottom = 12,
             row_spacing = 3,
             valign = Gtk.Align.CENTER
         };
         placeholder.attach (placeholder_title, 0, 0);
         placeholder.attach (placeholder_description, 0, 1);
-        placeholder.show_all ();
+        // placeholder.show_all ();
 
         var app_list = new Gtk.ListBox ();
         app_list.vexpand = true;
@@ -62,33 +65,37 @@ public class Permissions.Plug : Gtk.Grid {
         app_list.set_placeholder (placeholder);
         app_list.set_sort_func ((Gtk.ListBoxSortFunc) sort_func);
 
-        var scrolled_window = new Gtk.ScrolledWindow (null, null);
-        scrolled_window.add (app_list);
+        var scrolled_window = new Gtk.ScrolledWindow () {
+            child = app_list
+        };
 
-        var frame = new Gtk.Frame (null);
-        frame.add (scrolled_window);
+        var frame = new Gtk.Frame (null) {
+            child = scrolled_window
+        };
 
         Permissions.Backend.AppManager.get_default ().apps.foreach ((id, app) => {
             var app_entry = new Permissions.SidebarRow (app);
-            app_list.add (app_entry);
+            app_list.append (app_entry);
         });
 
         app_settings_view = new Widgets.AppSettingsView ();
 
-        List<weak Gtk.Widget> children = app_list.get_children ();
-        if (children.length () > 0) {
-            var row = ((Gtk.ListBoxRow)children.nth_data (0));
+        ListModel children = app_list.observe_children ();
+        if (children.get_n_items () > 0) {
+            var row = ((Gtk.ListBoxRow) children.get_item (0));
 
             app_list.select_row (row);
             show_row (row);
         }
 
         column_spacing = 12;
-        margin = 12;
+        margin_start = 12;
+        margin_end = 12;
+        margin_bottom = 12;
         margin_top = 0;
         attach (frame, 0, 0, 1, 1);
         attach (app_settings_view, 1, 0, 2, 1);
-        show_all ();
+        // show_all ();
 
         app_list.row_selected.connect (show_row);
     }

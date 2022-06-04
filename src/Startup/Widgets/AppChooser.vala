@@ -22,16 +22,22 @@
 public class Startup.Widgets.AppChooser : Gtk.Popover {
     public signal void app_chosen (string path);
     public signal void custom_command_chosen (string command);
+    public Gtk.Widget relative_widget { get; construct; }
 
     private Gtk.ListBox list;
     private Gtk.SearchEntry search_entry;
     private Gtk.Entry custom_entry;
 
     public AppChooser (Gtk.Widget widget) {
-        Object (relative_to: widget);
+        Object (relative_widget: widget);
     }
 
     construct {
+        Gtk.Allocation allocation;
+        relative_widget.get_allocation (out allocation);
+
+        pointing_to = allocation;
+
         search_entry = new Gtk.SearchEntry () {
             margin_end = 12,
             margin_start = 12,
@@ -39,16 +45,17 @@ public class Startup.Widgets.AppChooser : Gtk.Popover {
         };
 
         list = new Gtk.ListBox () {
-            expand = true
+            hexpand = true,
+            vexpand = true
         };
         list.set_sort_func (sort_function);
         list.set_filter_func (filter_function);
 
-        var scrolled = new Gtk.ScrolledWindow (null, null) {
+        var scrolled = new Gtk.ScrolledWindow () {
             height_request = 200,
-            width_request = 500
+            width_request = 500,
+            child = list
         };
-        scrolled.add (list);
 
         custom_entry = new Gtk.Entry () {
             margin_end = 12,
@@ -67,7 +74,7 @@ public class Startup.Widgets.AppChooser : Gtk.Popover {
         grid.attach (scrolled, 0, 1);
         grid.attach (custom_entry, 0, 2);
 
-        add (grid);
+        child = grid;
 
         search_entry.grab_focus ();
         search_entry.search_changed.connect (() => {

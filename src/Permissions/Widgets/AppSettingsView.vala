@@ -85,22 +85,25 @@ public class Permissions.Widgets.AppSettingsView : Gtk.Grid {
         );
 
         list_box = new Gtk.ListBox ();
-        list_box.expand = true;
-        list_box.add (homefolder_widget);
-        list_box.add (sysfolders_widget);
-        list_box.add (devices_widget);
-        list_box.add (network_widget);
-        list_box.add (bluetooth_widget);
-        list_box.add (printing_widget);
-        list_box.add (ssh_widget);
-        list_box.add (gpu_widget);
+        list_box.hexpand = true;
+        list_box.vexpand = true;
+        list_box.append (homefolder_widget);
+        list_box.append (sysfolders_widget);
+        list_box.append (devices_widget);
+        list_box.append (network_widget);
+        list_box.append (bluetooth_widget);
+        list_box.append (printing_widget);
+        list_box.append (ssh_widget);
+        list_box.append (gpu_widget);
 
-        var scrolled_window = new Gtk.ScrolledWindow (null, null);
-        scrolled_window.add (list_box);
+        var scrolled_window = new Gtk.ScrolledWindow () {
+            child = list_box
+        };
 
-        var frame = new Gtk.Frame (null);
-        frame.get_style_context ().add_class (Gtk.STYLE_CLASS_VIEW);
-        frame.add (scrolled_window);
+        var frame = new Gtk.Frame (null) {
+            child = scrolled_window
+        };
+        frame.get_style_context ().add_class (Granite.STYLE_CLASS_VIEW);
 
         reset_button = new Gtk.Button.with_label (_("Reset to Defaults"));
         reset_button.halign = Gtk.Align.END;
@@ -129,9 +132,18 @@ public class Permissions.Widgets.AppSettingsView : Gtk.Grid {
     }
 
     private void initialize_settings_view () {
-        foreach (unowned Gtk.Widget child in list_box.get_children ()) {
-            if (child is PermissionSettingsWidget) {
-                var widget = (PermissionSettingsWidget) child;
+        // foreach (unowned Gtk.Widget child in list_box.get_children ()) {
+        //     if (child is PermissionSettingsWidget) {
+        //         var widget = (PermissionSettingsWidget) child;
+        //         widget.do_notify = false;
+        //         widget.settings.standard = false;
+        //         widget.settings.enabled = false;
+        //         widget.do_notify = true;
+        //     }
+        // }
+        for (var iter = 0; iter < list_box.observe_children ().get_n_items (); iter++) {
+            if (list_box.observe_children ().get_item (iter) is PermissionSettingsWidget) {
+                var widget = (PermissionSettingsWidget) list_box.observe_children ().get_item (iter);
                 widget.do_notify = false;
                 widget.settings.standard = false;
                 widget.settings.enabled = false;
@@ -150,9 +162,9 @@ public class Permissions.Widgets.AppSettingsView : Gtk.Grid {
         }
 
         selected_app.settings.foreach ((settings) => {
-            foreach (unowned Gtk.Widget child in list_box.get_children ()) {
-                if (child is PermissionSettingsWidget) {
-                    var widget = (PermissionSettingsWidget) child;
+            for (var iter = 0; iter < list_box.observe_children ().get_n_items (); iter++) {
+                if (list_box.observe_children ().get_item (iter) is PermissionSettingsWidget) {
+                    var widget = (PermissionSettingsWidget) list_box.observe_children ().get_item (iter);
                     if (widget.settings.context == settings.context) {
                         widget.do_notify = false;
                         widget.settings.standard = settings.standard;

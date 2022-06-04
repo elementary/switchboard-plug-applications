@@ -39,7 +39,7 @@ public class Permissions.Widgets.PermissionSettingsWidget : Gtk.ListBoxRow {
     }
 
     construct {
-        var icon = new Gtk.Image.from_icon_name (icon_name, Gtk.IconSize.DND);
+        var icon = new Gtk.Image.from_icon_name (icon_name);
         icon.pixel_size = 32;
         icon.tooltip_text = settings.context;
 
@@ -57,13 +57,16 @@ public class Permissions.Widgets.PermissionSettingsWidget : Gtk.ListBoxRow {
 
         var grid = new Gtk.Grid ();
         grid.column_spacing = 12;
-        grid.margin = 6;
+        grid.margin_start = 6;
+        grid.margin_end = 6;
+        grid.margin_top = 6;
+        grid.margin_bottom = 6;
         grid.attach (icon, 0, 0, 1, 2);
         grid.attach (name_label, 1, 0);
         grid.attach (description_label, 1, 1);
         grid.attach (allow_switch, 2, 0, 1, 2);
 
-        add (grid);
+        child = grid;
 
         activate.connect (() => {
             allow_switch.activate ();

@@ -29,64 +29,76 @@ public class Startup.Plug : Gtk.Grid {
         URI_LIST
     }
 
-    private const Gtk.TargetEntry[] TARGET_LIST = {
-        { "text/uri-list", 0, Target.URI_LIST }
-    };
+    // private const Gtk.TargetEntry[] TARGET_LIST = {
+    //     { "text/uri-list", 0, Target.URI_LIST }
+    // };
 
     construct {
         Backend.KeyFileFactory.init ();
 
-        var empty_alert = new Granite.Widgets.AlertView (
-            _("Launch Apps on Startup"),
-            _("Add apps to the Startup list by clicking the icon in the toolbar below."),
-            "system-restart"
-        );
-        empty_alert.show_all ();
+        var empty_alert = new Granite.Placeholder (_("Launch Apps on Startup")) {
+            description = _("Add apps to the Startup list by clicking the icon in the toolbar below."),
+            icon = new ThemedIcon ("system-restart")
+        };
+        // empty_alert.show_all ();
 
         list = new Gtk.ListBox () {
-            expand = true
+            hexpand = true,
+            vexpand = true
         };
         list.set_placeholder (empty_alert);
         list.set_sort_func (sort_function);
 
-        Gtk.drag_dest_set (list, Gtk.DestDefaults.ALL, TARGET_LIST, Gdk.DragAction.COPY);
+        // Gtk.drag_dest_set (list, Gtk.DestDefaults.ALL, TARGET_LIST, Gdk.DragAction.COPY);
 
-        var scrolled = new Gtk.ScrolledWindow (null, null);
-        scrolled.add (list);
+        var scrolled = new Gtk.ScrolledWindow () {
+            child = list
+        };
 
         var actionbar = new Gtk.ActionBar ();
-        actionbar.get_style_context ().add_class (Gtk.STYLE_CLASS_INLINE_TOOLBAR);
+        actionbar.get_style_context ().add_class ("inline-toolbar");
 
-        var add_button = new Gtk.Button.from_icon_name ("application-add-symbolic", Gtk.IconSize.BUTTON);
-        add_button.tooltip_text = _("Add Startup App…");
+        var add_button = new Gtk.Button () {
+            child = new Gtk.Image.from_icon_name ("application-add-symbolic") {
+                pixel_size = 16
+            },
+            tooltip_text = _("Add Startup App…")
+        };
 
-        var remove_button = new Gtk.Button.from_icon_name ("list-remove-symbolic", Gtk.IconSize.BUTTON);
-        remove_button.tooltip_text = _("Remove Selected Startup App");
-        remove_button.sensitive = false;
+        var remove_button = new Gtk.Button () {
+            child = new Gtk.Image.from_icon_name ("list-remove-symbolic") {
+                pixel_size = 16
+            },
+            tooltip_text = _("Remove Selected Startup App"),
+            sensitive = false
+        };
 
-        actionbar.add (add_button);
-        actionbar.add (remove_button);
+        actionbar.pack_start (add_button);
+        actionbar.pack_start (remove_button);
 
         var grid = new Gtk.Grid ();
         grid.attach (scrolled, 0, 0, 1, 1);
         grid.attach (actionbar, 0, 1, 1, 1);
 
-        var frame = new Gtk.Frame (null);
-        frame.add (grid);
+        var frame = new Gtk.Frame (null) {
+            child = grid
+        };
 
         orientation = Gtk.Orientation.VERTICAL;
-        margin = 12;
+        margin_start = 12;
+        margin_end = 12;
+        margin_bottom = 12;
         margin_top = 0;
-        add (frame);
+        attach (frame, 0, 0);
 
         app_chooser = new Widgets.AppChooser (add_button);
-        app_chooser.modal = true;
+        app_chooser.autohide = true;
 
         var monitor = new Backend.Monitor ();
         controller = new Controller (this);
 
         add_button.clicked.connect (() => {
-            app_chooser.show_all ();
+            app_chooser.present ();
         });
 
         app_chooser.app_chosen.connect ((path) => {
@@ -97,7 +109,7 @@ public class Startup.Plug : Gtk.Grid {
             add_app (new Backend.KeyFile.from_command (command));
         });
 
-        list.drag_data_received.connect (on_drag_data_received);
+        // list.drag_data_received.connect (on_drag_data_received);
         list.row_selected.connect ((row) => {
             remove_button.sensitive = (row != null);
         });
@@ -117,14 +129,19 @@ public class Startup.Plug : Gtk.Grid {
 
     public void add_app (Backend.KeyFile key_file) {
         var app_info = key_file.create_app_info ();
-        foreach (unowned Gtk.Widget app_row in list.get_children ()) {
-            if (((Widgets.AppRow) app_row).app_info.equal (app_info)) {
+        // foreach (unowned Gtk.Widget app_row in list.get_children ()) {
+        //     if (((Widgets.AppRow) app_row).app_info.equal (app_info)) {
+        //         return;
+        //     }
+        // }
+        for (var iter = 0; iter < list.observe_children ().get_n_items (); iter++) {
+            if (((Widgets.AppRow) list.observe_children ().get_item (iter)).app_info.equal (app_info)) {
                 return;
             }
         }
 
         var row = new Widgets.AppRow (app_info);
-        list.add (row);
+        list.append (row);
 
         row.active_changed.connect ((active) => {
             key_file.active = active;
@@ -133,9 +150,14 @@ public class Startup.Plug : Gtk.Grid {
     }
 
     public void remove_app_from_path (string path) {
-        foreach (unowned Gtk.Widget app_row in list.get_children ()) {
-            if (((Widgets.AppRow) app_row).app_info.path == path) {
-                list.remove (app_row);
+        // foreach (unowned Gtk.Widget app_row in list.get_children ()) {
+        //     if (((Widgets.AppRow) app_row).app_info.path == path) {
+        //         list.remove (app_row);
+        //     }
+        // }
+        for (var iter = 0; iter < list.observe_children ().get_n_items (); iter++) {
+            if (((Widgets.AppRow) list.observe_children ().get_item (iter)).app_info.path == path) {
+                list.remove ((Widgets.AppRow) list.observe_children ().get_item (iter));
             }
         }
     }
@@ -184,20 +206,20 @@ public class Startup.Plug : Gtk.Grid {
         return name_1.collate (name_2);
     }
 
-    private void on_drag_data_received (Gdk.DragContext context, int x, int y,
-                                Gtk.SelectionData selection_data,
-                                uint info, uint time_) {
+    // private void on_drag_data_received (Gdk.DragContext context, int x, int y,
+    //                             Gtk.SelectionData selection_data,
+    //                             uint info, uint time_) {
 
-        if (info != Target.URI_LIST) {
-            return;
-        }
+    //     if (info != Target.URI_LIST) {
+    //         return;
+    //     }
 
-        var uris = (string) selection_data.get_data ();
-        foreach (unowned string uri in uris.split ("\r\n")) {
-            var path = get_path_from_uri (uri);
-            if (path != null) {
-                create_file (path);
-            }
-        }
-    }
+    //     var uris = (string) selection_data.get_data ();
+    //     foreach (unowned string uri in uris.split ("\r\n")) {
+    //         var path = get_path_from_uri (uri);
+    //         if (path != null) {
+    //             create_file (path);
+    //         }
+    //     }
+    // }
 }

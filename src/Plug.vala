@@ -51,7 +51,8 @@ public class ApplicationsPlug : Switchboard.Plug {
     public override Gtk.Widget get_widget () {
         if (grid == null) {
             stack = new Gtk.Stack () {
-                expand = true
+                hexpand = true,
+                vexpand = true
             };
             stack.add_titled (new Defaults.Plug (), DEFAULTS, _("Defaults"));
             stack.add_titled (new Startup.Plug (), STARTUP, _("Startup"));
@@ -59,7 +60,7 @@ public class ApplicationsPlug : Switchboard.Plug {
 
             var stack_switcher = new Gtk.StackSwitcher () {
                 halign = Gtk.Align.CENTER,
-                homogeneous = true,
+                // homogeneous = true,
                 margin_top = 12,
                 stack = stack
             };
@@ -69,7 +70,7 @@ public class ApplicationsPlug : Switchboard.Plug {
             };
             grid.attach (stack_switcher, 0, 0);
             grid.attach (stack, 0, 1);
-            grid.show_all ();
+            // grid.show_all ();
         }
 
         return grid;
