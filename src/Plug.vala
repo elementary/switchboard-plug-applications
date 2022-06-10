@@ -60,10 +60,17 @@ public class ApplicationsPlug : Switchboard.Plug {
 
             var stack_switcher = new Gtk.StackSwitcher () {
                 halign = Gtk.Align.CENTER,
-                // homogeneous = true,
                 margin_top = 12,
                 stack = stack
             };
+
+            var size_group = new Gtk.SizeGroup (Gtk.SizeGroupMode.HORIZONTAL);
+            if (size_group.get_widgets ().length () == 0) {
+                var children = stack_switcher.observe_children ();
+                for (var index = 0; index < children.get_n_items (); index++) {
+                    size_group.add_widget ((Gtk.ToggleButton) children.get_item (index));
+                }
+            }
 
             grid = new Gtk.Grid () {
                 row_spacing = 24

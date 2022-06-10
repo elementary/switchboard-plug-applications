@@ -36,7 +36,7 @@ public class Startup.Widgets.AppChooser : Gtk.Popover {
         Gtk.Allocation allocation;
         relative_widget.get_allocation (out allocation);
 
-        pointing_to = allocation;
+        // pointing_to = allocation;
 
         search_entry = new Gtk.SearchEntry () {
             margin_end = 12,
@@ -75,6 +75,9 @@ public class Startup.Widgets.AppChooser : Gtk.Popover {
         grid.attach (custom_entry, 0, 2);
 
         child = grid;
+        default_widget = grid;
+        set_offset (250, -1);
+        position = Gtk.PositionType.TOP;
 
         search_entry.grab_focus ();
         search_entry.search_changed.connect (() => {
