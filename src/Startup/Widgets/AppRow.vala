@@ -34,7 +34,7 @@ public class Startup.Widgets.AppRow : Gtk.ListBoxRow {
         var app_name = new Gtk.Label (app_info.name) {
             xalign = 0
         };
-        app_name.get_style_context ().add_class (Granite.STYLE_CLASS_H3_LABEL);
+        app_name.add_css_class (Granite.STYLE_CLASS_H3_LABEL);
 
         var app_comment = new Gtk.Label (app_info.comment) {
             ellipsize = Pango.EllipsizeMode.END,
@@ -61,7 +61,6 @@ public class Startup.Widgets.AppRow : Gtk.ListBoxRow {
         main_grid.attach (active_switch, 2, 0, 1, 2);
 
         child = main_grid;
-        // show_all ();
 
         active_switch.notify["active"].connect (() => {
             active_changed (active_switch.active);

@@ -40,42 +40,54 @@ public class Defaults.Plug : Gtk.Grid {
         margin_top = 64;
 
         var wb_label = new SettingsLabel (_("Web Browser:"));
-        wb_chooser = new Gtk.AppChooserButton ("x-scheme-handler/https");
-        wb_chooser.show_default_item = true;
+        wb_chooser = new Gtk.AppChooserButton ("x-scheme-handler/https") {
+            show_default_item = true
+        };
 
         var ec_label = new SettingsLabel (_("Email Client:"));
-        ec_chooser = new Gtk.AppChooserButton ("x-scheme-handler/mailto");
-        ec_chooser.show_default_item = true;
+        ec_chooser = new Gtk.AppChooserButton ("x-scheme-handler/mailto") {
+            show_default_item = true
+        };
 
         var c_label = new SettingsLabel (_("Calendar:"));
-        c_chooser = new Gtk.AppChooserButton ("text/calendar");
-        c_chooser.show_default_item = true;
+        c_chooser = new Gtk.AppChooserButton ("text/calendar") {
+            show_default_item = true
+        };
 
         var vp_label = new SettingsLabel (_("Video Player:"));
-        vp_chooser = new Gtk.AppChooserButton ("video/x-ogm+ogg");
-        vp_chooser.show_default_item = true;
+        vp_chooser = new Gtk.AppChooserButton ("video/x-ogm+ogg") {
+            show_default_item = true
+        };
 
         int margin_columns = 32;
 
-        var mp_label = new SettingsLabel (_("Music Player:"));
-        mp_chooser = new Gtk.AppChooserButton ("audio/x-vorbis+ogg");
-        mp_chooser.show_default_item = true;
-        mp_label.margin_start = margin_columns;
+        var mp_label = new SettingsLabel (_("Music Player:")) {
+            margin_start = margin_columns
+        };
+        mp_chooser = new Gtk.AppChooserButton ("audio/x-vorbis+ogg") {
+            show_default_item = true
+        };
 
-        var iv_label = new SettingsLabel (_("Image Viewer:"));
-        iv_chooser = new Gtk.AppChooserButton ("image/jpeg");
-        iv_chooser.show_default_item = true;
-        iv_label.margin_start = margin_columns;
+        var iv_label = new SettingsLabel (_("Image Viewer:")) {
+            margin_start = margin_columns
+        };
+        iv_chooser = new Gtk.AppChooserButton ("image/jpeg") {
+            show_default_item = true
+        };
 
-        var te_label = new SettingsLabel (_("Text Editor:"));
-        te_chooser = new Gtk.AppChooserButton ("text/plain");
-        te_chooser.show_default_item = true;
-        te_label.margin_start = margin_columns;
+        var te_label = new SettingsLabel (_("Text Editor:")) {
+            margin_start = margin_columns
+        };
+        te_chooser = new Gtk.AppChooserButton ("text/plain") {
+            show_default_item = true
+        };
 
-        var fb_label = new SettingsLabel (_("File Browser:"));
-        fb_chooser = new Gtk.AppChooserButton ("inode/directory");
-        fb_chooser.show_default_item = true;
-        fb_label.margin_start = margin_columns;
+        var fb_label = new SettingsLabel (_("File Browser:")) {
+            margin_start = margin_columns
+        };
+        fb_chooser = new Gtk.AppChooserButton ("inode/directory") {
+            show_default_item = true
+        };
 
         var size_group = new Gtk.SizeGroup (Gtk.SizeGroupMode.HORIZONTAL);
         size_group.add_widget (wb_chooser);
@@ -144,7 +156,6 @@ public class Defaults.Plug : Gtk.Grid {
             return null;
         }));
 
-        // show_all ();
     }
 
     private void run_in_thread (owned ThreadFunc<void*> func) {

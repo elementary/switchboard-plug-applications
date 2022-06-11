@@ -36,13 +36,13 @@ public class Startup.Widgets.AppChooserRow : Gtk.Grid {
             xalign = 0,
             ellipsize = Pango.EllipsizeMode.END
         };
-        app_name.get_style_context ().add_class (Granite.STYLE_CLASS_H3_LABEL);
+        app_name.add_css_class (Granite.STYLE_CLASS_H3_LABEL);
 
         var app_comment = new Gtk.Label (app_info.comment) {
             xalign = 0,
             ellipsize = Pango.EllipsizeMode.END
         };
-        app_comment.get_style_context ().add_class (Granite.STYLE_CLASS_SMALL_LABEL);
+        app_comment.add_css_class (Granite.STYLE_CLASS_SMALL_LABEL);
 
         margin_top = 6;
         margin_bottom = 6;
@@ -52,7 +52,5 @@ public class Startup.Widgets.AppChooserRow : Gtk.Grid {
         attach (image, 0, 0, 1, 2);
         attach (app_name, 1, 0);
         attach (app_comment, 1, 1);
-
-        // show_all ();
     }
 }

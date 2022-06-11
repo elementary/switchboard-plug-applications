@@ -43,21 +43,19 @@ public class Permissions.SidebarRow : Gtk.ListBoxRow {
             };
         }
 
-        image.pixel_size = 32;
-
         var title_label = new Gtk.Label (app.name) {
             ellipsize = Pango.EllipsizeMode.END,
             valign = Gtk.Align.END,
             xalign = 0
         };
-        title_label.get_style_context ().add_class (Granite.STYLE_CLASS_H3_LABEL);
+        title_label.add_css_class (Granite.STYLE_CLASS_H3_LABEL);
 
         description_label = new Gtk.Label ("") {
             ellipsize = Pango.EllipsizeMode.END,
             valign = Gtk.Align.START,
             xalign = 0
         };
-        description_label.get_style_context ().add_class (Granite.STYLE_CLASS_SMALL_LABEL);
+        description_label.add_css_class (Granite.STYLE_CLASS_SMALL_LABEL);
 
         description_revealer = new Gtk.Revealer () {
             child = description_label
