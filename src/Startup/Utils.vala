@@ -65,26 +65,39 @@ namespace Startup.Utils {
 
         var image = new Gtk.Image ();
 
-        if (icon_theme.lookup_by_gicon (icon, pixel_size, 1, Gtk.TextDirection.NONE, Gtk.IconLookupFlags.PRELOAD) == null) {
-            // PRELOAD is only used because USE_BUILTIN is dropped, will change later.
-            try {
-                var pixbuf = new Gdk.Pixbuf.from_file (app_info.icon)
-                    .scale_simple (pixel_size, pixel_size, Gdk.InterpType.BILINEAR);
-                image = new Gtk.Image.from_pixbuf (pixbuf);
-            } catch (GLib.Error err) {
-                icon = new ThemedIcon (FALLBACK_ICON);
-                image = new Gtk.Image.from_gicon (icon) {
-                    pixel_size = icon_size
-                };
-                debug (err.message);
-            }
+        // if (icon_theme.lookup_by_gicon (icon, pixel_size, 1, Gtk.TextDirection.NONE, Gtk.IconLookupFlags.PRELOAD) == null) {
+        //     try {
+        //         var pixbuf = new Gdk.Pixbuf.from_file (app_info.icon)
+        //             .scale_simple (pixel_size, pixel_size, Gdk.InterpType.BILINEAR);
+        //         image = new Gtk.Image.from_pixbuf (pixbuf);
+        //     } catch (GLib.Error err) {
+        //         icon = new ThemedIcon (FALLBACK_ICON);
+        //         image = new Gtk.Image.from_gicon (icon) {
+        //             pixel_size = icon_size
+        //         };
+        //         debug (err.message);
+        //     }
+        // } else {
+        //     image = new Gtk.Image.from_gicon (icon) {
+        //         pixel_size = icon_size
+        //     };
+        // }
+        if (icon_theme.has_gicon (icon)) {
+            image = new Gtk.Image () {
+                gicon = icon,
+                pixel_size = icon_size
+            };
+        } else if (icon_theme.has_icon (app_info.icon)) {
+            image = new Gtk.Image () {
+                gicon = new ThemedIcon (app_info.icon),
+                pixel_size = pixel_size
+            };
         } else {
-            image = new Gtk.Image.from_gicon (icon) {
+            image = new Gtk.Image () {
+                gicon = new ThemedIcon (FALLBACK_ICON),
                 pixel_size = icon_size
             };
         }
-
-        image.pixel_size = pixel_size;
 
         return image;
     }
