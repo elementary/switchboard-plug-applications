@@ -48,6 +48,7 @@ public class Startup.Widgets.AppChooser : Gtk.Popover {
             hexpand = true,
             vexpand = true
         };
+        list.add_css_class (Granite.STYLE_CLASS_RICH_LIST);
         list.set_sort_func (sort_function);
         list.set_filter_func (filter_function);
 

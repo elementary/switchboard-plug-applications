@@ -88,6 +88,7 @@ public class Permissions.Widgets.AppSettingsView : Gtk.Grid {
             hexpand = true,
             vexpand = true
         };
+        list_box.add_css_class (Granite.STYLE_CLASS_RICH_LIST);
         list_box.append (homefolder_widget);
         list_box.append (sysfolders_widget);
         list_box.append (devices_widget);

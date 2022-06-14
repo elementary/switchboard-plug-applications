@@ -37,6 +37,7 @@ public class Startup.Plug : Gtk.Grid {
             hexpand = true,
             vexpand = true
         };
+        list.add_css_class (Granite.STYLE_CLASS_RICH_LIST);
         list.set_placeholder (empty_alert);
         list.set_sort_func (sort_function);
 
@@ -48,19 +49,15 @@ public class Startup.Plug : Gtk.Grid {
         };
 
         var actionbar = new Gtk.ActionBar ();
-        actionbar.add_css_class ("inline-toolbar");
+        actionbar.add_css_class (Granite.STYLE_CLASS_FLAT);
 
         var add_button = new Gtk.Button () {
-            child = new Gtk.Image.from_icon_name ("application-add-symbolic") {
-                pixel_size = 16
-            },
+            icon_name = "application-add-symbolic",
             tooltip_text = _("Add Startup App…")
         };
 
         var remove_button = new Gtk.Button () {
-            child = new Gtk.Image.from_icon_name ("list-remove-symbolic") {
-                pixel_size = 16
-            },
+            icon_name = "list-remove-symbolic",
             tooltip_text = _("Remove Selected Startup App"),
             sensitive = false
         };

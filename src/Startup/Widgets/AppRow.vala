@@ -29,18 +29,18 @@ public class Startup.Widgets.AppRow : Gtk.ListBoxRow {
     }
 
     construct {
-        var image = Utils.create_icon (app_info, 48);
+        var image = Utils.create_icon (app_info, 32);
 
         var app_name = new Gtk.Label (app_info.name) {
             xalign = 0
         };
-        app_name.add_css_class (Granite.STYLE_CLASS_H3_LABEL);
 
         var app_comment = new Gtk.Label (app_info.comment) {
             ellipsize = Pango.EllipsizeMode.END,
             hexpand = true,
             xalign = 0
         };
+        app_comment.add_css_class (Granite.STYLE_CLASS_SMALL_LABEL);
 
         var active_switch = new Gtk.Switch () {
             active = app_info.active,
@@ -49,11 +49,7 @@ public class Startup.Widgets.AppRow : Gtk.ListBoxRow {
         };
 
         var main_grid = new Gtk.Grid () {
-            column_spacing = 12,
-            margin_start = 6,
-            margin_end = 6,
-            margin_top = 6,
-            margin_bottom = 6
+            column_spacing = 6
         };
         main_grid.attach (image, 0, 0, 1, 2);
         main_grid.attach (app_name, 1, 0);

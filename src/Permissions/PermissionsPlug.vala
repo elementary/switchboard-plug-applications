@@ -62,6 +62,7 @@ public class Permissions.Plug : Gtk.Grid {
             vexpand = true,
             selection_mode = Gtk.SelectionMode.SINGLE
         };
+        app_list.add_css_class (Granite.STYLE_CLASS_RICH_LIST);
         app_list.set_placeholder (placeholder);
         app_list.set_sort_func ((Gtk.ListBoxSortFunc) sort_func);
 

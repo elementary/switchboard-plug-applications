@@ -36,7 +36,6 @@ public class Startup.Widgets.AppChooserRow : Gtk.Grid {
             xalign = 0,
             ellipsize = Pango.EllipsizeMode.END
         };
-        app_name.add_css_class (Granite.STYLE_CLASS_H3_LABEL);
 
         var app_comment = new Gtk.Label (app_info.comment) {
             xalign = 0,
@@ -44,11 +43,7 @@ public class Startup.Widgets.AppChooserRow : Gtk.Grid {
         };
         app_comment.add_css_class (Granite.STYLE_CLASS_SMALL_LABEL);
 
-        margin_top = 6;
-        margin_bottom = 6;
-        margin_end = 12;
-        margin_start = 10; // Account for icon position on the canvas
-        column_spacing = 12;
+        column_spacing = 6;
         attach (image, 0, 0, 1, 2);
         attach (app_name, 1, 0);
         attach (app_comment, 1, 1);
