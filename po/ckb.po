@@ -3,56 +3,60 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-09-23 23:18+0000\n"
-"PO-Revision-Date: 2014-08-01 07:20+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2022-09-21 11:44+0000\n"
+"Last-Translator: Aga Ismael <agaesmaeel@gmail.com>\n"
+"Language-Team: Kurdish (Central) <https://l10n.elementary.io/projects/"
+"switchboard/switchboard-plug-applications/ckb/>\n"
+"Language: ckb\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2016-11-26 05:53+0000\n"
-"X-Generator: Launchpad (build 18282)\n"
 
 #: src/Plug.vala:44
 msgid "Manage default apps, startup apps, and app permissions"
 msgstr ""
+"ڕێکخستنی بەرنامە بنەڕەتییەکان و مۆڵەتەکانی بەرنامە و ئەو بەرنامانەی کە لەگەڵ "
+"پێبوونی کۆمپیتەر دەکرێنەوە"
 
 #: src/Plug.vala:45
 msgid "Applications"
-msgstr ""
+msgstr "بەرنامەکان"
 
 #: src/Plug.vala:56
 msgid "Defaults"
-msgstr ""
+msgstr "بنەڕەتییەکان"
 
 #: src/Plug.vala:57 src/Plug.vala:102
 msgid "Startup"
-msgstr ""
+msgstr "دەستپێک"
 
 #: src/Plug.vala:58 src/Plug.vala:104
 msgid "Permissions"
-msgstr ""
+msgstr "مۆڵەتەکان"
 
 #: src/Plug.vala:103
 msgid "Default Apps"
-msgstr ""
+msgstr "بەرنامە بنەڕەتییەکان"
 
 #: src/Plug.vala:105
 msgid "Sandboxing"
-msgstr ""
+msgstr "ساندبۆکس کردن"
 
 #: src/Plug.vala:106
 msgid "Confinement"
-msgstr ""
+msgstr "سنووردارکردن"
 
 #: src/Plug.vala:107 src/Plug.vala:108 src/Plug.vala:109 src/Plug.vala:110
 #: src/Plug.vala:111 src/Plug.vala:112 src/Plug.vala:113 src/Plug.vala:114
 msgid "Default"
-msgstr ""
+msgstr "بنەڕەت"
 
 #: src/Plug.vala:107
 msgid "Web Browser"
-msgstr ""
+msgstr "وێبگەڕ"
 
 #: src/Plug.vala:108
 msgid "Email Client"
