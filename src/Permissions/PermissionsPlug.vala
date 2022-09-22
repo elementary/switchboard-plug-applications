@@ -81,9 +81,8 @@ public class Permissions.Plug : Gtk.Grid {
 
         app_settings_view = new Widgets.AppSettingsView ();
 
-        var children = app_list.observe_children ();
-        if (children.get_n_items () > 0) {
-            var row = ((Gtk.ListBoxRow) children.get_item (0));
+        if (app_list.get_first_child () != null) {
+            var row = (Gtk.ListBoxRow) app_list.get_first_child ();
 
             app_list.select_row (row);
             show_row (row);
@@ -93,7 +92,6 @@ public class Permissions.Plug : Gtk.Grid {
         margin_start = 12;
         margin_end = 12;
         margin_bottom = 12;
-        margin_top = 0;
         attach (frame, 0, 0, 1, 1);
         attach (app_settings_view, 1, 0, 2, 1);
 
