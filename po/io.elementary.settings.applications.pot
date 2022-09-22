@@ -1,12 +1,12 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the applications-plug package.
+# This file is distributed under the same license as the io.elementary.settings.applications package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: applications-plug\n"
+"Project-Id-Version: io.elementary.settings.applications\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-08-25 16:44+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
@@ -25,35 +25,36 @@ msgstr ""
 msgid "Applications"
 msgstr ""
 
-#: src/Plug.vala:56
+#: src/Plug.vala:57
 msgid "Defaults"
 msgstr ""
 
-#: src/Plug.vala:57 src/Plug.vala:102
+#: src/Plug.vala:58 src/Plug.vala:109
 msgid "Startup"
 msgstr ""
 
-#: src/Plug.vala:58 src/Plug.vala:104
+#: src/Plug.vala:59 src/Plug.vala:111
 msgid "Permissions"
 msgstr ""
 
-#: src/Plug.vala:103
+#: src/Plug.vala:110
 msgid "Default Apps"
 msgstr ""
 
-#: src/Plug.vala:105
+#: src/Plug.vala:112
 msgid "Sandboxing"
 msgstr ""
 
-#: src/Plug.vala:106
+#: src/Plug.vala:113
 msgid "Confinement"
 msgstr ""
 
-#: src/Plug.vala:107 src/Plug.vala:108 src/Plug.vala:109 src/Plug.vala:110
-#: src/Plug.vala:111 src/Plug.vala:112 src/Plug.vala:113 src/Plug.vala:114
+#: src/Plug.vala:114 src/Plug.vala:115 src/Plug.vala:116 src/Plug.vala:117
+#: src/Plug.vala:118 src/Plug.vala:119 src/Plug.vala:120 src/Plug.vala:121
 msgid "Default"
 msgstr ""
 
+<<<<<<< HEAD:po/applications-plug.pot
 #: src/Plug.vala:107 src/Defaults/DefaultPlug.vala:12
 msgid "Web Browser"
 msgstr ""
@@ -83,6 +84,37 @@ msgid "Image Viewer"
 msgstr ""
 
 #: src/Plug.vala:114 src/Defaults/DefaultPlug.vala:47
+=======
+#: src/Plug.vala:114
+msgid "Web Browser"
+msgstr ""
+
+#: src/Plug.vala:115
+msgid "Email Client"
+msgstr ""
+
+#: src/Plug.vala:116
+msgid "Calendar"
+msgstr ""
+
+#: src/Plug.vala:117
+msgid "Video Player"
+msgstr ""
+
+#: src/Plug.vala:118
+msgid "Music Player"
+msgstr ""
+
+#: src/Plug.vala:119
+msgid "Text Editor"
+msgstr ""
+
+#: src/Plug.vala:120
+msgid "Image Viewer"
+msgstr ""
+
+#: src/Plug.vala:121
+>>>>>>> 47c6687 (Port to GTK4 (#173)):po/io.elementary.settings.applications.pot
 msgid "File Browser"
 msgstr ""
 
@@ -177,7 +209,11 @@ msgstr ""
 msgid "Accelerate graphical output."
 msgstr ""
 
+<<<<<<< HEAD:po/applications-plug.pot
 #: src/Permissions/Widgets/AppSettingsView.vala:109
+=======
+#: src/Permissions/Widgets/AppSettingsView.vala:110
+>>>>>>> 47c6687 (Port to GTK4 (#173)):po/io.elementary.settings.applications.pot
 msgid "Reset to Defaults"
 msgstr ""
 
@@ -187,6 +223,7 @@ msgid "%s permissions"
 msgstr ""
 
 #. / Translators: This is a delimiter that separates types of permissions in the sidebar description
+<<<<<<< HEAD:po/applications-plug.pot
 #: src/Permissions/Widgets/SidebarRow.vala:93
 msgid ", "
 msgstr ""
@@ -204,6 +241,29 @@ msgid "Add Startup App…"
 msgstr ""
 
 #: src/Startup/Backend/KeyFile.vala:99
+=======
+#: src/Permissions/Widgets/SidebarRow.vala:91
+msgid ", "
+msgstr ""
+
+#: src/Startup/Startup.vala:31
+msgid "Launch Apps on Startup"
+msgstr ""
+
+#: src/Startup/Startup.vala:32
+msgid "Add apps to the Startup list by clicking the icon in the toolbar below."
+msgstr ""
+
+#: src/Startup/Startup.vala:56
+msgid "Add Startup App…"
+msgstr ""
+
+#: src/Startup/Startup.vala:61
+msgid "Remove Selected Startup App"
+msgstr ""
+
+#: src/Startup/Backend/KeyFile.vala:86
+>>>>>>> 47c6687 (Port to GTK4 (#173)):po/io.elementary.settings.applications.pot
 msgid "Custom Command"
 msgstr ""
 
@@ -216,6 +276,7 @@ msgstr ""
 msgid "Launch %s on startup"
 msgstr ""
 
+<<<<<<< HEAD:po/applications-plug.pot
 #: src/Startup/Widgets/AppChooser.vala:36
 msgid "Type in a custom command"
 msgstr ""
@@ -233,4 +294,44 @@ msgstr ""
 #: src/Defaults/DefaultPlug.vala:124
 #, c-format
 msgid "Default %s"
+=======
+#: src/Startup/Widgets/AppChooser.vala:44
+msgid "Search Applications"
+msgstr ""
+
+#: src/Startup/Widgets/AppChooser.vala:64
+msgid "Type in a custom command"
+msgstr ""
+
+#: src/Defaults/DefaultPlug.vala:42
+msgid "Web Browser:"
+msgstr ""
+
+#: src/Defaults/DefaultPlug.vala:47
+msgid "Email Client:"
+msgstr ""
+
+#: src/Defaults/DefaultPlug.vala:52
+msgid "Calendar:"
+msgstr ""
+
+#: src/Defaults/DefaultPlug.vala:57
+msgid "Video Player:"
+msgstr ""
+
+#: src/Defaults/DefaultPlug.vala:64
+msgid "Music Player:"
+msgstr ""
+
+#: src/Defaults/DefaultPlug.vala:71
+msgid "Image Viewer:"
+msgstr ""
+
+#: src/Defaults/DefaultPlug.vala:78
+msgid "Text Editor:"
+msgstr ""
+
+#: src/Defaults/DefaultPlug.vala:85
+msgid "File Browser:"
+>>>>>>> 47c6687 (Port to GTK4 (#173)):po/io.elementary.settings.applications.pot
 msgstr ""

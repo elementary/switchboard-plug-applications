@@ -56,29 +56,28 @@ public class Defaults.Plug : Gtk.Box {
             selection_mode = NONE,
             valign = START
         };
-        flowbox.add (browser_setting);
-        flowbox.add (music_setting);
-        flowbox.add (email_setting);
-        flowbox.add (images_setting);
-        flowbox.add (calendar_setting);
-        flowbox.add (text_setting);
-        flowbox.add (videos_setting);
-        flowbox.add (files_setting);
+        flowbox.append (browser_setting);
+        flowbox.append (music_setting);
+        flowbox.append (email_setting);
+        flowbox.append (images_setting);
+        flowbox.append (calendar_setting);
+        flowbox.append (text_setting);
+        flowbox.append (videos_setting);
+        flowbox.append (files_setting);
 
-        var clamp = new Hdy.Clamp () {
+        var clamp = new Adw.Clamp () {
             child = flowbox,
             margin_end = 12,
             margin_bottom = 12,
             margin_start = 12
         };
 
-        var scrolled_window = new Gtk.ScrolledWindow (null, null) {
+        var scrolled_window = new Gtk.ScrolledWindow () {
             child = clamp
         };
 
-        add (scrolled_window);
+        append (scrolled_window);
 
-        show_all ();
     }
 
     private class SettingsChild : Gtk.FlowBoxChild {
@@ -107,8 +106,8 @@ public class Defaults.Plug : Gtk.Box {
             };
 
             var box = new Gtk.Box (VERTICAL, 0);
-            box.add (setting_label);
-            box.add (app_chooser);
+            box.append (setting_label);
+            box.append (app_chooser);
 
             can_focus = false;
             child = box;
@@ -121,7 +120,7 @@ public class Defaults.Plug : Gtk.Box {
             }));
 
             // TRANSLATORS: This is description for for screen reader. %s can be "Web Browser" or "Music Player" and so on.
-            app_chooser.get_accessible ().accessible_name = _("Default %s").printf (label);
+            // app_chooser.get_accessible ().accessible_name = _("Default %s").printf (label);
         }
 
         private void run_in_thread (owned ThreadFunc<void*> func) {

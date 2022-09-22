@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component type="addon">
-  <id>io.elementary.switchboard.applications</id>
-  <extends>io.elementary.switchboard</extends>
-  <translation type="gettext">applications-plug</translation>
+  <id>io.elementary.settings.applications</id>
+  <extends>io.elementary.settings</extends>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-2.0+</project_license>
 
