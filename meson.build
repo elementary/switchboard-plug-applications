@@ -4,7 +4,7 @@ project(
     version: '6.0.1'
 )
 
-gettext_name = 'io.elementary.setings.' + meson.project_name()
+gettext_name = 'io.elementary.settings.' + meson.project_name()
 gnome = import('gnome')
 i18n = import('i18n')
 
