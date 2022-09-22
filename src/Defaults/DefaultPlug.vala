@@ -39,50 +39,66 @@ public class Defaults.Plug : Gtk.Grid {
         margin_end = 24;
         margin_top = 64;
 
-        var wb_label = new SettingsLabel (_("Web Browser:"));
+        var wb_label = new Gtk.Label (_("Web Browser:")) {
+            halign = Gtk.Align.END
+        };
+
         wb_chooser = new Gtk.AppChooserButton ("x-scheme-handler/https") {
             show_default_item = true
         };
 
-        var ec_label = new SettingsLabel (_("Email Client:"));
+        var ec_label = new Gtk.Label (_("Email Client:")) {
+            halign = Gtk.Align.END
+        };
+
         ec_chooser = new Gtk.AppChooserButton ("x-scheme-handler/mailto") {
             show_default_item = true
         };
 
-        var c_label = new SettingsLabel (_("Calendar:"));
+        var c_label = new Gtk.Label (_("Calendar:")) {
+            halign = Gtk.Align.END
+        };
+
         c_chooser = new Gtk.AppChooserButton ("text/calendar") {
             show_default_item = true
         };
 
-        var vp_label = new SettingsLabel (_("Video Player:"));
+        var vp_label = new Gtk.Label (_("Video Player:")) {
+            halign = Gtk.Align.END
+        };
+
         vp_chooser = new Gtk.AppChooserButton ("video/x-ogm+ogg") {
             show_default_item = true
         };
 
         int margin_columns = 32;
 
-        var mp_label = new SettingsLabel (_("Music Player:")) {
+        var mp_label = new Gtk.Label (_("Music Player:")) {
+            halign = Gtk.Align.END,
             margin_start = margin_columns
         };
         mp_chooser = new Gtk.AppChooserButton ("audio/x-vorbis+ogg") {
             show_default_item = true
         };
 
-        var iv_label = new SettingsLabel (_("Image Viewer:")) {
+        var iv_label = new Gtk.Label (_("Image Viewer:")) {
+            halign = Gtk.Align.END,
             margin_start = margin_columns
         };
         iv_chooser = new Gtk.AppChooserButton ("image/jpeg") {
             show_default_item = true
         };
 
-        var te_label = new SettingsLabel (_("Text Editor:")) {
+        var te_label = new Gtk.Label (_("Text Editor:")) {
+            halign = Gtk.Align.END,
             margin_start = margin_columns
         };
         te_chooser = new Gtk.AppChooserButton ("text/plain") {
             show_default_item = true
         };
 
-        var fb_label = new SettingsLabel (_("File Browser:")) {
+        var fb_label = new Gtk.Label (_("File Browser:")) {
+            halign = Gtk.Align.END,
             margin_start = margin_columns
         };
         fb_chooser = new Gtk.AppChooserButton ("inode/directory") {
@@ -165,32 +181,8 @@ public class Defaults.Plug : Gtk.Grid {
             warning ("Could not create a new thread: %s", e.message);
         }
     }
+
     public void change_default (GLib.AppInfo new_app, string item_type) {
         map_types_to_app (get_types_for_app (item_type), new_app);
-    }
-
-    private class SettingsLabel : Gtk.Widget {
-        private Gtk.Label main_widget;
-        public string label { get; construct; }
-
-        public SettingsLabel (string label) {
-            Object (label: label);
-        }
-
-        static construct {
-            set_layout_manager_type (typeof (Gtk.BinLayout));
-        }
-
-        construct {
-            main_widget = new Gtk.Label (label) {
-                halign = Gtk.Align.END
-            };
-        }
-
-        ~SettingsLabel () {
-            while (this.get_last_child () != null) {
-                this.get_last_child ().unparent ();
-            }
-        }
     }
 }
