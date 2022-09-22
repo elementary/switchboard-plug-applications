@@ -40,7 +40,7 @@ public class ApplicationsPlug : Switchboard.Plug {
 
         Object (
             category: Category.PERSONAL,
-            code_name: "io.elementary.switchboard.applications",
+            code_name: "io.elementary.settings.applications",
             description: _("Manage default apps, startup apps, and app permissions"),
             display_name: _("Applications"),
             icon: "preferences-desktop-applications",
