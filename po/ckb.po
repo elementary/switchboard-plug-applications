@@ -3,232 +3,246 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-09-23 23:18+0000\n"
-"PO-Revision-Date: 2014-08-01 07:20+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2022-09-21 15:36+0000\n"
+"Last-Translator: Aga Ismael <agaesmaeel@gmail.com>\n"
+"Language-Team: Kurdish (Central) <https://l10n.elementary.io/projects/"
+"switchboard/switchboard-plug-applications/ckb/>\n"
+"Language: ckb\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2016-11-26 05:53+0000\n"
-"X-Generator: Launchpad (build 18282)\n"
 
 #: src/Plug.vala:44
 msgid "Manage default apps, startup apps, and app permissions"
 msgstr ""
+"ڕێکخستنی بەرنامە بنەڕەتییەکان و مۆڵەتەکانی بەرنامە و ئەو بەرنامانەی کە لەگەڵ "
+"پێبوونی کۆمپیتەر دەکرێنەوە"
 
 #: src/Plug.vala:45
 msgid "Applications"
-msgstr ""
+msgstr "بەرنامەکان"
 
 #: src/Plug.vala:56
 msgid "Defaults"
-msgstr ""
+msgstr "بنەڕەتییەکان"
 
 #: src/Plug.vala:57 src/Plug.vala:102
 msgid "Startup"
-msgstr ""
+msgstr "دەستپێک"
 
 #: src/Plug.vala:58 src/Plug.vala:104
 msgid "Permissions"
-msgstr ""
+msgstr "مۆڵەتەکان"
 
 #: src/Plug.vala:103
 msgid "Default Apps"
-msgstr ""
+msgstr "بەرنامە بنەڕەتییەکان"
 
 #: src/Plug.vala:105
 msgid "Sandboxing"
-msgstr ""
+msgstr "ساندبۆکس کردن"
 
 #: src/Plug.vala:106
 msgid "Confinement"
-msgstr ""
+msgstr "سنووردارکردن"
 
 #: src/Plug.vala:107 src/Plug.vala:108 src/Plug.vala:109 src/Plug.vala:110
 #: src/Plug.vala:111 src/Plug.vala:112 src/Plug.vala:113 src/Plug.vala:114
 msgid "Default"
-msgstr ""
+msgstr "بنەڕەت"
 
 #: src/Plug.vala:107
 msgid "Web Browser"
-msgstr ""
+msgstr "وێبگەڕ"
 
 #: src/Plug.vala:108
 msgid "Email Client"
-msgstr ""
+msgstr "نامە (ئیمێڵ)"
 
 #: src/Plug.vala:109
 msgid "Calendar"
-msgstr ""
+msgstr "ڕۆژمێر"
 
 #: src/Plug.vala:110
 msgid "Video Player"
-msgstr ""
+msgstr "پلەیەری ڤیدیۆ"
 
 #: src/Plug.vala:111
 msgid "Music Player"
-msgstr ""
+msgstr "پلەیەری مۆسیقا"
 
 #: src/Plug.vala:112
 msgid "Text Editor"
-msgstr ""
+msgstr "دەستکاریکەری دەق"
 
 #: src/Plug.vala:113
 msgid "Image Viewer"
-msgstr ""
+msgstr "سەیرکەری وێنە"
 
 #: src/Plug.vala:114
 msgid "File Browser"
-msgstr ""
+msgstr "گەڕۆکی پەڕگە"
 
 #: src/Permissions/PermissionsPlug.vala:29
 msgid "Home Folder"
-msgstr ""
+msgstr "بوخچەی سەرەتا"
 
 #: src/Permissions/PermissionsPlug.vala:30
 msgid "System Folders"
-msgstr ""
+msgstr "بوخچەکانی سیستەم"
 
 #: src/Permissions/PermissionsPlug.vala:31
 msgid "Devices"
-msgstr ""
+msgstr "ئامێرەکان"
 
 #: src/Permissions/PermissionsPlug.vala:32
 msgid "Network"
-msgstr ""
+msgstr "ڕایەڵە"
 
 #: src/Permissions/PermissionsPlug.vala:33
 msgid "Bluetooth"
-msgstr ""
+msgstr "بلوتوس"
 
 #: src/Permissions/PermissionsPlug.vala:34
 msgid "Printing"
-msgstr ""
+msgstr "چاپکردن"
 
 #: src/Permissions/PermissionsPlug.vala:35
 msgid "Secure Shell Agent"
-msgstr ""
+msgstr "پاراستنی شێڵی بریکار"
 
 #: src/Permissions/PermissionsPlug.vala:36
 msgid "GPU Acceleration"
-msgstr ""
+msgstr "خێراکردنی GPU"
 
 #: src/Permissions/PermissionsPlug.vala:40
 msgid "No Flatpak apps installed"
-msgstr ""
+msgstr "هیچ بەرنامەیەکی فلاتپاک دانەمەزراوە"
 
 #: src/Permissions/PermissionsPlug.vala:45
 msgid ""
 "Apps whose permissions can be adjusted will automatically appear here when "
 "installed"
 msgstr ""
+"ئەو بەرنامانەی کە مۆڵەتەکانیان دەستکاری دەکرێت، خۆکرانە لێرە دەردەکەون ئەگەر "
+"دامەزران"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:33
 msgid "Access your entire Home folder, including any hidden folders."
-msgstr ""
+msgstr "دەتوانێت دەستی بگات بە تەواوی بوخچەی سەرەتا بە بوخچە شاراوەکانیشەوە."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:40
 msgid ""
 "Access system folders, not including the operating system or system "
 "internals. This includes users' Home folders."
 msgstr ""
+"دەتوانێت دەستی بگات بوخچەکانی سیستەم، ئەمە بوخچەی سەرەتای بەکار‌هێنەرەکانیش "
+"دەگرێتەوە، بەڵام دەستی ناگات بە سستەمی وەگەڕخەر یان ناوەوەی سیستەم."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:47
 msgid ""
 "Access all devices, such as webcams, microphones, and connected USB devices."
 msgstr ""
+"دەستی دەگات بە هەموو ئامێرەکانی وەکو کامێراکان، مایکرۆفۆن، و USBییە "
+"پەیوەستکراوەکان."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:54
 msgid "Access the Internet and local networks."
-msgstr ""
+msgstr "دەتوانێت ئینتەرنێت و ڕایەڵە ناوخۆییەکان بەکاربهێنێت."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:61
 msgid "Manage Bluetooth devices including pairing, unpairing, and discovery."
 msgstr ""
+"دەتوانێت ئامێرەکانی بلوتوس ڕێکبخات ، واتا دەتوانێت بە دوای بلوتوسدا بگەڕیت و "
+"پەیوەست ببێت."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:68
 msgid "Access printers."
-msgstr ""
+msgstr "دەستی دەگات بە چاپکەرەکان."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:75
 msgid "Access other devices on the network via SSH."
-msgstr ""
+msgstr "دەستی دەگات بە ئامێرەکانی تری سەر ڕایەڵە بەهۆی SSH."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:82
 msgid "Accelerate graphical output."
-msgstr ""
+msgstr "خێراکردنی دەرئەنجامی گرافیکی."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:105
 msgid "Reset to Defaults"
-msgstr ""
+msgstr "گەڕاندنەوەیان بۆ دۆخی بنەڕەت"
 
 #. / Translators: This is a delimiter that separates types of permissions in the sidebar description
 #: src/Permissions/Widgets/SidebarRow.vala:89
 msgid ", "
-msgstr ""
+msgstr "، "
 
 #: src/Startup/Startup.vala:40
 msgid "Launch Apps on Startup"
-msgstr ""
+msgstr "کردنەوەی بەرنامەکان لە دەستپێکدا"
 
 #: src/Startup/Startup.vala:41
 msgid "Add apps to the Startup list by clicking the icon in the toolbar below."
 msgstr ""
+"زیادکردنی بەرنامەکان بۆ لیستی دەستپێک بە کرتەکردن لەسەر ئایکۆنەکە لە "
+"شریتەکەی خوارەوە."
 
 #: src/Startup/Startup.vala:61
 msgid "Add Startup App…"
-msgstr ""
+msgstr "زیادکردنی بەرنامە بۆ لیستی دەستپێک…"
 
 #: src/Startup/Startup.vala:64
 msgid "Remove Selected Startup App"
-msgstr ""
+msgstr "سڕینەوەی بەرنامەی دیاریکراو لە لیستی دەستپێک"
 
 #: src/Startup/Backend/KeyFile.vala:86
 msgid "Custom Command"
-msgstr ""
+msgstr "فەرمانێکی تایبەت"
 
 #: src/Startup/Widgets/AppRow.vala:47
 #, c-format
 msgid "Launch %s on startup"
-msgstr ""
+msgstr "کردنەوەی %s لەگەڵ دەستپێکی کۆمپیتەر"
 
 #: src/Startup/Widgets/AppChooser.vala:38
 msgid "Search Applications"
-msgstr ""
+msgstr "بەدوای بەرنامەدا بگەڕێ"
 
 #: src/Startup/Widgets/AppChooser.vala:56
 msgid "Type in a custom command"
-msgstr ""
+msgstr "فەرمانێکی تایبەت لێرە بنووسە"
 
 #: src/Defaults/DefaultPlug.vala:40
 msgid "Web Browser:"
-msgstr ""
+msgstr "وێبگەڕ:"
 
 #: src/Defaults/DefaultPlug.vala:44
 msgid "Email Client:"
-msgstr ""
+msgstr "نامە (ئیمێڵ):"
 
 #: src/Defaults/DefaultPlug.vala:48
 msgid "Calendar:"
-msgstr ""
+msgstr "ڕۆژمێر:"
 
 #: src/Defaults/DefaultPlug.vala:52
 msgid "Video Player:"
-msgstr ""
+msgstr "پلەیەری ڤیدیۆ:"
 
 #: src/Defaults/DefaultPlug.vala:58
 msgid "Music Player:"
-msgstr ""
+msgstr "پلەیەری مۆسیقا:"
 
 #: src/Defaults/DefaultPlug.vala:63
 msgid "Image Viewer:"
-msgstr ""
+msgstr "سەیرکەری وێنە:"
 
 #: src/Defaults/DefaultPlug.vala:68
 msgid "Text Editor:"
-msgstr ""
+msgstr "دەستکاریکەری دەق:"
 
 #: src/Defaults/DefaultPlug.vala:73
 msgid "File Browser:"
-msgstr ""
+msgstr "گەڕۆکی پەڕگە:"

@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-09-23 23:18+0000\n"
-"PO-Revision-Date: 2020-10-11 21:36+0000\n"
-"Last-Translator: anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2022-08-06 13:11+0000\n"
+"Last-Translator: Jung-Kyu Park <bagjunggyu@gmail.com>\n"
 "Language-Team: Korean <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-applications/ko/>\n"
 "Language: ko\n"
@@ -12,22 +12,18 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2017-01-26 06:43+0000\n"
 
 #: src/Plug.vala:44
-#, fuzzy
-#| msgid "Manage default and startup applications"
 msgid "Manage default apps, startup apps, and app permissions"
-msgstr "기본 및 시작 애플리케이션 관리하기"
+msgstr "기본 앱, 시작 앱 및 앱 권한 관리"
 
 #: src/Plug.vala:45
 msgid "Applications"
 msgstr "애플리케이션"
 
 #: src/Plug.vala:56
-#, fuzzy
-#| msgid "Default"
 msgid "Defaults"
 msgstr "기본"
 
@@ -37,7 +33,7 @@ msgstr "시작"
 
 #: src/Plug.vala:58 src/Plug.vala:104
 msgid "Permissions"
-msgstr ""
+msgstr "권한"
 
 #: src/Plug.vala:103
 msgid "Default Apps"
@@ -45,11 +41,11 @@ msgstr "기본 앱"
 
 #: src/Plug.vala:105
 msgid "Sandboxing"
-msgstr ""
+msgstr "샌드박싱"
 
 #: src/Plug.vala:106
 msgid "Confinement"
-msgstr ""
+msgstr "제한"
 
 #: src/Plug.vala:107 src/Plug.vala:108 src/Plug.vala:109 src/Plug.vala:110
 #: src/Plug.vala:111 src/Plug.vala:112 src/Plug.vala:113 src/Plug.vala:114
@@ -74,7 +70,7 @@ msgstr "동영상"
 
 #: src/Plug.vala:111
 msgid "Music Player"
-msgstr "음악"
+msgstr "뮤직 플레이어"
 
 #: src/Plug.vala:112
 msgid "Text Editor"
@@ -94,7 +90,7 @@ msgstr "홈 폴더"
 
 #: src/Permissions/PermissionsPlug.vala:30
 msgid "System Folders"
-msgstr ""
+msgstr "시스템 폴더"
 
 #: src/Permissions/PermissionsPlug.vala:31
 msgid "Devices"
@@ -110,71 +106,69 @@ msgstr "블루투스"
 
 #: src/Permissions/PermissionsPlug.vala:34
 msgid "Printing"
-msgstr ""
+msgstr "프린팅"
 
 #: src/Permissions/PermissionsPlug.vala:35
 msgid "Secure Shell Agent"
-msgstr ""
+msgstr "보안 셸 에이전트"
 
 #: src/Permissions/PermissionsPlug.vala:36
 msgid "GPU Acceleration"
-msgstr ""
+msgstr "GPU 가속"
 
 #: src/Permissions/PermissionsPlug.vala:40
 msgid "No Flatpak apps installed"
-msgstr ""
+msgstr "Flatpak 앱이 설치되지 않았습니다"
 
 #: src/Permissions/PermissionsPlug.vala:45
 msgid ""
 "Apps whose permissions can be adjusted will automatically appear here when "
 "installed"
-msgstr ""
+msgstr "권한을 조정할 수 있는 앱은 설치 시 자동으로 이곳에 표시됩니다"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:33
 msgid "Access your entire Home folder, including any hidden folders."
-msgstr ""
+msgstr "숨겨진 폴더를 포함하여 전체 홈 폴더에 접근합니다."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:40
 msgid ""
 "Access system folders, not including the operating system or system "
 "internals. This includes users' Home folders."
-msgstr ""
+msgstr "운영 체제나 시스템 내부를 포함하지 않는 시스템 폴더에 접근합니다. 사용자의 홈 폴더를 포함합니다."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:47
 msgid ""
 "Access all devices, such as webcams, microphones, and connected USB devices."
-msgstr ""
+msgstr "웹캠, 마이크, 연결된 USB 와 같은 모든 장치에 접근합니다."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:54
 msgid "Access the Internet and local networks."
-msgstr ""
+msgstr "인터넷 및 로컬 네트워크에 접근합니다."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:61
 msgid "Manage Bluetooth devices including pairing, unpairing, and discovery."
-msgstr ""
+msgstr "페어링, 페어링 해제, 검색을 포함한 Bluetooth 장치를 관리합니다."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:68
 msgid "Access printers."
-msgstr ""
+msgstr "프린터에 접근합니다."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:75
 msgid "Access other devices on the network via SSH."
-msgstr ""
+msgstr "SSH를 통해 네트워크의 다른 장치에 접근합니다."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:82
 msgid "Accelerate graphical output."
-msgstr ""
+msgstr "그래픽 출력을 가속화합니다."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:105
-#, fuzzy
-#| msgid "Default"
 msgid "Reset to Defaults"
-msgstr "기본"
+msgstr "기본값으로 재설정"
 
 #. / Translators: This is a delimiter that separates types of permissions in the sidebar description
 #: src/Permissions/Widgets/SidebarRow.vala:89
 msgid ", "
-msgstr ""
+msgstr ", "
 
 #: src/Startup/Startup.vala:40
 msgid "Launch Apps on Startup"
@@ -227,7 +221,7 @@ msgstr "동영상:"
 
 #: src/Defaults/DefaultPlug.vala:58
 msgid "Music Player:"
-msgstr "음악:"
+msgstr "뮤직 플레이어:"
 
 #: src/Defaults/DefaultPlug.vala:63
 msgid "Image Viewer:"

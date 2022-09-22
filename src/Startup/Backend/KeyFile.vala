@@ -130,7 +130,7 @@ public class Startup.Backend.KeyFile : GLib.Object {
         try {
             return keyfile.get_boolean (KeyFileDesktop.GROUP, key);
         } catch (KeyFileError e) {
-            critical (e.message);
+            debug (e.message);
         }
 
         return false;
@@ -140,7 +140,7 @@ public class Startup.Backend.KeyFile : GLib.Object {
         try {
             return keyfile.get_string (KeyFileDesktop.GROUP, key);
         } catch (KeyFileError e) {
-            critical (e.message);
+            debug (e.message);
         }
 
         return "";
@@ -151,7 +151,7 @@ public class Startup.Backend.KeyFile : GLib.Object {
             try {
                 return keyfile.get_locale_string (KeyFileDesktop.GROUP, key, lang);
             } catch (KeyFileError e) {
-                critical (e.message);
+                debug (e.message);
             }
         }
 
