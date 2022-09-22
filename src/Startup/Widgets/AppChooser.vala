@@ -22,22 +22,12 @@
 public class Startup.Widgets.AppChooser : Gtk.Popover {
     public signal void app_chosen (string path);
     public signal void custom_command_chosen (string command);
-    public Gtk.Widget relative_widget { get; construct; }
 
     private Gtk.ListBox list;
     private Gtk.SearchEntry search_entry;
     private Gtk.Entry custom_entry;
 
-    public AppChooser (Gtk.Widget widget) {
-        Object (relative_widget: widget);
-    }
-
     construct {
-        Gtk.Allocation allocation;
-        relative_widget.get_allocation (out allocation);
-
-        // pointing_to = allocation;
-
         search_entry = new Gtk.SearchEntry () {
             margin_end = 12,
             margin_start = 12,
@@ -77,7 +67,7 @@ public class Startup.Widgets.AppChooser : Gtk.Popover {
 
         child = grid;
         default_widget = grid;
-        set_offset (250, -1);
+        halign = Gtk.Align.START;
         position = Gtk.PositionType.TOP;
 
         search_entry.grab_focus ();

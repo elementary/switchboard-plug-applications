@@ -80,7 +80,7 @@ public class Startup.Plug : Gtk.Grid {
         margin_top = 0;
         attach (frame, 0, 0);
 
-        app_chooser = new Widgets.AppChooser (add_button) {
+        app_chooser = new Widgets.AppChooser () {
             autohide = true
         };
         app_chooser.set_parent (add_button);
