@@ -65,11 +65,10 @@ public class ApplicationsPlug : Switchboard.Plug {
             };
 
             var size_group = new Gtk.SizeGroup (Gtk.SizeGroupMode.HORIZONTAL);
-            if (size_group.get_widgets ().length () == 0) {
-                var children = stack_switcher.observe_children ();
-                for (var index = 0; index < children.get_n_items (); index++) {
-                    size_group.add_widget ((Gtk.ToggleButton) children.get_item (index));
-                }
+            var widget = stack_switcher.get_first_child ();
+            while (widget != null) {
+                size_group.add_widget (widget);
+                widget = widget.get_next_sibling ();
             }
 
             grid = new Gtk.Grid () {
