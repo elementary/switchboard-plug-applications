@@ -120,11 +120,14 @@ public class Startup.Plug : Gtk.Grid {
 
     public void add_app (Backend.KeyFile key_file) {
         var app_info = key_file.create_app_info ();
-        var children = list.observe_children ();
-        for (var iter = 0; iter < children.get_n_items (); iter++) {
-            if (((Widgets.AppRow) children.get_item (iter)).app_info.equal (app_info)) {
+
+        unowned var child = list.get_first_child ();
+        while (child != null) {
+            if (((Widgets.AppRow) child).app_info.equal (app_info)) {
                 return;
             }
+
+            child = child.get_next_sibling ();
         }
 
         var row = new Widgets.AppRow (app_info);
@@ -137,11 +140,14 @@ public class Startup.Plug : Gtk.Grid {
     }
 
     public void remove_app_from_path (string path) {
-        var children = list.observe_children ();
-        for (var iter = 0; iter < children.get_n_items (); iter++) {
-            if (((Widgets.AppRow) children.get_item (iter)).app_info.path == path) {
-                list.remove ((Widgets.AppRow) children.get_item (iter));
+        unowned var child = list.get_first_child ();
+        while (child != null) {
+            if (((Widgets.AppRow) child).app_info.path == path) {
+                list.remove ((Widgets.AppRow) child);
+                return;
             }
+
+            child = child.get_next_sibling ();
         }
     }
 
@@ -176,10 +182,6 @@ public class Startup.Plug : Gtk.Grid {
     }
 
     private bool on_drag_data_received (Gtk.DropTarget drop_target, Value val, double x, double y) {
-
-        // if (val != Target.URI_LIST) {
-        //     return;
-        // }
         var file_list = (Gdk.FileList) val;
         var files = file_list.get_files ();
 
