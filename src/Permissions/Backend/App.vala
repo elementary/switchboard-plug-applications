@@ -108,8 +108,9 @@ public class Permissions.Backend.App : GLib.Object {
                 }
             }
 
-            var s = new Backend.PermissionSettings (key, standard);
-            s.enabled = enabled;
+            var s = new Backend.PermissionSettings (key, standard) {
+                enabled = enabled
+            };
 
             settings.add (s);
         });

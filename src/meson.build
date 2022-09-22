@@ -23,7 +23,7 @@ plug_files = files(
     'Permissions/PermissionsPlug.vala'
 )
 
-switchboard_dep = dependency('switchboard-2.0')
+switchboard_dep = dependency('switchboard-3')
 switchboard_plugsdir = switchboard_dep.get_pkgconfig_variable('plugsdir', define_variable: ['libdir', libdir])
 
 shared_module(
@@ -35,8 +35,8 @@ shared_module(
         dependency('glib-2.0', version: '>=2.34'),
         dependency('gio-2.0'),
         dependency('gobject-2.0'),
-        dependency('granite'),
-        dependency('gtk+-3.0'),
+        dependency('granite-7'),
+        dependency('gtk4'),
         switchboard_dep
     ],
     install: true,

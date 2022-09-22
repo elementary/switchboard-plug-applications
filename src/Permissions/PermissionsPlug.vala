@@ -40,7 +40,7 @@ public class Permissions.Plug : Gtk.Grid {
         var placeholder_title = new Gtk.Label (_("No Flatpak apps installed")) {
             xalign = 0
         };
-        placeholder_title.get_style_context ().add_class (Granite.STYLE_CLASS_H3_LABEL);
+        placeholder_title.add_css_class (Granite.STYLE_CLASS_H3_LABEL);
 
         var placeholder_description = new Gtk.Label (_("Apps whose permissions can be adjusted will automatically appear here when installed")) {
             wrap = true,
@@ -48,47 +48,52 @@ public class Permissions.Plug : Gtk.Grid {
         };
 
         var placeholder = new Gtk.Grid () {
-            margin = 12,
+            margin_start = 12,
+            margin_end = 12,
+            margin_top = 12,
+            margin_bottom = 12,
             row_spacing = 3,
             valign = Gtk.Align.CENTER
         };
         placeholder.attach (placeholder_title, 0, 0);
         placeholder.attach (placeholder_description, 0, 1);
-        placeholder.show_all ();
 
-        var app_list = new Gtk.ListBox ();
-        app_list.vexpand = true;
-        app_list.selection_mode = Gtk.SelectionMode.SINGLE;
+        var app_list = new Gtk.ListBox () {
+            vexpand = true,
+            selection_mode = Gtk.SelectionMode.SINGLE
+        };
+        app_list.add_css_class (Granite.STYLE_CLASS_RICH_LIST);
         app_list.set_placeholder (placeholder);
         app_list.set_sort_func ((Gtk.ListBoxSortFunc) sort_func);
 
-        var scrolled_window = new Gtk.ScrolledWindow (null, null);
-        scrolled_window.add (app_list);
+        var scrolled_window = new Gtk.ScrolledWindow () {
+            child = app_list
+        };
 
-        var frame = new Gtk.Frame (null);
-        frame.add (scrolled_window);
+        var frame = new Gtk.Frame (null) {
+            child = scrolled_window
+        };
 
         Permissions.Backend.AppManager.get_default ().apps.foreach ((id, app) => {
             var app_entry = new Permissions.SidebarRow (app);
-            app_list.add (app_entry);
+            app_list.append (app_entry);
         });
 
         app_settings_view = new Widgets.AppSettingsView ();
 
-        List<weak Gtk.Widget> children = app_list.get_children ();
-        if (children.length () > 0) {
-            var row = ((Gtk.ListBoxRow)children.nth_data (0));
+        if (app_list.get_first_child () != null) {
+            var row = (Gtk.ListBoxRow) app_list.get_first_child ();
 
             app_list.select_row (row);
             show_row (row);
         }
 
         column_spacing = 12;
-        margin = 12;
-        margin_top = 0;
+        margin_start = 12;
+        margin_end = 12;
+        margin_bottom = 12;
         attach (frame, 0, 0, 1, 1);
         attach (app_settings_view, 1, 0, 2, 1);
-        show_all ();
 
         app_list.row_selected.connect (show_row);
     }
