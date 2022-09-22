@@ -29,7 +29,7 @@ public class Startup.Widgets.AppRow : Gtk.ListBoxRow {
     }
 
     construct {
-        var image = Utils.create_icon (app_info, 32);
+        var image = Utils.create_icon (app_info);
 
         var app_name = new Gtk.Label (app_info.name) {
             xalign = 0

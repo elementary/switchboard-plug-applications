@@ -43,60 +43,16 @@ namespace Startup.Utils {
         return !name.contains ("~") && name.has_suffix (".desktop");
     }
 
-    private const string FALLBACK_ICON = "application-default-icon";
+    public Gtk.Image create_icon (Entity.AppInfo app_info) {
+        var image = new Gtk.Image () {
+            pixel_size = 32
+        };
 
-    public Gtk.Image create_icon (Entity.AppInfo app_info, Gtk.IconSize icon_size) {
-        var icon = new ThemedIcon.with_default_fallbacks (app_info.icon);
         var icon_theme = Gtk.IconTheme.get_for_display (Gdk.Display.get_default ());
-
-        int pixel_size;
-
-        switch (icon_size) {
-            case 48:
-                pixel_size = 48;
-                break;
-            case 32:
-                pixel_size = 32;
-                break;
-            default:
-                pixel_size = 32;
-                break;
-        }
-
-        var image = new Gtk.Image ();
-
-        // if (icon_theme.lookup_by_gicon (icon, pixel_size, 1, Gtk.TextDirection.NONE, Gtk.IconLookupFlags.PRELOAD) == null) {
-        //     try {
-        //         var pixbuf = new Gdk.Pixbuf.from_file (app_info.icon)
-        //             .scale_simple (pixel_size, pixel_size, Gdk.InterpType.BILINEAR);
-        //         image = new Gtk.Image.from_pixbuf (pixbuf);
-        //     } catch (GLib.Error err) {
-        //         icon = new ThemedIcon (FALLBACK_ICON);
-        //         image = new Gtk.Image.from_gicon (icon) {
-        //             pixel_size = icon_size
-        //         };
-        //         debug (err.message);
-        //     }
-        // } else {
-        //     image = new Gtk.Image.from_gicon (icon) {
-        //         pixel_size = icon_size
-        //     };
-        // }
-        if (icon_theme.has_gicon (icon)) {
-            image = new Gtk.Image () {
-                gicon = icon,
-                pixel_size = icon_size
-            };
-        } else if (icon_theme.has_icon (app_info.icon)) {
-            image = new Gtk.Image () {
-                gicon = new ThemedIcon (app_info.icon),
-                pixel_size = pixel_size
-            };
+        if (icon_theme.has_icon (app_info.icon)) {
+            image.gicon = new ThemedIcon (app_info.icon);
         } else {
-            image = new Gtk.Image () {
-                gicon = new ThemedIcon (FALLBACK_ICON),
-                pixel_size = icon_size
-            };
+            image.gicon = new ThemedIcon ("application-default-icon");
         }
 
         return image;
