@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-09-23 23:18+0000\n"
-"PO-Revision-Date: 2022-09-30 10:20+0000\n"
+"PO-Revision-Date: 2022-10-04 21:31+0000\n"
 "Last-Translator: lenemter <lenemter@gmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-applications/ru/>\n"
@@ -174,7 +174,7 @@ msgstr "Ускорение графического вывода."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:105
 msgid "Reset to Defaults"
-msgstr "Сброс к настройкам по умолчанию"
+msgstr "Сбросить к настройкам по умолчанию"
 
 #. / Translators: This is a delimiter that separates types of permissions in the sidebar description
 #: src/Permissions/Widgets/SidebarRow.vala:89
