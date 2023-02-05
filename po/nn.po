@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-09-23 23:18+0000\n"
-"PO-Revision-Date: 2020-10-11 21:36+0000\n"
-"Last-Translator: anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2023-02-06 21:25+0000\n"
+"Last-Translator: Martin Myrvold <myrvold.martin@gmail.com>\n"
 "Language-Team: Norwegian Nynorsk <https://l10n.elementary.io/projects/"
 "switchboard/switchboard-plug-applications/nn/>\n"
 "Language: nn\n"
@@ -12,22 +12,20 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 4.14.2\n"
 "X-Launchpad-Export-Date: 2016-11-26 05:52+0000\n"
 
 #: src/Plug.vala:44
-#, fuzzy
-#| msgid "Manage default and startup applications"
 msgid "Manage default apps, startup apps, and app permissions"
-msgstr "Fastsett standard- og oppstartsapplikasjonar"
+msgstr ""
+"Velg standardappar, kva appar som startar ved oppstart og kva tilgangar "
+"appane har"
 
 #: src/Plug.vala:45
 msgid "Applications"
 msgstr "Applikasjonar"
 
 #: src/Plug.vala:56
-#, fuzzy
-#| msgid "Default"
 msgid "Defaults"
 msgstr "Standardval"
 
@@ -37,7 +35,7 @@ msgstr "Oppstart"
 
 #: src/Plug.vala:58 src/Plug.vala:104
 msgid "Permissions"
-msgstr ""
+msgstr "Tilgangar"
 
 #: src/Plug.vala:103
 msgid "Default Apps"
@@ -45,11 +43,11 @@ msgstr "Standardapplikasjonar"
 
 #: src/Plug.vala:105
 msgid "Sandboxing"
-msgstr ""
+msgstr "Køyr i trygg modus"
 
 #: src/Plug.vala:106
 msgid "Confinement"
-msgstr ""
+msgstr "Innesperring"
 
 #: src/Plug.vala:107 src/Plug.vala:108 src/Plug.vala:109 src/Plug.vala:110
 #: src/Plug.vala:111 src/Plug.vala:112 src/Plug.vala:113 src/Plug.vala:114
@@ -94,7 +92,7 @@ msgstr "Heimemappe"
 
 #: src/Permissions/PermissionsPlug.vala:30
 msgid "System Folders"
-msgstr ""
+msgstr "Systemmapper"
 
 #: src/Permissions/PermissionsPlug.vala:31
 msgid "Devices"
@@ -110,40 +108,44 @@ msgstr "Bluetooth"
 
 #: src/Permissions/PermissionsPlug.vala:34
 msgid "Printing"
-msgstr ""
+msgstr "Utskrift"
 
 #: src/Permissions/PermissionsPlug.vala:35
 msgid "Secure Shell Agent"
-msgstr ""
+msgstr "Trygg skallagent"
 
 #: src/Permissions/PermissionsPlug.vala:36
 msgid "GPU Acceleration"
-msgstr ""
+msgstr "Auka GPU"
 
 #: src/Permissions/PermissionsPlug.vala:40
 msgid "No Flatpak apps installed"
-msgstr ""
+msgstr "Ingen Flatpak-appar er innstallerte"
 
 #: src/Permissions/PermissionsPlug.vala:45
 msgid ""
 "Apps whose permissions can be adjusted will automatically appear here when "
 "installed"
-msgstr ""
+msgstr "Appar med tilgangar som du kan endra på blir vist her automatisk"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:33
 msgid "Access your entire Home folder, including any hidden folders."
-msgstr ""
+msgstr "Tilgang til heile heimmappa di, og mapper som er gøymt."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:40
 msgid ""
 "Access system folders, not including the operating system or system "
 "internals. This includes users' Home folders."
 msgstr ""
+"Tilgang til systemmapper, men ikkje operativsystemet og maskinvara. Dette "
+"gjelder brukaren si heimmappe."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:47
 msgid ""
 "Access all devices, such as webcams, microphones, and connected USB devices."
 msgstr ""
+"Tilgang til alle einingar som til dømes kamera, mikrofon og USB-einingar som "
+"er kopla til."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:54
 msgid "Access the Internet and local networks."
