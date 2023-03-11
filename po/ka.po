@@ -4,7 +4,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-09-23 23:18+0000\n"
 "PO-Revision-Date: 2023-03-11 14:15+0000\n"
-"Last-Translator: Cleiton Floss <cleitonfloss@tutanota.de>\n"
+"Last-Translator: NorwayFun <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-applications/ka/>\n"
 "Language: ka\n"
@@ -180,7 +180,7 @@ msgstr ""
 
 #: src/Startup/Startup.vala:61
 msgid "Add Startup App…"
-msgstr "პროგრამის დამატება…"
+msgstr "ჩატვირთვისას გასაშვები აპის დამატება…"
 
 #: src/Startup/Startup.vala:64
 msgid "Remove Selected Startup App"
