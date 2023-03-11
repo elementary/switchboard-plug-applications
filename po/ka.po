@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-09-23 23:18+0000\n"
-"PO-Revision-Date: 2020-10-11 21:36+0000\n"
-"Last-Translator: anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2023-03-11 14:15+0000\n"
+"Last-Translator: NorwayFun <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-applications/ka/>\n"
 "Language: ka\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 4.14.2\n"
 "X-Launchpad-Export-Date: 2016-11-26 05:52+0000\n"
 
 #: src/Plug.vala:44
@@ -21,25 +21,23 @@ msgstr ""
 
 #: src/Plug.vala:45
 msgid "Applications"
-msgstr "პროგრამები"
+msgstr "აპლიკაციები"
 
 #: src/Plug.vala:56
-#, fuzzy
-#| msgid "Default"
 msgid "Defaults"
-msgstr "ნაგულისხმევი"
+msgstr "ნაგულისხმები მნიშვნელობები"
 
 #: src/Plug.vala:57 src/Plug.vala:102
 msgid "Startup"
-msgstr "ჩართვის დროს"
+msgstr "გაშვება"
 
 #: src/Plug.vala:58 src/Plug.vala:104
 msgid "Permissions"
-msgstr ""
+msgstr "ნებართვები"
 
 #: src/Plug.vala:103
 msgid "Default Apps"
-msgstr ""
+msgstr "ნაგულისხმები აპები"
 
 #: src/Plug.vala:105
 msgid "Sandboxing"
@@ -52,55 +50,47 @@ msgstr ""
 #: src/Plug.vala:107 src/Plug.vala:108 src/Plug.vala:109 src/Plug.vala:110
 #: src/Plug.vala:111 src/Plug.vala:112 src/Plug.vala:113 src/Plug.vala:114
 msgid "Default"
-msgstr "ნაგულისხმევი"
+msgstr "ნაგულისხმები"
 
 #: src/Plug.vala:107
-#, fuzzy
 msgid "Web Browser"
-msgstr "ვებ ბრაუზერი:"
+msgstr "ვებ-ბრაუზერი"
 
 #: src/Plug.vala:108
-#, fuzzy
 msgid "Email Client"
-msgstr "ელ-ფოსტის კლიენტი:"
+msgstr "ელფოსტის კლიენტი"
 
 #: src/Plug.vala:109
-#, fuzzy
 msgid "Calendar"
-msgstr "კალენდარი:"
+msgstr "კალენდარი"
 
 #: src/Plug.vala:110
-#, fuzzy
 msgid "Video Player"
-msgstr "ვიდეოს დამკვრელი:"
+msgstr "ვიდეო დამკვრელი"
 
 #: src/Plug.vala:111
-#, fuzzy
 msgid "Music Player"
-msgstr "მუსიკის დამკვრელი:"
+msgstr "მუსიკის დამკვრელი"
 
 #: src/Plug.vala:112
-#, fuzzy
 msgid "Text Editor"
-msgstr "ტექსტის რედაქტორი:"
+msgstr "ტექსტური რედაქტორი"
 
 #: src/Plug.vala:113
-#, fuzzy
 msgid "Image Viewer"
-msgstr "სურათების მნახველი:"
+msgstr "სურათების გამხსნელი"
 
 #: src/Plug.vala:114
-#, fuzzy
 msgid "File Browser"
-msgstr "ფაილების ბრაუზერი:"
+msgstr "ფაილების ბრაუზერი"
 
 #: src/Permissions/PermissionsPlug.vala:29
 msgid "Home Folder"
-msgstr ""
+msgstr "საწყისი საქაღალდე"
 
 #: src/Permissions/PermissionsPlug.vala:30
 msgid "System Folders"
-msgstr ""
+msgstr "სისტემური საქაღალდეები"
 
 #: src/Permissions/PermissionsPlug.vala:31
 msgid "Devices"
@@ -116,19 +106,19 @@ msgstr "ბლუთუზი"
 
 #: src/Permissions/PermissionsPlug.vala:34
 msgid "Printing"
-msgstr ""
+msgstr "დაბეჭდვა"
 
 #: src/Permissions/PermissionsPlug.vala:35
 msgid "Secure Shell Agent"
-msgstr ""
+msgstr "დაცული გარსის აგენტი"
 
 #: src/Permissions/PermissionsPlug.vala:36
 msgid "GPU Acceleration"
-msgstr ""
+msgstr "GPU აჩქარება"
 
 #: src/Permissions/PermissionsPlug.vala:40
 msgid "No Flatpak apps installed"
-msgstr ""
+msgstr "Flatpak-ის აპები დაყენებული არაა"
 
 #: src/Permissions/PermissionsPlug.vala:45
 msgid ""
@@ -153,7 +143,7 @@ msgstr ""
 
 #: src/Permissions/Widgets/AppSettingsView.vala:54
 msgid "Access the Internet and local networks."
-msgstr ""
+msgstr "ინტერნეტთან და ლოკალურ ქსელებთან წვდომა."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:61
 msgid "Manage Bluetooth devices including pairing, unpairing, and discovery."
@@ -161,7 +151,7 @@ msgstr ""
 
 #: src/Permissions/Widgets/AppSettingsView.vala:68
 msgid "Access printers."
-msgstr ""
+msgstr "პრინტერებთან წვდომა."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:75
 msgid "Access other devices on the network via SSH."
@@ -169,22 +159,20 @@ msgstr ""
 
 #: src/Permissions/Widgets/AppSettingsView.vala:82
 msgid "Accelerate graphical output."
-msgstr ""
+msgstr "გრაფიკის აჩქარება."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:105
-#, fuzzy
-#| msgid "Default"
 msgid "Reset to Defaults"
-msgstr "ნაგულისხმევი"
+msgstr "ნაგულისხმები პარამეტრების დაყენება"
 
 #. / Translators: This is a delimiter that separates types of permissions in the sidebar description
 #: src/Permissions/Widgets/SidebarRow.vala:89
 msgid ", "
-msgstr ""
+msgstr ", "
 
 #: src/Startup/Startup.vala:40
 msgid "Launch Apps on Startup"
-msgstr ""
+msgstr "აპების გაშვება ჩატვირთვისას"
 
 #: src/Startup/Startup.vala:41
 msgid "Add apps to the Startup list by clicking the icon in the toolbar below."
@@ -192,24 +180,24 @@ msgstr ""
 
 #: src/Startup/Startup.vala:61
 msgid "Add Startup App…"
-msgstr "პროგრამის დამატება..."
+msgstr "ჩატვირთვისას გასაშვები აპის დამატება…"
 
 #: src/Startup/Startup.vala:64
 msgid "Remove Selected Startup App"
-msgstr "არჩეული პროგრამის წაშლა"
+msgstr "ჩატვირთვისას გასაშვები აპის წაშლა"
 
 #: src/Startup/Backend/KeyFile.vala:86
 msgid "Custom Command"
-msgstr "ბრძანების შეყვანა ხელით"
+msgstr "ხელით შეყვანილი ბრძანება"
 
 #: src/Startup/Widgets/AppRow.vala:47
 #, c-format
 msgid "Launch %s on startup"
-msgstr ""
+msgstr "%s-ის გაშვება ჩატვირთვისას"
 
 #: src/Startup/Widgets/AppChooser.vala:38
 msgid "Search Applications"
-msgstr "პროგრამის მოძიება"
+msgstr "აპლიკაციების ძებნა"
 
 #: src/Startup/Widgets/AppChooser.vala:56
 msgid "Type in a custom command"
@@ -217,11 +205,11 @@ msgstr "შეიყვანეთ ბრძანება ხელით"
 
 #: src/Defaults/DefaultPlug.vala:40
 msgid "Web Browser:"
-msgstr "ვებ ბრაუზერი:"
+msgstr "ვებ-ბრაუზერი:"
 
 #: src/Defaults/DefaultPlug.vala:44
 msgid "Email Client:"
-msgstr "ელ-ფოსტის კლიენტი:"
+msgstr "ელფოსტის კლიენტი:"
 
 #: src/Defaults/DefaultPlug.vala:48
 msgid "Calendar:"
@@ -229,7 +217,7 @@ msgstr "კალენდარი:"
 
 #: src/Defaults/DefaultPlug.vala:52
 msgid "Video Player:"
-msgstr "ვიდეოს დამკვრელი:"
+msgstr "ვიდეო დამკვრელი:"
 
 #: src/Defaults/DefaultPlug.vala:58
 msgid "Music Player:"
@@ -237,11 +225,11 @@ msgstr "მუსიკის დამკვრელი:"
 
 #: src/Defaults/DefaultPlug.vala:63
 msgid "Image Viewer:"
-msgstr "სურათების მნახველი:"
+msgstr "სურათების გამხსნელი:"
 
 #: src/Defaults/DefaultPlug.vala:68
 msgid "Text Editor:"
-msgstr "ტექსტის რედაქტორი:"
+msgstr "ტექსტური რედაქტორი:"
 
 #: src/Defaults/DefaultPlug.vala:73
 msgid "File Browser:"
