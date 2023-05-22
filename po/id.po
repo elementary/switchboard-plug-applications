@@ -3,8 +3,9 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-09-23 23:18+0000\n"
-"PO-Revision-Date: 2020-10-11 21:36+0000\n"
-"Last-Translator: anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2023-05-23 18:06+0000\n"
+"Last-Translator: Faisal Rachmadin <frachmadin@users.noreply.l10n.elementary."
+"io>\n"
 "Language-Team: Indonesian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-applications/id/>\n"
 "Language: id\n"
@@ -12,44 +13,40 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 4.17\n"
 "X-Launchpad-Export-Date: 2016-11-26 05:52+0000\n"
 
 #: src/Plug.vala:44
-#, fuzzy
-#| msgid "Manage default and startup applications"
 msgid "Manage default apps, startup apps, and app permissions"
-msgstr "Kelola aplikasi bawaan dan awal mula"
+msgstr "Kelola aplikasi bawaan, aplikasi startup, dan izin aplikasi"
 
 #: src/Plug.vala:45
 msgid "Applications"
 msgstr "Aplikasi"
 
 #: src/Plug.vala:56
-#, fuzzy
-#| msgid "Default"
 msgid "Defaults"
 msgstr "Bawaan"
 
 #: src/Plug.vala:57 src/Plug.vala:102
 msgid "Startup"
-msgstr "Mulai"
+msgstr "Mulai Awal"
 
 #: src/Plug.vala:58 src/Plug.vala:104
 msgid "Permissions"
-msgstr ""
+msgstr "Izin"
 
 #: src/Plug.vala:103
 msgid "Default Apps"
-msgstr "Aplikasi Default"
+msgstr "Aplikasi Bawaan"
 
 #: src/Plug.vala:105
 msgid "Sandboxing"
-msgstr ""
+msgstr "Sandboxing"
 
 #: src/Plug.vala:106
 msgid "Confinement"
-msgstr ""
+msgstr "Kurungan"
 
 #: src/Plug.vala:107 src/Plug.vala:108 src/Plug.vala:109 src/Plug.vala:110
 #: src/Plug.vala:111 src/Plug.vala:112 src/Plug.vala:113 src/Plug.vala:114
@@ -90,11 +87,11 @@ msgstr "Peramban Berkas"
 
 #: src/Permissions/PermissionsPlug.vala:29
 msgid "Home Folder"
-msgstr ""
+msgstr "Folder Beranda"
 
 #: src/Permissions/PermissionsPlug.vala:30
 msgid "System Folders"
-msgstr ""
+msgstr "Folder System"
 
 #: src/Permissions/PermissionsPlug.vala:31
 msgid "Devices"
@@ -110,98 +107,103 @@ msgstr "Bluetooth"
 
 #: src/Permissions/PermissionsPlug.vala:34
 msgid "Printing"
-msgstr ""
+msgstr "Pencetakan"
 
 #: src/Permissions/PermissionsPlug.vala:35
 msgid "Secure Shell Agent"
-msgstr ""
+msgstr "Agen Shell Aman"
 
 #: src/Permissions/PermissionsPlug.vala:36
 msgid "GPU Acceleration"
-msgstr ""
+msgstr "Akselerasi GPU"
 
 #: src/Permissions/PermissionsPlug.vala:40
 msgid "No Flatpak apps installed"
-msgstr ""
+msgstr "Tidak ada aplikasi Flatpak yang dipasang"
 
 #: src/Permissions/PermissionsPlug.vala:45
 msgid ""
 "Apps whose permissions can be adjusted will automatically appear here when "
 "installed"
 msgstr ""
+"Aplikasi yang izinnya dapat disesuaikan akan secara otomatis muncul di sini "
+"saat dipasang"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:33
 msgid "Access your entire Home folder, including any hidden folders."
-msgstr ""
+msgstr "Akses seluruh folder Beranda, termasuk folder tersembunyi."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:40
 msgid ""
 "Access system folders, not including the operating system or system "
 "internals. This includes users' Home folders."
 msgstr ""
+"Akses folder sistem, tidak termasuk sistem operasi atau internal sistem. Ini "
+"termasuk folder Beranda pengguna."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:47
 msgid ""
 "Access all devices, such as webcams, microphones, and connected USB devices."
 msgstr ""
+"Akses semua perangkat, seperti webcam, mikrofon, dan perangkat USB yang "
+"terhubung."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:54
 msgid "Access the Internet and local networks."
-msgstr ""
+msgstr "Akses Internet dan jaringan lokal."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:61
 msgid "Manage Bluetooth devices including pairing, unpairing, and discovery."
 msgstr ""
+"Kelola perangkat Bluetooth termasuk pemasangan, pembongkaran, dan penemuan."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:68
 msgid "Access printers."
-msgstr ""
+msgstr "Akses printer."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:75
 msgid "Access other devices on the network via SSH."
-msgstr ""
+msgstr "Akses perangkat lain di jaringan melalui SSH."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:82
 msgid "Accelerate graphical output."
-msgstr ""
+msgstr "Akselerasi keluaran grafis."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:105
-#, fuzzy
-#| msgid "Default"
 msgid "Reset to Defaults"
-msgstr "Bawaan"
+msgstr "Setel Ulang ke Bawaan"
 
 #. / Translators: This is a delimiter that separates types of permissions in the sidebar description
 #: src/Permissions/Widgets/SidebarRow.vala:89
 msgid ", "
-msgstr ""
+msgstr ", "
 
 #: src/Startup/Startup.vala:40
 msgid "Launch Apps on Startup"
-msgstr "Luncurkan Aplikasi Pada Awal Mula"
+msgstr "Luncurkan Aplikasi pada Mulai Awal"
 
 #: src/Startup/Startup.vala:41
 msgid "Add apps to the Startup list by clicking the icon in the toolbar below."
 msgstr ""
-"Tambahkan aplikasi ke daftar Awal Mula dengan mengklik ikon pada bilah alat "
+"Tambahkan aplikasi ke daftar Mulai Awal dengan mengklik ikon pada bilah alat "
 "di bawah ini."
 
 #: src/Startup/Startup.vala:61
 msgid "Add Startup App…"
-msgstr "Tambahkan Aplikasi Awal Mula…"
+msgstr "Tambahkan Aplikasi Mulai Awal…"
 
 #: src/Startup/Startup.vala:64
 msgid "Remove Selected Startup App"
-msgstr "Hapus Aplikasi Awal Mula yang Dipilih"
+msgstr "Hapus Aplikasi Mulai Awal yang Dipilih"
 
 #: src/Startup/Backend/KeyFile.vala:86
 msgid "Custom Command"
-msgstr "Perintah Tersuai"
+msgstr "Perintah Kustom"
 
 #: src/Startup/Widgets/AppRow.vala:47
 #, c-format
 msgid "Launch %s on startup"
-msgstr "Luncurkan %s pada awal mula"
+msgstr "Luncurkan %s pada mulai awal"
 
 #: src/Startup/Widgets/AppChooser.vala:38
 msgid "Search Applications"
@@ -209,7 +211,7 @@ msgstr "Cari Aplikasi"
 
 #: src/Startup/Widgets/AppChooser.vala:56
 msgid "Type in a custom command"
-msgstr "Ketik perintah tersuai"
+msgstr "Ketikkan perintah kustom"
 
 #: src/Defaults/DefaultPlug.vala:40
 msgid "Web Browser:"
@@ -217,7 +219,7 @@ msgstr "Peramban Web:"
 
 #: src/Defaults/DefaultPlug.vala:44
 msgid "Email Client:"
-msgstr "Klien Email:"
+msgstr "Klien Surel:"
 
 #: src/Defaults/DefaultPlug.vala:48
 msgid "Calendar:"
