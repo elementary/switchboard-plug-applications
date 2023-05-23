@@ -53,18 +53,21 @@ public class Startup.Backend.KeyFile : GLib.Object {
                 return false;
             }
 
-            var session = Environment.get_variable ("DESKTOP_SESSION").down ();
-            var not_show_in = keyfile_get_string (KeyFileDesktop.KEY_NOT_SHOW_IN).down ();
-            if (session in not_show_in) {
-                return false;
+            var current_desktop = Environment.get_variable ("XDG_CURRENT_DESKTOP").split (":");
+            var only_show_in = keyfile_get_string (KeyFileDesktop.KEY_ONLY_SHOW_IN).split (":");
+            var not_show_in = keyfile_get_string (KeyFileDesktop.KEY_NOT_SHOW_IN).split (":");
+
+            foreach (unowned var desktop in current_desktop) {
+                if (desktop in only_show_in) {
+                    return true;
+                }
+
+                if (desktop in not_show_in) {
+                    return false;
+                }
             }
 
-            var only_show_in = keyfile_get_string (KeyFileDesktop.KEY_ONLY_SHOW_IN).down ();
-            if (only_show_in == "" || session in only_show_in) {
-                return true;
-            }
-
-            return false;
+            return !keyfile_has_key (KeyFileDesktop.KEY_ONLY_SHOW_IN);
         }
     }
 
