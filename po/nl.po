@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-09-23 23:18+0000\n"
-"PO-Revision-Date: 2022-05-22 08:05+0000\n"
+"PO-Revision-Date: 2023-05-30 03:07+0000\n"
 "Last-Translator: Dennis ten Hoove <dennistenhoove@protonmail.com>\n"
 "Language-Team: Dutch <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-applications/nl/>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 4.17\n"
 "X-Launchpad-Export-Date: 2016-11-26 05:52+0000\n"
 
 #: src/Plug.vala:44
@@ -92,7 +92,7 @@ msgstr "Persoonlijke map"
 
 #: src/Permissions/PermissionsPlug.vala:30
 msgid "System Folders"
-msgstr "Systeemfolders"
+msgstr "Systeemmappen"
 
 #: src/Permissions/PermissionsPlug.vala:31
 msgid "Devices"
@@ -133,16 +133,15 @@ msgstr ""
 #: src/Permissions/Widgets/AppSettingsView.vala:33
 msgid "Access your entire Home folder, including any hidden folders."
 msgstr ""
-"Toegang tot de volledige Persoonlijke folder, inclusief alle verborgen "
-"folders."
+"Toegang tot de volledige Persoonlijke map, inclusief alle verborgen mappen."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:40
 msgid ""
 "Access system folders, not including the operating system or system "
 "internals. This includes users' Home folders."
 msgstr ""
-"Toegang tot systeem folders, met uitzondering van het besturingssysteem en "
-"interne componenten. Dit omvat ook de persoonlijke folders van de gebruikers."
+"Toegang tot systeemmappen, met uitzondering van het besturingssysteem en "
+"interne componenten. Dit omvat ook de Persoonlijke mappen van de gebruikers."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:47
 msgid ""
