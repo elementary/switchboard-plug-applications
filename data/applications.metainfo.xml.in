@@ -2,10 +2,38 @@
 <component type="addon">
   <id>io.elementary.switchboard.applications</id>
   <extends>io.elementary.switchboard</extends>
+  <translation type="gettext">applications-plug</translation>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-2.0+</project_license>
+
+  <icon type="stock">preferences-desktop-applications</icon>
   <name>Applications Settings</name>
   <summary>Manage default and startup applications</summary>
-  <icon type="stock">preferences-desktop-applications</icon>
-  <translation type="gettext">applications-plug</translation>
+
+  <screenshots>
+    <screenshot type="default">
+      <image>https://raw.githubusercontent.com/elementary/switchboard-plug-applications/master/data/screenshot.png</image>
+    </screenshot>
+    <screenshot>
+      <image>https://raw.githubusercontent.com/elementary/switchboard-plug-applications/master/data/screenshot-startup.png</image>
+    </screenshot>
+    <screenshot>
+      <image>https://raw.githubusercontent.com/elementary/switchboard-plug-applications/master/data/screenshot-permissions.png</image>
+    </screenshot>
+  </screenshots>
+
+  <content_rating type="oars-1.1" />
+
+  <url type="bugtracker">https://github.com/elementary/switchboard-plug-applications/issues</url>
+  <url type="donation">https://elementary.io/get-involved#funding</url>
+  <url type="help">https://github.com/elementary/switchboard-plug-applications/discussions</url>
+  <url type="homepage">https://elementary.io/</url>
+  <url type="translate">https://l10n.elementary.io/engage/switchboard/</url>
+
+  <developer_name>elementary, Inc.</developer_name>
+  <project_group>elementary</project_group>
+  <update_contact>contact_at_elementary.io</update_contact>
+
   <releases>
     <release version="6.0.1" date="2021-09-27" urgency="medium">
       <description>
@@ -17,6 +45,7 @@
         </ul>
       </description>
     </release>
+
     <release version="6.0.0" date="2021-07-15" urgency="medium">
       <description>
         <p>New features:</p>
@@ -30,11 +59,13 @@
         </ul>
       </description>
     </release>
+
     <release version="2.1.7" date="2020-04-08" urgency="medium">
       <description>
         <p>Updated translations</p>
       </description>
     </release>
+
     <release version="2.1.6" date="2019-11-15" urgency="medium">
       <description>
         <p>Fix issues with OnlyShowIn and Snap apps</p>
@@ -42,19 +73,4 @@
       </description>
     </release>
   </releases>
-  <screenshots>
-    <screenshot type="default">
-      <image>https://raw.githubusercontent.com/elementary/switchboard-plug-applications/master/data/screenshot.png</image>
-    </screenshot>
-    <screenshot>
-      <image>https://raw.githubusercontent.com/elementary/switchboard-plug-applications/master/data/screenshot-startup.png</image>
-    </screenshot>
-    <screenshot>
-      <image>https://raw.githubusercontent.com/elementary/switchboard-plug-applications/master/data/screenshot-permissions.png</image>
-    </screenshot>
-  </screenshots>
-  <url type="homepage">https://elementary.io</url>
-  <url type="bugtracker">https://github.com/elementary/switchboard-plug-applications/issues</url>
-  <metadata_license>CC0-1.0</metadata_license>
-  <project_license>GPL-2.0+</project_license>
 </component>
