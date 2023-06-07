@@ -1,5 +1,5 @@
 /*
-* Copyright 2013-2020 elementary, Inc. (https://elementary.io)
+* Copyright 2013-2023 elementary, Inc. (https://elementary.io)
 *
 * This program is free software; you can redistribute it and/or
 * modify it under the terms of the GNU General Public
@@ -26,35 +26,48 @@
  */
 public class Startup.Backend.KeyFile : GLib.Object {
     private const string FALLBACK_ICON = "application-default-icon";
-    private const string KEY_ACTIVE = "X-GNOME-Autostart-enabled";
+    private const string KEY_GNOME_AUTOSTART_ENABLED = "X-GNOME-Autostart-enabled";
 
     public bool active {
         get {
-            return keyfile_get_bool (KEY_ACTIVE);
+            if (keyfile_has_key (KEY_GNOME_AUTOSTART_ENABLED)) {
+                return keyfile_get_bool (KEY_GNOME_AUTOSTART_ENABLED);
+            }
+
+            return !keyfile_get_bool (KeyFileDesktop.KEY_HIDDEN);
         }
+
         set {
-            keyfile.set_boolean (KeyFileDesktop.GROUP, KEY_ACTIVE, value);
+            if (keyfile_has_key (KEY_GNOME_AUTOSTART_ENABLED)) {
+                keyfile.set_boolean (KeyFileDesktop.GROUP, KEY_GNOME_AUTOSTART_ENABLED, value);
+                return;
+            }
+
+            keyfile.set_boolean (KeyFileDesktop.GROUP, KeyFileDesktop.KEY_HIDDEN, !value);
         }
     }
 
     public bool show {
         get {
-            if (keyfile_get_bool (KeyFileDesktop.KEY_NO_DISPLAY) || keyfile_get_bool (KeyFileDesktop.KEY_HIDDEN)) {
+            if (keyfile_get_bool (KeyFileDesktop.KEY_NO_DISPLAY)) {
                 return false;
             }
 
-            var session = Environment.get_variable ("DESKTOP_SESSION").down ();
-            var not_show_in = keyfile_get_string (KeyFileDesktop.KEY_NOT_SHOW_IN).down ();
-            if (session in not_show_in) {
-                return false;
+            var current_desktop = Environment.get_variable ("XDG_CURRENT_DESKTOP").split (":");
+            var only_show_in = keyfile_get_string (KeyFileDesktop.KEY_ONLY_SHOW_IN).split (":");
+            var not_show_in = keyfile_get_string (KeyFileDesktop.KEY_NOT_SHOW_IN).split (":");
+
+            foreach (unowned var desktop in current_desktop) {
+                if (desktop in only_show_in) {
+                    return true;
+                }
+
+                if (desktop in not_show_in) {
+                    return false;
+                }
             }
 
-            var only_show_in = keyfile_get_string (KeyFileDesktop.KEY_ONLY_SHOW_IN).down ();
-            if (only_show_in == "" || session in only_show_in) {
-                return true;
-            }
-
-            return false;
+            return !keyfile_has_key (KeyFileDesktop.KEY_ONLY_SHOW_IN);
         }
     }
 
@@ -156,6 +169,16 @@ public class Startup.Backend.KeyFile : GLib.Object {
         }
 
         return "";
+    }
+
+    private bool keyfile_has_key (string key) {
+        try {
+            return keyfile.has_key (KeyFileDesktop.GROUP, key);
+        } catch (KeyFileError e) {
+            debug (e.message);
+        }
+
+        return false;
     }
 
     public void copy_to_local () requires (path != null) {
