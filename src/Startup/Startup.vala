@@ -75,8 +75,6 @@ public class Startup.Plug : Gtk.Grid {
         frame.add (grid);
 
         orientation = Gtk.Orientation.VERTICAL;
-        margin = 12;
-        margin_top = 0;
         add (frame);
 
         app_chooser = new Widgets.AppChooser (add_button);

@@ -11,6 +11,7 @@ You'll need the following dependencies:
 * libflatpak-dev
 * libgranite-dev
 * libgtk-3-dev
+* libhandy-1-dev
 * meson
 * valac
 

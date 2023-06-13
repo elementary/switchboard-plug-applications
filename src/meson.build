@@ -37,6 +37,7 @@ shared_module(
         dependency('gobject-2.0'),
         dependency('granite'),
         dependency('gtk+-3.0'),
+        dependency('libhandy-1'),
         switchboard_dep
     ],
     install: true,
