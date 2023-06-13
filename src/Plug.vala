@@ -60,11 +60,14 @@ public class ApplicationsPlug : Switchboard.Plug {
             var stack_switcher = new Gtk.StackSwitcher () {
                 halign = Gtk.Align.CENTER,
                 homogeneous = true,
-                margin_top = 12,
                 stack = stack
             };
 
             grid = new Gtk.Grid () {
+                margin_top = 12,
+                margin_end = 12,
+                margin_bottom = 12,
+                margin_start = 12,
                 row_spacing = 24
             };
             grid.attach (stack_switcher, 0, 0);
