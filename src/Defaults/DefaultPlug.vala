@@ -60,6 +60,7 @@ public class Defaults.Plug : Gtk.Box {
             homogeneous = true,
             column_spacing = 24,
             row_spacing = 12,
+            max_children_per_line = 2,
             valign = START
         };
         flowbox.add (browser_setting);
