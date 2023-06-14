@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-09-23 23:18+0000\n"
+"POT-Creation-Date: 2023-06-14 01:19+0000\n"
 "PO-Revision-Date: 2023-03-11 14:15+0000\n"
 "Last-Translator: NorwayFun <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <https://l10n.elementary.io/projects/switchboard/"
@@ -27,60 +27,60 @@ msgstr "აპლიკაციები"
 msgid "Defaults"
 msgstr "ნაგულისხმები მნიშვნელობები"
 
-#: src/Plug.vala:57 src/Plug.vala:102
+#: src/Plug.vala:57 src/Plug.vala:105
 msgid "Startup"
 msgstr "გაშვება"
 
-#: src/Plug.vala:58 src/Plug.vala:104
+#: src/Plug.vala:58 src/Plug.vala:107
 msgid "Permissions"
 msgstr "ნებართვები"
 
-#: src/Plug.vala:103
+#: src/Plug.vala:106
 msgid "Default Apps"
 msgstr "ნაგულისხმები აპები"
 
-#: src/Plug.vala:105
+#: src/Plug.vala:108
 msgid "Sandboxing"
 msgstr ""
 
-#: src/Plug.vala:106
+#: src/Plug.vala:109
 msgid "Confinement"
 msgstr ""
 
-#: src/Plug.vala:107 src/Plug.vala:108 src/Plug.vala:109 src/Plug.vala:110
-#: src/Plug.vala:111 src/Plug.vala:112 src/Plug.vala:113 src/Plug.vala:114
+#: src/Plug.vala:110 src/Plug.vala:111 src/Plug.vala:112 src/Plug.vala:113
+#: src/Plug.vala:114 src/Plug.vala:115 src/Plug.vala:116 src/Plug.vala:117
 msgid "Default"
 msgstr "ნაგულისხმები"
 
-#: src/Plug.vala:107
+#: src/Plug.vala:110 src/Defaults/DefaultPlug.vala:12
 msgid "Web Browser"
 msgstr "ვებ-ბრაუზერი"
 
-#: src/Plug.vala:108
+#: src/Plug.vala:111 src/Defaults/DefaultPlug.vala:18
 msgid "Email Client"
 msgstr "ელფოსტის კლიენტი"
 
-#: src/Plug.vala:109
+#: src/Plug.vala:112 src/Defaults/DefaultPlug.vala:24
 msgid "Calendar"
 msgstr "კალენდარი"
 
-#: src/Plug.vala:110
+#: src/Plug.vala:113 src/Defaults/DefaultPlug.vala:30
 msgid "Video Player"
 msgstr "ვიდეო დამკვრელი"
 
-#: src/Plug.vala:111
+#: src/Plug.vala:114 src/Defaults/DefaultPlug.vala:36
 msgid "Music Player"
 msgstr "მუსიკის დამკვრელი"
 
-#: src/Plug.vala:112
+#: src/Plug.vala:115 src/Defaults/DefaultPlug.vala:48
 msgid "Text Editor"
 msgstr "ტექსტური რედაქტორი"
 
-#: src/Plug.vala:113
+#: src/Plug.vala:116 src/Defaults/DefaultPlug.vala:42
 msgid "Image Viewer"
 msgstr "სურათების გამხსნელი"
 
-#: src/Plug.vala:114
+#: src/Plug.vala:117 src/Defaults/DefaultPlug.vala:54
 msgid "File Browser"
 msgstr "ფაილების ბრაუზერი"
 
@@ -186,7 +186,7 @@ msgstr "ჩატვირთვისას გასაშვები აპ�
 msgid "Remove Selected Startup App"
 msgstr "ჩატვირთვისას გასაშვები აპის წაშლა"
 
-#: src/Startup/Backend/KeyFile.vala:86
+#: src/Startup/Backend/KeyFile.vala:99
 msgid "Custom Command"
 msgstr "ხელით შეყვანილი ბრძანება"
 
@@ -203,34 +203,26 @@ msgstr "აპლიკაციების ძებნა"
 msgid "Type in a custom command"
 msgstr "შეიყვანეთ ბრძანება ხელით"
 
-#: src/Defaults/DefaultPlug.vala:40
-msgid "Web Browser:"
-msgstr "ვებ-ბრაუზერი:"
+#~ msgid "Web Browser:"
+#~ msgstr "ვებ-ბრაუზერი:"
 
-#: src/Defaults/DefaultPlug.vala:44
-msgid "Email Client:"
-msgstr "ელფოსტის კლიენტი:"
+#~ msgid "Email Client:"
+#~ msgstr "ელფოსტის კლიენტი:"
 
-#: src/Defaults/DefaultPlug.vala:48
-msgid "Calendar:"
-msgstr "კალენდარი:"
+#~ msgid "Calendar:"
+#~ msgstr "კალენდარი:"
 
-#: src/Defaults/DefaultPlug.vala:52
-msgid "Video Player:"
-msgstr "ვიდეო დამკვრელი:"
+#~ msgid "Video Player:"
+#~ msgstr "ვიდეო დამკვრელი:"
 
-#: src/Defaults/DefaultPlug.vala:58
-msgid "Music Player:"
-msgstr "მუსიკის დამკვრელი:"
+#~ msgid "Music Player:"
+#~ msgstr "მუსიკის დამკვრელი:"
 
-#: src/Defaults/DefaultPlug.vala:63
-msgid "Image Viewer:"
-msgstr "სურათების გამხსნელი:"
+#~ msgid "Image Viewer:"
+#~ msgstr "სურათების გამხსნელი:"
 
-#: src/Defaults/DefaultPlug.vala:68
-msgid "Text Editor:"
-msgstr "ტექსტური რედაქტორი:"
+#~ msgid "Text Editor:"
+#~ msgstr "ტექსტური რედაქტორი:"
 
-#: src/Defaults/DefaultPlug.vala:73
-msgid "File Browser:"
-msgstr "ფაილების ბრაუზერი:"
+#~ msgid "File Browser:"
+#~ msgstr "ფაილების ბრაუზერი:"

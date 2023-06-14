@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-09-23 23:18+0000\n"
+"POT-Creation-Date: 2023-06-14 01:19+0000\n"
 "PO-Revision-Date: 2023-05-30 03:07+0000\n"
 "Last-Translator: Dennis ten Hoove <dennistenhoove@protonmail.com>\n"
 "Language-Team: Dutch <https://l10n.elementary.io/projects/switchboard/"
@@ -29,60 +29,60 @@ msgstr "Applicaties"
 msgid "Defaults"
 msgstr "Standaarden"
 
-#: src/Plug.vala:57 src/Plug.vala:102
+#: src/Plug.vala:57 src/Plug.vala:105
 msgid "Startup"
 msgstr "Opstarten"
 
-#: src/Plug.vala:58 src/Plug.vala:104
+#: src/Plug.vala:58 src/Plug.vala:107
 msgid "Permissions"
 msgstr "Rechten"
 
-#: src/Plug.vala:103
+#: src/Plug.vala:106
 msgid "Default Apps"
 msgstr "Standaardapplicaties"
 
-#: src/Plug.vala:105
+#: src/Plug.vala:108
 msgid "Sandboxing"
 msgstr "Sandboxes"
 
-#: src/Plug.vala:106
+#: src/Plug.vala:109
 msgid "Confinement"
 msgstr "Opsluiten"
 
-#: src/Plug.vala:107 src/Plug.vala:108 src/Plug.vala:109 src/Plug.vala:110
-#: src/Plug.vala:111 src/Plug.vala:112 src/Plug.vala:113 src/Plug.vala:114
+#: src/Plug.vala:110 src/Plug.vala:111 src/Plug.vala:112 src/Plug.vala:113
+#: src/Plug.vala:114 src/Plug.vala:115 src/Plug.vala:116 src/Plug.vala:117
 msgid "Default"
 msgstr "Standaard"
 
-#: src/Plug.vala:107
+#: src/Plug.vala:110 src/Defaults/DefaultPlug.vala:12
 msgid "Web Browser"
 msgstr "Webbrowser"
 
-#: src/Plug.vala:108
+#: src/Plug.vala:111 src/Defaults/DefaultPlug.vala:18
 msgid "Email Client"
 msgstr "E-mailclient"
 
-#: src/Plug.vala:109
+#: src/Plug.vala:112 src/Defaults/DefaultPlug.vala:24
 msgid "Calendar"
 msgstr "Agenda"
 
-#: src/Plug.vala:110
+#: src/Plug.vala:113 src/Defaults/DefaultPlug.vala:30
 msgid "Video Player"
 msgstr "Videospeler"
 
-#: src/Plug.vala:111
+#: src/Plug.vala:114 src/Defaults/DefaultPlug.vala:36
 msgid "Music Player"
 msgstr "Muziekspeler"
 
-#: src/Plug.vala:112
+#: src/Plug.vala:115 src/Defaults/DefaultPlug.vala:48
 msgid "Text Editor"
 msgstr "Tekstverwerker"
 
-#: src/Plug.vala:113
+#: src/Plug.vala:116 src/Defaults/DefaultPlug.vala:42
 msgid "Image Viewer"
 msgstr "Afbeeldingen"
 
-#: src/Plug.vala:114
+#: src/Plug.vala:117 src/Defaults/DefaultPlug.vala:54
 msgid "File Browser"
 msgstr "Bestandsverkenner"
 
@@ -199,7 +199,7 @@ msgstr "Voeg een opstarttoepassing toe…"
 msgid "Remove Selected Startup App"
 msgstr "Verwijder de geselecteerde opstarttoepassing"
 
-#: src/Startup/Backend/KeyFile.vala:86
+#: src/Startup/Backend/KeyFile.vala:99
 msgid "Custom Command"
 msgstr "Aangepast commando"
 
@@ -216,37 +216,29 @@ msgstr "Zoek applicaties"
 msgid "Type in a custom command"
 msgstr "Voer een aangepast commando in"
 
-#: src/Defaults/DefaultPlug.vala:40
-msgid "Web Browser:"
-msgstr "Webbrowser:"
+#~ msgid "Web Browser:"
+#~ msgstr "Webbrowser:"
 
-#: src/Defaults/DefaultPlug.vala:44
-msgid "Email Client:"
-msgstr "E-mailclient:"
+#~ msgid "Email Client:"
+#~ msgstr "E-mailclient:"
 
-#: src/Defaults/DefaultPlug.vala:48
-msgid "Calendar:"
-msgstr "Agenda:"
+#~ msgid "Calendar:"
+#~ msgstr "Agenda:"
 
-#: src/Defaults/DefaultPlug.vala:52
-msgid "Video Player:"
-msgstr "Videospeler:"
+#~ msgid "Video Player:"
+#~ msgstr "Videospeler:"
 
-#: src/Defaults/DefaultPlug.vala:58
-msgid "Music Player:"
-msgstr "Muziekspeler:"
+#~ msgid "Music Player:"
+#~ msgstr "Muziekspeler:"
 
-#: src/Defaults/DefaultPlug.vala:63
-msgid "Image Viewer:"
-msgstr "Afbeeldingen:"
+#~ msgid "Image Viewer:"
+#~ msgstr "Afbeeldingen:"
 
-#: src/Defaults/DefaultPlug.vala:68
-msgid "Text Editor:"
-msgstr "Tekstverwerker:"
+#~ msgid "Text Editor:"
+#~ msgstr "Tekstverwerker:"
 
-#: src/Defaults/DefaultPlug.vala:73
-msgid "File Browser:"
-msgstr "Bestandsverkenner:"
+#~ msgid "File Browser:"
+#~ msgstr "Bestandsverkenner:"
 
 #~ msgid "Default Application"
 #~ msgstr "Standaardapplicatie"

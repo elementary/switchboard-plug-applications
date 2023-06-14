@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-applications\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-09-23 23:18+0000\n"
+"POT-Creation-Date: 2023-06-14 01:19+0000\n"
 "PO-Revision-Date: 2020-10-11 21:36+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Kurdish <https://l10n.elementary.io/projects/switchboard/"
@@ -36,67 +36,67 @@ msgstr "Sepan"
 msgid "Defaults"
 msgstr "Jixweber"
 
-#: src/Plug.vala:57 src/Plug.vala:102
+#: src/Plug.vala:57 src/Plug.vala:105
 msgid "Startup"
 msgstr "Destpêk"
 
-#: src/Plug.vala:58 src/Plug.vala:104
+#: src/Plug.vala:58 src/Plug.vala:107
 msgid "Permissions"
 msgstr ""
 
-#: src/Plug.vala:103
+#: src/Plug.vala:106
 msgid "Default Apps"
 msgstr "Sepanên Jixweber"
 
-#: src/Plug.vala:105
+#: src/Plug.vala:108
 msgid "Sandboxing"
 msgstr ""
 
-#: src/Plug.vala:106
+#: src/Plug.vala:109
 msgid "Confinement"
 msgstr ""
 
-#: src/Plug.vala:107 src/Plug.vala:108 src/Plug.vala:109 src/Plug.vala:110
-#: src/Plug.vala:111 src/Plug.vala:112 src/Plug.vala:113 src/Plug.vala:114
+#: src/Plug.vala:110 src/Plug.vala:111 src/Plug.vala:112 src/Plug.vala:113
+#: src/Plug.vala:114 src/Plug.vala:115 src/Plug.vala:116 src/Plug.vala:117
 msgid "Default"
 msgstr "Jixweber"
 
-#: src/Plug.vala:107
+#: src/Plug.vala:110 src/Defaults/DefaultPlug.vala:12
 #, fuzzy
 msgid "Web Browser"
 msgstr "Geroka Torê:"
 
-#: src/Plug.vala:108
+#: src/Plug.vala:111 src/Defaults/DefaultPlug.vala:18
 #, fuzzy
 msgid "Email Client"
 msgstr "bikirre E-Peyam:"
 
-#: src/Plug.vala:109
+#: src/Plug.vala:112 src/Defaults/DefaultPlug.vala:24
 #, fuzzy
 msgid "Calendar"
 msgstr "Salname:"
 
-#: src/Plug.vala:110
+#: src/Plug.vala:113 src/Defaults/DefaultPlug.vala:30
 #, fuzzy
 msgid "Video Player"
 msgstr "Lêdera Vîdyoyê:"
 
-#: src/Plug.vala:111
+#: src/Plug.vala:114 src/Defaults/DefaultPlug.vala:36
 #, fuzzy
 msgid "Music Player"
 msgstr "Lêdera Muzîkê:"
 
-#: src/Plug.vala:112
+#: src/Plug.vala:115 src/Defaults/DefaultPlug.vala:48
 #, fuzzy
 msgid "Text Editor"
 msgstr "Rêvebira Nivîsê:"
 
-#: src/Plug.vala:113
+#: src/Plug.vala:116 src/Defaults/DefaultPlug.vala:42
 #, fuzzy
 msgid "Image Viewer"
 msgstr "Dîmendera Wêneyê:"
 
-#: src/Plug.vala:114
+#: src/Plug.vala:117 src/Defaults/DefaultPlug.vala:54
 #, fuzzy
 msgid "File Browser"
 msgstr "Peldanka Gerokê:"
@@ -205,7 +205,7 @@ msgstr "Sepana Destpêkê Tevlî Bike…"
 msgid "Remove Selected Startup App"
 msgstr "Sepana Destpêkê ya Hilbijartî Rake"
 
-#: src/Startup/Backend/KeyFile.vala:86
+#: src/Startup/Backend/KeyFile.vala:99
 msgid "Custom Command"
 msgstr "Fermana Taybet"
 
@@ -222,37 +222,29 @@ msgstr "Li sepanan bigere"
 msgid "Type in a custom command"
 msgstr "Fermane taybet binivîse"
 
-#: src/Defaults/DefaultPlug.vala:40
-msgid "Web Browser:"
-msgstr "Geroka Torê:"
+#~ msgid "Web Browser:"
+#~ msgstr "Geroka Torê:"
 
-#: src/Defaults/DefaultPlug.vala:44
-msgid "Email Client:"
-msgstr "bikirre E-Peyam:"
+#~ msgid "Email Client:"
+#~ msgstr "bikirre E-Peyam:"
 
-#: src/Defaults/DefaultPlug.vala:48
-msgid "Calendar:"
-msgstr "Salname:"
+#~ msgid "Calendar:"
+#~ msgstr "Salname:"
 
-#: src/Defaults/DefaultPlug.vala:52
-msgid "Video Player:"
-msgstr "Lêdera Vîdyoyê:"
+#~ msgid "Video Player:"
+#~ msgstr "Lêdera Vîdyoyê:"
 
-#: src/Defaults/DefaultPlug.vala:58
-msgid "Music Player:"
-msgstr "Lêdera Muzîkê:"
+#~ msgid "Music Player:"
+#~ msgstr "Lêdera Muzîkê:"
 
-#: src/Defaults/DefaultPlug.vala:63
-msgid "Image Viewer:"
-msgstr "Dîmendera Wêneyê:"
+#~ msgid "Image Viewer:"
+#~ msgstr "Dîmendera Wêneyê:"
 
-#: src/Defaults/DefaultPlug.vala:68
-msgid "Text Editor:"
-msgstr "Rêvebira Nivîsê:"
+#~ msgid "Text Editor:"
+#~ msgstr "Rêvebira Nivîsê:"
 
-#: src/Defaults/DefaultPlug.vala:73
-msgid "File Browser:"
-msgstr "Peldanka Gerokê:"
+#~ msgid "File Browser:"
+#~ msgstr "Peldanka Gerokê:"
 
 #~ msgid "Default Application"
 #~ msgstr "Sepana jixweber"

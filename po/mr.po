@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-09-23 23:18+0000\n"
+"POT-Creation-Date: 2023-06-14 01:19+0000\n"
 "PO-Revision-Date: 2020-12-02 18:17+0000\n"
 "Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
 "Language-Team: Marathi <https://l10n.elementary.io/projects/switchboard/"
@@ -27,60 +27,60 @@ msgstr "ॲप्लिकेशन्स्"
 msgid "Defaults"
 msgstr "डीफॉल्ट"
 
-#: src/Plug.vala:57 src/Plug.vala:102
+#: src/Plug.vala:57 src/Plug.vala:105
 msgid "Startup"
 msgstr "स्टार्टअप"
 
-#: src/Plug.vala:58 src/Plug.vala:104
+#: src/Plug.vala:58 src/Plug.vala:107
 msgid "Permissions"
 msgstr "परवानग्या"
 
-#: src/Plug.vala:103
+#: src/Plug.vala:106
 msgid "Default Apps"
 msgstr "डीफॉल्ट अॅप्स"
 
-#: src/Plug.vala:105
+#: src/Plug.vala:108
 msgid "Sandboxing"
 msgstr "सँडबॉक्सिंग"
 
-#: src/Plug.vala:106
+#: src/Plug.vala:109
 msgid "Confinement"
 msgstr "कारावास"
 
-#: src/Plug.vala:107 src/Plug.vala:108 src/Plug.vala:109 src/Plug.vala:110
-#: src/Plug.vala:111 src/Plug.vala:112 src/Plug.vala:113 src/Plug.vala:114
+#: src/Plug.vala:110 src/Plug.vala:111 src/Plug.vala:112 src/Plug.vala:113
+#: src/Plug.vala:114 src/Plug.vala:115 src/Plug.vala:116 src/Plug.vala:117
 msgid "Default"
 msgstr "डीफॉल्ट"
 
-#: src/Plug.vala:107
+#: src/Plug.vala:110 src/Defaults/DefaultPlug.vala:12
 msgid "Web Browser"
 msgstr "वेब ब्राउझर"
 
-#: src/Plug.vala:108
+#: src/Plug.vala:111 src/Defaults/DefaultPlug.vala:18
 msgid "Email Client"
 msgstr "ईमेल क्लायंट"
 
-#: src/Plug.vala:109
+#: src/Plug.vala:112 src/Defaults/DefaultPlug.vala:24
 msgid "Calendar"
 msgstr "कॅलेंडर"
 
-#: src/Plug.vala:110
+#: src/Plug.vala:113 src/Defaults/DefaultPlug.vala:30
 msgid "Video Player"
 msgstr "व्हिडिओ प्लेयर"
 
-#: src/Plug.vala:111
+#: src/Plug.vala:114 src/Defaults/DefaultPlug.vala:36
 msgid "Music Player"
 msgstr "संगीत प्लेअर"
 
-#: src/Plug.vala:112
+#: src/Plug.vala:115 src/Defaults/DefaultPlug.vala:48
 msgid "Text Editor"
 msgstr "मजकूर संपादक"
 
-#: src/Plug.vala:113
+#: src/Plug.vala:116 src/Defaults/DefaultPlug.vala:42
 msgid "Image Viewer"
 msgstr "प्रतिमा दर्शक"
 
-#: src/Plug.vala:114
+#: src/Plug.vala:117 src/Defaults/DefaultPlug.vala:54
 msgid "File Browser"
 msgstr "फाइल ब्राउजर"
 
@@ -196,7 +196,7 @@ msgstr "स्टार्टअप अॅप जोडा…"
 msgid "Remove Selected Startup App"
 msgstr "निवडलेले स्टार्टअप अॅप काढा"
 
-#: src/Startup/Backend/KeyFile.vala:86
+#: src/Startup/Backend/KeyFile.vala:99
 msgid "Custom Command"
 msgstr "सानुकूल आदेश"
 
@@ -213,37 +213,29 @@ msgstr "अप्लिकेशन शोधा"
 msgid "Type in a custom command"
 msgstr "सानुकूल आज्ञा टाइप करा"
 
-#: src/Defaults/DefaultPlug.vala:40
-msgid "Web Browser:"
-msgstr "वेब ब्राउझर:"
+#~ msgid "Web Browser:"
+#~ msgstr "वेब ब्राउझर:"
 
-#: src/Defaults/DefaultPlug.vala:44
-msgid "Email Client:"
-msgstr "email client:"
+#~ msgid "Email Client:"
+#~ msgstr "email client:"
 
-#: src/Defaults/DefaultPlug.vala:48
-msgid "Calendar:"
-msgstr "calender:"
+#~ msgid "Calendar:"
+#~ msgstr "calender:"
 
-#: src/Defaults/DefaultPlug.vala:52
-msgid "Video Player:"
-msgstr "व्हिडिओ प्लेयर:"
+#~ msgid "Video Player:"
+#~ msgstr "व्हिडिओ प्लेयर:"
 
-#: src/Defaults/DefaultPlug.vala:58
-msgid "Music Player:"
-msgstr "संगीत प्लेअर:"
+#~ msgid "Music Player:"
+#~ msgstr "संगीत प्लेअर:"
 
-#: src/Defaults/DefaultPlug.vala:63
-msgid "Image Viewer:"
-msgstr "प्रतिमा दर्शक:"
+#~ msgid "Image Viewer:"
+#~ msgstr "प्रतिमा दर्शक:"
 
-#: src/Defaults/DefaultPlug.vala:68
-msgid "Text Editor:"
-msgstr "मजकूर संपादक:"
+#~ msgid "Text Editor:"
+#~ msgstr "मजकूर संपादक:"
 
-#: src/Defaults/DefaultPlug.vala:73
-msgid "File Browser:"
-msgstr "फाइल ब्राउजर:"
+#~ msgid "File Browser:"
+#~ msgstr "फाइल ब्राउजर:"
 
 #~ msgid "Default Application"
 #~ msgstr "डीफॉल्ट अप्लिकेशन"

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-09-23 23:18+0000\n"
+"POT-Creation-Date: 2023-06-14 01:19+0000\n"
 "PO-Revision-Date: 2021-04-09 13:11+0000\n"
 "Last-Translator: David M <rbndavid@gmail.com>\n"
 "Language-Team: Catalan <https://l10n.elementary.io/projects/switchboard/"
@@ -28,60 +28,60 @@ msgstr "Aplicacions"
 msgid "Defaults"
 msgstr "Per defecte"
 
-#: src/Plug.vala:57 src/Plug.vala:102
+#: src/Plug.vala:57 src/Plug.vala:105
 msgid "Startup"
 msgstr "Inici"
 
-#: src/Plug.vala:58 src/Plug.vala:104
+#: src/Plug.vala:58 src/Plug.vala:107
 msgid "Permissions"
 msgstr "Permisos"
 
-#: src/Plug.vala:103
+#: src/Plug.vala:106
 msgid "Default Apps"
 msgstr "Aplicacions per defecte"
 
-#: src/Plug.vala:105
+#: src/Plug.vala:108
 msgid "Sandboxing"
 msgstr "Caixa de sorra"
 
-#: src/Plug.vala:106
+#: src/Plug.vala:109
 msgid "Confinement"
 msgstr "Confinament"
 
-#: src/Plug.vala:107 src/Plug.vala:108 src/Plug.vala:109 src/Plug.vala:110
-#: src/Plug.vala:111 src/Plug.vala:112 src/Plug.vala:113 src/Plug.vala:114
+#: src/Plug.vala:110 src/Plug.vala:111 src/Plug.vala:112 src/Plug.vala:113
+#: src/Plug.vala:114 src/Plug.vala:115 src/Plug.vala:116 src/Plug.vala:117
 msgid "Default"
 msgstr "Per defecte"
 
-#: src/Plug.vala:107
+#: src/Plug.vala:110 src/Defaults/DefaultPlug.vala:12
 msgid "Web Browser"
 msgstr "Navegador web"
 
-#: src/Plug.vala:108
+#: src/Plug.vala:111 src/Defaults/DefaultPlug.vala:18
 msgid "Email Client"
 msgstr "Client de correu"
 
-#: src/Plug.vala:109
+#: src/Plug.vala:112 src/Defaults/DefaultPlug.vala:24
 msgid "Calendar"
 msgstr "Calendari"
 
-#: src/Plug.vala:110
+#: src/Plug.vala:113 src/Defaults/DefaultPlug.vala:30
 msgid "Video Player"
 msgstr "Reproductor de vídeo"
 
-#: src/Plug.vala:111
+#: src/Plug.vala:114 src/Defaults/DefaultPlug.vala:36
 msgid "Music Player"
 msgstr "Reproductor de música"
 
-#: src/Plug.vala:112
+#: src/Plug.vala:115 src/Defaults/DefaultPlug.vala:48
 msgid "Text Editor"
 msgstr "Editor de textos"
 
-#: src/Plug.vala:113
+#: src/Plug.vala:116 src/Defaults/DefaultPlug.vala:42
 msgid "Image Viewer"
 msgstr "Visualitzador d'imatges"
 
-#: src/Plug.vala:114
+#: src/Plug.vala:117 src/Defaults/DefaultPlug.vala:54
 msgid "File Browser"
 msgstr "Navegador de fitxers"
 
@@ -198,7 +198,7 @@ msgstr "Afegeix una aplicació d'inici…"
 msgid "Remove Selected Startup App"
 msgstr "Suprimeix l'aplicació d'inici seleccionada"
 
-#: src/Startup/Backend/KeyFile.vala:86
+#: src/Startup/Backend/KeyFile.vala:99
 msgid "Custom Command"
 msgstr "Ordre personalitzada"
 
@@ -215,37 +215,29 @@ msgstr "Cerca aplicacions"
 msgid "Type in a custom command"
 msgstr "Introduïu una ordre personalitzada"
 
-#: src/Defaults/DefaultPlug.vala:40
-msgid "Web Browser:"
-msgstr "Navegador web:"
+#~ msgid "Web Browser:"
+#~ msgstr "Navegador web:"
 
-#: src/Defaults/DefaultPlug.vala:44
-msgid "Email Client:"
-msgstr "Client de correu:"
+#~ msgid "Email Client:"
+#~ msgstr "Client de correu:"
 
-#: src/Defaults/DefaultPlug.vala:48
-msgid "Calendar:"
-msgstr "Calendari:"
+#~ msgid "Calendar:"
+#~ msgstr "Calendari:"
 
-#: src/Defaults/DefaultPlug.vala:52
-msgid "Video Player:"
-msgstr "Reproductor de vídeo:"
+#~ msgid "Video Player:"
+#~ msgstr "Reproductor de vídeo:"
 
-#: src/Defaults/DefaultPlug.vala:58
-msgid "Music Player:"
-msgstr "Reproductor de música:"
+#~ msgid "Music Player:"
+#~ msgstr "Reproductor de música:"
 
-#: src/Defaults/DefaultPlug.vala:63
-msgid "Image Viewer:"
-msgstr "Visualitzador d'imatges:"
+#~ msgid "Image Viewer:"
+#~ msgstr "Visualitzador d'imatges:"
 
-#: src/Defaults/DefaultPlug.vala:68
-msgid "Text Editor:"
-msgstr "Editor de textos:"
+#~ msgid "Text Editor:"
+#~ msgstr "Editor de textos:"
 
-#: src/Defaults/DefaultPlug.vala:73
-msgid "File Browser:"
-msgstr "Navegador de fitxers:"
+#~ msgid "File Browser:"
+#~ msgstr "Navegador de fitxers:"
 
 #~ msgid "Default Application"
 #~ msgstr "Aplicació per defecte"

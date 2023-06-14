@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-09-23 23:18+0000\n"
+"POT-Creation-Date: 2023-06-14 01:19+0000\n"
 "PO-Revision-Date: 2021-04-27 21:25+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Arabic <https://l10n.elementary.io/projects/switchboard/"
@@ -30,61 +30,61 @@ msgstr "التطبيقات"
 msgid "Defaults"
 msgstr "افتراضي"
 
-#: src/Plug.vala:57 src/Plug.vala:102
+#: src/Plug.vala:57 src/Plug.vala:105
 msgid "Startup"
 msgstr "بدء التشغيل"
 
-#: src/Plug.vala:58 src/Plug.vala:104
+#: src/Plug.vala:58 src/Plug.vala:107
 msgid "Permissions"
 msgstr ""
 
-#: src/Plug.vala:103
+#: src/Plug.vala:106
 msgid "Default Apps"
 msgstr "التطبيقات الإفتراضية"
 
-#: src/Plug.vala:105
+#: src/Plug.vala:108
 msgid "Sandboxing"
 msgstr ""
 
-#: src/Plug.vala:106
+#: src/Plug.vala:109
 msgid "Confinement"
 msgstr ""
 
-#: src/Plug.vala:107 src/Plug.vala:108 src/Plug.vala:109 src/Plug.vala:110
-#: src/Plug.vala:111 src/Plug.vala:112 src/Plug.vala:113 src/Plug.vala:114
+#: src/Plug.vala:110 src/Plug.vala:111 src/Plug.vala:112 src/Plug.vala:113
+#: src/Plug.vala:114 src/Plug.vala:115 src/Plug.vala:116 src/Plug.vala:117
 msgid "Default"
 msgstr "افتراضي"
 
-#: src/Plug.vala:107
+#: src/Plug.vala:110 src/Defaults/DefaultPlug.vala:12
 msgid "Web Browser"
 msgstr "متصفح الويب"
 
-#: src/Plug.vala:108
+#: src/Plug.vala:111 src/Defaults/DefaultPlug.vala:18
 msgid "Email Client"
 msgstr "برنامج البريد الالكتروني"
 
-#: src/Plug.vala:109
+#: src/Plug.vala:112 src/Defaults/DefaultPlug.vala:24
 msgid "Calendar"
 msgstr "التقويم"
 
-#: src/Plug.vala:110
+#: src/Plug.vala:113 src/Defaults/DefaultPlug.vala:30
 #, fuzzy
 msgid "Video Player"
 msgstr "مشغل الفيديو"
 
-#: src/Plug.vala:111
+#: src/Plug.vala:114 src/Defaults/DefaultPlug.vala:36
 msgid "Music Player"
 msgstr "مشغل الموسيقى"
 
-#: src/Plug.vala:112
+#: src/Plug.vala:115 src/Defaults/DefaultPlug.vala:48
 msgid "Text Editor"
 msgstr "محرر النصوص"
 
-#: src/Plug.vala:113
+#: src/Plug.vala:116 src/Defaults/DefaultPlug.vala:42
 msgid "Image Viewer"
 msgstr "عارض الصور"
 
-#: src/Plug.vala:114
+#: src/Plug.vala:117 src/Defaults/DefaultPlug.vala:54
 msgid "File Browser"
 msgstr "مستعرض الملفات"
 
@@ -192,7 +192,7 @@ msgstr "أضِف تطبيق يعمل عند بدء التشغيل…"
 msgid "Remove Selected Startup App"
 msgstr "إزالة التطبيق المحدد من بدء التشغيل"
 
-#: src/Startup/Backend/KeyFile.vala:86
+#: src/Startup/Backend/KeyFile.vala:99
 msgid "Custom Command"
 msgstr "أمر مخصص"
 
@@ -209,37 +209,29 @@ msgstr "ابحث في التطبيقات"
 msgid "Type in a custom command"
 msgstr "إكتب أمر مُخصَص"
 
-#: src/Defaults/DefaultPlug.vala:40
-msgid "Web Browser:"
-msgstr "متصفح الويب :"
+#~ msgid "Web Browser:"
+#~ msgstr "متصفح الويب :"
 
-#: src/Defaults/DefaultPlug.vala:44
-msgid "Email Client:"
-msgstr "برنامج البريد الاكتروني:"
+#~ msgid "Email Client:"
+#~ msgstr "برنامج البريد الاكتروني:"
 
-#: src/Defaults/DefaultPlug.vala:48
-msgid "Calendar:"
-msgstr "التقويم:"
+#~ msgid "Calendar:"
+#~ msgstr "التقويم:"
 
-#: src/Defaults/DefaultPlug.vala:52
-msgid "Video Player:"
-msgstr "مشغل الفيديو:"
+#~ msgid "Video Player:"
+#~ msgstr "مشغل الفيديو:"
 
-#: src/Defaults/DefaultPlug.vala:58
-msgid "Music Player:"
-msgstr "مشغل الموسيقى:"
+#~ msgid "Music Player:"
+#~ msgstr "مشغل الموسيقى:"
 
-#: src/Defaults/DefaultPlug.vala:63
-msgid "Image Viewer:"
-msgstr "عارض الصور:"
+#~ msgid "Image Viewer:"
+#~ msgstr "عارض الصور:"
 
-#: src/Defaults/DefaultPlug.vala:68
-msgid "Text Editor:"
-msgstr "محرر النصوص:"
+#~ msgid "Text Editor:"
+#~ msgstr "محرر النصوص:"
 
-#: src/Defaults/DefaultPlug.vala:73
-msgid "File Browser:"
-msgstr "مستعرض الملفات:"
+#~ msgid "File Browser:"
+#~ msgstr "مستعرض الملفات:"
 
 #~ msgid "Default Application"
 #~ msgstr "التطبيق الإفتراضي"

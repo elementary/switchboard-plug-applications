@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-09-23 23:18+0000\n"
+"POT-Creation-Date: 2023-06-14 01:19+0000\n"
 "PO-Revision-Date: 2014-11-06 08:14+0000\n"
 "Last-Translator: Vahan Harutyunyan <Unknown>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,67 +27,67 @@ msgstr "Ծրագրեր"
 msgid "Defaults"
 msgstr "Նախնական"
 
-#: src/Plug.vala:57 src/Plug.vala:102
+#: src/Plug.vala:57 src/Plug.vala:105
 msgid "Startup"
 msgstr "Մեկնարկ"
 
-#: src/Plug.vala:58 src/Plug.vala:104
+#: src/Plug.vala:58 src/Plug.vala:107
 msgid "Permissions"
 msgstr ""
 
-#: src/Plug.vala:103
+#: src/Plug.vala:106
 msgid "Default Apps"
 msgstr ""
 
-#: src/Plug.vala:105
+#: src/Plug.vala:108
 msgid "Sandboxing"
 msgstr ""
 
-#: src/Plug.vala:106
+#: src/Plug.vala:109
 msgid "Confinement"
 msgstr ""
 
-#: src/Plug.vala:107 src/Plug.vala:108 src/Plug.vala:109 src/Plug.vala:110
-#: src/Plug.vala:111 src/Plug.vala:112 src/Plug.vala:113 src/Plug.vala:114
+#: src/Plug.vala:110 src/Plug.vala:111 src/Plug.vala:112 src/Plug.vala:113
+#: src/Plug.vala:114 src/Plug.vala:115 src/Plug.vala:116 src/Plug.vala:117
 msgid "Default"
 msgstr "Նախնական"
 
-#: src/Plug.vala:107
+#: src/Plug.vala:110 src/Defaults/DefaultPlug.vala:12
 #, fuzzy
 msgid "Web Browser"
 msgstr "Վեբ բրոուզեր"
 
-#: src/Plug.vala:108
+#: src/Plug.vala:111 src/Defaults/DefaultPlug.vala:18
 #, fuzzy
 msgid "Email Client"
 msgstr "Էլ. փոստի կլիենտ՝"
 
-#: src/Plug.vala:109
+#: src/Plug.vala:112 src/Defaults/DefaultPlug.vala:24
 #, fuzzy
 msgid "Calendar"
 msgstr "Օրացույց"
 
-#: src/Plug.vala:110
+#: src/Plug.vala:113 src/Defaults/DefaultPlug.vala:30
 #, fuzzy
 msgid "Video Player"
 msgstr "Վիդեո նվագարկիչ՝"
 
-#: src/Plug.vala:111
+#: src/Plug.vala:114 src/Defaults/DefaultPlug.vala:36
 #, fuzzy
 msgid "Music Player"
 msgstr "Նվագարկիչ"
 
-#: src/Plug.vala:112
+#: src/Plug.vala:115 src/Defaults/DefaultPlug.vala:48
 #, fuzzy
 msgid "Text Editor"
 msgstr "Տեքստային խմբագրիչ"
 
-#: src/Plug.vala:113
+#: src/Plug.vala:116 src/Defaults/DefaultPlug.vala:42
 #, fuzzy
 msgid "Image Viewer"
 msgstr "Պատկերներ ցուցադրող"
 
-#: src/Plug.vala:114
+#: src/Plug.vala:117 src/Defaults/DefaultPlug.vala:54
 #, fuzzy
 msgid "File Browser"
 msgstr "Ֆայլային բրուզեր"
@@ -196,7 +196,7 @@ msgstr ""
 msgid "Remove Selected Startup App"
 msgstr ""
 
-#: src/Startup/Backend/KeyFile.vala:86
+#: src/Startup/Backend/KeyFile.vala:99
 msgid "Custom Command"
 msgstr ""
 
@@ -213,34 +213,26 @@ msgstr "Փնտրել ծրագրեր"
 msgid "Type in a custom command"
 msgstr ""
 
-#: src/Defaults/DefaultPlug.vala:40
-msgid "Web Browser:"
-msgstr "Վեբ բրոուզեր"
+#~ msgid "Web Browser:"
+#~ msgstr "Վեբ բրոուզեր"
 
-#: src/Defaults/DefaultPlug.vala:44
-msgid "Email Client:"
-msgstr "Էլ. փոստի կլիենտ՝"
+#~ msgid "Email Client:"
+#~ msgstr "Էլ. փոստի կլիենտ՝"
 
-#: src/Defaults/DefaultPlug.vala:48
-msgid "Calendar:"
-msgstr "Օրացույց"
+#~ msgid "Calendar:"
+#~ msgstr "Օրացույց"
 
-#: src/Defaults/DefaultPlug.vala:52
-msgid "Video Player:"
-msgstr "Վիդեո նվագարկիչ՝"
+#~ msgid "Video Player:"
+#~ msgstr "Վիդեո նվագարկիչ՝"
 
-#: src/Defaults/DefaultPlug.vala:58
-msgid "Music Player:"
-msgstr "Նվագարկիչ"
+#~ msgid "Music Player:"
+#~ msgstr "Նվագարկիչ"
 
-#: src/Defaults/DefaultPlug.vala:63
-msgid "Image Viewer:"
-msgstr "Պատկերներ ցուցադրող"
+#~ msgid "Image Viewer:"
+#~ msgstr "Պատկերներ ցուցադրող"
 
-#: src/Defaults/DefaultPlug.vala:68
-msgid "Text Editor:"
-msgstr "Տեքստային խմբագրիչ"
+#~ msgid "Text Editor:"
+#~ msgstr "Տեքստային խմբագրիչ"
 
-#: src/Defaults/DefaultPlug.vala:73
-msgid "File Browser:"
-msgstr "Ֆայլային բրուզեր"
+#~ msgid "File Browser:"
+#~ msgstr "Ֆայլային բրուզեր"

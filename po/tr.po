@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-09-23 23:18+0000\n"
+"POT-Creation-Date: 2023-06-14 01:19+0000\n"
 "PO-Revision-Date: 2021-04-08 19:51+0000\n"
 "Last-Translator: Ozgur Baskin <bebeto_baskin@yahoo.com>\n"
 "Language-Team: Turkish <https://l10n.elementary.io/projects/switchboard/"
@@ -29,60 +29,60 @@ msgstr "Uygulamalar"
 msgid "Defaults"
 msgstr "Varsayılanlar"
 
-#: src/Plug.vala:57 src/Plug.vala:102
+#: src/Plug.vala:57 src/Plug.vala:105
 msgid "Startup"
 msgstr "Başlangıç"
 
-#: src/Plug.vala:58 src/Plug.vala:104
+#: src/Plug.vala:58 src/Plug.vala:107
 msgid "Permissions"
 msgstr "İzinler"
 
-#: src/Plug.vala:103
+#: src/Plug.vala:106
 msgid "Default Apps"
 msgstr "Varsayılan Uygulamalar"
 
-#: src/Plug.vala:105
+#: src/Plug.vala:108
 msgid "Sandboxing"
 msgstr "Sanallaştırılma"
 
-#: src/Plug.vala:106
+#: src/Plug.vala:109
 msgid "Confinement"
 msgstr "Sınırlandırmak"
 
-#: src/Plug.vala:107 src/Plug.vala:108 src/Plug.vala:109 src/Plug.vala:110
-#: src/Plug.vala:111 src/Plug.vala:112 src/Plug.vala:113 src/Plug.vala:114
+#: src/Plug.vala:110 src/Plug.vala:111 src/Plug.vala:112 src/Plug.vala:113
+#: src/Plug.vala:114 src/Plug.vala:115 src/Plug.vala:116 src/Plug.vala:117
 msgid "Default"
 msgstr "Varsayılan"
 
-#: src/Plug.vala:107
+#: src/Plug.vala:110 src/Defaults/DefaultPlug.vala:12
 msgid "Web Browser"
 msgstr "Web Tarayıcısı"
 
-#: src/Plug.vala:108
+#: src/Plug.vala:111 src/Defaults/DefaultPlug.vala:18
 msgid "Email Client"
 msgstr "E-posta İstemcisi"
 
-#: src/Plug.vala:109
+#: src/Plug.vala:112 src/Defaults/DefaultPlug.vala:24
 msgid "Calendar"
 msgstr "Takvim"
 
-#: src/Plug.vala:110
+#: src/Plug.vala:113 src/Defaults/DefaultPlug.vala:30
 msgid "Video Player"
 msgstr "Video Oynatıcı"
 
-#: src/Plug.vala:111
+#: src/Plug.vala:114 src/Defaults/DefaultPlug.vala:36
 msgid "Music Player"
 msgstr "Müzik Çalar"
 
-#: src/Plug.vala:112
+#: src/Plug.vala:115 src/Defaults/DefaultPlug.vala:48
 msgid "Text Editor"
 msgstr "Metin Düzenleyici"
 
-#: src/Plug.vala:113
+#: src/Plug.vala:116 src/Defaults/DefaultPlug.vala:42
 msgid "Image Viewer"
 msgstr "Resim Görüntüleyici"
 
-#: src/Plug.vala:114
+#: src/Plug.vala:117 src/Defaults/DefaultPlug.vala:54
 msgid "File Browser"
 msgstr "Dosya Tarayıcısı"
 
@@ -197,7 +197,7 @@ msgstr "Başlangıç Uygulaması Ekle…"
 msgid "Remove Selected Startup App"
 msgstr "Seçili Başlangıç Uygulamasını Kaldır"
 
-#: src/Startup/Backend/KeyFile.vala:86
+#: src/Startup/Backend/KeyFile.vala:99
 msgid "Custom Command"
 msgstr "Özel Komut"
 
@@ -214,37 +214,29 @@ msgstr "Uygulama Ara"
 msgid "Type in a custom command"
 msgstr "Özel komut gir"
 
-#: src/Defaults/DefaultPlug.vala:40
-msgid "Web Browser:"
-msgstr "Web Tarayıcısı:"
+#~ msgid "Web Browser:"
+#~ msgstr "Web Tarayıcısı:"
 
-#: src/Defaults/DefaultPlug.vala:44
-msgid "Email Client:"
-msgstr "E-posta İstemcisi:"
+#~ msgid "Email Client:"
+#~ msgstr "E-posta İstemcisi:"
 
-#: src/Defaults/DefaultPlug.vala:48
-msgid "Calendar:"
-msgstr "Takvim:"
+#~ msgid "Calendar:"
+#~ msgstr "Takvim:"
 
-#: src/Defaults/DefaultPlug.vala:52
-msgid "Video Player:"
-msgstr "Video Oynatıcı:"
+#~ msgid "Video Player:"
+#~ msgstr "Video Oynatıcı:"
 
-#: src/Defaults/DefaultPlug.vala:58
-msgid "Music Player:"
-msgstr "Müzik Çalar:"
+#~ msgid "Music Player:"
+#~ msgstr "Müzik Çalar:"
 
-#: src/Defaults/DefaultPlug.vala:63
-msgid "Image Viewer:"
-msgstr "Resim Görüntüleyici:"
+#~ msgid "Image Viewer:"
+#~ msgstr "Resim Görüntüleyici:"
 
-#: src/Defaults/DefaultPlug.vala:68
-msgid "Text Editor:"
-msgstr "Metin Düzenleyici:"
+#~ msgid "Text Editor:"
+#~ msgstr "Metin Düzenleyici:"
 
-#: src/Defaults/DefaultPlug.vala:73
-msgid "File Browser:"
-msgstr "Dosya Tarayıcı:"
+#~ msgid "File Browser:"
+#~ msgstr "Dosya Tarayıcı:"
 
 #~ msgid "Default Application"
 #~ msgstr "Varsayılan Uygulama"
