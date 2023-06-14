@@ -113,6 +113,7 @@ public class Defaults.Plug : Gtk.Box {
             box.add (setting_label);
             box.add (app_chooser);
 
+            can_focus = false;
             child = box;
 
             size_group.add_widget (setting_label);
