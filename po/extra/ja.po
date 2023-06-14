@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-06-14 01:19+0000\n"
-"PO-Revision-Date: 2022-04-09 01:40+0000\n"
+"PO-Revision-Date: 2023-06-15 17:51+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
 "applications-plug-extra/ja/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 4.17\n"
 
 #: data/applications.metainfo.xml.in:10
 msgid "Applications Settings"
@@ -30,7 +30,7 @@ msgstr ""
 
 #: data/applications.metainfo.xml.in:33
 msgid "elementary, Inc."
-msgstr ""
+msgstr "elementary, Inc."
 
 #: data/applications.metainfo.xml.in:40 data/applications.metainfo.xml.in:50
 #: data/applications.metainfo.xml.in:65
@@ -39,7 +39,8 @@ msgstr "そのほかのアップデート:"
 
 #: data/applications.metainfo.xml.in:42
 msgid "Properly handle autostart files created by the Background Portal"
-msgstr ""
+msgstr "バックグラウンドポータルによって作成された自動起動ファイルを適切に処理するよ"
+"う修正"
 
 #: data/applications.metainfo.xml.in:43 data/applications.metainfo.xml.in:54
 #: data/applications.metainfo.xml.in:68 data/applications.metainfo.xml.in:75
