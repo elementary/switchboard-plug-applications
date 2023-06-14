@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-09-23 23:18+0000\n"
+"POT-Creation-Date: 2023-06-14 01:19+0000\n"
 "PO-Revision-Date: 2020-10-11 21:36+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Romanian <https://l10n.elementary.io/projects/switchboard/"
@@ -30,68 +30,68 @@ msgstr "Aplicaţii"
 msgid "Defaults"
 msgstr "Implicit"
 
-#: src/Plug.vala:57 src/Plug.vala:102
+#: src/Plug.vala:57 src/Plug.vala:105
 #, fuzzy
 msgid "Startup"
 msgstr "Pornirea sistemului"
 
-#: src/Plug.vala:58 src/Plug.vala:104
+#: src/Plug.vala:58 src/Plug.vala:107
 msgid "Permissions"
 msgstr ""
 
-#: src/Plug.vala:103
+#: src/Plug.vala:106
 msgid "Default Apps"
 msgstr "Aplicaţii Implicite"
 
-#: src/Plug.vala:105
+#: src/Plug.vala:108
 msgid "Sandboxing"
 msgstr ""
 
-#: src/Plug.vala:106
+#: src/Plug.vala:109
 msgid "Confinement"
 msgstr ""
 
-#: src/Plug.vala:107 src/Plug.vala:108 src/Plug.vala:109 src/Plug.vala:110
-#: src/Plug.vala:111 src/Plug.vala:112 src/Plug.vala:113 src/Plug.vala:114
+#: src/Plug.vala:110 src/Plug.vala:111 src/Plug.vala:112 src/Plug.vala:113
+#: src/Plug.vala:114 src/Plug.vala:115 src/Plug.vala:116 src/Plug.vala:117
 msgid "Default"
 msgstr "Implicit"
 
-#: src/Plug.vala:107
+#: src/Plug.vala:110 src/Defaults/DefaultPlug.vala:12
 #, fuzzy
 msgid "Web Browser"
 msgstr "Browser Web:"
 
-#: src/Plug.vala:108
+#: src/Plug.vala:111 src/Defaults/DefaultPlug.vala:18
 #, fuzzy
 msgid "Email Client"
 msgstr "Aplicaţie de Email:"
 
-#: src/Plug.vala:109
+#: src/Plug.vala:112 src/Defaults/DefaultPlug.vala:24
 #, fuzzy
 msgid "Calendar"
 msgstr "Calendar:"
 
-#: src/Plug.vala:110
+#: src/Plug.vala:113 src/Defaults/DefaultPlug.vala:30
 #, fuzzy
 msgid "Video Player"
 msgstr "Player Video:"
 
-#: src/Plug.vala:111
+#: src/Plug.vala:114 src/Defaults/DefaultPlug.vala:36
 #, fuzzy
 msgid "Music Player"
 msgstr "Player Audio:"
 
-#: src/Plug.vala:112
+#: src/Plug.vala:115 src/Defaults/DefaultPlug.vala:48
 #, fuzzy
 msgid "Text Editor"
 msgstr "Editor de text:"
 
-#: src/Plug.vala:113
+#: src/Plug.vala:116 src/Defaults/DefaultPlug.vala:42
 #, fuzzy
 msgid "Image Viewer"
 msgstr "Vizualizator de imagini:"
 
-#: src/Plug.vala:114
+#: src/Plug.vala:117 src/Defaults/DefaultPlug.vala:54
 #, fuzzy
 msgid "File Browser"
 msgstr "Gestionator de fişiere:"
@@ -206,7 +206,7 @@ msgstr "Adaugă aplicaţie care va rula la pornire sistemului…"
 msgid "Remove Selected Startup App"
 msgstr "Dezactivează pornirea automată a aplicaţiilor selectate"
 
-#: src/Startup/Backend/KeyFile.vala:86
+#: src/Startup/Backend/KeyFile.vala:99
 msgid "Custom Command"
 msgstr "Comandă personalizată"
 
@@ -223,37 +223,29 @@ msgstr "Caută aplicaţii"
 msgid "Type in a custom command"
 msgstr "Introduceţi o comandă personalizată"
 
-#: src/Defaults/DefaultPlug.vala:40
-msgid "Web Browser:"
-msgstr "Browser Web:"
+#~ msgid "Web Browser:"
+#~ msgstr "Browser Web:"
 
-#: src/Defaults/DefaultPlug.vala:44
-msgid "Email Client:"
-msgstr "Aplicaţie de Email:"
+#~ msgid "Email Client:"
+#~ msgstr "Aplicaţie de Email:"
 
-#: src/Defaults/DefaultPlug.vala:48
-msgid "Calendar:"
-msgstr "Calendar:"
+#~ msgid "Calendar:"
+#~ msgstr "Calendar:"
 
-#: src/Defaults/DefaultPlug.vala:52
-msgid "Video Player:"
-msgstr "Player Video:"
+#~ msgid "Video Player:"
+#~ msgstr "Player Video:"
 
-#: src/Defaults/DefaultPlug.vala:58
-msgid "Music Player:"
-msgstr "Player Audio:"
+#~ msgid "Music Player:"
+#~ msgstr "Player Audio:"
 
-#: src/Defaults/DefaultPlug.vala:63
-msgid "Image Viewer:"
-msgstr "Vizualizator de imagini:"
+#~ msgid "Image Viewer:"
+#~ msgstr "Vizualizator de imagini:"
 
-#: src/Defaults/DefaultPlug.vala:68
-msgid "Text Editor:"
-msgstr "Editor de text:"
+#~ msgid "Text Editor:"
+#~ msgstr "Editor de text:"
 
-#: src/Defaults/DefaultPlug.vala:73
-msgid "File Browser:"
-msgstr "Gestionator de fişiere:"
+#~ msgid "File Browser:"
+#~ msgstr "Gestionator de fişiere:"
 
 #~ msgid "Default Application"
 #~ msgstr "Program Implicit"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-09-23 23:18+0000\n"
+"POT-Creation-Date: 2023-06-14 01:19+0000\n"
 "PO-Revision-Date: 2021-04-26 17:51+0000\n"
 "Last-Translator: nasserbinlaboun <nasser1990com@gmail.com>\n"
 "Language-Team: Arabic <https://l10n.elementary.io/projects/switchboard/"
@@ -20,48 +20,55 @@ msgstr ""
 "&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
 "X-Generator: Weblate 4.4.2\n"
 
-#: data/io.elementary.switchboard.applications.appdata.xml.in:5
+#: data/applications.metainfo.xml.in:10
 #, fuzzy
 #| msgid "Applications"
 msgid "Applications Settings"
 msgstr "التطبيقات"
 
-#: data/io.elementary.switchboard.applications.appdata.xml.in:6
+#: data/applications.metainfo.xml.in:11
 msgid "Manage default and startup applications"
 msgstr "إدارة التطبيقات الافتراضية وتطبيقات بدء التشغيل"
 
-#: data/io.elementary.switchboard.applications.appdata.xml.in:12
-#: data/io.elementary.switchboard.applications.appdata.xml.in:26
+#: data/applications.metainfo.xml.in:33
+msgid "elementary, Inc."
+msgstr ""
+
+#: data/applications.metainfo.xml.in:40 data/applications.metainfo.xml.in:50
+#: data/applications.metainfo.xml.in:65
 msgid "Minor updates:"
 msgstr ""
 
-#: data/io.elementary.switchboard.applications.appdata.xml.in:14
-msgid "Fix an issue with setting the incorrect app for certain files types"
+#: data/applications.metainfo.xml.in:42
+msgid "Properly handle autostart files created by the Background Portal"
 msgstr ""
 
-#: data/io.elementary.switchboard.applications.appdata.xml.in:15
-msgid "Don't overwrite custom overrides when unnecessary"
-msgstr ""
-
-#: data/io.elementary.switchboard.applications.appdata.xml.in:16
-#: data/io.elementary.switchboard.applications.appdata.xml.in:29
-#: data/io.elementary.switchboard.applications.appdata.xml.in:35
-#: data/io.elementary.switchboard.applications.appdata.xml.in:41
+#: data/applications.metainfo.xml.in:43 data/applications.metainfo.xml.in:54
+#: data/applications.metainfo.xml.in:68 data/applications.metainfo.xml.in:75
+#: data/applications.metainfo.xml.in:82
 msgid "Updated translations"
 msgstr "ترجمات محدثة"
 
-#: data/io.elementary.switchboard.applications.appdata.xml.in:22
+#: data/applications.metainfo.xml.in:52
+msgid "Fix an issue with setting the incorrect app for certain files types"
+msgstr ""
+
+#: data/applications.metainfo.xml.in:53
+msgid "Don't overwrite custom overrides when unnecessary"
+msgstr ""
+
+#: data/applications.metainfo.xml.in:61
 msgid "New features:"
 msgstr ""
 
-#: data/io.elementary.switchboard.applications.appdata.xml.in:24
+#: data/applications.metainfo.xml.in:63
 msgid "Manage permissions for Flatpak apps"
 msgstr ""
 
-#: data/io.elementary.switchboard.applications.appdata.xml.in:28
+#: data/applications.metainfo.xml.in:67
 msgid "Show custom launcher files"
 msgstr ""
 
-#: data/io.elementary.switchboard.applications.appdata.xml.in:40
+#: data/applications.metainfo.xml.in:81
 msgid "Fix issues with OnlyShowIn and Snap apps"
 msgstr ""
