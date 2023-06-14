@@ -77,14 +77,16 @@ public class Startup.Plug : Gtk.Grid {
         orientation = Gtk.Orientation.VERTICAL;
         add (frame);
 
-        app_chooser = new Widgets.AppChooser (add_button);
-        app_chooser.modal = true;
+        app_chooser = new Widgets.AppChooser () {
+            modal = true
+        };
 
         var monitor = new Backend.Monitor ();
         controller = new Controller (this);
 
         add_button.clicked.connect (() => {
-            app_chooser.show_all ();
+            app_chooser.transient_for = (Gtk.Window) get_toplevel ();
+            app_chooser.present ();
         });
 
         app_chooser.app_chosen.connect ((path) => {
