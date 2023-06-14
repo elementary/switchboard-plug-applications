@@ -77,7 +77,6 @@ public class Defaults.Plug : Gtk.Box {
         };
 
         add (clamp);
-        halign = CENTER;
 
         show_all ();
     }
