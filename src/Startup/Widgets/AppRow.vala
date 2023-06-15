@@ -42,6 +42,10 @@ public class Startup.Widgets.AppRow : Gtk.ListBoxRow {
         };
         app_comment.get_style_context ().add_class (Granite.STYLE_CLASS_SMALL_LABEL);
 
+        var remove_button = new Gtk.Button.from_icon_name ("edit-delete-symbolic") {
+            tooltip_text = _("Remove this app from startup")
+        };
+
         var active_switch = new Gtk.Switch () {
             active = app_info.active,
             tooltip_text = _("Launch %s on startup").printf (app_info.name),
@@ -55,13 +59,19 @@ public class Startup.Widgets.AppRow : Gtk.ListBoxRow {
         main_grid.attach (image, 0, 0, 1, 2);
         main_grid.attach (app_name, 1, 0);
         main_grid.attach (app_comment, 1, 1);
-        main_grid.attach (active_switch, 2, 0, 1, 2);
+        main_grid.attach (remove_button, 2, 0, 1, 2);
+        main_grid.attach (active_switch, 3, 0, 1, 2);
 
         add (main_grid);
         show_all ();
 
         active_switch.notify["active"].connect (() => {
             active_changed (active_switch.active);
+        });
+
+        remove_button.clicked.connect (() => {
+            FileUtils.remove (app_info.path);
+            parent.remove (this);
         });
     }
 }

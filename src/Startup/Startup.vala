@@ -42,19 +42,17 @@ public class Startup.Plug : Gtk.Box {
             child = list
         };
 
-        var add_button = new Gtk.Button.from_icon_name ("application-add-symbolic") {
-            tooltip_text = _("Add Startup App…")
+        var add_button = new Gtk.Button.with_label (_("Add Startup App…")) {
+            always_show_image = true,
+            image = new Gtk.Image.from_icon_name ("application-add-symbolic", Gtk.IconSize.SMALL_TOOLBAR),
+            margin_top = 3,
+            margin_bottom = 3
         };
-
-        var remove_button = new Gtk.Button.from_icon_name ("list-remove-symbolic") {
-            tooltip_text = _("Remove Selected Startup App"),
-            sensitive = false
-        };
+        add_button.get_style_context ().add_class (Gtk.STYLE_CLASS_FLAT);
 
         var actionbar = new Gtk.ActionBar ();
         actionbar.get_style_context ().add_class (Gtk.STYLE_CLASS_INLINE_TOOLBAR);
         actionbar.pack_start (add_button);
-        actionbar.pack_start (remove_button);
 
         var box = new Gtk.Box (VERTICAL, 0);
         box.add (scrolled);
@@ -92,9 +90,6 @@ public class Startup.Plug : Gtk.Box {
         });
 
         list.drag_data_received.connect (on_drag_data_received);
-        list.row_selected.connect ((row) => {
-            remove_button.sensitive = (row != null);
-        });
 
         monitor.file_created.connect ((path) => {
             add_app (Backend.KeyFileFactory.get_or_create (path));
@@ -102,10 +97,6 @@ public class Startup.Plug : Gtk.Box {
 
         monitor.file_deleted.connect ((path) => {
             remove_app_from_path (path);
-        });
-
-        remove_button.clicked.connect (() => {
-            remove_selected_app ();
         });
     }
 
@@ -144,17 +135,6 @@ public class Startup.Plug : Gtk.Box {
         key_file.copy_to_local ();
 
         add_app (key_file);
-    }
-
-    private void remove_selected_app () {
-        var row = list.get_selected_row ();
-        if (row == null) {
-            return;
-        }
-
-        list.remove (row);
-
-        GLib.FileUtils.remove (((Widgets.AppRow)row).app_info.path);
     }
 
     private string? get_path_from_uri (string uri) {
