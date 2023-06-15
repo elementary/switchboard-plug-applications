@@ -43,7 +43,7 @@ public class ApplicationsPlug : Switchboard.Plug {
             code_name: "io.elementary.switchboard.applications",
             description: _("Manage default apps, startup apps, and app permissions"),
             display_name: _("Applications"),
-            icon: "preferences-desktop-applications",
+            icon: "io.elementary.settings.applications",
             supported_settings: settings
         );
     }
