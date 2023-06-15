@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-06-14 01:19+0000\n"
-"PO-Revision-Date: 2021-09-24 09:12+0000\n"
+"PO-Revision-Date: 2023-06-15 17:51+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://l10n.elementary.io/projects/switchboard/"
 "applications-plug-extra/he/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 4.17\n"
 
 #: data/applications.metainfo.xml.in:10
 msgid "Applications Settings"
@@ -29,7 +29,7 @@ msgstr "ניהול יישומי בררת מחדל ועם הפעלת המערכת
 
 #: data/applications.metainfo.xml.in:33
 msgid "elementary, Inc."
-msgstr ""
+msgstr "elementary בע״מ"
 
 #: data/applications.metainfo.xml.in:40 data/applications.metainfo.xml.in:50
 #: data/applications.metainfo.xml.in:65
@@ -38,7 +38,7 @@ msgstr "עדכונים משניים:"
 
 #: data/applications.metainfo.xml.in:42
 msgid "Properly handle autostart files created by the Background Portal"
-msgstr ""
+msgstr "קובצי ההפעלה האוטומטית מטופלים כראוי על ידי שער הרקע"
 
 #: data/applications.metainfo.xml.in:43 data/applications.metainfo.xml.in:54
 #: data/applications.metainfo.xml.in:68 data/applications.metainfo.xml.in:75
