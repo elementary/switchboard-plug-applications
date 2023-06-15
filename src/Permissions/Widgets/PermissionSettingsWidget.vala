@@ -39,31 +39,38 @@ public class Permissions.Widgets.PermissionSettingsWidget : Gtk.ListBoxRow {
     }
 
     construct {
-        var icon = new Gtk.Image.from_icon_name (icon_name, Gtk.IconSize.DND);
-        icon.pixel_size = 32;
-        icon.tooltip_text = settings.context;
-
-        var name_label = new Gtk.Label (primary_text);
+        var icon = new Gtk.Image.from_icon_name (icon_name, Gtk.IconSize.DND) {
+            pixel_size = 32,
+            tooltip_text = settings.context
+        };
+        var name_label = new Gtk.Label (primary_text) {
+            halign = Gtk.Align.START,
+            hexpand = true
+        };
         name_label.get_style_context ().add_class (Granite.STYLE_CLASS_H3_LABEL);
-        name_label.halign = Gtk.Align.START;
-        name_label.hexpand = true;
 
-        var description_label = new Gtk.Label (description);
-        description_label.wrap = true;
-        description_label.xalign = 0;
+        var description_label = new Gtk.Label (description) {
+            wrap = true,
+            xalign = 0
+        };
 
-        var allow_switch = new Gtk.Switch ();
-        allow_switch.valign = Gtk.Align.CENTER;
+        var allow_switch = new Gtk.Switch () {
+            valign = Gtk.Align.CENTER
+        };
 
-        var grid = new Gtk.Grid ();
-        grid.column_spacing = 12;
-        grid.margin = 6;
+        var grid = new Gtk.Grid () {
+            column_spacing = 12,
+            margin_top = 6,
+            margin_end = 6,
+            margin_bottom = 6,
+            margin_start = 6
+        };
         grid.attach (icon, 0, 0, 1, 2);
         grid.attach (name_label, 1, 0);
         grid.attach (description_label, 1, 1);
         grid.attach (allow_switch, 2, 0, 1, 2);
 
-        add (grid);
+        child = grid;
 
         activate.connect (() => {
             allow_switch.activate ();
