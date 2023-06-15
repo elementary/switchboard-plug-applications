@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-14 01:19+0000\n"
+"POT-Creation-Date: 2023-06-15 17:51+0000\n"
 "PO-Revision-Date: 2023-06-15 17:51+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
@@ -39,7 +39,8 @@ msgstr "そのほかのアップデート:"
 
 #: data/applications.metainfo.xml.in:42
 msgid "Properly handle autostart files created by the Background Portal"
-msgstr "バックグラウンドポータルによって作成された自動起動ファイルを適切に処理するよ"
+msgstr ""
+"バックグラウンドポータルによって作成された自動起動ファイルを適切に処理するよ"
 "う修正"
 
 #: data/applications.metainfo.xml.in:43 data/applications.metainfo.xml.in:54
