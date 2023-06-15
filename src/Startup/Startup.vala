@@ -1,26 +1,12 @@
 /*
-* Copyright 2013-2020 elementary, Inc. (https://elementary.io)
-*
-* This program is free software; you can redistribute it and/or
-* modify it under the terms of the GNU General Public
-* License as published by the Free Software Foundation; either
-* version 3 of the License, or (at your option) any later version.
-*
-* This program is distributed in the hope that it will be useful,
-* but WITHOUT ANY WARRANTY; without even the implied warranty of
-* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
-* General Public License for more details.
-*
-* You should have received a copy of the GNU General Public
-* License along with this program; if not, write to the
-* Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor,
-* Boston, MA 02110-1301 USA
-*
-* Authored by: Akshay Shekher <voldyman666@gmail.com>
-*              Julien Spautz <spautz.julien@gmail.com>
-*/
+ * SPDX-License-Identifier: GPL-3.0-or-later
+ * SPDX-FileCopyrightText: 2013-2023 elementary, Inc. (https://elementary.io)
+ *
+ * Authored by: Akshay Shekher <voldyman666@gmail.com>
+ *              Julien Spautz <spautz.julien@gmail.com>
+ */
 
-public class Startup.Plug : Gtk.Grid {
+public class Startup.Plug : Gtk.Box {
     private Controller controller;
     private Gtk.ListBox list;
     private Widgets.AppChooser app_chooser;
@@ -44,38 +30,45 @@ public class Startup.Plug : Gtk.Grid {
         empty_alert.show_all ();
 
         list = new Gtk.ListBox () {
-            expand = true
+            hexpand = true,
+            vexpand = true
         };
         list.set_placeholder (empty_alert);
         list.set_sort_func (sort_function);
 
         Gtk.drag_dest_set (list, Gtk.DestDefaults.ALL, TARGET_LIST, Gdk.DragAction.COPY);
 
-        var scrolled = new Gtk.ScrolledWindow (null, null);
-        scrolled.add (list);
+        var scrolled = new Gtk.ScrolledWindow (null, null) {
+            child = list
+        };
+
+        var add_button = new Gtk.Button.from_icon_name ("application-add-symbolic") {
+            tooltip_text = _("Add Startup App…")
+        };
+
+        var remove_button = new Gtk.Button.from_icon_name ("list-remove-symbolic") {
+            tooltip_text = _("Remove Selected Startup App"),
+            sensitive = false
+        };
 
         var actionbar = new Gtk.ActionBar ();
         actionbar.get_style_context ().add_class (Gtk.STYLE_CLASS_INLINE_TOOLBAR);
+        actionbar.pack_start (add_button);
+        actionbar.pack_start (remove_button);
 
-        var add_button = new Gtk.Button.from_icon_name ("application-add-symbolic", Gtk.IconSize.BUTTON);
-        add_button.tooltip_text = _("Add Startup App…");
+        var box = new Gtk.Box (VERTICAL, 0);
+        box.add (scrolled);
+        box.add (actionbar);
 
-        var remove_button = new Gtk.Button.from_icon_name ("list-remove-symbolic", Gtk.IconSize.BUTTON);
-        remove_button.tooltip_text = _("Remove Selected Startup App");
-        remove_button.sensitive = false;
+        var frame = new Gtk.Frame (null) {
+            child = box
+        };
 
-        actionbar.add (add_button);
-        actionbar.add (remove_button);
+        var clamp = new Hdy.Clamp () {
+            child = frame
+        };
 
-        var grid = new Gtk.Grid ();
-        grid.attach (scrolled, 0, 0, 1, 1);
-        grid.attach (actionbar, 0, 1, 1, 1);
-
-        var frame = new Gtk.Frame (null);
-        frame.add (grid);
-
-        orientation = Gtk.Orientation.VERTICAL;
-        add (frame);
+        add (clamp);
 
         app_chooser = new Widgets.AppChooser () {
             modal = true
