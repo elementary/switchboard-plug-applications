@@ -85,6 +85,7 @@ public class Startup.Plug : Gtk.Grid {
         controller = new Controller (this);
 
         add_button.clicked.connect (() => {
+            // Parent is set here because at construct toplevel is the plug not the window
             app_chooser.transient_for = (Gtk.Window) get_toplevel ();
             app_chooser.present ();
         });
