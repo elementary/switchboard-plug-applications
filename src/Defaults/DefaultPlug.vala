@@ -68,7 +68,11 @@ public class Defaults.Plug : Gtk.Box {
             child = flowbox
         };
 
-        add (clamp);
+        var scrolled_window = new Gtk.ScrolledWindow (null, null) {
+            child = clamp
+        };
+
+        add (scrolled_window);
 
         show_all ();
     }
