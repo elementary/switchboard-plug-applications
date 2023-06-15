@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-15 17:51+0000\n"
+"POT-Creation-Date: 2023-06-15 18:17+0000\n"
 "PO-Revision-Date: 2021-10-01 07:27+0000\n"
 "Last-Translator: supaeasy <ismo+github@wolffson.ch>\n"
 "Language-Team: German <https://l10n.elementary.io/projects/switchboard/"
@@ -31,8 +31,8 @@ msgstr "Verwalten von Standard- und Autostart-Anwendungen"
 msgid "elementary, Inc."
 msgstr ""
 
-#: data/applications.metainfo.xml.in:40 data/applications.metainfo.xml.in:50
-#: data/applications.metainfo.xml.in:65
+#: data/applications.metainfo.xml.in:40 data/applications.metainfo.xml.in:54
+#: data/applications.metainfo.xml.in:69
 msgid "Minor updates:"
 msgstr "Kleinere Aktualisierungen:"
 
@@ -40,36 +40,40 @@ msgstr "Kleinere Aktualisierungen:"
 msgid "Properly handle autostart files created by the Background Portal"
 msgstr ""
 
-#: data/applications.metainfo.xml.in:43 data/applications.metainfo.xml.in:54
-#: data/applications.metainfo.xml.in:68 data/applications.metainfo.xml.in:75
-#: data/applications.metainfo.xml.in:82
+#: data/applications.metainfo.xml.in:43
+msgid "App chooser in Startup is a dialog instead of a popover"
+msgstr ""
+
+#: data/applications.metainfo.xml.in:44 data/applications.metainfo.xml.in:58
+#: data/applications.metainfo.xml.in:72 data/applications.metainfo.xml.in:79
+#: data/applications.metainfo.xml.in:86
 msgid "Updated translations"
 msgstr "Aktualisierte Übersetzungen"
 
-#: data/applications.metainfo.xml.in:52
+#: data/applications.metainfo.xml.in:56
 msgid "Fix an issue with setting the incorrect app for certain files types"
 msgstr ""
 "Behebt einen Fehler der Auftrat, wenn die falsche Anwendung zum Öffnen "
 "bestimmter Dateitypen festgelegt wurde"
 
-#: data/applications.metainfo.xml.in:53
+#: data/applications.metainfo.xml.in:57
 msgid "Don't overwrite custom overrides when unnecessary"
 msgstr ""
 "Selbst gesetzte Übersteuerrungen nicht überschreiben, wenn dies nicht nötig "
 "ist"
 
-#: data/applications.metainfo.xml.in:61
+#: data/applications.metainfo.xml.in:65
 msgid "New features:"
 msgstr "Neue Funktionen:"
 
-#: data/applications.metainfo.xml.in:63
+#: data/applications.metainfo.xml.in:67
 msgid "Manage permissions for Flatpak apps"
 msgstr "Berechtigungen für Flatpak-Apps verwalten"
 
-#: data/applications.metainfo.xml.in:67
+#: data/applications.metainfo.xml.in:71
 msgid "Show custom launcher files"
 msgstr "Zeige angepasste Launcher Dateien"
 
-#: data/applications.metainfo.xml.in:81
+#: data/applications.metainfo.xml.in:85
 msgid "Fix issues with OnlyShowIn and Snap apps"
 msgstr "Fehler im Zusammenhang mit OnlyShowIn und Snap apps behoben"

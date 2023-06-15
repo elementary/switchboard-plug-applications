@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-15 17:51+0000\n"
+"POT-Creation-Date: 2023-06-15 18:17+0000\n"
 "PO-Revision-Date: 2020-03-01 14:09+0000\n"
 "Last-Translator: Cheng-Chia Tseng <pswo10680@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://l10n.elementary.io/projects/"
@@ -33,8 +33,8 @@ msgstr "管理預設與初始啟動應用程式"
 msgid "elementary, Inc."
 msgstr ""
 
-#: data/applications.metainfo.xml.in:40 data/applications.metainfo.xml.in:50
-#: data/applications.metainfo.xml.in:65
+#: data/applications.metainfo.xml.in:40 data/applications.metainfo.xml.in:54
+#: data/applications.metainfo.xml.in:69
 msgid "Minor updates:"
 msgstr ""
 
@@ -42,32 +42,36 @@ msgstr ""
 msgid "Properly handle autostart files created by the Background Portal"
 msgstr ""
 
-#: data/applications.metainfo.xml.in:43 data/applications.metainfo.xml.in:54
-#: data/applications.metainfo.xml.in:68 data/applications.metainfo.xml.in:75
-#: data/applications.metainfo.xml.in:82
+#: data/applications.metainfo.xml.in:43
+msgid "App chooser in Startup is a dialog instead of a popover"
+msgstr ""
+
+#: data/applications.metainfo.xml.in:44 data/applications.metainfo.xml.in:58
+#: data/applications.metainfo.xml.in:72 data/applications.metainfo.xml.in:79
+#: data/applications.metainfo.xml.in:86
 msgid "Updated translations"
 msgstr "翻譯更新"
 
-#: data/applications.metainfo.xml.in:52
+#: data/applications.metainfo.xml.in:56
 msgid "Fix an issue with setting the incorrect app for certain files types"
 msgstr ""
 
-#: data/applications.metainfo.xml.in:53
+#: data/applications.metainfo.xml.in:57
 msgid "Don't overwrite custom overrides when unnecessary"
 msgstr ""
 
-#: data/applications.metainfo.xml.in:61
+#: data/applications.metainfo.xml.in:65
 msgid "New features:"
 msgstr ""
 
-#: data/applications.metainfo.xml.in:63
+#: data/applications.metainfo.xml.in:67
 msgid "Manage permissions for Flatpak apps"
 msgstr ""
 
-#: data/applications.metainfo.xml.in:67
+#: data/applications.metainfo.xml.in:71
 msgid "Show custom launcher files"
 msgstr ""
 
-#: data/applications.metainfo.xml.in:81
+#: data/applications.metainfo.xml.in:85
 msgid "Fix issues with OnlyShowIn and Snap apps"
 msgstr "修正 OnlyShowIn 和 Snap 程式的相關問題"
