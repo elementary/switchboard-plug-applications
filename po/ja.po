@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-14 01:19+0000\n"
+"POT-Creation-Date: 2023-06-15 17:50+0000\n"
 "PO-Revision-Date: 2021-04-08 09:06+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
@@ -58,31 +58,31 @@ msgstr "デフォルト"
 msgid "Web Browser"
 msgstr "Web ブラウザー"
 
-#: src/Plug.vala:111 src/Defaults/DefaultPlug.vala:18
+#: src/Plug.vala:111 src/Defaults/DefaultPlug.vala:17
 msgid "Email Client"
 msgstr "メールクライアント"
 
-#: src/Plug.vala:112 src/Defaults/DefaultPlug.vala:24
+#: src/Plug.vala:112 src/Defaults/DefaultPlug.vala:22
 msgid "Calendar"
 msgstr "カレンダー"
 
-#: src/Plug.vala:113 src/Defaults/DefaultPlug.vala:30
+#: src/Plug.vala:113 src/Defaults/DefaultPlug.vala:27
 msgid "Video Player"
 msgstr "ビデオプレーヤー"
 
-#: src/Plug.vala:114 src/Defaults/DefaultPlug.vala:36
+#: src/Plug.vala:114 src/Defaults/DefaultPlug.vala:32
 msgid "Music Player"
 msgstr "ミュージックプレーヤー"
 
-#: src/Plug.vala:115 src/Defaults/DefaultPlug.vala:48
+#: src/Plug.vala:115 src/Defaults/DefaultPlug.vala:42
 msgid "Text Editor"
 msgstr "テキストエディター"
 
-#: src/Plug.vala:116 src/Defaults/DefaultPlug.vala:42
+#: src/Plug.vala:116 src/Defaults/DefaultPlug.vala:37
 msgid "Image Viewer"
 msgstr "画像ビューアー"
 
-#: src/Plug.vala:117 src/Defaults/DefaultPlug.vala:54
+#: src/Plug.vala:117 src/Defaults/DefaultPlug.vala:47
 msgid "File Browser"
 msgstr "ファイルブラウザー"
 
@@ -171,48 +171,51 @@ msgstr "SSH を使用したネットワーク上のほかのデバイスへの�
 msgid "Accelerate graphical output."
 msgstr "グラフィック出力のアクセラレーションを許可します。"
 
-#: src/Permissions/Widgets/AppSettingsView.vala:105
+#: src/Permissions/Widgets/AppSettingsView.vala:109
 msgid "Reset to Defaults"
 msgstr "デフォルトにリセット"
 
 #. / Translators: This is a delimiter that separates types of permissions in the sidebar description
-#: src/Permissions/Widgets/SidebarRow.vala:89
+#: src/Permissions/Widgets/SidebarRow.vala:93
 msgid ", "
 msgstr "、 "
 
-#: src/Startup/Startup.vala:40
+#: src/Startup/Startup.vala:26
 msgid "Launch Apps on Startup"
 msgstr "起動時にアプリを起動"
 
-#: src/Startup/Startup.vala:41
+#: src/Startup/Startup.vala:27
 msgid "Add apps to the Startup list by clicking the icon in the toolbar below."
 msgstr ""
 "下のツールバーのアイコンをクリックして起動時のリストにアプリを追加します。"
 
-#: src/Startup/Startup.vala:61
+#: src/Startup/Startup.vala:45
 msgid "Add Startup App…"
 msgstr "起動時のアプリを追加…"
-
-#: src/Startup/Startup.vala:64
-msgid "Remove Selected Startup App"
-msgstr "選択された起動時のアプリを削除"
 
 #: src/Startup/Backend/KeyFile.vala:99
 msgid "Custom Command"
 msgstr "カスタムコマンド"
 
-#: src/Startup/Widgets/AppRow.vala:47
+#: src/Startup/Widgets/AppRow.vala:46
+msgid "Remove this app from startup"
+msgstr ""
+
+#: src/Startup/Widgets/AppRow.vala:51
 #, c-format
 msgid "Launch %s on startup"
 msgstr "起動時に %s を起動します"
 
-#: src/Startup/Widgets/AppChooser.vala:38
+#: src/Startup/Widgets/AppChooser.vala:17
 msgid "Search Applications"
 msgstr "アプリケーションを検索"
 
-#: src/Startup/Widgets/AppChooser.vala:56
+#: src/Startup/Widgets/AppChooser.vala:36
 msgid "Type in a custom command"
 msgstr "カスタムコマンドを入力"
+
+#~ msgid "Remove Selected Startup App"
+#~ msgstr "選択された起動時のアプリを削除"
 
 #~ msgid "Web Browser:"
 #~ msgstr "Web ブラウザー:"

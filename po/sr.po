@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-14 01:19+0000\n"
+"POT-Creation-Date: 2023-06-15 17:50+0000\n"
 "PO-Revision-Date: 2020-12-19 11:16+0000\n"
 "Last-Translator: Мирослав Николић <miroslavnikolic@rocketmail.com>\n"
 "Language-Team: Serbian <https://l10n.elementary.io/projects/switchboard/"
@@ -56,31 +56,31 @@ msgstr "Основно"
 msgid "Web Browser"
 msgstr "Веб прегледник"
 
-#: src/Plug.vala:111 src/Defaults/DefaultPlug.vala:18
+#: src/Plug.vala:111 src/Defaults/DefaultPlug.vala:17
 msgid "Email Client"
 msgstr "Клијент е‑поште"
 
-#: src/Plug.vala:112 src/Defaults/DefaultPlug.vala:24
+#: src/Plug.vala:112 src/Defaults/DefaultPlug.vala:22
 msgid "Calendar"
 msgstr "Календар"
 
-#: src/Plug.vala:113 src/Defaults/DefaultPlug.vala:30
+#: src/Plug.vala:113 src/Defaults/DefaultPlug.vala:27
 msgid "Video Player"
 msgstr "Видео плејер"
 
-#: src/Plug.vala:114 src/Defaults/DefaultPlug.vala:36
+#: src/Plug.vala:114 src/Defaults/DefaultPlug.vala:32
 msgid "Music Player"
 msgstr "Музички програм"
 
-#: src/Plug.vala:115 src/Defaults/DefaultPlug.vala:48
+#: src/Plug.vala:115 src/Defaults/DefaultPlug.vala:42
 msgid "Text Editor"
 msgstr "Уређивач текста"
 
-#: src/Plug.vala:116 src/Defaults/DefaultPlug.vala:42
+#: src/Plug.vala:116 src/Defaults/DefaultPlug.vala:37
 msgid "Image Viewer"
 msgstr "Прегледач слика"
 
-#: src/Plug.vala:117 src/Defaults/DefaultPlug.vala:54
+#: src/Plug.vala:117 src/Defaults/DefaultPlug.vala:47
 msgid "File Browser"
 msgstr "Разгледач датотека"
 
@@ -174,49 +174,52 @@ msgstr "Приступите другим уређајима на мрежи п�
 msgid "Accelerate graphical output."
 msgstr "Убрзајте графички излаз."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:105
+#: src/Permissions/Widgets/AppSettingsView.vala:109
 msgid "Reset to Defaults"
 msgstr "Врати на основно"
 
 #. / Translators: This is a delimiter that separates types of permissions in the sidebar description
-#: src/Permissions/Widgets/SidebarRow.vala:89
+#: src/Permissions/Widgets/SidebarRow.vala:93
 msgid ", "
 msgstr ", "
 
-#: src/Startup/Startup.vala:40
+#: src/Startup/Startup.vala:26
 msgid "Launch Apps on Startup"
 msgstr "Покрените програме приликом покретања"
 
-#: src/Startup/Startup.vala:41
+#: src/Startup/Startup.vala:27
 msgid "Add apps to the Startup list by clicking the icon in the toolbar below."
 msgstr ""
 "Додајте програме на списак почетних програма кликом на иконицу на траци "
 "алата испод."
 
-#: src/Startup/Startup.vala:61
+#: src/Startup/Startup.vala:45
 msgid "Add Startup App…"
 msgstr "Додај почетни програм…"
-
-#: src/Startup/Startup.vala:64
-msgid "Remove Selected Startup App"
-msgstr "Уклоните изабрани почетни програм"
 
 #: src/Startup/Backend/KeyFile.vala:99
 msgid "Custom Command"
 msgstr "Произвољна наредба"
 
-#: src/Startup/Widgets/AppRow.vala:47
+#: src/Startup/Widgets/AppRow.vala:46
+msgid "Remove this app from startup"
+msgstr ""
+
+#: src/Startup/Widgets/AppRow.vala:51
 #, c-format
 msgid "Launch %s on startup"
 msgstr "Покрени „%s“ при покретању"
 
-#: src/Startup/Widgets/AppChooser.vala:38
+#: src/Startup/Widgets/AppChooser.vala:17
 msgid "Search Applications"
 msgstr "Тражите програме"
 
-#: src/Startup/Widgets/AppChooser.vala:56
+#: src/Startup/Widgets/AppChooser.vala:36
 msgid "Type in a custom command"
 msgstr "Упишите произвољну наредбу"
+
+#~ msgid "Remove Selected Startup App"
+#~ msgstr "Уклоните изабрани почетни програм"
 
 #~ msgid "Web Browser:"
 #~ msgstr "Веб прегледник:"

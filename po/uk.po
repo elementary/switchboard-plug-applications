@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-14 01:19+0000\n"
+"POT-Creation-Date: 2023-06-15 17:50+0000\n"
 "PO-Revision-Date: 2021-07-08 17:34+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/switchboard/"
@@ -57,31 +57,31 @@ msgstr "Типові"
 msgid "Web Browser"
 msgstr "Переглядач мережі"
 
-#: src/Plug.vala:111 src/Defaults/DefaultPlug.vala:18
+#: src/Plug.vala:111 src/Defaults/DefaultPlug.vala:17
 msgid "Email Client"
 msgstr "Клієнт електронної пошти"
 
-#: src/Plug.vala:112 src/Defaults/DefaultPlug.vala:24
+#: src/Plug.vala:112 src/Defaults/DefaultPlug.vala:22
 msgid "Calendar"
 msgstr "Календар"
 
-#: src/Plug.vala:113 src/Defaults/DefaultPlug.vala:30
+#: src/Plug.vala:113 src/Defaults/DefaultPlug.vala:27
 msgid "Video Player"
 msgstr "Програвач відео"
 
-#: src/Plug.vala:114 src/Defaults/DefaultPlug.vala:36
+#: src/Plug.vala:114 src/Defaults/DefaultPlug.vala:32
 msgid "Music Player"
 msgstr "Музичний програвач"
 
-#: src/Plug.vala:115 src/Defaults/DefaultPlug.vala:48
+#: src/Plug.vala:115 src/Defaults/DefaultPlug.vala:42
 msgid "Text Editor"
 msgstr "Текстовий редактор"
 
-#: src/Plug.vala:116 src/Defaults/DefaultPlug.vala:42
+#: src/Plug.vala:116 src/Defaults/DefaultPlug.vala:37
 msgid "Image Viewer"
 msgstr "Переглядач зображень"
 
-#: src/Plug.vala:117 src/Defaults/DefaultPlug.vala:54
+#: src/Plug.vala:117 src/Defaults/DefaultPlug.vala:47
 msgid "File Browser"
 msgstr "Переглядач файлів"
 
@@ -170,49 +170,52 @@ msgstr "Доступ до інших пристроїв у мережі чере
 msgid "Accelerate graphical output."
 msgstr "Прискорення графічного виводу."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:105
+#: src/Permissions/Widgets/AppSettingsView.vala:109
 msgid "Reset to Defaults"
 msgstr "Відновити типові"
 
 #. / Translators: This is a delimiter that separates types of permissions in the sidebar description
-#: src/Permissions/Widgets/SidebarRow.vala:89
+#: src/Permissions/Widgets/SidebarRow.vala:93
 msgid ", "
 msgstr ", "
 
-#: src/Startup/Startup.vala:40
+#: src/Startup/Startup.vala:26
 msgid "Launch Apps on Startup"
 msgstr "Запуск застосунків під час запуску"
 
-#: src/Startup/Startup.vala:41
+#: src/Startup/Startup.vala:27
 msgid "Add apps to the Startup list by clicking the icon in the toolbar below."
 msgstr ""
 "Додайте застосунки до переліку автозапуску, натиснувши на піктограму на "
 "панелі інструментів унизу."
 
-#: src/Startup/Startup.vala:61
+#: src/Startup/Startup.vala:45
 msgid "Add Startup App…"
 msgstr "Додати застосунок до автозапуску…"
-
-#: src/Startup/Startup.vala:64
-msgid "Remove Selected Startup App"
-msgstr "Вилучити вибраний застосунок з автозапуску"
 
 #: src/Startup/Backend/KeyFile.vala:99
 msgid "Custom Command"
 msgstr "Власна команда"
 
-#: src/Startup/Widgets/AppRow.vala:47
+#: src/Startup/Widgets/AppRow.vala:46
+msgid "Remove this app from startup"
+msgstr ""
+
+#: src/Startup/Widgets/AppRow.vala:51
 #, c-format
 msgid "Launch %s on startup"
 msgstr "Запускати %s під час запуску"
 
-#: src/Startup/Widgets/AppChooser.vala:38
+#: src/Startup/Widgets/AppChooser.vala:17
 msgid "Search Applications"
 msgstr "Шукати застосунки"
 
-#: src/Startup/Widgets/AppChooser.vala:56
+#: src/Startup/Widgets/AppChooser.vala:36
 msgid "Type in a custom command"
 msgstr "Ввести власну команду"
+
+#~ msgid "Remove Selected Startup App"
+#~ msgstr "Вилучити вибраний застосунок з автозапуску"
 
 #~ msgid "Web Browser:"
 #~ msgstr "Переглядач мережі:"
