@@ -6,7 +6,7 @@
  *              Julien Spautz <spautz.julien@gmail.com>
  */
 
-public class Startup.Plug : Gtk.Box {
+public class Startup.Plug : Granite.SimpleSettingsPage {
     private Controller controller;
     private Gtk.ListBox list;
     private Widgets.AppChooser app_chooser;
@@ -18,6 +18,13 @@ public class Startup.Plug : Gtk.Box {
     private const Gtk.TargetEntry[] TARGET_LIST = {
         { "text/uri-list", 0, Target.URI_LIST }
     };
+
+    public Plug () {
+        Object (
+            title: _("Startup"),
+            icon_name: "preferences-desktop"
+        );
+    }
 
     construct {
         Backend.KeyFileFactory.init ();
@@ -64,11 +71,7 @@ public class Startup.Plug : Gtk.Box {
             child = box
         };
 
-        var clamp = new Hdy.Clamp () {
-            child = frame
-        };
-
-        add (clamp);
+        content_area.add (frame);
 
         app_chooser = new Widgets.AppChooser () {
             modal = true

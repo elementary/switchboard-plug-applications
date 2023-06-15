@@ -6,7 +6,14 @@
  *              Chris Triantafillis <christriant1995@gmail.com>
  */
 
-public class Defaults.Plug : Gtk.Box {
+public class Defaults.Plug : Granite.SimpleSettingsPage {
+    public Plug () {
+        Object (
+            title: _("Defaults"),
+            icon_name: "preferences-desktop"
+        );
+    }
+
     construct {
         var browser_setting = new SettingsChild (
             _("Web Browser"),
@@ -64,13 +71,7 @@ public class Defaults.Plug : Gtk.Box {
         flowbox.add (videos_setting);
         flowbox.add (files_setting);
 
-        var clamp = new Hdy.Clamp () {
-            child = flowbox
-        };
-
-        add (clamp);
-
-        show_all ();
+        content_area.add (flowbox);
     }
 
     private class SettingsChild : Gtk.FlowBoxChild {

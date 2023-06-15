@@ -88,7 +88,7 @@ public class Permissions.Backend.App : GLib.Object {
             current_permissions.add (permission);
         }
 
-        Plug.permission_names.foreach ((key) => {
+        Widgets.AppSettingsView.permission_names.foreach ((key) => {
             bool standard = false;
             bool enabled = false;
 
