@@ -70,7 +70,7 @@ public class Startup.Plug : Gtk.Box {
 
         add (clamp);
 
-        app_chooser = new Widgets.AppChooser (add_button) {
+        app_chooser = new Widgets.AppChooser () {
             modal = true
         };
 
@@ -78,7 +78,9 @@ public class Startup.Plug : Gtk.Box {
         controller = new Controller (this);
 
         add_button.clicked.connect (() => {
-            app_chooser.show_all ();
+            // Parent is set here because at construct toplevel is the plug not the window
+            app_chooser.transient_for = (Gtk.Window) get_toplevel ();
+            app_chooser.present ();
         });
 
         app_chooser.app_chosen.connect ((path) => {
