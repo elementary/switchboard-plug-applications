@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-14 01:19+0000\n"
+"POT-Creation-Date: 2023-06-15 17:50+0000\n"
 "PO-Revision-Date: 2020-10-11 21:36+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Galician <https://l10n.elementary.io/projects/switchboard/"
@@ -60,31 +60,31 @@ msgstr "Predeterminado"
 msgid "Web Browser"
 msgstr "Navegador web"
 
-#: src/Plug.vala:111 src/Defaults/DefaultPlug.vala:18
+#: src/Plug.vala:111 src/Defaults/DefaultPlug.vala:17
 msgid "Email Client"
 msgstr "Cliente de correo"
 
-#: src/Plug.vala:112 src/Defaults/DefaultPlug.vala:24
+#: src/Plug.vala:112 src/Defaults/DefaultPlug.vala:22
 msgid "Calendar"
 msgstr "Calendario"
 
-#: src/Plug.vala:113 src/Defaults/DefaultPlug.vala:30
+#: src/Plug.vala:113 src/Defaults/DefaultPlug.vala:27
 msgid "Video Player"
 msgstr "Reprodutor de vídeo"
 
-#: src/Plug.vala:114 src/Defaults/DefaultPlug.vala:36
+#: src/Plug.vala:114 src/Defaults/DefaultPlug.vala:32
 msgid "Music Player"
 msgstr "Reprodutor de música"
 
-#: src/Plug.vala:115 src/Defaults/DefaultPlug.vala:48
+#: src/Plug.vala:115 src/Defaults/DefaultPlug.vala:42
 msgid "Text Editor"
 msgstr "Editor de texto"
 
-#: src/Plug.vala:116 src/Defaults/DefaultPlug.vala:42
+#: src/Plug.vala:116 src/Defaults/DefaultPlug.vala:37
 msgid "Image Viewer"
 msgstr "Visor de imaxes"
 
-#: src/Plug.vala:117 src/Defaults/DefaultPlug.vala:54
+#: src/Plug.vala:117 src/Defaults/DefaultPlug.vala:47
 msgid "File Browser"
 msgstr "Navegador de ficheiros"
 
@@ -165,51 +165,54 @@ msgstr ""
 msgid "Accelerate graphical output."
 msgstr ""
 
-#: src/Permissions/Widgets/AppSettingsView.vala:105
+#: src/Permissions/Widgets/AppSettingsView.vala:109
 #, fuzzy
 #| msgid "Default"
 msgid "Reset to Defaults"
 msgstr "Predeterminado"
 
 #. / Translators: This is a delimiter that separates types of permissions in the sidebar description
-#: src/Permissions/Widgets/SidebarRow.vala:89
+#: src/Permissions/Widgets/SidebarRow.vala:93
 msgid ", "
 msgstr ""
 
-#: src/Startup/Startup.vala:40
+#: src/Startup/Startup.vala:26
 msgid "Launch Apps on Startup"
 msgstr "Executar aplicacións ao iniciar"
 
-#: src/Startup/Startup.vala:41
+#: src/Startup/Startup.vala:27
 msgid "Add apps to the Startup list by clicking the icon in the toolbar below."
 msgstr ""
 "Engade aplicacións á lista de inicio facendo clic na icona na barra de "
 "ferramentas de abaixo."
 
-#: src/Startup/Startup.vala:61
+#: src/Startup/Startup.vala:45
 msgid "Add Startup App…"
 msgstr "Engadir o aplicativo no inicio"
-
-#: src/Startup/Startup.vala:64
-msgid "Remove Selected Startup App"
-msgstr "Retirar o aplicativo seleccionado do inicio"
 
 #: src/Startup/Backend/KeyFile.vala:99
 msgid "Custom Command"
 msgstr "Orde personalizada"
 
-#: src/Startup/Widgets/AppRow.vala:47
+#: src/Startup/Widgets/AppRow.vala:46
+msgid "Remove this app from startup"
+msgstr ""
+
+#: src/Startup/Widgets/AppRow.vala:51
 #, c-format
 msgid "Launch %s on startup"
 msgstr "Executar %s ao iniciar"
 
-#: src/Startup/Widgets/AppChooser.vala:38
+#: src/Startup/Widgets/AppChooser.vala:17
 msgid "Search Applications"
 msgstr "Buscar aplicativos"
 
-#: src/Startup/Widgets/AppChooser.vala:56
+#: src/Startup/Widgets/AppChooser.vala:36
 msgid "Type in a custom command"
 msgstr "Escriba unha orde personalizada"
+
+#~ msgid "Remove Selected Startup App"
+#~ msgstr "Retirar o aplicativo seleccionado do inicio"
 
 #~ msgid "Web Browser:"
 #~ msgstr "Navegador web:"
