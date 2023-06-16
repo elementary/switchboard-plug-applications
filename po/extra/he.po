@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-06-15 18:17+0000\n"
-"PO-Revision-Date: 2023-06-15 17:51+0000\n"
+"PO-Revision-Date: 2023-06-16 08:03+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://l10n.elementary.io/projects/switchboard/"
 "applications-plug-extra/he/>\n"
@@ -42,7 +42,7 @@ msgstr "קובצי ההפעלה האוטומטית מטופלים כראוי ע�
 
 #: data/applications.metainfo.xml.in:43
 msgid "App chooser in Startup is a dialog instead of a popover"
-msgstr ""
+msgstr "בורר יישומים עם ההפעלה הוא חלונית במקום בועה צפה"
 
 #: data/applications.metainfo.xml.in:44 data/applications.metainfo.xml.in:58
 #: data/applications.metainfo.xml.in:72 data/applications.metainfo.xml.in:79
