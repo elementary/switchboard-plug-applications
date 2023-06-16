@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-15 17:51+0000\n"
-"PO-Revision-Date: 2023-06-15 17:51+0000\n"
+"POT-Creation-Date: 2023-06-15 18:17+0000\n"
+"PO-Revision-Date: 2023-06-16 08:03+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/switchboard/"
 "applications-plug-extra/uk/>\n"
@@ -16,8 +16,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 4.17\n"
 
 #: data/applications.metainfo.xml.in:10
@@ -32,8 +32,8 @@ msgstr "Керування типовими застосунками та авт
 msgid "elementary, Inc."
 msgstr "elementary, Inc."
 
-#: data/applications.metainfo.xml.in:40 data/applications.metainfo.xml.in:50
-#: data/applications.metainfo.xml.in:65
+#: data/applications.metainfo.xml.in:40 data/applications.metainfo.xml.in:54
+#: data/applications.metainfo.xml.in:69
 msgid "Minor updates:"
 msgstr "Незначні оновлення:"
 
@@ -42,35 +42,40 @@ msgid "Properly handle autostart files created by the Background Portal"
 msgstr ""
 "Правильна обробка автозапуску файлів створених порталом фонового режиму"
 
-#: data/applications.metainfo.xml.in:43 data/applications.metainfo.xml.in:54
-#: data/applications.metainfo.xml.in:68 data/applications.metainfo.xml.in:75
-#: data/applications.metainfo.xml.in:82
+#: data/applications.metainfo.xml.in:43
+msgid "App chooser in Startup is a dialog instead of a popover"
+msgstr ""
+"Вибір застосунків на панелі запуску — це діалогове вікно, а не спливне вікно"
+
+#: data/applications.metainfo.xml.in:44 data/applications.metainfo.xml.in:58
+#: data/applications.metainfo.xml.in:72 data/applications.metainfo.xml.in:79
+#: data/applications.metainfo.xml.in:86
 msgid "Updated translations"
 msgstr "Оновлені переклади"
 
-#: data/applications.metainfo.xml.in:52
+#: data/applications.metainfo.xml.in:56
 msgid "Fix an issue with setting the incorrect app for certain files types"
 msgstr ""
 "Виправлено проблему з визначенням неправильного застосунку для деяких типів "
 "файлів"
 
-#: data/applications.metainfo.xml.in:53
+#: data/applications.metainfo.xml.in:57
 msgid "Don't overwrite custom overrides when unnecessary"
 msgstr "Користувацькі налаштування не перезаписуються без потреби"
 
-#: data/applications.metainfo.xml.in:61
+#: data/applications.metainfo.xml.in:65
 msgid "New features:"
 msgstr "Нові функції:"
 
-#: data/applications.metainfo.xml.in:63
+#: data/applications.metainfo.xml.in:67
 msgid "Manage permissions for Flatpak apps"
 msgstr "Керування дозволами Flatpak-застосунків"
 
-#: data/applications.metainfo.xml.in:67
+#: data/applications.metainfo.xml.in:71
 msgid "Show custom launcher files"
 msgstr "Показ користувацьких файлів запуску"
 
-#: data/applications.metainfo.xml.in:81
+#: data/applications.metainfo.xml.in:85
 msgid "Fix issues with OnlyShowIn and Snap apps"
 msgstr "Розв'язано проблеми з застосунками OnlyShowIn та Snap"
 

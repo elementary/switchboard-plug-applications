@@ -49,10 +49,11 @@ public class Defaults.Plug : Gtk.Box {
         );
 
         var flowbox = new Gtk.FlowBox () {
-            homogeneous = true,
             column_spacing = 24,
             row_spacing = 12,
+            homogeneous = true,
             max_children_per_line = 2,
+            selection_mode = NONE,
             valign = START
         };
         flowbox.add (browser_setting);
