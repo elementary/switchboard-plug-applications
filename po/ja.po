@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-06-15 18:17+0000\n"
-"PO-Revision-Date: 2021-04-08 09:06+0000\n"
+"PO-Revision-Date: 2023-06-17 14:11+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-applications/ja/>\n"
@@ -12,14 +12,12 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 4.17\n"
 "X-Launchpad-Export-Date: 2017-02-12 06:23+0000\n"
 
 #: src/Plug.vala:44
 msgid "Manage default apps, startup apps, and app permissions"
-msgstr ""
-"デフォルトのアプリと、起動時に実行するアプリ、アプリのパーミッションを管理し"
-"ます"
+msgstr "デフォルトアプリ、自動起動するアプリ、アプリのパーミッションを管理します"
 
 #: src/Plug.vala:45
 msgid "Applications"
@@ -31,7 +29,7 @@ msgstr "デフォルト"
 
 #: src/Plug.vala:57 src/Plug.vala:105
 msgid "Startup"
-msgstr "起動時に実行"
+msgstr "自動起動"
 
 #: src/Plug.vala:58 src/Plug.vala:107
 msgid "Permissions"
@@ -182,16 +180,15 @@ msgstr "、 "
 
 #: src/Startup/Startup.vala:26
 msgid "Launch Apps on Startup"
-msgstr "起動時にアプリを起動"
+msgstr "システム起動時にアプリを起動します"
 
 #: src/Startup/Startup.vala:27
 msgid "Add apps to the Startup list by clicking the icon in the toolbar below."
-msgstr ""
-"下のツールバーのアイコンをクリックして起動時のリストにアプリを追加します。"
+msgstr "下のツールバーのアイコンをクリックして、自動起動リストにアプリを追加します。"
 
 #: src/Startup/Startup.vala:45
 msgid "Add Startup App…"
-msgstr "起動時のアプリを追加…"
+msgstr "自動起動するアプリを追加…"
 
 #: src/Startup/Backend/KeyFile.vala:99
 msgid "Custom Command"
@@ -199,12 +196,12 @@ msgstr "カスタムコマンド"
 
 #: src/Startup/Widgets/AppRow.vala:46
 msgid "Remove this app from startup"
-msgstr ""
+msgstr "このアプリを自動起動から削除"
 
 #: src/Startup/Widgets/AppRow.vala:51
 #, c-format
 msgid "Launch %s on startup"
-msgstr "起動時に %s を起動します"
+msgstr "システム起動時に %s を起動します"
 
 #: src/Startup/Widgets/AppChooser.vala:17
 msgid "Search Applications"
