@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-06-15 18:17+0000\n"
-"PO-Revision-Date: 2023-06-16 08:06+0000\n"
+"PO-Revision-Date: 2023-06-17 14:11+0000\n"
 "Last-Translator: кубик круглый <megarainbow29@gmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-applications/ru/>\n"
@@ -202,7 +202,7 @@ msgstr "Удалить приложение из автозагрузки"
 #: src/Startup/Widgets/AppRow.vala:51
 #, c-format
 msgid "Launch %s on startup"
-msgstr "Запуск %s при запуске системы"
+msgstr "Запуск %s при загрузке системы"
 
 #: src/Startup/Widgets/AppChooser.vala:17
 msgid "Search Applications"
