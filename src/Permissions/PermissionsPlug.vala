@@ -89,6 +89,9 @@ public class Permissions.Plug : Gtk.Grid {
             show_row (row);
         }
 
+        margin_end = 12;
+        margin_bottom = 12;
+        margin_start = 12;
         column_spacing = 12;
         attach (frame, 0, 0, 1, 1);
         attach (app_settings_view, 1, 0, 2, 1);
