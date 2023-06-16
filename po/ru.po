@@ -4,7 +4,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-06-15 18:17+0000\n"
 "PO-Revision-Date: 2023-06-16 08:06+0000\n"
-"Last-Translator: lenemter <lenemter@gmail.com>\n"
+"Last-Translator: кубик круглый <megarainbow29@gmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-applications/ru/>\n"
 "Language: ru\n"
@@ -181,17 +181,15 @@ msgstr ", "
 
 #: src/Startup/Startup.vala:26
 msgid "Launch Apps on Startup"
-msgstr "Запуск приложений при запуске системы"
+msgstr "Запуск приложений при загрузке системы"
 
 #: src/Startup/Startup.vala:27
 msgid "Add apps to the Startup list by clicking the icon in the toolbar below."
-msgstr ""
-"Добавьте приложения в список автозагрузки, нажав на значок на панели "
-"инструментов ниже."
+msgstr "Добавьте приложения в автозапуск, нажав на значок на панели ниже."
 
 #: src/Startup/Startup.vala:45
 msgid "Add Startup App…"
-msgstr "Добавить программу в автозапуск…"
+msgstr "Добавить приложение в автозапуск…"
 
 #: src/Startup/Backend/KeyFile.vala:99
 msgid "Custom Command"
@@ -199,7 +197,7 @@ msgstr "Пользовательская команда"
 
 #: src/Startup/Widgets/AppRow.vala:46
 msgid "Remove this app from startup"
-msgstr ""
+msgstr "Удалить приложение из автозагрузки"
 
 #: src/Startup/Widgets/AppRow.vala:51
 #, c-format
