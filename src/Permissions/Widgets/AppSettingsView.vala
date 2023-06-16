@@ -19,66 +19,79 @@
 * Authored by: Marius Meisenzahl <mariusmeisenzahl@gmail.com>
 */
 
-public class Permissions.Widgets.AppSettingsView : Gtk.Grid {
+public class Permissions.Widgets.AppSettingsView : Granite.SimpleSettingsPage {
     public Backend.App? selected_app { get; set; default = null; }
+    public static GLib.HashTable <unowned string, unowned string> permission_names { get; private set; }
 
     private Gtk.ListBox list_box;
     private Gtk.Button reset_button;
+
+    static construct {
+        permission_names = new GLib.HashTable <unowned string, unowned string> (str_hash, str_equal);
+        permission_names["filesystems=home"] = _("Home Folder");
+        permission_names["filesystems=host"] = _("System Folders");
+        permission_names["devices=all"] = _("Devices");
+        permission_names["shared=network"] = _("Network");
+        permission_names["features=bluetooth"] = _("Bluetooth");
+        permission_names["sockets=cups"] = _("Printing");
+        permission_names["sockets=ssh-auth"] = _("Secure Shell Agent");
+        permission_names["devices=dri"] = _("GPU Acceleration");
+    }
 
     construct {
         notify["selected-app"].connect (update_view);
 
         var homefolder_widget = new PermissionSettingsWidget (
-            Plug.permission_names["filesystems=home"],
+            permission_names["filesystems=home"],
             _("Access your entire Home folder, including any hidden folders."),
             "user-home",
             new Backend.PermissionSettings ("filesystems=home")
         );
 
         var sysfolders_widget = new PermissionSettingsWidget (
-            Plug.permission_names["filesystems=host"],
+            permission_names["filesystems=host"],
             _("Access system folders, not including the operating system or system internals. This includes users' Home folders."),
             "drive-harddisk",
             new Backend.PermissionSettings ("filesystems=host")
         );
 
         var devices_widget = new PermissionSettingsWidget (
-            Plug.permission_names["devices=all"],
+            permission_names["devices=all"],
             _("Access all devices, such as webcams, microphones, and connected USB devices."),
             "camera-web",
             new Backend.PermissionSettings ("devices=all")
         );
 
         var network_widget = new PermissionSettingsWidget (
-            Plug.permission_names["shared=network"],
+            permission_names["shared=network"],
             _("Access the Internet and local networks."),
             "preferences-system-network",
             new Backend.PermissionSettings ("shared=network")
         );
 
         var bluetooth_widget = new PermissionSettingsWidget (
-            Plug.permission_names["features=bluetooth"],
+            permission_names["features=bluetooth"],
             _("Manage Bluetooth devices including pairing, unpairing, and discovery."),
             "bluetooth",
             new Backend.PermissionSettings ("features=bluetooth")
         );
 
         var printing_widget = new PermissionSettingsWidget (
-            Plug.permission_names["sockets=cups"],
+            permission_names["sockets=cups"],
             _("Access printers."),
             "printer",
             new Backend.PermissionSettings ("sockets=cups")
         );
 
         var ssh_widget = new PermissionSettingsWidget (
-            Plug.permission_names["sockets=ssh-auth"],
+            permission_names["sockets=ssh-auth"],
             _("Access other devices on the network via SSH."),
             "utilities-terminal",
             new Backend.PermissionSettings ("sockets=ssh-auth")
         );
 
         var gpu_widget = new PermissionSettingsWidget (
-            Plug.permission_names["devices=dri"],
+            permission_names["devices=dri"],
             _("Accelerate graphical output."),
             "application-x-firmware",
             new Backend.PermissionSettings ("devices=dri")
@@ -110,9 +123,8 @@ public class Permissions.Widgets.AppSettingsView : Gtk.Grid {
             halign = Gtk.Align.END
         };
 
-        row_spacing = 24;
-        attach (frame, 0, 0);
-        attach (reset_button, 0, 1);
+        content_area.add (frame);
+        action_area.add (reset_button);
 
         update_view ();
 
@@ -149,6 +161,8 @@ public class Permissions.Widgets.AppSettingsView : Gtk.Grid {
         initialize_settings_view ();
 
         if (selected_app == null) {
+            title = selected_app.name;
+
             list_box.sensitive = false;
             reset_button.sensitive = false;
             return;

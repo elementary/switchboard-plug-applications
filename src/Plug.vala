@@ -25,7 +25,7 @@ public class ApplicationsPlug : Switchboard.Plug {
     private const string STARTUP = "startup";
     private const string PERMISSIONS = "permissions";
 
-    private Gtk.Grid grid;
+    private Gtk.Box box;
     private Gtk.Stack stack;
 
     public ApplicationsPlug () {
@@ -49,39 +49,93 @@ public class ApplicationsPlug : Switchboard.Plug {
     }
 
     public override Gtk.Widget get_widget () {
-        if (grid == null) {
+        if (box == null) {
+            var app_settings_view = new Permissions.Widgets.AppSettingsView ();
+
             stack = new Gtk.Stack () {
-                expand = true
+                hexpand = true,
+                vexpand = true
             };
-            stack.add_titled (new Defaults.Plug (), DEFAULTS, _("Defaults"));
-            stack.add_titled (new Startup.Plug (), STARTUP, _("Startup"));
-            stack.add_titled (new Permissions.Plug (), PERMISSIONS, _("Permissions"));
+            stack.add_named (new Defaults.Plug (), DEFAULTS);
+            stack.add_named (new Startup.Plug (), STARTUP);
+            stack.add_named (app_settings_view, PERMISSIONS);
 
-            var stack_switcher = new Gtk.StackSwitcher () {
-                halign = Gtk.Align.CENTER,
-                homogeneous = true,
-                stack = stack
+            var defaults_row = new SimpleSidebarRow (
+                _("Defaults"), "preferences-desktop-defaults"
+            );
+
+            var startup_row = new SimpleSidebarRow (
+                _("Startup"), "preferences-desktop-startup"
+            );
+
+            var sidebar = new Gtk.ListBox () {
+                vexpand = true,
+                selection_mode = Gtk.SelectionMode.SINGLE
+            };
+            sidebar.set_sort_func ((Gtk.ListBoxSortFunc) sort_func);
+            sidebar.add (defaults_row);
+            sidebar.add (startup_row);
+
+            Permissions.Backend.AppManager.get_default ().apps.foreach ((id, app) => {
+                var app_entry = new Permissions.SidebarRow (app);
+                sidebar.add (app_entry);
+            });
+
+            var scrolled_window = new Gtk.ScrolledWindow (null, null) {
+                child = sidebar,
+                expand = true,
+                hscrollbar_policy = Gtk.PolicyType.NEVER
             };
 
-            grid = new Gtk.Grid () {
-                margin_top = 12,
-                margin_end = 12,
-                margin_bottom = 12,
-                margin_start = 12,
-                row_spacing = 24
+            var clamp = new Hdy.Clamp () {
+                child = stack
             };
-            grid.attach (stack_switcher, 0, 0);
-            grid.attach (stack, 0, 1);
-            grid.show_all ();
+
+            var paned = new Gtk.Paned (HORIZONTAL) {
+                position = 200
+            };
+            paned.pack1 (scrolled_window, false, false);
+            paned.pack2 (clamp, true, false);
+
+            box = new Gtk.Box (VERTICAL, 0);
+            box.add (paned);
+            box.show_all ();
+
+            sidebar.row_selected.connect ((row) => {
+                if (row == null) {
+                    return;
+                }
+
+                if (row is Permissions.SidebarRow) {
+                    stack.visible_child = app_settings_view;
+                    app_settings_view.selected_app = ((Permissions.SidebarRow)row).app;
+                } else if (row is SimpleSidebarRow) {
+                    if (((SimpleSidebarRow) row).icon_name == "preferences-desktop-defaults") {
+                        stack.visible_child_name = DEFAULTS;
+                    } else if (((SimpleSidebarRow) row).icon_name == "preferences-desktop-startup") {
+                        stack.visible_child_name = STARTUP;
+                    }
+
+                }
+            });
         }
 
-        return grid;
+        return box;
     }
 
     public override void shown () {
     }
 
     public override void hidden () {
+    }
+
+    [CCode (instance_pos = -1)]
+    private int sort_func (Gtk.ListBoxRow row1, Gtk.ListBoxRow row2) {
+        if (row1 is Permissions.SidebarRow && row2 is Permissions.SidebarRow) {
+            return ((Permissions.SidebarRow) row1).app.name.collate (((Permissions.SidebarRow) row2).app.name);
+        }
+
+        return 0;
     }
 
     public override void search_callback (string location) {
@@ -118,6 +172,42 @@ public class ApplicationsPlug : Switchboard.Plug {
         return search_results;
     }
 
+    private class SimpleSidebarRow : Gtk.ListBoxRow {
+        public string label { get; construct; }
+        public string icon_name { get; construct; }
+
+        public SimpleSidebarRow (string label, string icon_name) {
+            Object (
+                label: label,
+                icon_name: icon_name
+            );
+        }
+
+        construct {
+            var image = new Gtk.Image.from_icon_name ("application-default-icon", Gtk.IconSize.DND) {
+                pixel_size = 32
+            };
+
+            var title_label = new Gtk.Label (label) {
+                ellipsize = Pango.EllipsizeMode.END,
+                xalign = 0
+            };
+            title_label.get_style_context ().add_class (Granite.STYLE_CLASS_H3_LABEL);
+
+            var grid = new Gtk.Grid () {
+                column_spacing = 6,
+                margin_top = 6,
+                margin_end = 6,
+                margin_bottom = 6,
+                margin_start = 6
+            };
+            grid.attach (image, 0, 0);
+            grid.attach (title_label, 1, 0);
+
+            hexpand = true;
+            child = grid;
+        }
+    }
 }
 
 public Switchboard.Plug get_plug (Module module) {
