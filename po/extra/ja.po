@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-15 18:17+0000\n"
+"POT-Creation-Date: 2023-06-17 14:11+0000\n"
 "PO-Revision-Date: 2023-06-17 14:11+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
@@ -44,7 +44,8 @@ msgstr ""
 
 #: data/applications.metainfo.xml.in:43
 msgid "App chooser in Startup is a dialog instead of a popover"
-msgstr "“自動起動”で表示するアプリ選択画面を、ポップオーバーからダイアログに変更"
+msgstr ""
+"“自動起動”で表示するアプリ選択画面を、ポップオーバーからダイアログに変更"
 
 #: data/applications.metainfo.xml.in:44 data/applications.metainfo.xml.in:58
 #: data/applications.metainfo.xml.in:72 data/applications.metainfo.xml.in:79
