@@ -52,6 +52,9 @@ public class Startup.Widgets.AppChooser : Granite.Dialog {
         get_content_area ().add (box);
         add_button ("Cancel", Gtk.ResponseType.CANCEL);
 
+        // TRANSLATORS: This string is used by screen reader
+        get_accessible ().accessible_name = _("Select startup app");
+
         search_entry.grab_focus ();
         search_entry.search_changed.connect (() => {
             list.invalidate_filter ();
