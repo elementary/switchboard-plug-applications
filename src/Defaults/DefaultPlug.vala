@@ -120,7 +120,8 @@ public class Defaults.Plug : Gtk.Box {
                 return null;
             }));
 
-            app_chooser.get_accessible ().accessible_name = "Default %s".printf (label);
+            // TRANSLATORS: This is description for for screen reader. %s can be "Web Browser" or "Music Player" and so on.
+            app_chooser.get_accessible ().accessible_name = _("Default %s").printf (label);
         }
 
         private void run_in_thread (owned ThreadFunc<void*> func) {
