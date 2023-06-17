@@ -66,10 +66,17 @@ public class Defaults.Plug : Gtk.Box {
         flowbox.add (files_setting);
 
         var clamp = new Hdy.Clamp () {
-            child = flowbox
+            child = flowbox,
+            margin_end = 12,
+            margin_bottom = 12,
+            margin_start = 12
         };
 
-        add (clamp);
+        var scrolled_window = new Gtk.ScrolledWindow (null, null) {
+            child = clamp
+        };
+
+        add (scrolled_window);
 
         show_all ();
     }

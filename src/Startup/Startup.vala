@@ -63,7 +63,10 @@ public class Startup.Plug : Gtk.Box {
         };
 
         var clamp = new Hdy.Clamp () {
-            child = frame
+            child = frame,
+            margin_end = 12,
+            margin_bottom = 12,
+            margin_start = 12
         };
 
         add (clamp);

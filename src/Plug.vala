@@ -65,9 +65,6 @@ public class ApplicationsPlug : Switchboard.Plug {
 
             grid = new Gtk.Grid () {
                 margin_top = 12,
-                margin_end = 12,
-                margin_bottom = 12,
-                margin_start = 12,
                 row_spacing = 24
             };
             grid.attach (stack_switcher, 0, 0);
