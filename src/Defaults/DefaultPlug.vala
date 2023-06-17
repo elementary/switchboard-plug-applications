@@ -119,6 +119,8 @@ public class Defaults.Plug : Gtk.Box {
                 change_default (app_chooser.get_app_info (), content_type);
                 return null;
             }));
+
+            app_chooser.get_accessible ().accessible_name = "Default %s".printf (label);
         }
 
         private void run_in_thread (owned ThreadFunc<void*> func) {
