@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-15 18:17+0000\n"
-"PO-Revision-Date: 2021-11-06 12:00+0000\n"
+"POT-Creation-Date: 2023-06-17 14:11+0000\n"
+"PO-Revision-Date: 2023-06-17 14:11+0000\n"
 "Last-Translator: Marcin Serwin <marcin.serwin0@protonmail.com>\n"
 "Language-Team: Polish <https://l10n.elementary.io/projects/switchboard/"
 "applications-plug-extra/pl/>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 4.17\n"
 
 #: data/applications.metainfo.xml.in:10
 msgid "Applications Settings"
@@ -30,7 +30,7 @@ msgstr "Zarządzaj programami domyślnymi i startowymi"
 
 #: data/applications.metainfo.xml.in:33
 msgid "elementary, Inc."
-msgstr ""
+msgstr "elementary, Inc."
 
 #: data/applications.metainfo.xml.in:40 data/applications.metainfo.xml.in:54
 #: data/applications.metainfo.xml.in:69
@@ -39,11 +39,12 @@ msgstr "Mniejsze aktualizacje:"
 
 #: data/applications.metainfo.xml.in:42
 msgid "Properly handle autostart files created by the Background Portal"
-msgstr ""
+msgstr "Poprawne obsługiwaniu plików autostartu stworzonych przez Panel tła"
 
 #: data/applications.metainfo.xml.in:43
 msgid "App chooser in Startup is a dialog instead of a popover"
 msgstr ""
+"Wybieranie aplikacji w Programach startowych jest dialogiem, a nie popoverem"
 
 #: data/applications.metainfo.xml.in:44 data/applications.metainfo.xml.in:58
 #: data/applications.metainfo.xml.in:72 data/applications.metainfo.xml.in:79
