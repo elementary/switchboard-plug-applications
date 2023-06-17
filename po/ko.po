@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-15 18:17+0000\n"
+"POT-Creation-Date: 2023-06-17 14:11+0000\n"
 "PO-Revision-Date: 2022-08-06 13:11+0000\n"
 "Last-Translator: Jung-Kyu Park <bagjunggyu@gmail.com>\n"
 "Language-Team: Korean <https://l10n.elementary.io/projects/switchboard/"
@@ -27,60 +27,60 @@ msgstr "애플리케이션"
 msgid "Defaults"
 msgstr "기본"
 
-#: src/Plug.vala:57 src/Plug.vala:105
+#: src/Plug.vala:57 src/Plug.vala:102
 msgid "Startup"
 msgstr "시작"
 
-#: src/Plug.vala:58 src/Plug.vala:107
+#: src/Plug.vala:58 src/Plug.vala:104
 msgid "Permissions"
 msgstr "권한"
 
-#: src/Plug.vala:106
+#: src/Plug.vala:103
 msgid "Default Apps"
 msgstr "기본 앱"
 
-#: src/Plug.vala:108
+#: src/Plug.vala:105
 msgid "Sandboxing"
 msgstr "샌드박싱"
 
-#: src/Plug.vala:109
+#: src/Plug.vala:106
 msgid "Confinement"
 msgstr "제한"
 
-#: src/Plug.vala:110 src/Plug.vala:111 src/Plug.vala:112 src/Plug.vala:113
-#: src/Plug.vala:114 src/Plug.vala:115 src/Plug.vala:116 src/Plug.vala:117
+#: src/Plug.vala:107 src/Plug.vala:108 src/Plug.vala:109 src/Plug.vala:110
+#: src/Plug.vala:111 src/Plug.vala:112 src/Plug.vala:113 src/Plug.vala:114
 msgid "Default"
 msgstr "기본"
 
-#: src/Plug.vala:110 src/Defaults/DefaultPlug.vala:12
+#: src/Plug.vala:107 src/Defaults/DefaultPlug.vala:12
 msgid "Web Browser"
 msgstr "웹 브라우저"
 
-#: src/Plug.vala:111 src/Defaults/DefaultPlug.vala:17
+#: src/Plug.vala:108 src/Defaults/DefaultPlug.vala:17
 msgid "Email Client"
 msgstr "이메일"
 
-#: src/Plug.vala:112 src/Defaults/DefaultPlug.vala:22
+#: src/Plug.vala:109 src/Defaults/DefaultPlug.vala:22
 msgid "Calendar"
 msgstr "일정 관리"
 
-#: src/Plug.vala:113 src/Defaults/DefaultPlug.vala:27
+#: src/Plug.vala:110 src/Defaults/DefaultPlug.vala:27
 msgid "Video Player"
 msgstr "동영상"
 
-#: src/Plug.vala:114 src/Defaults/DefaultPlug.vala:32
+#: src/Plug.vala:111 src/Defaults/DefaultPlug.vala:32
 msgid "Music Player"
 msgstr "뮤직 플레이어"
 
-#: src/Plug.vala:115 src/Defaults/DefaultPlug.vala:42
+#: src/Plug.vala:112 src/Defaults/DefaultPlug.vala:42
 msgid "Text Editor"
 msgstr "텍스트"
 
-#: src/Plug.vala:116 src/Defaults/DefaultPlug.vala:37
+#: src/Plug.vala:113 src/Defaults/DefaultPlug.vala:37
 msgid "Image Viewer"
 msgstr "사진"
 
-#: src/Plug.vala:117 src/Defaults/DefaultPlug.vala:47
+#: src/Plug.vala:114 src/Defaults/DefaultPlug.vala:47
 msgid "File Browser"
 msgstr "파일"
 
@@ -205,8 +205,19 @@ msgstr "애플리케이션 검색"
 msgid "Type in a custom command"
 msgstr "사용자 지정 명령어 입력"
 
-#~ msgid "Remove Selected Startup App"
-#~ msgstr "선택한 시작 앱 제거"
+#. TRANSLATORS: This string is used by screen reader
+#: src/Startup/Widgets/AppChooser.vala:56
+#, fuzzy
+#| msgid "Remove Selected Startup App"
+msgid "Select startup app"
+msgstr "선택한 시작 앱 제거"
+
+#. TRANSLATORS: This is description for for screen reader. %s can be "Web Browser" or "Music Player" and so on.
+#: src/Defaults/DefaultPlug.vala:124
+#, fuzzy, c-format
+#| msgid "Defaults"
+msgid "Default %s"
+msgstr "기본"
 
 #~ msgid "Web Browser:"
 #~ msgstr "웹:"

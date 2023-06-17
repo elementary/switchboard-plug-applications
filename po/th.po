@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-15 18:17+0000\n"
+"POT-Creation-Date: 2023-06-17 14:11+0000\n"
 "PO-Revision-Date: 2020-10-11 21:36+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Thai <https://l10n.elementary.io/projects/switchboard/"
@@ -31,67 +31,67 @@ msgstr "โปรแกรม"
 msgid "Defaults"
 msgstr "ค่าเริ่มต้น"
 
-#: src/Plug.vala:57 src/Plug.vala:105
+#: src/Plug.vala:57 src/Plug.vala:102
 msgid "Startup"
 msgstr "เริ่มระบบ"
 
-#: src/Plug.vala:58 src/Plug.vala:107
+#: src/Plug.vala:58 src/Plug.vala:104
 msgid "Permissions"
 msgstr ""
 
-#: src/Plug.vala:106
+#: src/Plug.vala:103
 msgid "Default Apps"
 msgstr ""
 
-#: src/Plug.vala:108
+#: src/Plug.vala:105
 msgid "Sandboxing"
 msgstr ""
 
-#: src/Plug.vala:109
+#: src/Plug.vala:106
 msgid "Confinement"
 msgstr ""
 
-#: src/Plug.vala:110 src/Plug.vala:111 src/Plug.vala:112 src/Plug.vala:113
-#: src/Plug.vala:114 src/Plug.vala:115 src/Plug.vala:116 src/Plug.vala:117
+#: src/Plug.vala:107 src/Plug.vala:108 src/Plug.vala:109 src/Plug.vala:110
+#: src/Plug.vala:111 src/Plug.vala:112 src/Plug.vala:113 src/Plug.vala:114
 msgid "Default"
 msgstr "ค่าเริ่มต้น"
 
-#: src/Plug.vala:110 src/Defaults/DefaultPlug.vala:12
+#: src/Plug.vala:107 src/Defaults/DefaultPlug.vala:12
 #, fuzzy
 msgid "Web Browser"
 msgstr "เว็บเบราว์เซอร์:"
 
-#: src/Plug.vala:111 src/Defaults/DefaultPlug.vala:17
+#: src/Plug.vala:108 src/Defaults/DefaultPlug.vala:17
 #, fuzzy
 msgid "Email Client"
 msgstr "Email Client:"
 
-#: src/Plug.vala:112 src/Defaults/DefaultPlug.vala:22
+#: src/Plug.vala:109 src/Defaults/DefaultPlug.vala:22
 #, fuzzy
 msgid "Calendar"
 msgstr "ปฏิทิน:"
 
-#: src/Plug.vala:113 src/Defaults/DefaultPlug.vala:27
+#: src/Plug.vala:110 src/Defaults/DefaultPlug.vala:27
 #, fuzzy
 msgid "Video Player"
 msgstr "เครื่องเล่นวิดีโอ:"
 
-#: src/Plug.vala:114 src/Defaults/DefaultPlug.vala:32
+#: src/Plug.vala:111 src/Defaults/DefaultPlug.vala:32
 #, fuzzy
 msgid "Music Player"
 msgstr "เครื่องเล่นเพลง:"
 
-#: src/Plug.vala:115 src/Defaults/DefaultPlug.vala:42
+#: src/Plug.vala:112 src/Defaults/DefaultPlug.vala:42
 #, fuzzy
 msgid "Text Editor"
 msgstr "ตัวแก้ไขข้อความ:"
 
-#: src/Plug.vala:116 src/Defaults/DefaultPlug.vala:37
+#: src/Plug.vala:113 src/Defaults/DefaultPlug.vala:37
 #, fuzzy
 msgid "Image Viewer"
 msgstr "ตัวแสดงภาพ:"
 
-#: src/Plug.vala:117 src/Defaults/DefaultPlug.vala:47
+#: src/Plug.vala:114 src/Defaults/DefaultPlug.vala:47
 #, fuzzy
 msgid "File Browser"
 msgstr "ไฟล์เบราว์เซอร์:"
@@ -217,8 +217,19 @@ msgstr "ค้นหาแอพพลิเคชั่น"
 msgid "Type in a custom command"
 msgstr "พิมพ์คำสั่งเพื่อกำหนดเอง"
 
-#~ msgid "Remove Selected Startup App"
-#~ msgstr "ลบแอปฯเริ่มระบบที่เลือก"
+#. TRANSLATORS: This string is used by screen reader
+#: src/Startup/Widgets/AppChooser.vala:56
+#, fuzzy
+#| msgid "Remove Selected Startup App"
+msgid "Select startup app"
+msgstr "ลบแอปฯเริ่มระบบที่เลือก"
+
+#. TRANSLATORS: This is description for for screen reader. %s can be "Web Browser" or "Music Player" and so on.
+#: src/Defaults/DefaultPlug.vala:124
+#, fuzzy, c-format
+#| msgid "Default"
+msgid "Default %s"
+msgstr "ค่าเริ่มต้น"
 
 #~ msgid "Web Browser:"
 #~ msgstr "เว็บเบราว์เซอร์:"

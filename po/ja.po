@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-15 18:17+0000\n"
+"POT-Creation-Date: 2023-06-17 14:11+0000\n"
 "PO-Revision-Date: 2023-06-17 14:11+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
@@ -17,7 +17,8 @@ msgstr ""
 
 #: src/Plug.vala:44
 msgid "Manage default apps, startup apps, and app permissions"
-msgstr "デフォルトアプリ、自動起動するアプリ、アプリのパーミッションを管理します"
+msgstr ""
+"デフォルトアプリ、自動起動するアプリ、アプリのパーミッションを管理します"
 
 #: src/Plug.vala:45
 msgid "Applications"
@@ -27,60 +28,60 @@ msgstr "アプリケーション"
 msgid "Defaults"
 msgstr "デフォルト"
 
-#: src/Plug.vala:57 src/Plug.vala:105
+#: src/Plug.vala:57 src/Plug.vala:102
 msgid "Startup"
 msgstr "自動起動"
 
-#: src/Plug.vala:58 src/Plug.vala:107
+#: src/Plug.vala:58 src/Plug.vala:104
 msgid "Permissions"
 msgstr "パーミッション"
 
-#: src/Plug.vala:106
+#: src/Plug.vala:103
 msgid "Default Apps"
 msgstr "デフォルトのアプリ"
 
-#: src/Plug.vala:108
+#: src/Plug.vala:105
 msgid "Sandboxing"
 msgstr "サンドボックス"
 
-#: src/Plug.vala:109
+#: src/Plug.vala:106
 msgid "Confinement"
 msgstr "制限"
 
-#: src/Plug.vala:110 src/Plug.vala:111 src/Plug.vala:112 src/Plug.vala:113
-#: src/Plug.vala:114 src/Plug.vala:115 src/Plug.vala:116 src/Plug.vala:117
+#: src/Plug.vala:107 src/Plug.vala:108 src/Plug.vala:109 src/Plug.vala:110
+#: src/Plug.vala:111 src/Plug.vala:112 src/Plug.vala:113 src/Plug.vala:114
 msgid "Default"
 msgstr "デフォルト"
 
-#: src/Plug.vala:110 src/Defaults/DefaultPlug.vala:12
+#: src/Plug.vala:107 src/Defaults/DefaultPlug.vala:12
 msgid "Web Browser"
 msgstr "Web ブラウザー"
 
-#: src/Plug.vala:111 src/Defaults/DefaultPlug.vala:17
+#: src/Plug.vala:108 src/Defaults/DefaultPlug.vala:17
 msgid "Email Client"
 msgstr "メールクライアント"
 
-#: src/Plug.vala:112 src/Defaults/DefaultPlug.vala:22
+#: src/Plug.vala:109 src/Defaults/DefaultPlug.vala:22
 msgid "Calendar"
 msgstr "カレンダー"
 
-#: src/Plug.vala:113 src/Defaults/DefaultPlug.vala:27
+#: src/Plug.vala:110 src/Defaults/DefaultPlug.vala:27
 msgid "Video Player"
 msgstr "ビデオプレーヤー"
 
-#: src/Plug.vala:114 src/Defaults/DefaultPlug.vala:32
+#: src/Plug.vala:111 src/Defaults/DefaultPlug.vala:32
 msgid "Music Player"
 msgstr "ミュージックプレーヤー"
 
-#: src/Plug.vala:115 src/Defaults/DefaultPlug.vala:42
+#: src/Plug.vala:112 src/Defaults/DefaultPlug.vala:42
 msgid "Text Editor"
 msgstr "テキストエディター"
 
-#: src/Plug.vala:116 src/Defaults/DefaultPlug.vala:37
+#: src/Plug.vala:113 src/Defaults/DefaultPlug.vala:37
 msgid "Image Viewer"
 msgstr "画像ビューアー"
 
-#: src/Plug.vala:117 src/Defaults/DefaultPlug.vala:47
+#: src/Plug.vala:114 src/Defaults/DefaultPlug.vala:47
 msgid "File Browser"
 msgstr "ファイルブラウザー"
 
@@ -184,7 +185,8 @@ msgstr "システム起動時にアプリを起動します"
 
 #: src/Startup/Startup.vala:27
 msgid "Add apps to the Startup list by clicking the icon in the toolbar below."
-msgstr "下のツールバーのアイコンをクリックして、自動起動リストにアプリを追加します。"
+msgstr ""
+"下のツールバーのアイコンをクリックして、自動起動リストにアプリを追加します。"
 
 #: src/Startup/Startup.vala:45
 msgid "Add Startup App…"
@@ -211,8 +213,19 @@ msgstr "アプリケーションを検索"
 msgid "Type in a custom command"
 msgstr "カスタムコマンドを入力"
 
-#~ msgid "Remove Selected Startup App"
-#~ msgstr "選択された起動時のアプリを削除"
+#. TRANSLATORS: This string is used by screen reader
+#: src/Startup/Widgets/AppChooser.vala:56
+#, fuzzy
+#| msgid "Remove Selected Startup App"
+msgid "Select startup app"
+msgstr "選択された起動時のアプリを削除"
+
+#. TRANSLATORS: This is description for for screen reader. %s can be "Web Browser" or "Music Player" and so on.
+#: src/Defaults/DefaultPlug.vala:124
+#, fuzzy, c-format
+#| msgid "Defaults"
+msgid "Default %s"
+msgstr "デフォルト"
 
 #~ msgid "Web Browser:"
 #~ msgstr "Web ブラウザー:"

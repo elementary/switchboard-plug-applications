@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-15 18:17+0000\n"
+"POT-Creation-Date: 2023-06-17 14:11+0000\n"
 "PO-Revision-Date: 2021-04-08 17:52+0000\n"
 "Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
 "Language-Team: French <https://l10n.elementary.io/projects/switchboard/"
@@ -29,60 +29,60 @@ msgstr "Applications"
 msgid "Defaults"
 msgstr "Par défaut"
 
-#: src/Plug.vala:57 src/Plug.vala:105
+#: src/Plug.vala:57 src/Plug.vala:102
 msgid "Startup"
 msgstr "Démarrage"
 
-#: src/Plug.vala:58 src/Plug.vala:107
+#: src/Plug.vala:58 src/Plug.vala:104
 msgid "Permissions"
 msgstr "Autorisations"
 
-#: src/Plug.vala:106
+#: src/Plug.vala:103
 msgid "Default Apps"
 msgstr "Applications par défaut"
 
-#: src/Plug.vala:108
+#: src/Plug.vala:105
 msgid "Sandboxing"
 msgstr "Bac à sable"
 
-#: src/Plug.vala:109
+#: src/Plug.vala:106
 msgid "Confinement"
 msgstr "Confinement"
 
-#: src/Plug.vala:110 src/Plug.vala:111 src/Plug.vala:112 src/Plug.vala:113
-#: src/Plug.vala:114 src/Plug.vala:115 src/Plug.vala:116 src/Plug.vala:117
+#: src/Plug.vala:107 src/Plug.vala:108 src/Plug.vala:109 src/Plug.vala:110
+#: src/Plug.vala:111 src/Plug.vala:112 src/Plug.vala:113 src/Plug.vala:114
 msgid "Default"
 msgstr "Par défaut"
 
-#: src/Plug.vala:110 src/Defaults/DefaultPlug.vala:12
+#: src/Plug.vala:107 src/Defaults/DefaultPlug.vala:12
 msgid "Web Browser"
 msgstr "Navigateur web"
 
-#: src/Plug.vala:111 src/Defaults/DefaultPlug.vala:17
+#: src/Plug.vala:108 src/Defaults/DefaultPlug.vala:17
 msgid "Email Client"
 msgstr "Messagerie"
 
-#: src/Plug.vala:112 src/Defaults/DefaultPlug.vala:22
+#: src/Plug.vala:109 src/Defaults/DefaultPlug.vala:22
 msgid "Calendar"
 msgstr "Calendrier"
 
-#: src/Plug.vala:113 src/Defaults/DefaultPlug.vala:27
+#: src/Plug.vala:110 src/Defaults/DefaultPlug.vala:27
 msgid "Video Player"
 msgstr "Lecteur vidéo"
 
-#: src/Plug.vala:114 src/Defaults/DefaultPlug.vala:32
+#: src/Plug.vala:111 src/Defaults/DefaultPlug.vala:32
 msgid "Music Player"
 msgstr "Lecteur audio"
 
-#: src/Plug.vala:115 src/Defaults/DefaultPlug.vala:42
+#: src/Plug.vala:112 src/Defaults/DefaultPlug.vala:42
 msgid "Text Editor"
 msgstr "Éditeur de texte"
 
-#: src/Plug.vala:116 src/Defaults/DefaultPlug.vala:37
+#: src/Plug.vala:113 src/Defaults/DefaultPlug.vala:37
 msgid "Image Viewer"
 msgstr "Visionneuse d'images"
 
-#: src/Plug.vala:117 src/Defaults/DefaultPlug.vala:47
+#: src/Plug.vala:114 src/Defaults/DefaultPlug.vala:47
 msgid "File Browser"
 msgstr "Explorateur de fichiers"
 
@@ -216,8 +216,19 @@ msgstr "Rechercher des applications"
 msgid "Type in a custom command"
 msgstr "Entrez une commande personnalisée"
 
-#~ msgid "Remove Selected Startup App"
-#~ msgstr "Supprimer l'application sélectionnée du démarrage automatique"
+#. TRANSLATORS: This string is used by screen reader
+#: src/Startup/Widgets/AppChooser.vala:56
+#, fuzzy
+#| msgid "Remove Selected Startup App"
+msgid "Select startup app"
+msgstr "Supprimer l'application sélectionnée du démarrage automatique"
+
+#. TRANSLATORS: This is description for for screen reader. %s can be "Web Browser" or "Music Player" and so on.
+#: src/Defaults/DefaultPlug.vala:124
+#, fuzzy, c-format
+#| msgid "Defaults"
+msgid "Default %s"
+msgstr "Par défaut"
 
 #~ msgid "Web Browser:"
 #~ msgstr "Navigateur web :"

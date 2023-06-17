@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-15 18:17+0000\n"
+"POT-Creation-Date: 2023-06-17 14:11+0000\n"
 "PO-Revision-Date: 2020-10-11 21:36+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Latvian <https://l10n.elementary.io/projects/switchboard/"
@@ -30,67 +30,67 @@ msgstr "Lietotnes"
 msgid "Defaults"
 msgstr "Pēc noklusējuma"
 
-#: src/Plug.vala:57 src/Plug.vala:105
+#: src/Plug.vala:57 src/Plug.vala:102
 msgid "Startup"
 msgstr "Startēšana"
 
-#: src/Plug.vala:58 src/Plug.vala:107
+#: src/Plug.vala:58 src/Plug.vala:104
 msgid "Permissions"
 msgstr ""
 
-#: src/Plug.vala:106
+#: src/Plug.vala:103
 msgid "Default Apps"
 msgstr ""
 
-#: src/Plug.vala:108
+#: src/Plug.vala:105
 msgid "Sandboxing"
 msgstr ""
 
-#: src/Plug.vala:109
+#: src/Plug.vala:106
 msgid "Confinement"
 msgstr ""
 
-#: src/Plug.vala:110 src/Plug.vala:111 src/Plug.vala:112 src/Plug.vala:113
-#: src/Plug.vala:114 src/Plug.vala:115 src/Plug.vala:116 src/Plug.vala:117
+#: src/Plug.vala:107 src/Plug.vala:108 src/Plug.vala:109 src/Plug.vala:110
+#: src/Plug.vala:111 src/Plug.vala:112 src/Plug.vala:113 src/Plug.vala:114
 msgid "Default"
 msgstr "Pēc noklusējuma"
 
-#: src/Plug.vala:110 src/Defaults/DefaultPlug.vala:12
+#: src/Plug.vala:107 src/Defaults/DefaultPlug.vala:12
 #, fuzzy
 msgid "Web Browser"
 msgstr "Interneta pārlūks:"
 
-#: src/Plug.vala:111 src/Defaults/DefaultPlug.vala:17
+#: src/Plug.vala:108 src/Defaults/DefaultPlug.vala:17
 #, fuzzy
 msgid "Email Client"
 msgstr "Epasta klients:"
 
-#: src/Plug.vala:112 src/Defaults/DefaultPlug.vala:22
+#: src/Plug.vala:109 src/Defaults/DefaultPlug.vala:22
 #, fuzzy
 msgid "Calendar"
 msgstr "Kalendārs:"
 
-#: src/Plug.vala:113 src/Defaults/DefaultPlug.vala:27
+#: src/Plug.vala:110 src/Defaults/DefaultPlug.vala:27
 #, fuzzy
 msgid "Video Player"
 msgstr "Video atskaņotājs:"
 
-#: src/Plug.vala:114 src/Defaults/DefaultPlug.vala:32
+#: src/Plug.vala:111 src/Defaults/DefaultPlug.vala:32
 #, fuzzy
 msgid "Music Player"
 msgstr "Mūzikas atskaņotājs:"
 
-#: src/Plug.vala:115 src/Defaults/DefaultPlug.vala:42
+#: src/Plug.vala:112 src/Defaults/DefaultPlug.vala:42
 #, fuzzy
 msgid "Text Editor"
 msgstr "Teksta redaktors:"
 
-#: src/Plug.vala:116 src/Defaults/DefaultPlug.vala:37
+#: src/Plug.vala:113 src/Defaults/DefaultPlug.vala:37
 #, fuzzy
 msgid "Image Viewer"
 msgstr "Attēlu skatītājs:"
 
-#: src/Plug.vala:117 src/Defaults/DefaultPlug.vala:47
+#: src/Plug.vala:114 src/Defaults/DefaultPlug.vala:47
 #, fuzzy
 msgid "File Browser"
 msgstr "Failu pārlūks:"
@@ -216,8 +216,19 @@ msgstr "Meklēt lietotnes"
 msgid "Type in a custom command"
 msgstr "Ievadīt pielāgotu komandu"
 
-#~ msgid "Remove Selected Startup App"
-#~ msgstr "Noņemt starta lietotni ..."
+#. TRANSLATORS: This string is used by screen reader
+#: src/Startup/Widgets/AppChooser.vala:56
+#, fuzzy
+#| msgid "Remove Selected Startup App"
+msgid "Select startup app"
+msgstr "Noņemt starta lietotni ..."
+
+#. TRANSLATORS: This is description for for screen reader. %s can be "Web Browser" or "Music Player" and so on.
+#: src/Defaults/DefaultPlug.vala:124
+#, fuzzy, c-format
+#| msgid "Default"
+msgid "Default %s"
+msgstr "Pēc noklusējuma"
 
 #~ msgid "Web Browser:"
 #~ msgstr "Interneta pārlūks:"
