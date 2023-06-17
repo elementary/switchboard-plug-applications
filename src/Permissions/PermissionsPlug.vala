@@ -65,6 +65,7 @@ public class Permissions.Plug : Gtk.Grid {
         };
         app_list.set_placeholder (placeholder);
         app_list.set_sort_func ((Gtk.ListBoxSortFunc) sort_func);
+        app_list.get_accessible ().accessible_name = _("Applications");
 
         var scrolled_window = new Gtk.ScrolledWindow (null, null) {
             child = app_list
