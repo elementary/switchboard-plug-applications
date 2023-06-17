@@ -174,7 +174,6 @@ public class Permissions.Widgets.AppSettingsView : Gtk.Grid {
 
             list_box.sensitive = true;
             reset_button.sensitive = should_enable_reset;
-
         });
     }
 
