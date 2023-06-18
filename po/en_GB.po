@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-06-17 14:51+0000\n"
-"PO-Revision-Date: 2023-06-17 14:11+0000\n"
+"PO-Revision-Date: 2023-06-19 14:07+0000\n"
 "Last-Translator: David Hewitt <davidmhewitt@gmail.com>\n"
 "Language-Team: English (United Kingdom) <https://l10n.elementary.io/projects/"
 "switchboard/switchboard-plug-applications/en_GB/>\n"
@@ -171,10 +171,9 @@ msgid "Reset to Defaults"
 msgstr "Reset to Defaults"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:174
-#, fuzzy, c-format
-#| msgid "Permissions"
+#, c-format
 msgid "%s permissions"
-msgstr "Permissions"
+msgstr "%s permissions"
 
 #. / Translators: This is a delimiter that separates types of permissions in the sidebar description
 #: src/Permissions/Widgets/SidebarRow.vala:93
@@ -217,17 +216,14 @@ msgstr "Type in a custom command"
 
 #. TRANSLATORS: This string is used by screen reader
 #: src/Startup/Widgets/AppChooser.vala:56
-#, fuzzy
-#| msgid "Remove Selected Startup App"
 msgid "Select startup app"
-msgstr "Remove Selected Startup App"
+msgstr "Select startup app"
 
 #. TRANSLATORS: This is description for for screen reader. %s can be "Web Browser" or "Music Player" and so on.
 #: src/Defaults/DefaultPlug.vala:124
-#, fuzzy, c-format
-#| msgid "Defaults"
+#, c-format
 msgid "Default %s"
-msgstr "Defaults"
+msgstr "Default %s"
 
 #~ msgid "Web Browser:"
 #~ msgstr "Web Browser:"
