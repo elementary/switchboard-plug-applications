@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-17 14:11+0000\n"
+"POT-Creation-Date: 2023-06-17 14:51+0000\n"
 "PO-Revision-Date: 2021-04-08 17:52+0000\n"
 "Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
 "Language-Team: French <https://l10n.elementary.io/projects/switchboard/"
@@ -21,7 +21,7 @@ msgstr ""
 "Gérez les applications par défaut, les applications au démarrage et les "
 "autorisations des applications"
 
-#: src/Plug.vala:45
+#: src/Plug.vala:45 src/Permissions/PermissionsPlug.vala:68
 msgid "Applications"
 msgstr "Applications"
 
@@ -175,6 +175,12 @@ msgstr "Accélérer la sortie vidéo."
 #: src/Permissions/Widgets/AppSettingsView.vala:109
 msgid "Reset to Defaults"
 msgstr "Réinitialiser les valeurs par défaut"
+
+#: src/Permissions/Widgets/AppSettingsView.vala:174
+#, fuzzy, c-format
+#| msgid "Permissions"
+msgid "%s permissions"
+msgstr "Autorisations"
 
 #. / Translators: This is a delimiter that separates types of permissions in the sidebar description
 #: src/Permissions/Widgets/SidebarRow.vala:93

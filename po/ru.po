@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-17 14:11+0000\n"
+"POT-Creation-Date: 2023-06-17 14:51+0000\n"
 "PO-Revision-Date: 2023-06-17 14:11+0000\n"
 "Last-Translator: кубик круглый <megarainbow29@gmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/switchboard/"
@@ -20,7 +20,7 @@ msgstr ""
 msgid "Manage default apps, startup apps, and app permissions"
 msgstr "Управление приложениями по умолчанию, автозапуском и правами доступа"
 
-#: src/Plug.vala:45
+#: src/Plug.vala:45 src/Permissions/PermissionsPlug.vala:68
 msgid "Applications"
 msgstr "Приложения"
 
@@ -173,6 +173,12 @@ msgstr "Ускорение графического вывода."
 #: src/Permissions/Widgets/AppSettingsView.vala:109
 msgid "Reset to Defaults"
 msgstr "Сбросить к настройкам по умолчанию"
+
+#: src/Permissions/Widgets/AppSettingsView.vala:174
+#, fuzzy, c-format
+#| msgid "Permissions"
+msgid "%s permissions"
+msgstr "Права доступа"
 
 #. / Translators: This is a delimiter that separates types of permissions in the sidebar description
 #: src/Permissions/Widgets/SidebarRow.vala:93

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-17 14:11+0000\n"
+"POT-Creation-Date: 2023-06-17 14:51+0000\n"
 "PO-Revision-Date: 2021-05-19 03:38+0000\n"
 "Last-Translator: Adolfo Jayme Barrientos <fitojb@ubuntu.com>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/switchboard/"
@@ -19,7 +19,7 @@ msgstr ""
 msgid "Manage default apps, startup apps, and app permissions"
 msgstr "Gestione las aplicaciones predeterminadas y de arranque y sus permisos"
 
-#: src/Plug.vala:45
+#: src/Plug.vala:45 src/Permissions/PermissionsPlug.vala:68
 msgid "Applications"
 msgstr "Aplicaciones"
 
@@ -172,6 +172,12 @@ msgstr "Aceleración de la salida gráfica."
 #: src/Permissions/Widgets/AppSettingsView.vala:109
 msgid "Reset to Defaults"
 msgstr "Restablecer a valores predets."
+
+#: src/Permissions/Widgets/AppSettingsView.vala:174
+#, fuzzy, c-format
+#| msgid "Permissions"
+msgid "%s permissions"
+msgstr "Permisos"
 
 #. / Translators: This is a delimiter that separates types of permissions in the sidebar description
 #: src/Permissions/Widgets/SidebarRow.vala:93

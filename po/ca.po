@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-17 14:11+0000\n"
+"POT-Creation-Date: 2023-06-17 14:51+0000\n"
 "PO-Revision-Date: 2021-04-09 13:11+0000\n"
 "Last-Translator: David M <rbndavid@gmail.com>\n"
 "Language-Team: Catalan <https://l10n.elementary.io/projects/switchboard/"
@@ -20,7 +20,7 @@ msgid "Manage default apps, startup apps, and app permissions"
 msgstr ""
 "Gestioneu les aplicacions per defecte, les d'inici i els permisos que tenen."
 
-#: src/Plug.vala:45
+#: src/Plug.vala:45 src/Permissions/PermissionsPlug.vala:68
 msgid "Applications"
 msgstr "Aplicacions"
 
@@ -174,6 +174,12 @@ msgstr "Accelera la sortida gràfica."
 #: src/Permissions/Widgets/AppSettingsView.vala:109
 msgid "Reset to Defaults"
 msgstr "Restableix els valors per defecte"
+
+#: src/Permissions/Widgets/AppSettingsView.vala:174
+#, fuzzy, c-format
+#| msgid "Permissions"
+msgid "%s permissions"
+msgstr "Permisos"
 
 #. / Translators: This is a delimiter that separates types of permissions in the sidebar description
 #: src/Permissions/Widgets/SidebarRow.vala:93
