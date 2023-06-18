@@ -154,6 +154,7 @@ public class Permissions.Widgets.AppSettingsView : Gtk.Grid {
             return;
         }
 
+        var should_enable_reset = false;
         selected_app.settings.foreach ((settings) => {
             foreach (unowned Gtk.Widget child in list_box.get_children ()) {
                 if (child is PermissionSettingsWidget) {
@@ -163,12 +164,16 @@ public class Permissions.Widgets.AppSettingsView : Gtk.Grid {
                         widget.settings.standard = settings.standard;
                         widget.settings.enabled = settings.enabled;
                         widget.do_notify = true;
+
+                        if (settings.enabled != settings.standard) {
+                            should_enable_reset = true;
+                        }
                     }
                 }
             }
 
             list_box.sensitive = true;
-            reset_button.sensitive = true;
+            reset_button.sensitive = should_enable_reset;
         });
 
         get_accessible ().accessible_name = _("%s permissions").printf (selected_app.name);
@@ -179,14 +184,22 @@ public class Permissions.Widgets.AppSettingsView : Gtk.Grid {
             return;
         }
 
+        var should_enable_reset = false;
         for (var i = 0; i < selected_app.settings.length; i++) {
             var s = selected_app.settings.get (i);
             if (s.context == settings.context) {
                 s.enabled = settings.enabled;
+
+                if (settings.enabled != settings.standard) {
+                    should_enable_reset = true;
+                }
+
                 break;
             }
         }
 
         selected_app.save_overrides ();
+
+        reset_button.sensitive = should_enable_reset;
     }
 }
