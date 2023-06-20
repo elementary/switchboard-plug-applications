@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-06-17 14:51+0000\n"
-"PO-Revision-Date: 2021-09-27 15:07+0000\n"
+"PO-Revision-Date: 2023-06-21 16:07+0000\n"
 "Last-Translator: David M <rbndavid@gmail.com>\n"
 "Language-Team: Catalan <https://l10n.elementary.io/projects/switchboard/"
 "applications-plug-extra/ca/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 4.17\n"
 
 #: data/applications.metainfo.xml.in:10
 msgid "Applications Settings"
@@ -29,7 +29,7 @@ msgstr "Gestioneu les aplicacions per defecte i d'inici."
 
 #: data/applications.metainfo.xml.in:33
 msgid "elementary, Inc."
-msgstr ""
+msgstr "elementary, Inc."
 
 #: data/applications.metainfo.xml.in:40 data/applications.metainfo.xml.in:54
 #: data/applications.metainfo.xml.in:69
@@ -39,10 +39,13 @@ msgstr "Actualitzacions menors:"
 #: data/applications.metainfo.xml.in:42
 msgid "Properly handle autostart files created by the Background Portal"
 msgstr ""
+"Gestiona correctament els fitxers d'inici automàtic creats pel portal de fons"
 
 #: data/applications.metainfo.xml.in:43
 msgid "App chooser in Startup is a dialog instead of a popover"
 msgstr ""
+"El selector d'aplicacions a l'inici és un diàleg en lloc d'una finestra "
+"emergent"
 
 #: data/applications.metainfo.xml.in:44 data/applications.metainfo.xml.in:58
 #: data/applications.metainfo.xml.in:72 data/applications.metainfo.xml.in:79
