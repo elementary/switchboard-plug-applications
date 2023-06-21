@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-09-23 23:18+0000\n"
-"PO-Revision-Date: 2021-08-27 12:11+0000\n"
+"POT-Creation-Date: 2023-06-17 14:51+0000\n"
+"PO-Revision-Date: 2023-06-19 14:07+0000\n"
 "Last-Translator: TomiOhl <ohlslager.tom@gmail.com>\n"
 "Language-Team: Hungarian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-applications/hu/>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 4.17\n"
 "X-Launchpad-Export-Date: 2016-11-26 05:52+0000\n"
 
 #: src/Plug.vala:44
@@ -21,7 +21,7 @@ msgstr ""
 "Az alapértelmezett és az automatikusan induló alkalmazások, valamint "
 "engedélyeik beállítása"
 
-#: src/Plug.vala:45
+#: src/Plug.vala:45 src/Permissions/PermissionsPlug.vala:68
 msgid "Applications"
 msgstr "Alkalmazások"
 
@@ -54,35 +54,35 @@ msgstr "Korlátozás"
 msgid "Default"
 msgstr "Alapértelmezett"
 
-#: src/Plug.vala:107
+#: src/Plug.vala:107 src/Defaults/DefaultPlug.vala:12
 msgid "Web Browser"
 msgstr "Böngésző"
 
-#: src/Plug.vala:108
+#: src/Plug.vala:108 src/Defaults/DefaultPlug.vala:17
 msgid "Email Client"
 msgstr "E-mail kliens"
 
-#: src/Plug.vala:109
+#: src/Plug.vala:109 src/Defaults/DefaultPlug.vala:22
 msgid "Calendar"
 msgstr "Naptár"
 
-#: src/Plug.vala:110
+#: src/Plug.vala:110 src/Defaults/DefaultPlug.vala:27
 msgid "Video Player"
 msgstr "Videólejátszó"
 
-#: src/Plug.vala:111
+#: src/Plug.vala:111 src/Defaults/DefaultPlug.vala:32
 msgid "Music Player"
 msgstr "Zenelejátszó"
 
-#: src/Plug.vala:112
+#: src/Plug.vala:112 src/Defaults/DefaultPlug.vala:42
 msgid "Text Editor"
 msgstr "Szövegszerkesztő"
 
-#: src/Plug.vala:113
+#: src/Plug.vala:113 src/Defaults/DefaultPlug.vala:37
 msgid "Image Viewer"
 msgstr "Képnézegető"
 
-#: src/Plug.vala:114
+#: src/Plug.vala:114 src/Defaults/DefaultPlug.vala:47
 msgid "File Browser"
 msgstr "Fájlkezelő"
 
@@ -169,81 +169,89 @@ msgstr "Többi készülék elérése a hálózaton keresztül SSH segítségéve
 msgid "Accelerate graphical output."
 msgstr "A grafikus kimenet gyorsítása."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:105
+#: src/Permissions/Widgets/AppSettingsView.vala:109
 msgid "Reset to Defaults"
 msgstr "Alapértelmezettek visszaállítása"
 
+#: src/Permissions/Widgets/AppSettingsView.vala:174
+#, c-format
+msgid "%s permissions"
+msgstr "%s engedélyei"
+
 #. / Translators: This is a delimiter that separates types of permissions in the sidebar description
-#: src/Permissions/Widgets/SidebarRow.vala:89
+#: src/Permissions/Widgets/SidebarRow.vala:93
 msgid ", "
 msgstr ", "
 
-#: src/Startup/Startup.vala:40
+#: src/Startup/Startup.vala:26
 msgid "Launch Apps on Startup"
 msgstr "Alkalmazások indítása rendszerindításkor"
 
-#: src/Startup/Startup.vala:41
+#: src/Startup/Startup.vala:27
 msgid "Add apps to the Startup list by clicking the icon in the toolbar below."
 msgstr ""
 "Adjon hozzá alkalmazásokat a listához az alsó eszköztáron lévő ikonra "
 "kattintva."
 
-#: src/Startup/Startup.vala:61
+#: src/Startup/Startup.vala:45
 msgid "Add Startup App…"
 msgstr "Automatikusan induló alkalmazás hozzáadása…"
 
-#: src/Startup/Startup.vala:64
-msgid "Remove Selected Startup App"
-msgstr "A kiválasztott alkalmazás eltávolítása"
-
-#: src/Startup/Backend/KeyFile.vala:86
+#: src/Startup/Backend/KeyFile.vala:99
 msgid "Custom Command"
 msgstr "Egyéni parancs"
 
-#: src/Startup/Widgets/AppRow.vala:47
+#: src/Startup/Widgets/AppRow.vala:46
+msgid "Remove this app from startup"
+msgstr "Alkalmazás eltávolítása az automatikusan indulók közül"
+
+#: src/Startup/Widgets/AppRow.vala:51
 #, c-format
 msgid "Launch %s on startup"
 msgstr "A(z) %s indítása rendszerinduláskor"
 
-#: src/Startup/Widgets/AppChooser.vala:38
+#: src/Startup/Widgets/AppChooser.vala:17
 msgid "Search Applications"
 msgstr "Alkalmazások keresése"
 
-#: src/Startup/Widgets/AppChooser.vala:56
+#: src/Startup/Widgets/AppChooser.vala:36
 msgid "Type in a custom command"
 msgstr "Adjon meg egy egyéni parancsot"
 
-#: src/Defaults/DefaultPlug.vala:40
-msgid "Web Browser:"
-msgstr "Böngésző:"
+#. TRANSLATORS: This string is used by screen reader
+#: src/Startup/Widgets/AppChooser.vala:56
+msgid "Select startup app"
+msgstr "Automatikusan induló alkalmazás kiválasztása"
 
-#: src/Defaults/DefaultPlug.vala:44
-msgid "Email Client:"
-msgstr "E-mail kliens:"
+#. TRANSLATORS: This is description for for screen reader. %s can be "Web Browser" or "Music Player" and so on.
+#: src/Defaults/DefaultPlug.vala:124
+#, c-format
+msgid "Default %s"
+msgstr "Alapértelmezett %s"
 
-#: src/Defaults/DefaultPlug.vala:48
-msgid "Calendar:"
-msgstr "Naptár:"
+#~ msgid "Web Browser:"
+#~ msgstr "Böngésző:"
 
-#: src/Defaults/DefaultPlug.vala:52
-msgid "Video Player:"
-msgstr "Videólejátszó:"
+#~ msgid "Email Client:"
+#~ msgstr "E-mail kliens:"
 
-#: src/Defaults/DefaultPlug.vala:58
-msgid "Music Player:"
-msgstr "Zenelejátszó:"
+#~ msgid "Calendar:"
+#~ msgstr "Naptár:"
 
-#: src/Defaults/DefaultPlug.vala:63
-msgid "Image Viewer:"
-msgstr "Képnézegető:"
+#~ msgid "Video Player:"
+#~ msgstr "Videólejátszó:"
 
-#: src/Defaults/DefaultPlug.vala:68
-msgid "Text Editor:"
-msgstr "Szövegszerkesztő:"
+#~ msgid "Music Player:"
+#~ msgstr "Zenelejátszó:"
 
-#: src/Defaults/DefaultPlug.vala:73
-msgid "File Browser:"
-msgstr "Fájlkezelő:"
+#~ msgid "Image Viewer:"
+#~ msgstr "Képnézegető:"
+
+#~ msgid "Text Editor:"
+#~ msgstr "Szövegszerkesztő:"
+
+#~ msgid "File Browser:"
+#~ msgstr "Fájlkezelő:"
 
 #~ msgid "Default Application"
 #~ msgstr "Alapértelmezett alkalmazás"

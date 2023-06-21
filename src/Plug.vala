@@ -43,7 +43,7 @@ public class ApplicationsPlug : Switchboard.Plug {
             code_name: "io.elementary.switchboard.applications",
             description: _("Manage default apps, startup apps, and app permissions"),
             display_name: _("Applications"),
-            icon: "preferences-desktop-applications",
+            icon: "io.elementary.settings.applications",
             supported_settings: settings
         );
     }
@@ -60,11 +60,11 @@ public class ApplicationsPlug : Switchboard.Plug {
             var stack_switcher = new Gtk.StackSwitcher () {
                 halign = Gtk.Align.CENTER,
                 homogeneous = true,
-                margin_top = 12,
                 stack = stack
             };
 
             grid = new Gtk.Grid () {
+                margin_top = 12,
                 row_spacing = 24
             };
             grid.attach (stack_switcher, 0, 0);

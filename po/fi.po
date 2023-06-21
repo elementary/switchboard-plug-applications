@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-09-23 23:18+0000\n"
+"POT-Creation-Date: 2023-06-17 14:51+0000\n"
 "PO-Revision-Date: 2021-05-04 12:26+0000\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
 "Language-Team: Finnish <https://l10n.elementary.io/projects/switchboard/"
@@ -21,7 +21,7 @@ msgstr ""
 "Hallitse oletussovelluksia, automaattisesti käynnistettäviä sovelluksia sekä "
 "sovellusten oikeuksia"
 
-#: src/Plug.vala:45
+#: src/Plug.vala:45 src/Permissions/PermissionsPlug.vala:68
 msgid "Applications"
 msgstr "Sovellukset"
 
@@ -54,35 +54,35 @@ msgstr "Eristäminen"
 msgid "Default"
 msgstr "Oletussovellukset"
 
-#: src/Plug.vala:107
+#: src/Plug.vala:107 src/Defaults/DefaultPlug.vala:12
 msgid "Web Browser"
 msgstr "Verkkoselain"
 
-#: src/Plug.vala:108
+#: src/Plug.vala:108 src/Defaults/DefaultPlug.vala:17
 msgid "Email Client"
 msgstr "Sähköposti"
 
-#: src/Plug.vala:109
+#: src/Plug.vala:109 src/Defaults/DefaultPlug.vala:22
 msgid "Calendar"
 msgstr "Kalenteri"
 
-#: src/Plug.vala:110
+#: src/Plug.vala:110 src/Defaults/DefaultPlug.vala:27
 msgid "Video Player"
 msgstr "Videosoitin"
 
-#: src/Plug.vala:111
+#: src/Plug.vala:111 src/Defaults/DefaultPlug.vala:32
 msgid "Music Player"
 msgstr "Musiikkisoitin"
 
-#: src/Plug.vala:112
+#: src/Plug.vala:112 src/Defaults/DefaultPlug.vala:42
 msgid "Text Editor"
 msgstr "Tekstimuokkain"
 
-#: src/Plug.vala:113
+#: src/Plug.vala:113 src/Defaults/DefaultPlug.vala:37
 msgid "Image Viewer"
 msgstr "Kuvakatselin"
 
-#: src/Plug.vala:114
+#: src/Plug.vala:114 src/Defaults/DefaultPlug.vala:47
 msgid "File Browser"
 msgstr "Tiedostohallinta"
 
@@ -171,80 +171,92 @@ msgstr "Pääsy muihin verkossa oleviin laitteisiin SSH:n välityksellä."
 msgid "Accelerate graphical output."
 msgstr "Kiihdytä graafista ulostuloa."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:105
+#: src/Permissions/Widgets/AppSettingsView.vala:109
 msgid "Reset to Defaults"
 msgstr "Palauta oletusarvoihin"
 
+#: src/Permissions/Widgets/AppSettingsView.vala:174
+#, fuzzy, c-format
+#| msgid "Permissions"
+msgid "%s permissions"
+msgstr "Oikeudet"
+
 #. / Translators: This is a delimiter that separates types of permissions in the sidebar description
-#: src/Permissions/Widgets/SidebarRow.vala:89
+#: src/Permissions/Widgets/SidebarRow.vala:93
 msgid ", "
 msgstr ", "
 
-#: src/Startup/Startup.vala:40
+#: src/Startup/Startup.vala:26
 msgid "Launch Apps on Startup"
 msgstr "Käynnistä sovelluksia järjestelmän käynnistymisen yhteydessä"
 
-#: src/Startup/Startup.vala:41
+#: src/Startup/Startup.vala:27
 msgid "Add apps to the Startup list by clicking the icon in the toolbar below."
 msgstr ""
 "Lisää sovelluksia käynnistyslistalle napsauttamalla alla olevaa kuvaketta."
 
-#: src/Startup/Startup.vala:61
+#: src/Startup/Startup.vala:45
 msgid "Add Startup App…"
 msgstr "Lisää automaattisesti käynnistettävä sovellus…"
 
-#: src/Startup/Startup.vala:64
-msgid "Remove Selected Startup App"
-msgstr "Poista valittu automaattisesti käynnistettävä sovellus"
-
-#: src/Startup/Backend/KeyFile.vala:86
+#: src/Startup/Backend/KeyFile.vala:99
 msgid "Custom Command"
 msgstr "Oma komento"
 
-#: src/Startup/Widgets/AppRow.vala:47
+#: src/Startup/Widgets/AppRow.vala:46
+msgid "Remove this app from startup"
+msgstr ""
+
+#: src/Startup/Widgets/AppRow.vala:51
 #, c-format
 msgid "Launch %s on startup"
 msgstr "Avaa %s käynnistyksen yhteydessä"
 
-#: src/Startup/Widgets/AppChooser.vala:38
+#: src/Startup/Widgets/AppChooser.vala:17
 msgid "Search Applications"
 msgstr "Etsi sovelluksia"
 
-#: src/Startup/Widgets/AppChooser.vala:56
+#: src/Startup/Widgets/AppChooser.vala:36
 msgid "Type in a custom command"
 msgstr "Kirjoita oma komento"
 
-#: src/Defaults/DefaultPlug.vala:40
-msgid "Web Browser:"
-msgstr "Verkkoselain:"
+#. TRANSLATORS: This string is used by screen reader
+#: src/Startup/Widgets/AppChooser.vala:56
+#, fuzzy
+#| msgid "Remove Selected Startup App"
+msgid "Select startup app"
+msgstr "Poista valittu automaattisesti käynnistettävä sovellus"
 
-#: src/Defaults/DefaultPlug.vala:44
-msgid "Email Client:"
-msgstr "Sähköposti:"
+#. TRANSLATORS: This is description for for screen reader. %s can be "Web Browser" or "Music Player" and so on.
+#: src/Defaults/DefaultPlug.vala:124
+#, fuzzy, c-format
+#| msgid "Defaults"
+msgid "Default %s"
+msgstr "Oletukset"
 
-#: src/Defaults/DefaultPlug.vala:48
-msgid "Calendar:"
-msgstr "Kalenteri:"
+#~ msgid "Web Browser:"
+#~ msgstr "Verkkoselain:"
 
-#: src/Defaults/DefaultPlug.vala:52
-msgid "Video Player:"
-msgstr "Videosoitin:"
+#~ msgid "Email Client:"
+#~ msgstr "Sähköposti:"
 
-#: src/Defaults/DefaultPlug.vala:58
-msgid "Music Player:"
-msgstr "Musiikkisoitin:"
+#~ msgid "Calendar:"
+#~ msgstr "Kalenteri:"
 
-#: src/Defaults/DefaultPlug.vala:63
-msgid "Image Viewer:"
-msgstr "Kuvakatselin:"
+#~ msgid "Video Player:"
+#~ msgstr "Videosoitin:"
 
-#: src/Defaults/DefaultPlug.vala:68
-msgid "Text Editor:"
-msgstr "Tekstimuokkain:"
+#~ msgid "Music Player:"
+#~ msgstr "Musiikkisoitin:"
 
-#: src/Defaults/DefaultPlug.vala:73
-msgid "File Browser:"
-msgstr "Tiedostohallinta:"
+#~ msgid "Image Viewer:"
+#~ msgstr "Kuvakatselin:"
+
+#~ msgid "Text Editor:"
+#~ msgstr "Tekstimuokkain:"
+
+#~ msgid "File Browser:"
+#~ msgstr "Tiedostohallinta:"
 
 #~ msgid "Default Application"
 #~ msgstr "Oletussovellus"

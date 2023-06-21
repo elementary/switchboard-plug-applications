@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-09-23 23:18+0000\n"
+"POT-Creation-Date: 2023-06-17 14:51+0000\n"
 "PO-Revision-Date: 2023-02-23 11:25+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Norwegian Nynorsk <https://l10n.elementary.io/projects/"
@@ -21,7 +21,7 @@ msgstr ""
 "Velg standardappar, kva appar som startar ved oppstart og kva tilgangar "
 "appane har"
 
-#: src/Plug.vala:45
+#: src/Plug.vala:45 src/Permissions/PermissionsPlug.vala:68
 msgid "Applications"
 msgstr "Applikasjonar"
 
@@ -54,35 +54,35 @@ msgstr "Innesperring"
 msgid "Default"
 msgstr "Standardval"
 
-#: src/Plug.vala:107
+#: src/Plug.vala:107 src/Defaults/DefaultPlug.vala:12
 msgid "Web Browser"
 msgstr "Nettlesar"
 
-#: src/Plug.vala:108
+#: src/Plug.vala:108 src/Defaults/DefaultPlug.vala:17
 msgid "Email Client"
 msgstr "E-postklient"
 
-#: src/Plug.vala:109
+#: src/Plug.vala:109 src/Defaults/DefaultPlug.vala:22
 msgid "Calendar"
 msgstr "Kalender"
 
-#: src/Plug.vala:110
+#: src/Plug.vala:110 src/Defaults/DefaultPlug.vala:27
 msgid "Video Player"
 msgstr "Videospelar"
 
-#: src/Plug.vala:111
+#: src/Plug.vala:111 src/Defaults/DefaultPlug.vala:32
 msgid "Music Player"
 msgstr "Musikkspelar"
 
-#: src/Plug.vala:112
+#: src/Plug.vala:112 src/Defaults/DefaultPlug.vala:42
 msgid "Text Editor"
 msgstr "Tekstbehandlar"
 
-#: src/Plug.vala:113
+#: src/Plug.vala:113 src/Defaults/DefaultPlug.vala:37
 msgid "Image Viewer"
 msgstr "Biletframvisar"
 
-#: src/Plug.vala:114
+#: src/Plug.vala:114 src/Defaults/DefaultPlug.vala:47
 msgid "File Browser"
 msgstr "Filbehandlar"
 
@@ -167,83 +167,95 @@ msgstr ""
 msgid "Accelerate graphical output."
 msgstr ""
 
-#: src/Permissions/Widgets/AppSettingsView.vala:105
+#: src/Permissions/Widgets/AppSettingsView.vala:109
 #, fuzzy
 #| msgid "Default"
 msgid "Reset to Defaults"
 msgstr "Standardval"
 
+#: src/Permissions/Widgets/AppSettingsView.vala:174
+#, fuzzy, c-format
+#| msgid "Permissions"
+msgid "%s permissions"
+msgstr "Tilgangar"
+
 #. / Translators: This is a delimiter that separates types of permissions in the sidebar description
-#: src/Permissions/Widgets/SidebarRow.vala:89
+#: src/Permissions/Widgets/SidebarRow.vala:93
 msgid ", "
 msgstr ", "
 
-#: src/Startup/Startup.vala:40
+#: src/Startup/Startup.vala:26
 msgid "Launch Apps on Startup"
 msgstr "Køyr applikasjonar ved oppstart"
 
-#: src/Startup/Startup.vala:41
+#: src/Startup/Startup.vala:27
 msgid "Add apps to the Startup list by clicking the icon in the toolbar below."
 msgstr ""
 "Legg til applikasjonar i oppstartslista ved å klikke på ikonet i "
 "verktøylinja nedanfor."
 
-#: src/Startup/Startup.vala:61
+#: src/Startup/Startup.vala:45
 msgid "Add Startup App…"
 msgstr "Legg til oppstartapplikasjon…"
 
-#: src/Startup/Startup.vala:64
-msgid "Remove Selected Startup App"
-msgstr "Fjern vald oppstartsapplikasjon"
-
-#: src/Startup/Backend/KeyFile.vala:86
+#: src/Startup/Backend/KeyFile.vala:99
 msgid "Custom Command"
 msgstr "Eigendefinert kommando"
 
-#: src/Startup/Widgets/AppRow.vala:47
+#: src/Startup/Widgets/AppRow.vala:46
+msgid "Remove this app from startup"
+msgstr ""
+
+#: src/Startup/Widgets/AppRow.vala:51
 #, c-format
 msgid "Launch %s on startup"
 msgstr "Køyr %s ved oppstart"
 
-#: src/Startup/Widgets/AppChooser.vala:38
+#: src/Startup/Widgets/AppChooser.vala:17
 msgid "Search Applications"
 msgstr "Søk i applikasjonar"
 
-#: src/Startup/Widgets/AppChooser.vala:56
+#: src/Startup/Widgets/AppChooser.vala:36
 msgid "Type in a custom command"
 msgstr "Skriv inn ein eigendefinert kommando"
 
-#: src/Defaults/DefaultPlug.vala:40
-msgid "Web Browser:"
-msgstr "Nettlesar:"
+#. TRANSLATORS: This string is used by screen reader
+#: src/Startup/Widgets/AppChooser.vala:56
+#, fuzzy
+#| msgid "Remove Selected Startup App"
+msgid "Select startup app"
+msgstr "Fjern vald oppstartsapplikasjon"
 
-#: src/Defaults/DefaultPlug.vala:44
-msgid "Email Client:"
-msgstr "E-postklient:"
+#. TRANSLATORS: This is description for for screen reader. %s can be "Web Browser" or "Music Player" and so on.
+#: src/Defaults/DefaultPlug.vala:124
+#, fuzzy, c-format
+#| msgid "Defaults"
+msgid "Default %s"
+msgstr "Standardval"
 
-#: src/Defaults/DefaultPlug.vala:48
-msgid "Calendar:"
-msgstr "Kalender:"
+#~ msgid "Web Browser:"
+#~ msgstr "Nettlesar:"
 
-#: src/Defaults/DefaultPlug.vala:52
-msgid "Video Player:"
-msgstr "Videospelar:"
+#~ msgid "Email Client:"
+#~ msgstr "E-postklient:"
 
-#: src/Defaults/DefaultPlug.vala:58
-msgid "Music Player:"
-msgstr "Musikkspelar:"
+#~ msgid "Calendar:"
+#~ msgstr "Kalender:"
 
-#: src/Defaults/DefaultPlug.vala:63
-msgid "Image Viewer:"
-msgstr "Biletframvisar:"
+#~ msgid "Video Player:"
+#~ msgstr "Videospelar:"
 
-#: src/Defaults/DefaultPlug.vala:68
-msgid "Text Editor:"
-msgstr "Tekstbehandlar:"
+#~ msgid "Music Player:"
+#~ msgstr "Musikkspelar:"
 
-#: src/Defaults/DefaultPlug.vala:73
-msgid "File Browser:"
-msgstr "Filbehandlar:"
+#~ msgid "Image Viewer:"
+#~ msgstr "Biletframvisar:"
+
+#~ msgid "Text Editor:"
+#~ msgstr "Tekstbehandlar:"
+
+#~ msgid "File Browser:"
+#~ msgstr "Filbehandlar:"
 
 #~ msgid "Default Application"
 #~ msgstr "Standardapplikasjon"

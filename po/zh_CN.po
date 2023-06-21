@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-09-23 23:18+0000\n"
+"POT-Creation-Date: 2023-06-17 14:51+0000\n"
 "PO-Revision-Date: 2021-05-05 21:17+0000\n"
 "Last-Translator: Chengyu Liu <wer5lcy@live.cn>\n"
 "Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
@@ -19,7 +19,7 @@ msgstr ""
 msgid "Manage default apps, startup apps, and app permissions"
 msgstr "管理默认程序、启动项和应用权限"
 
-#: src/Plug.vala:45
+#: src/Plug.vala:45 src/Permissions/PermissionsPlug.vala:68
 msgid "Applications"
 msgstr "应用程序"
 
@@ -52,35 +52,35 @@ msgstr "限制"
 msgid "Default"
 msgstr "默认程序"
 
-#: src/Plug.vala:107
+#: src/Plug.vala:107 src/Defaults/DefaultPlug.vala:12
 msgid "Web Browser"
 msgstr "网络浏览器"
 
-#: src/Plug.vala:108
+#: src/Plug.vala:108 src/Defaults/DefaultPlug.vala:17
 msgid "Email Client"
 msgstr "邮件客户端"
 
-#: src/Plug.vala:109
+#: src/Plug.vala:109 src/Defaults/DefaultPlug.vala:22
 msgid "Calendar"
 msgstr "日历查看器"
 
-#: src/Plug.vala:110
+#: src/Plug.vala:110 src/Defaults/DefaultPlug.vala:27
 msgid "Video Player"
 msgstr "视频播放器"
 
-#: src/Plug.vala:111
+#: src/Plug.vala:111 src/Defaults/DefaultPlug.vala:32
 msgid "Music Player"
 msgstr "音乐播放器"
 
-#: src/Plug.vala:112
+#: src/Plug.vala:112 src/Defaults/DefaultPlug.vala:42
 msgid "Text Editor"
 msgstr "文本编辑器"
 
-#: src/Plug.vala:113
+#: src/Plug.vala:113 src/Defaults/DefaultPlug.vala:37
 msgid "Image Viewer"
 msgstr "图像查看器"
 
-#: src/Plug.vala:114
+#: src/Plug.vala:114 src/Defaults/DefaultPlug.vala:47
 msgid "File Browser"
 msgstr "文件浏览器"
 
@@ -161,79 +161,91 @@ msgstr "通过 SSH 访问网络中的其他设备。"
 msgid "Accelerate graphical output."
 msgstr "加速图形输出。"
 
-#: src/Permissions/Widgets/AppSettingsView.vala:105
+#: src/Permissions/Widgets/AppSettingsView.vala:109
 msgid "Reset to Defaults"
 msgstr "恢复默认"
 
+#: src/Permissions/Widgets/AppSettingsView.vala:174
+#, fuzzy, c-format
+#| msgid "Permissions"
+msgid "%s permissions"
+msgstr "应用权限"
+
 #. / Translators: This is a delimiter that separates types of permissions in the sidebar description
-#: src/Permissions/Widgets/SidebarRow.vala:89
+#: src/Permissions/Widgets/SidebarRow.vala:93
 msgid ", "
 msgstr "， "
 
-#: src/Startup/Startup.vala:40
+#: src/Startup/Startup.vala:26
 msgid "Launch Apps on Startup"
 msgstr "开机启动"
 
-#: src/Startup/Startup.vala:41
+#: src/Startup/Startup.vala:27
 msgid "Add apps to the Startup list by clicking the icon in the toolbar below."
 msgstr "点击下方工具栏中的图标将应用程序设置为开机启动。"
 
-#: src/Startup/Startup.vala:61
+#: src/Startup/Startup.vala:45
 msgid "Add Startup App…"
 msgstr "添加启动项…"
 
-#: src/Startup/Startup.vala:64
-msgid "Remove Selected Startup App"
-msgstr "移除选中的启动项"
-
-#: src/Startup/Backend/KeyFile.vala:86
+#: src/Startup/Backend/KeyFile.vala:99
 msgid "Custom Command"
 msgstr "自定义命令"
 
-#: src/Startup/Widgets/AppRow.vala:47
+#: src/Startup/Widgets/AppRow.vala:46
+msgid "Remove this app from startup"
+msgstr ""
+
+#: src/Startup/Widgets/AppRow.vala:51
 #, c-format
 msgid "Launch %s on startup"
 msgstr "开机时启动 %s"
 
-#: src/Startup/Widgets/AppChooser.vala:38
+#: src/Startup/Widgets/AppChooser.vala:17
 msgid "Search Applications"
 msgstr "搜索应用程序"
 
-#: src/Startup/Widgets/AppChooser.vala:56
+#: src/Startup/Widgets/AppChooser.vala:36
 msgid "Type in a custom command"
 msgstr "键入自定义命令"
 
-#: src/Defaults/DefaultPlug.vala:40
-msgid "Web Browser:"
-msgstr "网络浏览器："
+#. TRANSLATORS: This string is used by screen reader
+#: src/Startup/Widgets/AppChooser.vala:56
+#, fuzzy
+#| msgid "Remove Selected Startup App"
+msgid "Select startup app"
+msgstr "移除选中的启动项"
 
-#: src/Defaults/DefaultPlug.vala:44
-msgid "Email Client:"
-msgstr "邮件客户端："
+#. TRANSLATORS: This is description for for screen reader. %s can be "Web Browser" or "Music Player" and so on.
+#: src/Defaults/DefaultPlug.vala:124
+#, fuzzy, c-format
+#| msgid "Defaults"
+msgid "Default %s"
+msgstr "默认程序"
 
-#: src/Defaults/DefaultPlug.vala:48
-msgid "Calendar:"
-msgstr "日历查看器："
+#~ msgid "Web Browser:"
+#~ msgstr "网络浏览器："
 
-#: src/Defaults/DefaultPlug.vala:52
-msgid "Video Player:"
-msgstr "视频播放器："
+#~ msgid "Email Client:"
+#~ msgstr "邮件客户端："
 
-#: src/Defaults/DefaultPlug.vala:58
-msgid "Music Player:"
-msgstr "音乐播放器："
+#~ msgid "Calendar:"
+#~ msgstr "日历查看器："
 
-#: src/Defaults/DefaultPlug.vala:63
-msgid "Image Viewer:"
-msgstr "图像查看器："
+#~ msgid "Video Player:"
+#~ msgstr "视频播放器："
 
-#: src/Defaults/DefaultPlug.vala:68
-msgid "Text Editor:"
-msgstr "文本编辑器："
+#~ msgid "Music Player:"
+#~ msgstr "音乐播放器："
 
-#: src/Defaults/DefaultPlug.vala:73
-msgid "File Browser:"
-msgstr "文件浏览器："
+#~ msgid "Image Viewer:"
+#~ msgstr "图像查看器："
+
+#~ msgid "Text Editor:"
+#~ msgstr "文本编辑器："
+
+#~ msgid "File Browser:"
+#~ msgstr "文件浏览器："
 
 #~ msgid "Default Application"
 #~ msgstr "默认应用程序"

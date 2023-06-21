@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-09-23 23:18+0000\n"
+"POT-Creation-Date: 2023-06-17 14:51+0000\n"
 "PO-Revision-Date: 2020-10-24 11:15+0000\n"
 "Last-Translator: Fabio Zaramella <fabiozaramella@hotmail.it>\n"
 "Language-Team: Italian <https://l10n.elementary.io/projects/switchboard/"
@@ -21,7 +21,7 @@ msgstr ""
 "Gestisci le applicazioni predefinite, quelle di avvio e i permessi delle "
 "applicazioni"
 
-#: src/Plug.vala:45
+#: src/Plug.vala:45 src/Permissions/PermissionsPlug.vala:68
 msgid "Applications"
 msgstr "Applicazioni"
 
@@ -54,35 +54,35 @@ msgstr "Confinamento"
 msgid "Default"
 msgstr "Predefinito"
 
-#: src/Plug.vala:107
+#: src/Plug.vala:107 src/Defaults/DefaultPlug.vala:12
 msgid "Web Browser"
 msgstr "Programma di navigazione in rete"
 
-#: src/Plug.vala:108
+#: src/Plug.vala:108 src/Defaults/DefaultPlug.vala:17
 msgid "Email Client"
 msgstr "Posta elettronica"
 
-#: src/Plug.vala:109
+#: src/Plug.vala:109 src/Defaults/DefaultPlug.vala:22
 msgid "Calendar"
 msgstr "Calendario"
 
-#: src/Plug.vala:110
+#: src/Plug.vala:110 src/Defaults/DefaultPlug.vala:27
 msgid "Video Player"
 msgstr "Riproduttore video"
 
-#: src/Plug.vala:111
+#: src/Plug.vala:111 src/Defaults/DefaultPlug.vala:32
 msgid "Music Player"
 msgstr "Riproduttore musicale"
 
-#: src/Plug.vala:112
+#: src/Plug.vala:112 src/Defaults/DefaultPlug.vala:42
 msgid "Text Editor"
 msgstr "Editor di testi"
 
-#: src/Plug.vala:113
+#: src/Plug.vala:113 src/Defaults/DefaultPlug.vala:37
 msgid "Image Viewer"
 msgstr "Visualizzatore di immagini"
 
-#: src/Plug.vala:114
+#: src/Plug.vala:114 src/Defaults/DefaultPlug.vala:47
 msgid "File Browser"
 msgstr "Gestore dei file"
 
@@ -178,81 +178,93 @@ msgstr "Accesso ad altri dispositivi sulla rete tramite SSH."
 msgid "Accelerate graphical output."
 msgstr "Utilizzo dell'accelerazione grafica."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:105
+#: src/Permissions/Widgets/AppSettingsView.vala:109
 msgid "Reset to Defaults"
 msgstr "Ripristina impostazioni predefinite"
 
+#: src/Permissions/Widgets/AppSettingsView.vala:174
+#, fuzzy, c-format
+#| msgid "Permissions"
+msgid "%s permissions"
+msgstr "Permessi"
+
 #. / Translators: This is a delimiter that separates types of permissions in the sidebar description
-#: src/Permissions/Widgets/SidebarRow.vala:89
+#: src/Permissions/Widgets/SidebarRow.vala:93
 msgid ", "
 msgstr ", "
 
-#: src/Startup/Startup.vala:40
+#: src/Startup/Startup.vala:26
 msgid "Launch Apps on Startup"
 msgstr "Avvia applicazioni all'accensione"
 
-#: src/Startup/Startup.vala:41
+#: src/Startup/Startup.vala:27
 msgid "Add apps to the Startup list by clicking the icon in the toolbar below."
 msgstr ""
 "Aggiungi applicazioni alla lista d'avvio cliccando sull'icona nella barra "
 "degli strumenti sottostante."
 
-#: src/Startup/Startup.vala:61
+#: src/Startup/Startup.vala:45
 msgid "Add Startup App…"
 msgstr "Aggiungi un'applicazione di avvio…"
 
-#: src/Startup/Startup.vala:64
-msgid "Remove Selected Startup App"
-msgstr "Rimuovi l'applicazione di avvio selezionata"
-
-#: src/Startup/Backend/KeyFile.vala:86
+#: src/Startup/Backend/KeyFile.vala:99
 msgid "Custom Command"
 msgstr "Comando personalizzato"
 
-#: src/Startup/Widgets/AppRow.vala:47
+#: src/Startup/Widgets/AppRow.vala:46
+msgid "Remove this app from startup"
+msgstr ""
+
+#: src/Startup/Widgets/AppRow.vala:51
 #, c-format
 msgid "Launch %s on startup"
 msgstr "Avvia %s all'accensione"
 
-#: src/Startup/Widgets/AppChooser.vala:38
+#: src/Startup/Widgets/AppChooser.vala:17
 msgid "Search Applications"
 msgstr "Cerca applicazioni"
 
-#: src/Startup/Widgets/AppChooser.vala:56
+#: src/Startup/Widgets/AppChooser.vala:36
 msgid "Type in a custom command"
 msgstr "Inserisci un comando personalizzato"
 
-#: src/Defaults/DefaultPlug.vala:40
-msgid "Web Browser:"
-msgstr "Programma di navigazione in rete:"
+#. TRANSLATORS: This string is used by screen reader
+#: src/Startup/Widgets/AppChooser.vala:56
+#, fuzzy
+#| msgid "Remove Selected Startup App"
+msgid "Select startup app"
+msgstr "Rimuovi l'applicazione di avvio selezionata"
 
-#: src/Defaults/DefaultPlug.vala:44
-msgid "Email Client:"
-msgstr "Posta elettronica:"
+#. TRANSLATORS: This is description for for screen reader. %s can be "Web Browser" or "Music Player" and so on.
+#: src/Defaults/DefaultPlug.vala:124
+#, fuzzy, c-format
+#| msgid "Defaults"
+msgid "Default %s"
+msgstr "Predefinite"
 
-#: src/Defaults/DefaultPlug.vala:48
-msgid "Calendar:"
-msgstr "Calendario:"
+#~ msgid "Web Browser:"
+#~ msgstr "Programma di navigazione in rete:"
 
-#: src/Defaults/DefaultPlug.vala:52
-msgid "Video Player:"
-msgstr "Riproduttore video:"
+#~ msgid "Email Client:"
+#~ msgstr "Posta elettronica:"
 
-#: src/Defaults/DefaultPlug.vala:58
-msgid "Music Player:"
-msgstr "Riproduttore musicale:"
+#~ msgid "Calendar:"
+#~ msgstr "Calendario:"
 
-#: src/Defaults/DefaultPlug.vala:63
-msgid "Image Viewer:"
-msgstr "Visualizzatore di immagini:"
+#~ msgid "Video Player:"
+#~ msgstr "Riproduttore video:"
 
-#: src/Defaults/DefaultPlug.vala:68
-msgid "Text Editor:"
-msgstr "Editor di testi:"
+#~ msgid "Music Player:"
+#~ msgstr "Riproduttore musicale:"
 
-#: src/Defaults/DefaultPlug.vala:73
-msgid "File Browser:"
-msgstr "Gestore di file:"
+#~ msgid "Image Viewer:"
+#~ msgstr "Visualizzatore di immagini:"
+
+#~ msgid "Text Editor:"
+#~ msgstr "Editor di testi:"
+
+#~ msgid "File Browser:"
+#~ msgstr "Gestore di file:"
 
 #~ msgid "Default Application"
 #~ msgstr "Applicazione predefinita"

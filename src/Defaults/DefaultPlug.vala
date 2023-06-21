@@ -1,165 +1,360 @@
 /*
-* Copyright 2011-2018 elementary, Inc. (https://elementary.io)
-*
-* This program is free software; you can redistribute it and/or
-* modify it under the terms of the GNU General Public
-* License as published by the Free Software Foundation; either
-* version 3 of the License, or (at your option) any later version.
-*
-* This program is distributed in the hope that it will be useful,
-* but WITHOUT ANY WARRANTY; without even the implied warranty of
-* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
-* General Public License for more details.
-*
-* You should have received a copy of the GNU General Public
-* License along with this program; if not, write to the
-* Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor,
-* Boston, MA 02110-1301 USA
-*
-* Authored by: Akshay Shekher <voldyman666@gmail.com>
-*              Chris Triantafillis <christriant1995@gmail.com>
-*/
+ * SPDX-License-Identifier: GPL-3.0-or-later
+ * SPDX-FileCopyrightText: 2011-2023 elementary, Inc. (https://elementary.io)
+ *
+ * Authored by: Akshay Shekher <voldyman666@gmail.com>
+ *              Chris Triantafillis <christriant1995@gmail.com>
+ */
 
-public class Defaults.Plug : Gtk.Grid {
-    Gtk.AppChooserButton wb_chooser;
-    Gtk.AppChooserButton ec_chooser;
-    Gtk.AppChooserButton c_chooser;
-    Gtk.AppChooserButton vp_chooser;
-    Gtk.AppChooserButton mp_chooser;
-    Gtk.AppChooserButton iv_chooser;
-    Gtk.AppChooserButton te_chooser;
-    Gtk.AppChooserButton fb_chooser;
-
+public class Defaults.Plug : Gtk.Box {
     construct {
-        column_spacing = 12;
-        row_spacing = 12;
-        halign = Gtk.Align.CENTER;
-        margin = 24;
-        margin_top = 64;
+        var browser_setting = new SettingsChild (
+            _("Web Browser"),
+            "x-scheme-handler/https"
+        );
 
-        var wb_label = new SettingsLabel (_("Web Browser:"));
-        wb_chooser = new Gtk.AppChooserButton ("x-scheme-handler/https");
-        wb_chooser.show_default_item = true;
+        var email_setting = new SettingsChild (
+            _("Email Client"),
+            "x-scheme-handler/mailto"
+        );
 
-        var ec_label = new SettingsLabel (_("Email Client:"));
-        ec_chooser = new Gtk.AppChooserButton ("x-scheme-handler/mailto");
-        ec_chooser.show_default_item = true;
+        var calendar_setting = new SettingsChild (
+            _("Calendar"),
+            "text/calendar"
+        );
 
-        var c_label = new SettingsLabel (_("Calendar:"));
-        c_chooser = new Gtk.AppChooserButton ("text/calendar");
-        c_chooser.show_default_item = true;
+        var videos_setting = new SettingsChild (
+            _("Video Player"),
+            "video/x-ogm+ogg"
+        );
 
-        var vp_label = new SettingsLabel (_("Video Player:"));
-        vp_chooser = new Gtk.AppChooserButton ("video/x-ogm+ogg");
-        vp_chooser.show_default_item = true;
+        var music_setting = new SettingsChild (
+            _("Music Player"),
+            "x-content/audio-player"
+        );
 
-        int margin_columns = 32;
+        var images_setting = new SettingsChild (
+            _("Image Viewer"),
+            "image/jpeg"
+        );
 
-        var mp_label = new SettingsLabel (_("Music Player:"));
-        mp_chooser = new Gtk.AppChooserButton ("audio/x-vorbis+ogg");
-        mp_chooser.show_default_item = true;
-        mp_label.margin_start = margin_columns;
+        var text_setting = new SettingsChild (
+            _("Text Editor"),
+            "text/plain"
+        );
 
-        var iv_label = new SettingsLabel (_("Image Viewer:"));
-        iv_chooser = new Gtk.AppChooserButton ("image/jpeg");
-        iv_chooser.show_default_item = true;
-        iv_label.margin_start = margin_columns;
+        var files_setting = new SettingsChild (
+            _("File Browser"),
+            "inode/directory"
+        );
 
-        var te_label = new SettingsLabel (_("Text Editor:"));
-        te_chooser = new Gtk.AppChooserButton ("text/plain");
-        te_chooser.show_default_item = true;
-        te_label.margin_start = margin_columns;
+        var flowbox = new Gtk.FlowBox () {
+            column_spacing = 24,
+            row_spacing = 12,
+            homogeneous = true,
+            max_children_per_line = 2,
+            selection_mode = NONE,
+            valign = START
+        };
+        flowbox.add (browser_setting);
+        flowbox.add (music_setting);
+        flowbox.add (email_setting);
+        flowbox.add (images_setting);
+        flowbox.add (calendar_setting);
+        flowbox.add (text_setting);
+        flowbox.add (videos_setting);
+        flowbox.add (files_setting);
 
-        var fb_label = new SettingsLabel (_("File Browser:"));
-        fb_chooser = new Gtk.AppChooserButton ("inode/directory");
-        fb_chooser.show_default_item = true;
-        fb_label.margin_start = margin_columns;
+        var clamp = new Hdy.Clamp () {
+            child = flowbox,
+            margin_end = 12,
+            margin_bottom = 12,
+            margin_start = 12
+        };
 
-        var size_group = new Gtk.SizeGroup (Gtk.SizeGroupMode.HORIZONTAL);
-        size_group.add_widget (wb_chooser);
-        size_group.add_widget (ec_chooser);
-        size_group.add_widget (c_chooser);
-        size_group.add_widget (vp_chooser);
-        size_group.add_widget (mp_chooser);
-        size_group.add_widget (iv_chooser);
-        size_group.add_widget (te_chooser);
-        size_group.add_widget (fb_chooser);
+        var scrolled_window = new Gtk.ScrolledWindow (null, null) {
+            child = clamp
+        };
 
-        attach (wb_label, 0, 0, 1, 1);
-        attach (wb_chooser, 1, 0, 1, 1);
-        attach (ec_label, 0, 1, 1, 1);
-        attach (ec_chooser, 1, 1, 1, 1);
-        attach (c_label, 0, 2, 1, 1);
-        attach (c_chooser, 1, 2, 1, 1);
-        attach (vp_label, 0, 3, 1, 1);
-        attach (vp_chooser, 1, 3, 1, 1);
-        attach (mp_label, 2, 0, 1, 1);
-        attach (mp_chooser, 3, 0, 1, 1);
-        attach (iv_label, 2, 1, 1, 1);
-        attach (iv_chooser, 3, 1, 1, 1);
-        attach (te_label, 2, 2, 1, 1);
-        attach (te_chooser, 3, 2, 1, 1);
-        attach (fb_label, 2, 3, 1, 1);
-        attach (fb_chooser, 3, 3, 1, 1);
-
-        wb_chooser.changed.connect (() => run_in_thread ( () => {
-            change_default (wb_chooser.get_app_info (), "web_browser");
-            return null;
-        }));
-
-        ec_chooser.changed.connect (() => run_in_thread ( () => {
-            change_default (ec_chooser.get_app_info (), "email_client");
-            return null;
-        }));
-
-        c_chooser.changed.connect (() => run_in_thread ( () => {
-            change_default (c_chooser.get_app_info (), "calendar");
-            return null;
-        }));
-
-        vp_chooser.changed.connect (() => run_in_thread ( () => {
-            change_default (vp_chooser.get_app_info (), "video_player");
-            return null;
-        }));
-
-        mp_chooser.changed.connect (() => run_in_thread ( () => {
-            change_default (mp_chooser.get_app_info (), "music_player");
-            return null;
-        }));
-
-        iv_chooser.changed.connect (() => run_in_thread ( () => {
-            change_default (iv_chooser.get_app_info (), "image_viewer");
-            return null;
-        }));
-
-        te_chooser.changed.connect (() => run_in_thread ( () => {
-            change_default (te_chooser.get_app_info (), "text_editor");
-            return null;
-        }));
-
-        fb_chooser.changed.connect (() => run_in_thread ( () => {
-            change_default (fb_chooser.get_app_info (), "file_browser");
-            return null;
-        }));
+        add (scrolled_window);
 
         show_all ();
     }
 
-    private void run_in_thread (owned ThreadFunc<void*> func) {
-        try {
-            new Thread<void*>.try (null, (owned) func);
-        } catch (Error e) {
-            warning ("Could not create a new thread: %s", e.message);
-        }
-    }
-    public void change_default (GLib.AppInfo new_app, string item_type) {
-        map_types_to_app (get_types_for_app (item_type), new_app);
-    }
+    private class SettingsChild : Gtk.FlowBoxChild {
+        public string label { get; construct; }
+        public string content_type { get; construct; }
 
-    private class SettingsLabel : Gtk.Label {
-        public SettingsLabel (string label) {
-            Object (label: label);
-            halign = Gtk.Align.END;
+        private static Gtk.SizeGroup size_group;
+
+        public SettingsChild (string label, string content_type) {
+            Object (
+                label: label,
+                content_type: content_type
+            );
+        }
+
+        static construct {
+            size_group = new Gtk.SizeGroup (HORIZONTAL);
+        }
+
+        construct {
+            var setting_label = new Granite.HeaderLabel (label);
+
+            var app_chooser = new Gtk.AppChooserButton (content_type) {
+                hexpand = true,
+                show_default_item = true
+            };
+
+            var box = new Gtk.Box (VERTICAL, 0);
+            box.add (setting_label);
+            box.add (app_chooser);
+
+            can_focus = false;
+            child = box;
+
+            size_group.add_widget (setting_label);
+
+            app_chooser.changed.connect (() => run_in_thread (() => {
+                change_default (app_chooser.get_app_info (), content_type);
+                return null;
+            }));
+
+            // TRANSLATORS: This is description for for screen reader. %s can be "Web Browser" or "Music Player" and so on.
+            app_chooser.get_accessible ().accessible_name = _("Default %s").printf (label);
+        }
+
+        private void run_in_thread (owned ThreadFunc<void*> func) {
+            try {
+                new Thread<void*>.try (null, (owned) func);
+            } catch (Error e) {
+                warning ("Could not create a new thread: %s", e.message);
+            }
+        }
+
+        private void change_default (AppInfo app, string content_type) {
+            var types = get_types_for_app (content_type);
+            var supported_types = app.get_supported_types ();
+
+            foreach (unowned var type in types) {
+                AppInfo.reset_type_associations (type);
+                if (type in supported_types) {
+                    try {
+                        app.set_as_default_for_type (type);
+                        debug ("%s now default for content type %s", app.get_name (), type);
+                    } catch (Error e) {
+                        critical ("Error setting default app: %s", e.message);
+                    }
+                } else {
+                    critical ("%s does not support content type %s", app.get_name (), type);
+                }
+            }
+        }
+
+        private string[] get_types_for_app (string app) {
+            switch (app) {
+                case "x-scheme-handler/https":
+                    return {
+                        "x-scheme-handler/http",
+                        "x-scheme-handler/https",
+                        "text/html",
+                        "application/xhtml+xml",
+                    };
+
+                case "x-scheme-handler/mailto":
+                    return { "x-scheme-handler/mailto" };
+
+                case "text/calendar":
+                    return { "text/calendar" };
+
+                case "video/x-ogm+ogg":
+                    return {
+                        "application/x-quicktimeplayer",
+                        "application/vnd.rn-realmedia",
+                        "application/asx",
+                        "application/x-mplayer2",
+                        "application/x-ms-wmv",
+                        "video/quicktime",
+                        "video/x-quicktime",
+                        "video/vnd.rn-realvideo",
+                        "video/x-ms-asf-plugin",
+                        "video/x-msvideo",
+                        "video/msvideo",
+                        "video/x-ms-asf",
+                        "video/x-ms-wm",
+                        "video/x-ms-wmv",
+                        "video/x-ms-wmp",
+                        "video/x-ms-wvx",
+                        "video/mpeg",
+                        "video/x-mpeg",
+                        "video/x-mpeg2",
+                        "video/mp4",
+                        "video/3gpp",
+                        "video/fli",
+                        "video/x-fli",
+                        "video/x-flv",
+                        "video/vnd.vivo",
+                        "video/x-matroska",
+                        "video/matroska",
+                        "video/x-mng",
+                        "video/webm",
+                        "video/x-webm",
+                        "video/mp2t",
+                        "video/vnd.mpegurl",
+                        "video/x-ogm+ogg"
+                    };
+
+                case "x-content/audio-player":
+                    return {
+                        "audio/ogg",
+                        "audio/mpeg",
+                        "audio/mp4",
+                        "audio/flac",
+                        "application/x-musepack",
+                        "application/musepack",
+                        "application/x-ape",
+                        "application/x-id3",
+                        "application/ogg",
+                        "application/x-ogg",
+                        "application/x-vorbis+ogg",
+                        "application/x-flac",
+                        "application/vnd.rn-realaudio",
+                        "application/x-nsv-vp3-mp3",
+                        "audio/x-musepack",
+                        "audio/musepack",
+                        "audio/ape",
+                        "audio/x-ape",
+                        "audio/x-mp3",
+                        "audio/mpeg",
+                        "audio/x-mpeg",
+                        "audio/x-mpeg-3",
+                        "audio/mpeg3",
+                        "audio/mp3",
+                        "audio/mp4",
+                        "audio/x-m4a",
+                        "audio/mpc",
+                        "audio/x-mpc",
+                        "audio/mp",
+                        "audio/x-mp",
+                        "audio/x-vorbis+ogg",
+                        "audio/vorbis",
+                        "audio/x-vorbis",
+                        "audio/ogg",
+                        "audio/x-ogg",
+                        "audio/x-flac",
+                        "audio/flac",
+                        "audio/x-s3m",
+                        "audio/x-mod",
+                        "audio/x-xm",
+                        "audio/x-it",
+                        "audio/x-pn-realaudio",
+                        "audio/x-realaudio",
+                        "audio/x-pn-realaudio-plugin",
+                        "audio/x-ms-wmv",
+                        "audio/x-ms-wax",
+                        "audio/x-ms-wma",
+                        "audio/wav",
+                        "audio/x-wav",
+                        "audio/mpeg2",
+                        "audio/x-mpeg2",
+                        "audio/x-mpeg3",
+                        "audio/x-mpegurl",
+                        "audio/basic",
+                        "audio/x-basic",
+                        "audio/midi",
+                        "audio/x-scpls",
+                        "audio/webm",
+                        "audio/x-webm"
+                    };
+
+                case "image/jpeg":
+                    return {
+                        "image/jpeg",
+                        "image/jpg",
+                        "image/pjpeg",
+                        "image/png",
+                        "image/tiff",
+                        "image/x-3fr",
+                        "image/x-adobe-dng",
+                        "image/x-arw",
+                        "image/x-bay",
+                        "image/x-bmp",
+                        "image/x-canon-cr2",
+                        "image/x-canon-crw",
+                        "image/x-cap",
+                        "image/x-cr2",
+                        "image/x-crw",
+                        "image/x-dcr",
+                        "image/x-dcraw",
+                        "image/x-dcs",
+                        "image/x-dng",
+                        "image/x-drf",
+                        "image/x-eip",
+                        "image/x-erf",
+                        "image/x-fff",
+                        "image/x-fuji-raf",
+                        "image/x-iiq",
+                        "image/x-k25",
+                        "image/x-kdc",
+                        "image/x-mef",
+                        "image/x-minolta-mrw",
+                        "image/x-mos",
+                        "image/x-mrw",
+                        "image/x-nef",
+                        "image/x-nikon-nef",
+                        "image/x-nrw",
+                        "image/x-olympus-orf",
+                        "image/x-orf",
+                        "image/x-panasonic-raw",
+                        "image/x-pef",
+                        "image/x-pentax-pef",
+                        "image/x-png",
+                        "image/x-ptx",
+                        "image/x-pxn",
+                        "image/x-r3d",
+                        "image/x-raf",
+                        "image/x-raw",
+                        "image/x-raw",
+                        "image/x-rw2",
+                        "image/x-rwl",
+                        "image/x-rwz",
+                        "image/x-sigma-x3f",
+                        "image/x-sony-arw",
+                        "image/x-sony-sr2",
+                        "image/x-sony-srf",
+                        "image/x-sr2",
+                        "image/x-srf",
+                        "image/x-x3f"
+                    };
+
+                case "text/plain":
+                    return {
+                        "application/xml",
+                        "application/x-perl",
+                        "text/mathml",
+                        "text/plain",
+                        "text/xml",
+                        "text/x-c++hdr",
+                        "text/x-c++src",
+                        "text/x-xsrc",
+                        "text/x-chdr",
+                        "text/x-csrc",
+                        "text/x-dtd",
+                        "text/x-java",
+                        "text/x-python",
+                        "text/x-sql"
+                    };
+
+                case "inode/directory":
+                    return {
+                        "inode/directory",
+                        "x-directory/normal",
+                        "x-directory/gnome-default-handler"
+                    };
+
+                default:
+                    return {};
+            }
         }
     }
 }

@@ -1,26 +1,12 @@
 /*
-* Copyright 2013-2020 elementary, Inc. (https://elementary.io)
-*
-* This program is free software; you can redistribute it and/or
-* modify it under the terms of the GNU General Public
-* License as published by the Free Software Foundation; either
-* version 3 of the License, or (at your option) any later version.
-*
-* This program is distributed in the hope that it will be useful,
-* but WITHOUT ANY WARRANTY; without even the implied warranty of
-* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
-* General Public License for more details.
-*
-* You should have received a copy of the GNU General Public
-* License along with this program; if not, write to the
-* Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor,
-* Boston, MA 02110-1301 USA
-*
-* Authored by: Akshay Shekher <voldyman666@gmail.com>
-*              Julien Spautz <spautz.julien@gmail.com>
-*/
+ * SPDX-License-Identifier: GPL-3.0-or-later
+ * SPDX-FileCopyrightText: 2013-2023 elementary, Inc. (https://elementary.io)
+ *
+ * Authored by: Akshay Shekher <voldyman666@gmail.com>
+ *              Julien Spautz <spautz.julien@gmail.com>
+ */
 
-public class Startup.Plug : Gtk.Grid {
+public class Startup.Plug : Gtk.Box {
     private Controller controller;
     private Gtk.ListBox list;
     private Widgets.AppChooser app_chooser;
@@ -44,49 +30,58 @@ public class Startup.Plug : Gtk.Grid {
         empty_alert.show_all ();
 
         list = new Gtk.ListBox () {
-            expand = true
+            hexpand = true,
+            vexpand = true
         };
         list.set_placeholder (empty_alert);
         list.set_sort_func (sort_function);
 
         Gtk.drag_dest_set (list, Gtk.DestDefaults.ALL, TARGET_LIST, Gdk.DragAction.COPY);
 
-        var scrolled = new Gtk.ScrolledWindow (null, null);
-        scrolled.add (list);
+        var scrolled = new Gtk.ScrolledWindow (null, null) {
+            child = list
+        };
+
+        var add_button = new Gtk.Button.with_label (_("Add Startup App…")) {
+            always_show_image = true,
+            image = new Gtk.Image.from_icon_name ("application-add-symbolic", Gtk.IconSize.SMALL_TOOLBAR),
+            margin_top = 3,
+            margin_bottom = 3
+        };
+        add_button.get_style_context ().add_class (Gtk.STYLE_CLASS_FLAT);
 
         var actionbar = new Gtk.ActionBar ();
         actionbar.get_style_context ().add_class (Gtk.STYLE_CLASS_INLINE_TOOLBAR);
+        actionbar.pack_start (add_button);
 
-        var add_button = new Gtk.Button.from_icon_name ("application-add-symbolic", Gtk.IconSize.BUTTON);
-        add_button.tooltip_text = _("Add Startup App…");
+        var box = new Gtk.Box (VERTICAL, 0);
+        box.add (scrolled);
+        box.add (actionbar);
 
-        var remove_button = new Gtk.Button.from_icon_name ("list-remove-symbolic", Gtk.IconSize.BUTTON);
-        remove_button.tooltip_text = _("Remove Selected Startup App");
-        remove_button.sensitive = false;
+        var frame = new Gtk.Frame (null) {
+            child = box
+        };
 
-        actionbar.add (add_button);
-        actionbar.add (remove_button);
+        var clamp = new Hdy.Clamp () {
+            child = frame,
+            margin_end = 12,
+            margin_bottom = 12,
+            margin_start = 12
+        };
 
-        var grid = new Gtk.Grid ();
-        grid.attach (scrolled, 0, 0, 1, 1);
-        grid.attach (actionbar, 0, 1, 1, 1);
+        add (clamp);
 
-        var frame = new Gtk.Frame (null);
-        frame.add (grid);
-
-        orientation = Gtk.Orientation.VERTICAL;
-        margin = 12;
-        margin_top = 0;
-        add (frame);
-
-        app_chooser = new Widgets.AppChooser (add_button);
-        app_chooser.modal = true;
+        app_chooser = new Widgets.AppChooser () {
+            modal = true
+        };
 
         var monitor = new Backend.Monitor ();
         controller = new Controller (this);
 
         add_button.clicked.connect (() => {
-            app_chooser.show_all ();
+            // Parent is set here because at construct toplevel is the plug not the window
+            app_chooser.transient_for = (Gtk.Window) get_toplevel ();
+            app_chooser.present ();
         });
 
         app_chooser.app_chosen.connect ((path) => {
@@ -98,9 +93,6 @@ public class Startup.Plug : Gtk.Grid {
         });
 
         list.drag_data_received.connect (on_drag_data_received);
-        list.row_selected.connect ((row) => {
-            remove_button.sensitive = (row != null);
-        });
 
         monitor.file_created.connect ((path) => {
             add_app (Backend.KeyFileFactory.get_or_create (path));
@@ -108,10 +100,6 @@ public class Startup.Plug : Gtk.Grid {
 
         monitor.file_deleted.connect ((path) => {
             remove_app_from_path (path);
-        });
-
-        remove_button.clicked.connect (() => {
-            remove_selected_app ();
         });
     }
 
@@ -150,17 +138,6 @@ public class Startup.Plug : Gtk.Grid {
         key_file.copy_to_local ();
 
         add_app (key_file);
-    }
-
-    private void remove_selected_app () {
-        var row = list.get_selected_row ();
-        if (row == null) {
-            return;
-        }
-
-        list.remove (row);
-
-        GLib.FileUtils.remove (((Widgets.AppRow)row).app_info.path);
     }
 
     private string? get_path_from_uri (string uri) {

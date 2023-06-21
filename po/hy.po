@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-09-23 23:18+0000\n"
+"POT-Creation-Date: 2023-06-17 14:51+0000\n"
 "PO-Revision-Date: 2014-11-06 08:14+0000\n"
 "Last-Translator: Vahan Harutyunyan <Unknown>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,7 +17,7 @@ msgstr ""
 msgid "Manage default apps, startup apps, and app permissions"
 msgstr ""
 
-#: src/Plug.vala:45
+#: src/Plug.vala:45 src/Permissions/PermissionsPlug.vala:68
 msgid "Applications"
 msgstr "Ծրագրեր"
 
@@ -52,42 +52,42 @@ msgstr ""
 msgid "Default"
 msgstr "Նախնական"
 
-#: src/Plug.vala:107
+#: src/Plug.vala:107 src/Defaults/DefaultPlug.vala:12
 #, fuzzy
 msgid "Web Browser"
 msgstr "Վեբ բրոուզեր"
 
-#: src/Plug.vala:108
+#: src/Plug.vala:108 src/Defaults/DefaultPlug.vala:17
 #, fuzzy
 msgid "Email Client"
 msgstr "Էլ. փոստի կլիենտ՝"
 
-#: src/Plug.vala:109
+#: src/Plug.vala:109 src/Defaults/DefaultPlug.vala:22
 #, fuzzy
 msgid "Calendar"
 msgstr "Օրացույց"
 
-#: src/Plug.vala:110
+#: src/Plug.vala:110 src/Defaults/DefaultPlug.vala:27
 #, fuzzy
 msgid "Video Player"
 msgstr "Վիդեո նվագարկիչ՝"
 
-#: src/Plug.vala:111
+#: src/Plug.vala:111 src/Defaults/DefaultPlug.vala:32
 #, fuzzy
 msgid "Music Player"
 msgstr "Նվագարկիչ"
 
-#: src/Plug.vala:112
+#: src/Plug.vala:112 src/Defaults/DefaultPlug.vala:42
 #, fuzzy
 msgid "Text Editor"
 msgstr "Տեքստային խմբագրիչ"
 
-#: src/Plug.vala:113
+#: src/Plug.vala:113 src/Defaults/DefaultPlug.vala:37
 #, fuzzy
 msgid "Image Viewer"
 msgstr "Պատկերներ ցուցադրող"
 
-#: src/Plug.vala:114
+#: src/Plug.vala:114 src/Defaults/DefaultPlug.vala:47
 #, fuzzy
 msgid "File Browser"
 msgstr "Ֆայլային բրուզեր"
@@ -169,78 +169,87 @@ msgstr ""
 msgid "Accelerate graphical output."
 msgstr ""
 
-#: src/Permissions/Widgets/AppSettingsView.vala:105
+#: src/Permissions/Widgets/AppSettingsView.vala:109
 #, fuzzy
 #| msgid "Default"
 msgid "Reset to Defaults"
 msgstr "Նախնական"
 
+#: src/Permissions/Widgets/AppSettingsView.vala:174
+#, c-format
+msgid "%s permissions"
+msgstr ""
+
 #. / Translators: This is a delimiter that separates types of permissions in the sidebar description
-#: src/Permissions/Widgets/SidebarRow.vala:89
+#: src/Permissions/Widgets/SidebarRow.vala:93
 msgid ", "
 msgstr ""
 
-#: src/Startup/Startup.vala:40
+#: src/Startup/Startup.vala:26
 msgid "Launch Apps on Startup"
 msgstr ""
 
-#: src/Startup/Startup.vala:41
+#: src/Startup/Startup.vala:27
 msgid "Add apps to the Startup list by clicking the icon in the toolbar below."
 msgstr ""
 
-#: src/Startup/Startup.vala:61
+#: src/Startup/Startup.vala:45
 msgid "Add Startup App…"
 msgstr ""
 
-#: src/Startup/Startup.vala:64
-msgid "Remove Selected Startup App"
-msgstr ""
-
-#: src/Startup/Backend/KeyFile.vala:86
+#: src/Startup/Backend/KeyFile.vala:99
 msgid "Custom Command"
 msgstr ""
 
-#: src/Startup/Widgets/AppRow.vala:47
+#: src/Startup/Widgets/AppRow.vala:46
+msgid "Remove this app from startup"
+msgstr ""
+
+#: src/Startup/Widgets/AppRow.vala:51
 #, c-format
 msgid "Launch %s on startup"
 msgstr ""
 
-#: src/Startup/Widgets/AppChooser.vala:38
+#: src/Startup/Widgets/AppChooser.vala:17
 msgid "Search Applications"
 msgstr "Փնտրել ծրագրեր"
 
-#: src/Startup/Widgets/AppChooser.vala:56
+#: src/Startup/Widgets/AppChooser.vala:36
 msgid "Type in a custom command"
 msgstr ""
 
-#: src/Defaults/DefaultPlug.vala:40
-msgid "Web Browser:"
-msgstr "Վեբ բրոուզեր"
+#. TRANSLATORS: This string is used by screen reader
+#: src/Startup/Widgets/AppChooser.vala:56
+msgid "Select startup app"
+msgstr ""
 
-#: src/Defaults/DefaultPlug.vala:44
-msgid "Email Client:"
-msgstr "Էլ. փոստի կլիենտ՝"
+#. TRANSLATORS: This is description for for screen reader. %s can be "Web Browser" or "Music Player" and so on.
+#: src/Defaults/DefaultPlug.vala:124
+#, fuzzy, c-format
+#| msgid "Default"
+msgid "Default %s"
+msgstr "Նախնական"
 
-#: src/Defaults/DefaultPlug.vala:48
-msgid "Calendar:"
-msgstr "Օրացույց"
+#~ msgid "Web Browser:"
+#~ msgstr "Վեբ բրոուզեր"
 
-#: src/Defaults/DefaultPlug.vala:52
-msgid "Video Player:"
-msgstr "Վիդեո նվագարկիչ՝"
+#~ msgid "Email Client:"
+#~ msgstr "Էլ. փոստի կլիենտ՝"
 
-#: src/Defaults/DefaultPlug.vala:58
-msgid "Music Player:"
-msgstr "Նվագարկիչ"
+#~ msgid "Calendar:"
+#~ msgstr "Օրացույց"
 
-#: src/Defaults/DefaultPlug.vala:63
-msgid "Image Viewer:"
-msgstr "Պատկերներ ցուցադրող"
+#~ msgid "Video Player:"
+#~ msgstr "Վիդեո նվագարկիչ՝"
 
-#: src/Defaults/DefaultPlug.vala:68
-msgid "Text Editor:"
-msgstr "Տեքստային խմբագրիչ"
+#~ msgid "Music Player:"
+#~ msgstr "Նվագարկիչ"
 
-#: src/Defaults/DefaultPlug.vala:73
-msgid "File Browser:"
-msgstr "Ֆայլային բրուզեր"
+#~ msgid "Image Viewer:"
+#~ msgstr "Պատկերներ ցուցադրող"
+
+#~ msgid "Text Editor:"
+#~ msgstr "Տեքստային խմբագրիչ"
+
+#~ msgid "File Browser:"
+#~ msgstr "Ֆայլային բրուզեր"

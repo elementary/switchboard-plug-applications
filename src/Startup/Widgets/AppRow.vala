@@ -29,17 +29,21 @@ public class Startup.Widgets.AppRow : Gtk.ListBoxRow {
     }
 
     construct {
-        var image = Utils.create_icon (app_info, Gtk.IconSize.DIALOG);
+        var image = Utils.create_icon (app_info, Gtk.IconSize.DND);
 
         var app_name = new Gtk.Label (app_info.name) {
             xalign = 0
         };
-        app_name.get_style_context ().add_class (Granite.STYLE_CLASS_H3_LABEL);
 
         var app_comment = new Gtk.Label (app_info.comment) {
             ellipsize = Pango.EllipsizeMode.END,
             hexpand = true,
             xalign = 0
+        };
+        app_comment.get_style_context ().add_class (Granite.STYLE_CLASS_SMALL_LABEL);
+
+        var remove_button = new Gtk.Button.from_icon_name ("edit-delete-symbolic") {
+            tooltip_text = _("Remove this app from startup")
         };
 
         var active_switch = new Gtk.Switch () {
@@ -49,19 +53,25 @@ public class Startup.Widgets.AppRow : Gtk.ListBoxRow {
         };
 
         var main_grid = new Gtk.Grid () {
-            column_spacing = 12,
+            column_spacing = 6,
             margin = 6
         };
         main_grid.attach (image, 0, 0, 1, 2);
         main_grid.attach (app_name, 1, 0);
         main_grid.attach (app_comment, 1, 1);
-        main_grid.attach (active_switch, 2, 0, 1, 2);
+        main_grid.attach (remove_button, 2, 0, 1, 2);
+        main_grid.attach (active_switch, 3, 0, 1, 2);
 
         add (main_grid);
         show_all ();
 
         active_switch.notify["active"].connect (() => {
             active_changed (active_switch.active);
+        });
+
+        remove_button.clicked.connect (() => {
+            FileUtils.remove (app_info.path);
+            parent.remove (this);
         });
     }
 }

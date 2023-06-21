@@ -48,7 +48,10 @@ public class Permissions.Plug : Gtk.Grid {
         };
 
         var placeholder = new Gtk.Grid () {
-            margin = 12,
+            margin_start = 12,
+            margin_end = 12,
+            margin_top = 12,
+            margin_bottom = 12,
             row_spacing = 3,
             valign = Gtk.Align.CENTER
         };
@@ -56,17 +59,21 @@ public class Permissions.Plug : Gtk.Grid {
         placeholder.attach (placeholder_description, 0, 1);
         placeholder.show_all ();
 
-        var app_list = new Gtk.ListBox ();
-        app_list.vexpand = true;
-        app_list.selection_mode = Gtk.SelectionMode.SINGLE;
+        var app_list = new Gtk.ListBox () {
+            vexpand = true,
+            selection_mode = Gtk.SelectionMode.SINGLE
+        };
         app_list.set_placeholder (placeholder);
         app_list.set_sort_func ((Gtk.ListBoxSortFunc) sort_func);
+        app_list.get_accessible ().accessible_name = _("Applications");
 
-        var scrolled_window = new Gtk.ScrolledWindow (null, null);
-        scrolled_window.add (app_list);
+        var scrolled_window = new Gtk.ScrolledWindow (null, null) {
+            child = app_list
+        };
 
-        var frame = new Gtk.Frame (null);
-        frame.add (scrolled_window);
+        var frame = new Gtk.Frame (null) {
+            child = scrolled_window
+        };
 
         Permissions.Backend.AppManager.get_default ().apps.foreach ((id, app) => {
             var app_entry = new Permissions.SidebarRow (app);
@@ -83,9 +90,10 @@ public class Permissions.Plug : Gtk.Grid {
             show_row (row);
         }
 
+        margin_end = 12;
+        margin_bottom = 12;
+        margin_start = 12;
         column_spacing = 12;
-        margin = 12;
-        margin_top = 0;
         attach (frame, 0, 0, 1, 1);
         attach (app_settings_view, 1, 0, 2, 1);
         show_all ();

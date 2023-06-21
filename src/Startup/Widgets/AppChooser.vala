@@ -1,25 +1,10 @@
-/*
-* Copyright 2013-2020 elementary, Inc. (https://elementary.io)
-*
-* This program is free software; you can redistribute it and/or
-* modify it under the terms of the GNU General Public
-* License as published by the Free Software Foundation; either
-* version 3 of the License, or (at your option) any later version.
-*
-* This program is distributed in the hope that it will be useful,
-* but WITHOUT ANY WARRANTY; without even the implied warranty of
-* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
-* General Public License for more details.
-*
-* You should have received a copy of the GNU General Public
-* License along with this program; if not, write to the
-* Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor,
-* Boston, MA 02110-1301 USA
-*
-* Authored by: Julien Spautz <spautz.julien@gmail.com>
-*/
+/* SPDX-License-Identifier: GPL-3.0-or-later
+ * SPDX-FileCopyrightText: 2013-2023 elementary, Inc. (https://elementary.io)
+ *
+ * Authored by: Julien Spautz <spautz.julien@gmail.com>
+ */
 
-public class Startup.Widgets.AppChooser : Gtk.Popover {
+public class Startup.Widgets.AppChooser : Granite.Dialog {
     public signal void app_chosen (string path);
     public signal void custom_command_chosen (string command);
 
@@ -27,52 +12,55 @@ public class Startup.Widgets.AppChooser : Gtk.Popover {
     private Gtk.SearchEntry search_entry;
     private Gtk.Entry custom_entry;
 
-    public AppChooser (Gtk.Widget widget) {
-        Object (relative_to: widget);
-    }
-
     construct {
         search_entry = new Gtk.SearchEntry () {
-            margin_end = 12,
-            margin_start = 12,
             placeholder_text = _("Search Applications")
         };
 
         list = new Gtk.ListBox () {
-            expand = true
+            hexpand = true,
+            vexpand = true
         };
         list.set_sort_func (sort_function);
         list.set_filter_func (filter_function);
 
         var scrolled = new Gtk.ScrolledWindow (null, null) {
-            height_request = 200,
-            width_request = 500
+            child = list
         };
-        scrolled.add (list);
+
+        var frame = new Gtk.Frame (null) {
+            child = scrolled
+        };
 
         custom_entry = new Gtk.Entry () {
-            margin_end = 12,
-            margin_start = 12,
             placeholder_text = _("Type in a custom command"),
             primary_icon_activatable = false,
             primary_icon_name = "utilities-terminal-symbolic"
         };
 
-        var grid = new Gtk.Grid () {
-            margin_bottom = 12,
-            margin_top = 12,
-            row_spacing = 6
+        var box = new Gtk.Box (VERTICAL, 6) {
+            margin_end = 12,
+            margin_start = 12
         };
-        grid.attach (search_entry, 0, 0);
-        grid.attach (scrolled, 0, 1);
-        grid.attach (custom_entry, 0, 2);
+        box.add (search_entry);
+        box.add (frame);
+        box.add (custom_entry);
+        box.show_all ();
 
-        add (grid);
+        default_height = 500;
+        default_width = 400;
+        get_content_area ().add (box);
+        add_button ("Cancel", Gtk.ResponseType.CANCEL);
+
+        // TRANSLATORS: This string is used by screen reader
+        get_accessible ().accessible_name = _("Select startup app");
 
         search_entry.grab_focus ();
         search_entry.search_changed.connect (() => {
             list.invalidate_filter ();
         });
+
+        response.connect (hide);
 
         list.row_activated.connect (on_app_selected);
         custom_entry.activate.connect (on_custom_command_entered);

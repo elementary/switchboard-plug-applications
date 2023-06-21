@@ -84,8 +84,10 @@ public class Permissions.Widgets.AppSettingsView : Gtk.Grid {
             new Backend.PermissionSettings ("devices=dri")
         );
 
-        list_box = new Gtk.ListBox ();
-        list_box.expand = true;
+        list_box = new Gtk.ListBox () {
+            hexpand = true,
+            vexpand = true
+        };
         list_box.add (homefolder_widget);
         list_box.add (sysfolders_widget);
         list_box.add (devices_widget);
@@ -95,15 +97,18 @@ public class Permissions.Widgets.AppSettingsView : Gtk.Grid {
         list_box.add (ssh_widget);
         list_box.add (gpu_widget);
 
-        var scrolled_window = new Gtk.ScrolledWindow (null, null);
-        scrolled_window.add (list_box);
+        var scrolled_window = new Gtk.ScrolledWindow (null, null) {
+            child = list_box
+        };
 
-        var frame = new Gtk.Frame (null);
+        var frame = new Gtk.Frame (null) {
+            child = scrolled_window
+        };
         frame.get_style_context ().add_class (Gtk.STYLE_CLASS_VIEW);
-        frame.add (scrolled_window);
 
-        reset_button = new Gtk.Button.with_label (_("Reset to Defaults"));
-        reset_button.halign = Gtk.Align.END;
+        reset_button = new Gtk.Button.with_label (_("Reset to Defaults")) {
+            halign = Gtk.Align.END
+        };
 
         row_spacing = 24;
         attach (frame, 0, 0);
@@ -149,6 +154,7 @@ public class Permissions.Widgets.AppSettingsView : Gtk.Grid {
             return;
         }
 
+        var should_enable_reset = false;
         selected_app.settings.foreach ((settings) => {
             foreach (unowned Gtk.Widget child in list_box.get_children ()) {
                 if (child is PermissionSettingsWidget) {
@@ -158,13 +164,19 @@ public class Permissions.Widgets.AppSettingsView : Gtk.Grid {
                         widget.settings.standard = settings.standard;
                         widget.settings.enabled = settings.enabled;
                         widget.do_notify = true;
+
+                        if (settings.enabled != settings.standard) {
+                            should_enable_reset = true;
+                        }
                     }
                 }
             }
 
             list_box.sensitive = true;
-            reset_button.sensitive = true;
+            reset_button.sensitive = should_enable_reset;
         });
+
+        get_accessible ().accessible_name = _("%s permissions").printf (selected_app.name);
     }
 
     private void change_permission_settings (Backend.PermissionSettings settings) {
@@ -172,14 +184,22 @@ public class Permissions.Widgets.AppSettingsView : Gtk.Grid {
             return;
         }
 
+        var should_enable_reset = false;
         for (var i = 0; i < selected_app.settings.length; i++) {
             var s = selected_app.settings.get (i);
             if (s.context == settings.context) {
                 s.enabled = settings.enabled;
+
+                if (settings.enabled != settings.standard) {
+                    should_enable_reset = true;
+                }
+
                 break;
             }
         }
 
         selected_app.save_overrides ();
+
+        reset_button.sensitive = should_enable_reset;
     }
 }

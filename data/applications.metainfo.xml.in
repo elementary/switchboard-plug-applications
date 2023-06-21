@@ -6,7 +6,7 @@
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-2.0+</project_license>
 
-  <icon type="stock">preferences-desktop-applications</icon>
+  <icon type="stock">io.elementary.settings.applications</icon>
   <name>Applications Settings</name>
   <summary>Manage default and startup applications</summary>
 
@@ -37,12 +37,21 @@
   <releases>
     <release version="7.0.0" date="2023-06-07" urgency="medium">
       <description>
-        <p>Minor updates:</p>
+        <p>New features:</p>
         <ul>
           <li>Properly handle autostart files created by the Background Portal</li>
+        </ul>
+        <p>Minor updates:</p>
+        <ul>
+          <li>App chooser in Startup is a dialog instead of a popover</li>
+          <li>Improve screen reader descriptions</li>
           <li>Updated translations</li>
         </ul>
       </description>
+      <issues>
+        <issue url="https://github.com/elementary/switchboard-plug-applications/issues/59">Bigger + and - icons to add/remove things</issue>
+        <issue url="https://github.com/elementary/switchboard-plug-applications/issues/77">Permissions: reset button should be insensitive if already default</issue>
+      </issues>
     </release>
 
     <release version="6.0.1" date="2021-09-27" urgency="medium">

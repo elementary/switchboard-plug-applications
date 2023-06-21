@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-09-23 23:18+0000\n"
-"PO-Revision-Date: 2022-10-13 01:10+0000\n"
+"POT-Creation-Date: 2023-06-17 14:51+0000\n"
+"PO-Revision-Date: 2023-06-19 14:07+0000\n"
 "Last-Translator: TomiOhl <ohlslager.tom@gmail.com>\n"
 "Language-Team: Hungarian <https://l10n.elementary.io/projects/switchboard/"
 "applications-plug-extra/hu/>\n"
@@ -17,48 +17,62 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 4.17\n"
 
-#: data/io.elementary.switchboard.applications.appdata.xml.in:5
+#: data/applications.metainfo.xml.in:10
 msgid "Applications Settings"
 msgstr "Alkalmazásbeállítások"
 
-#: data/io.elementary.switchboard.applications.appdata.xml.in:6
+#: data/applications.metainfo.xml.in:11
 msgid "Manage default and startup applications"
 msgstr "Alapértelmezett és automatikusan induló alkalmazások kezelése"
 
-#: data/io.elementary.switchboard.applications.appdata.xml.in:12
-#: data/io.elementary.switchboard.applications.appdata.xml.in:26
+#: data/applications.metainfo.xml.in:33
+msgid "elementary, Inc."
+msgstr "elementary, Inc."
+
+#: data/applications.metainfo.xml.in:40 data/applications.metainfo.xml.in:54
+#: data/applications.metainfo.xml.in:69
 msgid "Minor updates:"
 msgstr "Kisebb frissítések:"
 
-#: data/io.elementary.switchboard.applications.appdata.xml.in:14
-msgid "Fix an issue with setting the incorrect app for certain files types"
-msgstr "Néhány fájltípusnál helytelen alkalmazás beállításának hibája javítva"
+#: data/applications.metainfo.xml.in:42
+msgid "Properly handle autostart files created by the Background Portal"
+msgstr ""
+"A háttérportál által készített, automatikus indulásokért felelős fájlok "
+"megfelelő kezelése"
 
-#: data/io.elementary.switchboard.applications.appdata.xml.in:15
-msgid "Don't overwrite custom overrides when unnecessary"
-msgstr "Ne írja felül az egyedi felülbírálásokat, ha nem szükséges"
+#: data/applications.metainfo.xml.in:43
+msgid "App chooser in Startup is a dialog instead of a popover"
+msgstr ""
+"Az Automatikusan induló fülön az alkalmazásválasztó egy párbeszédablak lett"
 
-#: data/io.elementary.switchboard.applications.appdata.xml.in:16
-#: data/io.elementary.switchboard.applications.appdata.xml.in:29
-#: data/io.elementary.switchboard.applications.appdata.xml.in:35
-#: data/io.elementary.switchboard.applications.appdata.xml.in:41
+#: data/applications.metainfo.xml.in:44 data/applications.metainfo.xml.in:58
+#: data/applications.metainfo.xml.in:72 data/applications.metainfo.xml.in:79
+#: data/applications.metainfo.xml.in:86
 msgid "Updated translations"
 msgstr "Frissített fordítások"
 
-#: data/io.elementary.switchboard.applications.appdata.xml.in:22
+#: data/applications.metainfo.xml.in:56
+msgid "Fix an issue with setting the incorrect app for certain files types"
+msgstr "Néhány fájltípusnál helytelen alkalmazás beállításának hibája javítva"
+
+#: data/applications.metainfo.xml.in:57
+msgid "Don't overwrite custom overrides when unnecessary"
+msgstr "Ne írja felül az egyedi felülbírálásokat, ha nem szükséges"
+
+#: data/applications.metainfo.xml.in:65
 msgid "New features:"
 msgstr "Új funkciók:"
 
-#: data/io.elementary.switchboard.applications.appdata.xml.in:24
+#: data/applications.metainfo.xml.in:67
 msgid "Manage permissions for Flatpak apps"
 msgstr "Flatpak alkalmazások engedélyeinek kezelése"
 
-#: data/io.elementary.switchboard.applications.appdata.xml.in:28
+#: data/applications.metainfo.xml.in:71
 msgid "Show custom launcher files"
 msgstr "Egyedi indítóikonok megjelenítése"
 
-#: data/io.elementary.switchboard.applications.appdata.xml.in:40
+#: data/applications.metainfo.xml.in:85
 msgid "Fix issues with OnlyShowIn and Snap apps"
 msgstr "OnlyShowIn és Snap alkalmazásokkal kapcsolatos hibák javítása"

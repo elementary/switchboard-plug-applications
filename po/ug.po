@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-applications\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-09-23 23:18+0000\n"
+"POT-Creation-Date: 2023-06-17 14:51+0000\n"
 "PO-Revision-Date: 2020-10-11 21:36+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Uyghur <https://l10n.elementary.io/projects/switchboard/"
@@ -26,7 +26,7 @@ msgstr ""
 msgid "Manage default apps, startup apps, and app permissions"
 msgstr "سۈكۈتتىكى ۋە  كومپىيۇتىر بىلەن تەڭ قوزغىتىلىدىغان ئەپلەرنى باشقۇرۇش"
 
-#: src/Plug.vala:45
+#: src/Plug.vala:45 src/Permissions/PermissionsPlug.vala:68
 msgid "Applications"
 msgstr "ئەپلەر"
 
@@ -61,42 +61,42 @@ msgstr ""
 msgid "Default"
 msgstr "سۈكۈتتىكى"
 
-#: src/Plug.vala:107
+#: src/Plug.vala:107 src/Defaults/DefaultPlug.vala:12
 #, fuzzy
 msgid "Web Browser"
 msgstr "توركۆرگۈچ:"
 
-#: src/Plug.vala:108
+#: src/Plug.vala:108 src/Defaults/DefaultPlug.vala:17
 #, fuzzy
 msgid "Email Client"
 msgstr "ئېلخەت تېرمىنالى:"
 
-#: src/Plug.vala:109
+#: src/Plug.vala:109 src/Defaults/DefaultPlug.vala:22
 #, fuzzy
 msgid "Calendar"
 msgstr "كالېندار:"
 
-#: src/Plug.vala:110
+#: src/Plug.vala:110 src/Defaults/DefaultPlug.vala:27
 #, fuzzy
 msgid "Video Player"
 msgstr "ۋىدېئو قويغۇچ:"
 
-#: src/Plug.vala:111
+#: src/Plug.vala:111 src/Defaults/DefaultPlug.vala:32
 #, fuzzy
 msgid "Music Player"
 msgstr "مۇزىكا قويغۇچ:"
 
-#: src/Plug.vala:112
+#: src/Plug.vala:112 src/Defaults/DefaultPlug.vala:42
 #, fuzzy
 msgid "Text Editor"
 msgstr "تېكست تەھرىرلىگۈچ:"
 
-#: src/Plug.vala:113
+#: src/Plug.vala:113 src/Defaults/DefaultPlug.vala:37
 #, fuzzy
 msgid "Image Viewer"
 msgstr "رەسىم كۆرگۈچ:"
 
-#: src/Plug.vala:114
+#: src/Plug.vala:114 src/Defaults/DefaultPlug.vala:47
 #, fuzzy
 msgid "File Browser"
 msgstr "ھۆججەت كۆرگۈچ؛"
@@ -178,83 +178,94 @@ msgstr ""
 msgid "Accelerate graphical output."
 msgstr ""
 
-#: src/Permissions/Widgets/AppSettingsView.vala:105
+#: src/Permissions/Widgets/AppSettingsView.vala:109
 #, fuzzy
 #| msgid "Default"
 msgid "Reset to Defaults"
 msgstr "سۈكۈتتىكى"
 
+#: src/Permissions/Widgets/AppSettingsView.vala:174
+#, c-format
+msgid "%s permissions"
+msgstr ""
+
 #. / Translators: This is a delimiter that separates types of permissions in the sidebar description
-#: src/Permissions/Widgets/SidebarRow.vala:89
+#: src/Permissions/Widgets/SidebarRow.vala:93
 msgid ", "
 msgstr ""
 
-#: src/Startup/Startup.vala:40
+#: src/Startup/Startup.vala:26
 msgid "Launch Apps on Startup"
 msgstr "ئەپلەرنى كومپىيۇتىر قوزغىتىلغاندا قوزغىتىش"
 
-#: src/Startup/Startup.vala:41
+#: src/Startup/Startup.vala:27
 msgid "Add apps to the Startup list by clicking the icon in the toolbar below."
 msgstr ""
 "تۆۋەندىكى قورال ستونىدىكى سىنبەلگىنى چىكىش ئارقىلىق كومپىيۇتىر بىلەن تەڭ "
 "قوزغىتىش تىزىملىكىگە ئەپ قىتىش."
 
-#: src/Startup/Startup.vala:61
+#: src/Startup/Startup.vala:45
 msgid "Add Startup App…"
 msgstr "كومپىيۇتىر بىلەن تەڭ قوزغىتىلىدىغان ئەپلەرنى قىتىش...."
 
-#: src/Startup/Startup.vala:64
-msgid "Remove Selected Startup App"
-msgstr "تاللانغان كومپىيۇتىر بىلەن تەڭ قوزغىتىلىدىغان ئەپلەرنى ئۆچۈرۈش"
-
-#: src/Startup/Backend/KeyFile.vala:86
+#: src/Startup/Backend/KeyFile.vala:99
 msgid "Custom Command"
 msgstr "ئۆزگىچىلەشتۈرۈلگەن بۇيرۇق"
 
-#: src/Startup/Widgets/AppRow.vala:47
+#: src/Startup/Widgets/AppRow.vala:46
+msgid "Remove this app from startup"
+msgstr ""
+
+#: src/Startup/Widgets/AppRow.vala:51
 #, c-format
 msgid "Launch %s on startup"
 msgstr "%s نى كومپىيۇتىر قوزغىتىلغاندا قوزغىتىش"
 
-#: src/Startup/Widgets/AppChooser.vala:38
+#: src/Startup/Widgets/AppChooser.vala:17
 msgid "Search Applications"
 msgstr "ئەپ ئىزدەش"
 
-#: src/Startup/Widgets/AppChooser.vala:56
+#: src/Startup/Widgets/AppChooser.vala:36
 msgid "Type in a custom command"
 msgstr "ئۆزگىچىلەشتۈرۈلگەن بۇيرۇق كىرگۈزۈش"
 
-#: src/Defaults/DefaultPlug.vala:40
-msgid "Web Browser:"
-msgstr "توركۆرگۈچ:"
+#. TRANSLATORS: This string is used by screen reader
+#: src/Startup/Widgets/AppChooser.vala:56
+#, fuzzy
+#| msgid "Remove Selected Startup App"
+msgid "Select startup app"
+msgstr "تاللانغان كومپىيۇتىر بىلەن تەڭ قوزغىتىلىدىغان ئەپلەرنى ئۆچۈرۈش"
 
-#: src/Defaults/DefaultPlug.vala:44
-msgid "Email Client:"
-msgstr "ئېلخەت تېرمىنالى:"
+#. TRANSLATORS: This is description for for screen reader. %s can be "Web Browser" or "Music Player" and so on.
+#: src/Defaults/DefaultPlug.vala:124
+#, fuzzy, c-format
+#| msgid "Default"
+msgid "Default %s"
+msgstr "سۈكۈتتىكى"
 
-#: src/Defaults/DefaultPlug.vala:48
-msgid "Calendar:"
-msgstr "كالېندار:"
+#~ msgid "Web Browser:"
+#~ msgstr "توركۆرگۈچ:"
 
-#: src/Defaults/DefaultPlug.vala:52
-msgid "Video Player:"
-msgstr "ۋىدېئو قويغۇچ:"
+#~ msgid "Email Client:"
+#~ msgstr "ئېلخەت تېرمىنالى:"
 
-#: src/Defaults/DefaultPlug.vala:58
-msgid "Music Player:"
-msgstr "مۇزىكا قويغۇچ:"
+#~ msgid "Calendar:"
+#~ msgstr "كالېندار:"
 
-#: src/Defaults/DefaultPlug.vala:63
-msgid "Image Viewer:"
-msgstr "رەسىم كۆرگۈچ:"
+#~ msgid "Video Player:"
+#~ msgstr "ۋىدېئو قويغۇچ:"
 
-#: src/Defaults/DefaultPlug.vala:68
-msgid "Text Editor:"
-msgstr "تېكست تەھرىرلىگۈچ:"
+#~ msgid "Music Player:"
+#~ msgstr "مۇزىكا قويغۇچ:"
 
-#: src/Defaults/DefaultPlug.vala:73
-msgid "File Browser:"
-msgstr "ھۆججەت كۆرگۈچ؛"
+#~ msgid "Image Viewer:"
+#~ msgstr "رەسىم كۆرگۈچ:"
+
+#~ msgid "Text Editor:"
+#~ msgstr "تېكست تەھرىرلىگۈچ:"
+
+#~ msgid "File Browser:"
+#~ msgstr "ھۆججەت كۆرگۈچ؛"
 
 #~ msgid "Default Application"
 #~ msgstr "سۈكۈتتىكى ئەپ"
