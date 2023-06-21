@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-06-21 18:16+0000\n"
-"PO-Revision-Date: 2023-06-19 14:07+0000\n"
+"PO-Revision-Date: 2023-06-24 12:07+0000\n"
 "Last-Translator: TomiOhl <ohlslager.tom@gmail.com>\n"
 "Language-Team: Hungarian <https://l10n.elementary.io/projects/switchboard/"
 "applications-plug-extra/hu/>\n"
@@ -53,7 +53,7 @@ msgstr ""
 
 #: data/applications.metainfo.xml.in:47
 msgid "Improve screen reader descriptions"
-msgstr ""
+msgstr "A képernyőolvasó leírásainak javítása"
 
 #: data/applications.metainfo.xml.in:48 data/applications.metainfo.xml.in:63
 #: data/applications.metainfo.xml.in:77 data/applications.metainfo.xml.in:84
