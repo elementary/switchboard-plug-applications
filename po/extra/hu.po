@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-17 14:51+0000\n"
+"POT-Creation-Date: 2023-06-21 18:16+0000\n"
 "PO-Revision-Date: 2023-06-19 14:07+0000\n"
 "Last-Translator: TomiOhl <ohlslager.tom@gmail.com>\n"
 "Language-Team: Hungarian <https://l10n.elementary.io/projects/switchboard/"
@@ -31,10 +31,9 @@ msgstr "Alapértelmezett és automatikusan induló alkalmazások kezelése"
 msgid "elementary, Inc."
 msgstr "elementary, Inc."
 
-#: data/applications.metainfo.xml.in:40 data/applications.metainfo.xml.in:54
-#: data/applications.metainfo.xml.in:69
-msgid "Minor updates:"
-msgstr "Kisebb frissítések:"
+#: data/applications.metainfo.xml.in:40 data/applications.metainfo.xml.in:70
+msgid "New features:"
+msgstr "Új funkciók:"
 
 #: data/applications.metainfo.xml.in:42
 msgid "Properly handle autostart files created by the Background Portal"
@@ -42,37 +41,42 @@ msgstr ""
 "A háttérportál által készített, automatikus indulásokért felelős fájlok "
 "megfelelő kezelése"
 
-#: data/applications.metainfo.xml.in:43
+#: data/applications.metainfo.xml.in:44 data/applications.metainfo.xml.in:59
+#: data/applications.metainfo.xml.in:74
+msgid "Minor updates:"
+msgstr "Kisebb frissítések:"
+
+#: data/applications.metainfo.xml.in:46
 msgid "App chooser in Startup is a dialog instead of a popover"
 msgstr ""
 "Az Automatikusan induló fülön az alkalmazásválasztó egy párbeszédablak lett"
 
-#: data/applications.metainfo.xml.in:44 data/applications.metainfo.xml.in:58
-#: data/applications.metainfo.xml.in:72 data/applications.metainfo.xml.in:79
-#: data/applications.metainfo.xml.in:86
+#: data/applications.metainfo.xml.in:47
+msgid "Improve screen reader descriptions"
+msgstr ""
+
+#: data/applications.metainfo.xml.in:48 data/applications.metainfo.xml.in:63
+#: data/applications.metainfo.xml.in:77 data/applications.metainfo.xml.in:84
+#: data/applications.metainfo.xml.in:91
 msgid "Updated translations"
 msgstr "Frissített fordítások"
 
-#: data/applications.metainfo.xml.in:56
+#: data/applications.metainfo.xml.in:61
 msgid "Fix an issue with setting the incorrect app for certain files types"
 msgstr "Néhány fájltípusnál helytelen alkalmazás beállításának hibája javítva"
 
-#: data/applications.metainfo.xml.in:57
+#: data/applications.metainfo.xml.in:62
 msgid "Don't overwrite custom overrides when unnecessary"
 msgstr "Ne írja felül az egyedi felülbírálásokat, ha nem szükséges"
 
-#: data/applications.metainfo.xml.in:65
-msgid "New features:"
-msgstr "Új funkciók:"
-
-#: data/applications.metainfo.xml.in:67
+#: data/applications.metainfo.xml.in:72
 msgid "Manage permissions for Flatpak apps"
 msgstr "Flatpak alkalmazások engedélyeinek kezelése"
 
-#: data/applications.metainfo.xml.in:71
+#: data/applications.metainfo.xml.in:76
 msgid "Show custom launcher files"
 msgstr "Egyedi indítóikonok megjelenítése"
 
-#: data/applications.metainfo.xml.in:85
+#: data/applications.metainfo.xml.in:90
 msgid "Fix issues with OnlyShowIn and Snap apps"
 msgstr "OnlyShowIn és Snap alkalmazásokkal kapcsolatos hibák javítása"

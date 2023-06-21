@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-17 14:51+0000\n"
+"POT-Creation-Date: 2023-06-21 18:16+0000\n"
 "PO-Revision-Date: 2022-05-30 10:51+0000\n"
 "Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
 "Language-Team: French <https://l10n.elementary.io/projects/switchboard/"
@@ -31,50 +31,54 @@ msgstr "Gérer les applications par défauts et au démarrage de l'ordinateur"
 msgid "elementary, Inc."
 msgstr ""
 
-#: data/applications.metainfo.xml.in:40 data/applications.metainfo.xml.in:54
-#: data/applications.metainfo.xml.in:69
-msgid "Minor updates:"
-msgstr "Mises à jour mineures :"
+#: data/applications.metainfo.xml.in:40 data/applications.metainfo.xml.in:70
+msgid "New features:"
+msgstr "Nouvelles fonctionnalités :"
 
 #: data/applications.metainfo.xml.in:42
 msgid "Properly handle autostart files created by the Background Portal"
 msgstr ""
 
-#: data/applications.metainfo.xml.in:43
+#: data/applications.metainfo.xml.in:44 data/applications.metainfo.xml.in:59
+#: data/applications.metainfo.xml.in:74
+msgid "Minor updates:"
+msgstr "Mises à jour mineures :"
+
+#: data/applications.metainfo.xml.in:46
 msgid "App chooser in Startup is a dialog instead of a popover"
 msgstr ""
 
-#: data/applications.metainfo.xml.in:44 data/applications.metainfo.xml.in:58
-#: data/applications.metainfo.xml.in:72 data/applications.metainfo.xml.in:79
-#: data/applications.metainfo.xml.in:86
+#: data/applications.metainfo.xml.in:47
+msgid "Improve screen reader descriptions"
+msgstr ""
+
+#: data/applications.metainfo.xml.in:48 data/applications.metainfo.xml.in:63
+#: data/applications.metainfo.xml.in:77 data/applications.metainfo.xml.in:84
+#: data/applications.metainfo.xml.in:91
 msgid "Updated translations"
 msgstr "Mise à jour des traductions"
 
-#: data/applications.metainfo.xml.in:56
+#: data/applications.metainfo.xml.in:61
 msgid "Fix an issue with setting the incorrect app for certain files types"
 msgstr ""
 "Correction d'un problème d'association avec la mauvaise application pour "
 "certains types de fichiers"
 
-#: data/applications.metainfo.xml.in:57
+#: data/applications.metainfo.xml.in:62
 msgid "Don't overwrite custom overrides when unnecessary"
 msgstr ""
 "Les directives personnalisées ne sont désormais plus écrasées si ce n'est "
 "pas nécessaire"
 
-#: data/applications.metainfo.xml.in:65
-msgid "New features:"
-msgstr "Nouvelles fonctionnalités :"
-
-#: data/applications.metainfo.xml.in:67
+#: data/applications.metainfo.xml.in:72
 msgid "Manage permissions for Flatpak apps"
 msgstr "Gestion des autorisations pour les applications Flatpak"
 
-#: data/applications.metainfo.xml.in:71
+#: data/applications.metainfo.xml.in:76
 msgid "Show custom launcher files"
 msgstr "Affichage des fichiers de lanceur personnalisés"
 
-#: data/applications.metainfo.xml.in:85
+#: data/applications.metainfo.xml.in:90
 msgid "Fix issues with OnlyShowIn and Snap apps"
 msgstr "Correction de problèmes avec OnlyShowIn et les Snaps"
 
