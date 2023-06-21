@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-17 14:51+0000\n"
+"POT-Creation-Date: 2023-06-21 18:16+0000\n"
 "PO-Revision-Date: 2018-02-15 15:34+0000\n"
 "Last-Translator: Вагиф Кязым <vaqif134@gmail.com>\n"
 "Language-Team: Azerbaijani <https://weblate.elementary.io/projects/"
@@ -179,7 +179,7 @@ msgstr ""
 msgid "Reset to Defaults"
 msgstr "Varsayılan"
 
-#: src/Permissions/Widgets/AppSettingsView.vala:174
+#: src/Permissions/Widgets/AppSettingsView.vala:179
 #, c-format
 msgid "%s permissions"
 msgstr ""
