@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-17 14:51+0000\n"
+"POT-Creation-Date: 2023-06-21 18:16+0000\n"
 "PO-Revision-Date: 2023-06-17 14:11+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
@@ -31,10 +31,9 @@ msgstr "デフォルトアプリケーションと自動起動するアプリケ
 msgid "elementary, Inc."
 msgstr "elementary, Inc."
 
-#: data/applications.metainfo.xml.in:40 data/applications.metainfo.xml.in:54
-#: data/applications.metainfo.xml.in:69
-msgid "Minor updates:"
-msgstr "そのほかのアップデート:"
+#: data/applications.metainfo.xml.in:40 data/applications.metainfo.xml.in:70
+msgid "New features:"
+msgstr "新機能:"
 
 #: data/applications.metainfo.xml.in:42
 msgid "Properly handle autostart files created by the Background Portal"
@@ -42,40 +41,45 @@ msgstr ""
 "バックグラウンドポータルによって作成された自動起動ファイルを適切に処理するよ"
 "う修正"
 
-#: data/applications.metainfo.xml.in:43
+#: data/applications.metainfo.xml.in:44 data/applications.metainfo.xml.in:59
+#: data/applications.metainfo.xml.in:74
+msgid "Minor updates:"
+msgstr "そのほかのアップデート:"
+
+#: data/applications.metainfo.xml.in:46
 msgid "App chooser in Startup is a dialog instead of a popover"
 msgstr ""
 "“自動起動”で表示するアプリ選択画面を、ポップオーバーからダイアログに変更"
 
-#: data/applications.metainfo.xml.in:44 data/applications.metainfo.xml.in:58
-#: data/applications.metainfo.xml.in:72 data/applications.metainfo.xml.in:79
-#: data/applications.metainfo.xml.in:86
+#: data/applications.metainfo.xml.in:47
+msgid "Improve screen reader descriptions"
+msgstr ""
+
+#: data/applications.metainfo.xml.in:48 data/applications.metainfo.xml.in:63
+#: data/applications.metainfo.xml.in:77 data/applications.metainfo.xml.in:84
+#: data/applications.metainfo.xml.in:91
 msgid "Updated translations"
 msgstr "翻訳の更新"
 
-#: data/applications.metainfo.xml.in:56
+#: data/applications.metainfo.xml.in:61
 msgid "Fix an issue with setting the incorrect app for certain files types"
 msgstr ""
 "特定の種類のファイルが意図しないアプリで開くように設定されてしまう不具合を修"
 "正"
 
-#: data/applications.metainfo.xml.in:57
+#: data/applications.metainfo.xml.in:62
 msgid "Don't overwrite custom overrides when unnecessary"
 msgstr "必要のないときはカスタマイズされたアクセス許可を上書きしないように修正"
 
-#: data/applications.metainfo.xml.in:65
-msgid "New features:"
-msgstr "新機能:"
-
-#: data/applications.metainfo.xml.in:67
+#: data/applications.metainfo.xml.in:72
 msgid "Manage permissions for Flatpak apps"
 msgstr "Flatpak アプリのパーミッションを管理できる機能を追加"
 
-#: data/applications.metainfo.xml.in:71
+#: data/applications.metainfo.xml.in:76
 msgid "Show custom launcher files"
 msgstr "ユーザーが作成した起動ファイルを表示するように修正"
 
-#: data/applications.metainfo.xml.in:85
+#: data/applications.metainfo.xml.in:90
 msgid "Fix issues with OnlyShowIn and Snap apps"
 msgstr "OnlyShowIn プロパティーと Snap アプリに関する不具合を修正"
 

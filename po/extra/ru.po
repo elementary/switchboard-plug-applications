@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-17 14:51+0000\n"
+"POT-Creation-Date: 2023-06-21 18:16+0000\n"
 "PO-Revision-Date: 2023-06-17 14:11+0000\n"
 "Last-Translator: кубик круглый <megarainbow29@gmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/switchboard/"
@@ -32,10 +32,9 @@ msgstr "Управление приложениями по умолчанию и
 msgid "elementary, Inc."
 msgstr "elementary, Inc."
 
-#: data/applications.metainfo.xml.in:40 data/applications.metainfo.xml.in:54
-#: data/applications.metainfo.xml.in:69
-msgid "Minor updates:"
-msgstr "Незначительные обновления:"
+#: data/applications.metainfo.xml.in:40 data/applications.metainfo.xml.in:70
+msgid "New features:"
+msgstr "Новые возможности:"
 
 #: data/applications.metainfo.xml.in:42
 msgid "Properly handle autostart files created by the Background Portal"
@@ -43,38 +42,43 @@ msgstr ""
 "Испрвлено отображерие файлов автозапуска, созданных Порталом работы в "
 "фоновом режиме"
 
-#: data/applications.metainfo.xml.in:43
+#: data/applications.metainfo.xml.in:44 data/applications.metainfo.xml.in:59
+#: data/applications.metainfo.xml.in:74
+msgid "Minor updates:"
+msgstr "Незначительные обновления:"
+
+#: data/applications.metainfo.xml.in:46
 msgid "App chooser in Startup is a dialog instead of a popover"
 msgstr ""
 "Список приложений в автозагрузке теперь диалоговое, а не всплывающее окно"
 
-#: data/applications.metainfo.xml.in:44 data/applications.metainfo.xml.in:58
-#: data/applications.metainfo.xml.in:72 data/applications.metainfo.xml.in:79
-#: data/applications.metainfo.xml.in:86
+#: data/applications.metainfo.xml.in:47
+msgid "Improve screen reader descriptions"
+msgstr ""
+
+#: data/applications.metainfo.xml.in:48 data/applications.metainfo.xml.in:63
+#: data/applications.metainfo.xml.in:77 data/applications.metainfo.xml.in:84
+#: data/applications.metainfo.xml.in:91
 msgid "Updated translations"
 msgstr "Обновлены переводы"
 
-#: data/applications.metainfo.xml.in:56
+#: data/applications.metainfo.xml.in:61
 msgid "Fix an issue with setting the incorrect app for certain files types"
 msgstr "Исправлено назначение приложений для определённых типов файлов"
 
-#: data/applications.metainfo.xml.in:57
+#: data/applications.metainfo.xml.in:62
 msgid "Don't overwrite custom overrides when unnecessary"
 msgstr "Пользовательские настройки не перезаписываются без необходимости"
 
-#: data/applications.metainfo.xml.in:65
-msgid "New features:"
-msgstr "Новые возможности:"
-
-#: data/applications.metainfo.xml.in:67
+#: data/applications.metainfo.xml.in:72
 msgid "Manage permissions for Flatpak apps"
 msgstr "Управление правами доступа Flatpak приложений"
 
-#: data/applications.metainfo.xml.in:71
+#: data/applications.metainfo.xml.in:76
 msgid "Show custom launcher files"
 msgstr "Отображение пользовательских файлов запуска"
 
-#: data/applications.metainfo.xml.in:85
+#: data/applications.metainfo.xml.in:90
 msgid "Fix issues with OnlyShowIn and Snap apps"
 msgstr "Исправление проблем с приложениями OnlyShowIn и Snap"
 

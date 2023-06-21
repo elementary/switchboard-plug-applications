@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-17 14:51+0000\n"
+"POT-Creation-Date: 2023-06-21 18:16+0000\n"
 "PO-Revision-Date: 2021-05-04 12:26+0000\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
 "Language-Team: Finnish <https://l10n.elementary.io/projects/switchboard/"
@@ -175,7 +175,7 @@ msgstr "Kiihdytä graafista ulostuloa."
 msgid "Reset to Defaults"
 msgstr "Palauta oletusarvoihin"
 
-#: src/Permissions/Widgets/AppSettingsView.vala:174
+#: src/Permissions/Widgets/AppSettingsView.vala:179
 #, fuzzy, c-format
 #| msgid "Permissions"
 msgid "%s permissions"
