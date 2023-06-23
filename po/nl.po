@@ -4,7 +4,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-06-21 18:16+0000\n"
 "PO-Revision-Date: 2023-06-24 12:07+0000\n"
-"Last-Translator: Dennis ten Hoove <dennistenhoove@protonmail.com>\n"
+"Last-Translator: DutchVipperloid <svenroelof@e.email>\n"
 "Language-Team: Dutch <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-applications/nl/>\n"
 "Language: nl\n"
@@ -177,10 +177,9 @@ msgid "Reset to Defaults"
 msgstr "Terugzetten naar standaardinstellingen"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:179
-#, fuzzy, c-format
-#| msgid "Permissions"
+#, c-format
 msgid "%s permissions"
-msgstr "Rechten"
+msgstr "%s rechten"
 
 #. / Translators: This is a delimiter that separates types of permissions in the sidebar description
 #: src/Permissions/Widgets/SidebarRow.vala:93
@@ -229,10 +228,9 @@ msgstr "Selecteer opstartprogramma"
 
 #. TRANSLATORS: This is description for for screen reader. %s can be "Web Browser" or "Music Player" and so on.
 #: src/Defaults/DefaultPlug.vala:124
-#, fuzzy, c-format
-#| msgid "Defaults"
+#, c-format
 msgid "Default %s"
-msgstr "Standaarden"
+msgstr "Standaard %s"
 
 #~ msgid "Web Browser:"
 #~ msgstr "Webbrowser:"
