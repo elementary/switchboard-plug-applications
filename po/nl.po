@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-06-21 18:16+0000\n"
-"PO-Revision-Date: 2023-05-30 03:07+0000\n"
+"PO-Revision-Date: 2023-06-24 12:07+0000\n"
 "Last-Translator: Dennis ten Hoove <dennistenhoove@protonmail.com>\n"
 "Language-Team: Dutch <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-applications/nl/>\n"
@@ -207,7 +207,7 @@ msgstr "Aangepast commando"
 
 #: src/Startup/Widgets/AppRow.vala:46
 msgid "Remove this app from startup"
-msgstr ""
+msgstr "Verwijder deze app uit automatisch opstarten"
 
 #: src/Startup/Widgets/AppRow.vala:51
 #, c-format
@@ -224,10 +224,8 @@ msgstr "Voer een aangepast commando in"
 
 #. TRANSLATORS: This string is used by screen reader
 #: src/Startup/Widgets/AppChooser.vala:56
-#, fuzzy
-#| msgid "Remove Selected Startup App"
 msgid "Select startup app"
-msgstr "Verwijder de geselecteerde opstarttoepassing"
+msgstr "Selecteer opstartprogramma"
 
 #. TRANSLATORS: This is description for for screen reader. %s can be "Web Browser" or "Music Player" and so on.
 #: src/Defaults/DefaultPlug.vala:124
