@@ -1,3 +1,9 @@
+switchboard-plug-applications (7.0.0) jammy; urgency=medium
+
+  * New upstream release
+
+ -- Danielle Foré <danielle@elementary.io>  Mon, 26 Jun 2023 09:08:59 -0700
+
 switchboard-plug-applications (6.0.1) bionic; urgency=medium
 
   * Release 6.0.1 (#170)
