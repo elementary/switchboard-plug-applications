@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-06-21 18:16+0000\n"
-"PO-Revision-Date: 2023-06-17 14:11+0000\n"
+"PO-Revision-Date: 2023-06-24 12:07+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
 "applications-plug-extra/ja/>\n"
@@ -53,7 +53,7 @@ msgstr ""
 
 #: data/applications.metainfo.xml.in:47
 msgid "Improve screen reader descriptions"
-msgstr ""
+msgstr "スクリーンリーダーに関する説明を改善"
 
 #: data/applications.metainfo.xml.in:48 data/applications.metainfo.xml.in:63
 #: data/applications.metainfo.xml.in:77 data/applications.metainfo.xml.in:84
