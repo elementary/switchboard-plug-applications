@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-21 18:16+0000\n"
+"POT-Creation-Date: 2023-06-27 12:52+0000\n"
 "PO-Revision-Date: 2021-04-08 19:51+0000\n"
 "Last-Translator: Ozgur Baskin <bebeto_baskin@yahoo.com>\n"
 "Language-Team: Turkish <https://l10n.elementary.io/projects/switchboard/"
@@ -219,6 +219,10 @@ msgstr "Uygulama Ara"
 #: src/Startup/Widgets/AppChooser.vala:36
 msgid "Type in a custom command"
 msgstr "Özel komut gir"
+
+#: src/Startup/Widgets/AppChooser.vala:53
+msgid "Cancel"
+msgstr ""
 
 #. TRANSLATORS: This string is used by screen reader
 #: src/Startup/Widgets/AppChooser.vala:56

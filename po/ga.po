@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: applications-plug\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-21 18:16+0000\n"
+"POT-Creation-Date: 2023-06-27 12:52+0000\n"
 "PO-Revision-Date: 2018-02-20 14:33-0800\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -208,6 +208,10 @@ msgstr ""
 
 #: src/Startup/Widgets/AppChooser.vala:36
 msgid "Type in a custom command"
+msgstr ""
+
+#: src/Startup/Widgets/AppChooser.vala:53
+msgid "Cancel"
 msgstr ""
 
 #. TRANSLATORS: This string is used by screen reader
