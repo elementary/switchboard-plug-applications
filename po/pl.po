@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-06-27 12:52+0000\n"
-"PO-Revision-Date: 2023-06-24 12:07+0000\n"
-"Last-Translator: Marcin Serwin <marcin.serwin0@protonmail.com>\n"
+"PO-Revision-Date: 2023-06-28 13:07+0000\n"
+"Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Polish <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-applications/pl/>\n"
 "Language: pl\n"
@@ -223,7 +223,7 @@ msgstr "Wpisz własne polecenie"
 
 #: src/Startup/Widgets/AppChooser.vala:53
 msgid "Cancel"
-msgstr ""
+msgstr "Anuluj"
 
 #. TRANSLATORS: This string is used by screen reader
 #: src/Startup/Widgets/AppChooser.vala:56
