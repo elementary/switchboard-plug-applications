@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-21 18:16+0000\n"
+"POT-Creation-Date: 2023-06-27 12:52+0000\n"
 "PO-Revision-Date: 2023-06-24 12:07+0000\n"
 "Last-Translator: Corentin Noël <tintou@noel.tf>\n"
 "Language-Team: French <https://l10n.elementary.io/projects/switchboard/"
@@ -48,7 +48,8 @@ msgstr "Mises à jour mineures :"
 
 #: data/applications.metainfo.xml.in:46
 msgid "App chooser in Startup is a dialog instead of a popover"
-msgstr "Le sélecteur d'applications est une boîte de dialogue et non un popover"
+msgstr ""
+"Le sélecteur d'applications est une boîte de dialogue et non un popover"
 
 #: data/applications.metainfo.xml.in:47
 msgid "Improve screen reader descriptions"
