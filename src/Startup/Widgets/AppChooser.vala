@@ -50,7 +50,7 @@ public class Startup.Widgets.AppChooser : Granite.Dialog {
         default_height = 500;
         default_width = 400;
         get_content_area ().add (box);
-        add_button ("Cancel", Gtk.ResponseType.CANCEL);
+        add_button (_("Cancel"), Gtk.ResponseType.CANCEL);
 
         // TRANSLATORS: This string is used by screen reader
         get_accessible ().accessible_name = _("Select startup app");
