@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: applications-plug\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-06-27 12:52+0000\n"
-"PO-Revision-Date: 2020-10-11 21:36+0000\n"
+"PO-Revision-Date: 2023-06-28 13:07+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Akan <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-applications/ak/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 4.17\n"
 
 #: src/Plug.vala:44
 msgid "Manage default apps, startup apps, and app permissions"
@@ -214,7 +214,7 @@ msgstr ""
 
 #: src/Startup/Widgets/AppChooser.vala:53
 msgid "Cancel"
-msgstr ""
+msgstr "Gyae"
 
 #. TRANSLATORS: This string is used by screen reader
 #: src/Startup/Widgets/AppChooser.vala:56
