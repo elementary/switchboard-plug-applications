@@ -22,6 +22,7 @@
 public class Permissions.Plug : Gtk.Grid {
     public static GLib.HashTable <unowned string, unowned string> permission_names { get; private set; }
 
+    private Gtk.SearchEntry search_entry;
     private Widgets.AppSettingsView app_settings_view;
 
     static construct {
@@ -37,6 +38,10 @@ public class Permissions.Plug : Gtk.Grid {
     }
 
     construct {
+        search_entry = new Gtk.SearchEntry () {
+            placeholder_text = _("Search Applications")
+        };
+
         var placeholder_title = new Gtk.Label (_("No Flatpak apps installed")) {
             xalign = 0
         };
@@ -64,6 +69,7 @@ public class Permissions.Plug : Gtk.Grid {
             selection_mode = Gtk.SelectionMode.SINGLE
         };
         app_list.set_placeholder (placeholder);
+        app_list.set_filter_func ((Gtk.ListBoxFilterFunc) filter_func);
         app_list.set_sort_func ((Gtk.ListBoxSortFunc) sort_func);
         app_list.get_accessible ().accessible_name = _("Applications");
 
@@ -74,6 +80,10 @@ public class Permissions.Plug : Gtk.Grid {
         var frame = new Gtk.Frame (null) {
             child = scrolled_window
         };
+
+        var sidebar = new Gtk.Box (VERTICAL, 12);
+        sidebar.add (search_entry);
+        sidebar.add (frame);
 
         Permissions.Backend.AppManager.get_default ().apps.foreach ((id, app) => {
             var app_entry = new Permissions.SidebarRow (app);
@@ -94,11 +104,19 @@ public class Permissions.Plug : Gtk.Grid {
         margin_bottom = 12;
         margin_start = 12;
         column_spacing = 12;
-        attach (frame, 0, 0, 1, 1);
+        attach (sidebar, 0, 0, 1, 1);
         attach (app_settings_view, 1, 0, 2, 1);
         show_all ();
 
+        map.connect (() => search_entry.grab_focus ());
+        search_entry.search_changed.connect (() => app_list.invalidate_filter ());
+
         app_list.row_selected.connect (show_row);
+    }
+
+    [CCode (instance_pos = -1)]
+    private bool filter_func (SidebarRow row) {
+        return search_entry.text.down ().strip () in row.app.name.down ();
     }
 
     [CCode (instance_pos = -1)]
