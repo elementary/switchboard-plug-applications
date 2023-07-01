@@ -19,7 +19,7 @@
 * Authored by: Marius Meisenzahl <mariusmeisenzahl@gmail.com>
 */
 
-public class Permissions.Plug : Gtk.Box {
+public class Permissions.Plug : Gtk.Grid {
     public static GLib.HashTable <unowned string, unowned string> permission_names { get; private set; }
 
     private Gtk.SearchEntry search_entry;
