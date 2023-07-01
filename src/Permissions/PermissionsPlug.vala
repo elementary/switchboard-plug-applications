@@ -116,7 +116,7 @@ public class Permissions.Plug : Gtk.Box {
         add (placeholder_stack);
         show_all ();
 
-        if (app_list.apps.length > 0) {
+        if (app_manager.apps.length > 0) {
             placeholder_stack.set_visible_child (grid);
         } else {
             placeholder_stack.set_visible_child (placeholder);
