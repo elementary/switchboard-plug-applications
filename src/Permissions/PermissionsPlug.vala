@@ -19,7 +19,7 @@
 * Authored by: Marius Meisenzahl <mariusmeisenzahl@gmail.com>
 */
 
-public class Permissions.Plug : Gtk.Grid {
+public class Permissions.Plug : Gtk.Box {
     public static GLib.HashTable <unowned string, unowned string> permission_names { get; private set; }
 
     private Gtk.SearchEntry search_entry;
@@ -38,11 +38,7 @@ public class Permissions.Plug : Gtk.Grid {
     }
 
     construct {
-        search_entry = new Gtk.SearchEntry () {
-            placeholder_text = _("Search Applications")
-        };
-
-        var placeholder_title = new Gtk.Label (_("No Flatpak apps installed")) {
+        var placeholder_title = new Granite.HeaderLabel (_("No Flatpak apps installed")) {
             xalign = 0
         };
         placeholder_title.get_style_context ().add_class (Granite.STYLE_CLASS_H3_LABEL);
@@ -53,22 +49,24 @@ public class Permissions.Plug : Gtk.Grid {
         };
 
         var placeholder = new Gtk.Grid () {
-            margin_start = 12,
-            margin_end = 12,
-            margin_top = 12,
-            margin_bottom = 12,
             row_spacing = 3,
+            hexpand = true,
+            vexpand = true,
+            halign = Gtk.Align.CENTER,
             valign = Gtk.Align.CENTER
         };
         placeholder.attach (placeholder_title, 0, 0);
         placeholder.attach (placeholder_description, 0, 1);
         placeholder.show_all ();
 
+        search_entry = new Gtk.SearchEntry () {
+            placeholder_text = _("Search Applications")
+        };
+
         var app_list = new Gtk.ListBox () {
             vexpand = true,
             selection_mode = Gtk.SelectionMode.SINGLE
         };
-        app_list.set_placeholder (placeholder);
         app_list.set_filter_func ((Gtk.ListBoxFilterFunc) filter_func);
         app_list.set_sort_func ((Gtk.ListBoxSortFunc) sort_func);
         app_list.get_accessible ().accessible_name = _("Applications");
@@ -85,7 +83,9 @@ public class Permissions.Plug : Gtk.Grid {
         sidebar.add (search_entry);
         sidebar.add (frame);
 
-        Permissions.Backend.AppManager.get_default ().apps.foreach ((id, app) => {
+        var app_manager = Permissions.Backend.AppManager.get_default ();
+
+        app_manager.apps.foreach ((id, app) => {
             var app_entry = new Permissions.SidebarRow (app);
             app_list.add (app_entry);
         });
@@ -100,13 +100,27 @@ public class Permissions.Plug : Gtk.Grid {
             show_row (row);
         }
 
-        margin_end = 12;
-        margin_bottom = 12;
-        margin_start = 12;
-        column_spacing = 12;
-        attach (sidebar, 0, 0, 1, 1);
-        attach (app_settings_view, 1, 0, 2, 1);
+        var grid = new Gtk.Grid () {
+            margin_end = 12,
+            margin_bottom = 12,
+            margin_start = 12,
+            column_spacing = 12
+        };
+        grid.attach (sidebar, 0, 0, 1, 1);
+        grid.attach (app_settings_view, 1, 0, 2, 1);
+
+        var placeholder_stack = new Gtk.Stack ();
+        placeholder_stack.add (placeholder);
+        placeholder_stack.add (grid);
+
+        add (placeholder_stack);
         show_all ();
+
+        if (app_list.apps.length > 0) {
+            placeholder_stack.set_visible_child (grid);
+        } else {
+            placeholder_stack.set_visible_child (placeholder);
+        }
 
         map.connect (() => search_entry.grab_focus ());
         search_entry.search_changed.connect (() => app_list.invalidate_filter ());
