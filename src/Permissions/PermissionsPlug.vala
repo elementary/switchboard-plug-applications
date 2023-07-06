@@ -44,6 +44,7 @@ public class Permissions.Plug : Gtk.Grid {
             _("Apps whose permissions can be adjusted will automatically appear here when installed"),
             "dialog-information"
         );
+        placeholder.get_style_context ().add_class (Gtk.STYLE_CLASS_BACKGROUND);
         placeholder.show_all ();
 
         search_entry = new Gtk.SearchEntry () {
