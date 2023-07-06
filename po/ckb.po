@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-27 12:52+0000\n"
+"POT-Creation-Date: 2023-07-06 18:27+0000\n"
 "PO-Revision-Date: 2023-06-28 13:07+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Kurdish (Central) <https://l10n.elementary.io/projects/"
@@ -21,7 +21,7 @@ msgstr ""
 "ڕێکخستنی بەرنامە بنەڕەتییەکان و مۆڵەتەکانی بەرنامە و ئەو بەرنامانەی کە لەگەڵ "
 "پێبوونی کۆمپیتەر دەکرێنەوە"
 
-#: src/Plug.vala:45 src/Permissions/PermissionsPlug.vala:68
+#: src/Plug.vala:45 src/Permissions/PermissionsPlug.vala:64
 msgid "Applications"
 msgstr "بەرنامەکان"
 
@@ -86,49 +86,63 @@ msgstr "سەیرکەری وێنە"
 msgid "File Browser"
 msgstr "گەڕۆکی پەڕگە"
 
-#: src/Permissions/PermissionsPlug.vala:29
+#: src/Permissions/PermissionsPlug.vala:31
 msgid "Home Folder"
 msgstr "بوخچەی سەرەتا"
 
-#: src/Permissions/PermissionsPlug.vala:30
+#: src/Permissions/PermissionsPlug.vala:32
 msgid "System Folders"
 msgstr "بوخچەکانی سیستەم"
 
-#: src/Permissions/PermissionsPlug.vala:31
+#: src/Permissions/PermissionsPlug.vala:33
 msgid "Devices"
 msgstr "ئامێرەکان"
 
-#: src/Permissions/PermissionsPlug.vala:32
+#: src/Permissions/PermissionsPlug.vala:34
 msgid "Network"
 msgstr "ڕایەڵە"
 
-#: src/Permissions/PermissionsPlug.vala:33
+#: src/Permissions/PermissionsPlug.vala:35
 msgid "Bluetooth"
 msgstr "بلوتوس"
 
-#: src/Permissions/PermissionsPlug.vala:34
+#: src/Permissions/PermissionsPlug.vala:36
 msgid "Printing"
 msgstr "چاپکردن"
 
-#: src/Permissions/PermissionsPlug.vala:35
+#: src/Permissions/PermissionsPlug.vala:37
 msgid "Secure Shell Agent"
 msgstr "پاراستنی شێڵی بریکار"
 
-#: src/Permissions/PermissionsPlug.vala:36
+#: src/Permissions/PermissionsPlug.vala:38
 msgid "GPU Acceleration"
 msgstr "خێراکردنی GPU"
 
-#: src/Permissions/PermissionsPlug.vala:40
+#: src/Permissions/PermissionsPlug.vala:43
 msgid "No Flatpak apps installed"
 msgstr "هیچ بەرنامەیەکی فلاتپاک دانەمەزراوە"
 
-#: src/Permissions/PermissionsPlug.vala:45
+#: src/Permissions/PermissionsPlug.vala:44
 msgid ""
 "Apps whose permissions can be adjusted will automatically appear here when "
 "installed"
 msgstr ""
 "ئەو بەرنامانەی کە مۆڵەتەکانیان دەستکاری دەکرێت، خۆکرانە لێرە دەردەکەون ئەگەر "
 "دامەزران"
+
+#: src/Permissions/PermissionsPlug.vala:51
+#: src/Startup/Widgets/AppChooser.vala:17
+msgid "Search Applications"
+msgstr "بەدوای بەرنامەدا بگەڕێ"
+
+#: src/Permissions/PermissionsPlug.vala:54
+msgid "Try changing search terms."
+msgstr ""
+
+#: src/Permissions/PermissionsPlug.vala:120
+#, c-format
+msgid "No Results for “%s”"
+msgstr ""
 
 #: src/Permissions/Widgets/AppSettingsView.vala:33
 msgid "Access your entire Home folder, including any hidden folders."
@@ -212,10 +226,6 @@ msgstr ""
 #, c-format
 msgid "Launch %s on startup"
 msgstr "کردنەوەی %s لەگەڵ دەستپێکی کۆمپیتەر"
-
-#: src/Startup/Widgets/AppChooser.vala:17
-msgid "Search Applications"
-msgstr "بەدوای بەرنامەدا بگەڕێ"
 
 #: src/Startup/Widgets/AppChooser.vala:36
 msgid "Type in a custom command"

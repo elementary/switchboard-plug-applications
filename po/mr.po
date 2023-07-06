@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-27 12:52+0000\n"
+"POT-Creation-Date: 2023-07-06 18:27+0000\n"
 "PO-Revision-Date: 2023-06-28 13:07+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Marathi <https://l10n.elementary.io/projects/switchboard/"
@@ -19,7 +19,7 @@ msgstr ""
 msgid "Manage default apps, startup apps, and app permissions"
 msgstr "डीफॉल्ट अ‍ॅप्स, स्टार्टअप अ‍ॅप्स आणि अ‍ॅप परवानग्या व्यवस्थापित करा"
 
-#: src/Plug.vala:45 src/Permissions/PermissionsPlug.vala:68
+#: src/Plug.vala:45 src/Permissions/PermissionsPlug.vala:64
 msgid "Applications"
 msgstr "ॲप्लिकेशन्स्"
 
@@ -84,49 +84,63 @@ msgstr "प्रतिमा दर्शक"
 msgid "File Browser"
 msgstr "फाइल ब्राउजर"
 
-#: src/Permissions/PermissionsPlug.vala:29
+#: src/Permissions/PermissionsPlug.vala:31
 msgid "Home Folder"
 msgstr "होम फोल्डर"
 
-#: src/Permissions/PermissionsPlug.vala:30
+#: src/Permissions/PermissionsPlug.vala:32
 msgid "System Folders"
 msgstr "सिस्टम फोल्डर्स"
 
-#: src/Permissions/PermissionsPlug.vala:31
+#: src/Permissions/PermissionsPlug.vala:33
 msgid "Devices"
 msgstr "उपकरण"
 
-#: src/Permissions/PermissionsPlug.vala:32
+#: src/Permissions/PermissionsPlug.vala:34
 msgid "Network"
 msgstr "नेटवर्क"
 
-#: src/Permissions/PermissionsPlug.vala:33
+#: src/Permissions/PermissionsPlug.vala:35
 msgid "Bluetooth"
 msgstr "ब्लूटुथ"
 
-#: src/Permissions/PermissionsPlug.vala:34
+#: src/Permissions/PermissionsPlug.vala:36
 msgid "Printing"
 msgstr "मुद्रण"
 
-#: src/Permissions/PermissionsPlug.vala:35
+#: src/Permissions/PermissionsPlug.vala:37
 msgid "Secure Shell Agent"
 msgstr "सुरक्षित शेल एजंट"
 
-#: src/Permissions/PermissionsPlug.vala:36
+#: src/Permissions/PermissionsPlug.vala:38
 msgid "GPU Acceleration"
 msgstr "GPU प्रवेग"
 
-#: src/Permissions/PermissionsPlug.vala:40
+#: src/Permissions/PermissionsPlug.vala:43
 msgid "No Flatpak apps installed"
 msgstr "कोणतेही फ्लॅटपॅक अ‍ॅप्स स्थापित केलेले नाहीत"
 
-#: src/Permissions/PermissionsPlug.vala:45
+#: src/Permissions/PermissionsPlug.vala:44
 msgid ""
 "Apps whose permissions can be adjusted will automatically appear here when "
 "installed"
 msgstr ""
 "ज्यांच्या परवानग्या समायोजित केल्या जाऊ शकतात असे  अ‍ॅप्स स्थापित केल्यावर स्वयंचलितपणे येथे "
 "दिसून येतील"
+
+#: src/Permissions/PermissionsPlug.vala:51
+#: src/Startup/Widgets/AppChooser.vala:17
+msgid "Search Applications"
+msgstr "अप्लिकेशन शोधा"
+
+#: src/Permissions/PermissionsPlug.vala:54
+msgid "Try changing search terms."
+msgstr ""
+
+#: src/Permissions/PermissionsPlug.vala:120
+#, c-format
+msgid "No Results for “%s”"
+msgstr ""
 
 #: src/Permissions/Widgets/AppSettingsView.vala:33
 #, fuzzy
@@ -210,10 +224,6 @@ msgstr ""
 #, c-format
 msgid "Launch %s on startup"
 msgstr "स्टार्टअपवर %s लॉन्च करा"
-
-#: src/Startup/Widgets/AppChooser.vala:17
-msgid "Search Applications"
-msgstr "अप्लिकेशन शोधा"
 
 #: src/Startup/Widgets/AppChooser.vala:36
 msgid "Type in a custom command"

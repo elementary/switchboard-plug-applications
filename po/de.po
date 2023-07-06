@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-27 12:52+0000\n"
+"POT-Creation-Date: 2023-07-06 18:27+0000\n"
 "PO-Revision-Date: 2023-06-28 13:07+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: German <https://l10n.elementary.io/projects/switchboard/"
@@ -21,7 +21,7 @@ msgstr ""
 "Voreingestellte und automatisch gestartete Anwendungen sowie "
 "Anwendungsrechte verwalten"
 
-#: src/Plug.vala:45 src/Permissions/PermissionsPlug.vala:68
+#: src/Plug.vala:45 src/Permissions/PermissionsPlug.vala:64
 msgid "Applications"
 msgstr "Anwendungen"
 
@@ -86,49 +86,63 @@ msgstr "Bildbetrachter"
 msgid "File Browser"
 msgstr "Dateiverwaltung"
 
-#: src/Permissions/PermissionsPlug.vala:29
+#: src/Permissions/PermissionsPlug.vala:31
 msgid "Home Folder"
 msgstr "Persönlicher Ordner"
 
-#: src/Permissions/PermissionsPlug.vala:30
+#: src/Permissions/PermissionsPlug.vala:32
 msgid "System Folders"
 msgstr "Systemordner"
 
-#: src/Permissions/PermissionsPlug.vala:31
+#: src/Permissions/PermissionsPlug.vala:33
 msgid "Devices"
 msgstr "Geräte"
 
-#: src/Permissions/PermissionsPlug.vala:32
+#: src/Permissions/PermissionsPlug.vala:34
 msgid "Network"
 msgstr "Netzwerk"
 
-#: src/Permissions/PermissionsPlug.vala:33
+#: src/Permissions/PermissionsPlug.vala:35
 msgid "Bluetooth"
 msgstr "Bluetooth"
 
-#: src/Permissions/PermissionsPlug.vala:34
+#: src/Permissions/PermissionsPlug.vala:36
 msgid "Printing"
 msgstr "Drucken"
 
-#: src/Permissions/PermissionsPlug.vala:35
+#: src/Permissions/PermissionsPlug.vala:37
 msgid "Secure Shell Agent"
 msgstr "Secure Shell Agent"
 
-#: src/Permissions/PermissionsPlug.vala:36
+#: src/Permissions/PermissionsPlug.vala:38
 msgid "GPU Acceleration"
 msgstr "GPU-Beschleunigung"
 
-#: src/Permissions/PermissionsPlug.vala:40
+#: src/Permissions/PermissionsPlug.vala:43
 msgid "No Flatpak apps installed"
 msgstr "Keine Flatpak-Anwendungen installiert"
 
-#: src/Permissions/PermissionsPlug.vala:45
+#: src/Permissions/PermissionsPlug.vala:44
 msgid ""
 "Apps whose permissions can be adjusted will automatically appear here when "
 "installed"
 msgstr ""
 "Anwendungen, deren Zugriffsrechte bearbeitet werden können, erscheinen hier "
 "automatisch nach ihrer Installation"
+
+#: src/Permissions/PermissionsPlug.vala:51
+#: src/Startup/Widgets/AppChooser.vala:17
+msgid "Search Applications"
+msgstr "Anwendungen suchen"
+
+#: src/Permissions/PermissionsPlug.vala:54
+msgid "Try changing search terms."
+msgstr ""
+
+#: src/Permissions/PermissionsPlug.vala:120
+#, c-format
+msgid "No Results for “%s”"
+msgstr ""
 
 #: src/Permissions/Widgets/AppSettingsView.vala:33
 msgid "Access your entire Home folder, including any hidden folders."
@@ -210,10 +224,6 @@ msgstr "Diese Anwendung nicht automatisch starten"
 #, c-format
 msgid "Launch %s on startup"
 msgstr "%s beim Systemstart öffnen"
-
-#: src/Startup/Widgets/AppChooser.vala:17
-msgid "Search Applications"
-msgstr "Anwendungen suchen"
 
 #: src/Startup/Widgets/AppChooser.vala:36
 msgid "Type in a custom command"

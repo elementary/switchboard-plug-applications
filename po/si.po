@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-27 12:52+0000\n"
+"POT-Creation-Date: 2023-07-06 18:27+0000\n"
 "PO-Revision-Date: 2023-06-28 13:07+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Sinhala <https://l10n.elementary.io/projects/switchboard/"
@@ -19,7 +19,7 @@ msgstr ""
 msgid "Manage default apps, startup apps, and app permissions"
 msgstr ""
 
-#: src/Plug.vala:45 src/Permissions/PermissionsPlug.vala:68
+#: src/Plug.vala:45 src/Permissions/PermissionsPlug.vala:64
 msgid "Applications"
 msgstr ""
 
@@ -84,46 +84,60 @@ msgstr ""
 msgid "File Browser"
 msgstr ""
 
-#: src/Permissions/PermissionsPlug.vala:29
+#: src/Permissions/PermissionsPlug.vala:31
 msgid "Home Folder"
 msgstr ""
 
-#: src/Permissions/PermissionsPlug.vala:30
+#: src/Permissions/PermissionsPlug.vala:32
 msgid "System Folders"
 msgstr ""
 
-#: src/Permissions/PermissionsPlug.vala:31
+#: src/Permissions/PermissionsPlug.vala:33
 msgid "Devices"
 msgstr ""
 
-#: src/Permissions/PermissionsPlug.vala:32
+#: src/Permissions/PermissionsPlug.vala:34
 msgid "Network"
 msgstr ""
 
-#: src/Permissions/PermissionsPlug.vala:33
+#: src/Permissions/PermissionsPlug.vala:35
 msgid "Bluetooth"
 msgstr ""
 
-#: src/Permissions/PermissionsPlug.vala:34
+#: src/Permissions/PermissionsPlug.vala:36
 msgid "Printing"
 msgstr ""
 
-#: src/Permissions/PermissionsPlug.vala:35
+#: src/Permissions/PermissionsPlug.vala:37
 msgid "Secure Shell Agent"
 msgstr ""
 
-#: src/Permissions/PermissionsPlug.vala:36
+#: src/Permissions/PermissionsPlug.vala:38
 msgid "GPU Acceleration"
 msgstr ""
 
-#: src/Permissions/PermissionsPlug.vala:40
+#: src/Permissions/PermissionsPlug.vala:43
 msgid "No Flatpak apps installed"
 msgstr ""
 
-#: src/Permissions/PermissionsPlug.vala:45
+#: src/Permissions/PermissionsPlug.vala:44
 msgid ""
 "Apps whose permissions can be adjusted will automatically appear here when "
 "installed"
+msgstr ""
+
+#: src/Permissions/PermissionsPlug.vala:51
+#: src/Startup/Widgets/AppChooser.vala:17
+msgid "Search Applications"
+msgstr ""
+
+#: src/Permissions/PermissionsPlug.vala:54
+msgid "Try changing search terms."
+msgstr ""
+
+#: src/Permissions/PermissionsPlug.vala:120
+#, c-format
+msgid "No Results for “%s”"
 msgstr ""
 
 #: src/Permissions/Widgets/AppSettingsView.vala:33
@@ -198,10 +212,6 @@ msgstr ""
 #: src/Startup/Widgets/AppRow.vala:51
 #, c-format
 msgid "Launch %s on startup"
-msgstr ""
-
-#: src/Startup/Widgets/AppChooser.vala:17
-msgid "Search Applications"
 msgstr ""
 
 #: src/Startup/Widgets/AppChooser.vala:36

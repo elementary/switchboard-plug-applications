@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-27 12:52+0000\n"
+"POT-Creation-Date: 2023-07-06 18:27+0000\n"
 "PO-Revision-Date: 2023-06-28 13:07+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Indonesian <https://l10n.elementary.io/projects/switchboard/"
@@ -19,7 +19,7 @@ msgstr ""
 msgid "Manage default apps, startup apps, and app permissions"
 msgstr "Kelola aplikasi bawaan, aplikasi startup, dan izin aplikasi"
 
-#: src/Plug.vala:45 src/Permissions/PermissionsPlug.vala:68
+#: src/Plug.vala:45 src/Permissions/PermissionsPlug.vala:64
 msgid "Applications"
 msgstr "Aplikasi"
 
@@ -84,49 +84,63 @@ msgstr "Penampil Gambar"
 msgid "File Browser"
 msgstr "Peramban Berkas"
 
-#: src/Permissions/PermissionsPlug.vala:29
+#: src/Permissions/PermissionsPlug.vala:31
 msgid "Home Folder"
 msgstr "Folder Beranda"
 
-#: src/Permissions/PermissionsPlug.vala:30
+#: src/Permissions/PermissionsPlug.vala:32
 msgid "System Folders"
 msgstr "Folder System"
 
-#: src/Permissions/PermissionsPlug.vala:31
+#: src/Permissions/PermissionsPlug.vala:33
 msgid "Devices"
 msgstr "Perangkat"
 
-#: src/Permissions/PermissionsPlug.vala:32
+#: src/Permissions/PermissionsPlug.vala:34
 msgid "Network"
 msgstr "Jaringan"
 
-#: src/Permissions/PermissionsPlug.vala:33
+#: src/Permissions/PermissionsPlug.vala:35
 msgid "Bluetooth"
 msgstr "Bluetooth"
 
-#: src/Permissions/PermissionsPlug.vala:34
+#: src/Permissions/PermissionsPlug.vala:36
 msgid "Printing"
 msgstr "Pencetakan"
 
-#: src/Permissions/PermissionsPlug.vala:35
+#: src/Permissions/PermissionsPlug.vala:37
 msgid "Secure Shell Agent"
 msgstr "Agen Shell Aman"
 
-#: src/Permissions/PermissionsPlug.vala:36
+#: src/Permissions/PermissionsPlug.vala:38
 msgid "GPU Acceleration"
 msgstr "Akselerasi GPU"
 
-#: src/Permissions/PermissionsPlug.vala:40
+#: src/Permissions/PermissionsPlug.vala:43
 msgid "No Flatpak apps installed"
 msgstr "Tidak ada aplikasi Flatpak yang dipasang"
 
-#: src/Permissions/PermissionsPlug.vala:45
+#: src/Permissions/PermissionsPlug.vala:44
 msgid ""
 "Apps whose permissions can be adjusted will automatically appear here when "
 "installed"
 msgstr ""
 "Aplikasi yang izinnya dapat disesuaikan akan secara otomatis muncul di sini "
 "saat dipasang"
+
+#: src/Permissions/PermissionsPlug.vala:51
+#: src/Startup/Widgets/AppChooser.vala:17
+msgid "Search Applications"
+msgstr "Cari Aplikasi"
+
+#: src/Permissions/PermissionsPlug.vala:54
+msgid "Try changing search terms."
+msgstr ""
+
+#: src/Permissions/PermissionsPlug.vala:120
+#, c-format
+msgid "No Results for “%s”"
+msgstr ""
 
 #: src/Permissions/Widgets/AppSettingsView.vala:33
 msgid "Access your entire Home folder, including any hidden folders."
@@ -209,10 +223,6 @@ msgstr ""
 #, c-format
 msgid "Launch %s on startup"
 msgstr "Luncurkan %s pada mulai awal"
-
-#: src/Startup/Widgets/AppChooser.vala:17
-msgid "Search Applications"
-msgstr "Cari Aplikasi"
 
 #: src/Startup/Widgets/AppChooser.vala:36
 msgid "Type in a custom command"
