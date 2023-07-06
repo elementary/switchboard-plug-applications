@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-07-06 18:27+0000\n"
-"PO-Revision-Date: 2023-06-28 13:07+0000\n"
+"PO-Revision-Date: 2023-07-06 19:07+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-applications/ja/>\n"
@@ -136,12 +136,12 @@ msgstr "アプリケーションを検索"
 
 #: src/Permissions/PermissionsPlug.vala:54
 msgid "Try changing search terms."
-msgstr ""
+msgstr "検索用語を変更してみてください。"
 
 #: src/Permissions/PermissionsPlug.vala:120
 #, c-format
 msgid "No Results for “%s”"
-msgstr ""
+msgstr "“%s” という検索結果はありません"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:33
 msgid "Access your entire Home folder, including any hidden folders."
