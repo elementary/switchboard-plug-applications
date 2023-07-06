@@ -22,6 +22,8 @@
 public class Permissions.Plug : Gtk.Grid {
     public static GLib.HashTable <unowned string, unowned string> permission_names { get; private set; }
 
+    private Gtk.SearchEntry search_entry;
+    private Gtk.ListBox app_list;
     private Widgets.AppSettingsView app_settings_view;
 
     static construct {
@@ -37,33 +39,27 @@ public class Permissions.Plug : Gtk.Grid {
     }
 
     construct {
-        var placeholder_title = new Gtk.Label (_("No Flatpak apps installed")) {
-            xalign = 0
-        };
-        placeholder_title.get_style_context ().add_class (Granite.STYLE_CLASS_H3_LABEL);
-
-        var placeholder_description = new Gtk.Label (_("Apps whose permissions can be adjusted will automatically appear here when installed")) {
-            wrap = true,
-            xalign = 0
-        };
-
-        var placeholder = new Gtk.Grid () {
-            margin_start = 12,
-            margin_end = 12,
-            margin_top = 12,
-            margin_bottom = 12,
-            row_spacing = 3,
-            valign = Gtk.Align.CENTER
-        };
-        placeholder.attach (placeholder_title, 0, 0);
-        placeholder.attach (placeholder_description, 0, 1);
+        var placeholder = new Granite.Widgets.AlertView (
+            _("No Flatpak apps installed"),
+            _("Apps whose permissions can be adjusted will automatically appear here when installed"),
+            "dialog-information"
+        );
+        placeholder.get_style_context ().add_class (Gtk.STYLE_CLASS_BACKGROUND);
         placeholder.show_all ();
 
-        var app_list = new Gtk.ListBox () {
+        search_entry = new Gtk.SearchEntry () {
+            placeholder_text = _("Search Applications")
+        };
+
+        var alert_view = new Granite.Widgets.AlertView ("", _("Try changing search terms."), "edit-find-symbolic");
+        alert_view.show_all ();
+
+        app_list = new Gtk.ListBox () {
             vexpand = true,
             selection_mode = Gtk.SelectionMode.SINGLE
         };
-        app_list.set_placeholder (placeholder);
+        app_list.set_placeholder (alert_view);
+        app_list.set_filter_func ((Gtk.ListBoxFilterFunc) filter_func);
         app_list.set_sort_func ((Gtk.ListBoxSortFunc) sort_func);
         app_list.get_accessible ().accessible_name = _("Applications");
 
@@ -75,7 +71,13 @@ public class Permissions.Plug : Gtk.Grid {
             child = scrolled_window
         };
 
-        Permissions.Backend.AppManager.get_default ().apps.foreach ((id, app) => {
+        var sidebar = new Gtk.Box (VERTICAL, 12);
+        sidebar.add (search_entry);
+        sidebar.add (frame);
+
+        var app_manager = Permissions.Backend.AppManager.get_default ();
+
+        app_manager.apps.foreach ((id, app) => {
             var app_entry = new Permissions.SidebarRow (app);
             app_list.add (app_entry);
         });
@@ -90,15 +92,46 @@ public class Permissions.Plug : Gtk.Grid {
             show_row (row);
         }
 
-        margin_end = 12;
-        margin_bottom = 12;
-        margin_start = 12;
-        column_spacing = 12;
-        attach (frame, 0, 0, 1, 1);
-        attach (app_settings_view, 1, 0, 2, 1);
+        var grid = new Gtk.Grid () {
+            margin_end = 12,
+            margin_bottom = 12,
+            margin_start = 12,
+            column_spacing = 12
+        };
+        grid.attach (sidebar, 0, 0, 1, 1);
+        grid.attach (app_settings_view, 1, 0, 2, 1);
+
+        var placeholder_stack = new Gtk.Stack ();
+        placeholder_stack.add (placeholder);
+        placeholder_stack.add (grid);
+
+        add (placeholder_stack);
         show_all ();
 
+        if (app_manager.apps.length > 0) {
+            placeholder_stack.set_visible_child (grid);
+        } else {
+            placeholder_stack.set_visible_child (placeholder);
+        }
+
+        map.connect (() => search_entry.grab_focus ());
+        search_entry.search_changed.connect (() => {
+            app_list.invalidate_filter ();
+            alert_view.title = _("No Results for “%s”").printf (search_entry.text);
+        });
+
         app_list.row_selected.connect (show_row);
+    }
+
+    [CCode (instance_pos = -1)]
+    private bool filter_func (SidebarRow row) {
+        var should_show = search_entry.text.down ().strip () in row.app.name.down ();
+
+        if (!should_show && app_list.get_selected_row () == row) {
+            app_list.select_row (null);
+        }
+
+        return should_show;
     }
 
     [CCode (instance_pos = -1)]
@@ -108,9 +141,9 @@ public class Permissions.Plug : Gtk.Grid {
 
     private void show_row (Gtk.ListBoxRow? row) {
         if (row == null || !(row is Permissions.SidebarRow)) {
-            return;
+            app_settings_view.selected_app = null;
+        } else {
+            app_settings_view.selected_app = ((Permissions.SidebarRow)row).app;
         }
-
-        app_settings_view.selected_app = ((Permissions.SidebarRow)row).app;
     }
 }
