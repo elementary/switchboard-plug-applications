@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-07-06 18:27+0000\n"
-"PO-Revision-Date: 2023-06-28 13:07+0000\n"
+"PO-Revision-Date: 2023-07-06 19:07+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
 "switchboard/switchboard-plug-applications/zh_Hans/>\n"
@@ -133,12 +133,12 @@ msgstr "搜索应用程序"
 
 #: src/Permissions/PermissionsPlug.vala:54
 msgid "Try changing search terms."
-msgstr ""
+msgstr "尝试更改搜索内容。"
 
 #: src/Permissions/PermissionsPlug.vala:120
 #, c-format
 msgid "No Results for “%s”"
-msgstr ""
+msgstr "未找到与 “%s” 相关的结果"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:33
 msgid "Access your entire Home folder, including any hidden folders."
