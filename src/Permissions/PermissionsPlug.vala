@@ -23,6 +23,7 @@ public class Permissions.Plug : Gtk.Grid {
     public static GLib.HashTable <unowned string, unowned string> permission_names { get; private set; }
 
     private Gtk.SearchEntry search_entry;
+    private Gtk.ListBox app_list;
     private Widgets.AppSettingsView app_settings_view;
 
     static construct {
@@ -66,7 +67,7 @@ public class Permissions.Plug : Gtk.Grid {
         var alert_view = new Granite.Widgets.AlertView ("", _("Try changing search terms."), "edit-find-symbolic");
         alert_view.show_all ();
 
-        var app_list = new Gtk.ListBox () {
+        app_list = new Gtk.ListBox () {
             vexpand = true,
             selection_mode = Gtk.SelectionMode.SINGLE
         };
@@ -137,7 +138,13 @@ public class Permissions.Plug : Gtk.Grid {
 
     [CCode (instance_pos = -1)]
     private bool filter_func (SidebarRow row) {
-        return search_entry.text.down ().strip () in row.app.name.down ();
+        var should_show = search_entry.text.down ().strip () in row.app.name.down ();
+
+        if (!should_show && app_list.get_selected_row () == row) {
+            app_list.select_row (null);
+        }
+
+        return should_show;
     }
 
     [CCode (instance_pos = -1)]
@@ -147,9 +154,9 @@ public class Permissions.Plug : Gtk.Grid {
 
     private void show_row (Gtk.ListBoxRow? row) {
         if (row == null || !(row is Permissions.SidebarRow)) {
-            return;
+            app_settings_view.selected_app = null;
+        } else {
+            app_settings_view.selected_app = ((Permissions.SidebarRow)row).app;
         }
-
-        app_settings_view.selected_app = ((Permissions.SidebarRow)row).app;
     }
 }
