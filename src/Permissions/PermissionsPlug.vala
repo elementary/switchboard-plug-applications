@@ -39,25 +39,11 @@ public class Permissions.Plug : Gtk.Grid {
     }
 
     construct {
-        var placeholder_title = new Granite.HeaderLabel (_("No Flatpak apps installed")) {
-            xalign = 0
-        };
-        placeholder_title.get_style_context ().add_class (Granite.STYLE_CLASS_H3_LABEL);
-
-        var placeholder_description = new Gtk.Label (_("Apps whose permissions can be adjusted will automatically appear here when installed")) {
-            wrap = true,
-            xalign = 0
-        };
-
-        var placeholder = new Gtk.Grid () {
-            row_spacing = 3,
-            hexpand = true,
-            vexpand = true,
-            halign = Gtk.Align.CENTER,
-            valign = Gtk.Align.CENTER
-        };
-        placeholder.attach (placeholder_title, 0, 0);
-        placeholder.attach (placeholder_description, 0, 1);
+        var placeholder = new Granite.Widgets.AlertView (
+            _("No Flatpak apps installed"),
+            _("Apps whose permissions can be adjusted will automatically appear here when installed"),
+            "dialog-information"
+        );
         placeholder.show_all ();
 
         search_entry = new Gtk.SearchEntry () {
