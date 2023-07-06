@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-06-27 12:52+0000\n"
-"PO-Revision-Date: 2023-06-28 13:07+0000\n"
-"Last-Translator: anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2023-07-03 13:07+0000\n"
+"Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
 "Language-Team: Finnish <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-applications/fi/>\n"
 "Language: fi\n"
@@ -176,10 +176,9 @@ msgid "Reset to Defaults"
 msgstr "Palauta oletusarvoihin"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:179
-#, fuzzy, c-format
-#| msgid "Permissions"
+#, c-format
 msgid "%s permissions"
-msgstr "Oikeudet"
+msgstr "%s oikeutta"
 
 #. / Translators: This is a delimiter that separates types of permissions in the sidebar description
 #: src/Permissions/Widgets/SidebarRow.vala:93
@@ -205,7 +204,7 @@ msgstr "Oma komento"
 
 #: src/Startup/Widgets/AppRow.vala:46
 msgid "Remove this app from startup"
-msgstr ""
+msgstr "Poista tämä sovellus automaattisesti käynnistettävistä"
 
 #: src/Startup/Widgets/AppRow.vala:51
 #, c-format
@@ -226,17 +225,14 @@ msgstr "Peru"
 
 #. TRANSLATORS: This string is used by screen reader
 #: src/Startup/Widgets/AppChooser.vala:56
-#, fuzzy
-#| msgid "Remove Selected Startup App"
 msgid "Select startup app"
-msgstr "Poista valittu automaattisesti käynnistettävä sovellus"
+msgstr "Valitse automaattisesti käynnistettävä sovellus"
 
 #. TRANSLATORS: This is description for for screen reader. %s can be "Web Browser" or "Music Player" and so on.
 #: src/Defaults/DefaultPlug.vala:124
-#, fuzzy, c-format
-#| msgid "Defaults"
+#, c-format
 msgid "Default %s"
-msgstr "Oletukset"
+msgstr "Oletusarvoinen %s"
 
 #~ msgid "Web Browser:"
 #~ msgstr "Verkkoselain:"
