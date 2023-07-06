@@ -63,10 +63,14 @@ public class Permissions.Plug : Gtk.Grid {
             placeholder_text = _("Search Applications")
         };
 
+        var alert_view = new Granite.Widgets.AlertView ("", _("Try changing search terms."), "edit-find-symbolic");
+        alert_view.show_all ();
+
         var app_list = new Gtk.ListBox () {
             vexpand = true,
             selection_mode = Gtk.SelectionMode.SINGLE
         };
+        app_list.set_placeholder (alert_view);
         app_list.set_filter_func ((Gtk.ListBoxFilterFunc) filter_func);
         app_list.set_sort_func ((Gtk.ListBoxSortFunc) sort_func);
         app_list.get_accessible ().accessible_name = _("Applications");
@@ -123,7 +127,10 @@ public class Permissions.Plug : Gtk.Grid {
         }
 
         map.connect (() => search_entry.grab_focus ());
-        search_entry.search_changed.connect (() => app_list.invalidate_filter ());
+        search_entry.search_changed.connect (() => {
+            app_list.invalidate_filter ();
+            alert_view.title = _("No Results for “%s”").printf (search_entry.text);
+        });
 
         app_list.row_selected.connect (show_row);
     }
