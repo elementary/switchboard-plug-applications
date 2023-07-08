@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-07-06 18:27+0000\n"
-"PO-Revision-Date: 2023-07-06 19:07+0000\n"
-"Last-Translator: anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2023-07-08 21:07+0000\n"
+"Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-applications/uk/>\n"
 "Language: uk\n"
@@ -141,7 +141,7 @@ msgstr "Спробуйте змінити пошукові терміни."
 #: src/Permissions/PermissionsPlug.vala:120
 #, c-format
 msgid "No Results for “%s”"
-msgstr "Результати для «%s» відсутні"
+msgstr "Немає результатів для «%s»"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:33
 msgid "Access your entire Home folder, including any hidden folders."
