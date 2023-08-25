@@ -43,6 +43,7 @@
         </ul>
       </description>
       <issues>
+        <issue url="https://github.com/elementary/switchboard-plug-applications/issues/146">Permissions: Make applist searchable</issue>
         <issue url="https://github.com/elementary/music/issues/758">No music player set in applications settings</issue>
       </issues>
     </release>
