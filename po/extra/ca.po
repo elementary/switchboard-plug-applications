@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-06 18:27+0000\n"
+"POT-Creation-Date: 2023-08-25 16:44+0000\n"
 "PO-Revision-Date: 2023-06-24 12:07+0000\n"
 "Last-Translator: David M <rbndavid@gmail.com>\n"
 "Language-Team: Catalan <https://l10n.elementary.io/projects/switchboard/"
@@ -31,55 +31,55 @@ msgstr "Gestioneu les aplicacions per defecte i d'inici."
 msgid "elementary, Inc."
 msgstr "elementary, Inc."
 
-#: data/applications.metainfo.xml.in:40 data/applications.metainfo.xml.in:70
+#: data/applications.metainfo.xml.in:40 data/applications.metainfo.xml.in:57
+#: data/applications.metainfo.xml.in:72 data/applications.metainfo.xml.in:87
+msgid "Minor updates:"
+msgstr "Actualitzacions menors:"
+
+#: data/applications.metainfo.xml.in:42 data/applications.metainfo.xml.in:61
+#: data/applications.metainfo.xml.in:76 data/applications.metainfo.xml.in:90
+#: data/applications.metainfo.xml.in:97 data/applications.metainfo.xml.in:104
+msgid "Updated translations"
+msgstr "Traduccions actualitzades"
+
+#: data/applications.metainfo.xml.in:53 data/applications.metainfo.xml.in:83
 msgid "New features:"
 msgstr "Característiques noves:"
 
-#: data/applications.metainfo.xml.in:42
+#: data/applications.metainfo.xml.in:55
 msgid "Properly handle autostart files created by the Background Portal"
 msgstr ""
 "Gestiona correctament els fitxers d'inici automàtic creats pel portal de fons"
 
-#: data/applications.metainfo.xml.in:44 data/applications.metainfo.xml.in:59
-#: data/applications.metainfo.xml.in:74
-msgid "Minor updates:"
-msgstr "Actualitzacions menors:"
-
-#: data/applications.metainfo.xml.in:46
+#: data/applications.metainfo.xml.in:59
 msgid "App chooser in Startup is a dialog instead of a popover"
 msgstr ""
 "El selector d'aplicacions a l'inici és un diàleg en lloc d'una finestra "
 "emergent"
 
-#: data/applications.metainfo.xml.in:47
+#: data/applications.metainfo.xml.in:60
 msgid "Improve screen reader descriptions"
 msgstr "Millora de les descripcions dels lectors de pantalla"
 
-#: data/applications.metainfo.xml.in:48 data/applications.metainfo.xml.in:63
-#: data/applications.metainfo.xml.in:77 data/applications.metainfo.xml.in:84
-#: data/applications.metainfo.xml.in:91
-msgid "Updated translations"
-msgstr "Traduccions actualitzades"
-
-#: data/applications.metainfo.xml.in:61
+#: data/applications.metainfo.xml.in:74
 msgid "Fix an issue with setting the incorrect app for certain files types"
 msgstr ""
 "Correcció de l'establiment de l'aplicació incorrecta per a alguns tipus de "
 "fitxers"
 
-#: data/applications.metainfo.xml.in:62
+#: data/applications.metainfo.xml.in:75
 msgid "Don't overwrite custom overrides when unnecessary"
 msgstr "No se substitueixen substitucions personalitzades quan no cal."
 
-#: data/applications.metainfo.xml.in:72
+#: data/applications.metainfo.xml.in:85
 msgid "Manage permissions for Flatpak apps"
 msgstr "Gestioneu els permisos de les aplicacions de Flatpak."
 
-#: data/applications.metainfo.xml.in:76
+#: data/applications.metainfo.xml.in:89
 msgid "Show custom launcher files"
 msgstr "Es mostren els fitxers de llançador personalitzats"
 
-#: data/applications.metainfo.xml.in:90
+#: data/applications.metainfo.xml.in:103
 msgid "Fix issues with OnlyShowIn and Snap apps"
 msgstr "Correcció d'errors d'aplicacions d'OnlyShowIn i Snap"
 
