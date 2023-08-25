@@ -12,13 +12,13 @@
 
   <screenshots>
     <screenshot type="default">
-      <image>https://raw.githubusercontent.com/elementary/switchboard-plug-applications/7.0.0/data/screenshot.png</image>
+      <image>https://raw.githubusercontent.com/elementary/switchboard-plug-applications/7.0.1/data/screenshot.png</image>
     </screenshot>
     <screenshot>
-      <image>https://raw.githubusercontent.com/elementary/switchboard-plug-applications/7.0.0/data/screenshot-startup.png</image>
+      <image>https://raw.githubusercontent.com/elementary/switchboard-plug-applications/7.0.1/data/screenshot-startup.png</image>
     </screenshot>
     <screenshot>
-      <image>https://raw.githubusercontent.com/elementary/switchboard-plug-applications/7.0.0/data/screenshot-permissions.png</image>
+      <image>https://raw.githubusercontent.com/elementary/switchboard-plug-applications/7.0.1/data/screenshot-permissions.png</image>
     </screenshot>
   </screenshots>
 
@@ -35,7 +35,7 @@
   <update_contact>contact_at_elementary.io</update_contact>
 
   <releases>
-    <release version="7.0.1" date="2023-08-24" urgency="medium">
+    <release version="7.0.1" date="2023-08-25" urgency="medium">
       <description>
         <p>Minor updates:</p>
         <ul>
