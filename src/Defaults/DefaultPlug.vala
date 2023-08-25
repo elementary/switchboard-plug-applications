@@ -30,7 +30,7 @@ public class Defaults.Plug : Gtk.Box {
 
         var music_setting = new SettingsChild (
             _("Music Player"),
-            "x-content/audio-player"
+            "audio/x-vorbis+ogg"
         );
 
         var images_setting = new SettingsChild (
@@ -204,7 +204,7 @@ public class Defaults.Plug : Gtk.Box {
                         "video/x-ogm+ogg"
                     };
 
-                case "x-content/audio-player":
+                case "audio/x-vorbis+ogg":
                     return {
                         "audio/ogg",
                         "audio/mpeg",
@@ -264,7 +264,8 @@ public class Defaults.Plug : Gtk.Box {
                         "audio/midi",
                         "audio/x-scpls",
                         "audio/webm",
-                        "audio/x-webm"
+                        "audio/x-webm",
+                        "x-content/audio-player"
                     };
 
                 case "image/jpeg":
