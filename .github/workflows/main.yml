@@ -1,8 +1,6 @@
 name: CI
 
 on:
-  push:
-    branches: [main]
   pull_request:
     types:
       - opened
@@ -42,6 +40,6 @@ jobs:
       image: valalang/lint
 
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
     - name: Lint
       run: io.elementary.vala-lint -d .
