@@ -34,14 +34,12 @@ public class Permissions.SidebarRow : Gtk.ListBoxRow {
 
         Gtk.Image image;
         if (appinfo != null && appinfo.get_icon () != null) {
-            image = new Gtk.Image.from_gicon (appinfo.get_icon ()) {
-                pixel_size = 32
-            };
+            image = new Gtk.Image.from_gicon (appinfo.get_icon ());
         } else {
-            image = new Gtk.Image.from_icon_name ("application-default-icon") {
-                pixel_size = 32
-            };
+            image = new Gtk.Image.from_icon_name ("application-default-icon");
         }
+
+        image.pixel_size = 32;
 
         var title_label = new Gtk.Label (app.name) {
             ellipsize = Pango.EllipsizeMode.END,
