@@ -105,11 +105,11 @@ public class Defaults.Plug : Gtk.Box {
                 show_default_item = true
             };
 
-            var box = new Gtk.Box (VERTICAL, 0);
+            var box = new Gtk.Box (VERTICAL, 6);
             box.append (setting_label);
             box.append (app_chooser);
 
-            can_focus = false;
+            focusable = false;
             child = box;
 
             size_group.add_widget (setting_label);
