@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: io.elementary.settings.applications\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-25 16:44+0000\n"
+"POT-Creation-Date: 2023-10-11 21:28-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,7 +21,7 @@ msgstr ""
 msgid "Manage default apps, startup apps, and app permissions"
 msgstr ""
 
-#: src/Plug.vala:45 src/Permissions/PermissionsPlug.vala:64
+#: src/Plug.vala:45
 msgid "Applications"
 msgstr ""
 
@@ -54,67 +54,35 @@ msgstr ""
 msgid "Default"
 msgstr ""
 
-<<<<<<< HEAD:po/applications-plug.pot
-#: src/Plug.vala:107 src/Defaults/DefaultPlug.vala:12
+#: src/Plug.vala:114 src/Defaults/DefaultPlug.vala:12
 msgid "Web Browser"
 msgstr ""
 
-#: src/Plug.vala:108 src/Defaults/DefaultPlug.vala:17
+#: src/Plug.vala:115 src/Defaults/DefaultPlug.vala:17
 msgid "Email Client"
 msgstr ""
 
-#: src/Plug.vala:109 src/Defaults/DefaultPlug.vala:22
+#: src/Plug.vala:116 src/Defaults/DefaultPlug.vala:22
 msgid "Calendar"
 msgstr ""
 
-#: src/Plug.vala:110 src/Defaults/DefaultPlug.vala:27
+#: src/Plug.vala:117 src/Defaults/DefaultPlug.vala:27
 msgid "Video Player"
 msgstr ""
 
-#: src/Plug.vala:111 src/Defaults/DefaultPlug.vala:32
+#: src/Plug.vala:118 src/Defaults/DefaultPlug.vala:32
 msgid "Music Player"
 msgstr ""
 
-#: src/Plug.vala:112 src/Defaults/DefaultPlug.vala:42
+#: src/Plug.vala:119 src/Defaults/DefaultPlug.vala:42
 msgid "Text Editor"
 msgstr ""
 
-#: src/Plug.vala:113 src/Defaults/DefaultPlug.vala:37
+#: src/Plug.vala:120 src/Defaults/DefaultPlug.vala:37
 msgid "Image Viewer"
 msgstr ""
 
-#: src/Plug.vala:114 src/Defaults/DefaultPlug.vala:47
-=======
-#: src/Plug.vala:114
-msgid "Web Browser"
-msgstr ""
-
-#: src/Plug.vala:115
-msgid "Email Client"
-msgstr ""
-
-#: src/Plug.vala:116
-msgid "Calendar"
-msgstr ""
-
-#: src/Plug.vala:117
-msgid "Video Player"
-msgstr ""
-
-#: src/Plug.vala:118
-msgid "Music Player"
-msgstr ""
-
-#: src/Plug.vala:119
-msgid "Text Editor"
-msgstr ""
-
-#: src/Plug.vala:120
-msgid "Image Viewer"
-msgstr ""
-
-#: src/Plug.vala:121
->>>>>>> 47c6687 (Port to GTK4 (#173)):po/io.elementary.settings.applications.pot
+#: src/Plug.vala:121 src/Defaults/DefaultPlug.vala:47
 msgid "File Browser"
 msgstr ""
 
@@ -150,7 +118,7 @@ msgstr ""
 msgid "GPU Acceleration"
 msgstr ""
 
-#: src/Permissions/PermissionsPlug.vala:43
+#: src/Permissions/PermissionsPlug.vala:42
 msgid "No Flatpak apps installed"
 msgstr ""
 
@@ -160,7 +128,7 @@ msgid ""
 "installed"
 msgstr ""
 
-#: src/Permissions/PermissionsPlug.vala:51
+#: src/Permissions/PermissionsPlug.vala:49
 #: src/Startup/Widgets/AppChooser.vala:17
 msgid "Search Applications"
 msgstr ""
@@ -169,7 +137,7 @@ msgstr ""
 msgid "Try changing search terms."
 msgstr ""
 
-#: src/Permissions/PermissionsPlug.vala:120
+#: src/Permissions/PermissionsPlug.vala:119
 #, c-format
 msgid "No Results for “%s”"
 msgstr ""
@@ -209,61 +177,28 @@ msgstr ""
 msgid "Accelerate graphical output."
 msgstr ""
 
-<<<<<<< HEAD:po/applications-plug.pot
-#: src/Permissions/Widgets/AppSettingsView.vala:109
-=======
 #: src/Permissions/Widgets/AppSettingsView.vala:110
->>>>>>> 47c6687 (Port to GTK4 (#173)):po/io.elementary.settings.applications.pot
 msgid "Reset to Defaults"
 msgstr ""
 
-#: src/Permissions/Widgets/AppSettingsView.vala:179
-#, c-format
-msgid "%s permissions"
-msgstr ""
-
 #. / Translators: This is a delimiter that separates types of permissions in the sidebar description
-<<<<<<< HEAD:po/applications-plug.pot
-#: src/Permissions/Widgets/SidebarRow.vala:93
-msgid ", "
-msgstr ""
-
-#: src/Startup/Startup.vala:26
-msgid "Launch Apps on Startup"
-msgstr ""
-
-#: src/Startup/Startup.vala:27
-msgid "Add apps to the Startup list by clicking the icon in the toolbar below."
-msgstr ""
-
-#: src/Startup/Startup.vala:45
-msgid "Add Startup App…"
-msgstr ""
-
-#: src/Startup/Backend/KeyFile.vala:99
-=======
 #: src/Permissions/Widgets/SidebarRow.vala:91
 msgid ", "
 msgstr ""
 
-#: src/Startup/Startup.vala:31
+#: src/Startup/Startup.vala:17
 msgid "Launch Apps on Startup"
 msgstr ""
 
-#: src/Startup/Startup.vala:32
+#: src/Startup/Startup.vala:18
 msgid "Add apps to the Startup list by clicking the icon in the toolbar below."
 msgstr ""
 
-#: src/Startup/Startup.vala:56
+#: src/Startup/Startup.vala:39
 msgid "Add Startup App…"
 msgstr ""
 
-#: src/Startup/Startup.vala:61
-msgid "Remove Selected Startup App"
-msgstr ""
-
-#: src/Startup/Backend/KeyFile.vala:86
->>>>>>> 47c6687 (Port to GTK4 (#173)):po/io.elementary.settings.applications.pot
+#: src/Startup/Backend/KeyFile.vala:99
 msgid "Custom Command"
 msgstr ""
 
@@ -276,62 +211,10 @@ msgstr ""
 msgid "Launch %s on startup"
 msgstr ""
 
-<<<<<<< HEAD:po/applications-plug.pot
-#: src/Startup/Widgets/AppChooser.vala:36
+#: src/Startup/Widgets/AppChooser.vala:37
 msgid "Type in a custom command"
 msgstr ""
 
 #: src/Startup/Widgets/AppChooser.vala:53
 msgid "Cancel"
-msgstr ""
-
-#. TRANSLATORS: This string is used by screen reader
-#: src/Startup/Widgets/AppChooser.vala:56
-msgid "Select startup app"
-msgstr ""
-
-#. TRANSLATORS: This is description for for screen reader. %s can be "Web Browser" or "Music Player" and so on.
-#: src/Defaults/DefaultPlug.vala:124
-#, c-format
-msgid "Default %s"
-=======
-#: src/Startup/Widgets/AppChooser.vala:44
-msgid "Search Applications"
-msgstr ""
-
-#: src/Startup/Widgets/AppChooser.vala:64
-msgid "Type in a custom command"
-msgstr ""
-
-#: src/Defaults/DefaultPlug.vala:42
-msgid "Web Browser:"
-msgstr ""
-
-#: src/Defaults/DefaultPlug.vala:47
-msgid "Email Client:"
-msgstr ""
-
-#: src/Defaults/DefaultPlug.vala:52
-msgid "Calendar:"
-msgstr ""
-
-#: src/Defaults/DefaultPlug.vala:57
-msgid "Video Player:"
-msgstr ""
-
-#: src/Defaults/DefaultPlug.vala:64
-msgid "Music Player:"
-msgstr ""
-
-#: src/Defaults/DefaultPlug.vala:71
-msgid "Image Viewer:"
-msgstr ""
-
-#: src/Defaults/DefaultPlug.vala:78
-msgid "Text Editor:"
-msgstr ""
-
-#: src/Defaults/DefaultPlug.vala:85
-msgid "File Browser:"
->>>>>>> 47c6687 (Port to GTK4 (#173)):po/io.elementary.settings.applications.pot
 msgstr ""
