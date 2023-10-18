@@ -86,8 +86,9 @@ public class Permissions.Plug : Gtk.Box {
 
         app_settings_view = new Widgets.AppSettingsView ();
 
-        if (app_list.get_first_child () != null) {
-            var row = (Gtk.ListBoxRow) app_list.get_first_child ();
+        var first_child = app_list.get_first_child ();
+        if (first_child != null && first_child is Gtk.ListBoxRow) {
+            var row = (Gtk.ListBoxRow) first_child;
 
             app_list.select_row (row);
             show_row (row);

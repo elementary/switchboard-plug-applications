@@ -103,7 +103,7 @@ public class Startup.Plug : Gtk.Box {
 
         unowned var child = list.get_first_child ();
         while (child != null) {
-            if (((Widgets.AppRow) child).app_info.equal (app_info)) {
+            if (child is Widgets.AppRow && ((Widgets.AppRow) child).app_info.equal (app_info)) {
                 return;
             }
 
@@ -122,7 +122,7 @@ public class Startup.Plug : Gtk.Box {
     public void remove_app_from_path (string path) {
         unowned var child = list.get_first_child ();
         while (child != null) {
-            if (((Widgets.AppRow) child).app_info.path == path) {
+            if (child is Widgets.AppRow && ((Widgets.AppRow) child).app_info.path == path) {
                 list.remove ((Widgets.AppRow) child);
                 return;
             }
