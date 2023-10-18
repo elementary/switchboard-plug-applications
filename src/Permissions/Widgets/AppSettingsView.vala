@@ -179,7 +179,7 @@ public class Permissions.Widgets.AppSettingsView : Gtk.Grid {
             reset_button.sensitive = should_enable_reset;
         });
 
-        // get_accessible ().accessible_name = _("%s permissions").printf (selected_app.name);
+        update_property (Gtk.AccessibleProperty.LABEL, _("%s permissions").printf (selected_app.name), -1);
     }
 
     private void change_permission_settings (Backend.PermissionSettings settings) {

@@ -39,10 +39,7 @@ public class Startup.Widgets.AppChooser : Granite.Dialog {
             primary_icon_name = "utilities-terminal-symbolic"
         };
 
-        var box = new Gtk.Box (VERTICAL, 6) {
-            margin_end = 12,
-            margin_start = 12
-        };
+        var box = new Gtk.Box (VERTICAL, 6);
         box.append (search_entry);
         box.append (frame);
         box.append (custom_entry);
@@ -53,7 +50,7 @@ public class Startup.Widgets.AppChooser : Granite.Dialog {
         add_button (_("Cancel"), Gtk.ResponseType.CANCEL);
 
         // TRANSLATORS: This string is used by screen reader
-        // get_accessible ().accessible_name = _("Select startup app");
+        update_property (Gtk.AccessibleProperty.LABEL, _("Select startup app"), -1);
 
         search_entry.grab_focus ();
         search_entry.search_changed.connect (() => {

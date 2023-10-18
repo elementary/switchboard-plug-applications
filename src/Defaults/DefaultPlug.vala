@@ -104,6 +104,7 @@ public class Defaults.Plug : Gtk.Box {
                 hexpand = true,
                 show_default_item = true
             };
+            ((Gtk.Label) setting_label.get_first_child ()).mnemonic_widget = app_chooser.get_first_child ();
 
             var box = new Gtk.Box (VERTICAL, 6);
             box.append (setting_label);
@@ -118,9 +119,6 @@ public class Defaults.Plug : Gtk.Box {
                 change_default (app_chooser.get_app_info (), content_type);
                 return null;
             }));
-
-            // TRANSLATORS: This is description for for screen reader. %s can be "Web Browser" or "Music Player" and so on.
-            // app_chooser.get_accessible ().accessible_name = _("Default %s").printf (label);
         }
 
         private void run_in_thread (owned ThreadFunc<void*> func) {

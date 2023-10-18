@@ -62,7 +62,8 @@ public class Permissions.Plug : Gtk.Box {
         app_list.set_placeholder (alert_view);
         app_list.set_filter_func ((Gtk.ListBoxFilterFunc) filter_func);
         app_list.set_sort_func ((Gtk.ListBoxSortFunc) sort_func);
-        // app_list.get_accessible ().accessible_name = _("Applications");
+        app_list.update_property (Gtk.AccessibleProperty.LABEL, _("Applications"), -1);
+
 
         var scrolled_window = new Gtk.ScrolledWindow () {
             child = app_list
