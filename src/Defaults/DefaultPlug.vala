@@ -104,7 +104,7 @@ public class Defaults.Plug : Gtk.Box {
                 hexpand = true,
                 show_default_item = true
             };
-            ((Gtk.Label) setting_label.get_first_child ()).mnemonic_widget = app_chooser.get_first_child ();
+            setting_label.mnemonic_widget = app_chooser.get_first_child ();
 
             var box = new Gtk.Box (VERTICAL, 6);
             box.append (setting_label);

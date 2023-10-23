@@ -10,7 +10,7 @@ You'll need the following dependencies:
 * libadwaita-1-dev
 * libswitchboard-3-dev
 * libflatpak-dev
-* libgranite-7-dev
+* libgranite-7-dev >= 7.4.0
 * libgtk-4-dev
 * meson
 * valac
