@@ -19,7 +19,7 @@
 * Authored by: Marius Meisenzahl <mariusmeisenzahl@gmail.com>
 */
 
-public class Permissions.Plug : Gtk.Grid {
+public class Permissions.Plug : Gtk.Box {
     public static GLib.HashTable <unowned string, unowned string> permission_names { get; private set; }
 
     private Gtk.SearchEntry search_entry;
@@ -39,31 +39,33 @@ public class Permissions.Plug : Gtk.Grid {
     }
 
     construct {
-        var placeholder = new Granite.Widgets.AlertView (
-            _("No Flatpak apps installed"),
-            _("Apps whose permissions can be adjusted will automatically appear here when installed"),
-            "dialog-information"
-        );
-        placeholder.get_style_context ().add_class (Gtk.STYLE_CLASS_BACKGROUND);
-        placeholder.show_all ();
+        var placeholder = new Granite.Placeholder (_("No Flatpak apps installed")) {
+            icon = new ThemedIcon ("dialog-information"),
+            description = _("Apps whose permissions can be adjusted will automatically appear here when installed")
+        };
+        placeholder.add_css_class (Granite.STYLE_CLASS_BACKGROUND);
 
         search_entry = new Gtk.SearchEntry () {
             placeholder_text = _("Search Applications")
         };
 
-        var alert_view = new Granite.Widgets.AlertView ("", _("Try changing search terms."), "edit-find-symbolic");
-        alert_view.show_all ();
+        var alert_view = new Granite.Placeholder ("") {
+            icon = new ThemedIcon ("edit-find-symbolic"),
+            description = _("Try changing search terms.")
+        };
 
         app_list = new Gtk.ListBox () {
             vexpand = true,
             selection_mode = Gtk.SelectionMode.SINGLE
         };
+        app_list.add_css_class (Granite.STYLE_CLASS_RICH_LIST);
         app_list.set_placeholder (alert_view);
         app_list.set_filter_func ((Gtk.ListBoxFilterFunc) filter_func);
         app_list.set_sort_func ((Gtk.ListBoxSortFunc) sort_func);
-        app_list.get_accessible ().accessible_name = _("Applications");
+        app_list.update_property (Gtk.AccessibleProperty.LABEL, _("Applications"), -1);
 
-        var scrolled_window = new Gtk.ScrolledWindow (null, null) {
+
+        var scrolled_window = new Gtk.ScrolledWindow () {
             child = app_list
         };
 
@@ -72,21 +74,21 @@ public class Permissions.Plug : Gtk.Grid {
         };
 
         var sidebar = new Gtk.Box (VERTICAL, 12);
-        sidebar.add (search_entry);
-        sidebar.add (frame);
+        sidebar.append (search_entry);
+        sidebar.append (frame);
 
         var app_manager = Permissions.Backend.AppManager.get_default ();
 
         app_manager.apps.foreach ((id, app) => {
             var app_entry = new Permissions.SidebarRow (app);
-            app_list.add (app_entry);
+            app_list.append (app_entry);
         });
 
         app_settings_view = new Widgets.AppSettingsView ();
 
-        List<weak Gtk.Widget> children = app_list.get_children ();
-        if (children.length () > 0) {
-            var row = ((Gtk.ListBoxRow)children.nth_data (0));
+        var first_child = app_list.get_first_child ();
+        if (first_child != null && first_child is Gtk.ListBoxRow) {
+            var row = (Gtk.ListBoxRow) first_child;
 
             app_list.select_row (row);
             show_row (row);
@@ -102,11 +104,10 @@ public class Permissions.Plug : Gtk.Grid {
         grid.attach (app_settings_view, 1, 0, 2, 1);
 
         var placeholder_stack = new Gtk.Stack ();
-        placeholder_stack.add (placeholder);
-        placeholder_stack.add (grid);
+        placeholder_stack.add_child (placeholder);
+        placeholder_stack.add_child (grid);
 
-        add (placeholder_stack);
-        show_all ();
+        append (placeholder_stack);
 
         if (app_manager.apps.length > 0) {
             placeholder_stack.set_visible_child (grid);

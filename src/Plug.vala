@@ -40,7 +40,7 @@ public class ApplicationsPlug : Switchboard.Plug {
 
         Object (
             category: Category.PERSONAL,
-            code_name: "io.elementary.switchboard.applications",
+            code_name: "io.elementary.settings.applications",
             description: _("Manage default apps, startup apps, and app permissions"),
             display_name: _("Applications"),
             icon: "io.elementary.settings.applications",
@@ -51,7 +51,8 @@ public class ApplicationsPlug : Switchboard.Plug {
     public override Gtk.Widget get_widget () {
         if (grid == null) {
             stack = new Gtk.Stack () {
-                expand = true
+                hexpand = true,
+                vexpand = true
             };
             stack.add_titled (new Defaults.Plug (), DEFAULTS, _("Defaults"));
             stack.add_titled (new Startup.Plug (), STARTUP, _("Startup"));
@@ -59,9 +60,15 @@ public class ApplicationsPlug : Switchboard.Plug {
 
             var stack_switcher = new Gtk.StackSwitcher () {
                 halign = Gtk.Align.CENTER,
-                homogeneous = true,
                 stack = stack
             };
+
+            var size_group = new Gtk.SizeGroup (Gtk.SizeGroupMode.HORIZONTAL);
+            var widget = stack_switcher.get_first_child ();
+            while (widget != null) {
+                size_group.add_widget (widget);
+                widget = widget.get_next_sibling ();
+            }
 
             grid = new Gtk.Grid () {
                 margin_top = 12,
@@ -69,7 +76,6 @@ public class ApplicationsPlug : Switchboard.Plug {
             };
             grid.attach (stack_switcher, 0, 0);
             grid.attach (stack, 0, 1);
-            grid.show_all ();
         }
 
         return grid;
