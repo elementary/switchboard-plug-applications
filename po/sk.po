@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-08-25 16:44+0000\n"
-"PO-Revision-Date: 2023-07-06 19:07+0000\n"
-"Last-Translator: anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2023-10-27 11:10+0000\n"
+"Last-Translator: JohnDumpling <john_dumpling@protonmail.com>\n"
 "Language-Team: Slovak <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-applications/sk/>\n"
 "Language: sk\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Weblate 4.17\n"
+"X-Generator: Weblate 5.0.2\n"
 "X-Launchpad-Export-Date: 2016-11-26 05:53+0000\n"
 
 #: src/Plug.vala:44
@@ -190,10 +190,9 @@ msgid "Reset to Defaults"
 msgstr "Obnoviť predvolené"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:179
-#, fuzzy, c-format
-#| msgid "Permissions"
+#, c-format
 msgid "%s permissions"
-msgstr "Oprávnenia"
+msgstr "Oprávnenia %s"
 
 #. / Translators: This is a delimiter that separates types of permissions in the sidebar description
 #: src/Permissions/Widgets/SidebarRow.vala:93
@@ -219,7 +218,7 @@ msgstr "Vlastný príkaz"
 
 #: src/Startup/Widgets/AppRow.vala:46
 msgid "Remove this app from startup"
-msgstr ""
+msgstr "Odstrániť túto aplikáciu z procesu spustenia"
 
 #: src/Startup/Widgets/AppRow.vala:51
 #, c-format
@@ -236,17 +235,14 @@ msgstr "Zrušiť"
 
 #. TRANSLATORS: This string is used by screen reader
 #: src/Startup/Widgets/AppChooser.vala:56
-#, fuzzy
-#| msgid "Remove Selected Startup App"
 msgid "Select startup app"
-msgstr "Odobrať vybranú aplikáciu pri spustení"
+msgstr "Vybrať aplikáciu pri spustení"
 
 #. TRANSLATORS: This is description for for screen reader. %s can be "Web Browser" or "Music Player" and so on.
 #: src/Defaults/DefaultPlug.vala:124
-#, fuzzy, c-format
-#| msgid "Defaults"
+#, c-format
 msgid "Default %s"
-msgstr "Predvolené"
+msgstr "Predvolené %s"
 
 #~ msgid "Web Browser:"
 #~ msgstr "Webový prehliadač:"
