@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-25 16:44+0000\n"
+"POT-Creation-Date: 2023-12-04 17:32+0000\n"
 "PO-Revision-Date: 2023-07-06 19:07+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Estonian <https://l10n.elementary.io/projects/switchboard/"
@@ -21,77 +21,77 @@ msgstr ""
 msgid "Manage default apps, startup apps, and app permissions"
 msgstr "Automaatslet käivituvate ja vaikimisi rakenduse haldamine"
 
-#: src/Plug.vala:45 src/Permissions/PermissionsPlug.vala:64
+#: src/Plug.vala:45 src/Permissions/PermissionsPlug.vala:65
 msgid "Applications"
 msgstr "Rakendused"
 
-#: src/Plug.vala:56
+#: src/Plug.vala:57
 #, fuzzy
 #| msgid "Default"
 msgid "Defaults"
 msgstr "Vaikimisi"
 
-#: src/Plug.vala:57 src/Plug.vala:102
+#: src/Plug.vala:58 src/Plug.vala:108
 msgid "Startup"
 msgstr "Käivitamisel"
 
-#: src/Plug.vala:58 src/Plug.vala:104
+#: src/Plug.vala:59 src/Plug.vala:110
 msgid "Permissions"
 msgstr ""
 
-#: src/Plug.vala:103
+#: src/Plug.vala:109
 msgid "Default Apps"
 msgstr ""
 
-#: src/Plug.vala:105
+#: src/Plug.vala:111
 msgid "Sandboxing"
 msgstr ""
 
-#: src/Plug.vala:106
+#: src/Plug.vala:112
 msgid "Confinement"
 msgstr ""
 
-#: src/Plug.vala:107 src/Plug.vala:108 src/Plug.vala:109 src/Plug.vala:110
-#: src/Plug.vala:111 src/Plug.vala:112 src/Plug.vala:113 src/Plug.vala:114
+#: src/Plug.vala:113 src/Plug.vala:114 src/Plug.vala:115 src/Plug.vala:116
+#: src/Plug.vala:117 src/Plug.vala:118 src/Plug.vala:119 src/Plug.vala:120
 msgid "Default"
 msgstr "Vaikimisi"
 
-#: src/Plug.vala:107 src/Defaults/DefaultPlug.vala:12
+#: src/Plug.vala:113 src/Defaults/DefaultPlug.vala:12
 #, fuzzy
 msgid "Web Browser"
 msgstr "Veebilehitseja:"
 
-#: src/Plug.vala:108 src/Defaults/DefaultPlug.vala:17
+#: src/Plug.vala:114 src/Defaults/DefaultPlug.vala:17
 #, fuzzy
 msgid "Email Client"
 msgstr "E-posti haldur:"
 
-#: src/Plug.vala:109 src/Defaults/DefaultPlug.vala:22
+#: src/Plug.vala:115 src/Defaults/DefaultPlug.vala:22
 #, fuzzy
 msgid "Calendar"
 msgstr "Kalender:"
 
-#: src/Plug.vala:110 src/Defaults/DefaultPlug.vala:27
+#: src/Plug.vala:116 src/Defaults/DefaultPlug.vala:27
 #, fuzzy
 msgid "Video Player"
 msgstr "Video esitaja:"
 
-#: src/Plug.vala:111 src/Defaults/DefaultPlug.vala:32
+#: src/Plug.vala:117 src/Defaults/DefaultPlug.vala:32
 #, fuzzy
 msgid "Music Player"
 msgstr "Muusika mängija:"
 
-#: src/Plug.vala:112 src/Defaults/DefaultPlug.vala:42
+#: src/Plug.vala:118 src/Defaults/DefaultPlug.vala:42
 #, fuzzy
 msgid "Text Editor"
 msgstr "Tekstiredaktor:"
 
-#: src/Plug.vala:113 src/Defaults/DefaultPlug.vala:37
+#: src/Plug.vala:119 src/Defaults/DefaultPlug.vala:37
 #, fuzzy
 msgid "Image Viewer"
 msgstr "Pildivaatur:"
 
-#: src/Plug.vala:114 src/Defaults/DefaultPlug.vala:47
+#: src/Plug.vala:120 src/Defaults/DefaultPlug.vala:47
 #, fuzzy
 msgid "File Browser"
 msgstr "Failihaldur:"
@@ -128,7 +128,7 @@ msgstr ""
 msgid "GPU Acceleration"
 msgstr ""
 
-#: src/Permissions/PermissionsPlug.vala:43
+#: src/Permissions/PermissionsPlug.vala:42
 msgid "No Flatpak apps installed"
 msgstr ""
 
@@ -138,7 +138,7 @@ msgid ""
 "installed"
 msgstr ""
 
-#: src/Permissions/PermissionsPlug.vala:51
+#: src/Permissions/PermissionsPlug.vala:49
 #: src/Startup/Widgets/AppChooser.vala:17
 msgid "Search Applications"
 msgstr "Otsi rakendusi…"
@@ -147,7 +147,7 @@ msgstr "Otsi rakendusi…"
 msgid "Try changing search terms."
 msgstr "Proovi otsingut muuta."
 
-#: src/Permissions/PermissionsPlug.vala:120
+#: src/Permissions/PermissionsPlug.vala:121
 #, c-format
 msgid "No Results for “%s”"
 msgstr "Otsing \"%s\" ei andnud tulemusi"
@@ -187,31 +187,31 @@ msgstr ""
 msgid "Accelerate graphical output."
 msgstr ""
 
-#: src/Permissions/Widgets/AppSettingsView.vala:109
+#: src/Permissions/Widgets/AppSettingsView.vala:110
 #, fuzzy
 #| msgid "Default"
 msgid "Reset to Defaults"
 msgstr "Vaikimisi"
 
-#: src/Permissions/Widgets/AppSettingsView.vala:179
+#: src/Permissions/Widgets/AppSettingsView.vala:182
 #, c-format
 msgid "%s permissions"
 msgstr ""
 
 #. / Translators: This is a delimiter that separates types of permissions in the sidebar description
-#: src/Permissions/Widgets/SidebarRow.vala:93
+#: src/Permissions/Widgets/SidebarRow.vala:89
 msgid ", "
 msgstr ""
 
-#: src/Startup/Startup.vala:26
+#: src/Startup/Startup.vala:17
 msgid "Launch Apps on Startup"
 msgstr ""
 
-#: src/Startup/Startup.vala:27
+#: src/Startup/Startup.vala:18
 msgid "Add apps to the Startup list by clicking the icon in the toolbar below."
 msgstr ""
 
-#: src/Startup/Startup.vala:45
+#: src/Startup/Startup.vala:39
 msgid "Add Startup App…"
 msgstr "Automaatselt käivituva rakenduse lisamine…"
 
@@ -228,27 +228,25 @@ msgstr ""
 msgid "Launch %s on startup"
 msgstr ""
 
-#: src/Startup/Widgets/AppChooser.vala:36
+#: src/Startup/Widgets/AppChooser.vala:37
 msgid "Type in a custom command"
 msgstr "Sisesta siia kohandatud käsk…"
 
-#: src/Startup/Widgets/AppChooser.vala:53
+#: src/Startup/Widgets/AppChooser.vala:50
 msgid "Cancel"
 msgstr "Loobu"
 
 #. TRANSLATORS: This string is used by screen reader
-#: src/Startup/Widgets/AppChooser.vala:56
+#: src/Startup/Widgets/AppChooser.vala:53
 #, fuzzy
 #| msgid "Remove Selected Startup App"
 msgid "Select startup app"
 msgstr "Eemalda valitud rakenduse automaatkäivitus"
 
-#. TRANSLATORS: This is description for for screen reader. %s can be "Web Browser" or "Music Player" and so on.
-#: src/Defaults/DefaultPlug.vala:124
 #, fuzzy, c-format
-#| msgid "Default"
-msgid "Default %s"
-msgstr "Vaikimisi"
+#~| msgid "Default"
+#~ msgid "Default %s"
+#~ msgstr "Vaikimisi"
 
 #~ msgid "Web Browser:"
 #~ msgstr "Veebilehitseja:"

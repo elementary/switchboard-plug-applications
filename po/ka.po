@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-25 16:44+0000\n"
+"POT-Creation-Date: 2023-12-04 17:32+0000\n"
 "PO-Revision-Date: 2023-07-16 05:07+0000\n"
 "Last-Translator: NorwayFun <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <https://l10n.elementary.io/projects/switchboard/"
@@ -19,68 +19,68 @@ msgstr ""
 msgid "Manage default apps, startup apps, and app permissions"
 msgstr ""
 
-#: src/Plug.vala:45 src/Permissions/PermissionsPlug.vala:64
+#: src/Plug.vala:45 src/Permissions/PermissionsPlug.vala:65
 msgid "Applications"
 msgstr "აპლიკაციები"
 
-#: src/Plug.vala:56
+#: src/Plug.vala:57
 msgid "Defaults"
 msgstr "ნაგულისხმები მნიშვნელობები"
 
-#: src/Plug.vala:57 src/Plug.vala:102
+#: src/Plug.vala:58 src/Plug.vala:108
 msgid "Startup"
 msgstr "გაშვება"
 
-#: src/Plug.vala:58 src/Plug.vala:104
+#: src/Plug.vala:59 src/Plug.vala:110
 msgid "Permissions"
 msgstr "ნებართვები"
 
-#: src/Plug.vala:103
+#: src/Plug.vala:109
 msgid "Default Apps"
 msgstr "ნაგულისხმები აპები"
 
-#: src/Plug.vala:105
+#: src/Plug.vala:111
 msgid "Sandboxing"
 msgstr ""
 
-#: src/Plug.vala:106
+#: src/Plug.vala:112
 msgid "Confinement"
 msgstr ""
 
-#: src/Plug.vala:107 src/Plug.vala:108 src/Plug.vala:109 src/Plug.vala:110
-#: src/Plug.vala:111 src/Plug.vala:112 src/Plug.vala:113 src/Plug.vala:114
+#: src/Plug.vala:113 src/Plug.vala:114 src/Plug.vala:115 src/Plug.vala:116
+#: src/Plug.vala:117 src/Plug.vala:118 src/Plug.vala:119 src/Plug.vala:120
 msgid "Default"
 msgstr "ნაგულისხმები"
 
-#: src/Plug.vala:107 src/Defaults/DefaultPlug.vala:12
+#: src/Plug.vala:113 src/Defaults/DefaultPlug.vala:12
 msgid "Web Browser"
 msgstr "ვებ-ბრაუზერი"
 
-#: src/Plug.vala:108 src/Defaults/DefaultPlug.vala:17
+#: src/Plug.vala:114 src/Defaults/DefaultPlug.vala:17
 msgid "Email Client"
 msgstr "ელფოსტის კლიენტი"
 
-#: src/Plug.vala:109 src/Defaults/DefaultPlug.vala:22
+#: src/Plug.vala:115 src/Defaults/DefaultPlug.vala:22
 msgid "Calendar"
 msgstr "კალენდარი"
 
-#: src/Plug.vala:110 src/Defaults/DefaultPlug.vala:27
+#: src/Plug.vala:116 src/Defaults/DefaultPlug.vala:27
 msgid "Video Player"
 msgstr "ვიდეო დამკვრელი"
 
-#: src/Plug.vala:111 src/Defaults/DefaultPlug.vala:32
+#: src/Plug.vala:117 src/Defaults/DefaultPlug.vala:32
 msgid "Music Player"
 msgstr "მუსიკის დამკვრელი"
 
-#: src/Plug.vala:112 src/Defaults/DefaultPlug.vala:42
+#: src/Plug.vala:118 src/Defaults/DefaultPlug.vala:42
 msgid "Text Editor"
 msgstr "ტექსტური რედაქტორი"
 
-#: src/Plug.vala:113 src/Defaults/DefaultPlug.vala:37
+#: src/Plug.vala:119 src/Defaults/DefaultPlug.vala:37
 msgid "Image Viewer"
 msgstr "სურათების გამხსნელი"
 
-#: src/Plug.vala:114 src/Defaults/DefaultPlug.vala:47
+#: src/Plug.vala:120 src/Defaults/DefaultPlug.vala:47
 msgid "File Browser"
 msgstr "ფაილების ბრაუზერი"
 
@@ -116,7 +116,7 @@ msgstr "დაცული გარსის აგენტი"
 msgid "GPU Acceleration"
 msgstr "GPU აჩქარება"
 
-#: src/Permissions/PermissionsPlug.vala:43
+#: src/Permissions/PermissionsPlug.vala:42
 msgid "No Flatpak apps installed"
 msgstr "Flatpak-ის აპები დაყენებული არაა"
 
@@ -126,7 +126,7 @@ msgid ""
 "installed"
 msgstr ""
 
-#: src/Permissions/PermissionsPlug.vala:51
+#: src/Permissions/PermissionsPlug.vala:49
 #: src/Startup/Widgets/AppChooser.vala:17
 msgid "Search Applications"
 msgstr "აპლიკაციების ძებნა"
@@ -135,7 +135,7 @@ msgstr "აპლიკაციების ძებნა"
 msgid "Try changing search terms."
 msgstr ""
 
-#: src/Permissions/PermissionsPlug.vala:120
+#: src/Permissions/PermissionsPlug.vala:121
 #, c-format
 msgid "No Results for “%s”"
 msgstr ""
@@ -175,29 +175,29 @@ msgstr ""
 msgid "Accelerate graphical output."
 msgstr "გრაფიკის აჩქარება."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:109
+#: src/Permissions/Widgets/AppSettingsView.vala:110
 msgid "Reset to Defaults"
 msgstr "ნაგულისხმები პარამეტრების დაყენება"
 
-#: src/Permissions/Widgets/AppSettingsView.vala:179
+#: src/Permissions/Widgets/AppSettingsView.vala:182
 #, c-format
 msgid "%s permissions"
 msgstr "%s წვდომები"
 
 #. / Translators: This is a delimiter that separates types of permissions in the sidebar description
-#: src/Permissions/Widgets/SidebarRow.vala:93
+#: src/Permissions/Widgets/SidebarRow.vala:89
 msgid ", "
 msgstr ", "
 
-#: src/Startup/Startup.vala:26
+#: src/Startup/Startup.vala:17
 msgid "Launch Apps on Startup"
 msgstr "აპების გაშვება ჩატვირთვისას"
 
-#: src/Startup/Startup.vala:27
+#: src/Startup/Startup.vala:18
 msgid "Add apps to the Startup list by clicking the icon in the toolbar below."
 msgstr ""
 
-#: src/Startup/Startup.vala:45
+#: src/Startup/Startup.vala:39
 msgid "Add Startup App…"
 msgstr "ჩატვირთვისას გასაშვები აპის დამატება…"
 
@@ -214,24 +214,22 @@ msgstr ""
 msgid "Launch %s on startup"
 msgstr "%s-ის გაშვება ჩატვირთვისას"
 
-#: src/Startup/Widgets/AppChooser.vala:36
+#: src/Startup/Widgets/AppChooser.vala:37
 msgid "Type in a custom command"
 msgstr "შეიყვანეთ ბრძანება ხელით"
 
-#: src/Startup/Widgets/AppChooser.vala:53
+#: src/Startup/Widgets/AppChooser.vala:50
 msgid "Cancel"
 msgstr "გაუქმება"
 
 #. TRANSLATORS: This string is used by screen reader
-#: src/Startup/Widgets/AppChooser.vala:56
+#: src/Startup/Widgets/AppChooser.vala:53
 msgid "Select startup app"
 msgstr "აირჩიეთ ავტომატურად გასაშვები აპი"
 
-#. TRANSLATORS: This is description for for screen reader. %s can be "Web Browser" or "Music Player" and so on.
-#: src/Defaults/DefaultPlug.vala:124
 #, c-format
-msgid "Default %s"
-msgstr "ნაგულისხმევი %s"
+#~ msgid "Default %s"
+#~ msgstr "ნაგულისხმევი %s"
 
 #~ msgid "Web Browser:"
 #~ msgstr "ვებ-ბრაუზერი:"

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-25 16:44+0000\n"
+"POT-Creation-Date: 2023-12-04 17:32+0000\n"
 "PO-Revision-Date: 2023-07-06 19:07+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Marathi <https://l10n.elementary.io/projects/switchboard/"
@@ -19,68 +19,68 @@ msgstr ""
 msgid "Manage default apps, startup apps, and app permissions"
 msgstr "डीफॉल्ट अ‍ॅप्स, स्टार्टअप अ‍ॅप्स आणि अ‍ॅप परवानग्या व्यवस्थापित करा"
 
-#: src/Plug.vala:45 src/Permissions/PermissionsPlug.vala:64
+#: src/Plug.vala:45 src/Permissions/PermissionsPlug.vala:65
 msgid "Applications"
 msgstr "ॲप्लिकेशन्स्"
 
-#: src/Plug.vala:56
+#: src/Plug.vala:57
 msgid "Defaults"
 msgstr "डीफॉल्ट"
 
-#: src/Plug.vala:57 src/Plug.vala:102
+#: src/Plug.vala:58 src/Plug.vala:108
 msgid "Startup"
 msgstr "स्टार्टअप"
 
-#: src/Plug.vala:58 src/Plug.vala:104
+#: src/Plug.vala:59 src/Plug.vala:110
 msgid "Permissions"
 msgstr "परवानग्या"
 
-#: src/Plug.vala:103
+#: src/Plug.vala:109
 msgid "Default Apps"
 msgstr "डीफॉल्ट अॅप्स"
 
-#: src/Plug.vala:105
+#: src/Plug.vala:111
 msgid "Sandboxing"
 msgstr "सँडबॉक्सिंग"
 
-#: src/Plug.vala:106
+#: src/Plug.vala:112
 msgid "Confinement"
 msgstr "कारावास"
 
-#: src/Plug.vala:107 src/Plug.vala:108 src/Plug.vala:109 src/Plug.vala:110
-#: src/Plug.vala:111 src/Plug.vala:112 src/Plug.vala:113 src/Plug.vala:114
+#: src/Plug.vala:113 src/Plug.vala:114 src/Plug.vala:115 src/Plug.vala:116
+#: src/Plug.vala:117 src/Plug.vala:118 src/Plug.vala:119 src/Plug.vala:120
 msgid "Default"
 msgstr "डीफॉल्ट"
 
-#: src/Plug.vala:107 src/Defaults/DefaultPlug.vala:12
+#: src/Plug.vala:113 src/Defaults/DefaultPlug.vala:12
 msgid "Web Browser"
 msgstr "वेब ब्राउझर"
 
-#: src/Plug.vala:108 src/Defaults/DefaultPlug.vala:17
+#: src/Plug.vala:114 src/Defaults/DefaultPlug.vala:17
 msgid "Email Client"
 msgstr "ईमेल क्लायंट"
 
-#: src/Plug.vala:109 src/Defaults/DefaultPlug.vala:22
+#: src/Plug.vala:115 src/Defaults/DefaultPlug.vala:22
 msgid "Calendar"
 msgstr "कॅलेंडर"
 
-#: src/Plug.vala:110 src/Defaults/DefaultPlug.vala:27
+#: src/Plug.vala:116 src/Defaults/DefaultPlug.vala:27
 msgid "Video Player"
 msgstr "व्हिडिओ प्लेयर"
 
-#: src/Plug.vala:111 src/Defaults/DefaultPlug.vala:32
+#: src/Plug.vala:117 src/Defaults/DefaultPlug.vala:32
 msgid "Music Player"
 msgstr "संगीत प्लेअर"
 
-#: src/Plug.vala:112 src/Defaults/DefaultPlug.vala:42
+#: src/Plug.vala:118 src/Defaults/DefaultPlug.vala:42
 msgid "Text Editor"
 msgstr "मजकूर संपादक"
 
-#: src/Plug.vala:113 src/Defaults/DefaultPlug.vala:37
+#: src/Plug.vala:119 src/Defaults/DefaultPlug.vala:37
 msgid "Image Viewer"
 msgstr "प्रतिमा दर्शक"
 
-#: src/Plug.vala:114 src/Defaults/DefaultPlug.vala:47
+#: src/Plug.vala:120 src/Defaults/DefaultPlug.vala:47
 msgid "File Browser"
 msgstr "फाइल ब्राउजर"
 
@@ -116,7 +116,7 @@ msgstr "सुरक्षित शेल एजंट"
 msgid "GPU Acceleration"
 msgstr "GPU प्रवेग"
 
-#: src/Permissions/PermissionsPlug.vala:43
+#: src/Permissions/PermissionsPlug.vala:42
 msgid "No Flatpak apps installed"
 msgstr "कोणतेही फ्लॅटपॅक अ‍ॅप्स स्थापित केलेले नाहीत"
 
@@ -128,7 +128,7 @@ msgstr ""
 "ज्यांच्या परवानग्या समायोजित केल्या जाऊ शकतात असे  अ‍ॅप्स स्थापित केल्यावर स्वयंचलितपणे येथे "
 "दिसून येतील"
 
-#: src/Permissions/PermissionsPlug.vala:51
+#: src/Permissions/PermissionsPlug.vala:49
 #: src/Startup/Widgets/AppChooser.vala:17
 msgid "Search Applications"
 msgstr "अप्लिकेशन शोधा"
@@ -137,7 +137,7 @@ msgstr "अप्लिकेशन शोधा"
 msgid "Try changing search terms."
 msgstr "शोध संज्ञा बदलून प्रयत्न करा."
 
-#: src/Permissions/PermissionsPlug.vala:120
+#: src/Permissions/PermissionsPlug.vala:121
 #, c-format
 msgid "No Results for “%s”"
 msgstr "\"%s\" साठी कोणतेही परिणाम नाहीत"
@@ -185,30 +185,30 @@ msgstr "एसएसएच मार्गे नेटवर्कवरील 
 msgid "Accelerate graphical output."
 msgstr "ग्राफिकल आउटपुटला गती द्या."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:109
+#: src/Permissions/Widgets/AppSettingsView.vala:110
 msgid "Reset to Defaults"
 msgstr "डीफॉल्टवर रीसेट करा"
 
-#: src/Permissions/Widgets/AppSettingsView.vala:179
+#: src/Permissions/Widgets/AppSettingsView.vala:182
 #, fuzzy, c-format
 #| msgid "Permissions"
 msgid "%s permissions"
 msgstr "परवानग्या"
 
 #. / Translators: This is a delimiter that separates types of permissions in the sidebar description
-#: src/Permissions/Widgets/SidebarRow.vala:93
+#: src/Permissions/Widgets/SidebarRow.vala:89
 msgid ", "
 msgstr ", "
 
-#: src/Startup/Startup.vala:26
+#: src/Startup/Startup.vala:17
 msgid "Launch Apps on Startup"
 msgstr "स्टार्टअप वर अॅप्स लॉन्च करा"
 
-#: src/Startup/Startup.vala:27
+#: src/Startup/Startup.vala:18
 msgid "Add apps to the Startup list by clicking the icon in the toolbar below."
 msgstr "खालील टूलबारमधील चिन्हावर क्लिक करून स्टार्टअप सूचीमध्ये अॅप्स जोडा."
 
-#: src/Startup/Startup.vala:45
+#: src/Startup/Startup.vala:39
 msgid "Add Startup App…"
 msgstr "स्टार्टअप अॅप जोडा…"
 
@@ -225,27 +225,25 @@ msgstr ""
 msgid "Launch %s on startup"
 msgstr "स्टार्टअपवर %s लॉन्च करा"
 
-#: src/Startup/Widgets/AppChooser.vala:36
+#: src/Startup/Widgets/AppChooser.vala:37
 msgid "Type in a custom command"
 msgstr "सानुकूल आज्ञा टाइप करा"
 
-#: src/Startup/Widgets/AppChooser.vala:53
+#: src/Startup/Widgets/AppChooser.vala:50
 msgid "Cancel"
 msgstr "रद्द करा"
 
 #. TRANSLATORS: This string is used by screen reader
-#: src/Startup/Widgets/AppChooser.vala:56
+#: src/Startup/Widgets/AppChooser.vala:53
 #, fuzzy
 #| msgid "Remove Selected Startup App"
 msgid "Select startup app"
 msgstr "निवडलेले स्टार्टअप अॅप काढा"
 
-#. TRANSLATORS: This is description for for screen reader. %s can be "Web Browser" or "Music Player" and so on.
-#: src/Defaults/DefaultPlug.vala:124
 #, fuzzy, c-format
-#| msgid "Defaults"
-msgid "Default %s"
-msgstr "डीफॉल्ट"
+#~| msgid "Defaults"
+#~ msgid "Default %s"
+#~ msgstr "डीफॉल्ट"
 
 #~ msgid "Web Browser:"
 #~ msgstr "वेब ब्राउझर:"

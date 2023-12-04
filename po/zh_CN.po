@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-25 16:44+0000\n"
+"POT-Creation-Date: 2023-12-04 17:32+0000\n"
 "PO-Revision-Date: 2023-07-06 19:07+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
@@ -19,68 +19,68 @@ msgstr ""
 msgid "Manage default apps, startup apps, and app permissions"
 msgstr "管理默认程序、启动项和应用权限"
 
-#: src/Plug.vala:45 src/Permissions/PermissionsPlug.vala:64
+#: src/Plug.vala:45 src/Permissions/PermissionsPlug.vala:65
 msgid "Applications"
 msgstr "应用程序"
 
-#: src/Plug.vala:56
+#: src/Plug.vala:57
 msgid "Defaults"
 msgstr "默认程序"
 
-#: src/Plug.vala:57 src/Plug.vala:102
+#: src/Plug.vala:58 src/Plug.vala:108
 msgid "Startup"
 msgstr "开机启动"
 
-#: src/Plug.vala:58 src/Plug.vala:104
+#: src/Plug.vala:59 src/Plug.vala:110
 msgid "Permissions"
 msgstr "应用权限"
 
-#: src/Plug.vala:103
+#: src/Plug.vala:109
 msgid "Default Apps"
 msgstr "默认应用"
 
-#: src/Plug.vala:105
+#: src/Plug.vala:111
 msgid "Sandboxing"
 msgstr "沙盒运行"
 
-#: src/Plug.vala:106
+#: src/Plug.vala:112
 msgid "Confinement"
 msgstr "限制"
 
-#: src/Plug.vala:107 src/Plug.vala:108 src/Plug.vala:109 src/Plug.vala:110
-#: src/Plug.vala:111 src/Plug.vala:112 src/Plug.vala:113 src/Plug.vala:114
+#: src/Plug.vala:113 src/Plug.vala:114 src/Plug.vala:115 src/Plug.vala:116
+#: src/Plug.vala:117 src/Plug.vala:118 src/Plug.vala:119 src/Plug.vala:120
 msgid "Default"
 msgstr "默认程序"
 
-#: src/Plug.vala:107 src/Defaults/DefaultPlug.vala:12
+#: src/Plug.vala:113 src/Defaults/DefaultPlug.vala:12
 msgid "Web Browser"
 msgstr "网络浏览器"
 
-#: src/Plug.vala:108 src/Defaults/DefaultPlug.vala:17
+#: src/Plug.vala:114 src/Defaults/DefaultPlug.vala:17
 msgid "Email Client"
 msgstr "邮件客户端"
 
-#: src/Plug.vala:109 src/Defaults/DefaultPlug.vala:22
+#: src/Plug.vala:115 src/Defaults/DefaultPlug.vala:22
 msgid "Calendar"
 msgstr "日历查看器"
 
-#: src/Plug.vala:110 src/Defaults/DefaultPlug.vala:27
+#: src/Plug.vala:116 src/Defaults/DefaultPlug.vala:27
 msgid "Video Player"
 msgstr "视频播放器"
 
-#: src/Plug.vala:111 src/Defaults/DefaultPlug.vala:32
+#: src/Plug.vala:117 src/Defaults/DefaultPlug.vala:32
 msgid "Music Player"
 msgstr "音乐播放器"
 
-#: src/Plug.vala:112 src/Defaults/DefaultPlug.vala:42
+#: src/Plug.vala:118 src/Defaults/DefaultPlug.vala:42
 msgid "Text Editor"
 msgstr "文本编辑器"
 
-#: src/Plug.vala:113 src/Defaults/DefaultPlug.vala:37
+#: src/Plug.vala:119 src/Defaults/DefaultPlug.vala:37
 msgid "Image Viewer"
 msgstr "图像查看器"
 
-#: src/Plug.vala:114 src/Defaults/DefaultPlug.vala:47
+#: src/Plug.vala:120 src/Defaults/DefaultPlug.vala:47
 msgid "File Browser"
 msgstr "文件浏览器"
 
@@ -116,7 +116,7 @@ msgstr "SSH 权限"
 msgid "GPU Acceleration"
 msgstr "GPU 加速"
 
-#: src/Permissions/PermissionsPlug.vala:43
+#: src/Permissions/PermissionsPlug.vala:42
 msgid "No Flatpak apps installed"
 msgstr "未安装任何 Flatpak 应用"
 
@@ -126,7 +126,7 @@ msgid ""
 "installed"
 msgstr "安装应用程序后其可管理的权限会自动出现在此处"
 
-#: src/Permissions/PermissionsPlug.vala:51
+#: src/Permissions/PermissionsPlug.vala:49
 #: src/Startup/Widgets/AppChooser.vala:17
 msgid "Search Applications"
 msgstr "搜索应用程序"
@@ -135,7 +135,7 @@ msgstr "搜索应用程序"
 msgid "Try changing search terms."
 msgstr "尝试更改搜索内容。"
 
-#: src/Permissions/PermissionsPlug.vala:120
+#: src/Permissions/PermissionsPlug.vala:121
 #, c-format
 msgid "No Results for “%s”"
 msgstr "未找到与 “%s” 相关的结果"
@@ -175,30 +175,30 @@ msgstr "通过 SSH 访问网络中的其他设备。"
 msgid "Accelerate graphical output."
 msgstr "加速图形输出。"
 
-#: src/Permissions/Widgets/AppSettingsView.vala:109
+#: src/Permissions/Widgets/AppSettingsView.vala:110
 msgid "Reset to Defaults"
 msgstr "恢复默认"
 
-#: src/Permissions/Widgets/AppSettingsView.vala:179
+#: src/Permissions/Widgets/AppSettingsView.vala:182
 #, fuzzy, c-format
 #| msgid "Permissions"
 msgid "%s permissions"
 msgstr "应用权限"
 
 #. / Translators: This is a delimiter that separates types of permissions in the sidebar description
-#: src/Permissions/Widgets/SidebarRow.vala:93
+#: src/Permissions/Widgets/SidebarRow.vala:89
 msgid ", "
 msgstr "， "
 
-#: src/Startup/Startup.vala:26
+#: src/Startup/Startup.vala:17
 msgid "Launch Apps on Startup"
 msgstr "开机启动"
 
-#: src/Startup/Startup.vala:27
+#: src/Startup/Startup.vala:18
 msgid "Add apps to the Startup list by clicking the icon in the toolbar below."
 msgstr "点击下方工具栏中的图标将应用程序设置为开机启动。"
 
-#: src/Startup/Startup.vala:45
+#: src/Startup/Startup.vala:39
 msgid "Add Startup App…"
 msgstr "添加启动项…"
 
@@ -215,27 +215,25 @@ msgstr ""
 msgid "Launch %s on startup"
 msgstr "开机时启动 %s"
 
-#: src/Startup/Widgets/AppChooser.vala:36
+#: src/Startup/Widgets/AppChooser.vala:37
 msgid "Type in a custom command"
 msgstr "键入自定义命令"
 
-#: src/Startup/Widgets/AppChooser.vala:53
+#: src/Startup/Widgets/AppChooser.vala:50
 msgid "Cancel"
 msgstr "取消"
 
 #. TRANSLATORS: This string is used by screen reader
-#: src/Startup/Widgets/AppChooser.vala:56
+#: src/Startup/Widgets/AppChooser.vala:53
 #, fuzzy
 #| msgid "Remove Selected Startup App"
 msgid "Select startup app"
 msgstr "移除选中的启动项"
 
-#. TRANSLATORS: This is description for for screen reader. %s can be "Web Browser" or "Music Player" and so on.
-#: src/Defaults/DefaultPlug.vala:124
 #, fuzzy, c-format
-#| msgid "Defaults"
-msgid "Default %s"
-msgstr "默认程序"
+#~| msgid "Defaults"
+#~ msgid "Default %s"
+#~ msgstr "默认程序"
 
 #~ msgid "Web Browser:"
 #~ msgstr "网络浏览器："

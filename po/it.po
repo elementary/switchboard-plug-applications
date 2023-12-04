@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-25 16:44+0000\n"
+"POT-Creation-Date: 2023-12-04 17:32+0000\n"
 "PO-Revision-Date: 2023-07-06 19:07+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Italian <https://l10n.elementary.io/projects/switchboard/"
@@ -21,68 +21,68 @@ msgstr ""
 "Gestisci le applicazioni predefinite, quelle di avvio e i permessi delle "
 "applicazioni"
 
-#: src/Plug.vala:45 src/Permissions/PermissionsPlug.vala:64
+#: src/Plug.vala:45 src/Permissions/PermissionsPlug.vala:65
 msgid "Applications"
 msgstr "Applicazioni"
 
-#: src/Plug.vala:56
+#: src/Plug.vala:57
 msgid "Defaults"
 msgstr "Predefinite"
 
-#: src/Plug.vala:57 src/Plug.vala:102
+#: src/Plug.vala:58 src/Plug.vala:108
 msgid "Startup"
 msgstr "Avvio"
 
-#: src/Plug.vala:58 src/Plug.vala:104
+#: src/Plug.vala:59 src/Plug.vala:110
 msgid "Permissions"
 msgstr "Permessi"
 
-#: src/Plug.vala:103
+#: src/Plug.vala:109
 msgid "Default Apps"
 msgstr "Applicazioni predefinite"
 
-#: src/Plug.vala:105
+#: src/Plug.vala:111
 msgid "Sandboxing"
 msgstr "Isolamento delle applicazioni"
 
-#: src/Plug.vala:106
+#: src/Plug.vala:112
 msgid "Confinement"
 msgstr "Confinamento"
 
-#: src/Plug.vala:107 src/Plug.vala:108 src/Plug.vala:109 src/Plug.vala:110
-#: src/Plug.vala:111 src/Plug.vala:112 src/Plug.vala:113 src/Plug.vala:114
+#: src/Plug.vala:113 src/Plug.vala:114 src/Plug.vala:115 src/Plug.vala:116
+#: src/Plug.vala:117 src/Plug.vala:118 src/Plug.vala:119 src/Plug.vala:120
 msgid "Default"
 msgstr "Predefinito"
 
-#: src/Plug.vala:107 src/Defaults/DefaultPlug.vala:12
+#: src/Plug.vala:113 src/Defaults/DefaultPlug.vala:12
 msgid "Web Browser"
 msgstr "Programma di navigazione in rete"
 
-#: src/Plug.vala:108 src/Defaults/DefaultPlug.vala:17
+#: src/Plug.vala:114 src/Defaults/DefaultPlug.vala:17
 msgid "Email Client"
 msgstr "Posta elettronica"
 
-#: src/Plug.vala:109 src/Defaults/DefaultPlug.vala:22
+#: src/Plug.vala:115 src/Defaults/DefaultPlug.vala:22
 msgid "Calendar"
 msgstr "Calendario"
 
-#: src/Plug.vala:110 src/Defaults/DefaultPlug.vala:27
+#: src/Plug.vala:116 src/Defaults/DefaultPlug.vala:27
 msgid "Video Player"
 msgstr "Riproduttore video"
 
-#: src/Plug.vala:111 src/Defaults/DefaultPlug.vala:32
+#: src/Plug.vala:117 src/Defaults/DefaultPlug.vala:32
 msgid "Music Player"
 msgstr "Riproduttore musicale"
 
-#: src/Plug.vala:112 src/Defaults/DefaultPlug.vala:42
+#: src/Plug.vala:118 src/Defaults/DefaultPlug.vala:42
 msgid "Text Editor"
 msgstr "Editor di testi"
 
-#: src/Plug.vala:113 src/Defaults/DefaultPlug.vala:37
+#: src/Plug.vala:119 src/Defaults/DefaultPlug.vala:37
 msgid "Image Viewer"
 msgstr "Visualizzatore di immagini"
 
-#: src/Plug.vala:114 src/Defaults/DefaultPlug.vala:47
+#: src/Plug.vala:120 src/Defaults/DefaultPlug.vala:47
 msgid "File Browser"
 msgstr "Gestore dei file"
 
@@ -118,7 +118,7 @@ msgstr "Accesso al protocollo Secure Shell"
 msgid "GPU Acceleration"
 msgstr "Accelerazione GPU"
 
-#: src/Permissions/PermissionsPlug.vala:43
+#: src/Permissions/PermissionsPlug.vala:42
 msgid "No Flatpak apps installed"
 msgstr "Nessuna applicazione Flatpak installata"
 
@@ -130,7 +130,7 @@ msgstr ""
 "Le applicazioni i cui permessi possono essere regolati appariranno "
 "automaticamente qui una volta installate"
 
-#: src/Permissions/PermissionsPlug.vala:51
+#: src/Permissions/PermissionsPlug.vala:49
 #: src/Startup/Widgets/AppChooser.vala:17
 msgid "Search Applications"
 msgstr "Cerca applicazioni"
@@ -139,7 +139,7 @@ msgstr "Cerca applicazioni"
 msgid "Try changing search terms."
 msgstr "Prova a cambiare i termini di ricerca."
 
-#: src/Permissions/PermissionsPlug.vala:120
+#: src/Permissions/PermissionsPlug.vala:121
 #, c-format
 msgid "No Results for “%s”"
 msgstr "Nessun risultato per \"%s\""
@@ -192,32 +192,32 @@ msgstr "Accesso ad altri dispositivi sulla rete tramite SSH."
 msgid "Accelerate graphical output."
 msgstr "Utilizzo dell'accelerazione grafica."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:109
+#: src/Permissions/Widgets/AppSettingsView.vala:110
 msgid "Reset to Defaults"
 msgstr "Ripristina impostazioni predefinite"
 
-#: src/Permissions/Widgets/AppSettingsView.vala:179
+#: src/Permissions/Widgets/AppSettingsView.vala:182
 #, fuzzy, c-format
 #| msgid "Permissions"
 msgid "%s permissions"
 msgstr "Permessi"
 
 #. / Translators: This is a delimiter that separates types of permissions in the sidebar description
-#: src/Permissions/Widgets/SidebarRow.vala:93
+#: src/Permissions/Widgets/SidebarRow.vala:89
 msgid ", "
 msgstr ", "
 
-#: src/Startup/Startup.vala:26
+#: src/Startup/Startup.vala:17
 msgid "Launch Apps on Startup"
 msgstr "Avvia applicazioni all'accensione"
 
-#: src/Startup/Startup.vala:27
+#: src/Startup/Startup.vala:18
 msgid "Add apps to the Startup list by clicking the icon in the toolbar below."
 msgstr ""
 "Aggiungi applicazioni alla lista d'avvio cliccando sull'icona nella barra "
 "degli strumenti sottostante."
 
-#: src/Startup/Startup.vala:45
+#: src/Startup/Startup.vala:39
 msgid "Add Startup App…"
 msgstr "Aggiungi un'applicazione di avvio…"
 
@@ -234,27 +234,25 @@ msgstr ""
 msgid "Launch %s on startup"
 msgstr "Avvia %s all'accensione"
 
-#: src/Startup/Widgets/AppChooser.vala:36
+#: src/Startup/Widgets/AppChooser.vala:37
 msgid "Type in a custom command"
 msgstr "Inserisci un comando personalizzato"
 
-#: src/Startup/Widgets/AppChooser.vala:53
+#: src/Startup/Widgets/AppChooser.vala:50
 msgid "Cancel"
 msgstr "Annulla"
 
 #. TRANSLATORS: This string is used by screen reader
-#: src/Startup/Widgets/AppChooser.vala:56
+#: src/Startup/Widgets/AppChooser.vala:53
 #, fuzzy
 #| msgid "Remove Selected Startup App"
 msgid "Select startup app"
 msgstr "Rimuovi l'applicazione di avvio selezionata"
 
-#. TRANSLATORS: This is description for for screen reader. %s can be "Web Browser" or "Music Player" and so on.
-#: src/Defaults/DefaultPlug.vala:124
 #, fuzzy, c-format
-#| msgid "Defaults"
-msgid "Default %s"
-msgstr "Predefinite"
+#~| msgid "Defaults"
+#~ msgid "Default %s"
+#~ msgstr "Predefinite"
 
 #~ msgid "Web Browser:"
 #~ msgstr "Programma di navigazione in rete:"

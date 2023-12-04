@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-25 16:44+0000\n"
+"POT-Creation-Date: 2023-12-04 17:32+0000\n"
 "PO-Revision-Date: 2023-07-06 19:07+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Kurdish (Central) <https://l10n.elementary.io/projects/"
@@ -21,68 +21,68 @@ msgstr ""
 "ڕێکخستنی بەرنامە بنەڕەتییەکان و مۆڵەتەکانی بەرنامە و ئەو بەرنامانەی کە لەگەڵ "
 "پێبوونی کۆمپیتەر دەکرێنەوە"
 
-#: src/Plug.vala:45 src/Permissions/PermissionsPlug.vala:64
+#: src/Plug.vala:45 src/Permissions/PermissionsPlug.vala:65
 msgid "Applications"
 msgstr "بەرنامەکان"
 
-#: src/Plug.vala:56
+#: src/Plug.vala:57
 msgid "Defaults"
 msgstr "بنەڕەتییەکان"
 
-#: src/Plug.vala:57 src/Plug.vala:102
+#: src/Plug.vala:58 src/Plug.vala:108
 msgid "Startup"
 msgstr "دەستپێک"
 
-#: src/Plug.vala:58 src/Plug.vala:104
+#: src/Plug.vala:59 src/Plug.vala:110
 msgid "Permissions"
 msgstr "مۆڵەتەکان"
 
-#: src/Plug.vala:103
+#: src/Plug.vala:109
 msgid "Default Apps"
 msgstr "بەرنامە بنەڕەتییەکان"
 
-#: src/Plug.vala:105
+#: src/Plug.vala:111
 msgid "Sandboxing"
 msgstr "ساندبۆکس کردن"
 
-#: src/Plug.vala:106
+#: src/Plug.vala:112
 msgid "Confinement"
 msgstr "سنووردارکردن"
 
-#: src/Plug.vala:107 src/Plug.vala:108 src/Plug.vala:109 src/Plug.vala:110
-#: src/Plug.vala:111 src/Plug.vala:112 src/Plug.vala:113 src/Plug.vala:114
+#: src/Plug.vala:113 src/Plug.vala:114 src/Plug.vala:115 src/Plug.vala:116
+#: src/Plug.vala:117 src/Plug.vala:118 src/Plug.vala:119 src/Plug.vala:120
 msgid "Default"
 msgstr "بنەڕەت"
 
-#: src/Plug.vala:107 src/Defaults/DefaultPlug.vala:12
+#: src/Plug.vala:113 src/Defaults/DefaultPlug.vala:12
 msgid "Web Browser"
 msgstr "وێبگەڕ"
 
-#: src/Plug.vala:108 src/Defaults/DefaultPlug.vala:17
+#: src/Plug.vala:114 src/Defaults/DefaultPlug.vala:17
 msgid "Email Client"
 msgstr "نامە (ئیمێڵ)"
 
-#: src/Plug.vala:109 src/Defaults/DefaultPlug.vala:22
+#: src/Plug.vala:115 src/Defaults/DefaultPlug.vala:22
 msgid "Calendar"
 msgstr "ڕۆژمێر"
 
-#: src/Plug.vala:110 src/Defaults/DefaultPlug.vala:27
+#: src/Plug.vala:116 src/Defaults/DefaultPlug.vala:27
 msgid "Video Player"
 msgstr "پلەیەری ڤیدیۆ"
 
-#: src/Plug.vala:111 src/Defaults/DefaultPlug.vala:32
+#: src/Plug.vala:117 src/Defaults/DefaultPlug.vala:32
 msgid "Music Player"
 msgstr "پلەیەری مۆسیقا"
 
-#: src/Plug.vala:112 src/Defaults/DefaultPlug.vala:42
+#: src/Plug.vala:118 src/Defaults/DefaultPlug.vala:42
 msgid "Text Editor"
 msgstr "دەستکاریکەری دەق"
 
-#: src/Plug.vala:113 src/Defaults/DefaultPlug.vala:37
+#: src/Plug.vala:119 src/Defaults/DefaultPlug.vala:37
 msgid "Image Viewer"
 msgstr "سەیرکەری وێنە"
 
-#: src/Plug.vala:114 src/Defaults/DefaultPlug.vala:47
+#: src/Plug.vala:120 src/Defaults/DefaultPlug.vala:47
 msgid "File Browser"
 msgstr "گەڕۆکی پەڕگە"
 
@@ -118,7 +118,7 @@ msgstr "پاراستنی شێڵی بریکار"
 msgid "GPU Acceleration"
 msgstr "خێراکردنی GPU"
 
-#: src/Permissions/PermissionsPlug.vala:43
+#: src/Permissions/PermissionsPlug.vala:42
 msgid "No Flatpak apps installed"
 msgstr "هیچ بەرنامەیەکی فلاتپاک دانەمەزراوە"
 
@@ -130,7 +130,7 @@ msgstr ""
 "ئەو بەرنامانەی کە مۆڵەتەکانیان دەستکاری دەکرێت، خۆکرانە لێرە دەردەکەون ئەگەر "
 "دامەزران"
 
-#: src/Permissions/PermissionsPlug.vala:51
+#: src/Permissions/PermissionsPlug.vala:49
 #: src/Startup/Widgets/AppChooser.vala:17
 msgid "Search Applications"
 msgstr "بەدوای بەرنامەدا بگەڕێ"
@@ -139,7 +139,7 @@ msgstr "بەدوای بەرنامەدا بگەڕێ"
 msgid "Try changing search terms."
 msgstr "هەوڵدە بە وشەیەکی تری گونجاو بگەڕێی."
 
-#: src/Permissions/PermissionsPlug.vala:120
+#: src/Permissions/PermissionsPlug.vala:121
 #, c-format
 msgid "No Results for “%s”"
 msgstr "هیچ ئەنجامێک بۆ \"%s\" نەدۆزرایەوە"
@@ -185,32 +185,32 @@ msgstr "دەستی دەگات بە ئامێرەکانی تری سەر ڕایەڵ
 msgid "Accelerate graphical output."
 msgstr "خێراکردنی دەرئەنجامی گرافیکی."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:109
+#: src/Permissions/Widgets/AppSettingsView.vala:110
 msgid "Reset to Defaults"
 msgstr "گەڕاندنەوەیان بۆ دۆخی بنەڕەت"
 
-#: src/Permissions/Widgets/AppSettingsView.vala:179
+#: src/Permissions/Widgets/AppSettingsView.vala:182
 #, fuzzy, c-format
 #| msgid "Permissions"
 msgid "%s permissions"
 msgstr "مۆڵەتەکان"
 
 #. / Translators: This is a delimiter that separates types of permissions in the sidebar description
-#: src/Permissions/Widgets/SidebarRow.vala:93
+#: src/Permissions/Widgets/SidebarRow.vala:89
 msgid ", "
 msgstr "، "
 
-#: src/Startup/Startup.vala:26
+#: src/Startup/Startup.vala:17
 msgid "Launch Apps on Startup"
 msgstr "کردنەوەی بەرنامەکان لە دەستپێکدا"
 
-#: src/Startup/Startup.vala:27
+#: src/Startup/Startup.vala:18
 msgid "Add apps to the Startup list by clicking the icon in the toolbar below."
 msgstr ""
 "زیادکردنی بەرنامەکان بۆ لیستی دەستپێک بە کرتەکردن لەسەر ئایکۆنەکە لە "
 "شریتەکەی خوارەوە."
 
-#: src/Startup/Startup.vala:45
+#: src/Startup/Startup.vala:39
 msgid "Add Startup App…"
 msgstr "زیادکردنی بەرنامە بۆ لیستی دەستپێک…"
 
@@ -227,27 +227,25 @@ msgstr ""
 msgid "Launch %s on startup"
 msgstr "کردنەوەی %s لەگەڵ دەستپێکی کۆمپیتەر"
 
-#: src/Startup/Widgets/AppChooser.vala:36
+#: src/Startup/Widgets/AppChooser.vala:37
 msgid "Type in a custom command"
 msgstr "فەرمانێکی تایبەت لێرە بنووسە"
 
-#: src/Startup/Widgets/AppChooser.vala:53
+#: src/Startup/Widgets/AppChooser.vala:50
 msgid "Cancel"
 msgstr "هەڵوەشاندنەوە"
 
 #. TRANSLATORS: This string is used by screen reader
-#: src/Startup/Widgets/AppChooser.vala:56
+#: src/Startup/Widgets/AppChooser.vala:53
 #, fuzzy
 #| msgid "Remove Selected Startup App"
 msgid "Select startup app"
 msgstr "سڕینەوەی بەرنامەی دیاریکراو لە لیستی دەستپێک"
 
-#. TRANSLATORS: This is description for for screen reader. %s can be "Web Browser" or "Music Player" and so on.
-#: src/Defaults/DefaultPlug.vala:124
 #, fuzzy, c-format
-#| msgid "Defaults"
-msgid "Default %s"
-msgstr "بنەڕەتییەکان"
+#~| msgid "Defaults"
+#~ msgid "Default %s"
+#~ msgstr "بنەڕەتییەکان"
 
 #~ msgid "Web Browser:"
 #~ msgstr "وێبگەڕ:"
