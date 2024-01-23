@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-12-04 17:32+0000\n"
-"PO-Revision-Date: 2023-03-12 14:25+0000\n"
+"PO-Revision-Date: 2024-01-24 03:32+0000\n"
 "Last-Translator: NorwayFun <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <https://l10n.elementary.io/projects/switchboard/"
 "applications-plug-extra/ka/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.14.2\n"
+"X-Generator: Weblate 5.0.2\n"
 
 #: data/applications.metainfo.xml.in:10
 msgid "Applications Settings"
@@ -29,7 +29,7 @@ msgstr "ნაგულისხმები და ჩატვირთვი�
 
 #: data/applications.metainfo.xml.in:33
 msgid "elementary, Inc."
-msgstr ""
+msgstr "elementary, Inc."
 
 #: data/applications.metainfo.xml.in:40 data/applications.metainfo.xml.in:57
 #: data/applications.metainfo.xml.in:72 data/applications.metainfo.xml.in:87
@@ -49,14 +49,15 @@ msgstr "ახალი ფუნქციები:"
 #: data/applications.metainfo.xml.in:55
 msgid "Properly handle autostart files created by the Background Portal"
 msgstr ""
+"Background Portal-ის მიერ შექმნილი ავტოგაშვების ფაილების სწორი დამუშავება"
 
 #: data/applications.metainfo.xml.in:59
 msgid "App chooser in Startup is a dialog instead of a popover"
-msgstr ""
+msgstr "ავტოჩატვირთვადი აპების ამრჩევი ახლა დიალოგია, მხტუნარას მაგიერ"
 
 #: data/applications.metainfo.xml.in:60
 msgid "Improve screen reader descriptions"
-msgstr ""
+msgstr "ეკრანის წამკითხველის აღმწერების გაუმჯობესება"
 
 #: data/applications.metainfo.xml.in:74
 msgid "Fix an issue with setting the incorrect app for certain files types"
