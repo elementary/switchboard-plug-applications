@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-12-04 17:32+0000\n"
-"PO-Revision-Date: 2023-06-28 13:07+0000\n"
-"Last-Translator: anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2024-02-08 15:11+0000\n"
+"Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
 "Language-Team: Portuguese <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-applications/pt/>\n"
 "Language: pt\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.17\n"
+"X-Generator: Weblate 5.0.2\n"
 "X-Launchpad-Export-Date: 2017-01-01 05:40+0000\n"
 
 #: src/Plug.vala:44
@@ -137,12 +137,12 @@ msgstr "Procurar aplicações"
 
 #: src/Permissions/PermissionsPlug.vala:54
 msgid "Try changing search terms."
-msgstr ""
+msgstr "Tente alterar os termos de pesquisa."
 
 #: src/Permissions/PermissionsPlug.vala:121
 #, c-format
 msgid "No Results for “%s”"
-msgstr ""
+msgstr "Sem resultados para \"%s\""
 
 #: src/Permissions/Widgets/AppSettingsView.vala:33
 msgid "Access your entire Home folder, including any hidden folders."
@@ -191,10 +191,9 @@ msgid "Reset to Defaults"
 msgstr "Repor predefinições"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:182
-#, fuzzy, c-format
-#| msgid "Permissions"
+#, c-format
 msgid "%s permissions"
-msgstr "Permissões"
+msgstr "%s permissões"
 
 #. / Translators: This is a delimiter that separates types of permissions in the sidebar description
 #: src/Permissions/Widgets/SidebarRow.vala:89
@@ -221,7 +220,7 @@ msgstr "Comando personalizado"
 
 #: src/Startup/Widgets/AppRow.vala:46
 msgid "Remove this app from startup"
-msgstr ""
+msgstr "Remover esta aplicação do arranque"
 
 #: src/Startup/Widgets/AppRow.vala:51
 #, c-format
@@ -238,10 +237,8 @@ msgstr "Cancelar"
 
 #. TRANSLATORS: This string is used by screen reader
 #: src/Startup/Widgets/AppChooser.vala:53
-#, fuzzy
-#| msgid "Remove Selected Startup App"
 msgid "Select startup app"
-msgstr "Remover a aplicação seleccionada do arranque"
+msgstr "Selecionar a aplicação de arranque"
 
 #, fuzzy, c-format
 #~| msgid "Defaults"
