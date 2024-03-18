@@ -6,7 +6,14 @@
  *              Chris Triantafillis <christriant1995@gmail.com>
  */
 
-public class Defaults.Plug : Gtk.Box {
+public class Defaults.Plug : Switchboard.SettingsPage {
+    public Plug () {
+        Object (
+            title: _("Defaults"),
+            icon: new ThemedIcon ("preferences-desktop")
+        );
+    }
+
     construct {
         var browser_setting = new SettingsChild (
             _("Web Browser"),
@@ -65,19 +72,7 @@ public class Defaults.Plug : Gtk.Box {
         flowbox.append (videos_setting);
         flowbox.append (files_setting);
 
-        var clamp = new Adw.Clamp () {
-            child = flowbox,
-            margin_end = 12,
-            margin_bottom = 12,
-            margin_start = 12
-        };
-
-        var scrolled_window = new Gtk.ScrolledWindow () {
-            child = clamp
-        };
-
-        append (scrolled_window);
-
+        child = flowbox;
     }
 
     private class SettingsChild : Gtk.FlowBoxChild {
