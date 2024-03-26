@@ -61,7 +61,7 @@ public class Permissions.Widgets.PermissionSettingsWidget : Gtk.ListBoxRow {
         };
 
         var grid = new Gtk.Grid () {
-            column_spacing = 12
+            column_spacing = 6
         };
         grid.attach (icon, 0, 0, 1, 2);
         grid.attach (name_label, 1, 0);
