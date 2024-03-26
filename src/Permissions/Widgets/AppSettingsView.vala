@@ -88,6 +88,7 @@ public class Permissions.Widgets.AppSettingsView : Switchboard.SettingsPage {
             hexpand = true,
             vexpand = true
         };
+        list_box.add_css_class ("boxed-list");
         list_box.add_css_class (Granite.STYLE_CLASS_RICH_LIST);
         list_box.append (homefolder_widget);
         list_box.append (sysfolders_widget);
@@ -97,7 +98,6 @@ public class Permissions.Widgets.AppSettingsView : Switchboard.SettingsPage {
         list_box.append (printing_widget);
         list_box.append (ssh_widget);
         list_box.append (gpu_widget);
-        list_box.add_css_class (Granite.STYLE_CLASS_BACKGROUND);
 
         child = list_box;
 

@@ -36,13 +36,14 @@ public class Permissions.Backend.App : GLib.Object {
 
     construct {
         id = installed_ref.get_name ();
-        name = installed_ref.get_appdata_name () ?? id;
 
         var appinfo = new GLib.DesktopAppInfo (id + ".desktop");
-        if (appinfo != null && appinfo.get_icon () != null) {
-            icon = appinfo.get_icon ();
+        if (appinfo != null) {
+            name = appinfo.get_name ();
+            icon = appinfo.get_icon () ?? new ThemedIcon ("application-default-icon");
         } else {
             icon = new ThemedIcon ("application-default-icon");
+            name = id;
         }
 
         settings = new GenericArray<Backend.PermissionSettings> ();
