@@ -22,11 +22,53 @@
 public class Permissions.Widgets.AppSettingsView : Switchboard.SettingsPage {
     public Backend.App? selected_app { get; set; default = null; }
 
-    private Gtk.ListBox list_box;
+    private const string BACKGROUND_TABLE = "background";
+    private const string BACKGROUND_ID = "background";
+
+    private Gtk.ListBox sandbox_box;
     private Gtk.Button reset_button;
+    private Gtk.Switch background_switch;
+
+    private static PermissionStore permission_store;
+
+    static construct {
+        Bus.get_proxy.begin <PermissionStore> (BusType.SESSION, "org.freedesktop.impl.portal.PermissionStore", "/org/freedesktop/impl/portal/PermissionStore", 0, null, (obj, res) => {
+            try {
+                permission_store = Bus.get_proxy.end (res);
+            } catch (Error e) {
+                critical (e.message);
+            }
+        });
+    }
 
     construct {
         notify["selected-app"].connect (update_view);
+
+        var background_image = new Gtk.Image.from_icon_name ("image-missing") {
+            icon_size = LARGE
+        };
+
+        var background_label = new Gtk.Label (_("Run in background")) {
+            hexpand = true,
+            xalign = 0
+        };
+
+        background_switch = new Gtk.Switch () {
+            valign = CENTER
+        };
+
+        var background_box = new Gtk.Box (HORIZONTAL, 6);
+        background_box.append (background_image);
+        background_box.append (background_label);
+        background_box.append (background_switch);
+
+        var permission_box = new Gtk.ListBox () {
+            hexpand = true,
+            selection_mode = NONE
+        };
+        permission_box.add_css_class ("boxed-list");
+        permission_box.add_css_class (Granite.STYLE_CLASS_RICH_LIST);
+        permission_box.append (background_box);
 
         var homefolder_widget = new PermissionSettingsWidget (
             Plug.permission_names["filesystems=home"],
@@ -84,23 +126,27 @@ public class Permissions.Widgets.AppSettingsView : Switchboard.SettingsPage {
             new Backend.PermissionSettings ("devices=dri")
         );
 
-        list_box = new Gtk.ListBox () {
+        sandbox_box = new Gtk.ListBox () {
             hexpand = true,
             vexpand = true,
             selection_mode = NONE
         };
-        list_box.add_css_class ("boxed-list");
-        list_box.add_css_class (Granite.STYLE_CLASS_RICH_LIST);
-        list_box.append (homefolder_widget);
-        list_box.append (sysfolders_widget);
-        list_box.append (devices_widget);
-        list_box.append (network_widget);
-        list_box.append (bluetooth_widget);
-        list_box.append (printing_widget);
-        list_box.append (ssh_widget);
-        list_box.append (gpu_widget);
+        sandbox_box.add_css_class ("boxed-list");
+        sandbox_box.add_css_class (Granite.STYLE_CLASS_RICH_LIST);
+        sandbox_box.append (homefolder_widget);
+        sandbox_box.append (sysfolders_widget);
+        sandbox_box.append (devices_widget);
+        sandbox_box.append (network_widget);
+        sandbox_box.append (bluetooth_widget);
+        sandbox_box.append (printing_widget);
+        sandbox_box.append (ssh_widget);
+        sandbox_box.append (gpu_widget);
 
-        child = list_box;
+        var box = new Gtk.Box (VERTICAL, 24);
+        box.append (permission_box);
+        box.append (sandbox_box);
+
+        child = box;
 
         reset_button = add_button (_("Reset to Defaults"));
 
@@ -124,7 +170,7 @@ public class Permissions.Widgets.AppSettingsView : Switchboard.SettingsPage {
     }
 
     private void initialize_settings_view () {
-        var children = list_box.observe_children ();
+        var children = sandbox_box.observe_children ();
         for (var iter = 0; iter < children.get_n_items (); iter++) {
             if (children.get_item (iter) is PermissionSettingsWidget) {
                 var widget = (PermissionSettingsWidget) children.get_item (iter);
@@ -140,14 +186,14 @@ public class Permissions.Widgets.AppSettingsView : Switchboard.SettingsPage {
         initialize_settings_view ();
 
         if (selected_app == null) {
-            list_box.sensitive = false;
+            sandbox_box.sensitive = false;
             reset_button.sensitive = false;
             return;
         }
 
         var should_enable_reset = false;
         selected_app.settings.foreach ((settings) => {
-            var children = list_box.observe_children ();
+            var children = sandbox_box.observe_children ();
             for (var iter = 0; iter < children.get_n_items (); iter++) {
                 if (children.get_item (iter) is PermissionSettingsWidget) {
                     var widget = (PermissionSettingsWidget) children.get_item (iter);
@@ -164,9 +210,14 @@ public class Permissions.Widgets.AppSettingsView : Switchboard.SettingsPage {
                 }
             }
 
-            list_box.sensitive = true;
+            sandbox_box.sensitive = true;
             reset_button.sensitive = should_enable_reset;
         });
+
+        if (permission_store != null) {
+            var string_array = permission_store.get_permission (BACKGROUND_TABLE, BACKGROUND_ID, selected_app.id);
+            background_switch.active = string_array[0] == "yes";
+        }
 
         update_property (Gtk.AccessibleProperty.LABEL, _("%s permissions").printf (selected_app.name), -1);
         title = selected_app.name;
