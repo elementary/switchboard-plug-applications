@@ -70,11 +70,15 @@ public class ApplicationsPlug : Switchboard.Plug {
                 widget = widget.get_next_sibling ();
             }
 
+            var headerbar = new Adw.HeaderBar () {
+                title_widget = stack_switcher
+            };
+            headerbar.add_css_class (Granite.STYLE_CLASS_FLAT);
+
             grid = new Gtk.Grid () {
-                margin_top = 12,
                 row_spacing = 24
             };
-            grid.attach (stack_switcher, 0, 0);
+            grid.attach (headerbar, 0, 0);
             grid.attach (stack, 0, 1);
         }
 
