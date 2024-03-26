@@ -86,7 +86,8 @@ public class Permissions.Widgets.AppSettingsView : Switchboard.SettingsPage {
 
         list_box = new Gtk.ListBox () {
             hexpand = true,
-            vexpand = true
+            vexpand = true,
+            selection_mode = NONE
         };
         list_box.add_css_class ("boxed-list");
         list_box.add_css_class (Granite.STYLE_CLASS_RICH_LIST);
