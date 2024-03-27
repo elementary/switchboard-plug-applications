@@ -30,23 +30,6 @@ public class Permissions.Widgets.AppSettingsView : Switchboard.SettingsPage {
     private Gtk.Button reset_button;
     private Gtk.Switch background_switch;
 
-    private static PermissionStore? permission_store = null;
-
-    static construct {
-        Bus.get_proxy.begin <PermissionStore> (
-            BusType.SESSION,
-            "org.freedesktop.impl.portal.PermissionStore",
-            "/org/freedesktop/impl/portal/PermissionStore",
-            0, null,
-        (obj, res) => {
-            try {
-                permission_store = Bus.get_proxy.end (res);
-            } catch (Error e) {
-                critical (e.message);
-            }
-        });
-    }
-
     construct {
         notify["selected-app"].connect (update_view);
 
@@ -175,7 +158,7 @@ public class Permissions.Widgets.AppSettingsView : Switchboard.SettingsPage {
                 permissions += "no";
             }
 
-            permission_store.set_permission (BACKGROUND_TABLE, true, BACKGROUND_ID, selected_app.id, permissions);
+            PermissionStore.get_default ().dbus.set_permission (BACKGROUND_TABLE, true, BACKGROUND_ID, selected_app.id, permissions);
         });
 
         reset_button.clicked.connect (() => {
@@ -230,17 +213,8 @@ public class Permissions.Widgets.AppSettingsView : Switchboard.SettingsPage {
             reset_button.sensitive = should_enable_reset;
         });
 
-        if (permission_store == null) {
-            // permission_box.sensitive = false;
-
-            // this.notify["permission-store"].connect (() => {
-            //     critical ("notified");
-            //     update_permissions ();
-            //     permission_box.sensitive = true;
-            // });
-        } else {
-            update_permissions ();
-        }
+        update_permissions ();
+        PermissionStore.get_default ().notify["dbus"].connect (update_permissions);
 
         update_property (Gtk.AccessibleProperty.LABEL, _("%s permissions").printf (selected_app.name), -1);
         title = selected_app.name;
@@ -248,7 +222,15 @@ public class Permissions.Widgets.AppSettingsView : Switchboard.SettingsPage {
     }
 
     private void update_permissions () {
-        var background_permission = permission_store.get_permission (
+        var permission_store = PermissionStore.get_default ();
+        if (permission_store.dbus == null) {
+            permission_box.sensitive = false;
+            return;
+        }
+
+        permission_box.sensitive = true;
+
+        var background_permission = permission_store.dbus.get_permission (
             BACKGROUND_TABLE, BACKGROUND_ID, selected_app.id
         );
 
