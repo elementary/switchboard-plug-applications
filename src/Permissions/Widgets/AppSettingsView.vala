@@ -37,19 +37,29 @@ public class Permissions.Widgets.AppSettingsView : Switchboard.SettingsPage {
             icon_size = LARGE
         };
 
-        var background_label = new Gtk.Label (_("Run in background")) {
+        var background_label = new Gtk.Label (_("Background Activity")) {
             hexpand = true,
             xalign = 0
         };
+
+        var background_description = new Gtk.Label (_("Perform tasks and use system resources while its window is closed.")) {
+            xalign = 0,
+            wrap = true
+        };
+        background_description.add_css_class (Granite.STYLE_CLASS_DIM_LABEL);
+        background_description.add_css_class (Granite.STYLE_CLASS_SMALL_LABEL);
 
         background_switch = new Gtk.Switch () {
             valign = CENTER
         };
 
-        var background_box = new Gtk.Box (HORIZONTAL, 6);
-        background_box.append (background_image);
-        background_box.append (background_label);
-        background_box.append (background_switch);
+        var background_grid = new Gtk.Grid () {
+            column_spacing = 6
+        };
+        background_grid.attach (background_image, 0, 0, 1, 2);
+        background_grid.attach (background_label, 1, 0);
+        background_grid.attach (background_description, 1, 1);
+        background_grid.attach (background_switch, 2, 0, 1, 2);
 
         permission_box = new Gtk.ListBox () {
             hexpand = true,
@@ -57,7 +67,7 @@ public class Permissions.Widgets.AppSettingsView : Switchboard.SettingsPage {
         };
         permission_box.add_css_class ("boxed-list");
         permission_box.add_css_class (Granite.STYLE_CLASS_RICH_LIST);
-        permission_box.append (background_box);
+        permission_box.append (background_grid);
 
         var homefolder_widget = new PermissionSettingsWidget (
             Plug.permission_names["filesystems=home"],
