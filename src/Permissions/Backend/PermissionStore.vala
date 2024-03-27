@@ -6,8 +6,8 @@
 [DBus (name = "org.freedesktop.impl.portal.PermissionStore", timeout = 120000)]
 public interface PermissionStoreDBus : GLib.Object {
     public signal void changed (string table, string id, bool deleted, GLib.Variant data, [DBus (signature = "a{sas}")] GLib.Variant permissions);
-    public abstract void set_permission (string table, bool create, string id, string app, string[] permissions) throws DBusError, IOError;
-    public abstract string[] get_permission (string table, string id, string app) throws DBusError, IOError;
+    public abstract async void set_permission (string table, bool create, string id, string app, string[] permissions) throws DBusError, IOError;
+    public abstract async string[] get_permission (string table, string id, string app) throws DBusError, IOError;
 }
 
 public class Permissions.PermissionStore : GLib.Object {
