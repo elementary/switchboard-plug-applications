@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gresources>
+  <gresource prefix="/io/elementary/settings/icons">
+    <file alias="permissions-background.svg" compressed="true">background.svg</file>
+  </gresource>
+</gresources>

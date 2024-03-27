@@ -1,5 +1,5 @@
 /*
-* Copyright 2020 elementary, Inc. (https://elementary.io)
+* Copyright 2020-2024 elementary, Inc. (https://elementary.io)
 *
 * This program is free software; you can redistribute it and/or
 * modify it under the terms of the GNU General Public
@@ -19,112 +19,113 @@
 * Authored by: Marius Meisenzahl <mariusmeisenzahl@gmail.com>
 */
 
-public class Permissions.Widgets.AppSettingsView : Gtk.Grid {
+public class Permissions.Widgets.AppSettingsView : Switchboard.SettingsPage {
     public Backend.App? selected_app { get; set; default = null; }
 
-    private Gtk.ListBox list_box;
+    private const string BACKGROUND_TABLE = "background";
+    private const string BACKGROUND_ID = "background";
+    private const string LOCATION_TABLE = "location";
+    private const string LOCATION_ID = "location";
+
+    private string location_timestamp = "0";
+
+    private Gtk.ListBox sandbox_box;
+    private Gtk.ListBox permission_box;
     private Gtk.Button reset_button;
+    private PermissionSettingsWidget background_row;
+    private PermissionSettingsWidget location_row;
 
     construct {
         notify["selected-app"].connect (update_view);
 
-        var homefolder_widget = new PermissionSettingsWidget (
-            Plug.permission_names["filesystems=home"],
-            _("Access your entire Home folder, including any hidden folders."),
-            "user-home",
-            new Backend.PermissionSettings ("filesystems=home")
+        background_row = new PermissionSettingsWidget (
+            _("Background Activity"),
+            _("Perform tasks and use system resources while its window is closed."),
+            "permissions-background"
         );
 
-        var sysfolders_widget = new PermissionSettingsWidget (
-            Plug.permission_names["filesystems=host"],
-            _("Access system folders, not including the operating system or system internals. This includes users' Home folders."),
-            "drive-harddisk",
-            new Backend.PermissionSettings ("filesystems=host")
+        location_row = new PermissionSettingsWidget (
+            _("Location Services"),
+            _("Determine the location of this device."),
+            "preferences-system-privacy-location"
         );
 
-        var devices_widget = new PermissionSettingsWidget (
-            Plug.permission_names["devices=all"],
-            _("Access all devices, such as webcams, microphones, and connected USB devices."),
-            "camera-web",
-            new Backend.PermissionSettings ("devices=all")
-        );
-
-        var network_widget = new PermissionSettingsWidget (
-            Plug.permission_names["shared=network"],
-            _("Access the Internet and local networks."),
-            "preferences-system-network",
-            new Backend.PermissionSettings ("shared=network")
-        );
-
-        var bluetooth_widget = new PermissionSettingsWidget (
-            Plug.permission_names["features=bluetooth"],
-            _("Manage Bluetooth devices including pairing, unpairing, and discovery."),
-            "bluetooth",
-            new Backend.PermissionSettings ("features=bluetooth")
-        );
-
-        var printing_widget = new PermissionSettingsWidget (
-            Plug.permission_names["sockets=cups"],
-            _("Access printers."),
-            "printer",
-            new Backend.PermissionSettings ("sockets=cups")
-        );
-
-        var ssh_widget = new PermissionSettingsWidget (
-            Plug.permission_names["sockets=ssh-auth"],
-            _("Access other devices on the network via SSH."),
-            "utilities-terminal",
-            new Backend.PermissionSettings ("sockets=ssh-auth")
-        );
-
-        var gpu_widget = new PermissionSettingsWidget (
-            Plug.permission_names["devices=dri"],
-            _("Accelerate graphical output."),
-            "application-x-firmware",
-            new Backend.PermissionSettings ("devices=dri")
-        );
-
-        list_box = new Gtk.ListBox () {
+        permission_box = new Gtk.ListBox () {
             hexpand = true,
-            vexpand = true
+            selection_mode = NONE
         };
-        list_box.add_css_class (Granite.STYLE_CLASS_RICH_LIST);
-        list_box.append (homefolder_widget);
-        list_box.append (sysfolders_widget);
-        list_box.append (devices_widget);
-        list_box.append (network_widget);
-        list_box.append (bluetooth_widget);
-        list_box.append (printing_widget);
-        list_box.append (ssh_widget);
-        list_box.append (gpu_widget);
+        permission_box.add_css_class ("boxed-list");
+        permission_box.add_css_class (Granite.STYLE_CLASS_RICH_LIST);
+        permission_box.append (background_row);
+        permission_box.append (location_row);
 
-        var scrolled_window = new Gtk.ScrolledWindow () {
-            child = list_box
+        sandbox_box = new Gtk.ListBox () {
+            hexpand = true,
+            vexpand = true,
+            selection_mode = NONE
         };
+        sandbox_box.add_css_class ("boxed-list");
+        sandbox_box.add_css_class (Granite.STYLE_CLASS_RICH_LIST);
 
-        var frame = new Gtk.Frame (null) {
-            child = scrolled_window
-        };
-        frame.add_css_class (Granite.STYLE_CLASS_VIEW);
+        var box = new Gtk.Box (VERTICAL, 24);
+        box.append (permission_box);
+        box.append (sandbox_box);
 
-        reset_button = new Gtk.Button.with_label (_("Reset to Defaults")) {
-            halign = Gtk.Align.END
-        };
+        child = box;
 
-        row_spacing = 24;
-        attach (frame, 0, 0);
-        attach (reset_button, 0, 1);
+        reset_button = add_button (_("Reset to Defaults"));
 
         update_view ();
 
-        homefolder_widget.changed_permission_settings.connect (change_permission_settings);
-        sysfolders_widget.changed_permission_settings.connect (change_permission_settings);
-        devices_widget.changed_permission_settings.connect (change_permission_settings);
-        network_widget.changed_permission_settings.connect (change_permission_settings);
-        bluetooth_widget.changed_permission_settings.connect (change_permission_settings);
-        printing_widget.changed_permission_settings.connect (change_permission_settings);
-        ssh_widget.changed_permission_settings.connect (change_permission_settings);
-        gpu_widget.changed_permission_settings.connect (change_permission_settings);
+        background_row.notify["active"].connect (() => {
+            string[] permissions;
+            if (background_row.active) {
+                permissions += "yes";
+            } else {
+                permissions += "no";
+            }
+
+            try {
+                PermissionStore.get_default ().dbus.set_permission.begin (BACKGROUND_TABLE, true, BACKGROUND_ID, selected_app.id, permissions);
+            } catch (Error e) {
+                critical (e.message);
+                var dialog = new Granite.MessageDialog (
+                    _("Couldn't set background activity permission"),
+                    e.message,
+                    new ThemedIcon ("preferences-system")
+                ) {
+                    badge_icon = new ThemedIcon ("dialog-error"),
+                    modal = true,
+                    transient_for = (Gtk.Window) get_root ()
+                };
+                dialog.present ();
+                dialog.response.connect (dialog.destroy);
+            }
+        });
+
+        location_row.notify["active"].connect (() => {
+            string[] permissions = {
+                location_row.active ? "EXACT" : "NONE",
+                location_timestamp
+            };
+
+            try {
+                PermissionStore.get_default ().dbus.set_permission.begin (LOCATION_TABLE, false, LOCATION_ID, selected_app.id, permissions);
+            } catch (Error e) {
+                critical (e.message);
+                var dialog = new Granite.MessageDialog (
+                    _("Couldn't set location services permission"),
+                    e.message,
+                    new ThemedIcon ("preferences-system")
+                ) {
+                    badge_icon = new ThemedIcon ("dialog-error"),
+                    modal = true,
+                    transient_for = (Gtk.Window) get_root ()
+                };
+                dialog.present ();
+                dialog.response.connect (dialog.destroy);
+            }
+        });
 
         reset_button.clicked.connect (() => {
             if (selected_app != null) {
@@ -134,52 +135,140 @@ public class Permissions.Widgets.AppSettingsView : Gtk.Grid {
         });
     }
 
-    private void initialize_settings_view () {
-        var children = list_box.observe_children ();
-        for (var iter = 0; iter < children.get_n_items (); iter++) {
-            if (children.get_item (iter) is PermissionSettingsWidget) {
-                var widget = (PermissionSettingsWidget) children.get_item (iter);
-                widget.do_notify = false;
-                widget.settings.standard = false;
-                widget.settings.enabled = false;
-                widget.do_notify = true;
-            }
-        }
-    }
-
     private void update_view () {
-        initialize_settings_view ();
+        sandbox_box.remove_all ();
 
         if (selected_app == null) {
-            list_box.sensitive = false;
-            reset_button.sensitive = false;
+            sensitive = false;
             return;
         }
 
         var should_enable_reset = false;
         selected_app.settings.foreach ((settings) => {
-            var children = list_box.observe_children ();
-            for (var iter = 0; iter < children.get_n_items (); iter++) {
-                if (children.get_item (iter) is PermissionSettingsWidget) {
-                    var widget = (PermissionSettingsWidget) children.get_item (iter);
-                    if (widget.settings.context == settings.context) {
-                        widget.do_notify = false;
-                        widget.settings.standard = settings.standard;
-                        widget.settings.enabled = settings.enabled;
-                        widget.do_notify = true;
+            string description = "Unknown";
+            string icon_name = "image-missing";
 
-                        if (settings.enabled != settings.standard) {
-                            should_enable_reset = true;
-                        }
-                    }
-                }
+            switch (settings.context) {
+                case "filesystems=home":
+                    description = _("Access your entire Home folder, including any hidden folders.");
+                    icon_name = "user-home";
+                    break;
+                case "filesystems=host":
+                    description = _("Access system folders, not including the operating system or system internals. This includes users' Home folders.");
+                    icon_name = "drive-harddisk";
+                    break;
+                case "devices=all":
+                    description = _("Access all devices, such as webcams, microphones, and connected USB devices.");
+                    icon_name = "camera-web";
+                    break;
+                case "shared=network":
+                    description = _("Access the Internet and local networks.");
+                    icon_name = "preferences-system-network";
+                    break;
+                case "features=bluetooth":
+                    description = _("Manage Bluetooth devices including pairing, unpairing, and discovery.");
+                    icon_name = "bluetooth";
+                    break;
+                case "sockets=cups":
+                    description = _("Access printers.");
+                    icon_name = "printer";
+                    break;
+                case "sockets=ssh-auth":
+                    description = _("Access other devices on the network via SSH.");
+                    icon_name = "utilities-terminal";
+                    break;
+                case "devices=dri":
+                    description = _("Accelerate graphical output.");
+                    icon_name = "application-x-firmware";
+                    break;
             }
 
-            list_box.sensitive = true;
-            reset_button.sensitive = should_enable_reset;
+            var override_row = new PermissionSettingsWidget (
+                Plug.permission_names[settings.context],
+                description,
+                icon_name
+            );
+
+            settings.bind_property ("enabled", override_row, "active", SYNC_CREATE | BIDIRECTIONAL);
+            settings.notify["enabled"].connect (() => {
+                    change_permission_settings (settings);
+            });
+
+            if (settings.enabled != settings.standard) {
+                should_enable_reset = true;
+            }
+
+            sandbox_box.append (override_row);
         });
 
+        sensitive = true;
+        reset_button.sensitive = should_enable_reset;
+
+        update_permissions ();
+        var permission_store = PermissionStore.get_default ();
+        permission_store.notify["dbus"].connect (update_permissions);
+        permission_store.changed.connect (update_permissions);
+
         update_property (Gtk.AccessibleProperty.LABEL, _("%s permissions").printf (selected_app.name), -1);
+        title = selected_app.name;
+        icon = selected_app.icon;
+    }
+
+    private void update_permissions () {
+        var permission_store = PermissionStore.get_default ();
+        if (permission_store.dbus == null) {
+            permission_box.sensitive = false;
+            return;
+        }
+
+        permission_box.sensitive = true;
+
+        permission_store.dbus.get_permission.begin (BACKGROUND_TABLE, BACKGROUND_ID, selected_app.id, (obj, res) => {
+            try {
+                var background_permission = permission_store.dbus.get_permission.end (res);
+
+                // A lack of explicit permission is considered permission
+                // to allow pre-emptive opt-out
+                background_row.active = background_permission[0] != "no";
+            } catch (Error e) {
+                critical (e.message);
+                var dialog = new Granite.MessageDialog (
+                    _("Couldn't get background activity permission"),
+                    e.message,
+                    new ThemedIcon ("preferences-system")
+                ) {
+                    badge_icon = new ThemedIcon ("dialog-error"),
+                    modal = true,
+                    transient_for = (Gtk.Window) get_root ()
+                };
+                dialog.present ();
+                dialog.response.connect (dialog.destroy);
+            }
+        });
+
+        permission_store.dbus.get_permission.begin (LOCATION_TABLE, LOCATION_ID, selected_app.id, (obj, res) => {
+            try {
+                var location_permission = permission_store.dbus.get_permission.end (res);
+
+                // A lack of explicit permission is considered permission
+                // to allow pre-emptive opt-out
+                location_row.active = location_permission[0] != "NONE";
+                location_timestamp = location_permission[1];
+            } catch (Error e) {
+                critical (e.message);
+                var dialog = new Granite.MessageDialog (
+                    _("Couldn't get background activity permission"),
+                    e.message,
+                    new ThemedIcon ("preferences-system")
+                ) {
+                    badge_icon = new ThemedIcon ("dialog-error"),
+                    modal = true,
+                    transient_for = (Gtk.Window) get_root ()
+                };
+                dialog.present ();
+                dialog.response.connect (dialog.destroy);
+            }
+        });
     }
 
     private void change_permission_settings (Backend.PermissionSettings settings) {

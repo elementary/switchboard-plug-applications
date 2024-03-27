@@ -73,7 +73,10 @@ public class Permissions.Plug : Gtk.Box {
             child = scrolled_window
         };
 
-        var sidebar = new Gtk.Box (VERTICAL, 12);
+        var sidebar = new Gtk.Box (VERTICAL, 12) {
+            margin_bottom = 12,
+            margin_start = 12
+        };
         sidebar.append (search_entry);
         sidebar.append (frame);
 
@@ -94,12 +97,7 @@ public class Permissions.Plug : Gtk.Box {
             show_row (row);
         }
 
-        var grid = new Gtk.Grid () {
-            margin_end = 12,
-            margin_bottom = 12,
-            margin_start = 12,
-            column_spacing = 12
-        };
+        var grid = new Gtk.Grid ();
         grid.attach (sidebar, 0, 0, 1, 1);
         grid.attach (app_settings_view, 1, 0, 2, 1);
 
