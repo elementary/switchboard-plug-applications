@@ -1,5 +1,5 @@
 /*
-* Copyright 2020 elementary, Inc. (https://elementary.io)
+* Copyright 2020-2024 elementary, Inc. (https://elementary.io)
 *
 * This program is free software; you can redistribute it and/or
 * modify it under the terms of the GNU General Public
@@ -32,7 +32,12 @@ public class Permissions.Widgets.AppSettingsView : Switchboard.SettingsPage {
     private static PermissionStore permission_store;
 
     static construct {
-        Bus.get_proxy.begin <PermissionStore> (BusType.SESSION, "org.freedesktop.impl.portal.PermissionStore", "/org/freedesktop/impl/portal/PermissionStore", 0, null, (obj, res) => {
+        Bus.get_proxy.begin <PermissionStore> (
+            BusType.SESSION,
+            "org.freedesktop.impl.portal.PermissionStore",
+            "/org/freedesktop/impl/portal/PermissionStore",
+            0, null,
+        (obj, res) => {
             try {
                 permission_store = Bus.get_proxy.end (res);
             } catch (Error e) {
@@ -161,6 +166,17 @@ public class Permissions.Widgets.AppSettingsView : Switchboard.SettingsPage {
         ssh_widget.changed_permission_settings.connect (change_permission_settings);
         gpu_widget.changed_permission_settings.connect (change_permission_settings);
 
+        background_switch.notify["active"].connect (() => {
+            string[] permissions;
+            if (background_switch.active) {
+                permissions += "yes";
+            } else {
+                permissions += "no";
+            }
+
+            permission_store.set_permission (BACKGROUND_TABLE, true, BACKGROUND_ID, selected_app.id, permissions);
+        });
+
         reset_button.clicked.connect (() => {
             if (selected_app != null) {
                 selected_app.reset_settings_to_standard ();
@@ -186,8 +202,7 @@ public class Permissions.Widgets.AppSettingsView : Switchboard.SettingsPage {
         initialize_settings_view ();
 
         if (selected_app == null) {
-            sandbox_box.sensitive = false;
-            reset_button.sensitive = false;
+            sensitive = false;
             return;
         }
 
@@ -210,7 +225,7 @@ public class Permissions.Widgets.AppSettingsView : Switchboard.SettingsPage {
                 }
             }
 
-            sandbox_box.sensitive = true;
+            sensitive = true;
             reset_button.sensitive = should_enable_reset;
         });
 
