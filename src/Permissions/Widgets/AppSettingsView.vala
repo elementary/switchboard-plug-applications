@@ -24,11 +24,16 @@ public class Permissions.Widgets.AppSettingsView : Switchboard.SettingsPage {
 
     private const string BACKGROUND_TABLE = "background";
     private const string BACKGROUND_ID = "background";
+    private const string LOCATION_TABLE = "location";
+    private const string LOCATION_ID = "location";
+
+    private string location_timestamp = "0";
 
     private Gtk.ListBox sandbox_box;
     private Gtk.ListBox permission_box;
     private Gtk.Button reset_button;
     private PermissionSettingsWidget background_row;
+    private PermissionSettingsWidget location_row;
 
     construct {
         notify["selected-app"].connect (update_view);
@@ -39,6 +44,12 @@ public class Permissions.Widgets.AppSettingsView : Switchboard.SettingsPage {
             "permissions-background"
         );
 
+        location_row = new PermissionSettingsWidget (
+            _("Location Services"),
+            _("Determine the location of this device."),
+            "preferences-system-privacy-location"
+        );
+
         permission_box = new Gtk.ListBox () {
             hexpand = true,
             selection_mode = NONE
@@ -46,6 +57,7 @@ public class Permissions.Widgets.AppSettingsView : Switchboard.SettingsPage {
         permission_box.add_css_class ("boxed-list");
         permission_box.add_css_class (Granite.STYLE_CLASS_RICH_LIST);
         permission_box.append (background_row);
+        permission_box.append (location_row);
 
         sandbox_box = new Gtk.ListBox () {
             hexpand = true,
@@ -79,6 +91,30 @@ public class Permissions.Widgets.AppSettingsView : Switchboard.SettingsPage {
                 critical (e.message);
                 var dialog = new Granite.MessageDialog (
                     _("Couldn't set background activity permission"),
+                    e.message,
+                    new ThemedIcon ("preferences-system")
+                ) {
+                    badge_icon = new ThemedIcon ("dialog-error"),
+                    modal = true,
+                    transient_for = (Gtk.Window) get_root ()
+                };
+                dialog.present ();
+                dialog.response.connect (dialog.destroy);
+            }
+        });
+
+        location_row.notify["active"].connect (() => {
+            string[] permissions = {
+                location_row.active ? "EXACT" : "NONE",
+                location_timestamp
+            };
+
+            try {
+                PermissionStore.get_default ().dbus.set_permission.begin (LOCATION_TABLE, false, LOCATION_ID, selected_app.id, permissions);
+            } catch (Error e) {
+                critical (e.message);
+                var dialog = new Granite.MessageDialog (
+                    _("Couldn't set location services permission"),
                     e.message,
                     new ThemedIcon ("preferences-system")
                 ) {
@@ -194,6 +230,30 @@ public class Permissions.Widgets.AppSettingsView : Switchboard.SettingsPage {
                 // A lack of explicit permission is considered permission
                 // to allow pre-emptive opt-out
                 background_row.active = background_permission[0] != "no";
+            } catch (Error e) {
+                critical (e.message);
+                var dialog = new Granite.MessageDialog (
+                    _("Couldn't get background activity permission"),
+                    e.message,
+                    new ThemedIcon ("preferences-system")
+                ) {
+                    badge_icon = new ThemedIcon ("dialog-error"),
+                    modal = true,
+                    transient_for = (Gtk.Window) get_root ()
+                };
+                dialog.present ();
+                dialog.response.connect (dialog.destroy);
+            }
+        });
+
+        permission_store.dbus.get_permission.begin (LOCATION_TABLE, LOCATION_ID, selected_app.id, (obj, res) => {
+            try {
+                var location_permission = permission_store.dbus.get_permission.end (res);
+
+                // A lack of explicit permission is considered permission
+                // to allow pre-emptive opt-out
+                location_row.active = location_permission[0] != "NONE";
+                location_timestamp = location_permission[1];
             } catch (Error e) {
                 critical (e.message);
                 var dialog = new Granite.MessageDialog (
