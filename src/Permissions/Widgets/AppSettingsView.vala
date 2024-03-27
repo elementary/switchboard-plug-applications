@@ -214,7 +214,9 @@ public class Permissions.Widgets.AppSettingsView : Switchboard.SettingsPage {
         });
 
         update_permissions ();
-        PermissionStore.get_default ().notify["dbus"].connect (update_permissions);
+        var permission_store = PermissionStore.get_default ();
+        permission_store.notify["dbus"].connect (update_permissions);
+        permission_store.changed.connect (update_permissions);
 
         update_property (Gtk.AccessibleProperty.LABEL, _("%s permissions").printf (selected_app.name), -1);
         title = selected_app.name;
