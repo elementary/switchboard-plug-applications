@@ -28,38 +28,16 @@ public class Permissions.Widgets.AppSettingsView : Switchboard.SettingsPage {
     private Gtk.ListBox sandbox_box;
     private Gtk.ListBox permission_box;
     private Gtk.Button reset_button;
-    private Gtk.Switch background_switch;
+    private PermissionSettingsWidget background_row;
 
     construct {
         notify["selected-app"].connect (update_view);
 
-        var background_image = new Gtk.Image.from_icon_name ("permissions-background") {
-            icon_size = LARGE
-        };
-
-        var background_label = new Gtk.Label (_("Background Activity")) {
-            hexpand = true,
-            xalign = 0
-        };
-
-        var background_description = new Gtk.Label (_("Perform tasks and use system resources while its window is closed.")) {
-            xalign = 0,
-            wrap = true
-        };
-        background_description.add_css_class (Granite.STYLE_CLASS_DIM_LABEL);
-        background_description.add_css_class (Granite.STYLE_CLASS_SMALL_LABEL);
-
-        background_switch = new Gtk.Switch () {
-            valign = CENTER
-        };
-
-        var background_grid = new Gtk.Grid () {
-            column_spacing = 6
-        };
-        background_grid.attach (background_image, 0, 0, 1, 2);
-        background_grid.attach (background_label, 1, 0);
-        background_grid.attach (background_description, 1, 1);
-        background_grid.attach (background_switch, 2, 0, 1, 2);
+        background_row = new PermissionSettingsWidget (
+            _("Background Activity"),
+            _("Perform tasks and use system resources while its window is closed."),
+            "permissions-background"
+        );
 
         permission_box = new Gtk.ListBox () {
             hexpand = true,
@@ -67,63 +45,7 @@ public class Permissions.Widgets.AppSettingsView : Switchboard.SettingsPage {
         };
         permission_box.add_css_class ("boxed-list");
         permission_box.add_css_class (Granite.STYLE_CLASS_RICH_LIST);
-        permission_box.append (background_grid);
-
-        var homefolder_widget = new PermissionSettingsWidget (
-            Plug.permission_names["filesystems=home"],
-            _("Access your entire Home folder, including any hidden folders."),
-            "user-home",
-            new Backend.PermissionSettings ("filesystems=home")
-        );
-
-        var sysfolders_widget = new PermissionSettingsWidget (
-            Plug.permission_names["filesystems=host"],
-            _("Access system folders, not including the operating system or system internals. This includes users' Home folders."),
-            "drive-harddisk",
-            new Backend.PermissionSettings ("filesystems=host")
-        );
-
-        var devices_widget = new PermissionSettingsWidget (
-            Plug.permission_names["devices=all"],
-            _("Access all devices, such as webcams, microphones, and connected USB devices."),
-            "camera-web",
-            new Backend.PermissionSettings ("devices=all")
-        );
-
-        var network_widget = new PermissionSettingsWidget (
-            Plug.permission_names["shared=network"],
-            _("Access the Internet and local networks."),
-            "preferences-system-network",
-            new Backend.PermissionSettings ("shared=network")
-        );
-
-        var bluetooth_widget = new PermissionSettingsWidget (
-            Plug.permission_names["features=bluetooth"],
-            _("Manage Bluetooth devices including pairing, unpairing, and discovery."),
-            "bluetooth",
-            new Backend.PermissionSettings ("features=bluetooth")
-        );
-
-        var printing_widget = new PermissionSettingsWidget (
-            Plug.permission_names["sockets=cups"],
-            _("Access printers."),
-            "printer",
-            new Backend.PermissionSettings ("sockets=cups")
-        );
-
-        var ssh_widget = new PermissionSettingsWidget (
-            Plug.permission_names["sockets=ssh-auth"],
-            _("Access other devices on the network via SSH."),
-            "utilities-terminal",
-            new Backend.PermissionSettings ("sockets=ssh-auth")
-        );
-
-        var gpu_widget = new PermissionSettingsWidget (
-            Plug.permission_names["devices=dri"],
-            _("Accelerate graphical output."),
-            "application-x-firmware",
-            new Backend.PermissionSettings ("devices=dri")
-        );
+        permission_box.append (background_row);
 
         sandbox_box = new Gtk.ListBox () {
             hexpand = true,
@@ -132,14 +54,6 @@ public class Permissions.Widgets.AppSettingsView : Switchboard.SettingsPage {
         };
         sandbox_box.add_css_class ("boxed-list");
         sandbox_box.add_css_class (Granite.STYLE_CLASS_RICH_LIST);
-        sandbox_box.append (homefolder_widget);
-        sandbox_box.append (sysfolders_widget);
-        sandbox_box.append (devices_widget);
-        sandbox_box.append (network_widget);
-        sandbox_box.append (bluetooth_widget);
-        sandbox_box.append (printing_widget);
-        sandbox_box.append (ssh_widget);
-        sandbox_box.append (gpu_widget);
 
         var box = new Gtk.Box (VERTICAL, 24);
         box.append (permission_box);
@@ -151,18 +65,9 @@ public class Permissions.Widgets.AppSettingsView : Switchboard.SettingsPage {
 
         update_view ();
 
-        homefolder_widget.changed_permission_settings.connect (change_permission_settings);
-        sysfolders_widget.changed_permission_settings.connect (change_permission_settings);
-        devices_widget.changed_permission_settings.connect (change_permission_settings);
-        network_widget.changed_permission_settings.connect (change_permission_settings);
-        bluetooth_widget.changed_permission_settings.connect (change_permission_settings);
-        printing_widget.changed_permission_settings.connect (change_permission_settings);
-        ssh_widget.changed_permission_settings.connect (change_permission_settings);
-        gpu_widget.changed_permission_settings.connect (change_permission_settings);
-
-        background_switch.notify["active"].connect (() => {
+        background_row.notify["active"].connect (() => {
             string[] permissions;
-            if (background_switch.active) {
+            if (background_row.active) {
                 permissions += "yes";
             } else {
                 permissions += "no";
@@ -194,21 +99,8 @@ public class Permissions.Widgets.AppSettingsView : Switchboard.SettingsPage {
         });
     }
 
-    private void initialize_settings_view () {
-        var children = sandbox_box.observe_children ();
-        for (var iter = 0; iter < children.get_n_items (); iter++) {
-            if (children.get_item (iter) is PermissionSettingsWidget) {
-                var widget = (PermissionSettingsWidget) children.get_item (iter);
-                widget.do_notify = false;
-                widget.settings.standard = false;
-                widget.settings.enabled = false;
-                widget.do_notify = true;
-            }
-        }
-    }
-
     private void update_view () {
-        initialize_settings_view ();
+        sandbox_box.remove_all ();
 
         if (selected_app == null) {
             sensitive = false;
@@ -217,26 +109,64 @@ public class Permissions.Widgets.AppSettingsView : Switchboard.SettingsPage {
 
         var should_enable_reset = false;
         selected_app.settings.foreach ((settings) => {
-            var children = sandbox_box.observe_children ();
-            for (var iter = 0; iter < children.get_n_items (); iter++) {
-                if (children.get_item (iter) is PermissionSettingsWidget) {
-                    var widget = (PermissionSettingsWidget) children.get_item (iter);
-                    if (widget.settings.context == settings.context) {
-                        widget.do_notify = false;
-                        widget.settings.standard = settings.standard;
-                        widget.settings.enabled = settings.enabled;
-                        widget.do_notify = true;
+            string description = "Unknown";
+            string icon_name = "image-missing";
 
-                        if (settings.enabled != settings.standard) {
-                            should_enable_reset = true;
-                        }
-                    }
-                }
+            switch (settings.context) {
+                case "filesystems=home":
+                    description = _("Access your entire Home folder, including any hidden folders.");
+                    icon_name = "user-home";
+                    break;
+                case "filesystems=host":
+                    description = _("Access system folders, not including the operating system or system internals. This includes users' Home folders.");
+                    icon_name = "drive-harddisk";
+                    break;
+                case "devices=all":
+                    description = _("Access all devices, such as webcams, microphones, and connected USB devices.");
+                    icon_name = "camera-web";
+                    break;
+                case "shared=network":
+                    description = _("Access the Internet and local networks.");
+                    icon_name = "preferences-system-network";
+                    break;
+                case "features=bluetooth":
+                    description = _("Manage Bluetooth devices including pairing, unpairing, and discovery.");
+                    icon_name = "bluetooth";
+                    break;
+                case "sockets=cups":
+                    description = _("Access printers.");
+                    icon_name = "printer";
+                    break;
+                case "sockets=ssh-auth":
+                    description = _("Access other devices on the network via SSH.");
+                    icon_name = "utilities-terminal";
+                    break;
+                case "devices=dri":
+                    description = _("Accelerate graphical output.");
+                    icon_name = "application-x-firmware";
+                    break;
             }
 
-            sensitive = true;
-            reset_button.sensitive = should_enable_reset;
+            var override_row = new PermissionSettingsWidget (
+                Plug.permission_names[settings.context],
+                description,
+                icon_name
+            );
+
+            settings.bind_property ("enabled", override_row, "active", SYNC_CREATE | BIDIRECTIONAL);
+            settings.notify["enabled"].connect (() => {
+                    change_permission_settings (settings);
+            });
+
+            if (settings.enabled != settings.standard) {
+                should_enable_reset = true;
+            }
+
+            sandbox_box.append (override_row);
         });
+
+        sensitive = true;
+        reset_button.sensitive = should_enable_reset;
 
         update_permissions ();
         var permission_store = PermissionStore.get_default ();
@@ -263,7 +193,7 @@ public class Permissions.Widgets.AppSettingsView : Switchboard.SettingsPage {
 
                 // A lack of explicit permission is considered permission
                 // to allow pre-emptive opt-out
-                background_switch.active = background_permission[0] != "no";
+                background_row.active = background_permission[0] != "no";
             } catch (Error e) {
                 critical (e.message);
                 var dialog = new Granite.MessageDialog (
