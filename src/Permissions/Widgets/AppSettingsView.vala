@@ -26,10 +26,11 @@ public class Permissions.Widgets.AppSettingsView : Switchboard.SettingsPage {
     private const string BACKGROUND_ID = "background";
 
     private Gtk.ListBox sandbox_box;
+    private Gtk.ListBox permission_box;
     private Gtk.Button reset_button;
     private Gtk.Switch background_switch;
 
-    private static PermissionStore permission_store;
+    private static PermissionStore? permission_store = null;
 
     static construct {
         Bus.get_proxy.begin <PermissionStore> (
@@ -49,7 +50,7 @@ public class Permissions.Widgets.AppSettingsView : Switchboard.SettingsPage {
     construct {
         notify["selected-app"].connect (update_view);
 
-        var background_image = new Gtk.Image.from_icon_name ("image-missing") {
+        var background_image = new Gtk.Image.from_icon_name ("permissions-background") {
             icon_size = LARGE
         };
 
@@ -67,7 +68,7 @@ public class Permissions.Widgets.AppSettingsView : Switchboard.SettingsPage {
         background_box.append (background_label);
         background_box.append (background_switch);
 
-        var permission_box = new Gtk.ListBox () {
+        permission_box = new Gtk.ListBox () {
             hexpand = true,
             selection_mode = NONE
         };
@@ -229,14 +230,31 @@ public class Permissions.Widgets.AppSettingsView : Switchboard.SettingsPage {
             reset_button.sensitive = should_enable_reset;
         });
 
-        if (permission_store != null) {
-            var string_array = permission_store.get_permission (BACKGROUND_TABLE, BACKGROUND_ID, selected_app.id);
-            background_switch.active = string_array[0] == "yes";
+        if (permission_store == null) {
+            // permission_box.sensitive = false;
+
+            // this.notify["permission-store"].connect (() => {
+            //     critical ("notified");
+            //     update_permissions ();
+            //     permission_box.sensitive = true;
+            // });
+        } else {
+            update_permissions ();
         }
 
         update_property (Gtk.AccessibleProperty.LABEL, _("%s permissions").printf (selected_app.name), -1);
         title = selected_app.name;
         icon = selected_app.icon;
+    }
+
+    private void update_permissions () {
+        var background_permission = permission_store.get_permission (
+            BACKGROUND_TABLE, BACKGROUND_ID, selected_app.id
+        );
+
+        // A lack of explicit permission is considered permission
+        // to allow pre-emptive opt-out
+        background_switch.active = background_permission[0] != "no";
     }
 
     private void change_permission_settings (Backend.PermissionSettings settings) {
