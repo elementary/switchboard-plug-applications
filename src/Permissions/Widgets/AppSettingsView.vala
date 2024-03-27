@@ -30,7 +30,8 @@ public class Permissions.Widgets.AppSettingsView : Gtk.Grid {
 
         list_box = new Gtk.ListBox () {
             hexpand = true,
-            vexpand = true
+            vexpand = true,
+            selection_mode = NONE
         };
         list_box.add_css_class (Granite.STYLE_CLASS_RICH_LIST);
 
@@ -109,24 +110,22 @@ public class Permissions.Widgets.AppSettingsView : Gtk.Grid {
                     break;
             }
 
-
             var override_row = new PermissionSettingsWidget (
                 Plug.permission_names[settings.context],
                 description,
-                icon_name,
-                new Backend.PermissionSettings (settings.context)
+                icon_name
             );
 
-            override_row.settings.standard = settings.standard;
-            override_row.settings.enabled = settings.enabled;
+            settings.bind_property ("enabled", override_row, "active", SYNC_CREATE | BIDIRECTIONAL);
+            settings.notify["enabled"].connect (() => {
+                    change_permission_settings (settings);
+            });
 
             if (settings.enabled != settings.standard) {
                 should_enable_reset = true;
             }
 
             list_box.append (override_row);
-
-            override_row.changed_permission_settings.connect (change_permission_settings);
         });
 
         reset_button.sensitive = should_enable_reset;
