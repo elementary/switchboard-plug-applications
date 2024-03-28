@@ -108,11 +108,14 @@ public class Permissions.Backend.App : GLib.Object {
                 }
             }
 
-            var s = new Backend.PermissionSettings (key, standard) {
-                enabled = enabled
-            };
+            // Only add settings that are actually overridden
+            if (standard == true) {
+                var s = new Backend.PermissionSettings (key, standard) {
+                    enabled = enabled
+                };
 
-            settings.add (s);
+                settings.add (s);
+            }
         });
 
         notify["settings"].connect (save_overrides);
