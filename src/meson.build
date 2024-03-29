@@ -16,6 +16,7 @@ plug_files = files(
     'Permissions/Backend/AppManager.vala',
     'Permissions/Backend/FlatpakManager.vala',
     'Permissions/Backend/PermissionSettings.vala',
+    'Permissions/Backend/PermissionStore.vala',
     'Permissions/Widgets/AppSettingsView.vala',
     'Permissions/Widgets/PermissionSettingsWidget.vala',
     'Permissions/Widgets/SidebarRow.vala',
@@ -27,6 +28,7 @@ switchboard_plugsdir = switchboard_dep.get_pkgconfig_variable('plugsdir', define
 
 shared_module(
     meson.project_name(),
+    gresource,
     plug_files,
     conf_file,
     dependencies: [

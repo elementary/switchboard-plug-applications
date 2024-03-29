@@ -40,7 +40,7 @@ public class Permissions.Widgets.PermissionSettingsWidget : Gtk.ListBoxRow {
 
     construct {
         var icon = new Gtk.Image.from_icon_name (icon_name) {
-            pixel_size = 32,
+            icon_size = LARGE,
             tooltip_text = settings.context
         };
 
@@ -48,19 +48,20 @@ public class Permissions.Widgets.PermissionSettingsWidget : Gtk.ListBoxRow {
             halign = Gtk.Align.START,
             hexpand = true
         };
-        name_label.add_css_class (Granite.STYLE_CLASS_H3_LABEL);
 
         var description_label = new Gtk.Label (description) {
             wrap = true,
             xalign = 0
         };
+        description_label.add_css_class (Granite.STYLE_CLASS_DIM_LABEL);
+        description_label.add_css_class (Granite.STYLE_CLASS_SMALL_LABEL);
 
         var allow_switch = new Gtk.Switch () {
             valign = Gtk.Align.CENTER
         };
 
         var grid = new Gtk.Grid () {
-            column_spacing = 12
+            column_spacing = 6
         };
         grid.attach (icon, 0, 0, 1, 2);
         grid.attach (name_label, 1, 0);
