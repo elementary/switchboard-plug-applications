@@ -24,11 +24,14 @@ public class Permissions.Widgets.AppSettingsView : Switchboard.SettingsPage {
 
     private const string BACKGROUND_TABLE = "background";
     private const string BACKGROUND_ID = "background";
+    private const string WALLPAPER_TABLE = "wallpaper";
+    private const string WALLPAPER_ID = "wallpaper";
 
     private Gtk.ListBox sandbox_box;
     private Gtk.ListBox permission_box;
     private Gtk.Button reset_button;
     private PermissionSettingsWidget background_row;
+    private PermissionSettingsWidget wallpaper_row;
 
     construct {
         notify["selected-app"].connect (update_view);
@@ -145,6 +148,17 @@ public class Permissions.Widgets.AppSettingsView : Switchboard.SettingsPage {
             permission_store.set_permission (BACKGROUND_TABLE, BACKGROUND_ID, selected_app.id, permissions);
         });
 
+        wallpaper_row = new PermissionSettingsWidget (
+            _("Wallpaper"),
+            _("Set the wallpaper on the desktop and lock screen."),
+            "preferences-desktop-wallpaper"
+        );
+
+        wallpaper_row.notify["active"].connect (() => {
+            string[] permissions = { wallpaper_row.active ? "yes" : "no" };
+            permission_store.set_permission (WALLPAPER_TABLE, WALLPAPER_ID, selected_app.id, permissions);
+        });
+
         update_permissions.begin ();
         permission_store.notify["dbus"].connect (update_permissions);
         permission_store.changed.connect (update_permissions);
@@ -172,6 +186,15 @@ public class Permissions.Widgets.AppSettingsView : Switchboard.SettingsPage {
 
             if (background_row.parent == null) {
                 permission_box.append (background_row);
+            }
+        }
+
+        var wallpaper_permission = yield permission_store.get_permission (WALLPAPER_TABLE, WALLPAPER_ID, selected_app.id);
+        if (wallpaper_permission[0] != null) {
+            wallpaper_row.active = wallpaper_permission[0] == "yes";
+
+            if (wallpaper_row.parent == null) {
+                permission_box.append (wallpaper_row);
             }
         }
 
