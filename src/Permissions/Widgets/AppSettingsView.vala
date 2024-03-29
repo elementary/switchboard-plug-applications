@@ -89,19 +89,19 @@ public class Permissions.Widgets.AppSettingsView : Switchboard.SettingsPage {
 
             switch (settings.context) {
                 case "filesystems=home":
-                    description = _("Access your entire Home folder, including any hidden folders.");
+                    description = _("Including all documents, downloads, music, pictures, videos, and any hidden folders.");
                     icon_name = "user-home";
                     break;
                 case "filesystems=host":
-                    description = _("Access system folders, not including the operating system or system internals. This includes users' Home folders.");
+                    description = _("Including everyone's Home folders, but not including system internals.");
                     icon_name = "drive-harddisk";
                     break;
                 case "devices=all":
-                    description = _("Access all devices, such as webcams, microphones, and connected USB devices.");
+                    description = _("Manage all connected devices, such as webcams, microphones, and USB devices.");
                     icon_name = "camera-web";
                     break;
                 case "shared=network":
-                    description = _("Access the Internet and local networks.");
+                    description = _("Connect to the Internet and local networks.");
                     icon_name = "preferences-system-network";
                     break;
                 case "features=bluetooth":
@@ -109,11 +109,11 @@ public class Permissions.Widgets.AppSettingsView : Switchboard.SettingsPage {
                     icon_name = "bluetooth";
                     break;
                 case "sockets=cups":
-                    description = _("Access printers.");
+                    description = _("Manage printers and see the print queue");
                     icon_name = "printer";
                     break;
                 case "sockets=ssh-auth":
-                    description = _("Access other devices on the network via SSH.");
+                    description = _("Connect to other devices on the network via SSH.");
                     icon_name = "utilities-terminal";
                     break;
                 case "devices=dri":
