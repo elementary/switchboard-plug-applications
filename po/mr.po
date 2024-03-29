@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-29 15:47+0000\n"
+"POT-Creation-Date: 2024-03-29 15:50+0000\n"
 "PO-Revision-Date: 2023-07-06 19:07+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Marathi <https://l10n.elementary.io/projects/switchboard/"
@@ -142,17 +142,17 @@ msgstr "शोध संज्ञा बदलून प्रयत्न क�
 msgid "No Results for “%s”"
 msgstr "\"%s\" साठी कोणतेही परिणाम नाहीत"
 
-#: src/Permissions/Widgets/AppSettingsView.vala:59
+#: src/Permissions/Widgets/AppSettingsView.vala:64
 msgid "Reset to Defaults"
 msgstr "डीफॉल्टवर रीसेट करा"
 
-#: src/Permissions/Widgets/AppSettingsView.vala:87
+#: src/Permissions/Widgets/AppSettingsView.vala:92
 #, fuzzy
 #| msgid "Access your entire home folder, including any hidden folders."
 msgid "Access your entire Home folder, including any hidden folders."
 msgstr "कोणत्याही लपविलेल्या फोल्डर्ससह आपल्या संपूर्ण मुख्य फोल्डरमध्ये प्रवेश करा."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:91
+#: src/Permissions/Widgets/AppSettingsView.vala:96
 msgid ""
 "Access system folders, not including the operating system or system "
 "internals. This includes users' Home folders."
@@ -160,52 +160,60 @@ msgstr ""
 "ऑपरेटिंग सिस्टम किंवा सिस्टम इंटर्नल्स व्यतिरिक्त सिस्टम फोल्डर्समध्ये प्रवेश करा. यात "
 "वापरकर्त्यांच्या होम फोल्डर्सचा समावेश आहे."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:95
+#: src/Permissions/Widgets/AppSettingsView.vala:100
 msgid ""
 "Access all devices, such as webcams, microphones, and connected USB devices."
 msgstr ""
 "वेबकॅम, मायक्रोफोन आणि कनेक्ट केलेल्या यूएसबी डिव्हाइससारख्या सर्व डिव्हाइसवर प्रवेश करा."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:99
+#: src/Permissions/Widgets/AppSettingsView.vala:104
 msgid "Access the Internet and local networks."
 msgstr "इंटरनेट आणि स्थानिक नेटवर्कमध्ये प्रवेश करा."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:103
+#: src/Permissions/Widgets/AppSettingsView.vala:108
 #, fuzzy
 #| msgid ""
 #| "Manage bluetooth devices including pairing, unpairing, and discovery."
 msgid "Manage Bluetooth devices including pairing, unpairing, and discovery."
 msgstr "जोडणी, जोड काढणे आणि शोध यासह ब्लूटूथ डिव्हाइस व्यवस्थापित करा."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:107
+#: src/Permissions/Widgets/AppSettingsView.vala:112
 msgid "Access printers."
 msgstr "प्रिंटरमध्ये प्रवेश करा."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:111
+#: src/Permissions/Widgets/AppSettingsView.vala:116
 msgid "Access other devices on the network via SSH."
 msgstr "एसएसएच मार्गे नेटवर्कवरील इतर डिव्हाइसवर प्रवेश करा."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:115
+#: src/Permissions/Widgets/AppSettingsView.vala:120
 msgid "Accelerate graphical output."
 msgstr "ग्राफिकल आउटपुटला गती द्या."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:141
+#: src/Permissions/Widgets/AppSettingsView.vala:146
 msgid "Background Activity"
 msgstr ""
 
-#: src/Permissions/Widgets/AppSettingsView.vala:142
+#: src/Permissions/Widgets/AppSettingsView.vala:147
 msgid "Perform tasks and use system resources while its window is closed."
 msgstr ""
 
-#: src/Permissions/Widgets/AppSettingsView.vala:152
+#: src/Permissions/Widgets/AppSettingsView.vala:157
+msgid "Location Services"
+msgstr ""
+
+#: src/Permissions/Widgets/AppSettingsView.vala:158
+msgid "Determine the location of this device."
+msgstr ""
+
+#: src/Permissions/Widgets/AppSettingsView.vala:171
 msgid "Wallpaper"
 msgstr ""
 
-#: src/Permissions/Widgets/AppSettingsView.vala:153
+#: src/Permissions/Widgets/AppSettingsView.vala:172
 msgid "Set the wallpaper on the desktop and lock screen."
 msgstr ""
 
-#: src/Permissions/Widgets/AppSettingsView.vala:169
+#: src/Permissions/Widgets/AppSettingsView.vala:188
 #, fuzzy, c-format
 #| msgid "Permissions"
 msgid "%s permissions"

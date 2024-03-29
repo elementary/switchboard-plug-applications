@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-29 15:47+0000\n"
+"POT-Creation-Date: 2024-03-29 15:50+0000\n"
 "PO-Revision-Date: 2024-03-29 15:48+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Hungarian <https://l10n.elementary.io/projects/switchboard/"
@@ -142,15 +142,15 @@ msgstr "Próbálja megváltoztatni a keresési kifejezéseket."
 msgid "No Results for “%s”"
 msgstr "Nincs találat erre \"%s\""
 
-#: src/Permissions/Widgets/AppSettingsView.vala:59
+#: src/Permissions/Widgets/AppSettingsView.vala:64
 msgid "Reset to Defaults"
 msgstr "Alapértelmezettek visszaállítása"
 
-#: src/Permissions/Widgets/AppSettingsView.vala:87
+#: src/Permissions/Widgets/AppSettingsView.vala:92
 msgid "Access your entire Home folder, including any hidden folders."
 msgstr "A teljes saját mappa (home) elérése, a rejtett mappákat beleértve."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:91
+#: src/Permissions/Widgets/AppSettingsView.vala:96
 msgid ""
 "Access system folders, not including the operating system or system "
 "internals. This includes users' Home folders."
@@ -158,52 +158,60 @@ msgstr ""
 "A rendszermappák elérése, kivéve az operációs rendszert és a belső részeket. "
 "Ez magába foglalja a felhasználok saját mappáit."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:95
+#: src/Permissions/Widgets/AppSettingsView.vala:100
 msgid ""
 "Access all devices, such as webcams, microphones, and connected USB devices."
 msgstr ""
 "Az összes eszköz elérése, mint a webkamera, mikrofon és a csatlakoztatott "
 "USB-eszközök."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:99
+#: src/Permissions/Widgets/AppSettingsView.vala:104
 msgid "Access the Internet and local networks."
 msgstr "Az internet és a helyi hálózatok elérése."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:103
+#: src/Permissions/Widgets/AppSettingsView.vala:108
 msgid "Manage Bluetooth devices including pairing, unpairing, and discovery."
 msgstr ""
 "Bluetooth-eszközök kezelése, beleértve a párosítást és annak törlését, "
 "valamint a felfedezést."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:107
+#: src/Permissions/Widgets/AppSettingsView.vala:112
 msgid "Access printers."
 msgstr "Nyomtatók elérése."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:111
+#: src/Permissions/Widgets/AppSettingsView.vala:116
 msgid "Access other devices on the network via SSH."
 msgstr "Többi készülék elérése a hálózaton keresztül SSH segítségével."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:115
+#: src/Permissions/Widgets/AppSettingsView.vala:120
 msgid "Accelerate graphical output."
 msgstr "A grafikus kimenet gyorsítása."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:141
+#: src/Permissions/Widgets/AppSettingsView.vala:146
 msgid "Background Activity"
 msgstr ""
 
-#: src/Permissions/Widgets/AppSettingsView.vala:142
+#: src/Permissions/Widgets/AppSettingsView.vala:147
 msgid "Perform tasks and use system resources while its window is closed."
 msgstr ""
 
-#: src/Permissions/Widgets/AppSettingsView.vala:152
+#: src/Permissions/Widgets/AppSettingsView.vala:157
+msgid "Location Services"
+msgstr ""
+
+#: src/Permissions/Widgets/AppSettingsView.vala:158
+msgid "Determine the location of this device."
+msgstr ""
+
+#: src/Permissions/Widgets/AppSettingsView.vala:171
 msgid "Wallpaper"
 msgstr "Háttérkép"
 
-#: src/Permissions/Widgets/AppSettingsView.vala:153
+#: src/Permissions/Widgets/AppSettingsView.vala:172
 msgid "Set the wallpaper on the desktop and lock screen."
 msgstr ""
 
-#: src/Permissions/Widgets/AppSettingsView.vala:169
+#: src/Permissions/Widgets/AppSettingsView.vala:188
 #, c-format
 msgid "%s permissions"
 msgstr "%s engedélyei"
