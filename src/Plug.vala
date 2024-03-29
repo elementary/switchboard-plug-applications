@@ -21,8 +21,8 @@
 */
 
 public class ApplicationsPlug : Switchboard.Plug {
-    private const string DEFAULTS = "defaults";
-    private const string STARTUP = "startup";
+    private const string DEFAULTS = "preferences-system";
+    private const string STARTUP = "system-restart";
     private const string PERMISSIONS = "permissions";
 
     private Gtk.Grid grid;
@@ -62,11 +62,11 @@ public class ApplicationsPlug : Switchboard.Plug {
             stack.add_named (app_settings_view, PERMISSIONS);
 
             var defaults_row = new SimpleSidebarRow (
-                _("Defaults"), "preferences-desktop-defaults"
+                _("Defaults"), DEFAULTS
             );
 
             var startup_row = new SimpleSidebarRow (
-                _("Startup"), "preferences-desktop-startup"
+                _("Startup"), STARTUP
             );
 
             search_entry = new Gtk.SearchEntry () {
@@ -157,9 +157,9 @@ public class ApplicationsPlug : Switchboard.Plug {
                     stack.visible_child = app_settings_view;
                     app_settings_view.selected_app = ((Permissions.SidebarRow)row).app;
                 } else if (row is SimpleSidebarRow) {
-                    if (((SimpleSidebarRow) row).icon_name == "preferences-desktop-defaults") {
+                    if (((SimpleSidebarRow) row).icon_name == DEFAULTS) {
                         stack.visible_child_name = DEFAULTS;
-                    } else if (((SimpleSidebarRow) row).icon_name == "preferences-desktop-startup") {
+                    } else if (((SimpleSidebarRow) row).icon_name == STARTUP) {
                         stack.visible_child_name = STARTUP;
                     }
 
@@ -260,7 +260,7 @@ public class ApplicationsPlug : Switchboard.Plug {
         }
 
         construct {
-            var image = new Gtk.Image.from_icon_name ("application-default-icon") {
+            var image = new Gtk.Image.from_icon_name (icon_name) {
                 icon_size = LARGE
             };
 

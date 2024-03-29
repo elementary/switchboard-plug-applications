@@ -10,7 +10,7 @@ public class Defaults.Plug : Switchboard.SettingsPage {
     public Plug () {
         Object (
             title: _("Defaults"),
-            icon: new ThemedIcon ("preferences-desktop")
+            icon: new ThemedIcon ("preferences-system")
         );
     }
 
