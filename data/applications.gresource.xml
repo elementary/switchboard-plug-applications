@@ -2,5 +2,9 @@
 <gresources>
   <gresource prefix="/io/elementary/settings/icons">
     <file alias="permissions-background.svg" compressed="true">background.svg</file>
+    <file alias="32x32/categories/preferences-desktop-startup.svg" compressed="true" preprocess="xml-stripblanks">startup-32.svg</file>
+    <file alias="32x32@2/categories/preferences-desktop-startup.svg" compressed="true" preprocess="xml-stripblanks">startup-32.svg</file>
+    <file alias="48x48/categories/preferences-desktop-startup.svg" compressed="true" preprocess="xml-stripblanks">startup-48.svg</file>
+    <file alias="48x48@2/categories/preferences-desktop-startup.svg" compressed="true" preprocess="xml-stripblanks">startup-48.svg</file>
   </gresource>
 </gresources>

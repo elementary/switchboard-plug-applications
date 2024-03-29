@@ -14,7 +14,7 @@ public class Startup.Plug : Switchboard.SettingsPage {
     public Plug () {
         Object (
             title: _("Startup"),
-            icon: new ThemedIcon ("system-restart")
+            icon: new ThemedIcon ("preferences-desktop-startup")
         );
     }
 

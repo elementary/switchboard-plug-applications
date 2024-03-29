@@ -22,7 +22,7 @@
 
 public class ApplicationsPlug : Switchboard.Plug {
     private const string DEFAULTS = "preferences-system";
-    private const string STARTUP = "system-restart";
+    private const string STARTUP = "preferences-desktop-startup";
     private const string PERMISSIONS = "permissions";
 
     private Gtk.Grid grid;
