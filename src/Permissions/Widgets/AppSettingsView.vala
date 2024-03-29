@@ -153,7 +153,6 @@ public class Permissions.Widgets.AppSettingsView : Switchboard.SettingsPage {
             permission_store.set_permission (BACKGROUND_TABLE, BACKGROUND_ID, selected_app.id, permissions);
         });
 
-
         location_row = new PermissionSettingsWidget (
             _("Location Services"),
             _("Determine the location of this device."),
