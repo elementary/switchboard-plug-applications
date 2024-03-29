@@ -187,6 +187,7 @@ public class Permissions.Widgets.AppSettingsView : Switchboard.SettingsPage {
 
         update_property (Gtk.AccessibleProperty.LABEL, _("%s permissions").printf (selected_app.name), -1);
         title = selected_app.name;
+        description = selected_app.description;
         icon = selected_app.icon;
     }
 
