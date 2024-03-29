@@ -26,6 +26,7 @@ public class ApplicationsPlug : Switchboard.Plug {
     private const string PERMISSIONS = "permissions";
 
     private Gtk.Grid grid;
+    private Gtk.SearchEntry search_entry;
     private Gtk.Stack stack;
 
     public ApplicationsPlug () {
@@ -68,10 +69,29 @@ public class ApplicationsPlug : Switchboard.Plug {
                 _("Startup"), "preferences-desktop-startup"
             );
 
+            search_entry = new Gtk.SearchEntry () {
+                placeholder_text = _("Search Apps"),
+                margin_top = 6,
+                margin_bottom = 6,
+                margin_start = 6,
+                margin_end = 6,
+                hexpand = true
+            };
+
+            var search_revealer = new Gtk.Revealer () {
+                child = search_entry
+            };
+
+            var search_toggle = new Gtk.ToggleButton () {
+                icon_name = "edit-find-symbolic",
+                tooltip_text = _("Search Apps")
+            };
+
             var headerbar = new Adw.HeaderBar () {
                 show_end_title_buttons = false,
                 show_title = false
             };
+            headerbar.pack_end (search_toggle);
 
             var listbox = new Gtk.ListBox () {
                 vexpand = true,
@@ -85,13 +105,14 @@ public class ApplicationsPlug : Switchboard.Plug {
                     return;
                 }
 
-                if (row is Permissions.SidebarRow && !(before is Permissions.SidebarRow)) {
+                if (row is Permissions.SidebarRow && before is SimpleSidebarRow) {
                     row.set_header (new Granite.HeaderLabel (_("Apps")));
                     return;
                 }
 
                 row.set_header (null);
             });
+            listbox.set_filter_func (filter_function);
             listbox.append (defaults_row);
             listbox.append (startup_row);
 
@@ -105,6 +126,7 @@ public class ApplicationsPlug : Switchboard.Plug {
                 top_bar_style = FLAT,
             };
             toolbarview.add_top_bar (headerbar);
+            toolbarview.add_top_bar (search_revealer);
 
             var sidebar = new Sidebar ();
             sidebar.append (toolbarview);
@@ -141,6 +163,20 @@ public class ApplicationsPlug : Switchboard.Plug {
                         stack.visible_child_name = STARTUP;
                     }
 
+                }
+            });
+
+            search_entry.search_changed.connect (() => {
+                listbox.invalidate_filter ();
+            });
+
+            search_toggle.bind_property ("active", search_revealer, "reveal-child");
+
+            search_revealer.notify["child-revealed"].connect (() => {
+                if (search_revealer.child_revealed) {
+                    search_entry.grab_focus ();
+                } else {
+                    search_entry.text = "";
                 }
             });
         }
@@ -186,6 +222,21 @@ public class ApplicationsPlug : Switchboard.Plug {
         search_results.set ("%s → %s → %s".printf (display_name, _("Default"), _("Image Viewer")), DEFAULTS);
         search_results.set ("%s → %s → %s".printf (display_name, _("Default"), _("File Browser")), DEFAULTS);
         return search_results;
+    }
+
+    private bool filter_function (Gtk.ListBoxRow row) {
+        if (search_entry.text != "") {
+            if (row is SimpleSidebarRow) {
+                return false;
+            }
+
+            var search_term = search_entry.text.down ();
+            var row_name = ((Permissions.SidebarRow) row).app.name.down ();
+
+            return search_term in row_name;
+        }
+
+        return true;
     }
 
     [CCode (instance_pos = -1)]
