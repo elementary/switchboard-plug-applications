@@ -68,29 +68,37 @@ public class ApplicationsPlug : Switchboard.Plug {
                 _("Startup"), "preferences-desktop-startup"
             );
 
-            var sidebar = new Gtk.ListBox () {
-                vexpand = true,
-                selection_mode = Gtk.SelectionMode.SINGLE
+            var headerbar = new Adw.HeaderBar () {
+                show_end_title_buttons = false,
+                show_title = false
             };
-            sidebar.add_css_class (Granite.STYLE_CLASS_SIDEBAR);
-            sidebar.set_sort_func ((Gtk.ListBoxSortFunc) sort_func);
-            sidebar.append (defaults_row);
-            sidebar.append (startup_row);
 
-            Permissions.Backend.AppManager.get_default ().apps.foreach ((id, app) => {
-                var app_entry = new Permissions.SidebarRow (app);
-                sidebar.append (app_entry);
-            });
+            var listbox = new Gtk.ListBox () {
+                vexpand = true,
+                selection_mode = BROWSE
+            };
+            listbox.add_css_class (Granite.STYLE_CLASS_SIDEBAR);
+            listbox.set_sort_func ((Gtk.ListBoxSortFunc) sort_func);
+            listbox.append (defaults_row);
+            listbox.append (startup_row);
 
             var scrolled_window = new Gtk.ScrolledWindow () {
-                child = sidebar,
-                vexpand = true,
+                child = listbox,
                 hscrollbar_policy = NEVER
             };
 
+            var toolbarview = new Adw.ToolbarView () {
+                content = scrolled_window,
+                top_bar_style = FLAT,
+            };
+            toolbarview.add_top_bar (headerbar);
+
+            var sidebar = new Sidebar ();
+            sidebar.append (toolbarview);
+
             var paned = new Gtk.Paned (HORIZONTAL) {
                 position = 200,
-                start_child = scrolled_window,
+                start_child = sidebar,
                 end_child = stack,
                 shrink_start_child = false,
                 shrink_end_child = false,
@@ -100,7 +108,12 @@ public class ApplicationsPlug : Switchboard.Plug {
             grid = new Gtk.Grid ();
             grid.attach (paned, 0, 0);
 
-            sidebar.row_selected.connect ((row) => {
+            Permissions.Backend.AppManager.get_default ().apps.foreach ((id, app) => {
+                var app_entry = new Permissions.SidebarRow (app);
+                listbox.append (app_entry);
+            });
+
+            listbox.row_selected.connect ((row) => {
                 if (row == null) {
                     return;
                 }
@@ -201,6 +214,17 @@ public class ApplicationsPlug : Switchboard.Plug {
 
             hexpand = true;
             child = grid;
+        }
+    }
+
+    // Workaround to set styles
+    private class Sidebar : Gtk.Box {
+        class construct {
+            set_css_name ("settingssidebar");
+        }
+
+        construct {
+            add_css_class (Granite.STYLE_CLASS_SIDEBAR);
         }
     }
 }
