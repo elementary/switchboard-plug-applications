@@ -79,6 +79,19 @@ public class ApplicationsPlug : Switchboard.Plug {
             };
             listbox.add_css_class (Granite.STYLE_CLASS_SIDEBAR);
             listbox.set_sort_func ((Gtk.ListBoxSortFunc) sort_func);
+            listbox.set_header_func ((row, before) => {
+                if (row is SimpleSidebarRow && !(before is SimpleSidebarRow)) {
+                    row.set_header (new Granite.HeaderLabel (_("System")));
+                    return;
+                }
+
+                if (row is Permissions.SidebarRow && !(before is Permissions.SidebarRow)) {
+                    row.set_header (new Granite.HeaderLabel (_("Apps")));
+                    return;
+                }
+
+                row.set_header (null);
+            });
             listbox.append (defaults_row);
             listbox.append (startup_row);
 
