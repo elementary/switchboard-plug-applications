@@ -24,13 +24,18 @@ public class Permissions.Widgets.AppSettingsView : Switchboard.SettingsPage {
 
     private const string BACKGROUND_TABLE = "background";
     private const string BACKGROUND_ID = "background";
+    private const string LOCATION_TABLE = "location";
+    private const string LOCATION_ID = "location";
     private const string WALLPAPER_TABLE = "wallpaper";
     private const string WALLPAPER_ID = "wallpaper";
+
+    private string location_timestamp = "0";
 
     private Gtk.ListBox sandbox_box;
     private Gtk.ListBox permission_box;
     private Gtk.Button reset_button;
     private PermissionSettingsWidget background_row;
+    private PermissionSettingsWidget location_row;
     private PermissionSettingsWidget wallpaper_row;
 
     construct {
@@ -148,6 +153,20 @@ public class Permissions.Widgets.AppSettingsView : Switchboard.SettingsPage {
             permission_store.set_permission (BACKGROUND_TABLE, BACKGROUND_ID, selected_app.id, permissions);
         });
 
+        location_row = new PermissionSettingsWidget (
+            _("Location Services"),
+            _("Determine the location of this device."),
+            "preferences-system-privacy-location"
+        );
+
+        location_row.notify["active"].connect (() => {
+            string[] permissions = {
+                location_row.active ? "EXACT" : "NONE",
+                location_timestamp
+            };
+            permission_store.set_permission (LOCATION_TABLE, LOCATION_ID, selected_app.id, permissions);
+        });
+
         wallpaper_row = new PermissionSettingsWidget (
             _("Wallpaper"),
             _("Set the wallpaper on the desktop and lock screen."),
@@ -186,6 +205,17 @@ public class Permissions.Widgets.AppSettingsView : Switchboard.SettingsPage {
 
             if (background_row.parent == null) {
                 permission_box.append (background_row);
+            }
+        }
+
+        var location_permission = yield permission_store.get_permission (LOCATION_TABLE, LOCATION_ID, selected_app.id);
+        if (location_permission[0] != null) {
+            // Values are usually EXACT or NONE, but safer to assume anything but NONE is active
+            location_row.active = location_permission[0] != "NONE";
+            location_timestamp = location_permission[1];
+
+            if (location_row.parent == null) {
+                permission_box.append (location_row);
             }
         }
 
