@@ -81,17 +81,8 @@ public class Permissions.PermissionStore : GLib.Object {
         try {
             return yield dbus.get_permission (table, id, app);
         } catch (Error e) {
-            var dialog = new Granite.MessageDialog (
-                _("Couldn't get permission"),
-                e.message,
-                new ThemedIcon ("preferences-system")
-            ) {
-                badge_icon = new ThemedIcon ("dialog-error"),
-                modal = true,
-                transient_for = ((Gtk.Application) GLib.Application.get_default ()).active_window
-            };
-            dialog.present ();
-            dialog.response.connect (dialog.destroy);
+            // gets can fail if a table doesn't exist, so fail silently
+            debug (e.message);
         }
 
         return { null };
