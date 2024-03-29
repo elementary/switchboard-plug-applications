@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-04 17:32+0000\n"
+"POT-Creation-Date: 2024-03-29 03:58+0000\n"
 "PO-Revision-Date: 2023-07-08 21:07+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/switchboard/"
@@ -28,60 +28,60 @@ msgstr "Застосунки"
 msgid "Defaults"
 msgstr "Типові"
 
-#: src/Plug.vala:58 src/Plug.vala:108
+#: src/Plug.vala:58 src/Plug.vala:112
 msgid "Startup"
 msgstr "Автозапуск під час входу"
 
-#: src/Plug.vala:59 src/Plug.vala:110
+#: src/Plug.vala:59 src/Plug.vala:114
 msgid "Permissions"
 msgstr "Дозволи"
 
-#: src/Plug.vala:109
+#: src/Plug.vala:113
 msgid "Default Apps"
 msgstr "Типові застосунки"
 
-#: src/Plug.vala:111
+#: src/Plug.vala:115
 msgid "Sandboxing"
 msgstr "Ізолювання"
 
-#: src/Plug.vala:112
+#: src/Plug.vala:116
 msgid "Confinement"
 msgstr "Обмеження"
 
-#: src/Plug.vala:113 src/Plug.vala:114 src/Plug.vala:115 src/Plug.vala:116
 #: src/Plug.vala:117 src/Plug.vala:118 src/Plug.vala:119 src/Plug.vala:120
+#: src/Plug.vala:121 src/Plug.vala:122 src/Plug.vala:123 src/Plug.vala:124
 msgid "Default"
 msgstr "Типові"
 
-#: src/Plug.vala:113 src/Defaults/DefaultPlug.vala:12
+#: src/Plug.vala:117 src/Defaults/DefaultPlug.vala:12
 msgid "Web Browser"
 msgstr "Переглядач мережі"
 
-#: src/Plug.vala:114 src/Defaults/DefaultPlug.vala:17
+#: src/Plug.vala:118 src/Defaults/DefaultPlug.vala:17
 msgid "Email Client"
 msgstr "Клієнт електронної пошти"
 
-#: src/Plug.vala:115 src/Defaults/DefaultPlug.vala:22
+#: src/Plug.vala:119 src/Defaults/DefaultPlug.vala:22
 msgid "Calendar"
 msgstr "Календар"
 
-#: src/Plug.vala:116 src/Defaults/DefaultPlug.vala:27
+#: src/Plug.vala:120 src/Defaults/DefaultPlug.vala:27
 msgid "Video Player"
 msgstr "Програвач відео"
 
-#: src/Plug.vala:117 src/Defaults/DefaultPlug.vala:32
+#: src/Plug.vala:121 src/Defaults/DefaultPlug.vala:32
 msgid "Music Player"
 msgstr "Музичний програвач"
 
-#: src/Plug.vala:118 src/Defaults/DefaultPlug.vala:42
+#: src/Plug.vala:122 src/Defaults/DefaultPlug.vala:42
 msgid "Text Editor"
 msgstr "Текстовий редактор"
 
-#: src/Plug.vala:119 src/Defaults/DefaultPlug.vala:37
+#: src/Plug.vala:123 src/Defaults/DefaultPlug.vala:37
 msgid "Image Viewer"
 msgstr "Переглядач зображень"
 
-#: src/Plug.vala:120 src/Defaults/DefaultPlug.vala:47
+#: src/Plug.vala:124 src/Defaults/DefaultPlug.vala:47
 msgid "File Browser"
 msgstr "Переглядач файлів"
 
@@ -138,16 +138,20 @@ msgstr "Шукати застосунки"
 msgid "Try changing search terms."
 msgstr "Спробуйте змінити пошукові терміни."
 
-#: src/Permissions/PermissionsPlug.vala:121
+#: src/Permissions/PermissionsPlug.vala:119
 #, c-format
 msgid "No Results for “%s”"
 msgstr "Немає результатів для «%s»"
 
-#: src/Permissions/Widgets/AppSettingsView.vala:33
+#: src/Permissions/Widgets/AppSettingsView.vala:41
+msgid "Reset to Defaults"
+msgstr "Відновити типові"
+
+#: src/Permissions/Widgets/AppSettingsView.vala:68
 msgid "Access your entire Home folder, including any hidden folders."
 msgstr "Доступ до всієї теки Домівка, включно з прихованими теками."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:40
+#: src/Permissions/Widgets/AppSettingsView.vala:72
 msgid ""
 "Access system folders, not including the operating system or system "
 "internals. This includes users' Home folders."
@@ -155,46 +159,42 @@ msgstr ""
 "Доступ до системних тек, за винятком тек операційної системи або "
 "внутрішньосистемних. Сюди входять домашні теки користувачів."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:47
+#: src/Permissions/Widgets/AppSettingsView.vala:76
 msgid ""
 "Access all devices, such as webcams, microphones, and connected USB devices."
 msgstr ""
 "Доступ до всіх пристроїв, таких як вебкамери, мікрофони та під'єднані USB-"
 "пристрої."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:54
+#: src/Permissions/Widgets/AppSettingsView.vala:80
 msgid "Access the Internet and local networks."
 msgstr "Доступ до Інтернету та локальних мереж."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:61
+#: src/Permissions/Widgets/AppSettingsView.vala:84
 msgid "Manage Bluetooth devices including pairing, unpairing, and discovery."
 msgstr ""
 "Керувати пристроями Bluetooth, включно зі сполученням, роз'єднанням та "
 "виявленням."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:68
+#: src/Permissions/Widgets/AppSettingsView.vala:88
 msgid "Access printers."
 msgstr "Доступ до принтерів."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:75
+#: src/Permissions/Widgets/AppSettingsView.vala:92
 msgid "Access other devices on the network via SSH."
 msgstr "Доступ до інших пристроїв у мережі через SSH."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:82
+#: src/Permissions/Widgets/AppSettingsView.vala:96
 msgid "Accelerate graphical output."
 msgstr "Прискорення графічного виводу."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:110
-msgid "Reset to Defaults"
-msgstr "Відновити типові"
-
-#: src/Permissions/Widgets/AppSettingsView.vala:182
+#: src/Permissions/Widgets/AppSettingsView.vala:121
 #, c-format
 msgid "%s permissions"
 msgstr "%s дозволів"
 
 #. / Translators: This is a delimiter that separates types of permissions in the sidebar description
-#: src/Permissions/Widgets/SidebarRow.vala:89
+#: src/Permissions/Widgets/SidebarRow.vala:83
 msgid ", "
 msgstr ", "
 

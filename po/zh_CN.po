@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-04 17:32+0000\n"
+"POT-Creation-Date: 2024-03-29 03:58+0000\n"
 "PO-Revision-Date: 2023-07-06 19:07+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
@@ -27,60 +27,60 @@ msgstr "应用程序"
 msgid "Defaults"
 msgstr "默认程序"
 
-#: src/Plug.vala:58 src/Plug.vala:108
+#: src/Plug.vala:58 src/Plug.vala:112
 msgid "Startup"
 msgstr "开机启动"
 
-#: src/Plug.vala:59 src/Plug.vala:110
+#: src/Plug.vala:59 src/Plug.vala:114
 msgid "Permissions"
 msgstr "应用权限"
 
-#: src/Plug.vala:109
+#: src/Plug.vala:113
 msgid "Default Apps"
 msgstr "默认应用"
 
-#: src/Plug.vala:111
+#: src/Plug.vala:115
 msgid "Sandboxing"
 msgstr "沙盒运行"
 
-#: src/Plug.vala:112
+#: src/Plug.vala:116
 msgid "Confinement"
 msgstr "限制"
 
-#: src/Plug.vala:113 src/Plug.vala:114 src/Plug.vala:115 src/Plug.vala:116
 #: src/Plug.vala:117 src/Plug.vala:118 src/Plug.vala:119 src/Plug.vala:120
+#: src/Plug.vala:121 src/Plug.vala:122 src/Plug.vala:123 src/Plug.vala:124
 msgid "Default"
 msgstr "默认程序"
 
-#: src/Plug.vala:113 src/Defaults/DefaultPlug.vala:12
+#: src/Plug.vala:117 src/Defaults/DefaultPlug.vala:12
 msgid "Web Browser"
 msgstr "网络浏览器"
 
-#: src/Plug.vala:114 src/Defaults/DefaultPlug.vala:17
+#: src/Plug.vala:118 src/Defaults/DefaultPlug.vala:17
 msgid "Email Client"
 msgstr "邮件客户端"
 
-#: src/Plug.vala:115 src/Defaults/DefaultPlug.vala:22
+#: src/Plug.vala:119 src/Defaults/DefaultPlug.vala:22
 msgid "Calendar"
 msgstr "日历查看器"
 
-#: src/Plug.vala:116 src/Defaults/DefaultPlug.vala:27
+#: src/Plug.vala:120 src/Defaults/DefaultPlug.vala:27
 msgid "Video Player"
 msgstr "视频播放器"
 
-#: src/Plug.vala:117 src/Defaults/DefaultPlug.vala:32
+#: src/Plug.vala:121 src/Defaults/DefaultPlug.vala:32
 msgid "Music Player"
 msgstr "音乐播放器"
 
-#: src/Plug.vala:118 src/Defaults/DefaultPlug.vala:42
+#: src/Plug.vala:122 src/Defaults/DefaultPlug.vala:42
 msgid "Text Editor"
 msgstr "文本编辑器"
 
-#: src/Plug.vala:119 src/Defaults/DefaultPlug.vala:37
+#: src/Plug.vala:123 src/Defaults/DefaultPlug.vala:37
 msgid "Image Viewer"
 msgstr "图像查看器"
 
-#: src/Plug.vala:120 src/Defaults/DefaultPlug.vala:47
+#: src/Plug.vala:124 src/Defaults/DefaultPlug.vala:47
 msgid "File Browser"
 msgstr "文件浏览器"
 
@@ -135,58 +135,58 @@ msgstr "搜索应用程序"
 msgid "Try changing search terms."
 msgstr "尝试更改搜索内容。"
 
-#: src/Permissions/PermissionsPlug.vala:121
+#: src/Permissions/PermissionsPlug.vala:119
 #, c-format
 msgid "No Results for “%s”"
 msgstr "未找到与 “%s” 相关的结果"
 
-#: src/Permissions/Widgets/AppSettingsView.vala:33
+#: src/Permissions/Widgets/AppSettingsView.vala:41
+msgid "Reset to Defaults"
+msgstr "恢复默认"
+
+#: src/Permissions/Widgets/AppSettingsView.vala:68
 msgid "Access your entire Home folder, including any hidden folders."
 msgstr "访问您的主文件夹，包括其中的隐藏文件夹。"
 
-#: src/Permissions/Widgets/AppSettingsView.vala:40
+#: src/Permissions/Widgets/AppSettingsView.vala:72
 msgid ""
 "Access system folders, not including the operating system or system "
 "internals. This includes users' Home folders."
 msgstr "访问系统目录，包含所有用户的文件夹但不包括操作系统目录。"
 
-#: src/Permissions/Widgets/AppSettingsView.vala:47
+#: src/Permissions/Widgets/AppSettingsView.vala:76
 msgid ""
 "Access all devices, such as webcams, microphones, and connected USB devices."
 msgstr "访问所有设备，包括相机、麦克风和已连接的 USB 设备。"
 
-#: src/Permissions/Widgets/AppSettingsView.vala:54
+#: src/Permissions/Widgets/AppSettingsView.vala:80
 msgid "Access the Internet and local networks."
 msgstr "访问因特网和本地局域网。"
 
-#: src/Permissions/Widgets/AppSettingsView.vala:61
+#: src/Permissions/Widgets/AppSettingsView.vala:84
 msgid "Manage Bluetooth devices including pairing, unpairing, and discovery."
 msgstr "管理蓝牙设备，包括匹配、断开和查找。"
 
-#: src/Permissions/Widgets/AppSettingsView.vala:68
+#: src/Permissions/Widgets/AppSettingsView.vala:88
 msgid "Access printers."
 msgstr "访问打印机。"
 
-#: src/Permissions/Widgets/AppSettingsView.vala:75
+#: src/Permissions/Widgets/AppSettingsView.vala:92
 msgid "Access other devices on the network via SSH."
 msgstr "通过 SSH 访问网络中的其他设备。"
 
-#: src/Permissions/Widgets/AppSettingsView.vala:82
+#: src/Permissions/Widgets/AppSettingsView.vala:96
 msgid "Accelerate graphical output."
 msgstr "加速图形输出。"
 
-#: src/Permissions/Widgets/AppSettingsView.vala:110
-msgid "Reset to Defaults"
-msgstr "恢复默认"
-
-#: src/Permissions/Widgets/AppSettingsView.vala:182
+#: src/Permissions/Widgets/AppSettingsView.vala:121
 #, fuzzy, c-format
 #| msgid "Permissions"
 msgid "%s permissions"
 msgstr "应用权限"
 
 #. / Translators: This is a delimiter that separates types of permissions in the sidebar description
-#: src/Permissions/Widgets/SidebarRow.vala:89
+#: src/Permissions/Widgets/SidebarRow.vala:83
 msgid ", "
 msgstr "， "
 

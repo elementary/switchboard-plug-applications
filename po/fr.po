@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-04 17:32+0000\n"
+"POT-Creation-Date: 2024-03-29 03:58+0000\n"
 "PO-Revision-Date: 2023-07-06 19:07+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: French <https://l10n.elementary.io/projects/switchboard/"
@@ -29,60 +29,60 @@ msgstr "Applications"
 msgid "Defaults"
 msgstr "Par défaut"
 
-#: src/Plug.vala:58 src/Plug.vala:108
+#: src/Plug.vala:58 src/Plug.vala:112
 msgid "Startup"
 msgstr "Démarrage"
 
-#: src/Plug.vala:59 src/Plug.vala:110
+#: src/Plug.vala:59 src/Plug.vala:114
 msgid "Permissions"
 msgstr "Autorisations"
 
-#: src/Plug.vala:109
+#: src/Plug.vala:113
 msgid "Default Apps"
 msgstr "Applications par défaut"
 
-#: src/Plug.vala:111
+#: src/Plug.vala:115
 msgid "Sandboxing"
 msgstr "Bac à sable"
 
-#: src/Plug.vala:112
+#: src/Plug.vala:116
 msgid "Confinement"
 msgstr "Confinement"
 
-#: src/Plug.vala:113 src/Plug.vala:114 src/Plug.vala:115 src/Plug.vala:116
 #: src/Plug.vala:117 src/Plug.vala:118 src/Plug.vala:119 src/Plug.vala:120
+#: src/Plug.vala:121 src/Plug.vala:122 src/Plug.vala:123 src/Plug.vala:124
 msgid "Default"
 msgstr "Par défaut"
 
-#: src/Plug.vala:113 src/Defaults/DefaultPlug.vala:12
+#: src/Plug.vala:117 src/Defaults/DefaultPlug.vala:12
 msgid "Web Browser"
 msgstr "Navigateur web"
 
-#: src/Plug.vala:114 src/Defaults/DefaultPlug.vala:17
+#: src/Plug.vala:118 src/Defaults/DefaultPlug.vala:17
 msgid "Email Client"
 msgstr "Messagerie"
 
-#: src/Plug.vala:115 src/Defaults/DefaultPlug.vala:22
+#: src/Plug.vala:119 src/Defaults/DefaultPlug.vala:22
 msgid "Calendar"
 msgstr "Calendrier"
 
-#: src/Plug.vala:116 src/Defaults/DefaultPlug.vala:27
+#: src/Plug.vala:120 src/Defaults/DefaultPlug.vala:27
 msgid "Video Player"
 msgstr "Lecteur vidéo"
 
-#: src/Plug.vala:117 src/Defaults/DefaultPlug.vala:32
+#: src/Plug.vala:121 src/Defaults/DefaultPlug.vala:32
 msgid "Music Player"
 msgstr "Lecteur audio"
 
-#: src/Plug.vala:118 src/Defaults/DefaultPlug.vala:42
+#: src/Plug.vala:122 src/Defaults/DefaultPlug.vala:42
 msgid "Text Editor"
 msgstr "Éditeur de texte"
 
-#: src/Plug.vala:119 src/Defaults/DefaultPlug.vala:37
+#: src/Plug.vala:123 src/Defaults/DefaultPlug.vala:37
 msgid "Image Viewer"
 msgstr "Visionneuse d'images"
 
-#: src/Plug.vala:120 src/Defaults/DefaultPlug.vala:47
+#: src/Plug.vala:124 src/Defaults/DefaultPlug.vala:47
 msgid "File Browser"
 msgstr "Explorateur de fichiers"
 
@@ -139,18 +139,22 @@ msgstr "Rechercher des applications"
 msgid "Try changing search terms."
 msgstr "Essayez de modifier les termes de la recherche."
 
-#: src/Permissions/PermissionsPlug.vala:121
+#: src/Permissions/PermissionsPlug.vala:119
 #, c-format
 msgid "No Results for “%s”"
 msgstr "Aucun résultat pour « %s »"
 
-#: src/Permissions/Widgets/AppSettingsView.vala:33
+#: src/Permissions/Widgets/AppSettingsView.vala:41
+msgid "Reset to Defaults"
+msgstr "Réinitialiser les valeurs par défaut"
+
+#: src/Permissions/Widgets/AppSettingsView.vala:68
 msgid "Access your entire Home folder, including any hidden folders."
 msgstr ""
 "Accéder à l'ensemble de votre dossier personnel, y compris les dossiers "
 "cachés."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:40
+#: src/Permissions/Widgets/AppSettingsView.vala:72
 msgid ""
 "Access system folders, not including the operating system or system "
 "internals. This includes users' Home folders."
@@ -158,45 +162,41 @@ msgstr ""
 "Accéder aux dossiers du système, sans inclure les fichiers du système "
 "d'exploitation. Cela inclue les dossiers personnels de l'utilisateur."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:47
+#: src/Permissions/Widgets/AppSettingsView.vala:76
 msgid ""
 "Access all devices, such as webcams, microphones, and connected USB devices."
 msgstr ""
 "Accéder à tous les périphériques, telles que les webcams, microphones et "
 "périphériques USB connectés."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:54
+#: src/Permissions/Widgets/AppSettingsView.vala:80
 msgid "Access the Internet and local networks."
 msgstr "Accéder à Internet et aux réseaux locaux."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:61
+#: src/Permissions/Widgets/AppSettingsView.vala:84
 msgid "Manage Bluetooth devices including pairing, unpairing, and discovery."
 msgstr ""
 "Gérer les périphériques Bluetooth, y compris l'appairage et la découverte."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:68
+#: src/Permissions/Widgets/AppSettingsView.vala:88
 msgid "Access printers."
 msgstr "Accéder aux imprimantes."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:75
+#: src/Permissions/Widgets/AppSettingsView.vala:92
 msgid "Access other devices on the network via SSH."
 msgstr "Accéder à d'autres périphériques sur le réseau via SSH."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:82
+#: src/Permissions/Widgets/AppSettingsView.vala:96
 msgid "Accelerate graphical output."
 msgstr "Accélérer la sortie vidéo."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:110
-msgid "Reset to Defaults"
-msgstr "Réinitialiser les valeurs par défaut"
-
-#: src/Permissions/Widgets/AppSettingsView.vala:182
+#: src/Permissions/Widgets/AppSettingsView.vala:121
 #, c-format
 msgid "%s permissions"
 msgstr "Autorisations de %s"
 
 #. / Translators: This is a delimiter that separates types of permissions in the sidebar description
-#: src/Permissions/Widgets/SidebarRow.vala:89
+#: src/Permissions/Widgets/SidebarRow.vala:83
 msgid ", "
 msgstr ", "
 

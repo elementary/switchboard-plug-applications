@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-04 17:32+0000\n"
+"POT-Creation-Date: 2024-03-29 03:58+0000\n"
 "PO-Revision-Date: 2023-07-06 19:07+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Marathi <https://l10n.elementary.io/projects/switchboard/"
@@ -27,60 +27,60 @@ msgstr "ॲप्लिकेशन्स्"
 msgid "Defaults"
 msgstr "डीफॉल्ट"
 
-#: src/Plug.vala:58 src/Plug.vala:108
+#: src/Plug.vala:58 src/Plug.vala:112
 msgid "Startup"
 msgstr "स्टार्टअप"
 
-#: src/Plug.vala:59 src/Plug.vala:110
+#: src/Plug.vala:59 src/Plug.vala:114
 msgid "Permissions"
 msgstr "परवानग्या"
 
-#: src/Plug.vala:109
+#: src/Plug.vala:113
 msgid "Default Apps"
 msgstr "डीफॉल्ट अॅप्स"
 
-#: src/Plug.vala:111
+#: src/Plug.vala:115
 msgid "Sandboxing"
 msgstr "सँडबॉक्सिंग"
 
-#: src/Plug.vala:112
+#: src/Plug.vala:116
 msgid "Confinement"
 msgstr "कारावास"
 
-#: src/Plug.vala:113 src/Plug.vala:114 src/Plug.vala:115 src/Plug.vala:116
 #: src/Plug.vala:117 src/Plug.vala:118 src/Plug.vala:119 src/Plug.vala:120
+#: src/Plug.vala:121 src/Plug.vala:122 src/Plug.vala:123 src/Plug.vala:124
 msgid "Default"
 msgstr "डीफॉल्ट"
 
-#: src/Plug.vala:113 src/Defaults/DefaultPlug.vala:12
+#: src/Plug.vala:117 src/Defaults/DefaultPlug.vala:12
 msgid "Web Browser"
 msgstr "वेब ब्राउझर"
 
-#: src/Plug.vala:114 src/Defaults/DefaultPlug.vala:17
+#: src/Plug.vala:118 src/Defaults/DefaultPlug.vala:17
 msgid "Email Client"
 msgstr "ईमेल क्लायंट"
 
-#: src/Plug.vala:115 src/Defaults/DefaultPlug.vala:22
+#: src/Plug.vala:119 src/Defaults/DefaultPlug.vala:22
 msgid "Calendar"
 msgstr "कॅलेंडर"
 
-#: src/Plug.vala:116 src/Defaults/DefaultPlug.vala:27
+#: src/Plug.vala:120 src/Defaults/DefaultPlug.vala:27
 msgid "Video Player"
 msgstr "व्हिडिओ प्लेयर"
 
-#: src/Plug.vala:117 src/Defaults/DefaultPlug.vala:32
+#: src/Plug.vala:121 src/Defaults/DefaultPlug.vala:32
 msgid "Music Player"
 msgstr "संगीत प्लेअर"
 
-#: src/Plug.vala:118 src/Defaults/DefaultPlug.vala:42
+#: src/Plug.vala:122 src/Defaults/DefaultPlug.vala:42
 msgid "Text Editor"
 msgstr "मजकूर संपादक"
 
-#: src/Plug.vala:119 src/Defaults/DefaultPlug.vala:37
+#: src/Plug.vala:123 src/Defaults/DefaultPlug.vala:37
 msgid "Image Viewer"
 msgstr "प्रतिमा दर्शक"
 
-#: src/Plug.vala:120 src/Defaults/DefaultPlug.vala:47
+#: src/Plug.vala:124 src/Defaults/DefaultPlug.vala:47
 msgid "File Browser"
 msgstr "फाइल ब्राउजर"
 
@@ -137,18 +137,22 @@ msgstr "अप्लिकेशन शोधा"
 msgid "Try changing search terms."
 msgstr "शोध संज्ञा बदलून प्रयत्न करा."
 
-#: src/Permissions/PermissionsPlug.vala:121
+#: src/Permissions/PermissionsPlug.vala:119
 #, c-format
 msgid "No Results for “%s”"
 msgstr "\"%s\" साठी कोणतेही परिणाम नाहीत"
 
-#: src/Permissions/Widgets/AppSettingsView.vala:33
+#: src/Permissions/Widgets/AppSettingsView.vala:41
+msgid "Reset to Defaults"
+msgstr "डीफॉल्टवर रीसेट करा"
+
+#: src/Permissions/Widgets/AppSettingsView.vala:68
 #, fuzzy
 #| msgid "Access your entire home folder, including any hidden folders."
 msgid "Access your entire Home folder, including any hidden folders."
 msgstr "कोणत्याही लपविलेल्या फोल्डर्ससह आपल्या संपूर्ण मुख्य फोल्डरमध्ये प्रवेश करा."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:40
+#: src/Permissions/Widgets/AppSettingsView.vala:72
 msgid ""
 "Access system folders, not including the operating system or system "
 "internals. This includes users' Home folders."
@@ -156,47 +160,43 @@ msgstr ""
 "ऑपरेटिंग सिस्टम किंवा सिस्टम इंटर्नल्स व्यतिरिक्त सिस्टम फोल्डर्समध्ये प्रवेश करा. यात "
 "वापरकर्त्यांच्या होम फोल्डर्सचा समावेश आहे."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:47
+#: src/Permissions/Widgets/AppSettingsView.vala:76
 msgid ""
 "Access all devices, such as webcams, microphones, and connected USB devices."
 msgstr ""
 "वेबकॅम, मायक्रोफोन आणि कनेक्ट केलेल्या यूएसबी डिव्हाइससारख्या सर्व डिव्हाइसवर प्रवेश करा."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:54
+#: src/Permissions/Widgets/AppSettingsView.vala:80
 msgid "Access the Internet and local networks."
 msgstr "इंटरनेट आणि स्थानिक नेटवर्कमध्ये प्रवेश करा."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:61
+#: src/Permissions/Widgets/AppSettingsView.vala:84
 #, fuzzy
 #| msgid ""
 #| "Manage bluetooth devices including pairing, unpairing, and discovery."
 msgid "Manage Bluetooth devices including pairing, unpairing, and discovery."
 msgstr "जोडणी, जोड काढणे आणि शोध यासह ब्लूटूथ डिव्हाइस व्यवस्थापित करा."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:68
+#: src/Permissions/Widgets/AppSettingsView.vala:88
 msgid "Access printers."
 msgstr "प्रिंटरमध्ये प्रवेश करा."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:75
+#: src/Permissions/Widgets/AppSettingsView.vala:92
 msgid "Access other devices on the network via SSH."
 msgstr "एसएसएच मार्गे नेटवर्कवरील इतर डिव्हाइसवर प्रवेश करा."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:82
+#: src/Permissions/Widgets/AppSettingsView.vala:96
 msgid "Accelerate graphical output."
 msgstr "ग्राफिकल आउटपुटला गती द्या."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:110
-msgid "Reset to Defaults"
-msgstr "डीफॉल्टवर रीसेट करा"
-
-#: src/Permissions/Widgets/AppSettingsView.vala:182
+#: src/Permissions/Widgets/AppSettingsView.vala:121
 #, fuzzy, c-format
 #| msgid "Permissions"
 msgid "%s permissions"
 msgstr "परवानग्या"
 
 #. / Translators: This is a delimiter that separates types of permissions in the sidebar description
-#: src/Permissions/Widgets/SidebarRow.vala:89
+#: src/Permissions/Widgets/SidebarRow.vala:83
 msgid ", "
 msgstr ", "
 
