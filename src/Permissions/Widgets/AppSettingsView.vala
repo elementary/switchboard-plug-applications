@@ -33,19 +33,12 @@ public class Permissions.Widgets.AppSettingsView : Switchboard.SettingsPage {
     construct {
         notify["selected-app"].connect (update_view);
 
-        background_row = new PermissionSettingsWidget (
-            _("Background Activity"),
-            _("Perform tasks and use system resources while its window is closed."),
-            "permissions-background"
-        );
-
         permission_box = new Gtk.ListBox () {
             hexpand = true,
             selection_mode = NONE
         };
         permission_box.add_css_class ("boxed-list");
         permission_box.add_css_class (Granite.STYLE_CLASS_RICH_LIST);
-        permission_box.append (background_row);
 
         sandbox_box = new Gtk.ListBox () {
             hexpand = true,
@@ -64,32 +57,6 @@ public class Permissions.Widgets.AppSettingsView : Switchboard.SettingsPage {
 
         update_view ();
 
-        background_row.notify["active"].connect (() => {
-            string[] permissions;
-            if (background_row.active) {
-                permissions += "yes";
-            } else {
-                permissions += "no";
-            }
-
-            try {
-                PermissionStore.get_default ().dbus.set_permission.begin (BACKGROUND_TABLE, true, BACKGROUND_ID, selected_app.id, permissions);
-            } catch (Error e) {
-                critical (e.message);
-                var dialog = new Granite.MessageDialog (
-                    _("Couldn't set background activity permission"),
-                    e.message,
-                    new ThemedIcon ("preferences-system")
-                ) {
-                    badge_icon = new ThemedIcon ("dialog-error"),
-                    modal = true,
-                    transient_for = (Gtk.Window) get_root ()
-                };
-                dialog.present ();
-                dialog.response.connect (dialog.destroy);
-            }
-        });
-
         reset_button.clicked.connect (() => {
             if (selected_app != null) {
                 selected_app.reset_settings_to_standard ();
@@ -99,6 +66,7 @@ public class Permissions.Widgets.AppSettingsView : Switchboard.SettingsPage {
     }
 
     private void update_view () {
+        permission_box.remove_all ();
         sandbox_box.remove_all ();
 
         if (selected_app == null) {
@@ -164,9 +132,46 @@ public class Permissions.Widgets.AppSettingsView : Switchboard.SettingsPage {
             sandbox_box.append (override_row);
         });
 
-        update_permissions ();
         var permission_store = PermissionStore.get_default ();
-        permission_store.notify["dbus"].connect (update_permissions);
+
+        background_row = new PermissionSettingsWidget (
+            _("Background Activity"),
+            _("Perform tasks and use system resources while its window is closed."),
+            "permissions-background"
+        );
+
+        background_row.notify["active"].connect (() => {
+            string[] permissions = { };
+            if (background_row.active) {
+                permissions += "yes";
+            } else {
+                permissions += "no";
+            }
+
+            permission_store.dbus.set_permission.begin (BACKGROUND_TABLE, true, BACKGROUND_ID, selected_app.id, permissions, (obj, res) => {
+                try {
+                    permission_store.dbus.set_permission.end (res);
+                } catch (Error e) {
+                    critical (e.message);
+                    var dialog = new Granite.MessageDialog (
+                        _("Couldn't set background activity permission"),
+                        e.message,
+                        new ThemedIcon ("preferences-system")
+                    ) {
+                        badge_icon = new ThemedIcon ("dialog-error"),
+                        modal = true,
+                        transient_for = (Gtk.Window) get_root ()
+                    };
+                    dialog.present ();
+                    dialog.response.connect (dialog.destroy);
+                }
+            });
+        });
+
+        update_permissions.begin ();
+        permission_store.notify["dbus"].connect (() => {
+            update_permissions.begin ();
+        });
         permission_store.changed.connect (update_permissions);
 
         sensitive = true;
@@ -177,7 +182,7 @@ public class Permissions.Widgets.AppSettingsView : Switchboard.SettingsPage {
         icon = selected_app.icon;
     }
 
-    private void update_permissions () {
+    private async void update_permissions () {
         var permission_store = PermissionStore.get_default ();
         if (permission_store.dbus == null) {
             permission_box.sensitive = false;
@@ -186,28 +191,31 @@ public class Permissions.Widgets.AppSettingsView : Switchboard.SettingsPage {
 
         permission_box.sensitive = true;
 
-        permission_store.dbus.get_permission.begin (BACKGROUND_TABLE, BACKGROUND_ID, selected_app.id, (obj, res) => {
-            try {
-                var background_permission = permission_store.dbus.get_permission.end (res);
+        try {
+            var background_permission = yield permission_store.dbus.get_permission (BACKGROUND_TABLE, BACKGROUND_ID, selected_app.id);
+            if (background_permission[0] != null) {
+                background_row.active = background_permission[0] == "yes";
 
-                // A lack of explicit permission is considered permission
-                // to allow pre-emptive opt-out
-                background_row.active = background_permission[0] != "no";
-            } catch (Error e) {
-                critical (e.message);
-                var dialog = new Granite.MessageDialog (
-                    _("Couldn't get background activity permission"),
-                    e.message,
-                    new ThemedIcon ("preferences-system")
-                ) {
-                    badge_icon = new ThemedIcon ("dialog-error"),
-                    modal = true,
-                    transient_for = (Gtk.Window) get_root ()
-                };
-                dialog.present ();
-                dialog.response.connect (dialog.destroy);
+                if (background_row.parent == null) {
+                    permission_box.append (background_row);
+                }
             }
-        });
+        } catch (Error e) {
+            critical (e.message);
+            var dialog = new Granite.MessageDialog (
+                _("Couldn't get background activity permission"),
+                e.message,
+                new ThemedIcon ("preferences-system")
+            ) {
+                badge_icon = new ThemedIcon ("dialog-error"),
+                modal = true,
+                transient_for = (Gtk.Window) get_root ()
+            };
+            dialog.present ();
+            dialog.response.connect (dialog.destroy);
+        }
+
+        permission_box.visible = permission_box.get_row_at_index (0) != null;
     }
 
     private void change_permission_settings (Backend.PermissionSettings settings) {
