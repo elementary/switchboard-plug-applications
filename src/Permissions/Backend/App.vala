@@ -25,6 +25,7 @@ public class Permissions.Backend.App : GLib.Object {
     public Flatpak.InstalledRef installed_ref { get; construct; }
     public string id { get; private set; }
     public string name { get; private set; }
+    public Icon icon { get; private set; }
     public GenericArray<Backend.PermissionSettings> settings;
 
     private const string GROUP = "Context";
@@ -35,7 +36,15 @@ public class Permissions.Backend.App : GLib.Object {
 
     construct {
         id = installed_ref.get_name ();
-        name = installed_ref.get_appdata_name () ?? id;
+
+        var appinfo = new GLib.DesktopAppInfo (id + ".desktop");
+        if (appinfo != null) {
+            name = appinfo.get_name ();
+            icon = appinfo.get_icon () ?? new ThemedIcon ("application-default-icon");
+        } else {
+            icon = new ThemedIcon ("application-default-icon");
+            name = id;
+        }
 
         settings = new GenericArray<Backend.PermissionSettings> ();
 
@@ -108,14 +117,11 @@ public class Permissions.Backend.App : GLib.Object {
                 }
             }
 
-            // Only add settings that are actually overridden
-            if (standard == true) {
-                var s = new Backend.PermissionSettings (key, standard) {
-                    enabled = enabled
-                };
+            var s = new Backend.PermissionSettings (key, standard) {
+                enabled = enabled
+            };
 
-                settings.add (s);
-            }
+            settings.add (s);
         });
 
         notify["settings"].connect (save_overrides);

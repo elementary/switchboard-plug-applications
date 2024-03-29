@@ -19,7 +19,7 @@
 * Authored by: Marius Meisenzahl <mariusmeisenzahl@gmail.com>
 */
 
-public class Permissions.Widgets.AppSettingsView : Gtk.Grid {
+public class Permissions.Widgets.AppSettingsView : Switchboard.SettingsPage {
     public Backend.App? selected_app { get; set; default = null; }
 
     private Gtk.ListBox list_box;
@@ -33,24 +33,12 @@ public class Permissions.Widgets.AppSettingsView : Gtk.Grid {
             vexpand = true,
             selection_mode = NONE
         };
+        list_box.add_css_class ("boxed-list");
         list_box.add_css_class (Granite.STYLE_CLASS_RICH_LIST);
 
-        var scrolled_window = new Gtk.ScrolledWindow () {
-            child = list_box
-        };
+        child = list_box;
 
-        var frame = new Gtk.Frame (null) {
-            child = scrolled_window
-        };
-        frame.add_css_class (Granite.STYLE_CLASS_VIEW);
-
-        reset_button = new Gtk.Button.with_label (_("Reset to Defaults")) {
-            halign = Gtk.Align.END
-        };
-
-        row_spacing = 24;
-        attach (frame, 0, 0);
-        attach (reset_button, 0, 1);
+        reset_button = add_button (_("Reset to Defaults"));
 
         update_view ();
 
@@ -131,6 +119,8 @@ public class Permissions.Widgets.AppSettingsView : Gtk.Grid {
         reset_button.sensitive = should_enable_reset;
 
         update_property (Gtk.AccessibleProperty.LABEL, _("%s permissions").printf (selected_app.name), -1);
+        title = selected_app.name;
+        icon = selected_app.icon;
     }
 
     private void change_permission_settings (Backend.PermissionSettings settings) {
