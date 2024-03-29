@@ -30,7 +30,7 @@ public class Permissions.Widgets.AppSettingsView : Switchboard.SettingsPage {
 
         list_box = new Gtk.ListBox () {
             hexpand = true,
-            vexpand = true,
+            valign = START,
             selection_mode = NONE
         };
         list_box.add_css_class ("boxed-list");
