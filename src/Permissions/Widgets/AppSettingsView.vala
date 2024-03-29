@@ -141,13 +141,7 @@ public class Permissions.Widgets.AppSettingsView : Switchboard.SettingsPage {
         );
 
         background_row.notify["active"].connect (() => {
-            string[] permissions = { };
-            if (background_row.active) {
-                permissions += "yes";
-            } else {
-                permissions += "no";
-            }
-
+            string[] permissions = { background_row.active ? "yes" : "no" };
             permission_store.set_permission (BACKGROUND_TABLE, BACKGROUND_ID, selected_app.id, permissions);
         });
 
