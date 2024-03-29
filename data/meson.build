@@ -4,7 +4,6 @@ gresource = gnome.compile_resources(
     source_dir: meson.current_source_dir()
 )
 
-
 i18n.merge_file(
     input: 'applications.metainfo.xml.in',
     output: 'io.elementary.settings.applications.metainfo.xml',
