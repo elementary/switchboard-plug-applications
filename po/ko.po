@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-04 17:32+0000\n"
+"POT-Creation-Date: 2024-03-29 03:58+0000\n"
 "PO-Revision-Date: 2023-07-06 19:07+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Korean <https://l10n.elementary.io/projects/switchboard/"
@@ -27,60 +27,60 @@ msgstr "애플리케이션"
 msgid "Defaults"
 msgstr "기본"
 
-#: src/Plug.vala:58 src/Plug.vala:108
+#: src/Plug.vala:58 src/Plug.vala:112
 msgid "Startup"
 msgstr "시작"
 
-#: src/Plug.vala:59 src/Plug.vala:110
+#: src/Plug.vala:59 src/Plug.vala:114
 msgid "Permissions"
 msgstr "권한"
 
-#: src/Plug.vala:109
+#: src/Plug.vala:113
 msgid "Default Apps"
 msgstr "기본 앱"
 
-#: src/Plug.vala:111
+#: src/Plug.vala:115
 msgid "Sandboxing"
 msgstr "샌드박싱"
 
-#: src/Plug.vala:112
+#: src/Plug.vala:116
 msgid "Confinement"
 msgstr "제한"
 
-#: src/Plug.vala:113 src/Plug.vala:114 src/Plug.vala:115 src/Plug.vala:116
 #: src/Plug.vala:117 src/Plug.vala:118 src/Plug.vala:119 src/Plug.vala:120
+#: src/Plug.vala:121 src/Plug.vala:122 src/Plug.vala:123 src/Plug.vala:124
 msgid "Default"
 msgstr "기본"
 
-#: src/Plug.vala:113 src/Defaults/DefaultPlug.vala:12
+#: src/Plug.vala:117 src/Defaults/DefaultPlug.vala:12
 msgid "Web Browser"
 msgstr "웹 브라우저"
 
-#: src/Plug.vala:114 src/Defaults/DefaultPlug.vala:17
+#: src/Plug.vala:118 src/Defaults/DefaultPlug.vala:17
 msgid "Email Client"
 msgstr "이메일"
 
-#: src/Plug.vala:115 src/Defaults/DefaultPlug.vala:22
+#: src/Plug.vala:119 src/Defaults/DefaultPlug.vala:22
 msgid "Calendar"
 msgstr "일정 관리"
 
-#: src/Plug.vala:116 src/Defaults/DefaultPlug.vala:27
+#: src/Plug.vala:120 src/Defaults/DefaultPlug.vala:27
 msgid "Video Player"
 msgstr "동영상"
 
-#: src/Plug.vala:117 src/Defaults/DefaultPlug.vala:32
+#: src/Plug.vala:121 src/Defaults/DefaultPlug.vala:32
 msgid "Music Player"
 msgstr "뮤직 플레이어"
 
-#: src/Plug.vala:118 src/Defaults/DefaultPlug.vala:42
+#: src/Plug.vala:122 src/Defaults/DefaultPlug.vala:42
 msgid "Text Editor"
 msgstr "텍스트"
 
-#: src/Plug.vala:119 src/Defaults/DefaultPlug.vala:37
+#: src/Plug.vala:123 src/Defaults/DefaultPlug.vala:37
 msgid "Image Viewer"
 msgstr "사진"
 
-#: src/Plug.vala:120 src/Defaults/DefaultPlug.vala:47
+#: src/Plug.vala:124 src/Defaults/DefaultPlug.vala:47
 msgid "File Browser"
 msgstr "파일"
 
@@ -135,16 +135,20 @@ msgstr "애플리케이션 검색"
 msgid "Try changing search terms."
 msgstr "검색어를 바꿔보세요."
 
-#: src/Permissions/PermissionsPlug.vala:121
+#: src/Permissions/PermissionsPlug.vala:119
 #, c-format
 msgid "No Results for “%s”"
 msgstr "“%s”에 대한 검색 결과가 없습니다"
 
-#: src/Permissions/Widgets/AppSettingsView.vala:33
+#: src/Permissions/Widgets/AppSettingsView.vala:41
+msgid "Reset to Defaults"
+msgstr "기본값으로 재설정"
+
+#: src/Permissions/Widgets/AppSettingsView.vala:68
 msgid "Access your entire Home folder, including any hidden folders."
 msgstr "숨겨진 폴더를 포함하여 전체 홈 폴더에 접근합니다."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:40
+#: src/Permissions/Widgets/AppSettingsView.vala:72
 msgid ""
 "Access system folders, not including the operating system or system "
 "internals. This includes users' Home folders."
@@ -152,43 +156,39 @@ msgstr ""
 "운영 체제나 시스템 내부를 포함하지 않는 시스템 폴더에 접근합니다. 사용자의 "
 "홈 폴더를 포함합니다."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:47
+#: src/Permissions/Widgets/AppSettingsView.vala:76
 msgid ""
 "Access all devices, such as webcams, microphones, and connected USB devices."
 msgstr "웹캠, 마이크, 연결된 USB 와 같은 모든 장치에 접근합니다."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:54
+#: src/Permissions/Widgets/AppSettingsView.vala:80
 msgid "Access the Internet and local networks."
 msgstr "인터넷 및 로컬 네트워크에 접근합니다."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:61
+#: src/Permissions/Widgets/AppSettingsView.vala:84
 msgid "Manage Bluetooth devices including pairing, unpairing, and discovery."
 msgstr "페어링, 페어링 해제, 검색을 포함한 Bluetooth 장치를 관리합니다."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:68
+#: src/Permissions/Widgets/AppSettingsView.vala:88
 msgid "Access printers."
 msgstr "프린터에 접근합니다."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:75
+#: src/Permissions/Widgets/AppSettingsView.vala:92
 msgid "Access other devices on the network via SSH."
 msgstr "SSH를 통해 네트워크의 다른 장치에 접근합니다."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:82
+#: src/Permissions/Widgets/AppSettingsView.vala:96
 msgid "Accelerate graphical output."
 msgstr "그래픽 출력을 가속화합니다."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:110
-msgid "Reset to Defaults"
-msgstr "기본값으로 재설정"
-
-#: src/Permissions/Widgets/AppSettingsView.vala:182
+#: src/Permissions/Widgets/AppSettingsView.vala:121
 #, fuzzy, c-format
 #| msgid "Permissions"
 msgid "%s permissions"
 msgstr "권한"
 
 #. / Translators: This is a delimiter that separates types of permissions in the sidebar description
-#: src/Permissions/Widgets/SidebarRow.vala:89
+#: src/Permissions/Widgets/SidebarRow.vala:83
 msgid ", "
 msgstr ", "
 

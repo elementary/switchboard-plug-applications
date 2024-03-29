@@ -20,47 +20,44 @@
 */
 
 public class Permissions.Widgets.PermissionSettingsWidget : Gtk.ListBoxRow {
-    public signal void changed_permission_settings (Backend.PermissionSettings settings);
-
     public string description { get; construct set; }
     public string icon_name { get; construct set; }
     public string primary_text { get; construct set; }
-    public Backend.PermissionSettings settings { get; construct set; }
 
-    public bool do_notify { get; set; default = true; }
+    public bool active { get; set; }
 
-    public PermissionSettingsWidget (string primary_text, string description, string icon_name, Backend.PermissionSettings settings) {
+    public PermissionSettingsWidget (string primary_text, string description, string icon_name) {
         GLib.Object (
             description: description,
             icon_name: icon_name,
-            primary_text: primary_text,
-            settings: settings
+            primary_text: primary_text
         );
     }
 
     construct {
         var icon = new Gtk.Image.from_icon_name (icon_name) {
-            pixel_size = 32,
-            tooltip_text = settings.context
+            icon_size = LARGE,
         };
 
         var name_label = new Gtk.Label (primary_text) {
             halign = Gtk.Align.START,
             hexpand = true
         };
-        name_label.add_css_class (Granite.STYLE_CLASS_H3_LABEL);
 
         var description_label = new Gtk.Label (description) {
             wrap = true,
             xalign = 0
         };
+        description_label.add_css_class (Granite.STYLE_CLASS_DIM_LABEL);
+        description_label.add_css_class (Granite.STYLE_CLASS_SMALL_LABEL);
 
         var allow_switch = new Gtk.Switch () {
+            focusable = false,
             valign = Gtk.Align.CENTER
         };
 
         var grid = new Gtk.Grid () {
-            column_spacing = 12
+            column_spacing = 6
         };
         grid.attach (icon, 0, 0, 1, 2);
         grid.attach (name_label, 1, 0);
@@ -69,16 +66,10 @@ public class Permissions.Widgets.PermissionSettingsWidget : Gtk.ListBoxRow {
 
         child = grid;
 
+        bind_property ("active", allow_switch, "active", BIDIRECTIONAL);
+
         activate.connect (() => {
             allow_switch.activate ();
-        });
-
-        settings.bind_property ("enabled", allow_switch, "active", BindingFlags.BIDIRECTIONAL);
-
-        settings.notify["enabled"].connect (() => {
-            if (do_notify) {
-                changed_permission_settings (settings);
-            }
         });
     }
 }

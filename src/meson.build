@@ -36,7 +36,7 @@ shared_module(
         dependency('gobject-2.0'),
         dependency('granite-7', version: '>=7.4.0'),
         dependency('gtk4'),
-        dependency('libadwaita-1'),
+        dependency('libadwaita-1', version: '>=1.4'),
         switchboard_dep
     ],
     install: true,

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: applications-plug\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-04 17:32+0000\n"
+"POT-Creation-Date: 2024-03-29 03:58+0000\n"
 "PO-Revision-Date: 2023-07-06 19:07+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Moldovan <https://l10n.elementary.io/projects/switchboard/"
@@ -35,67 +35,67 @@ msgstr "Aplicații"
 msgid "Defaults"
 msgstr "Mod implicit"
 
-#: src/Plug.vala:58 src/Plug.vala:108
+#: src/Plug.vala:58 src/Plug.vala:112
 msgid "Startup"
 msgstr "Lansare"
 
-#: src/Plug.vala:59 src/Plug.vala:110
+#: src/Plug.vala:59 src/Plug.vala:114
 msgid "Permissions"
 msgstr ""
 
-#: src/Plug.vala:109
+#: src/Plug.vala:113
 msgid "Default Apps"
 msgstr "Aplicații prestabilite"
 
-#: src/Plug.vala:111
+#: src/Plug.vala:115
 msgid "Sandboxing"
 msgstr ""
 
-#: src/Plug.vala:112
+#: src/Plug.vala:116
 msgid "Confinement"
 msgstr ""
 
-#: src/Plug.vala:113 src/Plug.vala:114 src/Plug.vala:115 src/Plug.vala:116
 #: src/Plug.vala:117 src/Plug.vala:118 src/Plug.vala:119 src/Plug.vala:120
+#: src/Plug.vala:121 src/Plug.vala:122 src/Plug.vala:123 src/Plug.vala:124
 msgid "Default"
 msgstr "Mod implicit"
 
-#: src/Plug.vala:113 src/Defaults/DefaultPlug.vala:12
+#: src/Plug.vala:117 src/Defaults/DefaultPlug.vala:12
 #, fuzzy
 msgid "Web Browser"
 msgstr "Browser web:"
 
-#: src/Plug.vala:114 src/Defaults/DefaultPlug.vala:17
+#: src/Plug.vala:118 src/Defaults/DefaultPlug.vala:17
 #, fuzzy
 msgid "Email Client"
 msgstr "Client de email:"
 
-#: src/Plug.vala:115 src/Defaults/DefaultPlug.vala:22
+#: src/Plug.vala:119 src/Defaults/DefaultPlug.vala:22
 #, fuzzy
 msgid "Calendar"
 msgstr "Calendarul:"
 
-#: src/Plug.vala:116 src/Defaults/DefaultPlug.vala:27
+#: src/Plug.vala:120 src/Defaults/DefaultPlug.vala:27
 #, fuzzy
 msgid "Video Player"
 msgstr "Reproductor de Video:"
 
-#: src/Plug.vala:117 src/Defaults/DefaultPlug.vala:32
+#: src/Plug.vala:121 src/Defaults/DefaultPlug.vala:32
 #, fuzzy
 msgid "Music Player"
 msgstr "Reproductor de muzică:"
 
-#: src/Plug.vala:118 src/Defaults/DefaultPlug.vala:42
+#: src/Plug.vala:122 src/Defaults/DefaultPlug.vala:42
 #, fuzzy
 msgid "Text Editor"
 msgstr "Editor de text:"
 
-#: src/Plug.vala:119 src/Defaults/DefaultPlug.vala:37
+#: src/Plug.vala:123 src/Defaults/DefaultPlug.vala:37
 #, fuzzy
 msgid "Image Viewer"
 msgstr "Vizualizator de imagini:"
 
-#: src/Plug.vala:120 src/Defaults/DefaultPlug.vala:47
+#: src/Plug.vala:124 src/Defaults/DefaultPlug.vala:47
 #, fuzzy
 msgid "File Browser"
 msgstr "Browser de fișiere:"
@@ -151,59 +151,59 @@ msgstr "Căutați aplicații"
 msgid "Try changing search terms."
 msgstr "Încercați să modificați termenii de căutare."
 
-#: src/Permissions/PermissionsPlug.vala:121
+#: src/Permissions/PermissionsPlug.vala:119
 #, c-format
 msgid "No Results for “%s”"
 msgstr "Niciun rezultat pentru “%s”"
 
-#: src/Permissions/Widgets/AppSettingsView.vala:33
-msgid "Access your entire Home folder, including any hidden folders."
-msgstr ""
-
-#: src/Permissions/Widgets/AppSettingsView.vala:40
-msgid ""
-"Access system folders, not including the operating system or system "
-"internals. This includes users' Home folders."
-msgstr ""
-
-#: src/Permissions/Widgets/AppSettingsView.vala:47
-msgid ""
-"Access all devices, such as webcams, microphones, and connected USB devices."
-msgstr ""
-
-#: src/Permissions/Widgets/AppSettingsView.vala:54
-msgid "Access the Internet and local networks."
-msgstr ""
-
-#: src/Permissions/Widgets/AppSettingsView.vala:61
-msgid "Manage Bluetooth devices including pairing, unpairing, and discovery."
-msgstr ""
-
-#: src/Permissions/Widgets/AppSettingsView.vala:68
-msgid "Access printers."
-msgstr ""
-
-#: src/Permissions/Widgets/AppSettingsView.vala:75
-msgid "Access other devices on the network via SSH."
-msgstr ""
-
-#: src/Permissions/Widgets/AppSettingsView.vala:82
-msgid "Accelerate graphical output."
-msgstr ""
-
-#: src/Permissions/Widgets/AppSettingsView.vala:110
+#: src/Permissions/Widgets/AppSettingsView.vala:41
 #, fuzzy
 #| msgid "Default"
 msgid "Reset to Defaults"
 msgstr "Mod implicit"
 
-#: src/Permissions/Widgets/AppSettingsView.vala:182
+#: src/Permissions/Widgets/AppSettingsView.vala:68
+msgid "Access your entire Home folder, including any hidden folders."
+msgstr ""
+
+#: src/Permissions/Widgets/AppSettingsView.vala:72
+msgid ""
+"Access system folders, not including the operating system or system "
+"internals. This includes users' Home folders."
+msgstr ""
+
+#: src/Permissions/Widgets/AppSettingsView.vala:76
+msgid ""
+"Access all devices, such as webcams, microphones, and connected USB devices."
+msgstr ""
+
+#: src/Permissions/Widgets/AppSettingsView.vala:80
+msgid "Access the Internet and local networks."
+msgstr ""
+
+#: src/Permissions/Widgets/AppSettingsView.vala:84
+msgid "Manage Bluetooth devices including pairing, unpairing, and discovery."
+msgstr ""
+
+#: src/Permissions/Widgets/AppSettingsView.vala:88
+msgid "Access printers."
+msgstr ""
+
+#: src/Permissions/Widgets/AppSettingsView.vala:92
+msgid "Access other devices on the network via SSH."
+msgstr ""
+
+#: src/Permissions/Widgets/AppSettingsView.vala:96
+msgid "Accelerate graphical output."
+msgstr ""
+
+#: src/Permissions/Widgets/AppSettingsView.vala:121
 #, c-format
 msgid "%s permissions"
 msgstr ""
 
 #. / Translators: This is a delimiter that separates types of permissions in the sidebar description
-#: src/Permissions/Widgets/SidebarRow.vala:89
+#: src/Permissions/Widgets/SidebarRow.vala:83
 msgid ", "
 msgstr ""
 
