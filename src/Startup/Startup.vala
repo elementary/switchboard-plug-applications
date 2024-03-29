@@ -64,6 +64,7 @@ public class Startup.Plug : Switchboard.SettingsPage {
         };
 
         child = frame;
+        show_end_title_buttons = true;
 
         app_chooser = new Widgets.AppChooser () {
             modal = true

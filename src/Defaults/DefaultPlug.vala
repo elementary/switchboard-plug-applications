@@ -73,6 +73,7 @@ public class Defaults.Plug : Switchboard.SettingsPage {
         flowbox.append (files_setting);
 
         child = flowbox;
+        show_end_title_buttons = true;
     }
 
     private class SettingsChild : Gtk.FlowBoxChild {

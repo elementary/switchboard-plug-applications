@@ -37,6 +37,7 @@ public class Permissions.Widgets.AppSettingsView : Switchboard.SettingsPage {
         list_box.add_css_class (Granite.STYLE_CLASS_RICH_LIST);
 
         child = list_box;
+        show_end_title_buttons = true;
 
         reset_button = add_button (_("Reset to Defaults"));
 
