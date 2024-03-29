@@ -20,23 +20,9 @@
 */
 
 public class Permissions.Plug : Gtk.Box {
-    public static GLib.HashTable <unowned string, unowned string> permission_names { get; private set; }
-
     private Gtk.SearchEntry search_entry;
     private Gtk.ListBox app_list;
     private Widgets.AppSettingsView app_settings_view;
-
-    static construct {
-        permission_names = new GLib.HashTable <unowned string, unowned string> (str_hash, str_equal);
-        permission_names["filesystems=home"] = _("Home Folder");
-        permission_names["filesystems=host"] = _("System Folders");
-        permission_names["devices=all"] = _("Devices");
-        permission_names["shared=network"] = _("Network");
-        permission_names["features=bluetooth"] = _("Bluetooth");
-        permission_names["sockets=cups"] = _("Printing");
-        permission_names["sockets=ssh-auth"] = _("Secure Shell Agent");
-        permission_names["devices=dri"] = _("GPU Acceleration");
-    }
 
     construct {
         var placeholder = new Granite.Placeholder (_("No Flatpak apps installed")) {
