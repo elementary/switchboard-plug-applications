@@ -29,6 +29,7 @@ public class Permissions.Widgets.AppSettingsView : Switchboard.SettingsPage {
     private Gtk.ListBox permission_box;
     private Gtk.Button reset_button;
     private Gtk.Switch background_switch;
+    private Gtk.LinkButton notification_button;
 
     construct {
         notify["selected-app"].connect (update_view);
@@ -61,6 +62,24 @@ public class Permissions.Widgets.AppSettingsView : Switchboard.SettingsPage {
         background_grid.attach (background_description, 1, 1);
         background_grid.attach (background_switch, 2, 0, 1, 2);
 
+        var notification_icon = new Gtk.Image.from_icon_name ("preferences-system-notifications") {
+            icon_size = LARGE
+        };
+
+        var notification_label = new Gtk.Label (_("Notifications")) {
+            hexpand = true,
+            xalign = 0
+        };
+
+        notification_button = new Gtk.LinkButton ("settings://notifications") {
+            icon_name = "view-more-horizontal-symbolic"
+        };
+
+        var notification_box = new Gtk.Box (HORIZONTAL, 6);
+        notification_box.append (notification_icon);
+        notification_box.append (notification_label);
+        notification_box.append (notification_button);
+
         permission_box = new Gtk.ListBox () {
             hexpand = true,
             selection_mode = NONE
@@ -68,6 +87,7 @@ public class Permissions.Widgets.AppSettingsView : Switchboard.SettingsPage {
         permission_box.add_css_class ("boxed-list");
         permission_box.add_css_class (Granite.STYLE_CLASS_RICH_LIST);
         permission_box.append (background_grid);
+        permission_box.append (notification_box);
 
         var homefolder_widget = new PermissionSettingsWidget (
             Plug.permission_names["filesystems=home"],
@@ -242,6 +262,8 @@ public class Permissions.Widgets.AppSettingsView : Switchboard.SettingsPage {
         var permission_store = PermissionStore.get_default ();
         permission_store.notify["dbus"].connect (update_permissions);
         permission_store.changed.connect (update_permissions);
+
+        notification_button.uri = "settings://notifications/%s".printf (selected_app.id);
 
         update_property (Gtk.AccessibleProperty.LABEL, _("%s permissions").printf (selected_app.name), -1);
         title = selected_app.name;
