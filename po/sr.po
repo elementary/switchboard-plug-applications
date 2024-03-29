@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-29 15:38+0000\n"
+"POT-Creation-Date: 2024-03-29 15:47+0000\n"
 "PO-Revision-Date: 2023-06-28 13:07+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Serbian <https://l10n.elementary.io/projects/switchboard/"
@@ -142,18 +142,18 @@ msgstr ""
 msgid "No Results for “%s”"
 msgstr ""
 
-#: src/Permissions/Widgets/AppSettingsView.vala:56
+#: src/Permissions/Widgets/AppSettingsView.vala:59
 msgid "Reset to Defaults"
 msgstr "Врати на основно"
 
-#: src/Permissions/Widgets/AppSettingsView.vala:84
+#: src/Permissions/Widgets/AppSettingsView.vala:87
 #, fuzzy
 #| msgid "Access your entire home folder, including any hidden folders."
 msgid "Access your entire Home folder, including any hidden folders."
 msgstr ""
 "Приступите вашој читавој личној фасцикли, укључујући све скривене фасцикле."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:88
+#: src/Permissions/Widgets/AppSettingsView.vala:91
 msgid ""
 "Access system folders, not including the operating system or system "
 "internals. This includes users' Home folders."
@@ -161,18 +161,18 @@ msgstr ""
 "Приступите фасциклама система, не укључујући оперативни систем или унутрашње "
 "система. Ово укључује корисникову личну фасциклу."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:92
+#: src/Permissions/Widgets/AppSettingsView.vala:95
 msgid ""
 "Access all devices, such as webcams, microphones, and connected USB devices."
 msgstr ""
 "Приступите свим уређајима, као што су веб камере, микрофони и повезани УСБ "
 "уређаји."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:96
+#: src/Permissions/Widgets/AppSettingsView.vala:99
 msgid "Access the Internet and local networks."
 msgstr "Приступите Интернету и локалним мрежама."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:100
+#: src/Permissions/Widgets/AppSettingsView.vala:103
 #, fuzzy
 #| msgid ""
 #| "Manage bluetooth devices including pairing, unpairing, and discovery."
@@ -180,27 +180,35 @@ msgid "Manage Bluetooth devices including pairing, unpairing, and discovery."
 msgstr ""
 "Управљајте блутут уређајима укључујући упаривање, распаривање и откривање."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:104
+#: src/Permissions/Widgets/AppSettingsView.vala:107
 msgid "Access printers."
 msgstr "Приступите штампачима."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:108
+#: src/Permissions/Widgets/AppSettingsView.vala:111
 msgid "Access other devices on the network via SSH."
 msgstr "Приступите другим уређајима на мрежи путем безбедне шкољке."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:112
+#: src/Permissions/Widgets/AppSettingsView.vala:115
 msgid "Accelerate graphical output."
 msgstr "Убрзајте графички излаз."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:138
+#: src/Permissions/Widgets/AppSettingsView.vala:141
 msgid "Background Activity"
 msgstr ""
 
-#: src/Permissions/Widgets/AppSettingsView.vala:139
+#: src/Permissions/Widgets/AppSettingsView.vala:142
 msgid "Perform tasks and use system resources while its window is closed."
 msgstr ""
 
-#: src/Permissions/Widgets/AppSettingsView.vala:155
+#: src/Permissions/Widgets/AppSettingsView.vala:152
+msgid "Wallpaper"
+msgstr ""
+
+#: src/Permissions/Widgets/AppSettingsView.vala:153
+msgid "Set the wallpaper on the desktop and lock screen."
+msgstr ""
+
+#: src/Permissions/Widgets/AppSettingsView.vala:169
 #, fuzzy, c-format
 #| msgid "Permissions"
 msgid "%s permissions"

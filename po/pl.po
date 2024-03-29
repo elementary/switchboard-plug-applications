@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-29 15:38+0000\n"
+"POT-Creation-Date: 2024-03-29 15:47+0000\n"
 "PO-Revision-Date: 2023-07-06 19:07+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Polish <https://l10n.elementary.io/projects/switchboard/"
@@ -143,17 +143,17 @@ msgstr "Spróbuj zmienić kryteria wyszukiwania."
 msgid "No Results for “%s”"
 msgstr "Brak wyników dla zapytania “%s”"
 
-#: src/Permissions/Widgets/AppSettingsView.vala:56
+#: src/Permissions/Widgets/AppSettingsView.vala:59
 msgid "Reset to Defaults"
 msgstr "Przywróć ustawienia domyślne"
 
-#: src/Permissions/Widgets/AppSettingsView.vala:84
+#: src/Permissions/Widgets/AppSettingsView.vala:87
 msgid "Access your entire Home folder, including any hidden folders."
 msgstr ""
 "Uzyskaj dostęp do twojego całego folderu domowego, włączając w to ukryte "
 "foldery."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:88
+#: src/Permissions/Widgets/AppSettingsView.vala:91
 msgid ""
 "Access system folders, not including the operating system or system "
 "internals. This includes users' Home folders."
@@ -161,44 +161,52 @@ msgstr ""
 "Uzyskaj dostęp do folderów systemowych, nie włączając w to składników "
 "systemu lub systemu operacyjnego. To zawiera foldery domowe użytkowników."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:92
+#: src/Permissions/Widgets/AppSettingsView.vala:95
 msgid ""
 "Access all devices, such as webcams, microphones, and connected USB devices."
 msgstr ""
 "Uzyskaj dostęp do wszystkich urządzeń, takich jak kamery internetowe, "
 "mikrofony i podłączone urządzenia USB."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:96
+#: src/Permissions/Widgets/AppSettingsView.vala:99
 msgid "Access the Internet and local networks."
 msgstr "Uzyskaj dostęp do Internetu i sieci lokalnych."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:100
+#: src/Permissions/Widgets/AppSettingsView.vala:103
 msgid "Manage Bluetooth devices including pairing, unpairing, and discovery."
 msgstr ""
 "Zarządzaj urządzeniami Bluetooth, włączając w to parowanie, rozłączanie i "
 "wykrywanie."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:104
+#: src/Permissions/Widgets/AppSettingsView.vala:107
 msgid "Access printers."
 msgstr "Uzyskaj dostęp do drukarek."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:108
+#: src/Permissions/Widgets/AppSettingsView.vala:111
 msgid "Access other devices on the network via SSH."
 msgstr "Uzyskaj dostęp do innych urządzeń w sieci poprzez SSH."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:112
+#: src/Permissions/Widgets/AppSettingsView.vala:115
 msgid "Accelerate graphical output."
 msgstr "Włącz akcelerację sprzetową."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:138
+#: src/Permissions/Widgets/AppSettingsView.vala:141
 msgid "Background Activity"
 msgstr ""
 
-#: src/Permissions/Widgets/AppSettingsView.vala:139
+#: src/Permissions/Widgets/AppSettingsView.vala:142
 msgid "Perform tasks and use system resources while its window is closed."
 msgstr ""
 
-#: src/Permissions/Widgets/AppSettingsView.vala:155
+#: src/Permissions/Widgets/AppSettingsView.vala:152
+msgid "Wallpaper"
+msgstr ""
+
+#: src/Permissions/Widgets/AppSettingsView.vala:153
+msgid "Set the wallpaper on the desktop and lock screen."
+msgstr ""
+
+#: src/Permissions/Widgets/AppSettingsView.vala:169
 #, c-format
 msgid "%s permissions"
 msgstr "Uprawnienia %s"

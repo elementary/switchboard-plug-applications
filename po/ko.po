@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-29 15:38+0000\n"
+"POT-Creation-Date: 2024-03-29 15:47+0000\n"
 "PO-Revision-Date: 2023-07-06 19:07+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Korean <https://l10n.elementary.io/projects/switchboard/"
@@ -140,15 +140,15 @@ msgstr "검색어를 바꿔보세요."
 msgid "No Results for “%s”"
 msgstr "“%s”에 대한 검색 결과가 없습니다"
 
-#: src/Permissions/Widgets/AppSettingsView.vala:56
+#: src/Permissions/Widgets/AppSettingsView.vala:59
 msgid "Reset to Defaults"
 msgstr "기본값으로 재설정"
 
-#: src/Permissions/Widgets/AppSettingsView.vala:84
+#: src/Permissions/Widgets/AppSettingsView.vala:87
 msgid "Access your entire Home folder, including any hidden folders."
 msgstr "숨겨진 폴더를 포함하여 전체 홈 폴더에 접근합니다."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:88
+#: src/Permissions/Widgets/AppSettingsView.vala:91
 msgid ""
 "Access system folders, not including the operating system or system "
 "internals. This includes users' Home folders."
@@ -156,40 +156,48 @@ msgstr ""
 "운영 체제나 시스템 내부를 포함하지 않는 시스템 폴더에 접근합니다. 사용자의 "
 "홈 폴더를 포함합니다."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:92
+#: src/Permissions/Widgets/AppSettingsView.vala:95
 msgid ""
 "Access all devices, such as webcams, microphones, and connected USB devices."
 msgstr "웹캠, 마이크, 연결된 USB 와 같은 모든 장치에 접근합니다."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:96
+#: src/Permissions/Widgets/AppSettingsView.vala:99
 msgid "Access the Internet and local networks."
 msgstr "인터넷 및 로컬 네트워크에 접근합니다."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:100
+#: src/Permissions/Widgets/AppSettingsView.vala:103
 msgid "Manage Bluetooth devices including pairing, unpairing, and discovery."
 msgstr "페어링, 페어링 해제, 검색을 포함한 Bluetooth 장치를 관리합니다."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:104
+#: src/Permissions/Widgets/AppSettingsView.vala:107
 msgid "Access printers."
 msgstr "프린터에 접근합니다."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:108
+#: src/Permissions/Widgets/AppSettingsView.vala:111
 msgid "Access other devices on the network via SSH."
 msgstr "SSH를 통해 네트워크의 다른 장치에 접근합니다."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:112
+#: src/Permissions/Widgets/AppSettingsView.vala:115
 msgid "Accelerate graphical output."
 msgstr "그래픽 출력을 가속화합니다."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:138
+#: src/Permissions/Widgets/AppSettingsView.vala:141
 msgid "Background Activity"
 msgstr ""
 
-#: src/Permissions/Widgets/AppSettingsView.vala:139
+#: src/Permissions/Widgets/AppSettingsView.vala:142
 msgid "Perform tasks and use system resources while its window is closed."
 msgstr ""
 
-#: src/Permissions/Widgets/AppSettingsView.vala:155
+#: src/Permissions/Widgets/AppSettingsView.vala:152
+msgid "Wallpaper"
+msgstr ""
+
+#: src/Permissions/Widgets/AppSettingsView.vala:153
+msgid "Set the wallpaper on the desktop and lock screen."
+msgstr ""
+
+#: src/Permissions/Widgets/AppSettingsView.vala:169
 #, fuzzy, c-format
 #| msgid "Permissions"
 msgid "%s permissions"

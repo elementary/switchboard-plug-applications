@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-29 15:38+0000\n"
+"POT-Creation-Date: 2024-03-29 15:47+0000\n"
 "PO-Revision-Date: 2023-07-06 19:07+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Dutch <https://l10n.elementary.io/projects/switchboard/"
@@ -144,16 +144,16 @@ msgstr "Probeer uw zoektermen te wijzigen."
 msgid "No Results for “%s”"
 msgstr "Geen resultaat voor \"%s\""
 
-#: src/Permissions/Widgets/AppSettingsView.vala:56
+#: src/Permissions/Widgets/AppSettingsView.vala:59
 msgid "Reset to Defaults"
 msgstr "Terugzetten naar standaardinstellingen"
 
-#: src/Permissions/Widgets/AppSettingsView.vala:84
+#: src/Permissions/Widgets/AppSettingsView.vala:87
 msgid "Access your entire Home folder, including any hidden folders."
 msgstr ""
 "Toegang tot de volledige Persoonlijke map, inclusief alle verborgen mappen."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:88
+#: src/Permissions/Widgets/AppSettingsView.vala:91
 msgid ""
 "Access system folders, not including the operating system or system "
 "internals. This includes users' Home folders."
@@ -161,44 +161,52 @@ msgstr ""
 "Toegang tot systeemmappen, met uitzondering van het besturingssysteem en "
 "interne componenten. Dit omvat ook de Persoonlijke mappen van de gebruikers."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:92
+#: src/Permissions/Widgets/AppSettingsView.vala:95
 msgid ""
 "Access all devices, such as webcams, microphones, and connected USB devices."
 msgstr ""
 "Toegang tot alle apparaten zoals webcams, microfoons en gekoppelde USB-"
 "apparaten."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:96
+#: src/Permissions/Widgets/AppSettingsView.vala:99
 msgid "Access the Internet and local networks."
 msgstr "Toegang tot het internet en lokale netwerken."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:100
+#: src/Permissions/Widgets/AppSettingsView.vala:103
 msgid "Manage Bluetooth devices including pairing, unpairing, and discovery."
 msgstr ""
 "Beheer Bluetooth-apparaten waaronder het koppelen, ontkoppelen en ontdekken "
 "van apparaten."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:104
+#: src/Permissions/Widgets/AppSettingsView.vala:107
 msgid "Access printers."
 msgstr "Toegang tot printers."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:108
+#: src/Permissions/Widgets/AppSettingsView.vala:111
 msgid "Access other devices on the network via SSH."
 msgstr "Toegang tot andere apparaten op het netwerk via SSH."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:112
+#: src/Permissions/Widgets/AppSettingsView.vala:115
 msgid "Accelerate graphical output."
 msgstr "Versnel grafische uitvoer."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:138
+#: src/Permissions/Widgets/AppSettingsView.vala:141
 msgid "Background Activity"
 msgstr ""
 
-#: src/Permissions/Widgets/AppSettingsView.vala:139
+#: src/Permissions/Widgets/AppSettingsView.vala:142
 msgid "Perform tasks and use system resources while its window is closed."
 msgstr ""
 
-#: src/Permissions/Widgets/AppSettingsView.vala:155
+#: src/Permissions/Widgets/AppSettingsView.vala:152
+msgid "Wallpaper"
+msgstr ""
+
+#: src/Permissions/Widgets/AppSettingsView.vala:153
+msgid "Set the wallpaper on the desktop and lock screen."
+msgstr ""
+
+#: src/Permissions/Widgets/AppSettingsView.vala:169
 #, c-format
 msgid "%s permissions"
 msgstr "%s rechten"
