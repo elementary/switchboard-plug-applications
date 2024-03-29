@@ -26,6 +26,8 @@ public class Permissions.Widgets.AppSettingsView : Switchboard.SettingsPage {
     private const string BACKGROUND_ID = "background";
     private const string LOCATION_TABLE = "location";
     private const string LOCATION_ID = "location";
+    private const string WALLPAPER_TABLE = "wallpaper";
+    private const string WALLPAPER_ID = "wallpaper";
 
     private string location_timestamp = "0";
 
@@ -34,6 +36,7 @@ public class Permissions.Widgets.AppSettingsView : Switchboard.SettingsPage {
     private Gtk.Button reset_button;
     private PermissionSettingsWidget background_row;
     private PermissionSettingsWidget location_row;
+    private PermissionSettingsWidget wallpaper_row;
 
     construct {
         notify["selected-app"].connect (update_view);
@@ -150,6 +153,7 @@ public class Permissions.Widgets.AppSettingsView : Switchboard.SettingsPage {
             permission_store.set_permission (BACKGROUND_TABLE, BACKGROUND_ID, selected_app.id, permissions);
         });
 
+
         location_row = new PermissionSettingsWidget (
             _("Location Services"),
             _("Determine the location of this device."),
@@ -162,6 +166,17 @@ public class Permissions.Widgets.AppSettingsView : Switchboard.SettingsPage {
                 location_timestamp
             };
             permission_store.set_permission (LOCATION_TABLE, LOCATION_ID, selected_app.id, permissions);
+        });
+
+        wallpaper_row = new PermissionSettingsWidget (
+            _("Wallpaper"),
+            _("Set the wallpaper on the desktop and lock screen."),
+            "preferences-desktop-wallpaper"
+        );
+
+        wallpaper_row.notify["active"].connect (() => {
+            string[] permissions = { wallpaper_row.active ? "yes" : "no" };
+            permission_store.set_permission (WALLPAPER_TABLE, WALLPAPER_ID, selected_app.id, permissions);
         });
 
         update_permissions.begin ();
@@ -202,6 +217,15 @@ public class Permissions.Widgets.AppSettingsView : Switchboard.SettingsPage {
 
             if (location_row.parent == null) {
                 permission_box.append (location_row);
+            }
+        }
+
+        var wallpaper_permission = yield permission_store.get_permission (WALLPAPER_TABLE, WALLPAPER_ID, selected_app.id);
+        if (wallpaper_permission[0] != null) {
+            wallpaper_row.active = wallpaper_permission[0] == "yes";
+
+            if (wallpaper_row.parent == null) {
+                permission_box.append (wallpaper_row);
             }
         }
 

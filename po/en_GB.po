@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-29 03:58+0000\n"
+"POT-Creation-Date: 2024-03-29 15:38+0000\n"
 "PO-Revision-Date: 2023-07-06 19:07+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: English (United Kingdom) <https://l10n.elementary.io/projects/"
@@ -142,15 +142,15 @@ msgstr "Try changing search terms."
 msgid "No Results for “%s”"
 msgstr "No Results for “%s”"
 
-#: src/Permissions/Widgets/AppSettingsView.vala:41
+#: src/Permissions/Widgets/AppSettingsView.vala:56
 msgid "Reset to Defaults"
 msgstr "Reset to Defaults"
 
-#: src/Permissions/Widgets/AppSettingsView.vala:68
+#: src/Permissions/Widgets/AppSettingsView.vala:84
 msgid "Access your entire Home folder, including any hidden folders."
 msgstr "Access your entire Home folder, including any hidden folders."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:72
+#: src/Permissions/Widgets/AppSettingsView.vala:88
 msgid ""
 "Access system folders, not including the operating system or system "
 "internals. This includes users' Home folders."
@@ -158,33 +158,41 @@ msgstr ""
 "Access system folders, not including the operating system or system "
 "internals. This includes users' Home folders."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:76
+#: src/Permissions/Widgets/AppSettingsView.vala:92
 msgid ""
 "Access all devices, such as webcams, microphones, and connected USB devices."
 msgstr ""
 "Access all devices, such as webcams, microphones, and connected USB devices."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:80
+#: src/Permissions/Widgets/AppSettingsView.vala:96
 msgid "Access the Internet and local networks."
 msgstr "Access the Internet and local networks."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:84
+#: src/Permissions/Widgets/AppSettingsView.vala:100
 msgid "Manage Bluetooth devices including pairing, unpairing, and discovery."
 msgstr "Manage Bluetooth devices including pairing, unpairing, and discovery."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:88
+#: src/Permissions/Widgets/AppSettingsView.vala:104
 msgid "Access printers."
 msgstr "Access printers."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:92
+#: src/Permissions/Widgets/AppSettingsView.vala:108
 msgid "Access other devices on the network via SSH."
 msgstr "Access other devices on the network via SSH."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:96
+#: src/Permissions/Widgets/AppSettingsView.vala:112
 msgid "Accelerate graphical output."
 msgstr "Accelerate graphical output."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:121
+#: src/Permissions/Widgets/AppSettingsView.vala:138
+msgid "Background Activity"
+msgstr ""
+
+#: src/Permissions/Widgets/AppSettingsView.vala:139
+msgid "Perform tasks and use system resources while its window is closed."
+msgstr ""
+
+#: src/Permissions/Widgets/AppSettingsView.vala:155
 #, c-format
 msgid "%s permissions"
 msgstr "%s permissions"
