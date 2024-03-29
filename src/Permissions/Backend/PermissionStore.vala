@@ -55,4 +55,45 @@ public class Permissions.PermissionStore : GLib.Object {
     private void name_vanished_callback (DBusConnection connection, string name) {
         dbus = null;
     }
+
+    public void set_permission (string table, string id, string app, string[] permissions) {
+        dbus.set_permission.begin (table, false, id, app, permissions, (obj, res) => {
+            try {
+                dbus.set_permission.end (res);
+            } catch (Error e) {
+                critical (e.message);
+                var dialog = new Granite.MessageDialog (
+                    _("Couldn't set permission"),
+                    e.message,
+                    new ThemedIcon ("preferences-system")
+                ) {
+                    badge_icon = new ThemedIcon ("dialog-error"),
+                    modal = true,
+                    transient_for = ((Gtk.Application) GLib.Application.get_default ()).active_window
+                };
+                dialog.present ();
+                dialog.response.connect (dialog.destroy);
+            }
+        });
+    }
+
+    public async string[] get_permission (string table, string id, string app) {
+        try {
+            return yield dbus.get_permission (table, id, app);
+        } catch (Error e) {
+            var dialog = new Granite.MessageDialog (
+                _("Couldn't get permission"),
+                e.message,
+                new ThemedIcon ("preferences-system")
+            ) {
+                badge_icon = new ThemedIcon ("dialog-error"),
+                modal = true,
+                transient_for = ((Gtk.Application) GLib.Application.get_default ()).active_window
+            };
+            dialog.present ();
+            dialog.response.connect (dialog.destroy);
+        }
+
+        return { null };
+    }
 }
