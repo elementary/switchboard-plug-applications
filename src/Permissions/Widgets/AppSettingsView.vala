@@ -71,6 +71,12 @@ public class Permissions.Widgets.AppSettingsView : Switchboard.SettingsPage {
             }
         });
 
+        sandbox_box.row_activated.connect ((row) => {
+            if (row is PermissionSettingsWidget) {
+                row.active = !row.active;
+            }
+        });
+
         reset_button.clicked.connect (() => {
             if (selected_app != null) {
                 selected_app.reset_settings_to_standard ();
