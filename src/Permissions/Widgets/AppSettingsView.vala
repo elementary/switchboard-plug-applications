@@ -152,9 +152,7 @@ public class Permissions.Widgets.AppSettingsView : Switchboard.SettingsPage {
         });
 
         update_permissions.begin ();
-        permission_store.notify["dbus"].connect (() => {
-            update_permissions.begin ();
-        });
+        permission_store.notify["dbus"].connect (update_permissions);
         permission_store.changed.connect (update_permissions);
 
         sensitive = true;
