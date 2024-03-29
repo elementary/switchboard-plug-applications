@@ -28,38 +28,16 @@ public class Permissions.Widgets.AppSettingsView : Switchboard.SettingsPage {
     private Gtk.ListBox sandbox_box;
     private Gtk.ListBox permission_box;
     private Gtk.Button reset_button;
-    private Gtk.Switch background_switch;
+    private PermissionSettingsWidget background_row;
 
     construct {
         notify["selected-app"].connect (update_view);
 
-        var background_image = new Gtk.Image.from_icon_name ("permissions-background") {
-            icon_size = LARGE
-        };
-
-        var background_label = new Gtk.Label (_("Background Activity")) {
-            hexpand = true,
-            xalign = 0
-        };
-
-        var background_description = new Gtk.Label (_("Perform tasks and use system resources while its window is closed.")) {
-            xalign = 0,
-            wrap = true
-        };
-        background_description.add_css_class (Granite.STYLE_CLASS_DIM_LABEL);
-        background_description.add_css_class (Granite.STYLE_CLASS_SMALL_LABEL);
-
-        background_switch = new Gtk.Switch () {
-            valign = CENTER
-        };
-
-        var background_grid = new Gtk.Grid () {
-            column_spacing = 6
-        };
-        background_grid.attach (background_image, 0, 0, 1, 2);
-        background_grid.attach (background_label, 1, 0);
-        background_grid.attach (background_description, 1, 1);
-        background_grid.attach (background_switch, 2, 0, 1, 2);
+        background_row = new PermissionSettingsWidget (
+            _("Background Activity"),
+            _("Perform tasks and use system resources while its window is closed."),
+            "permissions-background"
+        );
 
         permission_box = new Gtk.ListBox () {
             hexpand = true,
@@ -67,7 +45,7 @@ public class Permissions.Widgets.AppSettingsView : Switchboard.SettingsPage {
         };
         permission_box.add_css_class ("boxed-list");
         permission_box.add_css_class (Granite.STYLE_CLASS_RICH_LIST);
-        permission_box.append (background_grid);
+        permission_box.append (background_row);
 
         sandbox_box = new Gtk.ListBox () {
             hexpand = true,
@@ -86,9 +64,9 @@ public class Permissions.Widgets.AppSettingsView : Switchboard.SettingsPage {
 
         update_view ();
 
-        background_switch.notify["active"].connect (() => {
+        background_row.notify["active"].connect (() => {
             string[] permissions;
-            if (background_switch.active) {
+            if (background_row.active) {
                 permissions += "yes";
             } else {
                 permissions += "no";
@@ -214,7 +192,7 @@ public class Permissions.Widgets.AppSettingsView : Switchboard.SettingsPage {
 
                 // A lack of explicit permission is considered permission
                 // to allow pre-emptive opt-out
-                background_switch.active = background_permission[0] != "no";
+                background_row.active = background_permission[0] != "no";
             } catch (Error e) {
                 critical (e.message);
                 var dialog = new Granite.MessageDialog (
