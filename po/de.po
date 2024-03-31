@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-29 15:50+0000\n"
+"POT-Creation-Date: 2024-03-31 12:00+0000\n"
 "PO-Revision-Date: 2024-03-31 04:13+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: German <https://l10n.elementary.io/projects/switchboard/"
@@ -144,17 +144,27 @@ msgstr "Versuchen Sie es mit anderen Suchbegriffen."
 msgid "No Results for “%s”"
 msgstr "Keine Ergebnisse für »%s«"
 
-#: src/Permissions/Widgets/AppSettingsView.vala:64
+#: src/Permissions/Widgets/AppSettingsView.vala:51
+msgid "Advanced System Access"
+msgstr ""
+
+#: src/Permissions/Widgets/AppSettingsView.vala:53
+msgid ""
+"Access to system features can be restricted to make apps more secure, but "
+"some apps may not function properly without it"
+msgstr ""
+
+#: src/Permissions/Widgets/AppSettingsView.vala:63
 msgid "Reset to Defaults"
 msgstr "Auf Standardwerte zurücksetzen"
 
-#: src/Permissions/Widgets/AppSettingsView.vala:92
+#: src/Permissions/Widgets/AppSettingsView.vala:101
 msgid "Access your entire Home folder, including any hidden folders."
 msgstr ""
 "Zugriff auf den gesamten Persönlichen Ordner, inklusive aller ausgeblendeten "
 "Ordner."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:96
+#: src/Permissions/Widgets/AppSettingsView.vala:105
 msgid ""
 "Access system folders, not including the operating system or system "
 "internals. This includes users' Home folders."
@@ -162,57 +172,57 @@ msgstr ""
 "Zugriff auf Systemordner, ausgenommen das Betriebssystem und Systeminternas. "
 "Die Persönlichen Ordner der Benutzer sind eingeschlossen."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:100
+#: src/Permissions/Widgets/AppSettingsView.vala:109
 msgid ""
 "Access all devices, such as webcams, microphones, and connected USB devices."
 msgstr ""
 "Zugriff auf alle Geräte wie Kameras, Mikrofone und angeschlossene USB-Geräte."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:104
+#: src/Permissions/Widgets/AppSettingsView.vala:113
 msgid "Access the Internet and local networks."
 msgstr "Zugriff auf der Internet und lokale Netzwerke."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:108
+#: src/Permissions/Widgets/AppSettingsView.vala:117
 msgid "Manage Bluetooth devices including pairing, unpairing, and discovery."
 msgstr "Bluetooth-Geräte verwalten inklusive Kopplung, Trennung und Suche."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:112
+#: src/Permissions/Widgets/AppSettingsView.vala:121
 msgid "Access printers."
 msgstr "Zugriff auf Drucker."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:116
+#: src/Permissions/Widgets/AppSettingsView.vala:125
 msgid "Access other devices on the network via SSH."
 msgstr "Zugriff auf andere Geräte im Netzwerk über SSH."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:120
+#: src/Permissions/Widgets/AppSettingsView.vala:129
 msgid "Accelerate graphical output."
 msgstr "Grafikausgabe beschleunigen."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:146
+#: src/Permissions/Widgets/AppSettingsView.vala:155
 msgid "Background Activity"
 msgstr ""
 
-#: src/Permissions/Widgets/AppSettingsView.vala:147
+#: src/Permissions/Widgets/AppSettingsView.vala:156
 msgid "Perform tasks and use system resources while its window is closed."
 msgstr ""
 
-#: src/Permissions/Widgets/AppSettingsView.vala:157
+#: src/Permissions/Widgets/AppSettingsView.vala:166
 msgid "Location Services"
 msgstr "Ortsdienste"
 
-#: src/Permissions/Widgets/AppSettingsView.vala:158
+#: src/Permissions/Widgets/AppSettingsView.vala:167
 msgid "Determine the location of this device."
 msgstr ""
 
-#: src/Permissions/Widgets/AppSettingsView.vala:171
+#: src/Permissions/Widgets/AppSettingsView.vala:180
 msgid "Wallpaper"
 msgstr "Hintergrund"
 
-#: src/Permissions/Widgets/AppSettingsView.vala:172
+#: src/Permissions/Widgets/AppSettingsView.vala:181
 msgid "Set the wallpaper on the desktop and lock screen."
 msgstr ""
 
-#: src/Permissions/Widgets/AppSettingsView.vala:188
+#: src/Permissions/Widgets/AppSettingsView.vala:197
 #, c-format
 msgid "%s permissions"
 msgstr "%s Zugriffsrechte"

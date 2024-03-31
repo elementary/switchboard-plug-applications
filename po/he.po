@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-29 15:50+0000\n"
+"POT-Creation-Date: 2024-03-31 12:00+0000\n"
 "PO-Revision-Date: 2024-03-31 04:13+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Hebrew <https://l10n.elementary.io/projects/switchboard/"
@@ -140,15 +140,25 @@ msgstr "מוטב לשנות את מונחי החיפוש."
 msgid "No Results for “%s”"
 msgstr "אין תוצאות עבור „%s”"
 
-#: src/Permissions/Widgets/AppSettingsView.vala:64
+#: src/Permissions/Widgets/AppSettingsView.vala:51
+msgid "Advanced System Access"
+msgstr ""
+
+#: src/Permissions/Widgets/AppSettingsView.vala:53
+msgid ""
+"Access to system features can be restricted to make apps more secure, but "
+"some apps may not function properly without it"
+msgstr ""
+
+#: src/Permissions/Widgets/AppSettingsView.vala:63
 msgid "Reset to Defaults"
 msgstr "איפוס לבררות מחדל"
 
-#: src/Permissions/Widgets/AppSettingsView.vala:92
+#: src/Permissions/Widgets/AppSettingsView.vala:101
 msgid "Access your entire Home folder, including any hidden folders."
 msgstr "גישה לכל תיקיית הבית של כולל תיקיות נסתרות כלשהן."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:96
+#: src/Permissions/Widgets/AppSettingsView.vala:105
 msgid ""
 "Access system folders, not including the operating system or system "
 "internals. This includes users' Home folders."
@@ -156,56 +166,56 @@ msgstr ""
 "גישה לתיקיות המערכת, לא כולל מערכת ההפעלה או רכיבי מערכת פנימיים. לרבות "
 "תיקיות הבית של המשתמשים."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:100
+#: src/Permissions/Widgets/AppSettingsView.vala:109
 msgid ""
 "Access all devices, such as webcams, microphones, and connected USB devices."
 msgstr "גישה לכל ההתקנים כגון מצלמות, מיקרופונים ומכשירי USB מחוברים."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:104
+#: src/Permissions/Widgets/AppSettingsView.vala:113
 msgid "Access the Internet and local networks."
 msgstr "גישה לאינטרנט ולרשתות מקומיות."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:108
+#: src/Permissions/Widgets/AppSettingsView.vala:117
 msgid "Manage Bluetooth devices including pairing, unpairing, and discovery."
 msgstr "ניהול מכשירי בלוטות׳ לרבות צימוד, ניתוק וגילוי."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:112
+#: src/Permissions/Widgets/AppSettingsView.vala:121
 msgid "Access printers."
 msgstr "גישה למדפסות."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:116
+#: src/Permissions/Widgets/AppSettingsView.vala:125
 msgid "Access other devices on the network via SSH."
 msgstr "גישה לציוד ברשת דרך SSH."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:120
+#: src/Permissions/Widgets/AppSettingsView.vala:129
 msgid "Accelerate graphical output."
 msgstr "האצת הפלט הגרפי."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:146
+#: src/Permissions/Widgets/AppSettingsView.vala:155
 msgid "Background Activity"
 msgstr "פעילות רקע"
 
-#: src/Permissions/Widgets/AppSettingsView.vala:147
+#: src/Permissions/Widgets/AppSettingsView.vala:156
 msgid "Perform tasks and use system resources while its window is closed."
 msgstr "ביצוע משימות וניצול משאבי מערכת על אף שהחלון ברור."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:157
+#: src/Permissions/Widgets/AppSettingsView.vala:166
 msgid "Location Services"
 msgstr "שירותי מיקום"
 
-#: src/Permissions/Widgets/AppSettingsView.vala:158
+#: src/Permissions/Widgets/AppSettingsView.vala:167
 msgid "Determine the location of this device."
 msgstr "איתור מקום המכשיר הזה."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:171
+#: src/Permissions/Widgets/AppSettingsView.vala:180
 msgid "Wallpaper"
 msgstr "תמונת רקע"
 
-#: src/Permissions/Widgets/AppSettingsView.vala:172
+#: src/Permissions/Widgets/AppSettingsView.vala:181
 msgid "Set the wallpaper on the desktop and lock screen."
 msgstr "הגדרת תמונת הרקע של שולחן העבודה ומסך הנעילה."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:188
+#: src/Permissions/Widgets/AppSettingsView.vala:197
 #, c-format
 msgid "%s permissions"
 msgstr "הרשאות %s"
