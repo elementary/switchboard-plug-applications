@@ -109,7 +109,7 @@ public class Permissions.Widgets.AppSettingsView : Switchboard.SettingsPage {
                     icon_name = "bluetooth";
                     break;
                 case "sockets=cups":
-                    description = _("Manage printers and see the print queue");
+                    description = _("Manage printers and see the print queue.");
                     icon_name = "printer";
                     break;
                 case "sockets=ssh-auth":
