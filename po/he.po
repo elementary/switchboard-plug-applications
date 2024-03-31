@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-03-29 15:50+0000\n"
-"PO-Revision-Date: 2024-03-29 15:48+0000\n"
+"PO-Revision-Date: 2024-03-31 04:13+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Hebrew <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-applications/he/>\n"
@@ -183,19 +183,19 @@ msgstr "האצת הפלט הגרפי."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:146
 msgid "Background Activity"
-msgstr ""
+msgstr "פעילות רקע"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:147
 msgid "Perform tasks and use system resources while its window is closed."
-msgstr ""
+msgstr "ביצוע משימות וניצול משאבי מערכת על אף שהחלון ברור."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:157
 msgid "Location Services"
-msgstr ""
+msgstr "שירותי מיקום"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:158
 msgid "Determine the location of this device."
-msgstr ""
+msgstr "איתור מקום המכשיר הזה."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:171
 msgid "Wallpaper"
@@ -203,7 +203,7 @@ msgstr "תמונת רקע"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:172
 msgid "Set the wallpaper on the desktop and lock screen."
-msgstr ""
+msgstr "הגדרת תמונת הרקע של שולחן העבודה ומסך הנעילה."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:188
 #, c-format

@@ -48,6 +48,11 @@ public class Permissions.Widgets.AppSettingsView : Switchboard.SettingsPage {
         permission_box.add_css_class ("boxed-list");
         permission_box.add_css_class (Granite.STYLE_CLASS_RICH_LIST);
 
+        var sandbox_header = new Granite.HeaderLabel (_("Advanced System Access")) {
+            halign = FILL,
+            secondary_text = _("Access to system features can be restricted to make apps more secure, but some apps may not function properly without it")
+        };
+
         sandbox_box = new Gtk.ListBox () {
             hexpand = true,
             selection_mode = NONE
@@ -55,13 +60,17 @@ public class Permissions.Widgets.AppSettingsView : Switchboard.SettingsPage {
         sandbox_box.add_css_class ("boxed-list");
         sandbox_box.add_css_class (Granite.STYLE_CLASS_RICH_LIST);
 
-        var box = new Gtk.Box (VERTICAL, 24);
+        reset_button = new Gtk.Button.with_label (_("Reset to Defaults")) {
+            halign = END
+        };
+
+        var box = new Gtk.Box (VERTICAL, 12);
         box.append (permission_box);
+        box.append (sandbox_header);
         box.append (sandbox_box);
+        box.append (reset_button);
 
         child = box;
-
-        reset_button = add_button (_("Reset to Defaults"));
 
         update_view ();
 
