@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-31 12:00+0000\n"
+"POT-Creation-Date: 2024-03-31 16:18+0000\n"
 "PO-Revision-Date: 2024-03-31 04:13+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Indonesian <https://l10n.elementary.io/projects/switchboard/"
@@ -157,26 +157,30 @@ msgid "Reset to Defaults"
 msgstr "Setel Ulang ke Bawaan"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:101
-msgid "Access your entire Home folder, including any hidden folders."
-msgstr "Akses seluruh folder Beranda, termasuk folder tersembunyi."
+msgid ""
+"Including all documents, downloads, music, pictures, videos, and any hidden "
+"folders."
+msgstr ""
 
 #: src/Permissions/Widgets/AppSettingsView.vala:105
-msgid ""
-"Access system folders, not including the operating system or system "
-"internals. This includes users' Home folders."
+msgid "Including everyone's Home folders, but not including system internals."
 msgstr ""
-"Akses folder sistem, tidak termasuk sistem operasi atau internal sistem. Ini "
-"termasuk folder Beranda pengguna."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:109
+#, fuzzy
+#| msgid ""
+#| "Access all devices, such as webcams, microphones, and connected USB "
+#| "devices."
 msgid ""
-"Access all devices, such as webcams, microphones, and connected USB devices."
+"Manage all connected devices, such as webcams, microphones, and USB devices."
 msgstr ""
 "Akses semua perangkat, seperti webcam, mikrofon, dan perangkat USB yang "
 "terhubung."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:113
-msgid "Access the Internet and local networks."
+#, fuzzy
+#| msgid "Access the Internet and local networks."
+msgid "Connect to the Internet and local networks."
 msgstr "Akses Internet dan jaringan lokal."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:117
@@ -185,11 +189,13 @@ msgstr ""
 "Kelola perangkat Bluetooth termasuk pemasangan, pembongkaran, dan penemuan."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:121
-msgid "Access printers."
-msgstr "Akses printer."
+msgid "Manage printers and see the print queue."
+msgstr ""
 
 #: src/Permissions/Widgets/AppSettingsView.vala:125
-msgid "Access other devices on the network via SSH."
+#, fuzzy
+#| msgid "Access other devices on the network via SSH."
+msgid "Connect to other devices on the network via SSH."
 msgstr "Akses perangkat lain di jaringan melalui SSH."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:129
@@ -272,6 +278,19 @@ msgstr "Batal"
 #| msgid "Remove Selected Startup App"
 msgid "Select startup app"
 msgstr "Hapus Aplikasi Mulai Awal yang Dipilih"
+
+#~ msgid "Access your entire Home folder, including any hidden folders."
+#~ msgstr "Akses seluruh folder Beranda, termasuk folder tersembunyi."
+
+#~ msgid ""
+#~ "Access system folders, not including the operating system or system "
+#~ "internals. This includes users' Home folders."
+#~ msgstr ""
+#~ "Akses folder sistem, tidak termasuk sistem operasi atau internal sistem. "
+#~ "Ini termasuk folder Beranda pengguna."
+
+#~ msgid "Access printers."
+#~ msgstr "Akses printer."
 
 #, fuzzy, c-format
 #~| msgid "Defaults"

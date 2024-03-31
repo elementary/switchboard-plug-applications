@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-31 12:00+0000\n"
+"POT-Creation-Date: 2024-03-31 16:18+0000\n"
 "PO-Revision-Date: 2024-03-31 04:13+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Korean <https://l10n.elementary.io/projects/switchboard/"
@@ -155,24 +155,28 @@ msgid "Reset to Defaults"
 msgstr "기본값으로 재설정"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:101
-msgid "Access your entire Home folder, including any hidden folders."
-msgstr "숨겨진 폴더를 포함하여 전체 홈 폴더에 접근합니다."
+msgid ""
+"Including all documents, downloads, music, pictures, videos, and any hidden "
+"folders."
+msgstr ""
 
 #: src/Permissions/Widgets/AppSettingsView.vala:105
-msgid ""
-"Access system folders, not including the operating system or system "
-"internals. This includes users' Home folders."
+msgid "Including everyone's Home folders, but not including system internals."
 msgstr ""
-"운영 체제나 시스템 내부를 포함하지 않는 시스템 폴더에 접근합니다. 사용자의 "
-"홈 폴더를 포함합니다."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:109
+#, fuzzy
+#| msgid ""
+#| "Access all devices, such as webcams, microphones, and connected USB "
+#| "devices."
 msgid ""
-"Access all devices, such as webcams, microphones, and connected USB devices."
+"Manage all connected devices, such as webcams, microphones, and USB devices."
 msgstr "웹캠, 마이크, 연결된 USB 와 같은 모든 장치에 접근합니다."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:113
-msgid "Access the Internet and local networks."
+#, fuzzy
+#| msgid "Access the Internet and local networks."
+msgid "Connect to the Internet and local networks."
 msgstr "인터넷 및 로컬 네트워크에 접근합니다."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:117
@@ -180,11 +184,13 @@ msgid "Manage Bluetooth devices including pairing, unpairing, and discovery."
 msgstr "페어링, 페어링 해제, 검색을 포함한 Bluetooth 장치를 관리합니다."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:121
-msgid "Access printers."
-msgstr "프린터에 접근합니다."
+msgid "Manage printers and see the print queue."
+msgstr ""
 
 #: src/Permissions/Widgets/AppSettingsView.vala:125
-msgid "Access other devices on the network via SSH."
+#, fuzzy
+#| msgid "Access other devices on the network via SSH."
+msgid "Connect to other devices on the network via SSH."
 msgstr "SSH를 통해 네트워크의 다른 장치에 접근합니다."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:129
@@ -265,6 +271,19 @@ msgstr "취소"
 #| msgid "Remove Selected Startup App"
 msgid "Select startup app"
 msgstr "선택한 시작 앱 제거"
+
+#~ msgid "Access your entire Home folder, including any hidden folders."
+#~ msgstr "숨겨진 폴더를 포함하여 전체 홈 폴더에 접근합니다."
+
+#~ msgid ""
+#~ "Access system folders, not including the operating system or system "
+#~ "internals. This includes users' Home folders."
+#~ msgstr ""
+#~ "운영 체제나 시스템 내부를 포함하지 않는 시스템 폴더에 접근합니다. 사용자"
+#~ "의 홈 폴더를 포함합니다."
+
+#~ msgid "Access printers."
+#~ msgstr "프린터에 접근합니다."
 
 #, fuzzy, c-format
 #~| msgid "Defaults"

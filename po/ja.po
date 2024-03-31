@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-31 12:00+0000\n"
+"POT-Creation-Date: 2024-03-31 16:18+0000\n"
 "PO-Revision-Date: 2024-03-31 04:13+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
@@ -158,26 +158,30 @@ msgid "Reset to Defaults"
 msgstr "デフォルトにリセット"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:101
-msgid "Access your entire Home folder, including any hidden folders."
-msgstr "隠しフォルダーを含む、ホームフォルダー全体へのアクセスを許可します。"
+msgid ""
+"Including all documents, downloads, music, pictures, videos, and any hidden "
+"folders."
+msgstr ""
 
 #: src/Permissions/Widgets/AppSettingsView.vala:105
-msgid ""
-"Access system folders, not including the operating system or system "
-"internals. This includes users' Home folders."
+msgid "Including everyone's Home folders, but not including system internals."
 msgstr ""
-"オペレーティングシステムやシステム内部のフォルダー以外のシステムフォルダーへ"
-"のアクセスを許可します。ユーザーのホームフォルダーも含まれます。"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:109
+#, fuzzy
+#| msgid ""
+#| "Access all devices, such as webcams, microphones, and connected USB "
+#| "devices."
 msgid ""
-"Access all devices, such as webcams, microphones, and connected USB devices."
+"Manage all connected devices, such as webcams, microphones, and USB devices."
 msgstr ""
 "Web カメラやマイク、接続済みの USB デバイスなどの、すべてのデバイスへのアクセ"
 "スを許可します。"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:113
-msgid "Access the Internet and local networks."
+#, fuzzy
+#| msgid "Access the Internet and local networks."
+msgid "Connect to the Internet and local networks."
 msgstr "インターネットとローカルネットワークへのアクセスを許可します。"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:117
@@ -187,11 +191,13 @@ msgstr ""
 "許可します。"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:121
-msgid "Access printers."
-msgstr "プリンターへのアクセスを許可します。"
+msgid "Manage printers and see the print queue."
+msgstr ""
 
 #: src/Permissions/Widgets/AppSettingsView.vala:125
-msgid "Access other devices on the network via SSH."
+#, fuzzy
+#| msgid "Access other devices on the network via SSH."
+msgid "Connect to other devices on the network via SSH."
 msgstr "SSH を使用したネットワーク上のほかのデバイスへのアクセスを許可します。"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:129
@@ -270,6 +276,20 @@ msgstr "キャンセル"
 #: src/Startup/Widgets/AppChooser.vala:53
 msgid "Select startup app"
 msgstr "自動起動するアプリを選択してください"
+
+#~ msgid "Access your entire Home folder, including any hidden folders."
+#~ msgstr ""
+#~ "隠しフォルダーを含む、ホームフォルダー全体へのアクセスを許可します。"
+
+#~ msgid ""
+#~ "Access system folders, not including the operating system or system "
+#~ "internals. This includes users' Home folders."
+#~ msgstr ""
+#~ "オペレーティングシステムやシステム内部のフォルダー以外のシステムフォルダー"
+#~ "へのアクセスを許可します。ユーザーのホームフォルダーも含まれます。"
+
+#~ msgid "Access printers."
+#~ msgstr "プリンターへのアクセスを許可します。"
 
 #, c-format
 #~ msgid "Default %s"

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-31 12:00+0000\n"
+"POT-Creation-Date: 2024-03-31 16:18+0000\n"
 "PO-Revision-Date: 2024-03-31 04:13+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/switchboard/"
@@ -158,26 +158,30 @@ msgid "Reset to Defaults"
 msgstr "Сбросить к настройкам по умолчанию"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:101
-msgid "Access your entire Home folder, including any hidden folders."
-msgstr "Доступ ко всей домашней папке, включая все скрытые папки."
+msgid ""
+"Including all documents, downloads, music, pictures, videos, and any hidden "
+"folders."
+msgstr ""
 
 #: src/Permissions/Widgets/AppSettingsView.vala:105
-msgid ""
-"Access system folders, not including the operating system or system "
-"internals. This includes users' Home folders."
+msgid "Including everyone's Home folders, but not including system internals."
 msgstr ""
-"Доступ к системным папкам, не включая операционную систему или внутренние "
-"компоненты системы. Сюда входят домашние папки пользователей."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:109
+#, fuzzy
+#| msgid ""
+#| "Access all devices, such as webcams, microphones, and connected USB "
+#| "devices."
 msgid ""
-"Access all devices, such as webcams, microphones, and connected USB devices."
+"Manage all connected devices, such as webcams, microphones, and USB devices."
 msgstr ""
 "Доступ ко всем устройствам, таким как веб-камеры, микрофоны и подключённые "
 "USB-устройства."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:113
-msgid "Access the Internet and local networks."
+#, fuzzy
+#| msgid "Access the Internet and local networks."
+msgid "Connect to the Internet and local networks."
 msgstr "Доступ к Интернету и к локальным сетям."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:117
@@ -187,11 +191,13 @@ msgstr ""
 "обнаружение."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:121
-msgid "Access printers."
-msgstr "Доступ к принтерам."
+msgid "Manage printers and see the print queue."
+msgstr ""
 
 #: src/Permissions/Widgets/AppSettingsView.vala:125
-msgid "Access other devices on the network via SSH."
+#, fuzzy
+#| msgid "Access other devices on the network via SSH."
+msgid "Connect to other devices on the network via SSH."
 msgstr "Доступ к другим устройствам в сети через SSH."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:129
@@ -271,6 +277,19 @@ msgstr "Отменить"
 #: src/Startup/Widgets/AppChooser.vala:53
 msgid "Select startup app"
 msgstr "Выберите приложение для автозапуска"
+
+#~ msgid "Access your entire Home folder, including any hidden folders."
+#~ msgstr "Доступ ко всей домашней папке, включая все скрытые папки."
+
+#~ msgid ""
+#~ "Access system folders, not including the operating system or system "
+#~ "internals. This includes users' Home folders."
+#~ msgstr ""
+#~ "Доступ к системным папкам, не включая операционную систему или внутренние "
+#~ "компоненты системы. Сюда входят домашние папки пользователей."
+
+#~ msgid "Access printers."
+#~ msgstr "Доступ к принтерам."
 
 #, c-format
 #~ msgid "Default %s"
