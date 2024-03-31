@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-03-31 16:18+0000\n"
-"PO-Revision-Date: 2024-03-31 04:13+0000\n"
-"Last-Translator: anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2024-04-02 07:13+0000\n"
+"Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-applications/he/>\n"
 "Language: he\n"
@@ -142,13 +142,15 @@ msgstr "אין תוצאות עבור „%s”"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:51
 msgid "Advanced System Access"
-msgstr ""
+msgstr "גישה מתקדמת למערכת"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:53
 msgid ""
 "Access to system features can be restricted to make apps more secure, but "
 "some apps may not function properly without it"
 msgstr ""
+"גישה ליכולות המערכת ניתנת להגבלה כדי להפוך את היישומים למאובטחים יותר, אך "
+"חלק מהיישומים לא יעבדו כלל בלעדיה"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:63
 msgid "Reset to Defaults"
@@ -159,25 +161,20 @@ msgid ""
 "Including all documents, downloads, music, pictures, videos, and any hidden "
 "folders."
 msgstr ""
+"לרבות כל המסמכים, ההורדות, המוזיקה, התמונות, הסרטונים ותיקיות נסתרות אם יש."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:105
 msgid "Including everyone's Home folders, but not including system internals."
-msgstr ""
+msgstr "כולל את כל תיקיות הבית של כולם, בלי חלקי המערכת הפנימיים."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:109
-#, fuzzy
-#| msgid ""
-#| "Access all devices, such as webcams, microphones, and connected USB "
-#| "devices."
 msgid ""
 "Manage all connected devices, such as webcams, microphones, and USB devices."
-msgstr "גישה לכל ההתקנים כגון מצלמות, מיקרופונים ומכשירי USB מחוברים."
+msgstr "ניהול כל ההתקנים המחוברים כגון מצלמות, מיקרופונים ומכשירי USB."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:113
-#, fuzzy
-#| msgid "Access the Internet and local networks."
 msgid "Connect to the Internet and local networks."
-msgstr "גישה לאינטרנט ולרשתות מקומיות."
+msgstr "חיבור לאינטרנט ולרשתות מקומיות."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:117
 msgid "Manage Bluetooth devices including pairing, unpairing, and discovery."
@@ -185,13 +182,11 @@ msgstr "ניהול מכשירי בלוטות׳ לרבות צימוד, ניתוק
 
 #: src/Permissions/Widgets/AppSettingsView.vala:121
 msgid "Manage printers and see the print queue."
-msgstr ""
+msgstr "ניהול מדפסות וצפייה בתור ההדפסה."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:125
-#, fuzzy
-#| msgid "Access other devices on the network via SSH."
 msgid "Connect to other devices on the network via SSH."
-msgstr "גישה לציוד ברשת דרך SSH."
+msgstr "התחברות לציוד ברשת דרך SSH."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:129
 msgid "Accelerate graphical output."
