@@ -1,6 +1,6 @@
 /*
  * SPDX-License-Identifier: GPL-3.0-or-later
- * SPDX-FileCopyrightText: 2011-2024 elementary, Inc. (https://elementary.io)
+ * SPDX-FileCopyrightText: 2024 elementary, Inc. (https://elementary.io)
  */
 
 public class Applications.Sidebar : Gtk.Box {
@@ -17,8 +17,6 @@ public class Applications.Sidebar : Gtk.Box {
     }
 
     construct {
-        add_css_class (Granite.STYLE_CLASS_SIDEBAR);
-
         var defaults_row = new SimpleSidebarRow (
             _("Defaults"), Plug.DEFAULTS
         );
@@ -74,6 +72,7 @@ public class Applications.Sidebar : Gtk.Box {
         toolbarview.add_top_bar (search_revealer);
 
         append (toolbarview);
+        add_css_class (Granite.STYLE_CLASS_SIDEBAR);
 
         Permissions.Backend.AppManager.get_default ().apps.foreach ((id, app) => {
             var app_entry = new Permissions.SidebarRow (app);
@@ -167,14 +166,11 @@ public class Applications.Sidebar : Gtk.Box {
             };
             title_label.add_css_class (Granite.STYLE_CLASS_H3_LABEL);
 
-            var grid = new Gtk.Grid () {
-                column_spacing = 6
-            };
-            grid.attach (image, 0, 0);
-            grid.attach (title_label, 1, 0);
+            var box = new Gtk.Box (HORIZONTAL, 6);
+            box.append (image);
+            box.append (title_label);
 
-            hexpand = true;
-            child = grid;
+            child = box;
         }
     }
 }
