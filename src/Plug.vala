@@ -25,7 +25,7 @@ public class Applications.Plug : Switchboard.Plug {
     public const string STARTUP = "preferences-desktop-startup";
     public const string PERMISSIONS = "permissions";
 
-    private Gtk.Grid grid;
+    private Gtk.Paned paned;
     private Gtk.Stack stack;
 
     public Plug () {
@@ -49,7 +49,7 @@ public class Applications.Plug : Switchboard.Plug {
     }
 
     public override Gtk.Widget get_widget () {
-        if (grid == null) {
+        if (paned == null) {
             var app_settings_view = new Permissions.Widgets.AppSettingsView ();
 
             stack = new Gtk.Stack ();
@@ -59,19 +59,16 @@ public class Applications.Plug : Switchboard.Plug {
 
             var sidebar = new Sidebar (stack);
 
-            var paned = new Gtk.Paned (HORIZONTAL) {
+            paned = new Gtk.Paned (HORIZONTAL) {
                 start_child = sidebar,
                 end_child = stack,
                 shrink_start_child = false,
                 shrink_end_child = false,
                 resize_start_child = false
             };
-
-            grid = new Gtk.Grid ();
-            grid.attach (paned, 0, 0);
         }
 
-        return grid;
+        return paned;
     }
 
     public override void shown () {
