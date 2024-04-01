@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-31 12:00+0000\n"
+"POT-Creation-Date: 2024-03-31 16:18+0000\n"
 "PO-Revision-Date: 2024-03-31 04:13+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Marathi <https://l10n.elementary.io/projects/switchboard/"
@@ -157,27 +157,29 @@ msgid "Reset to Defaults"
 msgstr "डीफॉल्टवर रीसेट करा"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:101
-#, fuzzy
-#| msgid "Access your entire home folder, including any hidden folders."
-msgid "Access your entire Home folder, including any hidden folders."
-msgstr "कोणत्याही लपविलेल्या फोल्डर्ससह आपल्या संपूर्ण मुख्य फोल्डरमध्ये प्रवेश करा."
+msgid ""
+"Including all documents, downloads, music, pictures, videos, and any hidden "
+"folders."
+msgstr ""
 
 #: src/Permissions/Widgets/AppSettingsView.vala:105
-msgid ""
-"Access system folders, not including the operating system or system "
-"internals. This includes users' Home folders."
+msgid "Including everyone's Home folders, but not including system internals."
 msgstr ""
-"ऑपरेटिंग सिस्टम किंवा सिस्टम इंटर्नल्स व्यतिरिक्त सिस्टम फोल्डर्समध्ये प्रवेश करा. यात "
-"वापरकर्त्यांच्या होम फोल्डर्सचा समावेश आहे."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:109
+#, fuzzy
+#| msgid ""
+#| "Access all devices, such as webcams, microphones, and connected USB "
+#| "devices."
 msgid ""
-"Access all devices, such as webcams, microphones, and connected USB devices."
+"Manage all connected devices, such as webcams, microphones, and USB devices."
 msgstr ""
 "वेबकॅम, मायक्रोफोन आणि कनेक्ट केलेल्या यूएसबी डिव्हाइससारख्या सर्व डिव्हाइसवर प्रवेश करा."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:113
-msgid "Access the Internet and local networks."
+#, fuzzy
+#| msgid "Access the Internet and local networks."
+msgid "Connect to the Internet and local networks."
 msgstr "इंटरनेट आणि स्थानिक नेटवर्कमध्ये प्रवेश करा."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:117
@@ -188,11 +190,13 @@ msgid "Manage Bluetooth devices including pairing, unpairing, and discovery."
 msgstr "जोडणी, जोड काढणे आणि शोध यासह ब्लूटूथ डिव्हाइस व्यवस्थापित करा."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:121
-msgid "Access printers."
-msgstr "प्रिंटरमध्ये प्रवेश करा."
+msgid "Manage printers and see the print queue."
+msgstr ""
 
 #: src/Permissions/Widgets/AppSettingsView.vala:125
-msgid "Access other devices on the network via SSH."
+#, fuzzy
+#| msgid "Access other devices on the network via SSH."
+msgid "Connect to other devices on the network via SSH."
 msgstr "एसएसएच मार्गे नेटवर्कवरील इतर डिव्हाइसवर प्रवेश करा."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:129
@@ -273,6 +277,21 @@ msgstr "रद्द करा"
 #| msgid "Remove Selected Startup App"
 msgid "Select startup app"
 msgstr "निवडलेले स्टार्टअप अॅप काढा"
+
+#, fuzzy
+#~| msgid "Access your entire home folder, including any hidden folders."
+#~ msgid "Access your entire Home folder, including any hidden folders."
+#~ msgstr "कोणत्याही लपविलेल्या फोल्डर्ससह आपल्या संपूर्ण मुख्य फोल्डरमध्ये प्रवेश करा."
+
+#~ msgid ""
+#~ "Access system folders, not including the operating system or system "
+#~ "internals. This includes users' Home folders."
+#~ msgstr ""
+#~ "ऑपरेटिंग सिस्टम किंवा सिस्टम इंटर्नल्स व्यतिरिक्त सिस्टम फोल्डर्समध्ये प्रवेश करा. यात "
+#~ "वापरकर्त्यांच्या होम फोल्डर्सचा समावेश आहे."
+
+#~ msgid "Access printers."
+#~ msgstr "प्रिंटरमध्ये प्रवेश करा."
 
 #, fuzzy, c-format
 #~| msgid "Defaults"

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-31 12:00+0000\n"
+"POT-Creation-Date: 2024-03-31 16:18+0000\n"
 "PO-Revision-Date: 2023-06-28 13:07+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Persian <https://l10n.elementary.io/projects/switchboard/"
@@ -155,22 +155,22 @@ msgid "Reset to Defaults"
 msgstr ""
 
 #: src/Permissions/Widgets/AppSettingsView.vala:101
-msgid "Access your entire Home folder, including any hidden folders."
+msgid ""
+"Including all documents, downloads, music, pictures, videos, and any hidden "
+"folders."
 msgstr ""
 
 #: src/Permissions/Widgets/AppSettingsView.vala:105
-msgid ""
-"Access system folders, not including the operating system or system "
-"internals. This includes users' Home folders."
+msgid "Including everyone's Home folders, but not including system internals."
 msgstr ""
 
 #: src/Permissions/Widgets/AppSettingsView.vala:109
 msgid ""
-"Access all devices, such as webcams, microphones, and connected USB devices."
+"Manage all connected devices, such as webcams, microphones, and USB devices."
 msgstr ""
 
 #: src/Permissions/Widgets/AppSettingsView.vala:113
-msgid "Access the Internet and local networks."
+msgid "Connect to the Internet and local networks."
 msgstr ""
 
 #: src/Permissions/Widgets/AppSettingsView.vala:117
@@ -178,11 +178,11 @@ msgid "Manage Bluetooth devices including pairing, unpairing, and discovery."
 msgstr ""
 
 #: src/Permissions/Widgets/AppSettingsView.vala:121
-msgid "Access printers."
+msgid "Manage printers and see the print queue."
 msgstr ""
 
 #: src/Permissions/Widgets/AppSettingsView.vala:125
-msgid "Access other devices on the network via SSH."
+msgid "Connect to other devices on the network via SSH."
 msgstr ""
 
 #: src/Permissions/Widgets/AppSettingsView.vala:129

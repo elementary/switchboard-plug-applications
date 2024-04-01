@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-31 12:00+0000\n"
+"POT-Creation-Date: 2024-03-31 16:18+0000\n"
 "PO-Revision-Date: 2024-03-31 04:13+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Czech <https://l10n.elementary.io/projects/switchboard/"
@@ -157,26 +157,30 @@ msgid "Reset to Defaults"
 msgstr "Vrátit na výchozí hodnoty"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:101
-msgid "Access your entire Home folder, including any hidden folders."
-msgstr "Přístup k celé domovské složce, včetně všech skrytých složek."
+msgid ""
+"Including all documents, downloads, music, pictures, videos, and any hidden "
+"folders."
+msgstr ""
 
 #: src/Permissions/Widgets/AppSettingsView.vala:105
-msgid ""
-"Access system folders, not including the operating system or system "
-"internals. This includes users' Home folders."
+msgid "Including everyone's Home folders, but not including system internals."
 msgstr ""
-"Přístup k systémovým složkám, kromě součástí a vnitřní části operačního "
-"systému. Toto zahrnuje domovské složky uživatelů."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:109
+#, fuzzy
+#| msgid ""
+#| "Access all devices, such as webcams, microphones, and connected USB "
+#| "devices."
 msgid ""
-"Access all devices, such as webcams, microphones, and connected USB devices."
+"Manage all connected devices, such as webcams, microphones, and USB devices."
 msgstr ""
 "Přístup ke všem zařízením, jako jsou webkamery, mikrofony a připojená USB "
 "zařízení."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:113
-msgid "Access the Internet and local networks."
+#, fuzzy
+#| msgid "Access the Internet and local networks."
+msgid "Connect to the Internet and local networks."
 msgstr "Přístup k Internetu a místním sítím."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:117
@@ -185,11 +189,13 @@ msgstr ""
 "Spravujte Bluetooth zařízení včetně párování (a jeho zrušení) a objevování."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:121
-msgid "Access printers."
-msgstr "Přístup k tiskárnám."
+msgid "Manage printers and see the print queue."
+msgstr ""
 
 #: src/Permissions/Widgets/AppSettingsView.vala:125
-msgid "Access other devices on the network via SSH."
+#, fuzzy
+#| msgid "Access other devices on the network via SSH."
+msgid "Connect to other devices on the network via SSH."
 msgstr "Přístup k ostatním zařízením na síti prostřednictvím SSH."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:129
@@ -271,6 +277,19 @@ msgstr "Storno"
 #| msgid "Remove Selected Startup App"
 msgid "Select startup app"
 msgstr "Odebrat aplikaci po spuštění"
+
+#~ msgid "Access your entire Home folder, including any hidden folders."
+#~ msgstr "Přístup k celé domovské složce, včetně všech skrytých složek."
+
+#~ msgid ""
+#~ "Access system folders, not including the operating system or system "
+#~ "internals. This includes users' Home folders."
+#~ msgstr ""
+#~ "Přístup k systémovým složkám, kromě součástí a vnitřní části operačního "
+#~ "systému. Toto zahrnuje domovské složky uživatelů."
+
+#~ msgid "Access printers."
+#~ msgstr "Přístup k tiskárnám."
 
 #, fuzzy, c-format
 #~| msgid "Defaults"

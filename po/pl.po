@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-31 12:00+0000\n"
+"POT-Creation-Date: 2024-03-31 16:18+0000\n"
 "PO-Revision-Date: 2024-03-31 04:13+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Polish <https://l10n.elementary.io/projects/switchboard/"
@@ -158,28 +158,30 @@ msgid "Reset to Defaults"
 msgstr "Przywróć ustawienia domyślne"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:101
-msgid "Access your entire Home folder, including any hidden folders."
+msgid ""
+"Including all documents, downloads, music, pictures, videos, and any hidden "
+"folders."
 msgstr ""
-"Uzyskaj dostęp do twojego całego folderu domowego, włączając w to ukryte "
-"foldery."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:105
-msgid ""
-"Access system folders, not including the operating system or system "
-"internals. This includes users' Home folders."
+msgid "Including everyone's Home folders, but not including system internals."
 msgstr ""
-"Uzyskaj dostęp do folderów systemowych, nie włączając w to składników "
-"systemu lub systemu operacyjnego. To zawiera foldery domowe użytkowników."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:109
+#, fuzzy
+#| msgid ""
+#| "Access all devices, such as webcams, microphones, and connected USB "
+#| "devices."
 msgid ""
-"Access all devices, such as webcams, microphones, and connected USB devices."
+"Manage all connected devices, such as webcams, microphones, and USB devices."
 msgstr ""
 "Uzyskaj dostęp do wszystkich urządzeń, takich jak kamery internetowe, "
 "mikrofony i podłączone urządzenia USB."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:113
-msgid "Access the Internet and local networks."
+#, fuzzy
+#| msgid "Access the Internet and local networks."
+msgid "Connect to the Internet and local networks."
 msgstr "Uzyskaj dostęp do Internetu i sieci lokalnych."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:117
@@ -189,11 +191,13 @@ msgstr ""
 "wykrywanie."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:121
-msgid "Access printers."
-msgstr "Uzyskaj dostęp do drukarek."
+msgid "Manage printers and see the print queue."
+msgstr ""
 
 #: src/Permissions/Widgets/AppSettingsView.vala:125
-msgid "Access other devices on the network via SSH."
+#, fuzzy
+#| msgid "Access other devices on the network via SSH."
+msgid "Connect to other devices on the network via SSH."
 msgstr "Uzyskaj dostęp do innych urządzeń w sieci poprzez SSH."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:129
@@ -273,6 +277,21 @@ msgstr "Anuluj"
 #: src/Startup/Widgets/AppChooser.vala:53
 msgid "Select startup app"
 msgstr "Wybierz uruchamianą aplikację"
+
+#~ msgid "Access your entire Home folder, including any hidden folders."
+#~ msgstr ""
+#~ "Uzyskaj dostęp do twojego całego folderu domowego, włączając w to ukryte "
+#~ "foldery."
+
+#~ msgid ""
+#~ "Access system folders, not including the operating system or system "
+#~ "internals. This includes users' Home folders."
+#~ msgstr ""
+#~ "Uzyskaj dostęp do folderów systemowych, nie włączając w to składników "
+#~ "systemu lub systemu operacyjnego. To zawiera foldery domowe użytkowników."
+
+#~ msgid "Access printers."
+#~ msgstr "Uzyskaj dostęp do drukarek."
 
 #, c-format
 #~ msgid "Default %s"

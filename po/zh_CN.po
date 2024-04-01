@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-31 12:00+0000\n"
+"POT-Creation-Date: 2024-03-31 16:18+0000\n"
 "PO-Revision-Date: 2024-03-31 04:13+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
@@ -155,22 +155,28 @@ msgid "Reset to Defaults"
 msgstr "恢复默认"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:101
-msgid "Access your entire Home folder, including any hidden folders."
-msgstr "访问您的主文件夹，包括其中的隐藏文件夹。"
+msgid ""
+"Including all documents, downloads, music, pictures, videos, and any hidden "
+"folders."
+msgstr ""
 
 #: src/Permissions/Widgets/AppSettingsView.vala:105
-msgid ""
-"Access system folders, not including the operating system or system "
-"internals. This includes users' Home folders."
-msgstr "访问系统目录，包含所有用户的文件夹但不包括操作系统目录。"
+msgid "Including everyone's Home folders, but not including system internals."
+msgstr ""
 
 #: src/Permissions/Widgets/AppSettingsView.vala:109
+#, fuzzy
+#| msgid ""
+#| "Access all devices, such as webcams, microphones, and connected USB "
+#| "devices."
 msgid ""
-"Access all devices, such as webcams, microphones, and connected USB devices."
+"Manage all connected devices, such as webcams, microphones, and USB devices."
 msgstr "访问所有设备，包括相机、麦克风和已连接的 USB 设备。"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:113
-msgid "Access the Internet and local networks."
+#, fuzzy
+#| msgid "Access the Internet and local networks."
+msgid "Connect to the Internet and local networks."
 msgstr "访问因特网和本地局域网。"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:117
@@ -178,11 +184,13 @@ msgid "Manage Bluetooth devices including pairing, unpairing, and discovery."
 msgstr "管理蓝牙设备，包括匹配、断开和查找。"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:121
-msgid "Access printers."
-msgstr "访问打印机。"
+msgid "Manage printers and see the print queue."
+msgstr ""
 
 #: src/Permissions/Widgets/AppSettingsView.vala:125
-msgid "Access other devices on the network via SSH."
+#, fuzzy
+#| msgid "Access other devices on the network via SSH."
+msgid "Connect to other devices on the network via SSH."
 msgstr "通过 SSH 访问网络中的其他设备。"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:129
@@ -263,6 +271,17 @@ msgstr "取消"
 #| msgid "Remove Selected Startup App"
 msgid "Select startup app"
 msgstr "移除选中的启动项"
+
+#~ msgid "Access your entire Home folder, including any hidden folders."
+#~ msgstr "访问您的主文件夹，包括其中的隐藏文件夹。"
+
+#~ msgid ""
+#~ "Access system folders, not including the operating system or system "
+#~ "internals. This includes users' Home folders."
+#~ msgstr "访问系统目录，包含所有用户的文件夹但不包括操作系统目录。"
+
+#~ msgid "Access printers."
+#~ msgstr "访问打印机。"
 
 #, fuzzy, c-format
 #~| msgid "Defaults"
