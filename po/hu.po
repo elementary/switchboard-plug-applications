@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-31 12:00+0000\n"
+"POT-Creation-Date: 2024-03-31 16:18+0000\n"
 "PO-Revision-Date: 2024-03-31 04:13+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Hungarian <https://l10n.elementary.io/projects/switchboard/"
@@ -157,26 +157,30 @@ msgid "Reset to Defaults"
 msgstr "Alapértelmezettek visszaállítása"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:101
-msgid "Access your entire Home folder, including any hidden folders."
-msgstr "A teljes saját mappa (home) elérése, a rejtett mappákat beleértve."
+msgid ""
+"Including all documents, downloads, music, pictures, videos, and any hidden "
+"folders."
+msgstr ""
 
 #: src/Permissions/Widgets/AppSettingsView.vala:105
-msgid ""
-"Access system folders, not including the operating system or system "
-"internals. This includes users' Home folders."
+msgid "Including everyone's Home folders, but not including system internals."
 msgstr ""
-"A rendszermappák elérése, kivéve az operációs rendszert és a belső részeket. "
-"Ez magába foglalja a felhasználok saját mappáit."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:109
+#, fuzzy
+#| msgid ""
+#| "Access all devices, such as webcams, microphones, and connected USB "
+#| "devices."
 msgid ""
-"Access all devices, such as webcams, microphones, and connected USB devices."
+"Manage all connected devices, such as webcams, microphones, and USB devices."
 msgstr ""
 "Az összes eszköz elérése, mint a webkamera, mikrofon és a csatlakoztatott "
 "USB-eszközök."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:113
-msgid "Access the Internet and local networks."
+#, fuzzy
+#| msgid "Access the Internet and local networks."
+msgid "Connect to the Internet and local networks."
 msgstr "Az internet és a helyi hálózatok elérése."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:117
@@ -186,11 +190,13 @@ msgstr ""
 "valamint a felfedezést."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:121
-msgid "Access printers."
-msgstr "Nyomtatók elérése."
+msgid "Manage printers and see the print queue."
+msgstr ""
 
 #: src/Permissions/Widgets/AppSettingsView.vala:125
-msgid "Access other devices on the network via SSH."
+#, fuzzy
+#| msgid "Access other devices on the network via SSH."
+msgid "Connect to other devices on the network via SSH."
 msgstr "Többi készülék elérése a hálózaton keresztül SSH segítségével."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:129
@@ -270,6 +276,19 @@ msgstr "Mégse"
 #: src/Startup/Widgets/AppChooser.vala:53
 msgid "Select startup app"
 msgstr "Automatikusan induló alkalmazás kiválasztása"
+
+#~ msgid "Access your entire Home folder, including any hidden folders."
+#~ msgstr "A teljes saját mappa (home) elérése, a rejtett mappákat beleértve."
+
+#~ msgid ""
+#~ "Access system folders, not including the operating system or system "
+#~ "internals. This includes users' Home folders."
+#~ msgstr ""
+#~ "A rendszermappák elérése, kivéve az operációs rendszert és a belső "
+#~ "részeket. Ez magába foglalja a felhasználok saját mappáit."
+
+#~ msgid "Access printers."
+#~ msgstr "Nyomtatók elérése."
 
 #, c-format
 #~ msgid "Default %s"

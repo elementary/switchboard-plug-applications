@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-31 12:00+0000\n"
+"POT-Creation-Date: 2024-03-31 16:18+0000\n"
 "PO-Revision-Date: 2024-03-31 04:13+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Dutch <https://l10n.elementary.io/projects/switchboard/"
@@ -159,27 +159,30 @@ msgid "Reset to Defaults"
 msgstr "Terugzetten naar standaardinstellingen"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:101
-msgid "Access your entire Home folder, including any hidden folders."
+msgid ""
+"Including all documents, downloads, music, pictures, videos, and any hidden "
+"folders."
 msgstr ""
-"Toegang tot de volledige Persoonlijke map, inclusief alle verborgen mappen."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:105
-msgid ""
-"Access system folders, not including the operating system or system "
-"internals. This includes users' Home folders."
+msgid "Including everyone's Home folders, but not including system internals."
 msgstr ""
-"Toegang tot systeemmappen, met uitzondering van het besturingssysteem en "
-"interne componenten. Dit omvat ook de Persoonlijke mappen van de gebruikers."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:109
+#, fuzzy
+#| msgid ""
+#| "Access all devices, such as webcams, microphones, and connected USB "
+#| "devices."
 msgid ""
-"Access all devices, such as webcams, microphones, and connected USB devices."
+"Manage all connected devices, such as webcams, microphones, and USB devices."
 msgstr ""
 "Toegang tot alle apparaten zoals webcams, microfoons en gekoppelde USB-"
 "apparaten."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:113
-msgid "Access the Internet and local networks."
+#, fuzzy
+#| msgid "Access the Internet and local networks."
+msgid "Connect to the Internet and local networks."
 msgstr "Toegang tot het internet en lokale netwerken."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:117
@@ -189,11 +192,13 @@ msgstr ""
 "van apparaten."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:121
-msgid "Access printers."
-msgstr "Toegang tot printers."
+msgid "Manage printers and see the print queue."
+msgstr ""
 
 #: src/Permissions/Widgets/AppSettingsView.vala:125
-msgid "Access other devices on the network via SSH."
+#, fuzzy
+#| msgid "Access other devices on the network via SSH."
+msgid "Connect to other devices on the network via SSH."
 msgstr "Toegang tot andere apparaten op het netwerk via SSH."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:129
@@ -273,6 +278,22 @@ msgstr "Annuleren"
 #: src/Startup/Widgets/AppChooser.vala:53
 msgid "Select startup app"
 msgstr "Selecteer opstartprogramma"
+
+#~ msgid "Access your entire Home folder, including any hidden folders."
+#~ msgstr ""
+#~ "Toegang tot de volledige Persoonlijke map, inclusief alle verborgen "
+#~ "mappen."
+
+#~ msgid ""
+#~ "Access system folders, not including the operating system or system "
+#~ "internals. This includes users' Home folders."
+#~ msgstr ""
+#~ "Toegang tot systeemmappen, met uitzondering van het besturingssysteem en "
+#~ "interne componenten. Dit omvat ook de Persoonlijke mappen van de "
+#~ "gebruikers."
+
+#~ msgid "Access printers."
+#~ msgstr "Toegang tot printers."
 
 #, c-format
 #~ msgid "Default %s"
