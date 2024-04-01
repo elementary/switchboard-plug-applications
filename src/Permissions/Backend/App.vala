@@ -25,6 +25,7 @@ public class Permissions.Backend.App : GLib.Object {
     public Flatpak.InstalledRef installed_ref { get; construct; }
     public string id { get; private set; }
     public string name { get; private set; }
+    public string? description { get; private set; default = null; }
     public Icon icon { get; private set; }
     public GenericArray<Backend.PermissionSettings> settings;
 
@@ -55,6 +56,7 @@ public class Permissions.Backend.App : GLib.Object {
         if (appinfo != null) {
             name = appinfo.get_name ();
             icon = appinfo.get_icon () ?? new ThemedIcon ("application-default-icon");
+            description = appinfo.get_description ();
         } else {
             icon = new ThemedIcon ("application-default-icon");
             name = id;
