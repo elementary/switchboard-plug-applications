@@ -182,7 +182,7 @@ public class Permissions.Widgets.AppSettingsView : Switchboard.SettingsPage {
         screenshot_row = new PermissionSettingsWidget (
             _("Screenshot"),
             _("Take pictures of the display without asking first."),
-            "applets-screenshooter"
+            "accessories-screenshot-tool"
         );
 
         screenshot_row.notify["active"].connect (() => {
