@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-03-31 16:18+0000\n"
-"PO-Revision-Date: 2024-03-31 04:13+0000\n"
-"Last-Translator: anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2024-04-03 01:43+0000\n"
+"Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
 "Language-Team: French <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-applications/fr/>\n"
 "Language: fr\n"
@@ -146,13 +146,16 @@ msgstr "Aucun résultat pour « %s »"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:51
 msgid "Advanced System Access"
-msgstr ""
+msgstr "Accès système avancé"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:53
 msgid ""
 "Access to system features can be restricted to make apps more secure, but "
 "some apps may not function properly without it"
 msgstr ""
+"L'accès aux fonctionnalités avancées du système peut être restreint pour "
+"rendre les applications plus sûres, mais certaines applications pourraient "
+"ne pas fonctionner correctement sans"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:63
 msgid "Reset to Defaults"
@@ -163,25 +166,23 @@ msgid ""
 "Including all documents, downloads, music, pictures, videos, and any hidden "
 "folders."
 msgstr ""
+"Y compris tous les documents, téléchargements, musique, images, vidéos et "
+"tous les dossiers cachés."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:105
 msgid "Including everyone's Home folders, but not including system internals."
 msgstr ""
+"Y compris le dossier personnel de chaque utilisateur, mais pas les fichiers "
+"du système."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:109
-#, fuzzy
-#| msgid ""
-#| "Access all devices, such as webcams, microphones, and connected USB "
-#| "devices."
 msgid ""
 "Manage all connected devices, such as webcams, microphones, and USB devices."
 msgstr ""
-"Accéder à tous les périphériques, telles que les webcams, microphones et "
-"périphériques USB connectés."
+"Accéder à tous les périphériques connectés tels que les webcams, microphones "
+"et périphériques USB."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:113
-#, fuzzy
-#| msgid "Access the Internet and local networks."
 msgid "Connect to the Internet and local networks."
 msgstr "Accéder à Internet et aux réseaux locaux."
 
@@ -192,11 +193,9 @@ msgstr ""
 
 #: src/Permissions/Widgets/AppSettingsView.vala:121
 msgid "Manage printers and see the print queue."
-msgstr ""
+msgstr "Gérer les imprimantes et accéder à la file d'attente d'impression."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:125
-#, fuzzy
-#| msgid "Access other devices on the network via SSH."
 msgid "Connect to other devices on the network via SSH."
 msgstr "Accéder à d'autres périphériques sur le réseau via SSH."
 
@@ -206,11 +205,13 @@ msgstr "Accélérer la sortie vidéo."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:155
 msgid "Background Activity"
-msgstr ""
+msgstr "Activité en arrière-plan"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:156
 msgid "Perform tasks and use system resources while its window is closed."
 msgstr ""
+"Effectuer des tâches et utiliser les ressources du système lorsque la "
+"fenêtre est fermée."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:166
 msgid "Location Services"
@@ -218,7 +219,7 @@ msgstr "Services de localisation"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:167
 msgid "Determine the location of this device."
-msgstr ""
+msgstr "Accéder à la position de cet appareil."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:180
 msgid "Wallpaper"
@@ -226,7 +227,7 @@ msgstr "Fond d'écran"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:181
 msgid "Set the wallpaper on the desktop and lock screen."
-msgstr ""
+msgstr "Définir le fond d'écran du bureau et de verrouillage."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:197
 #, c-format
