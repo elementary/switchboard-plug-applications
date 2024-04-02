@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-29 15:38+0000\n"
-"PO-Revision-Date: 2023-07-06 19:07+0000\n"
+"POT-Creation-Date: 2024-03-31 16:18+0000\n"
+"PO-Revision-Date: 2024-03-31 04:13+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Catalan <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-applications/ca/>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.17\n"
+"X-Generator: Weblate 5.0.2\n"
 "X-Launchpad-Export-Date: 2016-12-03 05:18+0000\n"
 
 #: src/Plug.vala:44
@@ -143,61 +143,92 @@ msgstr "Proveu de canviar els termes de la cerca."
 msgid "No Results for “%s”"
 msgstr "Cap resultat per a “%s”"
 
-#: src/Permissions/Widgets/AppSettingsView.vala:56
+#: src/Permissions/Widgets/AppSettingsView.vala:51
+msgid "Advanced System Access"
+msgstr ""
+
+#: src/Permissions/Widgets/AppSettingsView.vala:53
+msgid ""
+"Access to system features can be restricted to make apps more secure, but "
+"some apps may not function properly without it"
+msgstr ""
+
+#: src/Permissions/Widgets/AppSettingsView.vala:63
 msgid "Reset to Defaults"
 msgstr "Restableix els valors per defecte"
 
-#: src/Permissions/Widgets/AppSettingsView.vala:84
-msgid "Access your entire Home folder, including any hidden folders."
-msgstr "Accediu a tota la carpeta de l'usuari, incloses les carpetes ocultes."
-
-#: src/Permissions/Widgets/AppSettingsView.vala:88
+#: src/Permissions/Widgets/AppSettingsView.vala:101
 msgid ""
-"Access system folders, not including the operating system or system "
-"internals. This includes users' Home folders."
+"Including all documents, downloads, music, pictures, videos, and any hidden "
+"folders."
 msgstr ""
-"Accedeix a les carpetes del sistema, sense incloure el sistema operatiu ni "
-"les funcions internes del sistema. Això inclou les carpetes personals dels "
-"usuaris."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:92
+#: src/Permissions/Widgets/AppSettingsView.vala:105
+msgid "Including everyone's Home folders, but not including system internals."
+msgstr ""
+
+#: src/Permissions/Widgets/AppSettingsView.vala:109
+#, fuzzy
+#| msgid ""
+#| "Access all devices, such as webcams, microphones, and connected USB "
+#| "devices."
 msgid ""
-"Access all devices, such as webcams, microphones, and connected USB devices."
+"Manage all connected devices, such as webcams, microphones, and USB devices."
 msgstr ""
 "Accedeix a tots els dispositius, com ara càmeres web, micròfons i "
 "dispositius USB connectats."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:96
-msgid "Access the Internet and local networks."
+#: src/Permissions/Widgets/AppSettingsView.vala:113
+#, fuzzy
+#| msgid "Access the Internet and local networks."
+msgid "Connect to the Internet and local networks."
 msgstr "Accedeix a Internet i a les xarxes locals."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:100
+#: src/Permissions/Widgets/AppSettingsView.vala:117
 msgid "Manage Bluetooth devices including pairing, unpairing, and discovery."
 msgstr ""
 "Gestiona els dispositius de Bluetooth, inclosos l’aparellament, la separació "
 "i el descobriment."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:104
-msgid "Access printers."
-msgstr "Accedeix a les impressores."
+#: src/Permissions/Widgets/AppSettingsView.vala:121
+msgid "Manage printers and see the print queue."
+msgstr ""
 
-#: src/Permissions/Widgets/AppSettingsView.vala:108
-msgid "Access other devices on the network via SSH."
+#: src/Permissions/Widgets/AppSettingsView.vala:125
+#, fuzzy
+#| msgid "Access other devices on the network via SSH."
+msgid "Connect to other devices on the network via SSH."
 msgstr "Accedeix a altres dispositius de la xarxa mitjançant SSH."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:112
+#: src/Permissions/Widgets/AppSettingsView.vala:129
 msgid "Accelerate graphical output."
 msgstr "Accelera la sortida gràfica."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:138
+#: src/Permissions/Widgets/AppSettingsView.vala:155
 msgid "Background Activity"
 msgstr ""
 
-#: src/Permissions/Widgets/AppSettingsView.vala:139
+#: src/Permissions/Widgets/AppSettingsView.vala:156
 msgid "Perform tasks and use system resources while its window is closed."
 msgstr ""
 
-#: src/Permissions/Widgets/AppSettingsView.vala:155
+#: src/Permissions/Widgets/AppSettingsView.vala:166
+msgid "Location Services"
+msgstr "Serveis d'ubicació"
+
+#: src/Permissions/Widgets/AppSettingsView.vala:167
+msgid "Determine the location of this device."
+msgstr ""
+
+#: src/Permissions/Widgets/AppSettingsView.vala:180
+msgid "Wallpaper"
+msgstr "Fons d'escriptori"
+
+#: src/Permissions/Widgets/AppSettingsView.vala:181
+msgid "Set the wallpaper on the desktop and lock screen."
+msgstr ""
+
+#: src/Permissions/Widgets/AppSettingsView.vala:197
 #, c-format
 msgid "%s permissions"
 msgstr "Permisos: %s"
@@ -246,6 +277,21 @@ msgstr "Cancel·la"
 #: src/Startup/Widgets/AppChooser.vala:53
 msgid "Select startup app"
 msgstr "Seleccioneu l'aplicació d'inici"
+
+#~ msgid "Access your entire Home folder, including any hidden folders."
+#~ msgstr ""
+#~ "Accediu a tota la carpeta de l'usuari, incloses les carpetes ocultes."
+
+#~ msgid ""
+#~ "Access system folders, not including the operating system or system "
+#~ "internals. This includes users' Home folders."
+#~ msgstr ""
+#~ "Accedeix a les carpetes del sistema, sense incloure el sistema operatiu "
+#~ "ni les funcions internes del sistema. Això inclou les carpetes personals "
+#~ "dels usuaris."
+
+#~ msgid "Access printers."
+#~ msgstr "Accedeix a les impressores."
 
 #, c-format
 #~ msgid "Default %s"

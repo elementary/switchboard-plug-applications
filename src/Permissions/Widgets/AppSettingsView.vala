@@ -51,6 +51,11 @@ public class Permissions.Widgets.AppSettingsView : Switchboard.SettingsPage {
         permission_box.add_css_class ("boxed-list");
         permission_box.add_css_class (Granite.STYLE_CLASS_RICH_LIST);
 
+        var sandbox_header = new Granite.HeaderLabel (_("Advanced System Access")) {
+            halign = FILL,
+            secondary_text = _("Access to system features can be restricted to make apps more secure, but some apps may not function properly without it")
+        };
+
         sandbox_box = new Gtk.ListBox () {
             hexpand = true,
             selection_mode = NONE
@@ -58,13 +63,17 @@ public class Permissions.Widgets.AppSettingsView : Switchboard.SettingsPage {
         sandbox_box.add_css_class ("boxed-list");
         sandbox_box.add_css_class (Granite.STYLE_CLASS_RICH_LIST);
 
-        var box = new Gtk.Box (VERTICAL, 24);
+        reset_button = new Gtk.Button.with_label (_("Reset to Defaults")) {
+            halign = END
+        };
+
+        var box = new Gtk.Box (VERTICAL, 12);
         box.append (permission_box);
+        box.append (sandbox_header);
         box.append (sandbox_box);
+        box.append (reset_button);
 
         child = box;
-
-        reset_button = add_button (_("Reset to Defaults"));
 
         update_view ();
 
@@ -92,19 +101,19 @@ public class Permissions.Widgets.AppSettingsView : Switchboard.SettingsPage {
 
             switch (settings.context) {
                 case "filesystems=home":
-                    description = _("Access your entire Home folder, including any hidden folders.");
+                    description = _("Including all documents, downloads, music, pictures, videos, and any hidden folders.");
                     icon_name = "user-home";
                     break;
                 case "filesystems=host":
-                    description = _("Access system folders, not including the operating system or system internals. This includes users' Home folders.");
+                    description = _("Including everyone's Home folders, but not including system internals.");
                     icon_name = "drive-harddisk";
                     break;
                 case "devices=all":
-                    description = _("Access all devices, such as webcams, microphones, and connected USB devices.");
+                    description = _("Manage all connected devices, such as webcams, microphones, and USB devices.");
                     icon_name = "camera-web";
                     break;
                 case "shared=network":
-                    description = _("Access the Internet and local networks.");
+                    description = _("Connect to the Internet and local networks.");
                     icon_name = "preferences-system-network";
                     break;
                 case "features=bluetooth":
@@ -112,11 +121,11 @@ public class Permissions.Widgets.AppSettingsView : Switchboard.SettingsPage {
                     icon_name = "bluetooth";
                     break;
                 case "sockets=cups":
-                    description = _("Access printers.");
+                    description = _("Manage printers and see the print queue.");
                     icon_name = "printer";
                     break;
                 case "sockets=ssh-auth":
-                    description = _("Access other devices on the network via SSH.");
+                    description = _("Connect to other devices on the network via SSH.");
                     icon_name = "utilities-terminal";
                     break;
                 case "devices=dri":
@@ -201,6 +210,7 @@ public class Permissions.Widgets.AppSettingsView : Switchboard.SettingsPage {
 
         update_property (Gtk.AccessibleProperty.LABEL, _("%s permissions").printf (selected_app.name), -1);
         title = selected_app.name;
+        description = selected_app.description;
         icon = selected_app.icon;
     }
 

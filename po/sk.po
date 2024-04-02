@@ -2,9 +2,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-29 15:38+0000\n"
-"PO-Revision-Date: 2023-10-27 11:10+0000\n"
-"Last-Translator: JohnDumpling <john_dumpling@protonmail.com>\n"
+"POT-Creation-Date: 2024-03-31 16:18+0000\n"
+"PO-Revision-Date: 2024-03-31 04:13+0000\n"
+"Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Slovak <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-applications/sk/>\n"
 "Language: sk\n"
@@ -143,61 +143,91 @@ msgstr "Skúste pozmeniť hľadaný výraz."
 msgid "No Results for “%s”"
 msgstr "Žiadne výsledky pre „%s“"
 
-#: src/Permissions/Widgets/AppSettingsView.vala:56
+#: src/Permissions/Widgets/AppSettingsView.vala:51
+msgid "Advanced System Access"
+msgstr ""
+
+#: src/Permissions/Widgets/AppSettingsView.vala:53
+msgid ""
+"Access to system features can be restricted to make apps more secure, but "
+"some apps may not function properly without it"
+msgstr ""
+
+#: src/Permissions/Widgets/AppSettingsView.vala:63
 msgid "Reset to Defaults"
 msgstr "Obnoviť predvolené"
 
-#: src/Permissions/Widgets/AppSettingsView.vala:84
-msgid "Access your entire Home folder, including any hidden folders."
-msgstr ""
-"Prístup k celému vášmu Domovskému priečinku, vrátane akýchkoľvek skrytých "
-"súborov."
-
-#: src/Permissions/Widgets/AppSettingsView.vala:88
+#: src/Permissions/Widgets/AppSettingsView.vala:101
 msgid ""
-"Access system folders, not including the operating system or system "
-"internals. This includes users' Home folders."
+"Including all documents, downloads, music, pictures, videos, and any hidden "
+"folders."
 msgstr ""
-"Prístup k systémovým súborom, okrem operačného systému a interných systémov. "
-"Toto zahŕňa používateľove Domovské priečinky."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:92
+#: src/Permissions/Widgets/AppSettingsView.vala:105
+msgid "Including everyone's Home folders, but not including system internals."
+msgstr ""
+
+#: src/Permissions/Widgets/AppSettingsView.vala:109
+#, fuzzy
+#| msgid ""
+#| "Access all devices, such as webcams, microphones, and connected USB "
+#| "devices."
 msgid ""
-"Access all devices, such as webcams, microphones, and connected USB devices."
+"Manage all connected devices, such as webcams, microphones, and USB devices."
 msgstr ""
 "Prístup ku všetkým zariadeniam, napríklad webkamerám, mikrofónom a "
 "pripojeným USB zariadeniam."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:96
-msgid "Access the Internet and local networks."
+#: src/Permissions/Widgets/AppSettingsView.vala:113
+#, fuzzy
+#| msgid "Access the Internet and local networks."
+msgid "Connect to the Internet and local networks."
 msgstr "Prístup k Internetu a miestnym sieťam."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:100
+#: src/Permissions/Widgets/AppSettingsView.vala:117
 msgid "Manage Bluetooth devices including pairing, unpairing, and discovery."
 msgstr ""
 "Správa Bluetooth zariadení, vrátane párovania, odpájania a preskúmania."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:104
-msgid "Access printers."
-msgstr "Prístup k tlačiarňam."
+#: src/Permissions/Widgets/AppSettingsView.vala:121
+msgid "Manage printers and see the print queue."
+msgstr ""
 
-#: src/Permissions/Widgets/AppSettingsView.vala:108
-msgid "Access other devices on the network via SSH."
+#: src/Permissions/Widgets/AppSettingsView.vala:125
+#, fuzzy
+#| msgid "Access other devices on the network via SSH."
+msgid "Connect to other devices on the network via SSH."
 msgstr "Prístup k ostatným zariadeniam v sieti cez SSH."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:112
+#: src/Permissions/Widgets/AppSettingsView.vala:129
 msgid "Accelerate graphical output."
 msgstr "Akcelerácia grafického výstupu."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:138
+#: src/Permissions/Widgets/AppSettingsView.vala:155
 msgid "Background Activity"
 msgstr ""
 
-#: src/Permissions/Widgets/AppSettingsView.vala:139
+#: src/Permissions/Widgets/AppSettingsView.vala:156
 msgid "Perform tasks and use system resources while its window is closed."
 msgstr ""
 
-#: src/Permissions/Widgets/AppSettingsView.vala:155
+#: src/Permissions/Widgets/AppSettingsView.vala:166
+msgid "Location Services"
+msgstr "Služby určovania polohy"
+
+#: src/Permissions/Widgets/AppSettingsView.vala:167
+msgid "Determine the location of this device."
+msgstr ""
+
+#: src/Permissions/Widgets/AppSettingsView.vala:180
+msgid "Wallpaper"
+msgstr ""
+
+#: src/Permissions/Widgets/AppSettingsView.vala:181
+msgid "Set the wallpaper on the desktop and lock screen."
+msgstr ""
+
+#: src/Permissions/Widgets/AppSettingsView.vala:197
 #, c-format
 msgid "%s permissions"
 msgstr "Oprávnenia %s"
@@ -245,6 +275,21 @@ msgstr "Zrušiť"
 #: src/Startup/Widgets/AppChooser.vala:53
 msgid "Select startup app"
 msgstr "Vybrať aplikáciu pri spustení"
+
+#~ msgid "Access your entire Home folder, including any hidden folders."
+#~ msgstr ""
+#~ "Prístup k celému vášmu Domovskému priečinku, vrátane akýchkoľvek skrytých "
+#~ "súborov."
+
+#~ msgid ""
+#~ "Access system folders, not including the operating system or system "
+#~ "internals. This includes users' Home folders."
+#~ msgstr ""
+#~ "Prístup k systémovým súborom, okrem operačného systému a interných "
+#~ "systémov. Toto zahŕňa používateľove Domovské priečinky."
+
+#~ msgid "Access printers."
+#~ msgstr "Prístup k tlačiarňam."
 
 #, c-format
 #~ msgid "Default %s"
