@@ -26,6 +26,8 @@ public class Permissions.Widgets.AppSettingsView : Switchboard.SettingsPage {
     private const string BACKGROUND_ID = "background";
     private const string LOCATION_TABLE = "location";
     private const string LOCATION_ID = "location";
+    private const string SCREENSHOT_TABLE = "screenshot";
+    private const string SCREENSHOT_ID = "screenshot";
     private const string WALLPAPER_TABLE = "wallpaper";
     private const string WALLPAPER_ID = "wallpaper";
 
@@ -36,6 +38,7 @@ public class Permissions.Widgets.AppSettingsView : Switchboard.SettingsPage {
     private Gtk.Button reset_button;
     private PermissionSettingsWidget background_row;
     private PermissionSettingsWidget location_row;
+    private PermissionSettingsWidget screenshot_row;
     private PermissionSettingsWidget wallpaper_row;
 
     construct {
@@ -176,6 +179,17 @@ public class Permissions.Widgets.AppSettingsView : Switchboard.SettingsPage {
             permission_store.set_permission (LOCATION_TABLE, LOCATION_ID, selected_app.id, permissions);
         });
 
+        screenshot_row = new PermissionSettingsWidget (
+            _("Screenshot"),
+            _("Take pictures of the display without asking first."),
+            "accessories-screenshot-tool"
+        );
+
+        screenshot_row.notify["active"].connect (() => {
+            string[] permissions = { screenshot_row.active ? "yes" : "no" };
+            permission_store.set_permission (SCREENSHOT_TABLE, SCREENSHOT_ID, selected_app.id, permissions);
+        });
+
         wallpaper_row = new PermissionSettingsWidget (
             _("Wallpaper"),
             _("Set the wallpaper on the desktop and lock screen."),
@@ -226,6 +240,15 @@ public class Permissions.Widgets.AppSettingsView : Switchboard.SettingsPage {
 
             if (location_row.parent == null) {
                 permission_box.append (location_row);
+            }
+        }
+
+        var screenshot_permission = yield permission_store.get_permission (SCREENSHOT_TABLE, SCREENSHOT_ID, selected_app.id);
+        if (screenshot_permission[0] != null) {
+            screenshot_row.active = screenshot_permission[0] == "yes";
+
+            if (screenshot_row.parent == null) {
+                permission_box.append (screenshot_row);
             }
         }
 
