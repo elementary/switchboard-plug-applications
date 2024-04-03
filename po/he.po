@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-04-03 01:43+0000\n"
-"PO-Revision-Date: 2024-04-02 07:13+0000\n"
+"PO-Revision-Date: 2024-04-04 14:15+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-applications/he/>\n"
@@ -210,11 +210,11 @@ msgstr "איתור מקום המכשיר הזה."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:183
 msgid "Screenshot"
-msgstr ""
+msgstr "צילום מסך"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:184
 msgid "Take pictures of the display without asking first."
-msgstr ""
+msgstr "צילום המסך מבלי לשאול קודם."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:194
 msgid "Wallpaper"
