@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-04-03 01:43+0000\n"
-"PO-Revision-Date: 2024-04-03 01:43+0000\n"
+"PO-Revision-Date: 2024-04-04 14:15+0000\n"
 "Last-Translator: David M <rbndavid@gmail.com>\n"
 "Language-Team: Catalan <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-applications/ca/>\n"
@@ -222,11 +222,11 @@ msgstr "Determina la ubicació d'aquest dispositiu."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:183
 msgid "Screenshot"
-msgstr ""
+msgstr "Captura"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:184
 msgid "Take pictures of the display without asking first."
-msgstr ""
+msgstr "Feu fotos de la pantalla sense pregunta prèvia."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:194
 msgid "Wallpaper"
