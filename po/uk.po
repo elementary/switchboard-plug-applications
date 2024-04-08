@@ -3,16 +3,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-04-03 01:43+0000\n"
-"PO-Revision-Date: 2024-03-31 04:13+0000\n"
-"Last-Translator: anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2024-04-09 21:13+0000\n"
+"Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-applications/uk/>\n"
 "Language: uk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 5.0.2\n"
 "X-Launchpad-Export-Date: 2016-11-26 05:53+0000\n"
 
@@ -145,13 +145,15 @@ msgstr "Немає результатів для «%s»"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:54
 msgid "Advanced System Access"
-msgstr ""
+msgstr "Розширений доступ до системи"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:56
 msgid ""
 "Access to system features can be restricted to make apps more secure, but "
 "some apps may not function properly without it"
 msgstr ""
+"Доступ до системних функцій можна обмежити, щоб зробити застосунки "
+"безпечнішими, але без цього деякі з них можуть не працювати належним чином"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:66
 msgid "Reset to Defaults"
@@ -162,27 +164,25 @@ msgid ""
 "Including all documents, downloads, music, pictures, videos, and any hidden "
 "folders."
 msgstr ""
+"Включно з усіма документами, завантаженнями, музикою, зображеннями, відео та "
+"всіма прихованими теками."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:108
 msgid "Including everyone's Home folders, but not including system internals."
 msgstr ""
+"Включно з домашніми теками всіх користувачів, але без внутрішніх системних "
+"файлів."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:112
-#, fuzzy
-#| msgid ""
-#| "Access all devices, such as webcams, microphones, and connected USB "
-#| "devices."
 msgid ""
 "Manage all connected devices, such as webcams, microphones, and USB devices."
 msgstr ""
-"Доступ до всіх пристроїв, таких як вебкамери, мікрофони та під'єднані USB-"
-"пристрої."
+"Керування всіма підключеними пристроями, такими як вебкамери, мікрофони та "
+"USB-пристрої."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:116
-#, fuzzy
-#| msgid "Access the Internet and local networks."
 msgid "Connect to the Internet and local networks."
-msgstr "Доступ до Інтернету та локальних мереж."
+msgstr "З'єднання з інтернетом і локальними мережами."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:120
 msgid "Manage Bluetooth devices including pairing, unpairing, and discovery."
@@ -192,13 +192,11 @@ msgstr ""
 
 #: src/Permissions/Widgets/AppSettingsView.vala:124
 msgid "Manage printers and see the print queue."
-msgstr ""
+msgstr "Керування принтерами та перегляд черги друку."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:128
-#, fuzzy
-#| msgid "Access other devices on the network via SSH."
 msgid "Connect to other devices on the network via SSH."
-msgstr "Доступ до інших пристроїв у мережі через SSH."
+msgstr "Під'єднання до інших пристроїв у мережі через SSH."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:132
 msgid "Accelerate graphical output."
@@ -206,11 +204,12 @@ msgstr "Прискорення графічного виводу."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:158
 msgid "Background Activity"
-msgstr ""
+msgstr "Фонова діяльність"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:159
 msgid "Perform tasks and use system resources while its window is closed."
 msgstr ""
+"Виконання завдань і використання системних ресурсів, коли його вікно закрите."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:169
 msgid "Location Services"
@@ -218,15 +217,15 @@ msgstr "Служби розташування"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:170
 msgid "Determine the location of this device."
-msgstr ""
+msgstr "Визначення місця розташування цього пристрою."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:183
 msgid "Screenshot"
-msgstr ""
+msgstr "Знімок екрана"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:184
 msgid "Take pictures of the display without asking first."
-msgstr ""
+msgstr "Знімати дисплей без попереднього запиту."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:194
 msgid "Wallpaper"
@@ -234,7 +233,7 @@ msgstr "Тло"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:195
 msgid "Set the wallpaper on the desktop and lock screen."
-msgstr ""
+msgstr "Встановлення шпалер робочого столу та екрану блокування."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:211
 #, c-format
