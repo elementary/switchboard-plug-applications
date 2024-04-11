@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-04-03 01:43+0000\n"
-"PO-Revision-Date: 2024-04-03 01:43+0000\n"
+"PO-Revision-Date: 2024-04-12 14:13+0000\n"
 "Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
 "Language-Team: French <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-applications/fr/>\n"
@@ -223,11 +223,11 @@ msgstr "Accéder à la position de cet appareil."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:183
 msgid "Screenshot"
-msgstr ""
+msgstr "Capture d'écran"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:184
 msgid "Take pictures of the display without asking first."
-msgstr ""
+msgstr "Prenez des photos de l'écran sans demander l'autorisation préalable."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:194
 msgid "Wallpaper"
