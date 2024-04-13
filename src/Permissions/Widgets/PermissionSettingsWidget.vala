@@ -67,9 +67,5 @@ public class Permissions.Widgets.PermissionSettingsWidget : Gtk.ListBoxRow {
         child = grid;
 
         bind_property ("active", allow_switch, "active", BIDIRECTIONAL);
-
-        activate.connect (() => {
-            allow_switch.activate ();
-        });
     }
 }
