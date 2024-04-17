@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-04-03 01:43+0000\n"
+"POT-Creation-Date: 2024-04-17 19:38+0000\n"
 "PO-Revision-Date: 2024-03-31 04:13+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Turkish <https://l10n.elementary.io/projects/switchboard/"
@@ -21,128 +21,86 @@ msgstr ""
 "Varsayılan uygulamaları, başlangıç uygulamalarını ve uygulama izinlerini "
 "yönetin"
 
-#: src/Plug.vala:45 src/Permissions/PermissionsPlug.vala:65
+#: src/Plug.vala:45
 msgid "Applications"
 msgstr "Uygulamalar"
 
-#: src/Plug.vala:57
-msgid "Defaults"
-msgstr "Varsayılanlar"
-
-#: src/Plug.vala:58 src/Plug.vala:112
+#: src/Plug.vala:98 src/Sidebar.vala:25 src/Startup/Startup.vala:16
 msgid "Startup"
 msgstr "Başlangıç"
 
-#: src/Plug.vala:59 src/Plug.vala:114
-msgid "Permissions"
-msgstr "İzinler"
-
-#: src/Plug.vala:113
+#: src/Plug.vala:99
 msgid "Default Apps"
 msgstr "Varsayılan Uygulamalar"
 
-#: src/Plug.vala:115
+#: src/Plug.vala:100
+msgid "Permissions"
+msgstr "İzinler"
+
+#: src/Plug.vala:101
 msgid "Sandboxing"
 msgstr "Sanallaştırılma"
 
-#: src/Plug.vala:116
+#: src/Plug.vala:102
 msgid "Confinement"
 msgstr "Sınırlandırmak"
 
-#: src/Plug.vala:117 src/Plug.vala:118 src/Plug.vala:119 src/Plug.vala:120
-#: src/Plug.vala:121 src/Plug.vala:122 src/Plug.vala:123 src/Plug.vala:124
+#: src/Plug.vala:103 src/Plug.vala:104 src/Plug.vala:105 src/Plug.vala:106
+#: src/Plug.vala:107 src/Plug.vala:108 src/Plug.vala:109 src/Plug.vala:110
 msgid "Default"
 msgstr "Varsayılan"
 
-#: src/Plug.vala:117 src/Defaults/DefaultPlug.vala:12
+#: src/Plug.vala:103 src/Defaults/DefaultPlug.vala:19
 msgid "Web Browser"
 msgstr "Web Tarayıcısı"
 
-#: src/Plug.vala:118 src/Defaults/DefaultPlug.vala:17
+#: src/Plug.vala:104 src/Defaults/DefaultPlug.vala:24
 msgid "Email Client"
 msgstr "E-posta İstemcisi"
 
-#: src/Plug.vala:119 src/Defaults/DefaultPlug.vala:22
+#: src/Plug.vala:105 src/Defaults/DefaultPlug.vala:29
 msgid "Calendar"
 msgstr "Takvim"
 
-#: src/Plug.vala:120 src/Defaults/DefaultPlug.vala:27
+#: src/Plug.vala:106 src/Defaults/DefaultPlug.vala:34
 msgid "Video Player"
 msgstr "Video Oynatıcı"
 
-#: src/Plug.vala:121 src/Defaults/DefaultPlug.vala:32
+#: src/Plug.vala:107 src/Defaults/DefaultPlug.vala:39
 msgid "Music Player"
 msgstr "Müzik Çalar"
 
-#: src/Plug.vala:122 src/Defaults/DefaultPlug.vala:42
+#: src/Plug.vala:108 src/Defaults/DefaultPlug.vala:49
 msgid "Text Editor"
 msgstr "Metin Düzenleyici"
 
-#: src/Plug.vala:123 src/Defaults/DefaultPlug.vala:37
+#: src/Plug.vala:109 src/Defaults/DefaultPlug.vala:44
 msgid "Image Viewer"
 msgstr "Resim Görüntüleyici"
 
-#: src/Plug.vala:124 src/Defaults/DefaultPlug.vala:47
+#: src/Plug.vala:110 src/Defaults/DefaultPlug.vala:54
 msgid "File Browser"
 msgstr "Dosya Tarayıcısı"
 
-#: src/Permissions/PermissionsPlug.vala:31
-msgid "Home Folder"
-msgstr "Ana Klasör"
+#: src/Sidebar.vala:21 src/Defaults/DefaultPlug.vala:12
+msgid "Defaults"
+msgstr "Varsayılanlar"
 
-#: src/Permissions/PermissionsPlug.vala:32
-msgid "System Folders"
-msgstr "Sistem Klasörleri"
-
-#: src/Permissions/PermissionsPlug.vala:33
-msgid "Devices"
-msgstr "Aygıtlar"
-
-#: src/Permissions/PermissionsPlug.vala:34
-msgid "Network"
-msgstr "Ağ"
-
-#: src/Permissions/PermissionsPlug.vala:35
-msgid "Bluetooth"
-msgstr "Bluetooth"
-
-#: src/Permissions/PermissionsPlug.vala:36
-msgid "Printing"
-msgstr "Yazdırma"
-
-#: src/Permissions/PermissionsPlug.vala:37
-msgid "Secure Shell Agent"
-msgstr "Güvenli Kabuk Aracısı"
-
-#: src/Permissions/PermissionsPlug.vala:38
-msgid "GPU Acceleration"
-msgstr "GPU Hızlandırması"
-
-#: src/Permissions/PermissionsPlug.vala:42
-msgid "No Flatpak apps installed"
-msgstr "Yüklü Flatpak uygulaması yok"
-
-#: src/Permissions/PermissionsPlug.vala:44
-msgid ""
-"Apps whose permissions can be adjusted will automatically appear here when "
-"installed"
-msgstr ""
-"İzinleri ayarlanabilen uygulamalar yüklendiğinde burada otomatik olarak "
-"görünecektir"
-
-#: src/Permissions/PermissionsPlug.vala:49
-#: src/Startup/Widgets/AppChooser.vala:17
-msgid "Search Applications"
+#: src/Sidebar.vala:29 src/Sidebar.vala:43
+#, fuzzy
+#| msgid "Search Applications"
+msgid "Search Apps"
 msgstr "Uygulama Ara"
 
-#: src/Permissions/PermissionsPlug.vala:54
-msgid "Try changing search terms."
-msgstr "Arama terimlerini değiştirmeyi deneyin."
+#: src/Sidebar.vala:127
+#, fuzzy
+#| msgid "System Folders"
+msgid "System"
+msgstr "Sistem Klasörleri"
 
-#: src/Permissions/PermissionsPlug.vala:119
-#, c-format
-msgid "No Results for “%s”"
-msgstr "“%s” için sonuç bulunamadı"
+#: src/Sidebar.vala:132
+msgid "Apps"
+msgstr ""
 
 #: src/Permissions/Widgets/AppSettingsView.vala:54
 msgid "Advanced System Access"
@@ -158,17 +116,17 @@ msgstr ""
 msgid "Reset to Defaults"
 msgstr "Varsayılanlara Sıfırla"
 
-#: src/Permissions/Widgets/AppSettingsView.vala:104
+#: src/Permissions/Widgets/AppSettingsView.vala:117
 msgid ""
 "Including all documents, downloads, music, pictures, videos, and any hidden "
 "folders."
 msgstr ""
 
-#: src/Permissions/Widgets/AppSettingsView.vala:108
+#: src/Permissions/Widgets/AppSettingsView.vala:121
 msgid "Including everyone's Home folders, but not including system internals."
 msgstr ""
 
-#: src/Permissions/Widgets/AppSettingsView.vala:112
+#: src/Permissions/Widgets/AppSettingsView.vala:125
 #, fuzzy
 #| msgid ""
 #| "Access all devices, such as webcams, microphones, and connected USB "
@@ -178,65 +136,65 @@ msgid ""
 msgstr ""
 "Web kameraları, mikrofonlar ve bağlı USB cihazları gibi tüm cihazlara erişin."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:116
+#: src/Permissions/Widgets/AppSettingsView.vala:129
 #, fuzzy
 #| msgid "Access the Internet and local networks."
 msgid "Connect to the Internet and local networks."
 msgstr "İnternete ve yerel ağlara erişin."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:120
+#: src/Permissions/Widgets/AppSettingsView.vala:133
 msgid "Manage Bluetooth devices including pairing, unpairing, and discovery."
 msgstr ""
 "Eşleştirme, eşleştirme kaldırma ve keşif dahil olmak üzere Bluetooth "
 "cihazlarını yönetin."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:124
+#: src/Permissions/Widgets/AppSettingsView.vala:137
 msgid "Manage printers and see the print queue."
 msgstr ""
 
-#: src/Permissions/Widgets/AppSettingsView.vala:128
+#: src/Permissions/Widgets/AppSettingsView.vala:141
 #, fuzzy
 #| msgid "Access other devices on the network via SSH."
 msgid "Connect to other devices on the network via SSH."
 msgstr "Ağdaki diğer cihazlara SSH aracılığıyla erişin."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:132
+#: src/Permissions/Widgets/AppSettingsView.vala:145
 msgid "Accelerate graphical output."
 msgstr "Grafik çıktıyı hızlandırın."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:158
+#: src/Permissions/Widgets/AppSettingsView.vala:171
 msgid "Background Activity"
 msgstr ""
 
-#: src/Permissions/Widgets/AppSettingsView.vala:159
+#: src/Permissions/Widgets/AppSettingsView.vala:172
 msgid "Perform tasks and use system resources while its window is closed."
 msgstr ""
 
-#: src/Permissions/Widgets/AppSettingsView.vala:169
+#: src/Permissions/Widgets/AppSettingsView.vala:182
 msgid "Location Services"
 msgstr "Konum Hizmetleri"
 
-#: src/Permissions/Widgets/AppSettingsView.vala:170
+#: src/Permissions/Widgets/AppSettingsView.vala:183
 msgid "Determine the location of this device."
 msgstr ""
 
-#: src/Permissions/Widgets/AppSettingsView.vala:183
+#: src/Permissions/Widgets/AppSettingsView.vala:196
 msgid "Screenshot"
 msgstr ""
 
-#: src/Permissions/Widgets/AppSettingsView.vala:184
+#: src/Permissions/Widgets/AppSettingsView.vala:197
 msgid "Take pictures of the display without asking first."
 msgstr ""
 
-#: src/Permissions/Widgets/AppSettingsView.vala:194
+#: src/Permissions/Widgets/AppSettingsView.vala:207
 msgid "Wallpaper"
 msgstr ""
 
-#: src/Permissions/Widgets/AppSettingsView.vala:195
+#: src/Permissions/Widgets/AppSettingsView.vala:208
 msgid "Set the wallpaper on the desktop and lock screen."
 msgstr ""
 
-#: src/Permissions/Widgets/AppSettingsView.vala:211
+#: src/Permissions/Widgets/AppSettingsView.vala:224
 #, fuzzy, c-format
 #| msgid "Permissions"
 msgid "%s permissions"
@@ -247,17 +205,17 @@ msgstr "İzinler"
 msgid ", "
 msgstr ", "
 
-#: src/Startup/Startup.vala:17
+#: src/Startup/Startup.vala:24
 msgid "Launch Apps on Startup"
 msgstr "Uygulamaları Başlangıçta Başlat"
 
-#: src/Startup/Startup.vala:18
+#: src/Startup/Startup.vala:25
 msgid "Add apps to the Startup list by clicking the icon in the toolbar below."
 msgstr ""
 "Aşağıdaki araç çubuğundaki simgeyi tıklayarak Başlangıç listesine "
 "uygulamalar ekleyin."
 
-#: src/Startup/Startup.vala:39
+#: src/Startup/Startup.vala:45
 msgid "Add Startup App…"
 msgstr "Başlangıç Uygulaması Ekle…"
 
@@ -274,6 +232,10 @@ msgstr ""
 msgid "Launch %s on startup"
 msgstr "%s uygulamasını başlangıçta başlat"
 
+#: src/Startup/Widgets/AppChooser.vala:17
+msgid "Search Applications"
+msgstr "Uygulama Ara"
+
 #: src/Startup/Widgets/AppChooser.vala:37
 msgid "Type in a custom command"
 msgstr "Özel komut gir"
@@ -288,6 +250,44 @@ msgstr "İptal"
 #| msgid "Remove Selected Startup App"
 msgid "Select startup app"
 msgstr "Seçili Başlangıç Uygulamasını Kaldır"
+
+#~ msgid "Home Folder"
+#~ msgstr "Ana Klasör"
+
+#~ msgid "Devices"
+#~ msgstr "Aygıtlar"
+
+#~ msgid "Network"
+#~ msgstr "Ağ"
+
+#~ msgid "Bluetooth"
+#~ msgstr "Bluetooth"
+
+#~ msgid "Printing"
+#~ msgstr "Yazdırma"
+
+#~ msgid "Secure Shell Agent"
+#~ msgstr "Güvenli Kabuk Aracısı"
+
+#~ msgid "GPU Acceleration"
+#~ msgstr "GPU Hızlandırması"
+
+#~ msgid "No Flatpak apps installed"
+#~ msgstr "Yüklü Flatpak uygulaması yok"
+
+#~ msgid ""
+#~ "Apps whose permissions can be adjusted will automatically appear here "
+#~ "when installed"
+#~ msgstr ""
+#~ "İzinleri ayarlanabilen uygulamalar yüklendiğinde burada otomatik olarak "
+#~ "görünecektir"
+
+#~ msgid "Try changing search terms."
+#~ msgstr "Arama terimlerini değiştirmeyi deneyin."
+
+#, c-format
+#~ msgid "No Results for “%s”"
+#~ msgstr "“%s” için sonuç bulunamadı"
 
 #~ msgid "Access your entire Home folder, including any hidden folders."
 #~ msgstr "Gizli klasörler dahil tüm Ana klasörünüze erişin."

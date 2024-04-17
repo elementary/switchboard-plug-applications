@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-04-03 01:43+0000\n"
+"POT-Creation-Date: 2024-04-17 19:38+0000\n"
 "PO-Revision-Date: 2024-04-04 14:15+0000\n"
 "Last-Translator: кубик круглый <megarainbow29@gmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/switchboard/"
@@ -11,8 +11,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 5.0.2\n"
 "X-Launchpad-Export-Date: 2016-12-02 05:37+0000\n"
 
@@ -20,128 +20,86 @@ msgstr ""
 msgid "Manage default apps, startup apps, and app permissions"
 msgstr "Управление приложениями по умолчанию, автозапуском и правами доступа"
 
-#: src/Plug.vala:45 src/Permissions/PermissionsPlug.vala:65
+#: src/Plug.vala:45
 msgid "Applications"
 msgstr "Приложения"
 
-#: src/Plug.vala:57
-msgid "Defaults"
-msgstr "По умолчанию"
-
-#: src/Plug.vala:58 src/Plug.vala:112
+#: src/Plug.vala:98 src/Sidebar.vala:25 src/Startup/Startup.vala:16
 msgid "Startup"
 msgstr "Автозапуск"
 
-#: src/Plug.vala:59 src/Plug.vala:114
-msgid "Permissions"
-msgstr "Права доступа"
-
-#: src/Plug.vala:113
+#: src/Plug.vala:99
 msgid "Default Apps"
 msgstr "Приложения по умолчанию"
 
-#: src/Plug.vala:115
+#: src/Plug.vala:100
+msgid "Permissions"
+msgstr "Права доступа"
+
+#: src/Plug.vala:101
 msgid "Sandboxing"
 msgstr "Песочница"
 
-#: src/Plug.vala:116
+#: src/Plug.vala:102
 msgid "Confinement"
 msgstr "Ограничение"
 
-#: src/Plug.vala:117 src/Plug.vala:118 src/Plug.vala:119 src/Plug.vala:120
-#: src/Plug.vala:121 src/Plug.vala:122 src/Plug.vala:123 src/Plug.vala:124
+#: src/Plug.vala:103 src/Plug.vala:104 src/Plug.vala:105 src/Plug.vala:106
+#: src/Plug.vala:107 src/Plug.vala:108 src/Plug.vala:109 src/Plug.vala:110
 msgid "Default"
 msgstr "По умолчанию"
 
-#: src/Plug.vala:117 src/Defaults/DefaultPlug.vala:12
+#: src/Plug.vala:103 src/Defaults/DefaultPlug.vala:19
 msgid "Web Browser"
 msgstr "Веб-браузер"
 
-#: src/Plug.vala:118 src/Defaults/DefaultPlug.vala:17
+#: src/Plug.vala:104 src/Defaults/DefaultPlug.vala:24
 msgid "Email Client"
 msgstr "Почтовый клиент"
 
-#: src/Plug.vala:119 src/Defaults/DefaultPlug.vala:22
+#: src/Plug.vala:105 src/Defaults/DefaultPlug.vala:29
 msgid "Calendar"
 msgstr "Календарь"
 
-#: src/Plug.vala:120 src/Defaults/DefaultPlug.vala:27
+#: src/Plug.vala:106 src/Defaults/DefaultPlug.vala:34
 msgid "Video Player"
 msgstr "Видеопроигрыватель"
 
-#: src/Plug.vala:121 src/Defaults/DefaultPlug.vala:32
+#: src/Plug.vala:107 src/Defaults/DefaultPlug.vala:39
 msgid "Music Player"
 msgstr "Музыкальный проигрыватель"
 
-#: src/Plug.vala:122 src/Defaults/DefaultPlug.vala:42
+#: src/Plug.vala:108 src/Defaults/DefaultPlug.vala:49
 msgid "Text Editor"
 msgstr "Текстовый редактор"
 
-#: src/Plug.vala:123 src/Defaults/DefaultPlug.vala:37
+#: src/Plug.vala:109 src/Defaults/DefaultPlug.vala:44
 msgid "Image Viewer"
 msgstr "Просмотр изображений"
 
-#: src/Plug.vala:124 src/Defaults/DefaultPlug.vala:47
+#: src/Plug.vala:110 src/Defaults/DefaultPlug.vala:54
 msgid "File Browser"
 msgstr "Файловый менеджер"
 
-#: src/Permissions/PermissionsPlug.vala:31
-msgid "Home Folder"
-msgstr "Домашняя папка"
+#: src/Sidebar.vala:21 src/Defaults/DefaultPlug.vala:12
+msgid "Defaults"
+msgstr "По умолчанию"
 
-#: src/Permissions/PermissionsPlug.vala:32
-msgid "System Folders"
-msgstr "Системные папки"
-
-#: src/Permissions/PermissionsPlug.vala:33
-msgid "Devices"
-msgstr "Устройства"
-
-#: src/Permissions/PermissionsPlug.vala:34
-msgid "Network"
-msgstr "Сеть"
-
-#: src/Permissions/PermissionsPlug.vala:35
-msgid "Bluetooth"
-msgstr "Bluetooth"
-
-#: src/Permissions/PermissionsPlug.vala:36
-msgid "Printing"
-msgstr "Печать"
-
-#: src/Permissions/PermissionsPlug.vala:37
-msgid "Secure Shell Agent"
-msgstr "Агент Secure Shell"
-
-#: src/Permissions/PermissionsPlug.vala:38
-msgid "GPU Acceleration"
-msgstr "Ускорение графического процессора"
-
-#: src/Permissions/PermissionsPlug.vala:42
-msgid "No Flatpak apps installed"
-msgstr "Приложений Flatpak не установлено"
-
-#: src/Permissions/PermissionsPlug.vala:44
-msgid ""
-"Apps whose permissions can be adjusted will automatically appear here when "
-"installed"
-msgstr ""
-"Приложения, правами которых можно управлять, будут появляться здесь после "
-"установки"
-
-#: src/Permissions/PermissionsPlug.vala:49
-#: src/Startup/Widgets/AppChooser.vala:17
-msgid "Search Applications"
+#: src/Sidebar.vala:29 src/Sidebar.vala:43
+#, fuzzy
+#| msgid "Search Applications"
+msgid "Search Apps"
 msgstr "Поиск приложений"
 
-#: src/Permissions/PermissionsPlug.vala:54
-msgid "Try changing search terms."
-msgstr "Попробуйте изменить запрос."
+#: src/Sidebar.vala:127
+#, fuzzy
+#| msgid "System Folders"
+msgid "System"
+msgstr "Системные папки"
 
-#: src/Permissions/PermissionsPlug.vala:119
-#, c-format
-msgid "No Results for “%s”"
-msgstr "Нет результатов по запросу «%s»"
+#: src/Sidebar.vala:132
+msgid "Apps"
+msgstr ""
 
 #: src/Permissions/Widgets/AppSettingsView.vala:54
 msgid "Advanced System Access"
@@ -159,7 +117,7 @@ msgstr ""
 msgid "Reset to Defaults"
 msgstr "Сбросить к настройкам по умолчанию"
 
-#: src/Permissions/Widgets/AppSettingsView.vala:104
+#: src/Permissions/Widgets/AppSettingsView.vala:117
 msgid ""
 "Including all documents, downloads, music, pictures, videos, and any hidden "
 "folders."
@@ -167,76 +125,76 @@ msgstr ""
 "Включая все документы, загрузки, музыку, фотографии, видео и все скрытые "
 "папки."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:108
+#: src/Permissions/Widgets/AppSettingsView.vala:121
 msgid "Including everyone's Home folders, but not including system internals."
 msgstr ""
 "Включая доступ к папкам всех пользователей, но не включая внутренние папки "
 "системы."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:112
+#: src/Permissions/Widgets/AppSettingsView.vala:125
 msgid ""
 "Manage all connected devices, such as webcams, microphones, and USB devices."
 msgstr ""
 "Управление всеми подключёнными устройствами, таким как веб-камеры, микрофоны "
 "и USB-устройства."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:116
+#: src/Permissions/Widgets/AppSettingsView.vala:129
 msgid "Connect to the Internet and local networks."
 msgstr "Подключение к Интернету и локальным сетям."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:120
+#: src/Permissions/Widgets/AppSettingsView.vala:133
 msgid "Manage Bluetooth devices including pairing, unpairing, and discovery."
 msgstr ""
 "Управление устройствами Bluetooth, включая сопряжение, разъединение и "
 "обнаружение."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:124
+#: src/Permissions/Widgets/AppSettingsView.vala:137
 msgid "Manage printers and see the print queue."
 msgstr "Управление принтерами и просмотр очереди печати."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:128
+#: src/Permissions/Widgets/AppSettingsView.vala:141
 msgid "Connect to other devices on the network via SSH."
 msgstr "Подключение к другим устройствам в сети через SSH."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:132
+#: src/Permissions/Widgets/AppSettingsView.vala:145
 msgid "Accelerate graphical output."
 msgstr "Ускорение графического вывода."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:158
+#: src/Permissions/Widgets/AppSettingsView.vala:171
 msgid "Background Activity"
 msgstr "Фоновая активность"
 
-#: src/Permissions/Widgets/AppSettingsView.vala:159
+#: src/Permissions/Widgets/AppSettingsView.vala:172
 msgid "Perform tasks and use system resources while its window is closed."
 msgstr ""
 "Выполнять задачи и использовать системные ресурсы, пока окно приложения "
 "закрыто."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:169
+#: src/Permissions/Widgets/AppSettingsView.vala:182
 msgid "Location Services"
 msgstr "Сервисы местоположения"
 
-#: src/Permissions/Widgets/AppSettingsView.vala:170
+#: src/Permissions/Widgets/AppSettingsView.vala:183
 msgid "Determine the location of this device."
 msgstr "Определять местоположение данного устройства."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:183
+#: src/Permissions/Widgets/AppSettingsView.vala:196
 msgid "Screenshot"
 msgstr "Съёмка экрана"
 
-#: src/Permissions/Widgets/AppSettingsView.vala:184
+#: src/Permissions/Widgets/AppSettingsView.vala:197
 msgid "Take pictures of the display without asking first."
 msgstr "Возможность делать снимки экрана без запросов."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:194
+#: src/Permissions/Widgets/AppSettingsView.vala:207
 msgid "Wallpaper"
 msgstr "Обои"
 
-#: src/Permissions/Widgets/AppSettingsView.vala:195
+#: src/Permissions/Widgets/AppSettingsView.vala:208
 msgid "Set the wallpaper on the desktop and lock screen."
 msgstr "Устанавливать обои рабочего стола и экрана блокировки."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:211
+#: src/Permissions/Widgets/AppSettingsView.vala:224
 #, c-format
 msgid "%s permissions"
 msgstr "Разрешения %s"
@@ -246,15 +204,15 @@ msgstr "Разрешения %s"
 msgid ", "
 msgstr ", "
 
-#: src/Startup/Startup.vala:17
+#: src/Startup/Startup.vala:24
 msgid "Launch Apps on Startup"
 msgstr "Запуск приложений при загрузке системы"
 
-#: src/Startup/Startup.vala:18
+#: src/Startup/Startup.vala:25
 msgid "Add apps to the Startup list by clicking the icon in the toolbar below."
 msgstr "Добавьте приложения в автозапуск, нажав на значок на панели ниже."
 
-#: src/Startup/Startup.vala:39
+#: src/Startup/Startup.vala:45
 msgid "Add Startup App…"
 msgstr "Добавить приложение в автозапуск…"
 
@@ -271,6 +229,10 @@ msgstr "Удалить приложение из автозагрузки"
 msgid "Launch %s on startup"
 msgstr "Запуск %s при загрузке системы"
 
+#: src/Startup/Widgets/AppChooser.vala:17
+msgid "Search Applications"
+msgstr "Поиск приложений"
+
 #: src/Startup/Widgets/AppChooser.vala:37
 msgid "Type in a custom command"
 msgstr "Введите свою команду"
@@ -283,6 +245,44 @@ msgstr "Отменить"
 #: src/Startup/Widgets/AppChooser.vala:53
 msgid "Select startup app"
 msgstr "Выберите приложение для автозапуска"
+
+#~ msgid "Home Folder"
+#~ msgstr "Домашняя папка"
+
+#~ msgid "Devices"
+#~ msgstr "Устройства"
+
+#~ msgid "Network"
+#~ msgstr "Сеть"
+
+#~ msgid "Bluetooth"
+#~ msgstr "Bluetooth"
+
+#~ msgid "Printing"
+#~ msgstr "Печать"
+
+#~ msgid "Secure Shell Agent"
+#~ msgstr "Агент Secure Shell"
+
+#~ msgid "GPU Acceleration"
+#~ msgstr "Ускорение графического процессора"
+
+#~ msgid "No Flatpak apps installed"
+#~ msgstr "Приложений Flatpak не установлено"
+
+#~ msgid ""
+#~ "Apps whose permissions can be adjusted will automatically appear here "
+#~ "when installed"
+#~ msgstr ""
+#~ "Приложения, правами которых можно управлять, будут появляться здесь после "
+#~ "установки"
+
+#~ msgid "Try changing search terms."
+#~ msgstr "Попробуйте изменить запрос."
+
+#, c-format
+#~ msgid "No Results for “%s”"
+#~ msgstr "Нет результатов по запросу «%s»"
 
 #~ msgid "Access your entire Home folder, including any hidden folders."
 #~ msgstr "Доступ ко всей домашней папке, включая все скрытые папки."

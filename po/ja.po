@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-04-03 01:43+0000\n"
+"POT-Creation-Date: 2024-04-17 19:38+0000\n"
 "PO-Revision-Date: 2024-04-17 13:13+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
@@ -20,128 +20,86 @@ msgid "Manage default apps, startup apps, and app permissions"
 msgstr ""
 "デフォルトアプリ、自動起動するアプリ、アプリのパーミッションを管理します"
 
-#: src/Plug.vala:45 src/Permissions/PermissionsPlug.vala:65
+#: src/Plug.vala:45
 msgid "Applications"
 msgstr "アプリケーション"
 
-#: src/Plug.vala:57
-msgid "Defaults"
-msgstr "デフォルト"
-
-#: src/Plug.vala:58 src/Plug.vala:112
+#: src/Plug.vala:98 src/Sidebar.vala:25 src/Startup/Startup.vala:16
 msgid "Startup"
 msgstr "自動起動"
 
-#: src/Plug.vala:59 src/Plug.vala:114
-msgid "Permissions"
-msgstr "パーミッション"
-
-#: src/Plug.vala:113
+#: src/Plug.vala:99
 msgid "Default Apps"
 msgstr "デフォルトのアプリ"
 
-#: src/Plug.vala:115
+#: src/Plug.vala:100
+msgid "Permissions"
+msgstr "パーミッション"
+
+#: src/Plug.vala:101
 msgid "Sandboxing"
 msgstr "サンドボックス"
 
-#: src/Plug.vala:116
+#: src/Plug.vala:102
 msgid "Confinement"
 msgstr "制限"
 
-#: src/Plug.vala:117 src/Plug.vala:118 src/Plug.vala:119 src/Plug.vala:120
-#: src/Plug.vala:121 src/Plug.vala:122 src/Plug.vala:123 src/Plug.vala:124
+#: src/Plug.vala:103 src/Plug.vala:104 src/Plug.vala:105 src/Plug.vala:106
+#: src/Plug.vala:107 src/Plug.vala:108 src/Plug.vala:109 src/Plug.vala:110
 msgid "Default"
 msgstr "デフォルト"
 
-#: src/Plug.vala:117 src/Defaults/DefaultPlug.vala:12
+#: src/Plug.vala:103 src/Defaults/DefaultPlug.vala:19
 msgid "Web Browser"
 msgstr "Web ブラウザー"
 
-#: src/Plug.vala:118 src/Defaults/DefaultPlug.vala:17
+#: src/Plug.vala:104 src/Defaults/DefaultPlug.vala:24
 msgid "Email Client"
 msgstr "メールクライアント"
 
-#: src/Plug.vala:119 src/Defaults/DefaultPlug.vala:22
+#: src/Plug.vala:105 src/Defaults/DefaultPlug.vala:29
 msgid "Calendar"
 msgstr "カレンダー"
 
-#: src/Plug.vala:120 src/Defaults/DefaultPlug.vala:27
+#: src/Plug.vala:106 src/Defaults/DefaultPlug.vala:34
 msgid "Video Player"
 msgstr "ビデオプレーヤー"
 
-#: src/Plug.vala:121 src/Defaults/DefaultPlug.vala:32
+#: src/Plug.vala:107 src/Defaults/DefaultPlug.vala:39
 msgid "Music Player"
 msgstr "ミュージックプレーヤー"
 
-#: src/Plug.vala:122 src/Defaults/DefaultPlug.vala:42
+#: src/Plug.vala:108 src/Defaults/DefaultPlug.vala:49
 msgid "Text Editor"
 msgstr "テキストエディター"
 
-#: src/Plug.vala:123 src/Defaults/DefaultPlug.vala:37
+#: src/Plug.vala:109 src/Defaults/DefaultPlug.vala:44
 msgid "Image Viewer"
 msgstr "画像ビューアー"
 
-#: src/Plug.vala:124 src/Defaults/DefaultPlug.vala:47
+#: src/Plug.vala:110 src/Defaults/DefaultPlug.vala:54
 msgid "File Browser"
 msgstr "ファイルブラウザー"
 
-#: src/Permissions/PermissionsPlug.vala:31
-msgid "Home Folder"
-msgstr "ホームフォルダー"
+#: src/Sidebar.vala:21 src/Defaults/DefaultPlug.vala:12
+msgid "Defaults"
+msgstr "デフォルト"
 
-#: src/Permissions/PermissionsPlug.vala:32
-msgid "System Folders"
-msgstr "システムフォルダー"
-
-#: src/Permissions/PermissionsPlug.vala:33
-msgid "Devices"
-msgstr "デバイス"
-
-#: src/Permissions/PermissionsPlug.vala:34
-msgid "Network"
-msgstr "ネットワーク"
-
-#: src/Permissions/PermissionsPlug.vala:35
-msgid "Bluetooth"
-msgstr "Bluetooth"
-
-#: src/Permissions/PermissionsPlug.vala:36
-msgid "Printing"
-msgstr "印刷"
-
-#: src/Permissions/PermissionsPlug.vala:37
-msgid "Secure Shell Agent"
-msgstr "セキュアシェルエージェント"
-
-#: src/Permissions/PermissionsPlug.vala:38
-msgid "GPU Acceleration"
-msgstr "GPU アクセラレーション"
-
-#: src/Permissions/PermissionsPlug.vala:42
-msgid "No Flatpak apps installed"
-msgstr "Flatpak アプリ未インストール"
-
-#: src/Permissions/PermissionsPlug.vala:44
-msgid ""
-"Apps whose permissions can be adjusted will automatically appear here when "
-"installed"
-msgstr ""
-"パーミッションの変更が可能なアプリをインストールすると、自動的にここに表示さ"
-"れます"
-
-#: src/Permissions/PermissionsPlug.vala:49
-#: src/Startup/Widgets/AppChooser.vala:17
-msgid "Search Applications"
+#: src/Sidebar.vala:29 src/Sidebar.vala:43
+#, fuzzy
+#| msgid "Search Applications"
+msgid "Search Apps"
 msgstr "アプリケーションを検索"
 
-#: src/Permissions/PermissionsPlug.vala:54
-msgid "Try changing search terms."
-msgstr "検索用語を変更してみてください。"
+#: src/Sidebar.vala:127
+#, fuzzy
+#| msgid "System Folders"
+msgid "System"
+msgstr "システムフォルダー"
 
-#: src/Permissions/PermissionsPlug.vala:119
-#, c-format
-msgid "No Results for “%s”"
-msgstr "“%s” の検索結果なし"
+#: src/Sidebar.vala:132
+msgid "Apps"
+msgstr ""
 
 #: src/Permissions/Widgets/AppSettingsView.vala:54
 msgid "Advanced System Access"
@@ -151,86 +109,91 @@ msgstr "高度なシステムアクセス"
 msgid ""
 "Access to system features can be restricted to make apps more secure, but "
 "some apps may not function properly without it"
-msgstr "システム機能へのアクセスを制限することでアプリをより安全にできますが、アクセ"
+msgstr ""
+"システム機能へのアクセスを制限することでアプリをより安全にできますが、アクセ"
 "ス権限がないと適切に機能しないアプリもあります"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:66
 msgid "Reset to Defaults"
 msgstr "デフォルトにリセット"
 
-#: src/Permissions/Widgets/AppSettingsView.vala:104
+#: src/Permissions/Widgets/AppSettingsView.vala:117
 msgid ""
 "Including all documents, downloads, music, pictures, videos, and any hidden "
 "folders."
-msgstr "\"ドキュメント\"、\"ダウンロード\"、\"ミュージック\"、\"ピクチャ\"、\"ビデオ"
+msgstr ""
+"\"ドキュメント\"、\"ダウンロード\"、\"ミュージック\"、\"ピクチャ\"、\"ビデオ"
 "\"、およびすべての隠しフォルダーを含みます。"
 
-#: src/Permissions/Widgets/AppSettingsView.vala:108
+#: src/Permissions/Widgets/AppSettingsView.vala:121
 msgid "Including everyone's Home folders, but not including system internals."
-msgstr "全ユーザーのホームフォルダーを含みますが、システムの内部フォルダーは含みませ"
+msgstr ""
+"全ユーザーのホームフォルダーを含みますが、システムの内部フォルダーは含みませ"
 "ん。"
 
-#: src/Permissions/Widgets/AppSettingsView.vala:112
+#: src/Permissions/Widgets/AppSettingsView.vala:125
 msgid ""
 "Manage all connected devices, such as webcams, microphones, and USB devices."
-msgstr "Web カメラ、マイク、USB "
-"デバイスなどの、すべての接続済みデバイスを管理します。"
+msgstr ""
+"Web カメラ、マイク、USB デバイスなどの、すべての接続済みデバイスを管理しま"
+"す。"
 
-#: src/Permissions/Widgets/AppSettingsView.vala:116
+#: src/Permissions/Widgets/AppSettingsView.vala:129
 msgid "Connect to the Internet and local networks."
 msgstr "インターネットとローカルネットワークに接続します。"
 
-#: src/Permissions/Widgets/AppSettingsView.vala:120
+#: src/Permissions/Widgets/AppSettingsView.vala:133
 msgid "Manage Bluetooth devices including pairing, unpairing, and discovery."
 msgstr ""
 "ペアリング、ペアリング解除、デバイスの検索を含む、Bluetooth デバイスの管理を"
 "許可します。"
 
-#: src/Permissions/Widgets/AppSettingsView.vala:124
+#: src/Permissions/Widgets/AppSettingsView.vala:137
 msgid "Manage printers and see the print queue."
 msgstr "プリンターを管理し、プリントキューを表示します。"
 
-#: src/Permissions/Widgets/AppSettingsView.vala:128
+#: src/Permissions/Widgets/AppSettingsView.vala:141
 msgid "Connect to other devices on the network via SSH."
 msgstr "SSH を使用したネットワーク上のほかのデバイスに接続します。"
 
-#: src/Permissions/Widgets/AppSettingsView.vala:132
+#: src/Permissions/Widgets/AppSettingsView.vala:145
 msgid "Accelerate graphical output."
 msgstr "グラフィック出力のアクセラレーションを許可します。"
 
-#: src/Permissions/Widgets/AppSettingsView.vala:158
+#: src/Permissions/Widgets/AppSettingsView.vala:171
 msgid "Background Activity"
 msgstr "バックグラウンドアクティビティー"
 
-#: src/Permissions/Widgets/AppSettingsView.vala:159
+#: src/Permissions/Widgets/AppSettingsView.vala:172
 msgid "Perform tasks and use system resources while its window is closed."
-msgstr "ウィンドウが閉じている間も、タスクを実行しシステムリソースを使用します。"
+msgstr ""
+"ウィンドウが閉じている間も、タスクを実行しシステムリソースを使用します。"
 
-#: src/Permissions/Widgets/AppSettingsView.vala:169
+#: src/Permissions/Widgets/AppSettingsView.vala:182
 msgid "Location Services"
 msgstr "位置情報サービス"
 
-#: src/Permissions/Widgets/AppSettingsView.vala:170
+#: src/Permissions/Widgets/AppSettingsView.vala:183
 msgid "Determine the location of this device."
 msgstr "このデバイスの位置情報を検出します。"
 
-#: src/Permissions/Widgets/AppSettingsView.vala:183
+#: src/Permissions/Widgets/AppSettingsView.vala:196
 msgid "Screenshot"
 msgstr "スクリーンショット"
 
-#: src/Permissions/Widgets/AppSettingsView.vala:184
+#: src/Permissions/Widgets/AppSettingsView.vala:197
 msgid "Take pictures of the display without asking first."
 msgstr "取得の確認なしにディスプレイの画像を取得します。"
 
-#: src/Permissions/Widgets/AppSettingsView.vala:194
+#: src/Permissions/Widgets/AppSettingsView.vala:207
 msgid "Wallpaper"
 msgstr "壁紙"
 
-#: src/Permissions/Widgets/AppSettingsView.vala:195
+#: src/Permissions/Widgets/AppSettingsView.vala:208
 msgid "Set the wallpaper on the desktop and lock screen."
 msgstr "デスクトップとロック画面の壁紙を設定します。"
 
-#: src/Permissions/Widgets/AppSettingsView.vala:211
+#: src/Permissions/Widgets/AppSettingsView.vala:224
 #, c-format
 msgid "%s permissions"
 msgstr "%s のパーミッション"
@@ -240,16 +203,16 @@ msgstr "%s のパーミッション"
 msgid ", "
 msgstr "、 "
 
-#: src/Startup/Startup.vala:17
+#: src/Startup/Startup.vala:24
 msgid "Launch Apps on Startup"
 msgstr "システム起動時にアプリを起動します"
 
-#: src/Startup/Startup.vala:18
+#: src/Startup/Startup.vala:25
 msgid "Add apps to the Startup list by clicking the icon in the toolbar below."
 msgstr ""
 "下のツールバーのアイコンをクリックして、自動起動リストにアプリを追加します。"
 
-#: src/Startup/Startup.vala:39
+#: src/Startup/Startup.vala:45
 msgid "Add Startup App…"
 msgstr "自動起動するアプリを追加…"
 
@@ -266,6 +229,10 @@ msgstr "このアプリを自動起動から削除"
 msgid "Launch %s on startup"
 msgstr "システム起動時に %s を起動します"
 
+#: src/Startup/Widgets/AppChooser.vala:17
+msgid "Search Applications"
+msgstr "アプリケーションを検索"
+
 #: src/Startup/Widgets/AppChooser.vala:37
 msgid "Type in a custom command"
 msgstr "カスタムコマンドを入力"
@@ -278,6 +245,44 @@ msgstr "キャンセル"
 #: src/Startup/Widgets/AppChooser.vala:53
 msgid "Select startup app"
 msgstr "自動起動するアプリを選択してください"
+
+#~ msgid "Home Folder"
+#~ msgstr "ホームフォルダー"
+
+#~ msgid "Devices"
+#~ msgstr "デバイス"
+
+#~ msgid "Network"
+#~ msgstr "ネットワーク"
+
+#~ msgid "Bluetooth"
+#~ msgstr "Bluetooth"
+
+#~ msgid "Printing"
+#~ msgstr "印刷"
+
+#~ msgid "Secure Shell Agent"
+#~ msgstr "セキュアシェルエージェント"
+
+#~ msgid "GPU Acceleration"
+#~ msgstr "GPU アクセラレーション"
+
+#~ msgid "No Flatpak apps installed"
+#~ msgstr "Flatpak アプリ未インストール"
+
+#~ msgid ""
+#~ "Apps whose permissions can be adjusted will automatically appear here "
+#~ "when installed"
+#~ msgstr ""
+#~ "パーミッションの変更が可能なアプリをインストールすると、自動的にここに表示"
+#~ "されます"
+
+#~ msgid "Try changing search terms."
+#~ msgstr "検索用語を変更してみてください。"
+
+#, c-format
+#~ msgid "No Results for “%s”"
+#~ msgstr "“%s” の検索結果なし"
 
 #~ msgid "Access your entire Home folder, including any hidden folders."
 #~ msgstr ""

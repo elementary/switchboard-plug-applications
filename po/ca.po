@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-04-03 01:43+0000\n"
+"POT-Creation-Date: 2024-04-17 19:38+0000\n"
 "PO-Revision-Date: 2024-04-04 14:15+0000\n"
 "Last-Translator: David M <rbndavid@gmail.com>\n"
 "Language-Team: Catalan <https://l10n.elementary.io/projects/switchboard/"
@@ -20,128 +20,86 @@ msgid "Manage default apps, startup apps, and app permissions"
 msgstr ""
 "Gestioneu les aplicacions per defecte, les d'inici i els permisos que tenen."
 
-#: src/Plug.vala:45 src/Permissions/PermissionsPlug.vala:65
+#: src/Plug.vala:45
 msgid "Applications"
 msgstr "Aplicacions"
 
-#: src/Plug.vala:57
-msgid "Defaults"
-msgstr "Per defecte"
-
-#: src/Plug.vala:58 src/Plug.vala:112
+#: src/Plug.vala:98 src/Sidebar.vala:25 src/Startup/Startup.vala:16
 msgid "Startup"
 msgstr "Inici"
 
-#: src/Plug.vala:59 src/Plug.vala:114
-msgid "Permissions"
-msgstr "Permisos"
-
-#: src/Plug.vala:113
+#: src/Plug.vala:99
 msgid "Default Apps"
 msgstr "Aplicacions per defecte"
 
-#: src/Plug.vala:115
+#: src/Plug.vala:100
+msgid "Permissions"
+msgstr "Permisos"
+
+#: src/Plug.vala:101
 msgid "Sandboxing"
 msgstr "Caixa de sorra"
 
-#: src/Plug.vala:116
+#: src/Plug.vala:102
 msgid "Confinement"
 msgstr "Confinament"
 
-#: src/Plug.vala:117 src/Plug.vala:118 src/Plug.vala:119 src/Plug.vala:120
-#: src/Plug.vala:121 src/Plug.vala:122 src/Plug.vala:123 src/Plug.vala:124
+#: src/Plug.vala:103 src/Plug.vala:104 src/Plug.vala:105 src/Plug.vala:106
+#: src/Plug.vala:107 src/Plug.vala:108 src/Plug.vala:109 src/Plug.vala:110
 msgid "Default"
 msgstr "Per defecte"
 
-#: src/Plug.vala:117 src/Defaults/DefaultPlug.vala:12
+#: src/Plug.vala:103 src/Defaults/DefaultPlug.vala:19
 msgid "Web Browser"
 msgstr "Navegador web"
 
-#: src/Plug.vala:118 src/Defaults/DefaultPlug.vala:17
+#: src/Plug.vala:104 src/Defaults/DefaultPlug.vala:24
 msgid "Email Client"
 msgstr "Client de correu"
 
-#: src/Plug.vala:119 src/Defaults/DefaultPlug.vala:22
+#: src/Plug.vala:105 src/Defaults/DefaultPlug.vala:29
 msgid "Calendar"
 msgstr "Calendari"
 
-#: src/Plug.vala:120 src/Defaults/DefaultPlug.vala:27
+#: src/Plug.vala:106 src/Defaults/DefaultPlug.vala:34
 msgid "Video Player"
 msgstr "Reproductor de vídeo"
 
-#: src/Plug.vala:121 src/Defaults/DefaultPlug.vala:32
+#: src/Plug.vala:107 src/Defaults/DefaultPlug.vala:39
 msgid "Music Player"
 msgstr "Reproductor de música"
 
-#: src/Plug.vala:122 src/Defaults/DefaultPlug.vala:42
+#: src/Plug.vala:108 src/Defaults/DefaultPlug.vala:49
 msgid "Text Editor"
 msgstr "Editor de textos"
 
-#: src/Plug.vala:123 src/Defaults/DefaultPlug.vala:37
+#: src/Plug.vala:109 src/Defaults/DefaultPlug.vala:44
 msgid "Image Viewer"
 msgstr "Visualitzador d'imatges"
 
-#: src/Plug.vala:124 src/Defaults/DefaultPlug.vala:47
+#: src/Plug.vala:110 src/Defaults/DefaultPlug.vala:54
 msgid "File Browser"
 msgstr "Navegador de fitxers"
 
-#: src/Permissions/PermissionsPlug.vala:31
-msgid "Home Folder"
-msgstr "Carpeta de l'usuari"
+#: src/Sidebar.vala:21 src/Defaults/DefaultPlug.vala:12
+msgid "Defaults"
+msgstr "Per defecte"
 
-#: src/Permissions/PermissionsPlug.vala:32
-msgid "System Folders"
-msgstr "Carpetes del sistema"
-
-#: src/Permissions/PermissionsPlug.vala:33
-msgid "Devices"
-msgstr "Dispositius"
-
-#: src/Permissions/PermissionsPlug.vala:34
-msgid "Network"
-msgstr "Xarxa"
-
-#: src/Permissions/PermissionsPlug.vala:35
-msgid "Bluetooth"
-msgstr "Bluetooth"
-
-#: src/Permissions/PermissionsPlug.vala:36
-msgid "Printing"
-msgstr "Impressió"
-
-#: src/Permissions/PermissionsPlug.vala:37
-msgid "Secure Shell Agent"
-msgstr "Agent d'intèrpret d'ordres segur"
-
-#: src/Permissions/PermissionsPlug.vala:38
-msgid "GPU Acceleration"
-msgstr "Acceleració de GPU"
-
-#: src/Permissions/PermissionsPlug.vala:42
-msgid "No Flatpak apps installed"
-msgstr "No hi ha aplicacions de Flatpak instal·lades."
-
-#: src/Permissions/PermissionsPlug.vala:44
-msgid ""
-"Apps whose permissions can be adjusted will automatically appear here when "
-"installed"
-msgstr ""
-"Les aplicacions els permisos de les quals es poden ajustar apareixeran "
-"automàticament aquí quan s’instal·lin."
-
-#: src/Permissions/PermissionsPlug.vala:49
-#: src/Startup/Widgets/AppChooser.vala:17
-msgid "Search Applications"
+#: src/Sidebar.vala:29 src/Sidebar.vala:43
+#, fuzzy
+#| msgid "Search Applications"
+msgid "Search Apps"
 msgstr "Cerca aplicacions"
 
-#: src/Permissions/PermissionsPlug.vala:54
-msgid "Try changing search terms."
-msgstr "Proveu de canviar els termes de la cerca."
+#: src/Sidebar.vala:127
+#, fuzzy
+#| msgid "System Folders"
+msgid "System"
+msgstr "Carpetes del sistema"
 
-#: src/Permissions/PermissionsPlug.vala:119
-#, c-format
-msgid "No Results for “%s”"
-msgstr "Cap resultat per a “%s”"
+#: src/Sidebar.vala:132
+msgid "Apps"
+msgstr ""
 
 #: src/Permissions/Widgets/AppSettingsView.vala:54
 msgid "Advanced System Access"
@@ -160,7 +118,7 @@ msgstr ""
 msgid "Reset to Defaults"
 msgstr "Restableix els valors per defecte"
 
-#: src/Permissions/Widgets/AppSettingsView.vala:104
+#: src/Permissions/Widgets/AppSettingsView.vala:117
 msgid ""
 "Including all documents, downloads, music, pictures, videos, and any hidden "
 "folders."
@@ -168,75 +126,75 @@ msgstr ""
 "Inclou tots els documents, baixades, música, imatges, vídeos i qualsevol "
 "carpeta oculta."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:108
+#: src/Permissions/Widgets/AppSettingsView.vala:121
 msgid "Including everyone's Home folders, but not including system internals."
 msgstr ""
 "Inclou les carpetes d'inici de tothom, però no inclou els elements interns "
 "del sistema."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:112
+#: src/Permissions/Widgets/AppSettingsView.vala:125
 msgid ""
 "Manage all connected devices, such as webcams, microphones, and USB devices."
 msgstr ""
 "Gestioneu tots els dispositius, com ara càmeres web, micròfons i dispositius "
 "USB connectats."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:116
+#: src/Permissions/Widgets/AppSettingsView.vala:129
 msgid "Connect to the Internet and local networks."
 msgstr "Connecteu-vos a Internet i xarxes locals."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:120
+#: src/Permissions/Widgets/AppSettingsView.vala:133
 msgid "Manage Bluetooth devices including pairing, unpairing, and discovery."
 msgstr ""
 "Gestiona els dispositius de Bluetooth, inclosos l’aparellament, la separació "
 "i el descobriment."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:124
+#: src/Permissions/Widgets/AppSettingsView.vala:137
 msgid "Manage printers and see the print queue."
 msgstr "Gestioneu les impressores i consulteu la cua d'impressió."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:128
+#: src/Permissions/Widgets/AppSettingsView.vala:141
 msgid "Connect to other devices on the network via SSH."
 msgstr "Connecteu-vos a altres dispositius de la xarxa mitjançant SSH."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:132
+#: src/Permissions/Widgets/AppSettingsView.vala:145
 msgid "Accelerate graphical output."
 msgstr "Accelera la sortida gràfica."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:158
+#: src/Permissions/Widgets/AppSettingsView.vala:171
 msgid "Background Activity"
 msgstr "Activitat de fons"
 
-#: src/Permissions/Widgets/AppSettingsView.vala:159
+#: src/Permissions/Widgets/AppSettingsView.vala:172
 msgid "Perform tasks and use system resources while its window is closed."
 msgstr ""
 "Fa tasques i usa els recursos del sistema mentre la finestra està tancada."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:169
+#: src/Permissions/Widgets/AppSettingsView.vala:182
 msgid "Location Services"
 msgstr "Serveis d'ubicació"
 
-#: src/Permissions/Widgets/AppSettingsView.vala:170
+#: src/Permissions/Widgets/AppSettingsView.vala:183
 msgid "Determine the location of this device."
 msgstr "Determina la ubicació d'aquest dispositiu."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:183
+#: src/Permissions/Widgets/AppSettingsView.vala:196
 msgid "Screenshot"
 msgstr "Captura"
 
-#: src/Permissions/Widgets/AppSettingsView.vala:184
+#: src/Permissions/Widgets/AppSettingsView.vala:197
 msgid "Take pictures of the display without asking first."
 msgstr "Feu fotos de la pantalla sense pregunta prèvia."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:194
+#: src/Permissions/Widgets/AppSettingsView.vala:207
 msgid "Wallpaper"
 msgstr "Fons d'escriptori"
 
-#: src/Permissions/Widgets/AppSettingsView.vala:195
+#: src/Permissions/Widgets/AppSettingsView.vala:208
 msgid "Set the wallpaper on the desktop and lock screen."
 msgstr "Estableix el fons de l'escriptori i bloca la pantalla."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:211
+#: src/Permissions/Widgets/AppSettingsView.vala:224
 #, c-format
 msgid "%s permissions"
 msgstr "Permisos: %s"
@@ -246,17 +204,17 @@ msgstr "Permisos: %s"
 msgid ", "
 msgstr ", "
 
-#: src/Startup/Startup.vala:17
+#: src/Startup/Startup.vala:24
 msgid "Launch Apps on Startup"
 msgstr "Obre aplicacions a l'inici"
 
-#: src/Startup/Startup.vala:18
+#: src/Startup/Startup.vala:25
 msgid "Add apps to the Startup list by clicking the icon in the toolbar below."
 msgstr ""
 "Afegiu aplicacions a la llista d'inici clicant a la icona de la barra "
 "d'eines de sota."
 
-#: src/Startup/Startup.vala:39
+#: src/Startup/Startup.vala:45
 msgid "Add Startup App…"
 msgstr "Afegeix una aplicació d'inici…"
 
@@ -273,6 +231,10 @@ msgstr "Suprimeix aquesta aplicació de l'inici"
 msgid "Launch %s on startup"
 msgstr "Obre %s a l'inici"
 
+#: src/Startup/Widgets/AppChooser.vala:17
+msgid "Search Applications"
+msgstr "Cerca aplicacions"
+
 #: src/Startup/Widgets/AppChooser.vala:37
 msgid "Type in a custom command"
 msgstr "Introduïu una ordre personalitzada"
@@ -285,6 +247,44 @@ msgstr "Cancel·la"
 #: src/Startup/Widgets/AppChooser.vala:53
 msgid "Select startup app"
 msgstr "Seleccioneu l'aplicació d'inici"
+
+#~ msgid "Home Folder"
+#~ msgstr "Carpeta de l'usuari"
+
+#~ msgid "Devices"
+#~ msgstr "Dispositius"
+
+#~ msgid "Network"
+#~ msgstr "Xarxa"
+
+#~ msgid "Bluetooth"
+#~ msgstr "Bluetooth"
+
+#~ msgid "Printing"
+#~ msgstr "Impressió"
+
+#~ msgid "Secure Shell Agent"
+#~ msgstr "Agent d'intèrpret d'ordres segur"
+
+#~ msgid "GPU Acceleration"
+#~ msgstr "Acceleració de GPU"
+
+#~ msgid "No Flatpak apps installed"
+#~ msgstr "No hi ha aplicacions de Flatpak instal·lades."
+
+#~ msgid ""
+#~ "Apps whose permissions can be adjusted will automatically appear here "
+#~ "when installed"
+#~ msgstr ""
+#~ "Les aplicacions els permisos de les quals es poden ajustar apareixeran "
+#~ "automàticament aquí quan s’instal·lin."
+
+#~ msgid "Try changing search terms."
+#~ msgstr "Proveu de canviar els termes de la cerca."
+
+#, c-format
+#~ msgid "No Results for “%s”"
+#~ msgstr "Cap resultat per a “%s”"
 
 #~ msgid "Access your entire Home folder, including any hidden folders."
 #~ msgstr ""
