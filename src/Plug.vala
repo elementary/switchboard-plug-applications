@@ -20,15 +20,15 @@
 *              Marius Meisenzahl <mariusmeisenzahl@gmail.com>
 */
 
-public class ApplicationsPlug : Switchboard.Plug {
-    private const string DEFAULTS = "defaults";
-    private const string STARTUP = "startup";
-    private const string PERMISSIONS = "permissions";
+public class Applications.Plug : Switchboard.Plug {
+    public const string DEFAULTS = "preferences-system";
+    public const string STARTUP = "preferences-desktop-startup";
+    public const string PERMISSIONS = "permissions";
 
-    private Gtk.Grid grid;
+    private Gtk.Paned paned;
     private Gtk.Stack stack;
 
-    public ApplicationsPlug () {
+    public Plug () {
         GLib.Intl.bindtextdomain (GETTEXT_PACKAGE, LOCALEDIR);
         GLib.Intl.bind_textdomain_codeset (GETTEXT_PACKAGE, "UTF-8");
 
@@ -49,40 +49,26 @@ public class ApplicationsPlug : Switchboard.Plug {
     }
 
     public override Gtk.Widget get_widget () {
-        if (grid == null) {
-            stack = new Gtk.Stack () {
-                hexpand = true,
-                vexpand = true
-            };
-            stack.add_titled (new Defaults.Plug (), DEFAULTS, _("Defaults"));
-            stack.add_titled (new Startup.Plug (), STARTUP, _("Startup"));
-            stack.add_titled (new Permissions.Plug (), PERMISSIONS, _("Permissions"));
+        if (paned == null) {
+            var app_settings_view = new Permissions.Widgets.AppSettingsView ();
 
-            var stack_switcher = new Gtk.StackSwitcher () {
-                halign = Gtk.Align.CENTER,
-                stack = stack
-            };
+            stack = new Gtk.Stack ();
+            stack.add_named (new Defaults.Plug (), DEFAULTS);
+            stack.add_named (new Startup.Plug (), STARTUP);
+            stack.add_named (app_settings_view, PERMISSIONS);
 
-            var size_group = new Gtk.SizeGroup (Gtk.SizeGroupMode.HORIZONTAL);
-            var widget = stack_switcher.get_first_child ();
-            while (widget != null) {
-                size_group.add_widget (widget);
-                widget = widget.get_next_sibling ();
-            }
+            var sidebar = new Sidebar (stack);
 
-            var headerbar = new Adw.HeaderBar () {
-                title_widget = stack_switcher
+            paned = new Gtk.Paned (HORIZONTAL) {
+                start_child = sidebar,
+                end_child = stack,
+                shrink_start_child = false,
+                shrink_end_child = false,
+                resize_start_child = false
             };
-            headerbar.add_css_class (Granite.STYLE_CLASS_FLAT);
-
-            grid = new Gtk.Grid () {
-                row_spacing = 24
-            };
-            grid.attach (headerbar, 0, 0);
-            grid.attach (stack, 0, 1);
         }
 
-        return grid;
+        return paned;
     }
 
     public override void shown () {
@@ -124,9 +110,8 @@ public class ApplicationsPlug : Switchboard.Plug {
         search_results.set ("%s → %s → %s".printf (display_name, _("Default"), _("File Browser")), DEFAULTS);
         return search_results;
     }
-
 }
 
 public Switchboard.Plug get_plug (Module module) {
-    return new ApplicationsPlug ();
+    return new Applications.Plug ();
 }

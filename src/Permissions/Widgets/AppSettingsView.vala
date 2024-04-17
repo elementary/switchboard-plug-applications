@@ -74,6 +74,7 @@ public class Permissions.Widgets.AppSettingsView : Switchboard.SettingsPage {
         box.append (reset_button);
 
         child = box;
+        show_end_title_buttons = true;
 
         update_view ();
 
@@ -147,7 +148,7 @@ public class Permissions.Widgets.AppSettingsView : Switchboard.SettingsPage {
             }
 
             var override_row = new PermissionSettingsWidget (
-                Plug.permission_names[settings.context],
+                Backend.App.permission_names[settings.context],
                 description,
                 icon_name
             );

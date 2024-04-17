@@ -1,5 +1,6 @@
 plug_files = files(
     'Plug.vala',
+    'Sidebar.vala',
     'Startup/Utils.vala',
     'Startup/Startup.vala',
     'Startup/Controller.vala',
@@ -19,8 +20,7 @@ plug_files = files(
     'Permissions/Backend/PermissionStore.vala',
     'Permissions/Widgets/AppSettingsView.vala',
     'Permissions/Widgets/PermissionSettingsWidget.vala',
-    'Permissions/Widgets/SidebarRow.vala',
-    'Permissions/PermissionsPlug.vala'
+    'Permissions/Widgets/SidebarRow.vala'
 )
 
 switchboard_dep = dependency('switchboard-3')
