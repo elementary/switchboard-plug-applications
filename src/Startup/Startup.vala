@@ -6,17 +6,23 @@
  *              Julien Spautz <spautz.julien@gmail.com>
  */
 
-public class Startup.Plug : Gtk.Box {
+public class Startup.Plug : Switchboard.SettingsPage {
     private Controller controller;
     private Gtk.ListBox list;
     private Widgets.AppChooser app_chooser;
+
+    public Plug () {
+        Object (
+            title: _("Startup"),
+            icon: new ThemedIcon ("preferences-desktop-startup")
+        );
+    }
 
     construct {
         Backend.KeyFileFactory.init ();
 
         var empty_alert = new Granite.Placeholder (_("Launch Apps on Startup")) {
-            description = _("Add apps to the Startup list by clicking the icon in the toolbar below."),
-            icon = new ThemedIcon ("system-restart")
+            description = _("Add apps to the Startup list by clicking the icon in the toolbar below.")
         };
 
         list = new Gtk.ListBox () {
@@ -57,14 +63,8 @@ public class Startup.Plug : Gtk.Box {
             child = box
         };
 
-        var clamp = new Adw.Clamp () {
-            child = frame,
-            margin_end = 12,
-            margin_bottom = 12,
-            margin_start = 12
-        };
-
-        append (clamp);
+        child = frame;
+        show_end_title_buttons = true;
 
         app_chooser = new Widgets.AppChooser () {
             modal = true
