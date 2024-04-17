@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-04-17 19:38+0000\n"
-"PO-Revision-Date: 2024-03-31 04:13+0000\n"
+"PO-Revision-Date: 2024-04-20 18:13+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Korean <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-applications/ko/>\n"
@@ -91,10 +91,8 @@ msgid "Search Apps"
 msgstr "애플리케이션 검색"
 
 #: src/Sidebar.vala:127
-#, fuzzy
-#| msgid "System Folders"
 msgid "System"
-msgstr "시스템 폴더"
+msgstr "시스템"
 
 #: src/Sidebar.vala:132
 msgid "Apps"
