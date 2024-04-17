@@ -4,7 +4,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-04-17 19:38+0000\n"
 "PO-Revision-Date: 2024-04-20 18:13+0000\n"
-"Last-Translator: кубик круглый <megarainbow29@gmail.com>\n"
+"Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-applications/ru/>\n"
 "Language: ru\n"
@@ -86,16 +86,12 @@ msgid "Defaults"
 msgstr "По умолчанию"
 
 #: src/Sidebar.vala:29 src/Sidebar.vala:43
-#, fuzzy
-#| msgid "Search Applications"
 msgid "Search Apps"
 msgstr "Поиск приложений"
 
 #: src/Sidebar.vala:127
-#, fuzzy
-#| msgid "System Folders"
 msgid "System"
-msgstr "Системные папки"
+msgstr "Система"
 
 #: src/Sidebar.vala:132
 msgid "Apps"
