@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-04-03 01:43+0000\n"
-"PO-Revision-Date: 2024-03-31 04:13+0000\n"
-"Last-Translator: anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2024-04-17 13:13+0000\n"
+"Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-applications/ja/>\n"
 "Language: ja\n"
@@ -145,13 +145,14 @@ msgstr "“%s” の検索結果なし"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:54
 msgid "Advanced System Access"
-msgstr ""
+msgstr "高度なシステムアクセス"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:56
 msgid ""
 "Access to system features can be restricted to make apps more secure, but "
 "some apps may not function properly without it"
-msgstr ""
+msgstr "システム機能へのアクセスを制限することでアプリをより安全にできますが、アクセ"
+"ス権限がないと適切に機能しないアプリもあります"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:66
 msgid "Reset to Defaults"
@@ -161,28 +162,23 @@ msgstr "デフォルトにリセット"
 msgid ""
 "Including all documents, downloads, music, pictures, videos, and any hidden "
 "folders."
-msgstr ""
+msgstr "\"ドキュメント\"、\"ダウンロード\"、\"ミュージック\"、\"ピクチャ\"、\"ビデオ"
+"\"、およびすべての隠しフォルダーを含みます。"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:108
 msgid "Including everyone's Home folders, but not including system internals."
-msgstr ""
+msgstr "全ユーザーのホームフォルダーを含みますが、システムの内部フォルダーは含みませ"
+"ん。"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:112
-#, fuzzy
-#| msgid ""
-#| "Access all devices, such as webcams, microphones, and connected USB "
-#| "devices."
 msgid ""
 "Manage all connected devices, such as webcams, microphones, and USB devices."
-msgstr ""
-"Web カメラやマイク、接続済みの USB デバイスなどの、すべてのデバイスへのアクセ"
-"スを許可します。"
+msgstr "Web カメラ、マイク、USB "
+"デバイスなどの、すべての接続済みデバイスを管理します。"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:116
-#, fuzzy
-#| msgid "Access the Internet and local networks."
 msgid "Connect to the Internet and local networks."
-msgstr "インターネットとローカルネットワークへのアクセスを許可します。"
+msgstr "インターネットとローカルネットワークに接続します。"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:120
 msgid "Manage Bluetooth devices including pairing, unpairing, and discovery."
@@ -192,13 +188,11 @@ msgstr ""
 
 #: src/Permissions/Widgets/AppSettingsView.vala:124
 msgid "Manage printers and see the print queue."
-msgstr ""
+msgstr "プリンターを管理し、プリントキューを表示します。"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:128
-#, fuzzy
-#| msgid "Access other devices on the network via SSH."
 msgid "Connect to other devices on the network via SSH."
-msgstr "SSH を使用したネットワーク上のほかのデバイスへのアクセスを許可します。"
+msgstr "SSH を使用したネットワーク上のほかのデバイスに接続します。"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:132
 msgid "Accelerate graphical output."
@@ -206,11 +200,11 @@ msgstr "グラフィック出力のアクセラレーションを許可します
 
 #: src/Permissions/Widgets/AppSettingsView.vala:158
 msgid "Background Activity"
-msgstr ""
+msgstr "バックグラウンドアクティビティー"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:159
 msgid "Perform tasks and use system resources while its window is closed."
-msgstr ""
+msgstr "ウィンドウが閉じている間も、タスクを実行しシステムリソースを使用します。"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:169
 msgid "Location Services"
@@ -218,15 +212,15 @@ msgstr "位置情報サービス"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:170
 msgid "Determine the location of this device."
-msgstr ""
+msgstr "このデバイスの位置情報を検出します。"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:183
 msgid "Screenshot"
-msgstr ""
+msgstr "スクリーンショット"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:184
 msgid "Take pictures of the display without asking first."
-msgstr ""
+msgstr "取得の確認なしにディスプレイの画像を取得します。"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:194
 msgid "Wallpaper"
@@ -234,7 +228,7 @@ msgstr "壁紙"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:195
 msgid "Set the wallpaper on the desktop and lock screen."
-msgstr ""
+msgstr "デスクトップとロック画面の壁紙を設定します。"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:211
 #, c-format
