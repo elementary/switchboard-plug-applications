@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-04-17 19:38+0000\n"
-"PO-Revision-Date: 2024-04-17 13:13+0000\n"
+"PO-Revision-Date: 2024-04-20 18:13+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-applications/ja/>\n"
@@ -99,7 +99,7 @@ msgstr "システムフォルダー"
 
 #: src/Sidebar.vala:132
 msgid "Apps"
-msgstr ""
+msgstr "アプリ"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:54
 msgid "Advanced System Access"
