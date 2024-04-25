@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-04-03 01:43+0000\n"
+"POT-Creation-Date: 2024-04-17 19:38+0000\n"
 "PO-Revision-Date: 2023-06-28 13:07+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Belarusian <https://l10n.elementary.io/projects/switchboard/"
@@ -22,135 +22,93 @@ msgstr ""
 msgid "Manage default apps, startup apps, and app permissions"
 msgstr "Кіраваць стандартнымі і аўта-запускаючыміся прыкладаннямі"
 
-#: src/Plug.vala:45 src/Permissions/PermissionsPlug.vala:65
+#: src/Plug.vala:45
 msgid "Applications"
 msgstr "Прыкладанні"
 
-#: src/Plug.vala:57
+#: src/Plug.vala:98 src/Sidebar.vala:25 src/Startup/Startup.vala:16
+msgid "Startup"
+msgstr "Запуск"
+
+#: src/Plug.vala:99
+msgid "Default Apps"
+msgstr ""
+
+#: src/Plug.vala:100
+msgid "Permissions"
+msgstr ""
+
+#: src/Plug.vala:101
+msgid "Sandboxing"
+msgstr ""
+
+#: src/Plug.vala:102
+msgid "Confinement"
+msgstr ""
+
+#: src/Plug.vala:103 src/Plug.vala:104 src/Plug.vala:105 src/Plug.vala:106
+#: src/Plug.vala:107 src/Plug.vala:108 src/Plug.vala:109 src/Plug.vala:110
+msgid "Default"
+msgstr "Па змаўчанні"
+
+#: src/Plug.vala:103 src/Defaults/DefaultPlug.vala:19
+#, fuzzy
+msgid "Web Browser"
+msgstr "Вэб-браўзэр:"
+
+#: src/Plug.vala:104 src/Defaults/DefaultPlug.vala:24
+#, fuzzy
+msgid "Email Client"
+msgstr "Паштовы кліент:"
+
+#: src/Plug.vala:105 src/Defaults/DefaultPlug.vala:29
+#, fuzzy
+msgid "Calendar"
+msgstr "Каляндар:"
+
+#: src/Plug.vala:106 src/Defaults/DefaultPlug.vala:34
+#, fuzzy
+msgid "Video Player"
+msgstr "Прайгравальнік відэа:"
+
+#: src/Plug.vala:107 src/Defaults/DefaultPlug.vala:39
+#, fuzzy
+msgid "Music Player"
+msgstr "Прайгравальнік музыкі:"
+
+#: src/Plug.vala:108 src/Defaults/DefaultPlug.vala:49
+#, fuzzy
+msgid "Text Editor"
+msgstr "Тэкставы рэдактар:"
+
+#: src/Plug.vala:109 src/Defaults/DefaultPlug.vala:44
+#, fuzzy
+msgid "Image Viewer"
+msgstr "Праглядчык малюнкаў:"
+
+#: src/Plug.vala:110 src/Defaults/DefaultPlug.vala:54
+#, fuzzy
+msgid "File Browser"
+msgstr "Кіраўнік файлаў:"
+
+#: src/Sidebar.vala:21 src/Defaults/DefaultPlug.vala:12
 #, fuzzy
 #| msgid "Default"
 msgid "Defaults"
 msgstr "Па змаўчанні"
 
-#: src/Plug.vala:58 src/Plug.vala:112
-msgid "Startup"
-msgstr "Запуск"
-
-#: src/Plug.vala:59 src/Plug.vala:114
-msgid "Permissions"
-msgstr ""
-
-#: src/Plug.vala:113
-msgid "Default Apps"
-msgstr ""
-
-#: src/Plug.vala:115
-msgid "Sandboxing"
-msgstr ""
-
-#: src/Plug.vala:116
-msgid "Confinement"
-msgstr ""
-
-#: src/Plug.vala:117 src/Plug.vala:118 src/Plug.vala:119 src/Plug.vala:120
-#: src/Plug.vala:121 src/Plug.vala:122 src/Plug.vala:123 src/Plug.vala:124
-msgid "Default"
-msgstr "Па змаўчанні"
-
-#: src/Plug.vala:117 src/Defaults/DefaultPlug.vala:12
+#: src/Sidebar.vala:29 src/Sidebar.vala:43
 #, fuzzy
-msgid "Web Browser"
-msgstr "Вэб-браўзэр:"
-
-#: src/Plug.vala:118 src/Defaults/DefaultPlug.vala:17
-#, fuzzy
-msgid "Email Client"
-msgstr "Паштовы кліент:"
-
-#: src/Plug.vala:119 src/Defaults/DefaultPlug.vala:22
-#, fuzzy
-msgid "Calendar"
-msgstr "Каляндар:"
-
-#: src/Plug.vala:120 src/Defaults/DefaultPlug.vala:27
-#, fuzzy
-msgid "Video Player"
-msgstr "Прайгравальнік відэа:"
-
-#: src/Plug.vala:121 src/Defaults/DefaultPlug.vala:32
-#, fuzzy
-msgid "Music Player"
-msgstr "Прайгравальнік музыкі:"
-
-#: src/Plug.vala:122 src/Defaults/DefaultPlug.vala:42
-#, fuzzy
-msgid "Text Editor"
-msgstr "Тэкставы рэдактар:"
-
-#: src/Plug.vala:123 src/Defaults/DefaultPlug.vala:37
-#, fuzzy
-msgid "Image Viewer"
-msgstr "Праглядчык малюнкаў:"
-
-#: src/Plug.vala:124 src/Defaults/DefaultPlug.vala:47
-#, fuzzy
-msgid "File Browser"
-msgstr "Кіраўнік файлаў:"
-
-#: src/Permissions/PermissionsPlug.vala:31
-msgid "Home Folder"
-msgstr ""
-
-#: src/Permissions/PermissionsPlug.vala:32
-msgid "System Folders"
-msgstr ""
-
-#: src/Permissions/PermissionsPlug.vala:33
-msgid "Devices"
-msgstr ""
-
-#: src/Permissions/PermissionsPlug.vala:34
-msgid "Network"
-msgstr ""
-
-#: src/Permissions/PermissionsPlug.vala:35
-msgid "Bluetooth"
-msgstr ""
-
-#: src/Permissions/PermissionsPlug.vala:36
-msgid "Printing"
-msgstr ""
-
-#: src/Permissions/PermissionsPlug.vala:37
-msgid "Secure Shell Agent"
-msgstr ""
-
-#: src/Permissions/PermissionsPlug.vala:38
-msgid "GPU Acceleration"
-msgstr ""
-
-#: src/Permissions/PermissionsPlug.vala:42
-msgid "No Flatpak apps installed"
-msgstr ""
-
-#: src/Permissions/PermissionsPlug.vala:44
-msgid ""
-"Apps whose permissions can be adjusted will automatically appear here when "
-"installed"
-msgstr ""
-
-#: src/Permissions/PermissionsPlug.vala:49
-#: src/Startup/Widgets/AppChooser.vala:17
-msgid "Search Applications"
+#| msgid "Search Applications"
+msgid "Search Apps"
 msgstr "Шукаць прыкладанні"
 
-#: src/Permissions/PermissionsPlug.vala:54
-msgid "Try changing search terms."
+#: src/Sidebar.vala:127
+msgid "System"
 msgstr ""
 
-#: src/Permissions/PermissionsPlug.vala:119
-#, c-format
-msgid "No Results for “%s”"
+#: src/Sidebar.vala:132
+msgid "Apps"
 msgstr ""
 
 #: src/Permissions/Widgets/AppSettingsView.vala:54
@@ -169,74 +127,74 @@ msgstr ""
 msgid "Reset to Defaults"
 msgstr "Па змаўчанні"
 
-#: src/Permissions/Widgets/AppSettingsView.vala:104
+#: src/Permissions/Widgets/AppSettingsView.vala:117
 msgid ""
 "Including all documents, downloads, music, pictures, videos, and any hidden "
 "folders."
 msgstr ""
 
-#: src/Permissions/Widgets/AppSettingsView.vala:108
+#: src/Permissions/Widgets/AppSettingsView.vala:121
 msgid "Including everyone's Home folders, but not including system internals."
 msgstr ""
 
-#: src/Permissions/Widgets/AppSettingsView.vala:112
+#: src/Permissions/Widgets/AppSettingsView.vala:125
 msgid ""
 "Manage all connected devices, such as webcams, microphones, and USB devices."
 msgstr ""
 
-#: src/Permissions/Widgets/AppSettingsView.vala:116
+#: src/Permissions/Widgets/AppSettingsView.vala:129
 msgid "Connect to the Internet and local networks."
 msgstr ""
 
-#: src/Permissions/Widgets/AppSettingsView.vala:120
+#: src/Permissions/Widgets/AppSettingsView.vala:133
 msgid "Manage Bluetooth devices including pairing, unpairing, and discovery."
 msgstr ""
 
-#: src/Permissions/Widgets/AppSettingsView.vala:124
+#: src/Permissions/Widgets/AppSettingsView.vala:137
 msgid "Manage printers and see the print queue."
 msgstr ""
 
-#: src/Permissions/Widgets/AppSettingsView.vala:128
+#: src/Permissions/Widgets/AppSettingsView.vala:141
 msgid "Connect to other devices on the network via SSH."
 msgstr ""
 
-#: src/Permissions/Widgets/AppSettingsView.vala:132
+#: src/Permissions/Widgets/AppSettingsView.vala:145
 msgid "Accelerate graphical output."
 msgstr ""
 
-#: src/Permissions/Widgets/AppSettingsView.vala:158
+#: src/Permissions/Widgets/AppSettingsView.vala:171
 msgid "Background Activity"
 msgstr ""
 
-#: src/Permissions/Widgets/AppSettingsView.vala:159
+#: src/Permissions/Widgets/AppSettingsView.vala:172
 msgid "Perform tasks and use system resources while its window is closed."
 msgstr ""
 
-#: src/Permissions/Widgets/AppSettingsView.vala:169
+#: src/Permissions/Widgets/AppSettingsView.vala:182
 msgid "Location Services"
 msgstr ""
 
-#: src/Permissions/Widgets/AppSettingsView.vala:170
+#: src/Permissions/Widgets/AppSettingsView.vala:183
 msgid "Determine the location of this device."
 msgstr ""
 
-#: src/Permissions/Widgets/AppSettingsView.vala:183
+#: src/Permissions/Widgets/AppSettingsView.vala:196
 msgid "Screenshot"
 msgstr ""
 
-#: src/Permissions/Widgets/AppSettingsView.vala:184
+#: src/Permissions/Widgets/AppSettingsView.vala:197
 msgid "Take pictures of the display without asking first."
 msgstr ""
 
-#: src/Permissions/Widgets/AppSettingsView.vala:194
+#: src/Permissions/Widgets/AppSettingsView.vala:207
 msgid "Wallpaper"
 msgstr ""
 
-#: src/Permissions/Widgets/AppSettingsView.vala:195
+#: src/Permissions/Widgets/AppSettingsView.vala:208
 msgid "Set the wallpaper on the desktop and lock screen."
 msgstr ""
 
-#: src/Permissions/Widgets/AppSettingsView.vala:211
+#: src/Permissions/Widgets/AppSettingsView.vala:224
 #, c-format
 msgid "%s permissions"
 msgstr ""
@@ -246,15 +204,15 @@ msgstr ""
 msgid ", "
 msgstr ""
 
-#: src/Startup/Startup.vala:17
+#: src/Startup/Startup.vala:24
 msgid "Launch Apps on Startup"
 msgstr ""
 
-#: src/Startup/Startup.vala:18
+#: src/Startup/Startup.vala:25
 msgid "Add apps to the Startup list by clicking the icon in the toolbar below."
 msgstr ""
 
-#: src/Startup/Startup.vala:39
+#: src/Startup/Startup.vala:45
 msgid "Add Startup App…"
 msgstr "Дадаць прыкладанні да аўтазапуску..."
 
@@ -270,6 +228,10 @@ msgstr ""
 #, c-format
 msgid "Launch %s on startup"
 msgstr ""
+
+#: src/Startup/Widgets/AppChooser.vala:17
+msgid "Search Applications"
+msgstr "Шукаць прыкладанні"
 
 #: src/Startup/Widgets/AppChooser.vala:37
 msgid "Type in a custom command"

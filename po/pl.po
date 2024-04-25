@@ -2,9 +2,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-04-03 01:43+0000\n"
-"PO-Revision-Date: 2024-04-13 19:13+0000\n"
-"Last-Translator: Marcin Serwin <marcin.serwin0@protonmail.com>\n"
+"POT-Creation-Date: 2024-04-17 19:38+0000\n"
+"PO-Revision-Date: 2024-04-20 18:13+0000\n"
+"Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Polish <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-applications/pl/>\n"
 "Language: pl\n"
@@ -20,128 +20,82 @@ msgstr ""
 msgid "Manage default apps, startup apps, and app permissions"
 msgstr "Zarządzaj programami domyślnymi, startowymi i uprawnieniami aplikacji"
 
-#: src/Plug.vala:45 src/Permissions/PermissionsPlug.vala:65
+#: src/Plug.vala:45
 msgid "Applications"
 msgstr "Programy"
 
-#: src/Plug.vala:57
-msgid "Defaults"
-msgstr "Domyślne"
-
-#: src/Plug.vala:58 src/Plug.vala:112
+#: src/Plug.vala:98 src/Sidebar.vala:25 src/Startup/Startup.vala:16
 msgid "Startup"
 msgstr "Uruchamianie"
 
-#: src/Plug.vala:59 src/Plug.vala:114
-msgid "Permissions"
-msgstr "Uprawnienia"
-
-#: src/Plug.vala:113
+#: src/Plug.vala:99
 msgid "Default Apps"
 msgstr "Domyślne programy"
 
-#: src/Plug.vala:115
+#: src/Plug.vala:100
+msgid "Permissions"
+msgstr "Uprawnienia"
+
+#: src/Plug.vala:101
 msgid "Sandboxing"
 msgstr "Używanie piaskownicy"
 
-#: src/Plug.vala:116
+#: src/Plug.vala:102
 msgid "Confinement"
 msgstr "Ograniczenie"
 
-#: src/Plug.vala:117 src/Plug.vala:118 src/Plug.vala:119 src/Plug.vala:120
-#: src/Plug.vala:121 src/Plug.vala:122 src/Plug.vala:123 src/Plug.vala:124
+#: src/Plug.vala:103 src/Plug.vala:104 src/Plug.vala:105 src/Plug.vala:106
+#: src/Plug.vala:107 src/Plug.vala:108 src/Plug.vala:109 src/Plug.vala:110
 msgid "Default"
 msgstr "Domyślny"
 
-#: src/Plug.vala:117 src/Defaults/DefaultPlug.vala:12
+#: src/Plug.vala:103 src/Defaults/DefaultPlug.vala:19
 msgid "Web Browser"
 msgstr "Przeglądarka internetowa"
 
-#: src/Plug.vala:118 src/Defaults/DefaultPlug.vala:17
+#: src/Plug.vala:104 src/Defaults/DefaultPlug.vala:24
 msgid "Email Client"
 msgstr "Klient poczty e-mail"
 
-#: src/Plug.vala:119 src/Defaults/DefaultPlug.vala:22
+#: src/Plug.vala:105 src/Defaults/DefaultPlug.vala:29
 msgid "Calendar"
 msgstr "Kalendarz"
 
-#: src/Plug.vala:120 src/Defaults/DefaultPlug.vala:27
+#: src/Plug.vala:106 src/Defaults/DefaultPlug.vala:34
 msgid "Video Player"
 msgstr "Odtwarzacz filmów"
 
-#: src/Plug.vala:121 src/Defaults/DefaultPlug.vala:32
+#: src/Plug.vala:107 src/Defaults/DefaultPlug.vala:39
 msgid "Music Player"
 msgstr "Odtwarzacz muzyki"
 
-#: src/Plug.vala:122 src/Defaults/DefaultPlug.vala:42
+#: src/Plug.vala:108 src/Defaults/DefaultPlug.vala:49
 msgid "Text Editor"
 msgstr "Edytor tekstu"
 
-#: src/Plug.vala:123 src/Defaults/DefaultPlug.vala:37
+#: src/Plug.vala:109 src/Defaults/DefaultPlug.vala:44
 msgid "Image Viewer"
 msgstr "Przeglądarka obrazów"
 
-#: src/Plug.vala:124 src/Defaults/DefaultPlug.vala:47
+#: src/Plug.vala:110 src/Defaults/DefaultPlug.vala:54
 msgid "File Browser"
 msgstr "Przeglądarka plików"
 
-#: src/Permissions/PermissionsPlug.vala:31
-msgid "Home Folder"
-msgstr "Katalog domowy"
+#: src/Sidebar.vala:21 src/Defaults/DefaultPlug.vala:12
+msgid "Defaults"
+msgstr "Domyślne"
 
-#: src/Permissions/PermissionsPlug.vala:32
-msgid "System Folders"
-msgstr "Foldery systemowe"
+#: src/Sidebar.vala:29 src/Sidebar.vala:43
+msgid "Search Apps"
+msgstr "Wyszukaj aplikacje"
 
-#: src/Permissions/PermissionsPlug.vala:33
-msgid "Devices"
-msgstr "Urządzenia"
+#: src/Sidebar.vala:127
+msgid "System"
+msgstr "System"
 
-#: src/Permissions/PermissionsPlug.vala:34
-msgid "Network"
-msgstr "Sieć"
-
-#: src/Permissions/PermissionsPlug.vala:35
-msgid "Bluetooth"
-msgstr "Bluetooth"
-
-#: src/Permissions/PermissionsPlug.vala:36
-msgid "Printing"
-msgstr "Drukowanie"
-
-#: src/Permissions/PermissionsPlug.vala:37
-msgid "Secure Shell Agent"
-msgstr "Agent bezpiecznej powłoki"
-
-#: src/Permissions/PermissionsPlug.vala:38
-msgid "GPU Acceleration"
-msgstr "Akceleracja sprzętowa"
-
-#: src/Permissions/PermissionsPlug.vala:42
-msgid "No Flatpak apps installed"
-msgstr "Nie zainstalowano żadnych aplikacji Flatpak"
-
-#: src/Permissions/PermissionsPlug.vala:44
-msgid ""
-"Apps whose permissions can be adjusted will automatically appear here when "
-"installed"
-msgstr ""
-"Aplikacje, których uprawnienia można zmodyfikować, automatycznie pojawią się "
-"tutaj po instalacji"
-
-#: src/Permissions/PermissionsPlug.vala:49
-#: src/Startup/Widgets/AppChooser.vala:17
-msgid "Search Applications"
-msgstr "Wyszukiwanie programów"
-
-#: src/Permissions/PermissionsPlug.vala:54
-msgid "Try changing search terms."
-msgstr "Spróbuj zmienić kryteria wyszukiwania."
-
-#: src/Permissions/PermissionsPlug.vala:119
-#, c-format
-msgid "No Results for “%s”"
-msgstr "Brak wyników dla zapytania “%s”"
+#: src/Sidebar.vala:132
+msgid "Apps"
+msgstr "Aplikacje"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:54
 msgid "Advanced System Access"
@@ -159,7 +113,7 @@ msgstr ""
 msgid "Reset to Defaults"
 msgstr "Przywróć ustawienia domyślne"
 
-#: src/Permissions/Widgets/AppSettingsView.vala:104
+#: src/Permissions/Widgets/AppSettingsView.vala:117
 msgid ""
 "Including all documents, downloads, music, pictures, videos, and any hidden "
 "folders."
@@ -167,76 +121,76 @@ msgstr ""
 "Włączając w to wszystkie dokumenty, pobrane pliki, muzykę, zdjęcia, filmy "
 "oraz wszystkie ukryte foldery."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:108
+#: src/Permissions/Widgets/AppSettingsView.vala:121
 msgid "Including everyone's Home folders, but not including system internals."
 msgstr ""
 "Włączając w to foldery domowe wszystkich użytkowników, ale nie pliki "
 "systemowe."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:112
+#: src/Permissions/Widgets/AppSettingsView.vala:125
 msgid ""
 "Manage all connected devices, such as webcams, microphones, and USB devices."
 msgstr ""
 "Zarządzanie wszystkimi urządzeniami takimi jak kamery internetowe, mikrofony "
 "i urządzenia USB."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:116
+#: src/Permissions/Widgets/AppSettingsView.vala:129
 msgid "Connect to the Internet and local networks."
 msgstr "Łączenie się z Internetem i sieciami lokalnymi."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:120
+#: src/Permissions/Widgets/AppSettingsView.vala:133
 msgid "Manage Bluetooth devices including pairing, unpairing, and discovery."
 msgstr ""
 "Zarządzaj urządzeniami Bluetooth, włączając w to parowanie, rozłączanie i "
 "wykrywanie."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:124
+#: src/Permissions/Widgets/AppSettingsView.vala:137
 msgid "Manage printers and see the print queue."
 msgstr "Zarządzanie drukarkami i dostęp do ich kolejek drukowania."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:128
+#: src/Permissions/Widgets/AppSettingsView.vala:141
 msgid "Connect to other devices on the network via SSH."
 msgstr "Łączenie się z innymi urządzeniami w sieci poprzez SSH."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:132
+#: src/Permissions/Widgets/AppSettingsView.vala:145
 msgid "Accelerate graphical output."
 msgstr "Włącz akcelerację sprzetową."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:158
+#: src/Permissions/Widgets/AppSettingsView.vala:171
 msgid "Background Activity"
 msgstr "Aktywność w tle"
 
-#: src/Permissions/Widgets/AppSettingsView.vala:159
+#: src/Permissions/Widgets/AppSettingsView.vala:172
 msgid "Perform tasks and use system resources while its window is closed."
 msgstr ""
 "Tworzenie zadań i korzystanie z zasobów systemu podczas gdy okno programu "
 "jest zamknięte."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:169
+#: src/Permissions/Widgets/AppSettingsView.vala:182
 msgid "Location Services"
 msgstr "Usługi lokalizacji"
 
-#: src/Permissions/Widgets/AppSettingsView.vala:170
+#: src/Permissions/Widgets/AppSettingsView.vala:183
 msgid "Determine the location of this device."
 msgstr "Ustalanie lokalizacji tego urządzenia."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:183
+#: src/Permissions/Widgets/AppSettingsView.vala:196
 msgid "Screenshot"
 msgstr "Zrzut ekranu"
 
-#: src/Permissions/Widgets/AppSettingsView.vala:184
+#: src/Permissions/Widgets/AppSettingsView.vala:197
 msgid "Take pictures of the display without asking first."
 msgstr "Tworzenie zrzutów ekranu bez uprzedniego pytania."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:194
+#: src/Permissions/Widgets/AppSettingsView.vala:207
 msgid "Wallpaper"
 msgstr "Tło pulpitu"
 
-#: src/Permissions/Widgets/AppSettingsView.vala:195
+#: src/Permissions/Widgets/AppSettingsView.vala:208
 msgid "Set the wallpaper on the desktop and lock screen."
 msgstr "Ustawianie tapety na pulpicie i ekranie blokady."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:211
+#: src/Permissions/Widgets/AppSettingsView.vala:224
 #, c-format
 msgid "%s permissions"
 msgstr "Uprawnienia %s"
@@ -246,17 +200,17 @@ msgstr "Uprawnienia %s"
 msgid ", "
 msgstr ", "
 
-#: src/Startup/Startup.vala:17
+#: src/Startup/Startup.vala:24
 msgid "Launch Apps on Startup"
 msgstr "Uruchamiaj programy przy starcie"
 
-#: src/Startup/Startup.vala:18
+#: src/Startup/Startup.vala:25
 msgid "Add apps to the Startup list by clicking the icon in the toolbar below."
 msgstr ""
 "Dodaj programy do listy uruchamiania klikając na ikonę w poniższym pasku "
 "narzędzi."
 
-#: src/Startup/Startup.vala:39
+#: src/Startup/Startup.vala:45
 msgid "Add Startup App…"
 msgstr "Dodaj uruchamiany program…"
 
@@ -273,6 +227,10 @@ msgstr "Usuń tę aplikację z aplikacji startowych"
 msgid "Launch %s on startup"
 msgstr "Uruchom %s przy starcie"
 
+#: src/Startup/Widgets/AppChooser.vala:17
+msgid "Search Applications"
+msgstr "Wyszukiwanie programów"
+
 #: src/Startup/Widgets/AppChooser.vala:37
 msgid "Type in a custom command"
 msgstr "Wpisz własne polecenie"
@@ -285,6 +243,44 @@ msgstr "Anuluj"
 #: src/Startup/Widgets/AppChooser.vala:53
 msgid "Select startup app"
 msgstr "Wybierz uruchamianą aplikację"
+
+#~ msgid "Home Folder"
+#~ msgstr "Katalog domowy"
+
+#~ msgid "Devices"
+#~ msgstr "Urządzenia"
+
+#~ msgid "Network"
+#~ msgstr "Sieć"
+
+#~ msgid "Bluetooth"
+#~ msgstr "Bluetooth"
+
+#~ msgid "Printing"
+#~ msgstr "Drukowanie"
+
+#~ msgid "Secure Shell Agent"
+#~ msgstr "Agent bezpiecznej powłoki"
+
+#~ msgid "GPU Acceleration"
+#~ msgstr "Akceleracja sprzętowa"
+
+#~ msgid "No Flatpak apps installed"
+#~ msgstr "Nie zainstalowano żadnych aplikacji Flatpak"
+
+#~ msgid ""
+#~ "Apps whose permissions can be adjusted will automatically appear here "
+#~ "when installed"
+#~ msgstr ""
+#~ "Aplikacje, których uprawnienia można zmodyfikować, automatycznie pojawią "
+#~ "się tutaj po instalacji"
+
+#~ msgid "Try changing search terms."
+#~ msgstr "Spróbuj zmienić kryteria wyszukiwania."
+
+#, c-format
+#~ msgid "No Results for “%s”"
+#~ msgstr "Brak wyników dla zapytania “%s”"
 
 #~ msgid "Access your entire Home folder, including any hidden folders."
 #~ msgstr ""
