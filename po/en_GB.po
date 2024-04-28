@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-04-17 19:38+0000\n"
-"PO-Revision-Date: 2024-04-20 18:13+0000\n"
-"Last-Translator: anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2024-04-29 01:13+0000\n"
+"Last-Translator: David Hewitt <davidmhewitt@gmail.com>\n"
 "Language-Team: English (United Kingdom) <https://l10n.elementary.io/projects/"
 "switchboard/switchboard-plug-applications/en_GB/>\n"
 "Language: en_GB\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.0.2\n"
+"X-Generator: Weblate 5.5\n"
 "X-Launchpad-Export-Date: 2016-11-26 05:53+0000\n"
 
 #: src/Plug.vala:44
@@ -94,17 +94,19 @@ msgstr "System"
 
 #: src/Sidebar.vala:132
 msgid "Apps"
-msgstr ""
+msgstr "Apps"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:54
 msgid "Advanced System Access"
-msgstr ""
+msgstr "Advanced System Access"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:56
 msgid ""
 "Access to system features can be restricted to make apps more secure, but "
 "some apps may not function properly without it"
 msgstr ""
+"Access to system features can be restricted to make apps more secure, but "
+"some apps may not function properly without it"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:66
 msgid "Reset to Defaults"
@@ -115,26 +117,22 @@ msgid ""
 "Including all documents, downloads, music, pictures, videos, and any hidden "
 "folders."
 msgstr ""
+"Including all documents, downloads, music, pictures, videos, and any hidden "
+"folders."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:121
 msgid "Including everyone's Home folders, but not including system internals."
-msgstr ""
+msgstr "Including everyone's Home folders, but not including system internals."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:125
-#, fuzzy
-#| msgid ""
-#| "Access all devices, such as webcams, microphones, and connected USB "
-#| "devices."
 msgid ""
 "Manage all connected devices, such as webcams, microphones, and USB devices."
 msgstr ""
-"Access all devices, such as webcams, microphones, and connected USB devices."
+"Manage all connected devices, such as webcams, microphones, and USB devices."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:129
-#, fuzzy
-#| msgid "Access the Internet and local networks."
 msgid "Connect to the Internet and local networks."
-msgstr "Access the Internet and local networks."
+msgstr "Connect to the Internet and local networks."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:133
 msgid "Manage Bluetooth devices including pairing, unpairing, and discovery."
@@ -142,13 +140,11 @@ msgstr "Manage Bluetooth devices including pairing, unpairing, and discovery."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:137
 msgid "Manage printers and see the print queue."
-msgstr ""
+msgstr "Manage printers and see the print queue."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:141
-#, fuzzy
-#| msgid "Access other devices on the network via SSH."
 msgid "Connect to other devices on the network via SSH."
-msgstr "Access other devices on the network via SSH."
+msgstr "Connect to other devices on the network via SSH."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:145
 msgid "Accelerate graphical output."
@@ -156,11 +152,11 @@ msgstr "Accelerate graphical output."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:171
 msgid "Background Activity"
-msgstr ""
+msgstr "Background Activity"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:172
 msgid "Perform tasks and use system resources while its window is closed."
-msgstr ""
+msgstr "Perform tasks and use system resources while its window is closed."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:182
 msgid "Location Services"
@@ -168,15 +164,15 @@ msgstr "Location Services"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:183
 msgid "Determine the location of this device."
-msgstr ""
+msgstr "Determine the location of this device."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:196
 msgid "Screenshot"
-msgstr ""
+msgstr "Screenshot"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:197
 msgid "Take pictures of the display without asking first."
-msgstr ""
+msgstr "Take pictures of the display without asking first."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:207
 msgid "Wallpaper"
@@ -184,7 +180,7 @@ msgstr "Wallpaper"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:208
 msgid "Set the wallpaper on the desktop and lock screen."
-msgstr ""
+msgstr "Set the wallpaper on the desktop and lock screen."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:224
 #, c-format
