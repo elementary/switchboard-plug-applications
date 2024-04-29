@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-04-17 19:38+0000\n"
-"PO-Revision-Date: 2024-04-20 18:13+0000\n"
-"Last-Translator: anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2024-04-30 06:13+0000\n"
+"Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
 "Language-Team: French <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-applications/fr/>\n"
 "Language: fr\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.0.2\n"
+"X-Generator: Weblate 5.5\n"
 "X-Launchpad-Export-Date: 2016-12-07 04:58+0000\n"
 
 #: src/Plug.vala:44
@@ -96,7 +96,7 @@ msgstr "Système"
 
 #: src/Sidebar.vala:132
 msgid "Apps"
-msgstr ""
+msgstr "Applications"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:54
 msgid "Advanced System Access"
