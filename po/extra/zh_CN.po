@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-04-17 19:38+0000\n"
+"POT-Creation-Date: 2024-05-06 04:10+0000\n"
 "PO-Revision-Date: 2023-08-12 01:08+0000\n"
 "Last-Translator: imgradeone Yan <imgradeone@outlook.com>\n"
 "Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
@@ -27,53 +27,53 @@ msgstr "应用程序设置"
 msgid "Manage default and startup applications"
 msgstr "管理默认应用和开机启动应用"
 
-#: data/applications.metainfo.xml.in:33
+#: data/applications.metainfo.xml.in:34
 msgid "elementary, Inc."
 msgstr "elementary, Inc."
 
-#: data/applications.metainfo.xml.in:40 data/applications.metainfo.xml.in:57
-#: data/applications.metainfo.xml.in:72 data/applications.metainfo.xml.in:87
+#: data/applications.metainfo.xml.in:42 data/applications.metainfo.xml.in:59
+#: data/applications.metainfo.xml.in:74 data/applications.metainfo.xml.in:89
 msgid "Minor updates:"
 msgstr "次要更新："
 
-#: data/applications.metainfo.xml.in:42 data/applications.metainfo.xml.in:61
-#: data/applications.metainfo.xml.in:76 data/applications.metainfo.xml.in:90
-#: data/applications.metainfo.xml.in:97 data/applications.metainfo.xml.in:104
+#: data/applications.metainfo.xml.in:44 data/applications.metainfo.xml.in:63
+#: data/applications.metainfo.xml.in:78 data/applications.metainfo.xml.in:92
+#: data/applications.metainfo.xml.in:99 data/applications.metainfo.xml.in:106
 msgid "Updated translations"
 msgstr "翻译更新"
 
-#: data/applications.metainfo.xml.in:53 data/applications.metainfo.xml.in:83
+#: data/applications.metainfo.xml.in:55 data/applications.metainfo.xml.in:85
 msgid "New features:"
 msgstr "新特性："
 
-#: data/applications.metainfo.xml.in:55
+#: data/applications.metainfo.xml.in:57
 msgid "Properly handle autostart files created by the Background Portal"
 msgstr ""
 
-#: data/applications.metainfo.xml.in:59
+#: data/applications.metainfo.xml.in:61
 msgid "App chooser in Startup is a dialog instead of a popover"
 msgstr ""
 
-#: data/applications.metainfo.xml.in:60
+#: data/applications.metainfo.xml.in:62
 msgid "Improve screen reader descriptions"
 msgstr ""
 
-#: data/applications.metainfo.xml.in:74
+#: data/applications.metainfo.xml.in:76
 msgid "Fix an issue with setting the incorrect app for certain files types"
 msgstr "修复了为某些文件类型设置不正确的应用程序的问题"
 
-#: data/applications.metainfo.xml.in:75
+#: data/applications.metainfo.xml.in:77
 msgid "Don't overwrite custom overrides when unnecessary"
 msgstr "非必要不要覆盖自定义设置"
 
-#: data/applications.metainfo.xml.in:85
+#: data/applications.metainfo.xml.in:87
 msgid "Manage permissions for Flatpak apps"
 msgstr "管理 Flatpak 应用程序的权限"
 
-#: data/applications.metainfo.xml.in:89
+#: data/applications.metainfo.xml.in:91
 msgid "Show custom launcher files"
 msgstr "显示自定义启动器文件"
 
-#: data/applications.metainfo.xml.in:103
+#: data/applications.metainfo.xml.in:105
 msgid "Fix issues with OnlyShowIn and Snap apps"
 msgstr "修复 OnlyShowIn 和 Snap 应用程序的问题"
