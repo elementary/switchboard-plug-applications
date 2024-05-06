@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-06 04:10+0000\n"
-"PO-Revision-Date: 2024-04-20 18:13+0000\n"
-"Last-Translator: anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2024-05-07 05:13+0000\n"
+"Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-applications/ja/>\n"
 "Language: ja\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.0.2\n"
+"X-Generator: Weblate 5.5\n"
 "X-Launchpad-Export-Date: 2017-02-12 06:23+0000\n"
 
 #: src/Plug.vala:44
@@ -102,10 +102,8 @@ msgid "Home Folder"
 msgstr "ホームフォルダー"
 
 #: src/Permissions/Backend/App.vala:43
-#, fuzzy
-#| msgid "Home Folder"
 msgid "System Folders"
-msgstr "ホームフォルダー"
+msgstr "システムフォルダー"
 
 #: src/Permissions/Backend/App.vala:44
 msgid "Devices"
@@ -132,10 +130,8 @@ msgid "GPU Acceleration"
 msgstr "GPU アクセラレーション"
 
 #: src/Permissions/Backend/PermissionStore.vala:66
-#, fuzzy
-#| msgid "%s permissions"
 msgid "Couldn't set permission"
-msgstr "%s のパーミッション"
+msgstr "パーミッションを設定できませんでした"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:54
 msgid "Advanced System Access"
