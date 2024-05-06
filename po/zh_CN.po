@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-04-17 19:38+0000\n"
+"POT-Creation-Date: 2024-05-06 04:10+0000\n"
 "PO-Revision-Date: 2024-04-20 18:13+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
@@ -97,6 +97,46 @@ msgstr "系统信息"
 #: src/Sidebar.vala:132
 msgid "Apps"
 msgstr ""
+
+#: src/Permissions/Backend/App.vala:42
+msgid "Home Folder"
+msgstr "主文件夹"
+
+#: src/Permissions/Backend/App.vala:43
+#, fuzzy
+#| msgid "Home Folder"
+msgid "System Folders"
+msgstr "主文件夹"
+
+#: src/Permissions/Backend/App.vala:44
+msgid "Devices"
+msgstr "设备"
+
+#: src/Permissions/Backend/App.vala:45
+msgid "Network"
+msgstr "网络"
+
+#: src/Permissions/Backend/App.vala:46
+msgid "Bluetooth"
+msgstr "蓝牙"
+
+#: src/Permissions/Backend/App.vala:47
+msgid "Printing"
+msgstr "打印服务"
+
+#: src/Permissions/Backend/App.vala:48
+msgid "Secure Shell Agent"
+msgstr "SSH 权限"
+
+#: src/Permissions/Backend/App.vala:49
+msgid "GPU Acceleration"
+msgstr "GPU 加速"
+
+#: src/Permissions/Backend/PermissionStore.vala:66
+#, fuzzy
+#| msgid "Permissions"
+msgid "Couldn't set permission"
+msgstr "应用权限"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:54
 msgid "Advanced System Access"
@@ -241,27 +281,6 @@ msgstr "取消"
 #| msgid "Remove Selected Startup App"
 msgid "Select startup app"
 msgstr "移除选中的启动项"
-
-#~ msgid "Home Folder"
-#~ msgstr "主文件夹"
-
-#~ msgid "Devices"
-#~ msgstr "设备"
-
-#~ msgid "Network"
-#~ msgstr "网络"
-
-#~ msgid "Bluetooth"
-#~ msgstr "蓝牙"
-
-#~ msgid "Printing"
-#~ msgstr "打印服务"
-
-#~ msgid "Secure Shell Agent"
-#~ msgstr "SSH 权限"
-
-#~ msgid "GPU Acceleration"
-#~ msgstr "GPU 加速"
 
 #~ msgid "No Flatpak apps installed"
 #~ msgstr "未安装任何 Flatpak 应用"

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-04-17 19:38+0000\n"
+"POT-Creation-Date: 2024-05-06 04:10+0000\n"
 "PO-Revision-Date: 2024-03-31 04:13+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Croatian <https://l10n.elementary.io/projects/switchboard/"
@@ -11,8 +11,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 5.0.2\n"
 "X-Launchpad-Export-Date: 2017-03-02 05:54+0000\n"
 
@@ -101,6 +101,44 @@ msgstr ""
 
 #: src/Sidebar.vala:132
 msgid "Apps"
+msgstr ""
+
+#: src/Permissions/Backend/App.vala:42
+msgid "Home Folder"
+msgstr "Osobna mapa"
+
+#: src/Permissions/Backend/App.vala:43
+#, fuzzy
+#| msgid "Home Folder"
+msgid "System Folders"
+msgstr "Osobna mapa"
+
+#: src/Permissions/Backend/App.vala:44
+msgid "Devices"
+msgstr "Uređaji"
+
+#: src/Permissions/Backend/App.vala:45
+msgid "Network"
+msgstr "Mreža"
+
+#: src/Permissions/Backend/App.vala:46
+msgid "Bluetooth"
+msgstr "Bluetooth"
+
+#: src/Permissions/Backend/App.vala:47
+msgid "Printing"
+msgstr ""
+
+#: src/Permissions/Backend/App.vala:48
+msgid "Secure Shell Agent"
+msgstr ""
+
+#: src/Permissions/Backend/App.vala:49
+msgid "GPU Acceleration"
+msgstr ""
+
+#: src/Permissions/Backend/PermissionStore.vala:66
+msgid "Couldn't set permission"
 msgstr ""
 
 #: src/Permissions/Widgets/AppSettingsView.vala:54
@@ -240,18 +278,6 @@ msgstr "Odustani"
 #| msgid "Remove Selected Startup App"
 msgid "Select startup app"
 msgstr "Ukloni odabrano pokretanje aplikacije"
-
-#~ msgid "Home Folder"
-#~ msgstr "Osobna mapa"
-
-#~ msgid "Devices"
-#~ msgstr "Uređaji"
-
-#~ msgid "Network"
-#~ msgstr "Mreža"
-
-#~ msgid "Bluetooth"
-#~ msgstr "Bluetooth"
 
 #~ msgid "Try changing search terms."
 #~ msgstr "Pokušaj promijeniti izraz pretrage."

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-04-17 19:38+0000\n"
+"POT-Creation-Date: 2024-05-06 04:10+0000\n"
 "PO-Revision-Date: 2024-04-20 18:13+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Catalan <https://l10n.elementary.io/projects/switchboard/"
@@ -96,6 +96,46 @@ msgstr "Sistema"
 #: src/Sidebar.vala:132
 msgid "Apps"
 msgstr "Aplicacions"
+
+#: src/Permissions/Backend/App.vala:42
+msgid "Home Folder"
+msgstr "Carpeta de l'usuari"
+
+#: src/Permissions/Backend/App.vala:43
+#, fuzzy
+#| msgid "Home Folder"
+msgid "System Folders"
+msgstr "Carpeta de l'usuari"
+
+#: src/Permissions/Backend/App.vala:44
+msgid "Devices"
+msgstr "Dispositius"
+
+#: src/Permissions/Backend/App.vala:45
+msgid "Network"
+msgstr "Xarxa"
+
+#: src/Permissions/Backend/App.vala:46
+msgid "Bluetooth"
+msgstr "Bluetooth"
+
+#: src/Permissions/Backend/App.vala:47
+msgid "Printing"
+msgstr "Impressió"
+
+#: src/Permissions/Backend/App.vala:48
+msgid "Secure Shell Agent"
+msgstr "Agent d'intèrpret d'ordres segur"
+
+#: src/Permissions/Backend/App.vala:49
+msgid "GPU Acceleration"
+msgstr "Acceleració de GPU"
+
+#: src/Permissions/Backend/PermissionStore.vala:66
+#, fuzzy
+#| msgid "%s permissions"
+msgid "Couldn't set permission"
+msgstr "Permisos: %s"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:54
 msgid "Advanced System Access"
@@ -243,27 +283,6 @@ msgstr "Cancel·la"
 #: src/Startup/Widgets/AppChooser.vala:53
 msgid "Select startup app"
 msgstr "Seleccioneu l'aplicació d'inici"
-
-#~ msgid "Home Folder"
-#~ msgstr "Carpeta de l'usuari"
-
-#~ msgid "Devices"
-#~ msgstr "Dispositius"
-
-#~ msgid "Network"
-#~ msgstr "Xarxa"
-
-#~ msgid "Bluetooth"
-#~ msgstr "Bluetooth"
-
-#~ msgid "Printing"
-#~ msgstr "Impressió"
-
-#~ msgid "Secure Shell Agent"
-#~ msgstr "Agent d'intèrpret d'ordres segur"
-
-#~ msgid "GPU Acceleration"
-#~ msgstr "Acceleració de GPU"
 
 #~ msgid "No Flatpak apps installed"
 #~ msgstr "No hi ha aplicacions de Flatpak instal·lades."

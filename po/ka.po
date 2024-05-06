@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-04-17 19:38+0000\n"
+"POT-Creation-Date: 2024-05-06 04:10+0000\n"
 "PO-Revision-Date: 2024-04-20 18:13+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Georgian <https://l10n.elementary.io/projects/switchboard/"
@@ -97,6 +97,46 @@ msgstr "სისტემა"
 #: src/Sidebar.vala:132
 msgid "Apps"
 msgstr ""
+
+#: src/Permissions/Backend/App.vala:42
+msgid "Home Folder"
+msgstr "საწყისი საქაღალდე"
+
+#: src/Permissions/Backend/App.vala:43
+#, fuzzy
+#| msgid "Home Folder"
+msgid "System Folders"
+msgstr "საწყისი საქაღალდე"
+
+#: src/Permissions/Backend/App.vala:44
+msgid "Devices"
+msgstr "მოწყობილობები"
+
+#: src/Permissions/Backend/App.vala:45
+msgid "Network"
+msgstr "ქსელი"
+
+#: src/Permissions/Backend/App.vala:46
+msgid "Bluetooth"
+msgstr "ბლუთუზი"
+
+#: src/Permissions/Backend/App.vala:47
+msgid "Printing"
+msgstr "დაბეჭდვა"
+
+#: src/Permissions/Backend/App.vala:48
+msgid "Secure Shell Agent"
+msgstr "დაცული გარსის აგენტი"
+
+#: src/Permissions/Backend/App.vala:49
+msgid "GPU Acceleration"
+msgstr "GPU აჩქარება"
+
+#: src/Permissions/Backend/PermissionStore.vala:66
+#, fuzzy
+#| msgid "%s permissions"
+msgid "Couldn't set permission"
+msgstr "%s წვდომები"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:54
 msgid "Advanced System Access"
@@ -232,27 +272,6 @@ msgstr "გაუქმება"
 #: src/Startup/Widgets/AppChooser.vala:53
 msgid "Select startup app"
 msgstr "აირჩიეთ ავტომატურად გასაშვები აპი"
-
-#~ msgid "Home Folder"
-#~ msgstr "საწყისი საქაღალდე"
-
-#~ msgid "Devices"
-#~ msgstr "მოწყობილობები"
-
-#~ msgid "Network"
-#~ msgstr "ქსელი"
-
-#~ msgid "Bluetooth"
-#~ msgstr "ბლუთუზი"
-
-#~ msgid "Printing"
-#~ msgstr "დაბეჭდვა"
-
-#~ msgid "Secure Shell Agent"
-#~ msgstr "დაცული გარსის აგენტი"
-
-#~ msgid "GPU Acceleration"
-#~ msgstr "GPU აჩქარება"
 
 #~ msgid "No Flatpak apps installed"
 #~ msgstr "Flatpak-ის აპები დაყენებული არაა"

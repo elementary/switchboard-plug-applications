@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-04-17 19:38+0000\n"
+"POT-Creation-Date: 2024-05-06 04:10+0000\n"
 "PO-Revision-Date: 2024-04-20 18:13+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Turkish <https://l10n.elementary.io/projects/switchboard/"
@@ -99,6 +99,46 @@ msgstr "Sistem"
 #: src/Sidebar.vala:132
 msgid "Apps"
 msgstr ""
+
+#: src/Permissions/Backend/App.vala:42
+msgid "Home Folder"
+msgstr "Ana Klasör"
+
+#: src/Permissions/Backend/App.vala:43
+#, fuzzy
+#| msgid "Home Folder"
+msgid "System Folders"
+msgstr "Ana Klasör"
+
+#: src/Permissions/Backend/App.vala:44
+msgid "Devices"
+msgstr "Aygıtlar"
+
+#: src/Permissions/Backend/App.vala:45
+msgid "Network"
+msgstr "Ağ"
+
+#: src/Permissions/Backend/App.vala:46
+msgid "Bluetooth"
+msgstr "Bluetooth"
+
+#: src/Permissions/Backend/App.vala:47
+msgid "Printing"
+msgstr "Yazdırma"
+
+#: src/Permissions/Backend/App.vala:48
+msgid "Secure Shell Agent"
+msgstr "Güvenli Kabuk Aracısı"
+
+#: src/Permissions/Backend/App.vala:49
+msgid "GPU Acceleration"
+msgstr "GPU Hızlandırması"
+
+#: src/Permissions/Backend/PermissionStore.vala:66
+#, fuzzy
+#| msgid "Permissions"
+msgid "Couldn't set permission"
+msgstr "İzinler"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:54
 msgid "Advanced System Access"
@@ -248,27 +288,6 @@ msgstr "İptal"
 #| msgid "Remove Selected Startup App"
 msgid "Select startup app"
 msgstr "Seçili Başlangıç Uygulamasını Kaldır"
-
-#~ msgid "Home Folder"
-#~ msgstr "Ana Klasör"
-
-#~ msgid "Devices"
-#~ msgstr "Aygıtlar"
-
-#~ msgid "Network"
-#~ msgstr "Ağ"
-
-#~ msgid "Bluetooth"
-#~ msgstr "Bluetooth"
-
-#~ msgid "Printing"
-#~ msgstr "Yazdırma"
-
-#~ msgid "Secure Shell Agent"
-#~ msgstr "Güvenli Kabuk Aracısı"
-
-#~ msgid "GPU Acceleration"
-#~ msgstr "GPU Hızlandırması"
 
 #~ msgid "No Flatpak apps installed"
 #~ msgstr "Yüklü Flatpak uygulaması yok"

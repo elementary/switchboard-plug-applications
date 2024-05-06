@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-04-17 19:38+0000\n"
+"POT-Creation-Date: 2024-05-06 04:10+0000\n"
 "PO-Revision-Date: 2024-04-20 18:13+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Korean <https://l10n.elementary.io/projects/switchboard/"
@@ -97,6 +97,46 @@ msgstr "시스템"
 #: src/Sidebar.vala:132
 msgid "Apps"
 msgstr ""
+
+#: src/Permissions/Backend/App.vala:42
+msgid "Home Folder"
+msgstr "홈 폴더"
+
+#: src/Permissions/Backend/App.vala:43
+#, fuzzy
+#| msgid "Home Folder"
+msgid "System Folders"
+msgstr "홈 폴더"
+
+#: src/Permissions/Backend/App.vala:44
+msgid "Devices"
+msgstr "장치"
+
+#: src/Permissions/Backend/App.vala:45
+msgid "Network"
+msgstr "네트워크"
+
+#: src/Permissions/Backend/App.vala:46
+msgid "Bluetooth"
+msgstr "블루투스"
+
+#: src/Permissions/Backend/App.vala:47
+msgid "Printing"
+msgstr "프린팅"
+
+#: src/Permissions/Backend/App.vala:48
+msgid "Secure Shell Agent"
+msgstr "보안 셸 에이전트"
+
+#: src/Permissions/Backend/App.vala:49
+msgid "GPU Acceleration"
+msgstr "GPU 가속"
+
+#: src/Permissions/Backend/PermissionStore.vala:66
+#, fuzzy
+#| msgid "Permissions"
+msgid "Couldn't set permission"
+msgstr "권한"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:54
 msgid "Advanced System Access"
@@ -241,27 +281,6 @@ msgstr "취소"
 #| msgid "Remove Selected Startup App"
 msgid "Select startup app"
 msgstr "선택한 시작 앱 제거"
-
-#~ msgid "Home Folder"
-#~ msgstr "홈 폴더"
-
-#~ msgid "Devices"
-#~ msgstr "장치"
-
-#~ msgid "Network"
-#~ msgstr "네트워크"
-
-#~ msgid "Bluetooth"
-#~ msgstr "블루투스"
-
-#~ msgid "Printing"
-#~ msgstr "프린팅"
-
-#~ msgid "Secure Shell Agent"
-#~ msgstr "보안 셸 에이전트"
-
-#~ msgid "GPU Acceleration"
-#~ msgstr "GPU 가속"
 
 #~ msgid "No Flatpak apps installed"
 #~ msgstr "Flatpak 앱이 설치되지 않았습니다"

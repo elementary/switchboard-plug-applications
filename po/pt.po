@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-04-17 19:38+0000\n"
+"POT-Creation-Date: 2024-05-06 04:10+0000\n"
 "PO-Revision-Date: 2024-04-20 18:13+0000\n"
 "Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
 "Language-Team: Portuguese <https://l10n.elementary.io/projects/switchboard/"
@@ -98,6 +98,46 @@ msgstr "Sistema"
 msgid "Apps"
 msgstr "Aplicações"
 
+#: src/Permissions/Backend/App.vala:42
+msgid "Home Folder"
+msgstr "Pasta pessoal"
+
+#: src/Permissions/Backend/App.vala:43
+#, fuzzy
+#| msgid "Home Folder"
+msgid "System Folders"
+msgstr "Pasta pessoal"
+
+#: src/Permissions/Backend/App.vala:44
+msgid "Devices"
+msgstr "Dispositivos"
+
+#: src/Permissions/Backend/App.vala:45
+msgid "Network"
+msgstr "Rede"
+
+#: src/Permissions/Backend/App.vala:46
+msgid "Bluetooth"
+msgstr "Bluetooth"
+
+#: src/Permissions/Backend/App.vala:47
+msgid "Printing"
+msgstr "Impressão"
+
+#: src/Permissions/Backend/App.vala:48
+msgid "Secure Shell Agent"
+msgstr "Secure Shell Agent"
+
+#: src/Permissions/Backend/App.vala:49
+msgid "GPU Acceleration"
+msgstr "Aceleração da GPU"
+
+#: src/Permissions/Backend/PermissionStore.vala:66
+#, fuzzy
+#| msgid "%s permissions"
+msgid "Couldn't set permission"
+msgstr "%s permissões"
+
 #: src/Permissions/Widgets/AppSettingsView.vala:54
 msgid "Advanced System Access"
 msgstr "Acesso avançado do sistema"
@@ -190,7 +230,8 @@ msgstr "Papel de parede"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:208
 msgid "Set the wallpaper on the desktop and lock screen."
-msgstr "Defina o papel de parede do ambiente de trabalho e do ecrã de bloqueio."
+msgstr ""
+"Defina o papel de parede do ambiente de trabalho e do ecrã de bloqueio."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:224
 #, c-format
@@ -245,27 +286,6 @@ msgstr "Cancelar"
 #: src/Startup/Widgets/AppChooser.vala:53
 msgid "Select startup app"
 msgstr "Selecionar a aplicação de arranque"
-
-#~ msgid "Home Folder"
-#~ msgstr "Pasta pessoal"
-
-#~ msgid "Devices"
-#~ msgstr "Dispositivos"
-
-#~ msgid "Network"
-#~ msgstr "Rede"
-
-#~ msgid "Bluetooth"
-#~ msgstr "Bluetooth"
-
-#~ msgid "Printing"
-#~ msgstr "Impressão"
-
-#~ msgid "Secure Shell Agent"
-#~ msgstr "Secure Shell Agent"
-
-#~ msgid "GPU Acceleration"
-#~ msgstr "Aceleração da GPU"
 
 #~ msgid "No Flatpak apps installed"
 #~ msgstr "Nenhuma aplicação Flatpak instalada"

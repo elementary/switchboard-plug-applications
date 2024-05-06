@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-04-17 19:38+0000\n"
+"POT-Creation-Date: 2024-05-06 04:10+0000\n"
 "PO-Revision-Date: 2024-03-31 04:13+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Indonesian <https://l10n.elementary.io/projects/switchboard/"
@@ -99,6 +99,46 @@ msgstr "Folder System"
 #: src/Sidebar.vala:132
 msgid "Apps"
 msgstr ""
+
+#: src/Permissions/Backend/App.vala:42
+msgid "Home Folder"
+msgstr "Folder Beranda"
+
+#: src/Permissions/Backend/App.vala:43
+#, fuzzy
+#| msgid "Home Folder"
+msgid "System Folders"
+msgstr "Folder Beranda"
+
+#: src/Permissions/Backend/App.vala:44
+msgid "Devices"
+msgstr "Perangkat"
+
+#: src/Permissions/Backend/App.vala:45
+msgid "Network"
+msgstr "Jaringan"
+
+#: src/Permissions/Backend/App.vala:46
+msgid "Bluetooth"
+msgstr "Bluetooth"
+
+#: src/Permissions/Backend/App.vala:47
+msgid "Printing"
+msgstr "Pencetakan"
+
+#: src/Permissions/Backend/App.vala:48
+msgid "Secure Shell Agent"
+msgstr "Agen Shell Aman"
+
+#: src/Permissions/Backend/App.vala:49
+msgid "GPU Acceleration"
+msgstr "Akselerasi GPU"
+
+#: src/Permissions/Backend/PermissionStore.vala:66
+#, fuzzy
+#| msgid "Permissions"
+msgid "Couldn't set permission"
+msgstr "Izin"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:54
 msgid "Advanced System Access"
@@ -248,27 +288,6 @@ msgstr "Batal"
 #| msgid "Remove Selected Startup App"
 msgid "Select startup app"
 msgstr "Hapus Aplikasi Mulai Awal yang Dipilih"
-
-#~ msgid "Home Folder"
-#~ msgstr "Folder Beranda"
-
-#~ msgid "Devices"
-#~ msgstr "Perangkat"
-
-#~ msgid "Network"
-#~ msgstr "Jaringan"
-
-#~ msgid "Bluetooth"
-#~ msgstr "Bluetooth"
-
-#~ msgid "Printing"
-#~ msgstr "Pencetakan"
-
-#~ msgid "Secure Shell Agent"
-#~ msgstr "Agen Shell Aman"
-
-#~ msgid "GPU Acceleration"
-#~ msgstr "Akselerasi GPU"
 
 #~ msgid "No Flatpak apps installed"
 #~ msgstr "Tidak ada aplikasi Flatpak yang dipasang"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-applications\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-04-17 19:38+0000\n"
+"POT-Creation-Date: 2024-05-06 04:10+0000\n"
 "PO-Revision-Date: 2023-07-06 19:07+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Tagalog <https://l10n.elementary.io/projects/switchboard/"
@@ -110,6 +110,42 @@ msgstr ""
 
 #: src/Sidebar.vala:132
 msgid "Apps"
+msgstr ""
+
+#: src/Permissions/Backend/App.vala:42
+msgid "Home Folder"
+msgstr ""
+
+#: src/Permissions/Backend/App.vala:43
+msgid "System Folders"
+msgstr ""
+
+#: src/Permissions/Backend/App.vala:44
+msgid "Devices"
+msgstr "Mga Aparato"
+
+#: src/Permissions/Backend/App.vala:45
+msgid "Network"
+msgstr ""
+
+#: src/Permissions/Backend/App.vala:46
+msgid "Bluetooth"
+msgstr "Bluetooth"
+
+#: src/Permissions/Backend/App.vala:47
+msgid "Printing"
+msgstr ""
+
+#: src/Permissions/Backend/App.vala:48
+msgid "Secure Shell Agent"
+msgstr ""
+
+#: src/Permissions/Backend/App.vala:49
+msgid "GPU Acceleration"
+msgstr ""
+
+#: src/Permissions/Backend/PermissionStore.vala:66
+msgid "Couldn't set permission"
 msgstr ""
 
 #: src/Permissions/Widgets/AppSettingsView.vala:54
@@ -246,12 +282,6 @@ msgstr "Ikansela"
 #| msgid "Remove Selected Startup App"
 msgid "Select startup app"
 msgstr "Tanggalin ang Napiling Startup App"
-
-#~ msgid "Devices"
-#~ msgstr "Mga Aparato"
-
-#~ msgid "Bluetooth"
-#~ msgstr "Bluetooth"
 
 #, c-format
 #~ msgid "No Results for “%s”"

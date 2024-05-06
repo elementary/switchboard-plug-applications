@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-04-17 19:38+0000\n"
+"POT-Creation-Date: 2024-05-06 04:10+0000\n"
 "PO-Revision-Date: 2024-04-20 18:13+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/switchboard/"
@@ -96,6 +96,46 @@ msgstr "Система"
 #: src/Sidebar.vala:132
 msgid "Apps"
 msgstr "Приложения"
+
+#: src/Permissions/Backend/App.vala:42
+msgid "Home Folder"
+msgstr "Домашняя папка"
+
+#: src/Permissions/Backend/App.vala:43
+#, fuzzy
+#| msgid "Home Folder"
+msgid "System Folders"
+msgstr "Домашняя папка"
+
+#: src/Permissions/Backend/App.vala:44
+msgid "Devices"
+msgstr "Устройства"
+
+#: src/Permissions/Backend/App.vala:45
+msgid "Network"
+msgstr "Сеть"
+
+#: src/Permissions/Backend/App.vala:46
+msgid "Bluetooth"
+msgstr "Bluetooth"
+
+#: src/Permissions/Backend/App.vala:47
+msgid "Printing"
+msgstr "Печать"
+
+#: src/Permissions/Backend/App.vala:48
+msgid "Secure Shell Agent"
+msgstr "Агент Secure Shell"
+
+#: src/Permissions/Backend/App.vala:49
+msgid "GPU Acceleration"
+msgstr "Ускорение графического процессора"
+
+#: src/Permissions/Backend/PermissionStore.vala:66
+#, fuzzy
+#| msgid "%s permissions"
+msgid "Couldn't set permission"
+msgstr "Разрешения %s"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:54
 msgid "Advanced System Access"
@@ -241,27 +281,6 @@ msgstr "Отменить"
 #: src/Startup/Widgets/AppChooser.vala:53
 msgid "Select startup app"
 msgstr "Выберите приложение для автозапуска"
-
-#~ msgid "Home Folder"
-#~ msgstr "Домашняя папка"
-
-#~ msgid "Devices"
-#~ msgstr "Устройства"
-
-#~ msgid "Network"
-#~ msgstr "Сеть"
-
-#~ msgid "Bluetooth"
-#~ msgstr "Bluetooth"
-
-#~ msgid "Printing"
-#~ msgstr "Печать"
-
-#~ msgid "Secure Shell Agent"
-#~ msgstr "Агент Secure Shell"
-
-#~ msgid "GPU Acceleration"
-#~ msgstr "Ускорение графического процессора"
 
 #~ msgid "No Flatpak apps installed"
 #~ msgstr "Приложений Flatpak не установлено"

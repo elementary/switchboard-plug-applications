@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-04-17 19:38+0000\n"
+"POT-Creation-Date: 2024-05-06 04:10+0000\n"
 "PO-Revision-Date: 2024-04-24 13:13+0000\n"
 "Last-Translator: Matheus Torres Carvalho <matheustcarvalho@hotmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://l10n.elementary.io/projects/"
@@ -101,6 +101,46 @@ msgstr "Sistema"
 #: src/Sidebar.vala:132
 msgid "Apps"
 msgstr ""
+
+#: src/Permissions/Backend/App.vala:42
+msgid "Home Folder"
+msgstr "Pasta pessoal"
+
+#: src/Permissions/Backend/App.vala:43
+#, fuzzy
+#| msgid "Home Folder"
+msgid "System Folders"
+msgstr "Pasta pessoal"
+
+#: src/Permissions/Backend/App.vala:44
+msgid "Devices"
+msgstr "Dispositivos"
+
+#: src/Permissions/Backend/App.vala:45
+msgid "Network"
+msgstr "Rede"
+
+#: src/Permissions/Backend/App.vala:46
+msgid "Bluetooth"
+msgstr "Bluetooth"
+
+#: src/Permissions/Backend/App.vala:47
+msgid "Printing"
+msgstr ""
+
+#: src/Permissions/Backend/App.vala:48
+msgid "Secure Shell Agent"
+msgstr ""
+
+#: src/Permissions/Backend/App.vala:49
+msgid "GPU Acceleration"
+msgstr ""
+
+#: src/Permissions/Backend/PermissionStore.vala:66
+#, fuzzy
+#| msgid "%s permissions"
+msgid "Couldn't set permission"
+msgstr "%s permissões"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:54
 msgid "Advanced System Access"
@@ -240,18 +280,6 @@ msgstr "Cancelar"
 #| msgid "Remove Selected Startup App"
 msgid "Select startup app"
 msgstr "Remover aplicativo de inicialização selecionado"
-
-#~ msgid "Home Folder"
-#~ msgstr "Pasta pessoal"
-
-#~ msgid "Devices"
-#~ msgstr "Dispositivos"
-
-#~ msgid "Network"
-#~ msgstr "Rede"
-
-#~ msgid "Bluetooth"
-#~ msgstr "Bluetooth"
 
 #~ msgid "Try changing search terms."
 #~ msgstr "Tente alterar os termos da pesquisa."

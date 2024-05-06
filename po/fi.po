@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-04-17 19:38+0000\n"
+"POT-Creation-Date: 2024-05-06 04:10+0000\n"
 "PO-Revision-Date: 2024-04-20 18:13+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Finnish <https://l10n.elementary.io/projects/switchboard/"
@@ -97,6 +97,46 @@ msgstr "Järjestelmä"
 #: src/Sidebar.vala:132
 msgid "Apps"
 msgstr ""
+
+#: src/Permissions/Backend/App.vala:42
+msgid "Home Folder"
+msgstr "Kotikansio"
+
+#: src/Permissions/Backend/App.vala:43
+#, fuzzy
+#| msgid "Home Folder"
+msgid "System Folders"
+msgstr "Kotikansio"
+
+#: src/Permissions/Backend/App.vala:44
+msgid "Devices"
+msgstr "Laitteet"
+
+#: src/Permissions/Backend/App.vala:45
+msgid "Network"
+msgstr "Verkko"
+
+#: src/Permissions/Backend/App.vala:46
+msgid "Bluetooth"
+msgstr "Bluetooth"
+
+#: src/Permissions/Backend/App.vala:47
+msgid "Printing"
+msgstr "Tulostaminen"
+
+#: src/Permissions/Backend/App.vala:48
+msgid "Secure Shell Agent"
+msgstr "Secure Shell -agentti"
+
+#: src/Permissions/Backend/App.vala:49
+msgid "GPU Acceleration"
+msgstr "Näytönohjaimen kiihdytys"
+
+#: src/Permissions/Backend/PermissionStore.vala:66
+#, fuzzy
+#| msgid "%s permissions"
+msgid "Couldn't set permission"
+msgstr "%s oikeutta"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:54
 msgid "Advanced System Access"
@@ -243,27 +283,6 @@ msgstr "Peru"
 #: src/Startup/Widgets/AppChooser.vala:53
 msgid "Select startup app"
 msgstr "Valitse automaattisesti käynnistettävä sovellus"
-
-#~ msgid "Home Folder"
-#~ msgstr "Kotikansio"
-
-#~ msgid "Devices"
-#~ msgstr "Laitteet"
-
-#~ msgid "Network"
-#~ msgstr "Verkko"
-
-#~ msgid "Bluetooth"
-#~ msgstr "Bluetooth"
-
-#~ msgid "Printing"
-#~ msgstr "Tulostaminen"
-
-#~ msgid "Secure Shell Agent"
-#~ msgstr "Secure Shell -agentti"
-
-#~ msgid "GPU Acceleration"
-#~ msgstr "Näytönohjaimen kiihdytys"
 
 #~ msgid "No Flatpak apps installed"
 #~ msgstr "Flatpak-sovelluksia ei ole asennettu"

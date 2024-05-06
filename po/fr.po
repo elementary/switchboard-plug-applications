@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-04-17 19:38+0000\n"
+"POT-Creation-Date: 2024-05-06 04:10+0000\n"
 "PO-Revision-Date: 2024-04-30 06:13+0000\n"
 "Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
 "Language-Team: French <https://l10n.elementary.io/projects/switchboard/"
@@ -97,6 +97,46 @@ msgstr "Système"
 #: src/Sidebar.vala:132
 msgid "Apps"
 msgstr "Applications"
+
+#: src/Permissions/Backend/App.vala:42
+msgid "Home Folder"
+msgstr "Dossier personnel"
+
+#: src/Permissions/Backend/App.vala:43
+#, fuzzy
+#| msgid "Home Folder"
+msgid "System Folders"
+msgstr "Dossier personnel"
+
+#: src/Permissions/Backend/App.vala:44
+msgid "Devices"
+msgstr "Périphériques"
+
+#: src/Permissions/Backend/App.vala:45
+msgid "Network"
+msgstr "Réseau"
+
+#: src/Permissions/Backend/App.vala:46
+msgid "Bluetooth"
+msgstr "Bluetooth"
+
+#: src/Permissions/Backend/App.vala:47
+msgid "Printing"
+msgstr "Impression"
+
+#: src/Permissions/Backend/App.vala:48
+msgid "Secure Shell Agent"
+msgstr "Agent de l'invite de commande"
+
+#: src/Permissions/Backend/App.vala:49
+msgid "GPU Acceleration"
+msgstr "Accélération du processeur"
+
+#: src/Permissions/Backend/PermissionStore.vala:66
+#, fuzzy
+#| msgid "%s permissions"
+msgid "Couldn't set permission"
+msgstr "Autorisations de %s"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:54
 msgid "Advanced System Access"
@@ -244,27 +284,6 @@ msgstr "Annuler"
 #: src/Startup/Widgets/AppChooser.vala:53
 msgid "Select startup app"
 msgstr "Sélectionner l'application pour le démarrage automatique"
-
-#~ msgid "Home Folder"
-#~ msgstr "Dossier personnel"
-
-#~ msgid "Devices"
-#~ msgstr "Périphériques"
-
-#~ msgid "Network"
-#~ msgstr "Réseau"
-
-#~ msgid "Bluetooth"
-#~ msgstr "Bluetooth"
-
-#~ msgid "Printing"
-#~ msgstr "Impression"
-
-#~ msgid "Secure Shell Agent"
-#~ msgstr "Agent de l'invite de commande"
-
-#~ msgid "GPU Acceleration"
-#~ msgstr "Accélération du processeur"
 
 #~ msgid "No Flatpak apps installed"
 #~ msgstr "Aucune application Flatpak installée"

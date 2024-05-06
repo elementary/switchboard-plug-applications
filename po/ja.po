@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-04-17 19:38+0000\n"
+"POT-Creation-Date: 2024-05-06 04:10+0000\n"
 "PO-Revision-Date: 2024-04-20 18:13+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
@@ -96,6 +96,46 @@ msgstr "システム"
 #: src/Sidebar.vala:132
 msgid "Apps"
 msgstr "アプリ"
+
+#: src/Permissions/Backend/App.vala:42
+msgid "Home Folder"
+msgstr "ホームフォルダー"
+
+#: src/Permissions/Backend/App.vala:43
+#, fuzzy
+#| msgid "Home Folder"
+msgid "System Folders"
+msgstr "ホームフォルダー"
+
+#: src/Permissions/Backend/App.vala:44
+msgid "Devices"
+msgstr "デバイス"
+
+#: src/Permissions/Backend/App.vala:45
+msgid "Network"
+msgstr "ネットワーク"
+
+#: src/Permissions/Backend/App.vala:46
+msgid "Bluetooth"
+msgstr "Bluetooth"
+
+#: src/Permissions/Backend/App.vala:47
+msgid "Printing"
+msgstr "印刷"
+
+#: src/Permissions/Backend/App.vala:48
+msgid "Secure Shell Agent"
+msgstr "セキュアシェルエージェント"
+
+#: src/Permissions/Backend/App.vala:49
+msgid "GPU Acceleration"
+msgstr "GPU アクセラレーション"
+
+#: src/Permissions/Backend/PermissionStore.vala:66
+#, fuzzy
+#| msgid "%s permissions"
+msgid "Couldn't set permission"
+msgstr "%s のパーミッション"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:54
 msgid "Advanced System Access"
@@ -241,27 +281,6 @@ msgstr "キャンセル"
 #: src/Startup/Widgets/AppChooser.vala:53
 msgid "Select startup app"
 msgstr "自動起動するアプリを選択してください"
-
-#~ msgid "Home Folder"
-#~ msgstr "ホームフォルダー"
-
-#~ msgid "Devices"
-#~ msgstr "デバイス"
-
-#~ msgid "Network"
-#~ msgstr "ネットワーク"
-
-#~ msgid "Bluetooth"
-#~ msgstr "Bluetooth"
-
-#~ msgid "Printing"
-#~ msgstr "印刷"
-
-#~ msgid "Secure Shell Agent"
-#~ msgstr "セキュアシェルエージェント"
-
-#~ msgid "GPU Acceleration"
-#~ msgstr "GPU アクセラレーション"
 
 #~ msgid "No Flatpak apps installed"
 #~ msgstr "Flatpak アプリ未インストール"

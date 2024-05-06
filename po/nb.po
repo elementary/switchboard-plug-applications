@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-04-17 19:38+0000\n"
+"POT-Creation-Date: 2024-05-06 04:10+0000\n"
 "PO-Revision-Date: 2024-04-20 18:13+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Norwegian Bokmål <https://l10n.elementary.io/projects/"
@@ -99,6 +99,47 @@ msgstr "System"
 #: src/Sidebar.vala:132
 msgid "Apps"
 msgstr ""
+
+#: src/Permissions/Backend/App.vala:42
+msgid "Home Folder"
+msgstr "Hjemmemappe"
+
+#: src/Permissions/Backend/App.vala:43
+#, fuzzy
+#| msgid "Home Folder"
+msgid "System Folders"
+msgstr "Hjemmemappe"
+
+#: src/Permissions/Backend/App.vala:44
+msgid "Devices"
+msgstr "Enheter"
+
+#: src/Permissions/Backend/App.vala:45
+msgid "Network"
+msgstr "Nettverk"
+
+#: src/Permissions/Backend/App.vala:46
+msgid "Bluetooth"
+msgstr "Blåtann"
+
+#: src/Permissions/Backend/App.vala:47
+msgid "Printing"
+msgstr "Utskrift"
+
+#: src/Permissions/Backend/App.vala:48
+#, fuzzy
+msgid "Secure Shell Agent"
+msgstr "Agent for sikkert skall"
+
+#: src/Permissions/Backend/App.vala:49
+msgid "GPU Acceleration"
+msgstr "GPU-akselerasjon"
+
+#: src/Permissions/Backend/PermissionStore.vala:66
+#, fuzzy
+#| msgid "Permissions"
+msgid "Couldn't set permission"
+msgstr "%s tilganger"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:54
 msgid "Advanced System Access"
@@ -246,28 +287,6 @@ msgstr "Avbryt"
 #: src/Startup/Widgets/AppChooser.vala:53
 msgid "Select startup app"
 msgstr "Velg oppstartsprogram"
-
-#~ msgid "Home Folder"
-#~ msgstr "Hjemmemappe"
-
-#~ msgid "Devices"
-#~ msgstr "Enheter"
-
-#~ msgid "Network"
-#~ msgstr "Nettverk"
-
-#~ msgid "Bluetooth"
-#~ msgstr "Blåtann"
-
-#~ msgid "Printing"
-#~ msgstr "Utskrift"
-
-#, fuzzy
-#~ msgid "Secure Shell Agent"
-#~ msgstr "Agent for sikkert skall"
-
-#~ msgid "GPU Acceleration"
-#~ msgstr "GPU-akselerasjon"
 
 #~ msgid "No Flatpak apps installed"
 #~ msgstr "Ingen Flatpak-programmer installert"

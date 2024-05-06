@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-04-17 19:38+0000\n"
+"POT-Creation-Date: 2024-05-06 04:10+0000\n"
 "PO-Revision-Date: 2024-04-20 18:13+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Italian <https://l10n.elementary.io/projects/switchboard/"
@@ -99,6 +99,46 @@ msgstr "Sistema"
 #: src/Sidebar.vala:132
 msgid "Apps"
 msgstr ""
+
+#: src/Permissions/Backend/App.vala:42
+msgid "Home Folder"
+msgstr "Apri cartella iniziale"
+
+#: src/Permissions/Backend/App.vala:43
+#, fuzzy
+#| msgid "Home Folder"
+msgid "System Folders"
+msgstr "Apri cartella iniziale"
+
+#: src/Permissions/Backend/App.vala:44
+msgid "Devices"
+msgstr "Dispositivi"
+
+#: src/Permissions/Backend/App.vala:45
+msgid "Network"
+msgstr "Rete"
+
+#: src/Permissions/Backend/App.vala:46
+msgid "Bluetooth"
+msgstr "Bluetooth"
+
+#: src/Permissions/Backend/App.vala:47
+msgid "Printing"
+msgstr "Stampa"
+
+#: src/Permissions/Backend/App.vala:48
+msgid "Secure Shell Agent"
+msgstr "Accesso al protocollo Secure Shell"
+
+#: src/Permissions/Backend/App.vala:49
+msgid "GPU Acceleration"
+msgstr "Accelerazione GPU"
+
+#: src/Permissions/Backend/PermissionStore.vala:66
+#, fuzzy
+#| msgid "Permissions"
+msgid "Couldn't set permission"
+msgstr "Permessi"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:54
 msgid "Advanced System Access"
@@ -252,27 +292,6 @@ msgstr "Annulla"
 #| msgid "Remove Selected Startup App"
 msgid "Select startup app"
 msgstr "Rimuovi l'applicazione di avvio selezionata"
-
-#~ msgid "Home Folder"
-#~ msgstr "Apri cartella iniziale"
-
-#~ msgid "Devices"
-#~ msgstr "Dispositivi"
-
-#~ msgid "Network"
-#~ msgstr "Rete"
-
-#~ msgid "Bluetooth"
-#~ msgstr "Bluetooth"
-
-#~ msgid "Printing"
-#~ msgstr "Stampa"
-
-#~ msgid "Secure Shell Agent"
-#~ msgstr "Accesso al protocollo Secure Shell"
-
-#~ msgid "GPU Acceleration"
-#~ msgstr "Accelerazione GPU"
 
 #~ msgid "No Flatpak apps installed"
 #~ msgstr "Nessuna applicazione Flatpak installata"

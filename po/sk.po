@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-04-17 19:38+0000\n"
+"POT-Creation-Date: 2024-05-06 04:10+0000\n"
 "PO-Revision-Date: 2024-04-20 18:13+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Slovak <https://l10n.elementary.io/projects/switchboard/"
@@ -96,6 +96,46 @@ msgstr "Systém"
 #: src/Sidebar.vala:132
 msgid "Apps"
 msgstr ""
+
+#: src/Permissions/Backend/App.vala:42
+msgid "Home Folder"
+msgstr "Domovský priečinok"
+
+#: src/Permissions/Backend/App.vala:43
+#, fuzzy
+#| msgid "Home Folder"
+msgid "System Folders"
+msgstr "Domovský priečinok"
+
+#: src/Permissions/Backend/App.vala:44
+msgid "Devices"
+msgstr "Zariadenia"
+
+#: src/Permissions/Backend/App.vala:45
+msgid "Network"
+msgstr "Sieť"
+
+#: src/Permissions/Backend/App.vala:46
+msgid "Bluetooth"
+msgstr "Bluetooth"
+
+#: src/Permissions/Backend/App.vala:47
+msgid "Printing"
+msgstr "Tlač"
+
+#: src/Permissions/Backend/App.vala:48
+msgid "Secure Shell Agent"
+msgstr "Agent Secure Shell (SSH)"
+
+#: src/Permissions/Backend/App.vala:49
+msgid "GPU Acceleration"
+msgstr "Akcelerácia pomocou grafickej karty"
+
+#: src/Permissions/Backend/PermissionStore.vala:66
+#, fuzzy
+#| msgid "%s permissions"
+msgid "Couldn't set permission"
+msgstr "Oprávnenia %s"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:54
 msgid "Advanced System Access"
@@ -241,27 +281,6 @@ msgstr "Zrušiť"
 #: src/Startup/Widgets/AppChooser.vala:53
 msgid "Select startup app"
 msgstr "Vybrať aplikáciu pri spustení"
-
-#~ msgid "Home Folder"
-#~ msgstr "Domovský priečinok"
-
-#~ msgid "Devices"
-#~ msgstr "Zariadenia"
-
-#~ msgid "Network"
-#~ msgstr "Sieť"
-
-#~ msgid "Bluetooth"
-#~ msgstr "Bluetooth"
-
-#~ msgid "Printing"
-#~ msgstr "Tlač"
-
-#~ msgid "Secure Shell Agent"
-#~ msgstr "Agent Secure Shell (SSH)"
-
-#~ msgid "GPU Acceleration"
-#~ msgstr "Akcelerácia pomocou grafickej karty"
 
 #~ msgid "No Flatpak apps installed"
 #~ msgstr "Žiadne nainštalované Flatpak aplikácie"

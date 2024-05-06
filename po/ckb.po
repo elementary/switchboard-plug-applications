@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-04-17 19:38+0000\n"
+"POT-Creation-Date: 2024-05-06 04:10+0000\n"
 "PO-Revision-Date: 2024-04-20 18:13+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Kurdish (Central) <https://l10n.elementary.io/projects/"
@@ -99,6 +99,46 @@ msgstr "سیستەم"
 #: src/Sidebar.vala:132
 msgid "Apps"
 msgstr ""
+
+#: src/Permissions/Backend/App.vala:42
+msgid "Home Folder"
+msgstr "بوخچەی سەرەتا"
+
+#: src/Permissions/Backend/App.vala:43
+#, fuzzy
+#| msgid "Home Folder"
+msgid "System Folders"
+msgstr "بوخچەی سەرەتا"
+
+#: src/Permissions/Backend/App.vala:44
+msgid "Devices"
+msgstr "ئامێرەکان"
+
+#: src/Permissions/Backend/App.vala:45
+msgid "Network"
+msgstr "ڕایەڵە"
+
+#: src/Permissions/Backend/App.vala:46
+msgid "Bluetooth"
+msgstr "بلوتوس"
+
+#: src/Permissions/Backend/App.vala:47
+msgid "Printing"
+msgstr "چاپکردن"
+
+#: src/Permissions/Backend/App.vala:48
+msgid "Secure Shell Agent"
+msgstr "پاراستنی شێڵی بریکار"
+
+#: src/Permissions/Backend/App.vala:49
+msgid "GPU Acceleration"
+msgstr "خێراکردنی GPU"
+
+#: src/Permissions/Backend/PermissionStore.vala:66
+#, fuzzy
+#| msgid "Permissions"
+msgid "Couldn't set permission"
+msgstr "مۆڵەتەکان"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:54
 msgid "Advanced System Access"
@@ -249,27 +289,6 @@ msgstr "هەڵوەشاندنەوە"
 #| msgid "Remove Selected Startup App"
 msgid "Select startup app"
 msgstr "سڕینەوەی بەرنامەی دیاریکراو لە لیستی دەستپێک"
-
-#~ msgid "Home Folder"
-#~ msgstr "بوخچەی سەرەتا"
-
-#~ msgid "Devices"
-#~ msgstr "ئامێرەکان"
-
-#~ msgid "Network"
-#~ msgstr "ڕایەڵە"
-
-#~ msgid "Bluetooth"
-#~ msgstr "بلوتوس"
-
-#~ msgid "Printing"
-#~ msgstr "چاپکردن"
-
-#~ msgid "Secure Shell Agent"
-#~ msgstr "پاراستنی شێڵی بریکار"
-
-#~ msgid "GPU Acceleration"
-#~ msgstr "خێراکردنی GPU"
 
 #~ msgid "No Flatpak apps installed"
 #~ msgstr "هیچ بەرنامەیەکی فلاتپاک دانەمەزراوە"

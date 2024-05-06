@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-04-17 19:38+0000\n"
+"POT-Creation-Date: 2024-05-06 04:10+0000\n"
 "PO-Revision-Date: 2024-04-20 18:13+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: German <https://l10n.elementary.io/projects/switchboard/"
@@ -97,6 +97,46 @@ msgstr "System"
 #: src/Sidebar.vala:132
 msgid "Apps"
 msgstr ""
+
+#: src/Permissions/Backend/App.vala:42
+msgid "Home Folder"
+msgstr "Persönlicher Ordner"
+
+#: src/Permissions/Backend/App.vala:43
+#, fuzzy
+#| msgid "Home Folder"
+msgid "System Folders"
+msgstr "Persönlicher Ordner"
+
+#: src/Permissions/Backend/App.vala:44
+msgid "Devices"
+msgstr "Geräte"
+
+#: src/Permissions/Backend/App.vala:45
+msgid "Network"
+msgstr "Netzwerk"
+
+#: src/Permissions/Backend/App.vala:46
+msgid "Bluetooth"
+msgstr "Bluetooth"
+
+#: src/Permissions/Backend/App.vala:47
+msgid "Printing"
+msgstr "Drucken"
+
+#: src/Permissions/Backend/App.vala:48
+msgid "Secure Shell Agent"
+msgstr "Secure Shell Agent"
+
+#: src/Permissions/Backend/App.vala:49
+msgid "GPU Acceleration"
+msgstr "GPU-Beschleunigung"
+
+#: src/Permissions/Backend/PermissionStore.vala:66
+#, fuzzy
+#| msgid "%s permissions"
+msgid "Couldn't set permission"
+msgstr "%s Zugriffsrechte"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:54
 msgid "Advanced System Access"
@@ -241,27 +281,6 @@ msgstr "Abbrechen"
 #: src/Startup/Widgets/AppChooser.vala:53
 msgid "Select startup app"
 msgstr "Automatisch gestartete Anwendung wählen"
-
-#~ msgid "Home Folder"
-#~ msgstr "Persönlicher Ordner"
-
-#~ msgid "Devices"
-#~ msgstr "Geräte"
-
-#~ msgid "Network"
-#~ msgstr "Netzwerk"
-
-#~ msgid "Bluetooth"
-#~ msgstr "Bluetooth"
-
-#~ msgid "Printing"
-#~ msgstr "Drucken"
-
-#~ msgid "Secure Shell Agent"
-#~ msgstr "Secure Shell Agent"
-
-#~ msgid "GPU Acceleration"
-#~ msgstr "GPU-Beschleunigung"
 
 #~ msgid "No Flatpak apps installed"
 #~ msgstr "Keine Flatpak-Anwendungen installiert"

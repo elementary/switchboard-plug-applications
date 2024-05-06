@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-04-17 19:38+0000\n"
+"POT-Creation-Date: 2024-05-06 04:10+0000\n"
 "PO-Revision-Date: 2024-04-21 19:13+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://l10n.elementary.io/projects/switchboard/"
@@ -95,6 +95,46 @@ msgstr "מערכת"
 #: src/Sidebar.vala:132
 msgid "Apps"
 msgstr "יישומים"
+
+#: src/Permissions/Backend/App.vala:42
+msgid "Home Folder"
+msgstr "תיקיית הבית"
+
+#: src/Permissions/Backend/App.vala:43
+#, fuzzy
+#| msgid "Home Folder"
+msgid "System Folders"
+msgstr "תיקיית הבית"
+
+#: src/Permissions/Backend/App.vala:44
+msgid "Devices"
+msgstr "התקנים"
+
+#: src/Permissions/Backend/App.vala:45
+msgid "Network"
+msgstr "רשת"
+
+#: src/Permissions/Backend/App.vala:46
+msgid "Bluetooth"
+msgstr "Bluetooth"
+
+#: src/Permissions/Backend/App.vala:47
+msgid "Printing"
+msgstr "הדפסה"
+
+#: src/Permissions/Backend/App.vala:48
+msgid "Secure Shell Agent"
+msgstr "סוכן מעטפת מאובטחת - SSH"
+
+#: src/Permissions/Backend/App.vala:49
+msgid "GPU Acceleration"
+msgstr "האצת מעבד גרפי"
+
+#: src/Permissions/Backend/PermissionStore.vala:66
+#, fuzzy
+#| msgid "%s permissions"
+msgid "Couldn't set permission"
+msgstr "הרשאות %s"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:54
 msgid "Advanced System Access"
@@ -231,27 +271,6 @@ msgstr "ביטול"
 #: src/Startup/Widgets/AppChooser.vala:53
 msgid "Select startup app"
 msgstr "בחירת יישום הפעלה"
-
-#~ msgid "Home Folder"
-#~ msgstr "תיקיית הבית"
-
-#~ msgid "Devices"
-#~ msgstr "התקנים"
-
-#~ msgid "Network"
-#~ msgstr "רשת"
-
-#~ msgid "Bluetooth"
-#~ msgstr "Bluetooth"
-
-#~ msgid "Printing"
-#~ msgstr "הדפסה"
-
-#~ msgid "Secure Shell Agent"
-#~ msgstr "סוכן מעטפת מאובטחת - SSH"
-
-#~ msgid "GPU Acceleration"
-#~ msgstr "האצת מעבד גרפי"
 
 #~ msgid "No Flatpak apps installed"
 #~ msgstr "לא מותקנים יישומים עם Flatpak"

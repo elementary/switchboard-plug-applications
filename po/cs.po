@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-04-17 19:38+0000\n"
+"POT-Creation-Date: 2024-05-06 04:10+0000\n"
 "PO-Revision-Date: 2024-04-20 18:13+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Czech <https://l10n.elementary.io/projects/switchboard/"
@@ -97,6 +97,46 @@ msgstr "Systém"
 #: src/Sidebar.vala:132
 msgid "Apps"
 msgstr ""
+
+#: src/Permissions/Backend/App.vala:42
+msgid "Home Folder"
+msgstr "Domovská složka"
+
+#: src/Permissions/Backend/App.vala:43
+#, fuzzy
+#| msgid "Home Folder"
+msgid "System Folders"
+msgstr "Domovská složka"
+
+#: src/Permissions/Backend/App.vala:44
+msgid "Devices"
+msgstr "Zařízení"
+
+#: src/Permissions/Backend/App.vala:45
+msgid "Network"
+msgstr "Síť"
+
+#: src/Permissions/Backend/App.vala:46
+msgid "Bluetooth"
+msgstr "Bluetooth"
+
+#: src/Permissions/Backend/App.vala:47
+msgid "Printing"
+msgstr "Tisk"
+
+#: src/Permissions/Backend/App.vala:48
+msgid "Secure Shell Agent"
+msgstr "Agent zabezpečeného shellu"
+
+#: src/Permissions/Backend/App.vala:49
+msgid "GPU Acceleration"
+msgstr "Akcelerace pomocí grafického čipu"
+
+#: src/Permissions/Backend/PermissionStore.vala:66
+#, fuzzy
+#| msgid "Permissions"
+msgid "Couldn't set permission"
+msgstr "Oprávnění"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:54
 msgid "Advanced System Access"
@@ -245,27 +285,6 @@ msgstr "Storno"
 #| msgid "Remove Selected Startup App"
 msgid "Select startup app"
 msgstr "Odebrat aplikaci po spuštění"
-
-#~ msgid "Home Folder"
-#~ msgstr "Domovská složka"
-
-#~ msgid "Devices"
-#~ msgstr "Zařízení"
-
-#~ msgid "Network"
-#~ msgstr "Síť"
-
-#~ msgid "Bluetooth"
-#~ msgstr "Bluetooth"
-
-#~ msgid "Printing"
-#~ msgstr "Tisk"
-
-#~ msgid "Secure Shell Agent"
-#~ msgstr "Agent zabezpečeného shellu"
-
-#~ msgid "GPU Acceleration"
-#~ msgstr "Akcelerace pomocí grafického čipu"
 
 #~ msgid "No Flatpak apps installed"
 #~ msgstr "Nejsou nainstalované žádné Flatpak aplikace"

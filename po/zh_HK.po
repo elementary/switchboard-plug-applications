@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-04-17 19:38+0000\n"
+"POT-Creation-Date: 2024-05-06 04:10+0000\n"
 "PO-Revision-Date: 2014-08-01 07:27+0000\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -92,6 +92,42 @@ msgstr ""
 
 #: src/Sidebar.vala:132
 msgid "Apps"
+msgstr ""
+
+#: src/Permissions/Backend/App.vala:42
+msgid "Home Folder"
+msgstr ""
+
+#: src/Permissions/Backend/App.vala:43
+msgid "System Folders"
+msgstr ""
+
+#: src/Permissions/Backend/App.vala:44
+msgid "Devices"
+msgstr ""
+
+#: src/Permissions/Backend/App.vala:45
+msgid "Network"
+msgstr ""
+
+#: src/Permissions/Backend/App.vala:46
+msgid "Bluetooth"
+msgstr ""
+
+#: src/Permissions/Backend/App.vala:47
+msgid "Printing"
+msgstr ""
+
+#: src/Permissions/Backend/App.vala:48
+msgid "Secure Shell Agent"
+msgstr ""
+
+#: src/Permissions/Backend/App.vala:49
+msgid "GPU Acceleration"
+msgstr ""
+
+#: src/Permissions/Backend/PermissionStore.vala:66
+msgid "Couldn't set permission"
 msgstr ""
 
 #: src/Permissions/Widgets/AppSettingsView.vala:54

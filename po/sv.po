@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-04-17 19:38+0000\n"
+"POT-Creation-Date: 2024-05-06 04:10+0000\n"
 "PO-Revision-Date: 2024-04-20 18:13+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Swedish <https://l10n.elementary.io/projects/switchboard/"
@@ -100,6 +100,44 @@ msgstr "System"
 
 #: src/Sidebar.vala:132
 msgid "Apps"
+msgstr ""
+
+#: src/Permissions/Backend/App.vala:42
+msgid "Home Folder"
+msgstr "Hemmapp"
+
+#: src/Permissions/Backend/App.vala:43
+#, fuzzy
+#| msgid "Home Folder"
+msgid "System Folders"
+msgstr "Hemmapp"
+
+#: src/Permissions/Backend/App.vala:44
+msgid "Devices"
+msgstr "Enheter"
+
+#: src/Permissions/Backend/App.vala:45
+msgid "Network"
+msgstr "Nätverk"
+
+#: src/Permissions/Backend/App.vala:46
+msgid "Bluetooth"
+msgstr "Bluetooth"
+
+#: src/Permissions/Backend/App.vala:47
+msgid "Printing"
+msgstr ""
+
+#: src/Permissions/Backend/App.vala:48
+msgid "Secure Shell Agent"
+msgstr ""
+
+#: src/Permissions/Backend/App.vala:49
+msgid "GPU Acceleration"
+msgstr ""
+
+#: src/Permissions/Backend/PermissionStore.vala:66
+msgid "Couldn't set permission"
 msgstr ""
 
 #: src/Permissions/Widgets/AppSettingsView.vala:54
@@ -240,18 +278,6 @@ msgstr "Avbryt"
 #| msgid "Remove Selected Startup App"
 msgid "Select startup app"
 msgstr "Ta bort valt uppstartsprogram"
-
-#~ msgid "Home Folder"
-#~ msgstr "Hemmapp"
-
-#~ msgid "Devices"
-#~ msgstr "Enheter"
-
-#~ msgid "Network"
-#~ msgstr "Nätverk"
-
-#~ msgid "Bluetooth"
-#~ msgstr "Bluetooth"
 
 #~ msgid "Try changing search terms."
 #~ msgstr "Försök med att ändra söktermer."

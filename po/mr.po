@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-04-17 19:38+0000\n"
+"POT-Creation-Date: 2024-05-06 04:10+0000\n"
 "PO-Revision-Date: 2024-04-20 18:13+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Marathi <https://l10n.elementary.io/projects/switchboard/"
@@ -97,6 +97,46 @@ msgstr "सिस्टिम"
 #: src/Sidebar.vala:132
 msgid "Apps"
 msgstr ""
+
+#: src/Permissions/Backend/App.vala:42
+msgid "Home Folder"
+msgstr "होम फोल्डर"
+
+#: src/Permissions/Backend/App.vala:43
+#, fuzzy
+#| msgid "Home Folder"
+msgid "System Folders"
+msgstr "होम फोल्डर"
+
+#: src/Permissions/Backend/App.vala:44
+msgid "Devices"
+msgstr "उपकरण"
+
+#: src/Permissions/Backend/App.vala:45
+msgid "Network"
+msgstr "नेटवर्क"
+
+#: src/Permissions/Backend/App.vala:46
+msgid "Bluetooth"
+msgstr "ब्लूटुथ"
+
+#: src/Permissions/Backend/App.vala:47
+msgid "Printing"
+msgstr "मुद्रण"
+
+#: src/Permissions/Backend/App.vala:48
+msgid "Secure Shell Agent"
+msgstr "सुरक्षित शेल एजंट"
+
+#: src/Permissions/Backend/App.vala:49
+msgid "GPU Acceleration"
+msgstr "GPU प्रवेग"
+
+#: src/Permissions/Backend/PermissionStore.vala:66
+#, fuzzy
+#| msgid "Permissions"
+msgid "Couldn't set permission"
+msgstr "परवानग्या"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:54
 msgid "Advanced System Access"
@@ -245,27 +285,6 @@ msgstr "रद्द करा"
 #| msgid "Remove Selected Startup App"
 msgid "Select startup app"
 msgstr "निवडलेले स्टार्टअप अॅप काढा"
-
-#~ msgid "Home Folder"
-#~ msgstr "होम फोल्डर"
-
-#~ msgid "Devices"
-#~ msgstr "उपकरण"
-
-#~ msgid "Network"
-#~ msgstr "नेटवर्क"
-
-#~ msgid "Bluetooth"
-#~ msgstr "ब्लूटुथ"
-
-#~ msgid "Printing"
-#~ msgstr "मुद्रण"
-
-#~ msgid "Secure Shell Agent"
-#~ msgstr "सुरक्षित शेल एजंट"
-
-#~ msgid "GPU Acceleration"
-#~ msgstr "GPU प्रवेग"
 
 #~ msgid "No Flatpak apps installed"
 #~ msgstr "कोणतेही फ्लॅटपॅक अ‍ॅप्स स्थापित केलेले नाहीत"

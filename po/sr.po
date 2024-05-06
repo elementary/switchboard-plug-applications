@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-04-17 19:38+0000\n"
+"POT-Creation-Date: 2024-05-06 04:10+0000\n"
 "PO-Revision-Date: 2024-04-20 18:13+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Serbian <https://l10n.elementary.io/projects/switchboard/"
@@ -97,6 +97,46 @@ msgstr "Систем"
 #: src/Sidebar.vala:132
 msgid "Apps"
 msgstr ""
+
+#: src/Permissions/Backend/App.vala:42
+msgid "Home Folder"
+msgstr "Лична фасцикла"
+
+#: src/Permissions/Backend/App.vala:43
+#, fuzzy
+#| msgid "Home Folder"
+msgid "System Folders"
+msgstr "Лична фасцикла"
+
+#: src/Permissions/Backend/App.vala:44
+msgid "Devices"
+msgstr "Уређаји"
+
+#: src/Permissions/Backend/App.vala:45
+msgid "Network"
+msgstr "Мрежа"
+
+#: src/Permissions/Backend/App.vala:46
+msgid "Bluetooth"
+msgstr "Блутут"
+
+#: src/Permissions/Backend/App.vala:47
+msgid "Printing"
+msgstr "Штампање"
+
+#: src/Permissions/Backend/App.vala:48
+msgid "Secure Shell Agent"
+msgstr "Агент безбедне шкољке"
+
+#: src/Permissions/Backend/App.vala:49
+msgid "GPU Acceleration"
+msgstr "Убрзање графичког процесора"
+
+#: src/Permissions/Backend/PermissionStore.vala:66
+#, fuzzy
+#| msgid "Permissions"
+msgid "Couldn't set permission"
+msgstr "Овлашћења"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:54
 msgid "Advanced System Access"
@@ -249,27 +289,6 @@ msgstr "Откажи"
 #| msgid "Remove Selected Startup App"
 msgid "Select startup app"
 msgstr "Уклоните изабрани почетни програм"
-
-#~ msgid "Home Folder"
-#~ msgstr "Лична фасцикла"
-
-#~ msgid "Devices"
-#~ msgstr "Уређаји"
-
-#~ msgid "Network"
-#~ msgstr "Мрежа"
-
-#~ msgid "Bluetooth"
-#~ msgstr "Блутут"
-
-#~ msgid "Printing"
-#~ msgstr "Штампање"
-
-#~ msgid "Secure Shell Agent"
-#~ msgstr "Агент безбедне шкољке"
-
-#~ msgid "GPU Acceleration"
-#~ msgstr "Убрзање графичког процесора"
 
 #~ msgid "No Flatpak apps installed"
 #~ msgstr "Нема инсталираних Флатпак програма"
