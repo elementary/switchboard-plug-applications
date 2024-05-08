@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-06 04:10+0000\n"
-"PO-Revision-Date: 2024-04-20 18:13+0000\n"
-"Last-Translator: anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2024-05-09 20:13+0000\n"
+"Last-Translator: TomiOhl <ohlslager.tom@gmail.com>\n"
 "Language-Team: Hungarian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-applications/hu/>\n"
 "Language: hu\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.0.2\n"
+"X-Generator: Weblate 5.5\n"
 "X-Launchpad-Export-Date: 2016-11-26 05:52+0000\n"
 
 #: src/Plug.vala:44
@@ -96,17 +96,15 @@ msgstr "Rendszer"
 
 #: src/Sidebar.vala:132
 msgid "Apps"
-msgstr ""
+msgstr "Alkalmazások"
 
 #: src/Permissions/Backend/App.vala:42
 msgid "Home Folder"
 msgstr "Saját mappa"
 
 #: src/Permissions/Backend/App.vala:43
-#, fuzzy
-#| msgid "Home Folder"
 msgid "System Folders"
-msgstr "Saját mappa"
+msgstr "Rendszermappák"
 
 #: src/Permissions/Backend/App.vala:44
 msgid "Devices"
@@ -133,20 +131,21 @@ msgid "GPU Acceleration"
 msgstr "GPU gyorsítás"
 
 #: src/Permissions/Backend/PermissionStore.vala:66
-#, fuzzy
-#| msgid "%s permissions"
 msgid "Couldn't set permission"
-msgstr "%s engedélyei"
+msgstr "Nem sikerült beállítani az engedélyeket"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:54
 msgid "Advanced System Access"
-msgstr ""
+msgstr "Haladó rendszerelérés"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:56
 msgid ""
 "Access to system features can be restricted to make apps more secure, but "
 "some apps may not function properly without it"
 msgstr ""
+"A rendszerfunkciókhoz való hozzáférés korlátozva lehet az alkalmazások "
+"biztonságosabbá tétele érdekében, de néhány alkalmazás nem működik "
+"megfelelően nélküle"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:66
 msgid "Reset to Defaults"
@@ -157,27 +156,23 @@ msgid ""
 "Including all documents, downloads, music, pictures, videos, and any hidden "
 "folders."
 msgstr ""
+"Beleértve az összes dokumentumot, letöltést, zenét, képet, videót és "
+"bármelyik rejtett mappát."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:121
 msgid "Including everyone's Home folders, but not including system internals."
-msgstr ""
+msgstr "Beleértve mindenki Saját mappáját, de a rendszer belsőségeit nem."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:125
-#, fuzzy
-#| msgid ""
-#| "Access all devices, such as webcams, microphones, and connected USB "
-#| "devices."
 msgid ""
 "Manage all connected devices, such as webcams, microphones, and USB devices."
 msgstr ""
-"Az összes eszköz elérése, mint a webkamera, mikrofon és a csatlakoztatott "
+"Az összes csatlakoztatott eszköz kezelése, mint a webkamera, mikrofon és az "
 "USB-eszközök."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:129
-#, fuzzy
-#| msgid "Access the Internet and local networks."
 msgid "Connect to the Internet and local networks."
-msgstr "Az internet és a helyi hálózatok elérése."
+msgstr "Az internet és a helyi hálózatokhoz való csatlakozás."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:133
 msgid "Manage Bluetooth devices including pairing, unpairing, and discovery."
@@ -187,13 +182,11 @@ msgstr ""
 
 #: src/Permissions/Widgets/AppSettingsView.vala:137
 msgid "Manage printers and see the print queue."
-msgstr ""
+msgstr "Nyomtatók kezelése és nyomtatási sor megtekintése."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:141
-#, fuzzy
-#| msgid "Access other devices on the network via SSH."
 msgid "Connect to other devices on the network via SSH."
-msgstr "Többi készülék elérése a hálózaton keresztül SSH segítségével."
+msgstr "Csatlakozás a hálózaton lévő eszközökhöz SSH segítségével."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:145
 msgid "Accelerate graphical output."
@@ -201,11 +194,13 @@ msgstr "A grafikus kimenet gyorsítása."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:171
 msgid "Background Activity"
-msgstr ""
+msgstr "Háttértevékenységek"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:172
 msgid "Perform tasks and use system resources while its window is closed."
 msgstr ""
+"Feladatok végrehajtása és erőforrások használata akkor is, ha az ablaka be "
+"van csukva."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:182
 msgid "Location Services"
@@ -213,15 +208,15 @@ msgstr "Helymeghatározó szolgáltatások"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:183
 msgid "Determine the location of this device."
-msgstr ""
+msgstr "A készülék tartózkodási helyének meghatározása."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:196
 msgid "Screenshot"
-msgstr ""
+msgstr "Képernyőkép"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:197
 msgid "Take pictures of the display without asking first."
-msgstr ""
+msgstr "Képernyőképek készítése előzetes kérdés nélkül."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:207
 msgid "Wallpaper"
@@ -229,7 +224,7 @@ msgstr "Háttérkép"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:208
 msgid "Set the wallpaper on the desktop and lock screen."
-msgstr ""
+msgstr "A háttérkép beállítása az asztalon és a lezárási képernyőn."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:224
 #, c-format
