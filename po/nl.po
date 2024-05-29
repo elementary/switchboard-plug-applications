@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-06 04:10+0000\n"
-"PO-Revision-Date: 2024-04-30 06:13+0000\n"
-"Last-Translator: Dennis ten Hoove <dennistenhoove@protonmail.com>\n"
+"PO-Revision-Date: 2024-05-29 18:25+0000\n"
+"Last-Translator: Sven <622b1a13-49d8-4ace-bca7-48bff17b4780@unbox.at>\n"
 "Language-Team: Dutch <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-applications/nl/>\n"
 "Language: nl\n"
@@ -133,10 +133,8 @@ msgid "GPU Acceleration"
 msgstr "GPU-versnelling"
 
 #: src/Permissions/Backend/PermissionStore.vala:66
-#, fuzzy
-#| msgid "%s permissions"
 msgid "Couldn't set permission"
-msgstr "%s rechten"
+msgstr "Kon de rechten niet instellen"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:54
 msgid "Advanced System Access"
