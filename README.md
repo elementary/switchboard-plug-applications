@@ -1,7 +1,7 @@
 # Applications Settings
 [![Translation status](https://l10n.elementary.io/widgets/switchboard/-/switchboard-plug-applications/svg-badge.svg)](https://l10n.elementary.io/engage/switchboard/?utm_source=widget)
 
-![screenshot](data/screenshot.png?raw=true)
+![screenshot](data/screenshot-permissions.png?raw=true)
 
 ## Building and Installation
 
