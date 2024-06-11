@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-06 04:10+0000\n"
+"POT-Creation-Date: 2024-06-11 17:48+0000\n"
 "PO-Revision-Date: 2024-01-24 03:32+0000\n"
 "Last-Translator: NorwayFun <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <https://l10n.elementary.io/projects/switchboard/"
@@ -31,50 +31,66 @@ msgstr "ნაგულისხმები და ჩატვირთვი�
 msgid "elementary, Inc."
 msgstr "elementary, Inc."
 
-#: data/applications.metainfo.xml.in:42 data/applications.metainfo.xml.in:59
-#: data/applications.metainfo.xml.in:74 data/applications.metainfo.xml.in:89
-msgid "Minor updates:"
-msgstr "უმნიშვნელო განახლებები:"
+#: data/applications.metainfo.xml.in:42
+msgid "A Big Redesign!"
+msgstr ""
 
-#: data/applications.metainfo.xml.in:44 data/applications.metainfo.xml.in:63
-#: data/applications.metainfo.xml.in:78 data/applications.metainfo.xml.in:92
-#: data/applications.metainfo.xml.in:99 data/applications.metainfo.xml.in:106
+#: data/applications.metainfo.xml.in:44
+msgid "A new icon"
+msgstr ""
+
+#: data/applications.metainfo.xml.in:45
+msgid "Redesigned layout that makes it faster to get to app permissions"
+msgstr ""
+
+#: data/applications.metainfo.xml.in:46
+msgid ""
+"Portal permissions like Backgrounding, Location, Screenshots, and Wallpapers"
+msgstr ""
+
+#: data/applications.metainfo.xml.in:47 data/applications.metainfo.xml.in:61
+#: data/applications.metainfo.xml.in:80 data/applications.metainfo.xml.in:95
+#: data/applications.metainfo.xml.in:109
 msgid "Updated translations"
 msgstr "განახლებული თარგმანები"
 
-#: data/applications.metainfo.xml.in:55 data/applications.metainfo.xml.in:85
+#: data/applications.metainfo.xml.in:59 data/applications.metainfo.xml.in:76
+#: data/applications.metainfo.xml.in:91 data/applications.metainfo.xml.in:106
+msgid "Minor updates:"
+msgstr "უმნიშვნელო განახლებები:"
+
+#: data/applications.metainfo.xml.in:72 data/applications.metainfo.xml.in:102
 msgid "New features:"
 msgstr "ახალი ფუნქციები:"
 
-#: data/applications.metainfo.xml.in:57
+#: data/applications.metainfo.xml.in:74
 msgid "Properly handle autostart files created by the Background Portal"
 msgstr ""
 "Background Portal-ის მიერ შექმნილი ავტოგაშვების ფაილების სწორი დამუშავება"
 
-#: data/applications.metainfo.xml.in:61
+#: data/applications.metainfo.xml.in:78
 msgid "App chooser in Startup is a dialog instead of a popover"
 msgstr "ავტოჩატვირთვადი აპების ამრჩევი ახლა დიალოგია, მხტუნარას მაგიერ"
 
-#: data/applications.metainfo.xml.in:62
+#: data/applications.metainfo.xml.in:79
 msgid "Improve screen reader descriptions"
 msgstr "ეკრანის წამკითხველის აღმწერების გაუმჯობესება"
 
-#: data/applications.metainfo.xml.in:76
+#: data/applications.metainfo.xml.in:93
 msgid "Fix an issue with setting the incorrect app for certain files types"
 msgstr "ზოგიერთი ფაილის ტიპებისთვის არასწორი აპლიკაციის არჩევის გასწორება"
 
-#: data/applications.metainfo.xml.in:77
+#: data/applications.metainfo.xml.in:94
 msgid "Don't overwrite custom overrides when unnecessary"
 msgstr "თუ საჭირო არაა, ხელით შეცვლილი გადაფარვები თავზე არ გადაეწერება"
 
-#: data/applications.metainfo.xml.in:87
+#: data/applications.metainfo.xml.in:104
 msgid "Manage permissions for Flatpak apps"
 msgstr "Flatpak-ის აპების წვდომების მართვა"
 
-#: data/applications.metainfo.xml.in:91
+#: data/applications.metainfo.xml.in:108
 msgid "Show custom launcher files"
 msgstr "მორგებული გამშვების ფაილების ჩვენება"
 
-#: data/applications.metainfo.xml.in:105
-msgid "Fix issues with OnlyShowIn and Snap apps"
-msgstr "OnlyShowIn და Snap-ის პრობლემების გასწორება"
+#~ msgid "Fix issues with OnlyShowIn and Snap apps"
+#~ msgstr "OnlyShowIn და Snap-ის პრობლემების გასწორება"
