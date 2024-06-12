@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-06-11 17:48+0000\n"
-"PO-Revision-Date: 2023-06-29 16:07+0000\n"
+"PO-Revision-Date: 2024-06-12 23:16+0000\n"
 "Last-Translator: Marcin Serwin <marcin.serwin0@protonmail.com>\n"
 "Language-Team: Polish <https://l10n.elementary.io/projects/switchboard/"
 "applications-plug-extra/pl/>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.17\n"
+"X-Generator: Weblate 5.5.5\n"
 
 #: data/applications.metainfo.xml.in:10
 msgid "Applications Settings"
@@ -34,20 +34,23 @@ msgstr "elementary, Inc."
 
 #: data/applications.metainfo.xml.in:42
 msgid "A Big Redesign!"
-msgstr ""
+msgstr "Wielkie przeprojektowanie!"
 
 #: data/applications.metainfo.xml.in:44
 msgid "A new icon"
-msgstr ""
+msgstr "Nowa ikona"
 
 #: data/applications.metainfo.xml.in:45
 msgid "Redesigned layout that makes it faster to get to app permissions"
 msgstr ""
+"Przeprojektowano układ by móc szybciej dostać się do upoważnień aplikacji"
 
 #: data/applications.metainfo.xml.in:46
 msgid ""
 "Portal permissions like Backgrounding, Location, Screenshots, and Wallpapers"
 msgstr ""
+"Portale upoważnień takie jak działanie w tle, lokalizacja, zrzuty ekranu "
+"oraz tapety"
 
 #: data/applications.metainfo.xml.in:47 data/applications.metainfo.xml.in:61
 #: data/applications.metainfo.xml.in:80 data/applications.metainfo.xml.in:95
