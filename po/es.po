@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-06-11 17:48+0000\n"
-"PO-Revision-Date: 2024-06-13 08:33+0000\n"
+"PO-Revision-Date: 2024-06-13 15:29+0000\n"
 "Last-Translator: Italo Felipe Capasso Ballesteros <edwood.grant@gmail.com>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-applications/es/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 
 #: src/Plug.vala:44
 msgid "Manage default apps, startup apps, and app permissions"
-msgstr "Gestione las aplicaciones predeterminadas y de arranque y sus permisos"
+msgstr "Gestione las aplicaciones predeterminadas, de arranque y sus permisos"
 
 #: src/Plug.vala:45
 msgid "Applications"
@@ -85,8 +85,6 @@ msgid "Defaults"
 msgstr "Predeterminadas"
 
 #: src/Sidebar.vala:29 src/Sidebar.vala:43
-#, fuzzy
-#| msgid "Search Applications"
 msgid "Search Apps"
 msgstr "Buscar aplicaciones"
 
@@ -96,17 +94,15 @@ msgstr "Sistema"
 
 #: src/Sidebar.vala:132
 msgid "Apps"
-msgstr ""
+msgstr "Aplicaciones"
 
 #: src/Permissions/Backend/App.vala:42
 msgid "Home Folder"
 msgstr "Carpeta personal"
 
 #: src/Permissions/Backend/App.vala:43
-#, fuzzy
-#| msgid "Home Folder"
 msgid "System Folders"
-msgstr "Carpeta personal"
+msgstr "Carpetas del sistema"
 
 #: src/Permissions/Backend/App.vala:44
 msgid "Devices"
