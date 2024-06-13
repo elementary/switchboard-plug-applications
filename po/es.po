@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-06-11 17:48+0000\n"
-"PO-Revision-Date: 2024-06-13 15:29+0000\n"
+"PO-Revision-Date: 2024-06-13 15:50+0000\n"
 "Last-Translator: Italo Felipe Capasso Ballesteros <edwood.grant@gmail.com>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-applications/es/>\n"
@@ -17,7 +17,8 @@ msgstr ""
 
 #: src/Plug.vala:44
 msgid "Manage default apps, startup apps, and app permissions"
-msgstr "Gestione las aplicaciones predeterminadas, de arranque y sus permisos"
+msgstr ""
+"Gestione aplicaciones predeterminadas, aplicaciones de inicio y sus permisos"
 
 #: src/Plug.vala:45
 msgid "Applications"
@@ -25,7 +26,7 @@ msgstr "Aplicaciones"
 
 #: src/Plug.vala:98 src/Sidebar.vala:25 src/Startup/Startup.vala:16
 msgid "Startup"
-msgstr "Arranque"
+msgstr "Inicio"
 
 #: src/Plug.vala:99
 msgid "Default Apps"
@@ -129,79 +130,78 @@ msgid "GPU Acceleration"
 msgstr "Aceleración por GPU"
 
 #: src/Permissions/Backend/PermissionStore.vala:66
-#, fuzzy
-#| msgid "Permissions"
 msgid "Couldn't set permission"
-msgstr "Permisos"
+msgstr "No se pudo establecer permisos"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:54
 msgid "Advanced System Access"
-msgstr ""
+msgstr "Acceso avanzado del sistema"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:56
 msgid ""
 "Access to system features can be restricted to make apps more secure, but "
 "some apps may not function properly without it"
 msgstr ""
+"Se puede restringir el acceso a funciones del sistema para hacer las "
+"aplicaciones más seguras, pero es posible que algunas de ellas no funcionen "
+"correctamente"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:66
 msgid "Reset to Defaults"
-msgstr "Restablecer a valores predets."
+msgstr "Restablecer valores predeterminados"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:117
 msgid ""
 "Including all documents, downloads, music, pictures, videos, and any hidden "
 "folders."
 msgstr ""
+"Incluir todas las carpetas de documentos, descargas, música, imágenes, "
+"videos y cualquier carpeta oculta."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:121
 msgid "Including everyone's Home folders, but not including system internals."
 msgstr ""
+"Incluir las carpetas personales de todos los usuarios, pero sin incluir las "
+"carpetas internas del sistema."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:125
-#, fuzzy
-#| msgid ""
-#| "Access all devices, such as webcams, microphones, and connected USB "
-#| "devices."
 msgid ""
 "Manage all connected devices, such as webcams, microphones, and USB devices."
 msgstr ""
-"Acceso a todos los dispositivos, tales como cámaras web, micrófonos y "
-"dispositivos USB conectados."
+"Gestionar todos los dispositivos conectados, tales como cámaras web, "
+"micrófonos y dispositivos USB."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:129
-#, fuzzy
-#| msgid "Access the Internet and local networks."
 msgid "Connect to the Internet and local networks."
-msgstr "Acceso a la Internet y a las redes locales."
+msgstr "Conectarse a Internet y redes locales."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:133
 msgid "Manage Bluetooth devices including pairing, unpairing, and discovery."
 msgstr ""
-"Gestión de dispositivos Bluetooth, incluidos el emparejamiento, el "
-"desemparejamiento y la detección."
+"Gestionar dispositivos Bluetooth, incluido emparejarlos, desemparejarlos y "
+"detectarlos."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:137
 msgid "Manage printers and see the print queue."
-msgstr ""
+msgstr "Gestionar impresoras y la cola de impresión."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:141
-#, fuzzy
-#| msgid "Access other devices on the network via SSH."
 msgid "Connect to other devices on the network via SSH."
-msgstr "Acceso a otros dispositivos en la red mediante SSH."
+msgstr "Conectarse a otros dispositivos en la red mediante SSH."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:145
 msgid "Accelerate graphical output."
-msgstr "Aceleración de la salida gráfica."
+msgstr "Acelerar la salida gráfica."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:171
 msgid "Background Activity"
-msgstr ""
+msgstr "Actividad de segundo plano"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:172
 msgid "Perform tasks and use system resources while its window is closed."
 msgstr ""
+"Ejecutar tareas y utilizar recursos del sistema cuando la ventana esté "
+"cerrada."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:182
 msgid "Location Services"
@@ -209,15 +209,15 @@ msgstr "Servicio de ubicación"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:183
 msgid "Determine the location of this device."
-msgstr ""
+msgstr "Determinar la ubicación de este equipo."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:196
 msgid "Screenshot"
-msgstr ""
+msgstr "Captura de pantalla"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:197
 msgid "Take pictures of the display without asking first."
-msgstr ""
+msgstr "Tomar imágenes de las pantallas sin preguntar."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:207
 msgid "Wallpaper"
@@ -225,13 +225,12 @@ msgstr "Fondo de pantalla"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:208
 msgid "Set the wallpaper on the desktop and lock screen."
-msgstr ""
+msgstr "Establecer el fondo de pantalla y la pantalla de bloqueo."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:224
-#, fuzzy, c-format
-#| msgid "Permissions"
+#, c-format
 msgid "%s permissions"
-msgstr "Permisos"
+msgstr "Permisos de %s"
 
 #. / Translators: This is a delimiter that separates types of permissions in the sidebar description
 #: src/Permissions/Widgets/SidebarRow.vala:83
@@ -245,20 +244,20 @@ msgstr "Ejecutar aplicaciones al inicio"
 #: src/Startup/Startup.vala:25
 msgid "Add apps to the Startup list by clicking the icon in the toolbar below."
 msgstr ""
-"Añada aplicaciones a la lista de arranque pulsando el icono de la barra de "
-"herramientas siguiente."
+"Agregue aplicaciones a la lista de inicio pulsando el icono de la barra de "
+"herramientas a continuación."
 
 #: src/Startup/Startup.vala:45
 msgid "Add Startup App…"
-msgstr "Añadir aplicación al inicio…"
+msgstr "Agregar aplicación al inicio…"
 
 #: src/Startup/Backend/KeyFile.vala:99
 msgid "Custom Command"
-msgstr "Orden personalizada"
+msgstr "Comando personalizado"
 
 #: src/Startup/Widgets/AppRow.vala:46
 msgid "Remove this app from startup"
-msgstr ""
+msgstr "Quitar esta aplicación del inicio"
 
 #: src/Startup/Widgets/AppRow.vala:51
 #, c-format
@@ -271,7 +270,7 @@ msgstr "Buscar aplicaciones"
 
 #: src/Startup/Widgets/AppChooser.vala:37
 msgid "Type in a custom command"
-msgstr "Escriba una orden personalizada"
+msgstr "Escriba un comando personalizado"
 
 #: src/Startup/Widgets/AppChooser.vala:50
 msgid "Cancel"
@@ -279,10 +278,8 @@ msgstr "Cancelar"
 
 #. TRANSLATORS: This string is used by screen reader
 #: src/Startup/Widgets/AppChooser.vala:53
-#, fuzzy
-#| msgid "Remove Selected Startup App"
 msgid "Select startup app"
-msgstr "Quitar aplicación al inicio seleccionada"
+msgstr "Seleccionar aplicación de inicio"
 
 #~ msgid "No Flatpak apps installed"
 #~ msgstr "No se instaló ninguna aplicación Flatpak"
