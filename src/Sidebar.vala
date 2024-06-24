@@ -170,7 +170,9 @@ public class Applications.Sidebar : Gtk.Box {
             box.append (image);
             box.append (title_label);
 
+            accessible_role = TAB;
             child = box;
+            update_property (Gtk.AccessibleProperty.LABEL, label, -1);
         }
     }
 }

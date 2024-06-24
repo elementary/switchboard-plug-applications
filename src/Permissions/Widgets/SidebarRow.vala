@@ -29,8 +29,6 @@ public class Permissions.SidebarRow : Gtk.ListBoxRow {
     }
 
     construct {
-        hexpand = true;
-
         var image = new Gtk.Image.from_gicon (app.icon) {
             pixel_size = 32
         };
@@ -60,7 +58,10 @@ public class Permissions.SidebarRow : Gtk.ListBoxRow {
         grid.attach (title_label, 1, 0);
         grid.attach (description_revealer, 1, 1);
 
+        accessible_role = TAB;
         child = grid;
+        hexpand = true;
+        update_property (Gtk.AccessibleProperty.LABEL, app.name, -1);
 
         for (var i = 0; i < app.settings.length; i++) {
             app.settings.get (i).notify.connect (update_description);
@@ -84,9 +85,12 @@ public class Permissions.SidebarRow : Gtk.ListBoxRow {
             description_label.label = description;
             description_revealer.reveal_child = true;
             tooltip_text = description;
+
+            update_property (Gtk.AccessibleProperty.DESCRIPTION, description, -1);
         } else {
             description_revealer.reveal_child = false;
             tooltip_text = null;
+            update_property (Gtk.AccessibleProperty.DESCRIPTION, null, -1);
         }
     }
 }

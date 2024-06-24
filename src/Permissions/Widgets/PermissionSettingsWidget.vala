@@ -20,9 +20,9 @@
 */
 
 public class Permissions.Widgets.PermissionSettingsWidget : Gtk.ListBoxRow {
-    public string description { get; construct set; }
-    public string icon_name { get; construct set; }
-    public string primary_text { get; construct set; }
+    public string description { get; construct; }
+    public string icon_name { get; construct; }
+    public string primary_text { get; construct; }
 
     public bool active { get; set; }
 
@@ -64,8 +64,20 @@ public class Permissions.Widgets.PermissionSettingsWidget : Gtk.ListBoxRow {
         grid.attach (description_label, 1, 1);
         grid.attach (allow_switch, 2, 0, 1, 2);
 
+        accessible_role = SWITCH;
         child = grid;
 
+        update_property (
+            Gtk.AccessibleProperty.LABEL, primary_text,
+            Gtk.AccessibleProperty.DESCRIPTION, description,
+            -1
+        );
+
         bind_property ("active", allow_switch, "active", BIDIRECTIONAL);
+
+        update_state (Gtk.AccessibleState.CHECKED, active, -1);
+        notify["active"].connect (() => {
+            update_state (Gtk.AccessibleState.CHECKED, active, -1);
+        });
     }
 }
