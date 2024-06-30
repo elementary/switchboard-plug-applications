@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-06-11 17:48+0000\n"
-"PO-Revision-Date: 2023-10-16 18:10+0000\n"
+"PO-Revision-Date: 2024-07-01 13:16+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/switchboard/"
 "applications-plug-extra/uk/>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 5.0.2\n"
+"X-Generator: Weblate 5.5.5\n"
 
 #: data/applications.metainfo.xml.in:10
 msgid "Applications Settings"
@@ -34,20 +34,20 @@ msgstr "elementary, Inc."
 
 #: data/applications.metainfo.xml.in:42
 msgid "A Big Redesign!"
-msgstr ""
+msgstr "Великий редизайн!"
 
 #: data/applications.metainfo.xml.in:44
 msgid "A new icon"
-msgstr ""
+msgstr "Нова піктограма"
 
 #: data/applications.metainfo.xml.in:45
 msgid "Redesigned layout that makes it faster to get to app permissions"
-msgstr ""
+msgstr "Перероблений макет, який пришвидшує доступ до дозволів для застосунку"
 
 #: data/applications.metainfo.xml.in:46
 msgid ""
 "Portal permissions like Backgrounding, Location, Screenshots, and Wallpapers"
-msgstr ""
+msgstr "Дозволи порталу, такі як тло, розташування, знімки екрана та шпалери"
 
 #: data/applications.metainfo.xml.in:47 data/applications.metainfo.xml.in:61
 #: data/applications.metainfo.xml.in:80 data/applications.metainfo.xml.in:95
