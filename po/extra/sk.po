@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-06-11 17:48+0000\n"
-"PO-Revision-Date: 2021-11-30 16:52+0000\n"
+"PO-Revision-Date: 2024-07-11 08:16+0000\n"
 "Last-Translator: JohnDumpling <john_dumpling@protonmail.com>\n"
 "Language-Team: Slovak <https://l10n.elementary.io/projects/switchboard/"
 "applications-plug-extra/sk/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 5.6.2\n"
 
 #: data/applications.metainfo.xml.in:10
 msgid "Applications Settings"
@@ -29,11 +29,11 @@ msgstr "Spravujte predvolené aplikácie a aplikácie pri spúšťaní systému"
 
 #: data/applications.metainfo.xml.in:34
 msgid "elementary, Inc."
-msgstr ""
+msgstr "elementary, Inc."
 
 #: data/applications.metainfo.xml.in:42
 msgid "A Big Redesign!"
-msgstr ""
+msgstr "Veľký redizajn!"
 
 #: data/applications.metainfo.xml.in:44
 msgid "A new icon"
