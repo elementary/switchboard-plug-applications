@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-06-11 17:48+0000\n"
-"PO-Revision-Date: 2021-08-27 08:04+0000\n"
-"Last-Translator: Adolfo Jayme Barrientos <fitojb@ubuntu.com>\n"
+"PO-Revision-Date: 2024-06-13 17:16+0000\n"
+"Last-Translator: Italo Felipe Capasso Ballesteros <edwood.grant@gmail.com>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/switchboard/"
 "applications-plug-extra/es/>\n"
 "Language: es\n"
@@ -17,36 +17,40 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 5.5.5\n"
 
 #: data/applications.metainfo.xml.in:10
 msgid "Applications Settings"
-msgstr "Configuración de aplicaciones"
+msgstr "Configuración de Aplicaciones"
 
 #: data/applications.metainfo.xml.in:11
 msgid "Manage default and startup applications"
-msgstr "Gestione las aplicaciones predeterminadas y de arranque"
+msgstr "Gestione las aplicaciones predeterminadas y de inicio"
 
 #: data/applications.metainfo.xml.in:34
 msgid "elementary, Inc."
-msgstr ""
+msgstr "elementary, Inc."
 
 #: data/applications.metainfo.xml.in:42
 msgid "A Big Redesign!"
-msgstr ""
+msgstr "¡Se ha rediseñado completamente!"
 
 #: data/applications.metainfo.xml.in:44
 msgid "A new icon"
-msgstr ""
+msgstr "Con un nuevo icono de aplicación"
 
 #: data/applications.metainfo.xml.in:45
 msgid "Redesigned layout that makes it faster to get to app permissions"
 msgstr ""
+"Con una disposición rediseñada que hace más fácil acceder a los permisos de "
+"la aplicación"
 
 #: data/applications.metainfo.xml.in:46
 msgid ""
 "Portal permissions like Backgrounding, Location, Screenshots, and Wallpapers"
 msgstr ""
+"Administración de permisos en portales tales como segundo plano, ubicación, "
+"capturas de pantalla y fondos de escritorio"
 
 #: data/applications.metainfo.xml.in:47 data/applications.metainfo.xml.in:61
 #: data/applications.metainfo.xml.in:80 data/applications.metainfo.xml.in:95
@@ -61,35 +65,43 @@ msgstr "Actualizaciones menores:"
 
 #: data/applications.metainfo.xml.in:72 data/applications.metainfo.xml.in:102
 msgid "New features:"
-msgstr "Funcionalidades nuevas:"
+msgstr "Nuevas características:"
 
 #: data/applications.metainfo.xml.in:74
 msgid "Properly handle autostart files created by the Background Portal"
 msgstr ""
+"Ahora se manejan adecuadamente los archivos creados al inicio del portal de "
+"Fondo"
 
 #: data/applications.metainfo.xml.in:78
 msgid "App chooser in Startup is a dialog instead of a popover"
 msgstr ""
+"La vista de escoger aplicación se hace a través de un cuadro de diálogo y no "
+"un cuadro emergente"
 
 #: data/applications.metainfo.xml.in:79
 msgid "Improve screen reader descriptions"
-msgstr ""
+msgstr "Se mejoraron las descripciones para los lectores de pantalla"
 
 #: data/applications.metainfo.xml.in:93
 msgid "Fix an issue with setting the incorrect app for certain files types"
 msgstr ""
+"Se corrigió un problema que establecía la aplicación errónea para ciertos "
+"tipos de archivo"
 
 #: data/applications.metainfo.xml.in:94
 msgid "Don't overwrite custom overrides when unnecessary"
 msgstr ""
+"Ya no se sobreescriben configuraciones personalizadas si no es necesario"
 
 #: data/applications.metainfo.xml.in:104
 msgid "Manage permissions for Flatpak apps"
-msgstr ""
+msgstr "Ahora se pueden gestionar permisos para aplicaciones Flatpak"
 
 #: data/applications.metainfo.xml.in:108
 msgid "Show custom launcher files"
 msgstr ""
+"Ahora se muestran los archivos de lanzadores de aplicaciones personalizados"
 
 #~ msgid "Fix issues with OnlyShowIn and Snap apps"
 #~ msgstr "Corrección de problemas con OnlyShowIn y las aplicaciones snap"

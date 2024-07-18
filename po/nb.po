@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-06-11 17:48+0000\n"
-"PO-Revision-Date: 2024-04-20 18:13+0000\n"
-"Last-Translator: anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2024-06-16 21:16+0000\n"
+"Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål <https://l10n.elementary.io/projects/"
 "switchboard/switchboard-plug-applications/nb/>\n"
 "Language: nb\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.0.2\n"
+"X-Generator: Weblate 5.5.5\n"
 "X-Launchpad-Export-Date: 2016-11-26 05:52+0000\n"
 
 #: src/Plug.vala:44
@@ -98,7 +98,7 @@ msgstr "System"
 
 #: src/Sidebar.vala:132
 msgid "Apps"
-msgstr ""
+msgstr "Programmer"
 
 #: src/Permissions/Backend/App.vala:42
 msgid "Home Folder"
@@ -143,27 +143,34 @@ msgstr "%s tilganger"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:54
 msgid "Advanced System Access"
-msgstr ""
+msgstr "Avansert systemtilgang"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:56
+#, fuzzy
 msgid ""
 "Access to system features can be restricted to make apps more secure, but "
 "some apps may not function properly without it"
 msgstr ""
+"Tilgang til systemfunksjoner kan begrenses for å gjøre programmer sikrere, "
+"men noen programmer kan ikke fungere slik de skal uten."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:66
 msgid "Reset to Defaults"
 msgstr "Tilbakestill til forvalg"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:117
+#, fuzzy
 msgid ""
 "Including all documents, downloads, music, pictures, videos, and any hidden "
 "folders."
 msgstr ""
+"Inkluderer alle dokumenter, nedlastninger, musikk, bilder, videoer, og "
+"skjulte mapper deri."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:121
+#, fuzzy
 msgid "Including everyone's Home folders, but not including system internals."
-msgstr ""
+msgstr "Inkluderes alle hjemmemapper, men ikke systemfiler."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:125
 #, fuzzy
@@ -187,8 +194,9 @@ msgid "Manage Bluetooth devices including pairing, unpairing, and discovery."
 msgstr "Håndter Blåtannsenheter, inkludert parring, opphevelse, og oppdagelse."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:137
+#, fuzzy
 msgid "Manage printers and see the print queue."
-msgstr ""
+msgstr "Håndter skrivere og vis skriverkøen."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:141
 #, fuzzy
@@ -203,11 +211,12 @@ msgstr "Akselerer grafikk."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:171
 msgid "Background Activity"
-msgstr ""
+msgstr "Bakgrunnsaktivitet"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:172
+#, fuzzy
 msgid "Perform tasks and use system resources while its window is closed."
-msgstr ""
+msgstr "Utfør oppgaver og bruk systemressurser mens vinduet dets er lukket."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:182
 msgid "Location Services"
@@ -215,23 +224,24 @@ msgstr "Posisjonstjenester"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:183
 msgid "Determine the location of this device."
-msgstr ""
+msgstr "Finn ut hvor enheten befinner seg."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:196
 msgid "Screenshot"
-msgstr ""
+msgstr "Skjermavbildning"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:197
 msgid "Take pictures of the display without asking first."
-msgstr ""
+msgstr "Ta bilde av skjermen uten å spørre først."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:207
 msgid "Wallpaper"
 msgstr "Bakgrunnsbilde"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:208
+#, fuzzy
 msgid "Set the wallpaper on the desktop and lock screen."
-msgstr ""
+msgstr "Sett bakgrunnsbilde på skrivebordet og lås skjermen."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:224
 #, fuzzy, c-format
