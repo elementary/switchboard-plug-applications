@@ -1,3 +1,9 @@
+io.elementary.settings.applications (8.0.0) noble; urgency=medium
+
+  * Release 8.0.0
+
+ -- Danielle Foré <danielle@elementary.io>  Fri, 26 Jul 2024 10:24:29 -0700
+
 io.elementary.settings.applications (7.0.1) jammy; urgency=medium
 
   * New upstream release
