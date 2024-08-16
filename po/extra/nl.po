@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-06-11 17:48+0000\n"
-"PO-Revision-Date: 2024-06-27 19:16+0000\n"
+"PO-Revision-Date: 2024-08-17 10:16+0000\n"
 "Last-Translator: DutchVipperloid <svenroelof@e.email>\n"
 "Language-Team: Dutch <https://l10n.elementary.io/projects/switchboard/"
 "applications-plug-extra/nl/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.5.5\n"
+"X-Generator: Weblate 5.6.2\n"
 
 #: data/applications.metainfo.xml.in:10
 msgid "Applications Settings"
@@ -61,7 +61,7 @@ msgstr "Kleine updates:"
 
 #: data/applications.metainfo.xml.in:72 data/applications.metainfo.xml.in:102
 msgid "New features:"
-msgstr "Nieuwe functies:"
+msgstr "Nieuwe functionaliteit:"
 
 #: data/applications.metainfo.xml.in:74
 msgid "Properly handle autostart files created by the Background Portal"
