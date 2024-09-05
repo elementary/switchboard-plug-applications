@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-06-11 17:48+0000\n"
-"PO-Revision-Date: 2024-09-02 05:42+0000\n"
+"PO-Revision-Date: 2024-09-05 21:13+0000\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Chinese (Traditional) <https://l10n.elementary.io/projects/"
 "switchboard/switchboard-plug-applications/zh_Hant/>\n"
@@ -37,11 +37,11 @@ msgstr "權限"
 
 #: src/Plug.vala:101
 msgid "Sandboxing"
-msgstr "g8ck"
+msgstr "沙盒"
 
 #: src/Plug.vala:102
 msgid "Confinement"
-msgstr ""
+msgstr "限制"
 
 #: src/Plug.vala:103 src/Plug.vala:104 src/Plug.vala:105 src/Plug.vala:106
 #: src/Plug.vala:107 src/Plug.vala:108 src/Plug.vala:109 src/Plug.vala:110
@@ -114,7 +114,7 @@ msgstr "網路"
 
 #: src/Permissions/Backend/App.vala:46
 msgid "Bluetooth"
-msgstr "藍芽"
+msgstr "藍牙"
 
 #: src/Permissions/Backend/App.vala:47
 msgid "Printing"
@@ -140,7 +140,8 @@ msgstr "進階系統存取"
 msgid ""
 "Access to system features can be restricted to make apps more secure, but "
 "some apps may not function properly without it"
-msgstr ""
+msgstr "限制應用程式對系統功能的存取能夠讓應用程式更安全，但某些應用程式在不能存取系"
+"統功能時可能無法正常運作"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:66
 msgid "Reset to Defaults"
@@ -150,36 +151,36 @@ msgstr "重設預設值"
 msgid ""
 "Including all documents, downloads, music, pictures, videos, and any hidden "
 "folders."
-msgstr ""
+msgstr "包含所有文件、下載、音樂、圖片、影片及所有隱藏資料夾。"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:121
 msgid "Including everyone's Home folders, but not including system internals."
-msgstr ""
+msgstr "包含所有人的家目錄，但不包含系統內部資源。"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:125
 msgid ""
 "Manage all connected devices, such as webcams, microphones, and USB devices."
-msgstr ""
+msgstr "管理所有已連接的裝置，像是網路攝影機、麥克風和 USB 裝置。"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:129
 msgid "Connect to the Internet and local networks."
-msgstr ""
+msgstr "連線到網際網路和區域網路。"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:133
 msgid "Manage Bluetooth devices including pairing, unpairing, and discovery."
-msgstr ""
+msgstr "允許管理藍牙裝置，包含配對、解除配對以及探查。"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:137
 msgid "Manage printers and see the print queue."
-msgstr ""
+msgstr "管理印表機並檢視列印佇列。"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:141
 msgid "Connect to other devices on the network via SSH."
-msgstr ""
+msgstr "透過 SSH 連接到網路上的別的裝置。"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:145
 msgid "Accelerate graphical output."
-msgstr ""
+msgstr "加速圖形輸出。"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:171
 msgid "Background Activity"
@@ -187,7 +188,7 @@ msgstr "背景活動"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:172
 msgid "Perform tasks and use system resources while its window is closed."
-msgstr ""
+msgstr "視窗關閉時進行作業並使用系統資源。"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:182
 msgid "Location Services"
@@ -195,7 +196,7 @@ msgstr "位置服務"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:183
 msgid "Determine the location of this device."
-msgstr ""
+msgstr "判定這台裝置的位置資訊。"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:196
 msgid "Screenshot"
@@ -203,7 +204,7 @@ msgstr "畫面快照"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:197
 msgid "Take pictures of the display without asking first."
-msgstr ""
+msgstr "不用先詢問就能擷取顯示器的圖片。"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:207
 msgid "Wallpaper"
@@ -211,7 +212,7 @@ msgstr "桌布"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:208
 msgid "Set the wallpaper on the desktop and lock screen."
-msgstr "設定桌面與鎖定畫面的桌布"
+msgstr "設定桌面與鎖定畫面的桌布。"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:224
 #, c-format
