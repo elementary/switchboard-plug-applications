@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-06-11 17:48+0000\n"
-"PO-Revision-Date: 2024-09-02 05:42+0000\n"
+"PO-Revision-Date: 2024-09-19 10:09+0000\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Chinese (Traditional) <https://l10n.elementary.io/projects/"
 "switchboard/applications-plug-extra/zh_Hant/>\n"
@@ -65,7 +65,7 @@ msgstr "新功能："
 
 #: data/applications.metainfo.xml.in:74
 msgid "Properly handle autostart files created by the Background Portal"
-msgstr "正確處理 Background Portal 所建立的自動啟動檔案"
+msgstr "正確處理《背景桌面入口》所建立的自動啟動檔案"
 
 #: data/applications.metainfo.xml.in:78
 msgid "App chooser in Startup is a dialog instead of a popover"
