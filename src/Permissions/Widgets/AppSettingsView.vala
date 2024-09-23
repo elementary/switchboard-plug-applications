@@ -26,6 +26,8 @@ public class Permissions.Widgets.AppSettingsView : Switchboard.SettingsPage {
     private const string BACKGROUND_ID = "background";
     private const string LOCATION_TABLE = "location";
     private const string LOCATION_ID = "location";
+    private const string NOTIFICATIONS_TABLE = "notifications";
+    private const string NOTIFICATION_ID = "notification";
     private const string SCREENSHOT_TABLE = "screenshot";
     private const string SCREENSHOT_ID = "screenshot";
     private const string WALLPAPER_TABLE = "wallpaper";
@@ -37,6 +39,7 @@ public class Permissions.Widgets.AppSettingsView : Switchboard.SettingsPage {
     private Gtk.ListBox permission_box;
     private Gtk.Button reset_button;
     private PermissionSettingsWidget background_row;
+    private PermissionSettingsWidget notifications_row;
     private PermissionSettingsWidget location_row;
     private PermissionSettingsWidget screenshot_row;
     private PermissionSettingsWidget wallpaper_row;
@@ -193,6 +196,17 @@ public class Permissions.Widgets.AppSettingsView : Switchboard.SettingsPage {
             permission_store.set_permission (LOCATION_TABLE, LOCATION_ID, selected_app.id, permissions);
         });
 
+        notifications_row = new PermissionSettingsWidget (
+            _("Notications"),
+            _("Send notification bubbles that may play sound and appear in Notification Center."),
+            "preferences-system-notifications"
+        );
+
+        notifications_row.notify["active"].connect (() => {
+            string[] permissions = { notifications_row.active ? "yes" : "no" };
+            permission_store.set_permission (NOTIFICATIONS_TABLE, NOTIFICATION_ID, selected_app.id, permissions);
+        });
+
         screenshot_row = new PermissionSettingsWidget (
             _("Screenshot"),
             _("Take pictures of the display without asking first."),
@@ -254,6 +268,15 @@ public class Permissions.Widgets.AppSettingsView : Switchboard.SettingsPage {
 
             if (location_row.parent == null) {
                 permission_box.append (location_row);
+            }
+        }
+
+        var notifications_permission = yield permission_store.get_permission (NOTIFICATIONS_TABLE, NOTIFICATION_ID, selected_app.id);
+        if (notifications_permission[0] != null) {
+            notifications_row.active = notifications_permission[0] == "yes";
+
+            if (notifications_row.parent == null) {
+                permission_box.append (notifications_row);
             }
         }
 
