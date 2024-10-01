@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-06-11 17:48+0000\n"
-"PO-Revision-Date: 2021-12-22 21:50+0000\n"
-"Last-Translator: Özgür Baskin <queeup@zoho.com>\n"
+"PO-Revision-Date: 2024-09-21 10:16+0000\n"
+"Last-Translator: Sinan Decron <sinanveyasinan@gmail.com>\n"
 "Language-Team: Turkish <https://l10n.elementary.io/projects/switchboard/"
 "applications-plug-extra/tr/>\n"
 "Language: tr\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 5.6.2\n"
 
 #: data/applications.metainfo.xml.in:10
 msgid "Applications Settings"
@@ -29,24 +29,26 @@ msgstr "Varsayılan ve başlangıç uygulamalarını yönetin"
 
 #: data/applications.metainfo.xml.in:34
 msgid "elementary, Inc."
-msgstr ""
+msgstr "elementary, Inc."
 
 #: data/applications.metainfo.xml.in:42
 msgid "A Big Redesign!"
-msgstr ""
+msgstr "Büyük Bir Yeniden Tasarım!"
 
 #: data/applications.metainfo.xml.in:44
 msgid "A new icon"
-msgstr ""
+msgstr "Yeni bir simge"
 
 #: data/applications.metainfo.xml.in:45
 msgid "Redesigned layout that makes it faster to get to app permissions"
 msgstr ""
+"Uygulama izinlerine daha hızlı ulaşmayı sağlayan yeniden tasarlanmış düzen"
 
 #: data/applications.metainfo.xml.in:46
 msgid ""
 "Portal permissions like Backgrounding, Location, Screenshots, and Wallpapers"
 msgstr ""
+"Arka Plan, Konum, Ekran Görüntüleri ve Duvar Kağıtları gibi portal izinleri"
 
 #: data/applications.metainfo.xml.in:47 data/applications.metainfo.xml.in:61
 #: data/applications.metainfo.xml.in:80 data/applications.metainfo.xml.in:95
@@ -66,22 +68,25 @@ msgstr "Yeni özellikler:"
 #: data/applications.metainfo.xml.in:74
 msgid "Properly handle autostart files created by the Background Portal"
 msgstr ""
+"Arka Plan Portalı tarafından oluşturulan otomatik başlatma dosyalarını uygun "
+"şekilde işle"
 
 #: data/applications.metainfo.xml.in:78
 msgid "App chooser in Startup is a dialog instead of a popover"
 msgstr ""
+"Başlangıçtaki uygulama seçici, açılır pencere yerine bir iletişim kutusu"
 
 #: data/applications.metainfo.xml.in:79
 msgid "Improve screen reader descriptions"
-msgstr ""
+msgstr "İyileştirilmiş ekran okuyucu açıklamaları"
 
 #: data/applications.metainfo.xml.in:93
 msgid "Fix an issue with setting the incorrect app for certain files types"
-msgstr ""
+msgstr "Belirli dosya türleri için yanlış uygulamayı ayarlama sorunu düzeltildi"
 
 #: data/applications.metainfo.xml.in:94
 msgid "Don't overwrite custom overrides when unnecessary"
-msgstr ""
+msgstr "Gerekmediğinde özel geçersiz kılmaların yeniden üzerine yazma"
 
 #: data/applications.metainfo.xml.in:104
 msgid "Manage permissions for Flatpak apps"

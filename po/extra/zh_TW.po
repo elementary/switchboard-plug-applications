@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-06-11 17:48+0000\n"
-"PO-Revision-Date: 2020-03-01 14:09+0000\n"
-"Last-Translator: Cheng-Chia Tseng <pswo10680@gmail.com>\n"
+"PO-Revision-Date: 2024-09-19 10:09+0000\n"
+"Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Chinese (Traditional) <https://l10n.elementary.io/projects/"
 "switchboard/applications-plug-extra/zh_Hant/>\n"
 "Language: zh_TW\n"
@@ -17,13 +17,11 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 5.6.2\n"
 
 #: data/applications.metainfo.xml.in:10
-#, fuzzy
-#| msgid "Applications"
 msgid "Applications Settings"
-msgstr "應用程式"
+msgstr "應用程式設定"
 
 #: data/applications.metainfo.xml.in:11
 msgid "Manage default and startup applications"
@@ -31,24 +29,24 @@ msgstr "管理預設與初始啟動應用程式"
 
 #: data/applications.metainfo.xml.in:34
 msgid "elementary, Inc."
-msgstr ""
+msgstr "elementary, Inc."
 
 #: data/applications.metainfo.xml.in:42
 msgid "A Big Redesign!"
-msgstr ""
+msgstr "大幅重新設計！"
 
 #: data/applications.metainfo.xml.in:44
 msgid "A new icon"
-msgstr ""
+msgstr "新圖示"
 
 #: data/applications.metainfo.xml.in:45
 msgid "Redesigned layout that makes it faster to get to app permissions"
-msgstr ""
+msgstr "重新設計佈局讓開啟應用程式權限設定更快"
 
 #: data/applications.metainfo.xml.in:46
 msgid ""
 "Portal permissions like Backgrounding, Location, Screenshots, and Wallpapers"
-msgstr ""
+msgstr "背景執行、地理位置、畫面快照與桌布等入口權限"
 
 #: data/applications.metainfo.xml.in:47 data/applications.metainfo.xml.in:61
 #: data/applications.metainfo.xml.in:80 data/applications.metainfo.xml.in:95
@@ -59,39 +57,39 @@ msgstr "翻譯更新"
 #: data/applications.metainfo.xml.in:59 data/applications.metainfo.xml.in:76
 #: data/applications.metainfo.xml.in:91 data/applications.metainfo.xml.in:106
 msgid "Minor updates:"
-msgstr ""
+msgstr "小型更新："
 
 #: data/applications.metainfo.xml.in:72 data/applications.metainfo.xml.in:102
 msgid "New features:"
-msgstr ""
+msgstr "新功能："
 
 #: data/applications.metainfo.xml.in:74
 msgid "Properly handle autostart files created by the Background Portal"
-msgstr ""
+msgstr "正確處理《背景桌面入口》所建立的自動啟動檔案"
 
 #: data/applications.metainfo.xml.in:78
 msgid "App chooser in Startup is a dialog instead of a popover"
-msgstr ""
+msgstr "初始啟動的應用程式選取工具現在是對話框而非 popover"
 
 #: data/applications.metainfo.xml.in:79
 msgid "Improve screen reader descriptions"
-msgstr ""
+msgstr "改善螢幕閱讀器描述"
 
 #: data/applications.metainfo.xml.in:93
 msgid "Fix an issue with setting the incorrect app for certain files types"
-msgstr ""
+msgstr "修正為某些檔案類型設定錯誤的應用程式的問題"
 
 #: data/applications.metainfo.xml.in:94
 msgid "Don't overwrite custom overrides when unnecessary"
-msgstr ""
+msgstr "不需要時不要覆寫自訂的 override"
 
 #: data/applications.metainfo.xml.in:104
 msgid "Manage permissions for Flatpak apps"
-msgstr ""
+msgstr "管理 Flatpak 應用程式的權限"
 
 #: data/applications.metainfo.xml.in:108
 msgid "Show custom launcher files"
-msgstr ""
+msgstr "顯示自訂啟動器檔案"
 
 #~ msgid "Fix issues with OnlyShowIn and Snap apps"
 #~ msgstr "修正 OnlyShowIn 和 Snap 程式的相關問題"
