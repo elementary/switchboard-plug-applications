@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-11 17:48+0000\n"
+"POT-Creation-Date: 2024-10-03 16:19+0000\n"
 "PO-Revision-Date: 2024-05-09 20:13+0000\n"
 "Last-Translator: TomiOhl <ohlslager.tom@gmail.com>\n"
 "Language-Team: Hungarian <https://l10n.elementary.io/projects/switchboard/"
@@ -134,11 +134,11 @@ msgstr "GPU gyorsítás"
 msgid "Couldn't set permission"
 msgstr "Nem sikerült beállítani az engedélyeket"
 
-#: src/Permissions/Widgets/AppSettingsView.vala:54
+#: src/Permissions/Widgets/AppSettingsView.vala:64
 msgid "Advanced System Access"
 msgstr "Haladó rendszerelérés"
 
-#: src/Permissions/Widgets/AppSettingsView.vala:56
+#: src/Permissions/Widgets/AppSettingsView.vala:67
 msgid ""
 "Access to system features can be restricted to make apps more secure, but "
 "some apps may not function properly without it"
@@ -147,11 +147,11 @@ msgstr ""
 "biztonságosabbá tétele érdekében, de néhány alkalmazás nem működik "
 "megfelelően nélküle"
 
-#: src/Permissions/Widgets/AppSettingsView.vala:66
+#: src/Permissions/Widgets/AppSettingsView.vala:70
 msgid "Reset to Defaults"
 msgstr "Alapértelmezettek visszaállítása"
 
-#: src/Permissions/Widgets/AppSettingsView.vala:117
+#: src/Permissions/Widgets/AppSettingsView.vala:121
 msgid ""
 "Including all documents, downloads, music, pictures, videos, and any hidden "
 "folders."
@@ -159,80 +159,92 @@ msgstr ""
 "Beleértve az összes dokumentumot, letöltést, zenét, képet, videót és "
 "bármelyik rejtett mappát."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:121
+#: src/Permissions/Widgets/AppSettingsView.vala:125
 msgid "Including everyone's Home folders, but not including system internals."
 msgstr "Beleértve mindenki Saját mappáját, de a rendszer belsőségeit nem."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:125
+#: src/Permissions/Widgets/AppSettingsView.vala:129
 msgid ""
 "Manage all connected devices, such as webcams, microphones, and USB devices."
 msgstr ""
 "Az összes csatlakoztatott eszköz kezelése, mint a webkamera, mikrofon és az "
 "USB-eszközök."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:129
+#: src/Permissions/Widgets/AppSettingsView.vala:133
 msgid "Connect to the Internet and local networks."
 msgstr "Az internet és a helyi hálózatokhoz való csatlakozás."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:133
+#: src/Permissions/Widgets/AppSettingsView.vala:137
 msgid "Manage Bluetooth devices including pairing, unpairing, and discovery."
 msgstr ""
 "Bluetooth-eszközök kezelése, beleértve a párosítást és annak törlését, "
 "valamint a felfedezést."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:137
+#: src/Permissions/Widgets/AppSettingsView.vala:141
 msgid "Manage printers and see the print queue."
 msgstr "Nyomtatók kezelése és nyomtatási sor megtekintése."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:141
+#: src/Permissions/Widgets/AppSettingsView.vala:145
 msgid "Connect to other devices on the network via SSH."
 msgstr "Csatlakozás a hálózaton lévő eszközökhöz SSH segítségével."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:145
+#: src/Permissions/Widgets/AppSettingsView.vala:149
 msgid "Accelerate graphical output."
 msgstr "A grafikus kimenet gyorsítása."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:171
+#: src/Permissions/Widgets/AppSettingsView.vala:175
 msgid "Background Activity"
 msgstr "Háttértevékenységek"
 
-#: src/Permissions/Widgets/AppSettingsView.vala:172
+#: src/Permissions/Widgets/AppSettingsView.vala:176
 msgid "Perform tasks and use system resources while its window is closed."
 msgstr ""
 "Feladatok végrehajtása és erőforrások használata akkor is, ha az ablaka be "
 "van csukva."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:182
+#: src/Permissions/Widgets/AppSettingsView.vala:186
 msgid "Location Services"
 msgstr "Helymeghatározó szolgáltatások"
 
-#: src/Permissions/Widgets/AppSettingsView.vala:183
+#: src/Permissions/Widgets/AppSettingsView.vala:187
 msgid "Determine the location of this device."
 msgstr "A készülék tartózkodási helyének meghatározása."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:196
+#: src/Permissions/Widgets/AppSettingsView.vala:200
+#, fuzzy
+#| msgid "Applications"
+msgid "Notications"
+msgstr "Alkalmazások"
+
+#: src/Permissions/Widgets/AppSettingsView.vala:201
+msgid ""
+"Send notification bubbles that may play sound and appear in Notification "
+"Center."
+msgstr ""
+
+#: src/Permissions/Widgets/AppSettingsView.vala:211
 msgid "Screenshot"
 msgstr "Képernyőkép"
 
-#: src/Permissions/Widgets/AppSettingsView.vala:197
+#: src/Permissions/Widgets/AppSettingsView.vala:212
 msgid "Take pictures of the display without asking first."
 msgstr "Képernyőképek készítése előzetes kérdés nélkül."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:207
+#: src/Permissions/Widgets/AppSettingsView.vala:222
 msgid "Wallpaper"
 msgstr "Háttérkép"
 
-#: src/Permissions/Widgets/AppSettingsView.vala:208
+#: src/Permissions/Widgets/AppSettingsView.vala:223
 msgid "Set the wallpaper on the desktop and lock screen."
 msgstr "A háttérkép beállítása az asztalon és a lezárási képernyőn."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:224
+#: src/Permissions/Widgets/AppSettingsView.vala:239
 #, c-format
 msgid "%s permissions"
 msgstr "%s engedélyei"
 
 #. / Translators: This is a delimiter that separates types of permissions in the sidebar description
-#: src/Permissions/Widgets/SidebarRow.vala:83
+#: src/Permissions/Widgets/SidebarRow.vala:84
 msgid ", "
 msgstr ", "
 

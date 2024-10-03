@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-11 17:48+0000\n"
+"POT-Creation-Date: 2024-10-03 16:19+0000\n"
 "PO-Revision-Date: 2024-05-12 12:13+0000\n"
 "Last-Translator: Marcin Serwin <marcin.serwin0@protonmail.com>\n"
 "Language-Team: Polish <https://l10n.elementary.io/projects/switchboard/"
@@ -133,11 +133,11 @@ msgstr "Akceleracja sprzętowa"
 msgid "Couldn't set permission"
 msgstr "Nie udał się ustawić uprawnień"
 
-#: src/Permissions/Widgets/AppSettingsView.vala:54
+#: src/Permissions/Widgets/AppSettingsView.vala:64
 msgid "Advanced System Access"
 msgstr "Zaawansowany dostęp do systemu"
 
-#: src/Permissions/Widgets/AppSettingsView.vala:56
+#: src/Permissions/Widgets/AppSettingsView.vala:67
 msgid ""
 "Access to system features can be restricted to make apps more secure, but "
 "some apps may not function properly without it"
@@ -145,11 +145,11 @@ msgstr ""
 "Dostęp do funkcji systemu może być ograniczony by uczynić aplikacje "
 "bezpieczniejszymi, jednak niektóre z nich mogą przez to nie działać poprawnie"
 
-#: src/Permissions/Widgets/AppSettingsView.vala:66
+#: src/Permissions/Widgets/AppSettingsView.vala:70
 msgid "Reset to Defaults"
 msgstr "Przywróć ustawienia domyślne"
 
-#: src/Permissions/Widgets/AppSettingsView.vala:117
+#: src/Permissions/Widgets/AppSettingsView.vala:121
 msgid ""
 "Including all documents, downloads, music, pictures, videos, and any hidden "
 "folders."
@@ -157,82 +157,94 @@ msgstr ""
 "Włączając w to wszystkie dokumenty, pobrane pliki, muzykę, zdjęcia, filmy "
 "oraz wszystkie ukryte foldery."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:121
+#: src/Permissions/Widgets/AppSettingsView.vala:125
 msgid "Including everyone's Home folders, but not including system internals."
 msgstr ""
 "Włączając w to foldery domowe wszystkich użytkowników, ale nie pliki "
 "systemowe."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:125
+#: src/Permissions/Widgets/AppSettingsView.vala:129
 msgid ""
 "Manage all connected devices, such as webcams, microphones, and USB devices."
 msgstr ""
 "Zarządzanie wszystkimi urządzeniami takimi jak kamery internetowe, mikrofony "
 "i urządzenia USB."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:129
+#: src/Permissions/Widgets/AppSettingsView.vala:133
 msgid "Connect to the Internet and local networks."
 msgstr "Łączenie się z Internetem i sieciami lokalnymi."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:133
+#: src/Permissions/Widgets/AppSettingsView.vala:137
 msgid "Manage Bluetooth devices including pairing, unpairing, and discovery."
 msgstr ""
 "Zarządzaj urządzeniami Bluetooth, włączając w to parowanie, rozłączanie i "
 "wykrywanie."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:137
+#: src/Permissions/Widgets/AppSettingsView.vala:141
 msgid "Manage printers and see the print queue."
 msgstr "Zarządzanie drukarkami i dostęp do ich kolejek drukowania."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:141
+#: src/Permissions/Widgets/AppSettingsView.vala:145
 msgid "Connect to other devices on the network via SSH."
 msgstr "Łączenie się z innymi urządzeniami w sieci poprzez SSH."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:145
+#: src/Permissions/Widgets/AppSettingsView.vala:149
 msgid "Accelerate graphical output."
 msgstr "Włącz akcelerację sprzetową."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:171
+#: src/Permissions/Widgets/AppSettingsView.vala:175
 msgid "Background Activity"
 msgstr "Aktywność w tle"
 
-#: src/Permissions/Widgets/AppSettingsView.vala:172
+#: src/Permissions/Widgets/AppSettingsView.vala:176
 msgid "Perform tasks and use system resources while its window is closed."
 msgstr ""
 "Tworzenie zadań i korzystanie z zasobów systemu podczas gdy okno programu "
 "jest zamknięte."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:182
+#: src/Permissions/Widgets/AppSettingsView.vala:186
 msgid "Location Services"
 msgstr "Usługi lokalizacji"
 
-#: src/Permissions/Widgets/AppSettingsView.vala:183
+#: src/Permissions/Widgets/AppSettingsView.vala:187
 msgid "Determine the location of this device."
 msgstr "Ustalanie lokalizacji tego urządzenia."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:196
+#: src/Permissions/Widgets/AppSettingsView.vala:200
+#, fuzzy
+#| msgid "Applications"
+msgid "Notications"
+msgstr "Programy"
+
+#: src/Permissions/Widgets/AppSettingsView.vala:201
+msgid ""
+"Send notification bubbles that may play sound and appear in Notification "
+"Center."
+msgstr ""
+
+#: src/Permissions/Widgets/AppSettingsView.vala:211
 msgid "Screenshot"
 msgstr "Zrzut ekranu"
 
-#: src/Permissions/Widgets/AppSettingsView.vala:197
+#: src/Permissions/Widgets/AppSettingsView.vala:212
 msgid "Take pictures of the display without asking first."
 msgstr "Tworzenie zrzutów ekranu bez uprzedniego pytania."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:207
+#: src/Permissions/Widgets/AppSettingsView.vala:222
 msgid "Wallpaper"
 msgstr "Tło pulpitu"
 
-#: src/Permissions/Widgets/AppSettingsView.vala:208
+#: src/Permissions/Widgets/AppSettingsView.vala:223
 msgid "Set the wallpaper on the desktop and lock screen."
 msgstr "Ustawianie tapety na pulpicie i ekranie blokady."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:224
+#: src/Permissions/Widgets/AppSettingsView.vala:239
 #, c-format
 msgid "%s permissions"
 msgstr "Uprawnienia %s"
 
 #. / Translators: This is a delimiter that separates types of permissions in the sidebar description
-#: src/Permissions/Widgets/SidebarRow.vala:83
+#: src/Permissions/Widgets/SidebarRow.vala:84
 msgid ", "
 msgstr ", "
 

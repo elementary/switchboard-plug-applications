@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-11 17:48+0000\n"
+"POT-Creation-Date: 2024-10-03 16:19+0000\n"
 "PO-Revision-Date: 2024-07-22 09:16+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://l10n.elementary.io/projects/switchboard/"
@@ -132,11 +132,11 @@ msgstr "האצת מעבד גרפי"
 msgid "Couldn't set permission"
 msgstr "לא ניתן להגדיר הרשאות"
 
-#: src/Permissions/Widgets/AppSettingsView.vala:54
+#: src/Permissions/Widgets/AppSettingsView.vala:64
 msgid "Advanced System Access"
 msgstr "גישה מתקדמת למערכת"
 
-#: src/Permissions/Widgets/AppSettingsView.vala:56
+#: src/Permissions/Widgets/AppSettingsView.vala:67
 msgid ""
 "Access to system features can be restricted to make apps more secure, but "
 "some apps may not function properly without it"
@@ -144,85 +144,97 @@ msgstr ""
 "גישה ליכולות המערכת ניתנת להגבלה כדי להפוך את היישומים למאובטחים יותר, אך "
 "חלק מהיישומים לא יעבדו כלל בלעדיה"
 
-#: src/Permissions/Widgets/AppSettingsView.vala:66
+#: src/Permissions/Widgets/AppSettingsView.vala:70
 msgid "Reset to Defaults"
 msgstr "איפוס לבררות מחדל"
 
-#: src/Permissions/Widgets/AppSettingsView.vala:117
+#: src/Permissions/Widgets/AppSettingsView.vala:121
 msgid ""
 "Including all documents, downloads, music, pictures, videos, and any hidden "
 "folders."
 msgstr ""
 "לרבות כל המסמכים, ההורדות, המוזיקה, התמונות, הסרטונים ותיקיות נסתרות אם יש."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:121
+#: src/Permissions/Widgets/AppSettingsView.vala:125
 msgid "Including everyone's Home folders, but not including system internals."
 msgstr "כולל את כל תיקיות הבית של כולם, בלי חלקי המערכת הפנימיים."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:125
+#: src/Permissions/Widgets/AppSettingsView.vala:129
 msgid ""
 "Manage all connected devices, such as webcams, microphones, and USB devices."
 msgstr "ניהול כל ההתקנים המחוברים כגון מצלמות, מיקרופונים ומכשירי USB."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:129
+#: src/Permissions/Widgets/AppSettingsView.vala:133
 msgid "Connect to the Internet and local networks."
 msgstr "חיבור לאינטרנט ולרשתות מקומיות."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:133
+#: src/Permissions/Widgets/AppSettingsView.vala:137
 msgid "Manage Bluetooth devices including pairing, unpairing, and discovery."
 msgstr "ניהול מכשירי בלוטות׳ לרבות צימוד, ניתוק וגילוי."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:137
+#: src/Permissions/Widgets/AppSettingsView.vala:141
 msgid "Manage printers and see the print queue."
 msgstr "ניהול מדפסות וצפייה בתור ההדפסה."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:141
+#: src/Permissions/Widgets/AppSettingsView.vala:145
 msgid "Connect to other devices on the network via SSH."
 msgstr "התחברות לציוד ברשת דרך SSH."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:145
+#: src/Permissions/Widgets/AppSettingsView.vala:149
 msgid "Accelerate graphical output."
 msgstr "האצת הפלט הגרפי."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:171
+#: src/Permissions/Widgets/AppSettingsView.vala:175
 msgid "Background Activity"
 msgstr "פעילות רקע"
 
-#: src/Permissions/Widgets/AppSettingsView.vala:172
+#: src/Permissions/Widgets/AppSettingsView.vala:176
 msgid "Perform tasks and use system resources while its window is closed."
 msgstr "ביצוע משימות וניצול משאבי מערכת על אף שהחלון ברור."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:182
+#: src/Permissions/Widgets/AppSettingsView.vala:186
 msgid "Location Services"
 msgstr "שירותי מיקום"
 
-#: src/Permissions/Widgets/AppSettingsView.vala:183
+#: src/Permissions/Widgets/AppSettingsView.vala:187
 msgid "Determine the location of this device."
 msgstr "איתור מקום המכשיר הזה."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:196
+#: src/Permissions/Widgets/AppSettingsView.vala:200
+#, fuzzy
+#| msgid "Applications"
+msgid "Notications"
+msgstr "יישומים"
+
+#: src/Permissions/Widgets/AppSettingsView.vala:201
+msgid ""
+"Send notification bubbles that may play sound and appear in Notification "
+"Center."
+msgstr ""
+
+#: src/Permissions/Widgets/AppSettingsView.vala:211
 msgid "Screenshot"
 msgstr "צילום מסך"
 
-#: src/Permissions/Widgets/AppSettingsView.vala:197
+#: src/Permissions/Widgets/AppSettingsView.vala:212
 msgid "Take pictures of the display without asking first."
 msgstr "צילום המסך מבלי לשאול קודם."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:207
+#: src/Permissions/Widgets/AppSettingsView.vala:222
 msgid "Wallpaper"
 msgstr "תמונת רקע"
 
-#: src/Permissions/Widgets/AppSettingsView.vala:208
+#: src/Permissions/Widgets/AppSettingsView.vala:223
 msgid "Set the wallpaper on the desktop and lock screen."
 msgstr "הגדרת תמונת הרקע של שולחן העבודה ומסך הנעילה."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:224
+#: src/Permissions/Widgets/AppSettingsView.vala:239
 #, c-format
 msgid "%s permissions"
 msgstr "הרשאות %s"
 
 #. / Translators: This is a delimiter that separates types of permissions in the sidebar description
-#: src/Permissions/Widgets/SidebarRow.vala:83
+#: src/Permissions/Widgets/SidebarRow.vala:84
 msgid ", "
 msgstr ", "
 

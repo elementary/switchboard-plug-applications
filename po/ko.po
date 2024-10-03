@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-11 17:48+0000\n"
+"POT-Creation-Date: 2024-10-03 16:19+0000\n"
 "PO-Revision-Date: 2024-04-20 18:13+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Korean <https://l10n.elementary.io/projects/switchboard/"
@@ -138,31 +138,31 @@ msgstr "GPU 가속"
 msgid "Couldn't set permission"
 msgstr "권한"
 
-#: src/Permissions/Widgets/AppSettingsView.vala:54
+#: src/Permissions/Widgets/AppSettingsView.vala:64
 msgid "Advanced System Access"
 msgstr ""
 
-#: src/Permissions/Widgets/AppSettingsView.vala:56
+#: src/Permissions/Widgets/AppSettingsView.vala:67
 msgid ""
 "Access to system features can be restricted to make apps more secure, but "
 "some apps may not function properly without it"
 msgstr ""
 
-#: src/Permissions/Widgets/AppSettingsView.vala:66
+#: src/Permissions/Widgets/AppSettingsView.vala:70
 msgid "Reset to Defaults"
 msgstr "기본값으로 재설정"
 
-#: src/Permissions/Widgets/AppSettingsView.vala:117
+#: src/Permissions/Widgets/AppSettingsView.vala:121
 msgid ""
 "Including all documents, downloads, music, pictures, videos, and any hidden "
 "folders."
 msgstr ""
 
-#: src/Permissions/Widgets/AppSettingsView.vala:121
+#: src/Permissions/Widgets/AppSettingsView.vala:125
 msgid "Including everyone's Home folders, but not including system internals."
 msgstr ""
 
-#: src/Permissions/Widgets/AppSettingsView.vala:125
+#: src/Permissions/Widgets/AppSettingsView.vala:129
 #, fuzzy
 #| msgid ""
 #| "Access all devices, such as webcams, microphones, and connected USB "
@@ -171,70 +171,82 @@ msgid ""
 "Manage all connected devices, such as webcams, microphones, and USB devices."
 msgstr "웹캠, 마이크, 연결된 USB 와 같은 모든 장치에 접근합니다."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:129
+#: src/Permissions/Widgets/AppSettingsView.vala:133
 #, fuzzy
 #| msgid "Access the Internet and local networks."
 msgid "Connect to the Internet and local networks."
 msgstr "인터넷 및 로컬 네트워크에 접근합니다."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:133
+#: src/Permissions/Widgets/AppSettingsView.vala:137
 msgid "Manage Bluetooth devices including pairing, unpairing, and discovery."
 msgstr "페어링, 페어링 해제, 검색을 포함한 Bluetooth 장치를 관리합니다."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:137
+#: src/Permissions/Widgets/AppSettingsView.vala:141
 msgid "Manage printers and see the print queue."
 msgstr ""
 
-#: src/Permissions/Widgets/AppSettingsView.vala:141
+#: src/Permissions/Widgets/AppSettingsView.vala:145
 #, fuzzy
 #| msgid "Access other devices on the network via SSH."
 msgid "Connect to other devices on the network via SSH."
 msgstr "SSH를 통해 네트워크의 다른 장치에 접근합니다."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:145
+#: src/Permissions/Widgets/AppSettingsView.vala:149
 msgid "Accelerate graphical output."
 msgstr "그래픽 출력을 가속화합니다."
 
-#: src/Permissions/Widgets/AppSettingsView.vala:171
+#: src/Permissions/Widgets/AppSettingsView.vala:175
 msgid "Background Activity"
 msgstr ""
 
-#: src/Permissions/Widgets/AppSettingsView.vala:172
+#: src/Permissions/Widgets/AppSettingsView.vala:176
 msgid "Perform tasks and use system resources while its window is closed."
 msgstr ""
 
-#: src/Permissions/Widgets/AppSettingsView.vala:182
+#: src/Permissions/Widgets/AppSettingsView.vala:186
 msgid "Location Services"
 msgstr "위치 서비스"
 
-#: src/Permissions/Widgets/AppSettingsView.vala:183
+#: src/Permissions/Widgets/AppSettingsView.vala:187
 msgid "Determine the location of this device."
 msgstr ""
 
-#: src/Permissions/Widgets/AppSettingsView.vala:196
+#: src/Permissions/Widgets/AppSettingsView.vala:200
+#, fuzzy
+#| msgid "Applications"
+msgid "Notications"
+msgstr "애플리케이션"
+
+#: src/Permissions/Widgets/AppSettingsView.vala:201
+msgid ""
+"Send notification bubbles that may play sound and appear in Notification "
+"Center."
+msgstr ""
+
+#: src/Permissions/Widgets/AppSettingsView.vala:211
 msgid "Screenshot"
 msgstr ""
 
-#: src/Permissions/Widgets/AppSettingsView.vala:197
+#: src/Permissions/Widgets/AppSettingsView.vala:212
 msgid "Take pictures of the display without asking first."
 msgstr ""
 
-#: src/Permissions/Widgets/AppSettingsView.vala:207
+#: src/Permissions/Widgets/AppSettingsView.vala:222
 msgid "Wallpaper"
 msgstr "배경화면"
 
-#: src/Permissions/Widgets/AppSettingsView.vala:208
+#: src/Permissions/Widgets/AppSettingsView.vala:223
 msgid "Set the wallpaper on the desktop and lock screen."
 msgstr ""
 
-#: src/Permissions/Widgets/AppSettingsView.vala:224
+#: src/Permissions/Widgets/AppSettingsView.vala:239
 #, fuzzy, c-format
 #| msgid "Permissions"
 msgid "%s permissions"
 msgstr "권한"
 
 #. / Translators: This is a delimiter that separates types of permissions in the sidebar description
-#: src/Permissions/Widgets/SidebarRow.vala:83
+#: src/Permissions/Widgets/SidebarRow.vala:84
 msgid ", "
 msgstr ", "
 
