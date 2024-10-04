@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-10-03 16:19+0000\n"
-"PO-Revision-Date: 2024-05-07 05:14+0000\n"
+"PO-Revision-Date: 2024-10-04 17:16+0000\n"
 "Last-Translator: David M <rbndavid@gmail.com>\n"
 "Language-Team: Catalan <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-applications/ca/>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.5\n"
+"X-Generator: Weblate 5.6.2\n"
 "X-Launchpad-Export-Date: 2016-12-03 05:18+0000\n"
 
 #: src/Plug.vala:44
@@ -211,16 +211,16 @@ msgid "Determine the location of this device."
 msgstr "Determina la ubicació d'aquest dispositiu."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:200
-#, fuzzy
-#| msgid "Applications"
 msgid "Notications"
-msgstr "Aplicacions"
+msgstr "Notificacions"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:201
 msgid ""
 "Send notification bubbles that may play sound and appear in Notification "
 "Center."
 msgstr ""
+"Envia bombolles de notificació que poden reproduir so i aparèixer al Centre "
+"de notificacions."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:211
 msgid "Screenshot"
