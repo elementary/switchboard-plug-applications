@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-10-05 02:58+0000\n"
-"PO-Revision-Date: 2024-07-22 09:16+0000\n"
-"Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
+"PO-Revision-Date: 2024-10-05 14:42+0000\n"
+"Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Hebrew <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-applications/he/>\n"
 "Language: he\n"
@@ -201,10 +201,8 @@ msgid "Determine the location of this device."
 msgstr "איתור מקום המכשיר הזה."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:200
-#, fuzzy
-#| msgid "Applications"
 msgid "Notifications"
-msgstr "יישומים"
+msgstr "התראות"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:201
 msgid ""
