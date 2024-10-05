@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-10-05 02:58+0000\n"
-"PO-Revision-Date: 2024-09-05 21:13+0000\n"
-"Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
+"PO-Revision-Date: 2024-10-05 14:42+0000\n"
+"Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Chinese (Traditional) <https://l10n.elementary.io/projects/"
 "switchboard/switchboard-plug-applications/zh_Hant/>\n"
 "Language: zh_TW\n"
@@ -200,10 +200,8 @@ msgid "Determine the location of this device."
 msgstr "判定這台裝置的位置資訊。"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:200
-#, fuzzy
-#| msgid "Applications"
 msgid "Notifications"
-msgstr "應用程式"
+msgstr "通知"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:201
 msgid ""
