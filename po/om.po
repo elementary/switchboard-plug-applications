@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-applications\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-10-03 16:19+0000\n"
+"POT-Creation-Date: 2024-10-05 02:58+0000\n"
 "PO-Revision-Date: 2014-09-07 14:06+0000\n"
 "Last-Translator: gudeta <gudbog@gmail.com>\n"
 "Language-Team: Oromo <om@li.org>\n"
@@ -217,7 +217,7 @@ msgstr ""
 #: src/Permissions/Widgets/AppSettingsView.vala:200
 #, fuzzy
 #| msgid "Applications"
-msgid "Notications"
+msgid "Notifications"
 msgstr "Dhimbaaftota"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:201

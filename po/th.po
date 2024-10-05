@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-10-03 16:19+0000\n"
+"POT-Creation-Date: 2024-10-05 02:58+0000\n"
 "PO-Revision-Date: 2024-03-29 15:48+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Thai <https://l10n.elementary.io/projects/switchboard/"
@@ -216,7 +216,7 @@ msgstr ""
 #: src/Permissions/Widgets/AppSettingsView.vala:200
 #, fuzzy
 #| msgid "Applications"
-msgid "Notications"
+msgid "Notifications"
 msgstr "โปรแกรม"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:201

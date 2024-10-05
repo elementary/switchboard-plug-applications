@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-10-03 16:19+0000\n"
+"POT-Creation-Date: 2024-10-05 02:58+0000\n"
 "PO-Revision-Date: 2024-10-04 17:16+0000\n"
 "Last-Translator: David M <rbndavid@gmail.com>\n"
 "Language-Team: Catalan <https://l10n.elementary.io/projects/switchboard/"
@@ -211,7 +211,9 @@ msgid "Determine the location of this device."
 msgstr "Determina la ubicació d'aquest dispositiu."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:200
-msgid "Notications"
+#, fuzzy
+#| msgid "Notications"
+msgid "Notifications"
 msgstr "Notificacions"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:201

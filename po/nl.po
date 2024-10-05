@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-10-03 16:19+0000\n"
+"POT-Creation-Date: 2024-10-05 02:58+0000\n"
 "PO-Revision-Date: 2024-05-31 01:46+0000\n"
 "Last-Translator: DutchVipperloid <svenroelof@e.email>\n"
 "Language-Team: Dutch <https://l10n.elementary.io/projects/switchboard/"
@@ -212,7 +212,7 @@ msgstr "Achterhaal de locatie van dit apparaat."
 #: src/Permissions/Widgets/AppSettingsView.vala:200
 #, fuzzy
 #| msgid "Applications"
-msgid "Notications"
+msgid "Notifications"
 msgstr "Applicaties"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:201

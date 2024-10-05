@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-10-03 16:19+0000\n"
+"POT-Creation-Date: 2024-10-05 02:58+0000\n"
 "PO-Revision-Date: 2024-09-05 21:13+0000\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Chinese (Traditional) <https://l10n.elementary.io/projects/"
@@ -202,7 +202,7 @@ msgstr "判定這台裝置的位置資訊。"
 #: src/Permissions/Widgets/AppSettingsView.vala:200
 #, fuzzy
 #| msgid "Applications"
-msgid "Notications"
+msgid "Notifications"
 msgstr "應用程式"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:201
