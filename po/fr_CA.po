@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-10-05 02:58+0000\n"
-"PO-Revision-Date: 2024-03-29 15:48+0000\n"
+"PO-Revision-Date: 2024-10-05 14:42+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: French (Canada) <https://l10n.elementary.io/projects/"
 "switchboard/switchboard-plug-applications/fr_CA/>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.0.2\n"
+"X-Generator: Weblate 5.6.2\n"
 "X-Launchpad-Export-Date: 2016-11-26 05:53+0000\n"
 
 #: src/Plug.vala:44
@@ -198,10 +198,8 @@ msgid "Determine the location of this device."
 msgstr ""
 
 #: src/Permissions/Widgets/AppSettingsView.vala:200
-#, fuzzy
-#| msgid "Applications"
 msgid "Notifications"
-msgstr "Applications"
+msgstr "Notifications"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:201
 msgid ""
