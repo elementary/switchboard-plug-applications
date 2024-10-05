@@ -197,7 +197,7 @@ public class Permissions.Widgets.AppSettingsView : Switchboard.SettingsPage {
         });
 
         notifications_row = new PermissionSettingsWidget (
-            _("Notications"),
+            _("Notifications"),
             _("Send notification bubbles that may play sound and appear in Notification Center."),
             "preferences-system-notifications"
         );
