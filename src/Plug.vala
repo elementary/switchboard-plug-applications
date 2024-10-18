@@ -67,8 +67,11 @@ public class Applications.Plug : Switchboard.Plug {
                 resize_start_child = false
             };
 
-            var settings = new Settings ("io.elementary.settings");
-            settings.bind ("sidebar-position", paned, "position", DEFAULT);
+            var sss = SettingsSchemaSource.get_default ().lookup ("io.elementary.settings", true);
+            if (sss != null && sss.has_key ("sidebar-position")) {
+                var settings = new Settings ("io.elementary.settings");
+                settings.bind ("sidebar-position", paned, "position", DEFAULT);
+            }
         }
 
         return paned;
