@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-10-05 02:58+0000\n"
 "PO-Revision-Date: 2024-11-04 21:53+0000\n"
-"Last-Translator: Gustavo Silva <g.costasalles@gmail.com>\n"
+"Last-Translator: Guilherme Faura <guilhermefaura@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://l10n.elementary.io/projects/"
 "switchboard/applications-plug-extra/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -42,11 +42,14 @@ msgstr "Um novo ícone"
 #: data/applications.metainfo.xml.in:45
 msgid "Redesigned layout that makes it faster to get to app permissions"
 msgstr ""
+"Layout redesenhado que torna mais rápido obter permissões de aplicativos"
 
 #: data/applications.metainfo.xml.in:46
 msgid ""
 "Portal permissions like Backgrounding, Location, Screenshots, and Wallpapers"
 msgstr ""
+"Permissões do portal como Plano de fundo, Localização, Capturas de tela e "
+"Papéis de parede"
 
 #: data/applications.metainfo.xml.in:47 data/applications.metainfo.xml.in:61
 #: data/applications.metainfo.xml.in:80 data/applications.metainfo.xml.in:95
@@ -66,30 +69,36 @@ msgstr "Novas funcionalidades:"
 #: data/applications.metainfo.xml.in:74
 msgid "Properly handle autostart files created by the Background Portal"
 msgstr ""
+"Lidar adequadamente com arquivos de inicialização automática criados pelo "
+"Portal em segundo plano"
 
 #: data/applications.metainfo.xml.in:78
 msgid "App chooser in Startup is a dialog instead of a popover"
 msgstr ""
+"O seletor de aplicativos na inicialização é uma caixa de diálogo em vez de "
+"uma janela sobreposta"
 
 #: data/applications.metainfo.xml.in:79
 msgid "Improve screen reader descriptions"
-msgstr ""
+msgstr "Melhore as descrições do leitor de tela"
 
 #: data/applications.metainfo.xml.in:93
 msgid "Fix an issue with setting the incorrect app for certain files types"
 msgstr ""
+"Corrigir um problema ao configurar o aplicativo incorreto para determinados "
+"tipos de arquivos"
 
 #: data/applications.metainfo.xml.in:94
 msgid "Don't overwrite custom overrides when unnecessary"
-msgstr ""
+msgstr "Não substitua substituições personalizadas quando desnecessárias"
 
 #: data/applications.metainfo.xml.in:104
 msgid "Manage permissions for Flatpak apps"
-msgstr ""
+msgstr "Gerenciar permissões para aplicativos Flatpak"
 
 #: data/applications.metainfo.xml.in:108
 msgid "Show custom launcher files"
-msgstr ""
+msgstr "Mostrar arquivos do inicializador personalizado"
 
 #~ msgid "Fix issues with OnlyShowIn and Snap apps"
 #~ msgstr "Corrigir problemas com os aplicativos OnlyShowIn e Snap"
