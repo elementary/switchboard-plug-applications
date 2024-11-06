@@ -4,7 +4,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-10-05 02:58+0000\n"
 "PO-Revision-Date: 2024-11-06 02:14+0000\n"
-"Last-Translator: Guilherme Faura <guilhermefaura@gmail.com>\n"
+"Last-Translator: Neylson Soares <neylsonsoarest+weblate@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://l10n.elementary.io/projects/"
 "switchboard/switchboard-plug-applications/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -189,6 +189,8 @@ msgstr "Conecte-se à Internet e às redes locais."
 #: src/Permissions/Widgets/AppSettingsView.vala:137
 msgid "Manage Bluetooth devices including pairing, unpairing, and discovery."
 msgstr ""
+"Gerenciar dispositivos Bluetooth incluindo emparelhamento, desaparelhamento "
+"e descoberta."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:141
 msgid "Manage printers and see the print queue."
