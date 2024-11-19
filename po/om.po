@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-applications\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-10-05 02:58+0000\n"
+"POT-Creation-Date: 2024-11-19 21:04+0000\n"
 "PO-Revision-Date: 2014-09-07 14:06+0000\n"
 "Last-Translator: gudeta <gudbog@gmail.com>\n"
 "Language-Team: Oromo <om@li.org>\n"
@@ -26,67 +26,67 @@ msgstr ""
 msgid "Applications"
 msgstr "Dhimbaaftota"
 
-#: src/Plug.vala:98 src/Sidebar.vala:25 src/Startup/Startup.vala:16
+#: src/Plug.vala:104 src/Sidebar.vala:25 src/Startup/Startup.vala:16
 msgid "Startup"
 msgstr "Ofiineegalaa"
 
-#: src/Plug.vala:99
+#: src/Plug.vala:105
 msgid "Default Apps"
 msgstr ""
 
-#: src/Plug.vala:100
+#: src/Plug.vala:106
 msgid "Permissions"
 msgstr ""
 
-#: src/Plug.vala:101
+#: src/Plug.vala:107
 msgid "Sandboxing"
 msgstr ""
 
-#: src/Plug.vala:102
+#: src/Plug.vala:108
 msgid "Confinement"
 msgstr ""
 
-#: src/Plug.vala:103 src/Plug.vala:104 src/Plug.vala:105 src/Plug.vala:106
-#: src/Plug.vala:107 src/Plug.vala:108 src/Plug.vala:109 src/Plug.vala:110
+#: src/Plug.vala:109 src/Plug.vala:110 src/Plug.vala:111 src/Plug.vala:112
+#: src/Plug.vala:113 src/Plug.vala:114 src/Plug.vala:115 src/Plug.vala:116
 msgid "Default"
 msgstr "Durtii"
 
-#: src/Plug.vala:103 src/Defaults/DefaultPlug.vala:19
+#: src/Plug.vala:109 src/Defaults/DefaultPlug.vala:19
 #, fuzzy
 msgid "Web Browser"
 msgstr "Sakatta'aa Weebi"
 
-#: src/Plug.vala:104 src/Defaults/DefaultPlug.vala:24
+#: src/Plug.vala:110 src/Defaults/DefaultPlug.vala:24
 #, fuzzy
 msgid "Email Client"
 msgstr "Maamila  Ergaa-E"
 
-#: src/Plug.vala:105 src/Defaults/DefaultPlug.vala:29
+#: src/Plug.vala:111 src/Defaults/DefaultPlug.vala:29
 #, fuzzy
 msgid "Calendar"
 msgstr "Dhaha"
 
-#: src/Plug.vala:106 src/Defaults/DefaultPlug.vala:34
+#: src/Plug.vala:112 src/Defaults/DefaultPlug.vala:34
 #, fuzzy
 msgid "Video Player"
 msgstr "Taphachiisaa Viidiyoo"
 
-#: src/Plug.vala:107 src/Defaults/DefaultPlug.vala:39
+#: src/Plug.vala:113 src/Defaults/DefaultPlug.vala:39
 #, fuzzy
 msgid "Music Player"
 msgstr "Taphachiisaa Muuziqaa"
 
-#: src/Plug.vala:108 src/Defaults/DefaultPlug.vala:49
+#: src/Plug.vala:114 src/Defaults/DefaultPlug.vala:49
 #, fuzzy
 msgid "Text Editor"
 msgstr "Gulaalaa Barruu"
 
-#: src/Plug.vala:109 src/Defaults/DefaultPlug.vala:44
+#: src/Plug.vala:115 src/Defaults/DefaultPlug.vala:44
 #, fuzzy
 msgid "Image Viewer"
 msgstr "Mul'isaa Suuraa"
 
-#: src/Plug.vala:110 src/Defaults/DefaultPlug.vala:54
+#: src/Plug.vala:116 src/Defaults/DefaultPlug.vala:54
 #, fuzzy
 msgid "File Browser"
 msgstr "Sakkatta'aa Faayilii"
