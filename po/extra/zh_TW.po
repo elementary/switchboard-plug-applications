@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-10-05 02:58+0000\n"
+"POT-Creation-Date: 2024-11-19 21:04+0000\n"
 "PO-Revision-Date: 2024-09-19 10:09+0000\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Chinese (Traditional) <https://l10n.elementary.io/projects/"
@@ -31,63 +31,64 @@ msgstr "管理預設與初始啟動應用程式"
 msgid "elementary, Inc."
 msgstr "elementary, Inc."
 
-#: data/applications.metainfo.xml.in:42
+#: data/applications.metainfo.xml.in:42 data/applications.metainfo.xml.in:71
+#: data/applications.metainfo.xml.in:88 data/applications.metainfo.xml.in:103
+#: data/applications.metainfo.xml.in:118
+msgid "Minor updates:"
+msgstr "小型更新："
+
+#: data/applications.metainfo.xml.in:44 data/applications.metainfo.xml.in:59
+#: data/applications.metainfo.xml.in:73 data/applications.metainfo.xml.in:92
+#: data/applications.metainfo.xml.in:107 data/applications.metainfo.xml.in:121
+msgid "Updated translations"
+msgstr "翻譯更新"
+
+#: data/applications.metainfo.xml.in:54
 msgid "A Big Redesign!"
 msgstr "大幅重新設計！"
 
-#: data/applications.metainfo.xml.in:44
+#: data/applications.metainfo.xml.in:56
 msgid "A new icon"
 msgstr "新圖示"
 
-#: data/applications.metainfo.xml.in:45
+#: data/applications.metainfo.xml.in:57
 msgid "Redesigned layout that makes it faster to get to app permissions"
 msgstr "重新設計佈局讓開啟應用程式權限設定更快"
 
-#: data/applications.metainfo.xml.in:46
+#: data/applications.metainfo.xml.in:58
 msgid ""
 "Portal permissions like Backgrounding, Location, Screenshots, and Wallpapers"
 msgstr "背景執行、地理位置、畫面快照與桌布等入口權限"
 
-#: data/applications.metainfo.xml.in:47 data/applications.metainfo.xml.in:61
-#: data/applications.metainfo.xml.in:80 data/applications.metainfo.xml.in:95
-#: data/applications.metainfo.xml.in:109
-msgid "Updated translations"
-msgstr "翻譯更新"
-
-#: data/applications.metainfo.xml.in:59 data/applications.metainfo.xml.in:76
-#: data/applications.metainfo.xml.in:91 data/applications.metainfo.xml.in:106
-msgid "Minor updates:"
-msgstr "小型更新："
-
-#: data/applications.metainfo.xml.in:72 data/applications.metainfo.xml.in:102
+#: data/applications.metainfo.xml.in:84 data/applications.metainfo.xml.in:114
 msgid "New features:"
 msgstr "新功能："
 
-#: data/applications.metainfo.xml.in:74
+#: data/applications.metainfo.xml.in:86
 msgid "Properly handle autostart files created by the Background Portal"
 msgstr "正確處理《背景桌面入口》所建立的自動啟動檔案"
 
-#: data/applications.metainfo.xml.in:78
+#: data/applications.metainfo.xml.in:90
 msgid "App chooser in Startup is a dialog instead of a popover"
 msgstr "初始啟動的應用程式選取工具現在是對話框而非 popover"
 
-#: data/applications.metainfo.xml.in:79
+#: data/applications.metainfo.xml.in:91
 msgid "Improve screen reader descriptions"
 msgstr "改善螢幕閱讀器描述"
 
-#: data/applications.metainfo.xml.in:93
+#: data/applications.metainfo.xml.in:105
 msgid "Fix an issue with setting the incorrect app for certain files types"
 msgstr "修正為某些檔案類型設定錯誤的應用程式的問題"
 
-#: data/applications.metainfo.xml.in:94
+#: data/applications.metainfo.xml.in:106
 msgid "Don't overwrite custom overrides when unnecessary"
 msgstr "不需要時不要覆寫自訂的 override"
 
-#: data/applications.metainfo.xml.in:104
+#: data/applications.metainfo.xml.in:116
 msgid "Manage permissions for Flatpak apps"
 msgstr "管理 Flatpak 應用程式的權限"
 
-#: data/applications.metainfo.xml.in:108
+#: data/applications.metainfo.xml.in:120
 msgid "Show custom launcher files"
 msgstr "顯示自訂啟動器檔案"
 

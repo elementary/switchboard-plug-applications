@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-10-05 02:58+0000\n"
+"POT-Creation-Date: 2024-11-19 21:04+0000\n"
 "PO-Revision-Date: 2024-09-21 10:16+0000\n"
 "Last-Translator: Sinan Decron <sinanveyasinan@gmail.com>\n"
 "Language-Team: Turkish <https://l10n.elementary.io/projects/switchboard/"
@@ -31,69 +31,70 @@ msgstr "Varsayılan ve başlangıç uygulamalarını yönetin"
 msgid "elementary, Inc."
 msgstr "elementary, Inc."
 
-#: data/applications.metainfo.xml.in:42
+#: data/applications.metainfo.xml.in:42 data/applications.metainfo.xml.in:71
+#: data/applications.metainfo.xml.in:88 data/applications.metainfo.xml.in:103
+#: data/applications.metainfo.xml.in:118
+msgid "Minor updates:"
+msgstr "Küçük güncellemeler:"
+
+#: data/applications.metainfo.xml.in:44 data/applications.metainfo.xml.in:59
+#: data/applications.metainfo.xml.in:73 data/applications.metainfo.xml.in:92
+#: data/applications.metainfo.xml.in:107 data/applications.metainfo.xml.in:121
+msgid "Updated translations"
+msgstr "Çeviriler güncellendi"
+
+#: data/applications.metainfo.xml.in:54
 msgid "A Big Redesign!"
 msgstr "Büyük Bir Yeniden Tasarım!"
 
-#: data/applications.metainfo.xml.in:44
+#: data/applications.metainfo.xml.in:56
 msgid "A new icon"
 msgstr "Yeni bir simge"
 
-#: data/applications.metainfo.xml.in:45
+#: data/applications.metainfo.xml.in:57
 msgid "Redesigned layout that makes it faster to get to app permissions"
 msgstr ""
 "Uygulama izinlerine daha hızlı ulaşmayı sağlayan yeniden tasarlanmış düzen"
 
-#: data/applications.metainfo.xml.in:46
+#: data/applications.metainfo.xml.in:58
 msgid ""
 "Portal permissions like Backgrounding, Location, Screenshots, and Wallpapers"
 msgstr ""
 "Arka Plan, Konum, Ekran Görüntüleri ve Duvar Kağıtları gibi portal izinleri"
 
-#: data/applications.metainfo.xml.in:47 data/applications.metainfo.xml.in:61
-#: data/applications.metainfo.xml.in:80 data/applications.metainfo.xml.in:95
-#: data/applications.metainfo.xml.in:109
-msgid "Updated translations"
-msgstr "Çeviriler güncellendi"
-
-#: data/applications.metainfo.xml.in:59 data/applications.metainfo.xml.in:76
-#: data/applications.metainfo.xml.in:91 data/applications.metainfo.xml.in:106
-msgid "Minor updates:"
-msgstr "Küçük güncellemeler:"
-
-#: data/applications.metainfo.xml.in:72 data/applications.metainfo.xml.in:102
+#: data/applications.metainfo.xml.in:84 data/applications.metainfo.xml.in:114
 msgid "New features:"
 msgstr "Yeni özellikler:"
 
-#: data/applications.metainfo.xml.in:74
+#: data/applications.metainfo.xml.in:86
 msgid "Properly handle autostart files created by the Background Portal"
 msgstr ""
 "Arka Plan Portalı tarafından oluşturulan otomatik başlatma dosyalarını uygun "
 "şekilde işle"
 
-#: data/applications.metainfo.xml.in:78
+#: data/applications.metainfo.xml.in:90
 msgid "App chooser in Startup is a dialog instead of a popover"
 msgstr ""
 "Başlangıçtaki uygulama seçici, açılır pencere yerine bir iletişim kutusu"
 
-#: data/applications.metainfo.xml.in:79
+#: data/applications.metainfo.xml.in:91
 msgid "Improve screen reader descriptions"
 msgstr "İyileştirilmiş ekran okuyucu açıklamaları"
 
-#: data/applications.metainfo.xml.in:93
+#: data/applications.metainfo.xml.in:105
 msgid "Fix an issue with setting the incorrect app for certain files types"
 msgstr ""
 "Belirli dosya türleri için yanlış uygulamayı ayarlama sorunu düzeltildi"
 
-#: data/applications.metainfo.xml.in:94
+#: data/applications.metainfo.xml.in:106
 msgid "Don't overwrite custom overrides when unnecessary"
 msgstr "Gerekmediğinde özel geçersiz kılmaların yeniden üzerine yazma"
 
-#: data/applications.metainfo.xml.in:104
+#: data/applications.metainfo.xml.in:116
 msgid "Manage permissions for Flatpak apps"
 msgstr "Flatpak uygulamaları için izinleri yönetin"
 
-#: data/applications.metainfo.xml.in:108
+#: data/applications.metainfo.xml.in:120
 msgid "Show custom launcher files"
 msgstr "Özel başlatıcı dosyalarını göster"
 

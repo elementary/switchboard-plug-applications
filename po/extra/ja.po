@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-10-05 02:58+0000\n"
+"POT-Creation-Date: 2024-11-19 21:04+0000\n"
 "PO-Revision-Date: 2024-06-12 23:16+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
@@ -31,70 +31,71 @@ msgstr "デフォルトアプリケーションと自動起動するアプリケ
 msgid "elementary, Inc."
 msgstr "elementary, Inc."
 
-#: data/applications.metainfo.xml.in:42
+#: data/applications.metainfo.xml.in:42 data/applications.metainfo.xml.in:71
+#: data/applications.metainfo.xml.in:88 data/applications.metainfo.xml.in:103
+#: data/applications.metainfo.xml.in:118
+msgid "Minor updates:"
+msgstr "そのほかのアップデート:"
+
+#: data/applications.metainfo.xml.in:44 data/applications.metainfo.xml.in:59
+#: data/applications.metainfo.xml.in:73 data/applications.metainfo.xml.in:92
+#: data/applications.metainfo.xml.in:107 data/applications.metainfo.xml.in:121
+msgid "Updated translations"
+msgstr "翻訳の更新"
+
+#: data/applications.metainfo.xml.in:54
 msgid "A Big Redesign!"
 msgstr "大幅なデザイン変更!"
 
-#: data/applications.metainfo.xml.in:44
+#: data/applications.metainfo.xml.in:56
 msgid "A new icon"
 msgstr "新しいアイコン"
 
-#: data/applications.metainfo.xml.in:45
+#: data/applications.metainfo.xml.in:57
 msgid "Redesigned layout that makes it faster to get to app permissions"
 msgstr "よりアプリのパーミッション設定にアクセスしやすいレイアウトに変更"
 
-#: data/applications.metainfo.xml.in:46
+#: data/applications.metainfo.xml.in:58
 msgid ""
 "Portal permissions like Backgrounding, Location, Screenshots, and Wallpapers"
 msgstr ""
 "バックグラウンド実行、位置情報、スクリーンショット、壁紙などのポータルパー"
 "ミッションを設定可能に"
 
-#: data/applications.metainfo.xml.in:47 data/applications.metainfo.xml.in:61
-#: data/applications.metainfo.xml.in:80 data/applications.metainfo.xml.in:95
-#: data/applications.metainfo.xml.in:109
-msgid "Updated translations"
-msgstr "翻訳の更新"
-
-#: data/applications.metainfo.xml.in:59 data/applications.metainfo.xml.in:76
-#: data/applications.metainfo.xml.in:91 data/applications.metainfo.xml.in:106
-msgid "Minor updates:"
-msgstr "そのほかのアップデート:"
-
-#: data/applications.metainfo.xml.in:72 data/applications.metainfo.xml.in:102
+#: data/applications.metainfo.xml.in:84 data/applications.metainfo.xml.in:114
 msgid "New features:"
 msgstr "新機能:"
 
-#: data/applications.metainfo.xml.in:74
+#: data/applications.metainfo.xml.in:86
 msgid "Properly handle autostart files created by the Background Portal"
 msgstr ""
 "バックグラウンドポータルによって作成された自動起動ファイルを適切に処理するよ"
 "う修正"
 
-#: data/applications.metainfo.xml.in:78
+#: data/applications.metainfo.xml.in:90
 msgid "App chooser in Startup is a dialog instead of a popover"
 msgstr ""
 "“自動起動”で表示するアプリ選択画面を、ポップオーバーからダイアログに変更"
 
-#: data/applications.metainfo.xml.in:79
+#: data/applications.metainfo.xml.in:91
 msgid "Improve screen reader descriptions"
 msgstr "スクリーンリーダーに関する説明を改善"
 
-#: data/applications.metainfo.xml.in:93
+#: data/applications.metainfo.xml.in:105
 msgid "Fix an issue with setting the incorrect app for certain files types"
 msgstr ""
 "特定の種類のファイルが意図しないアプリで開くように設定されてしまう不具合を修"
 "正"
 
-#: data/applications.metainfo.xml.in:94
+#: data/applications.metainfo.xml.in:106
 msgid "Don't overwrite custom overrides when unnecessary"
 msgstr "必要のないときはカスタマイズされたアクセス許可を上書きしないように修正"
 
-#: data/applications.metainfo.xml.in:104
+#: data/applications.metainfo.xml.in:116
 msgid "Manage permissions for Flatpak apps"
 msgstr "Flatpak アプリのパーミッションを管理できる機能を追加"
 
-#: data/applications.metainfo.xml.in:108
+#: data/applications.metainfo.xml.in:120
 msgid "Show custom launcher files"
 msgstr "ユーザーが作成した起動ファイルを表示するように修正"
 

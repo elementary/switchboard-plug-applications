@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-10-05 02:58+0000\n"
+"POT-Creation-Date: 2024-11-19 21:04+0000\n"
 "PO-Revision-Date: 2024-11-04 21:53+0000\n"
 "Last-Translator: Guilherme Faura <guilhermefaura@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://l10n.elementary.io/projects/"
@@ -31,72 +31,73 @@ msgstr "Gerenciar aplicações padrão e de início"
 msgid "elementary, Inc."
 msgstr "elementary, Inc."
 
-#: data/applications.metainfo.xml.in:42
+#: data/applications.metainfo.xml.in:42 data/applications.metainfo.xml.in:71
+#: data/applications.metainfo.xml.in:88 data/applications.metainfo.xml.in:103
+#: data/applications.metainfo.xml.in:118
+msgid "Minor updates:"
+msgstr "Pequenas atualizações:"
+
+#: data/applications.metainfo.xml.in:44 data/applications.metainfo.xml.in:59
+#: data/applications.metainfo.xml.in:73 data/applications.metainfo.xml.in:92
+#: data/applications.metainfo.xml.in:107 data/applications.metainfo.xml.in:121
+msgid "Updated translations"
+msgstr "Traduções atualizadas"
+
+#: data/applications.metainfo.xml.in:54
 msgid "A Big Redesign!"
 msgstr "Um Grande Redesign!"
 
-#: data/applications.metainfo.xml.in:44
+#: data/applications.metainfo.xml.in:56
 msgid "A new icon"
 msgstr "Um novo ícone"
 
-#: data/applications.metainfo.xml.in:45
+#: data/applications.metainfo.xml.in:57
 msgid "Redesigned layout that makes it faster to get to app permissions"
 msgstr ""
 "Layout redesenhado que torna mais rápido obter permissões de aplicativos"
 
-#: data/applications.metainfo.xml.in:46
+#: data/applications.metainfo.xml.in:58
 msgid ""
 "Portal permissions like Backgrounding, Location, Screenshots, and Wallpapers"
 msgstr ""
 "Permissões do portal como Plano de fundo, Localização, Capturas de tela e "
 "Papéis de parede"
 
-#: data/applications.metainfo.xml.in:47 data/applications.metainfo.xml.in:61
-#: data/applications.metainfo.xml.in:80 data/applications.metainfo.xml.in:95
-#: data/applications.metainfo.xml.in:109
-msgid "Updated translations"
-msgstr "Traduções atualizadas"
-
-#: data/applications.metainfo.xml.in:59 data/applications.metainfo.xml.in:76
-#: data/applications.metainfo.xml.in:91 data/applications.metainfo.xml.in:106
-msgid "Minor updates:"
-msgstr "Pequenas atualizações:"
-
-#: data/applications.metainfo.xml.in:72 data/applications.metainfo.xml.in:102
+#: data/applications.metainfo.xml.in:84 data/applications.metainfo.xml.in:114
 msgid "New features:"
 msgstr "Novas funcionalidades:"
 
-#: data/applications.metainfo.xml.in:74
+#: data/applications.metainfo.xml.in:86
 msgid "Properly handle autostart files created by the Background Portal"
 msgstr ""
 "Lidar adequadamente com arquivos de inicialização automática criados pelo "
 "Portal em segundo plano"
 
-#: data/applications.metainfo.xml.in:78
+#: data/applications.metainfo.xml.in:90
 msgid "App chooser in Startup is a dialog instead of a popover"
 msgstr ""
 "O seletor de aplicativos na inicialização é uma caixa de diálogo em vez de "
 "uma janela sobreposta"
 
-#: data/applications.metainfo.xml.in:79
+#: data/applications.metainfo.xml.in:91
 msgid "Improve screen reader descriptions"
 msgstr "Melhore as descrições do leitor de tela"
 
-#: data/applications.metainfo.xml.in:93
+#: data/applications.metainfo.xml.in:105
 msgid "Fix an issue with setting the incorrect app for certain files types"
 msgstr ""
 "Corrigir um problema ao configurar o aplicativo incorreto para determinados "
 "tipos de arquivos"
 
-#: data/applications.metainfo.xml.in:94
+#: data/applications.metainfo.xml.in:106
 msgid "Don't overwrite custom overrides when unnecessary"
 msgstr "Não substitua substituições personalizadas quando desnecessárias"
 
-#: data/applications.metainfo.xml.in:104
+#: data/applications.metainfo.xml.in:116
 msgid "Manage permissions for Flatpak apps"
 msgstr "Gerenciar permissões para aplicativos Flatpak"
 
-#: data/applications.metainfo.xml.in:108
+#: data/applications.metainfo.xml.in:120
 msgid "Show custom launcher files"
 msgstr "Mostrar arquivos do inicializador personalizado"
 
