@@ -37,6 +37,18 @@
   <update_contact>contact_at_elementary.io</update_contact>
 
   <releases>
+    <release version="8.1.0" date="2024-11-19" urgency="medium">
+      <description>
+        <p>Minor updates:</p>
+        <ul>
+          <li>Updated translations</li>
+        </ul>
+      </description>
+      <issues>
+        <issue url="https://github.com/elementary/switchboard-plug-applications/pull/238">Add Notifications settings</issue>
+      </issues>
+    </release>
+
     <release version="8.0.0" date="2024-07-26" urgency="medium">
       <description>
         <p>A Big Redesign!</p>
