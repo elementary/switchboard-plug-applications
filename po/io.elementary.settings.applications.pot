@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: io.elementary.settings.applications\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-10-05 02:58+0000\n"
+"POT-Creation-Date: 2024-11-19 21:04+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,60 +25,60 @@ msgstr ""
 msgid "Applications"
 msgstr ""
 
-#: src/Plug.vala:98 src/Sidebar.vala:25 src/Startup/Startup.vala:16
+#: src/Plug.vala:104 src/Sidebar.vala:25 src/Startup/Startup.vala:16
 msgid "Startup"
 msgstr ""
 
-#: src/Plug.vala:99
+#: src/Plug.vala:105
 msgid "Default Apps"
 msgstr ""
 
-#: src/Plug.vala:100
+#: src/Plug.vala:106
 msgid "Permissions"
 msgstr ""
 
-#: src/Plug.vala:101
+#: src/Plug.vala:107
 msgid "Sandboxing"
 msgstr ""
 
-#: src/Plug.vala:102
+#: src/Plug.vala:108
 msgid "Confinement"
 msgstr ""
 
-#: src/Plug.vala:103 src/Plug.vala:104 src/Plug.vala:105 src/Plug.vala:106
-#: src/Plug.vala:107 src/Plug.vala:108 src/Plug.vala:109 src/Plug.vala:110
+#: src/Plug.vala:109 src/Plug.vala:110 src/Plug.vala:111 src/Plug.vala:112
+#: src/Plug.vala:113 src/Plug.vala:114 src/Plug.vala:115 src/Plug.vala:116
 msgid "Default"
 msgstr ""
 
-#: src/Plug.vala:103 src/Defaults/DefaultPlug.vala:19
+#: src/Plug.vala:109 src/Defaults/DefaultPlug.vala:19
 msgid "Web Browser"
 msgstr ""
 
-#: src/Plug.vala:104 src/Defaults/DefaultPlug.vala:24
+#: src/Plug.vala:110 src/Defaults/DefaultPlug.vala:24
 msgid "Email Client"
 msgstr ""
 
-#: src/Plug.vala:105 src/Defaults/DefaultPlug.vala:29
+#: src/Plug.vala:111 src/Defaults/DefaultPlug.vala:29
 msgid "Calendar"
 msgstr ""
 
-#: src/Plug.vala:106 src/Defaults/DefaultPlug.vala:34
+#: src/Plug.vala:112 src/Defaults/DefaultPlug.vala:34
 msgid "Video Player"
 msgstr ""
 
-#: src/Plug.vala:107 src/Defaults/DefaultPlug.vala:39
+#: src/Plug.vala:113 src/Defaults/DefaultPlug.vala:39
 msgid "Music Player"
 msgstr ""
 
-#: src/Plug.vala:108 src/Defaults/DefaultPlug.vala:49
+#: src/Plug.vala:114 src/Defaults/DefaultPlug.vala:49
 msgid "Text Editor"
 msgstr ""
 
-#: src/Plug.vala:109 src/Defaults/DefaultPlug.vala:44
+#: src/Plug.vala:115 src/Defaults/DefaultPlug.vala:44
 msgid "Image Viewer"
 msgstr ""
 
-#: src/Plug.vala:110 src/Defaults/DefaultPlug.vala:54
+#: src/Plug.vala:116 src/Defaults/DefaultPlug.vala:54
 msgid "File Browser"
 msgstr ""
 
