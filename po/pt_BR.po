@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-19 21:04+0000\n"
-"PO-Revision-Date: 2024-11-06 02:14+0000\n"
-"Last-Translator: Neylson Soares <neylsonsoarest+weblate@gmail.com>\n"
+"PO-Revision-Date: 2024-11-30 16:16+0000\n"
+"Last-Translator: Guilherme Faura <guilhermefaura@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://l10n.elementary.io/projects/"
 "switchboard/switchboard-plug-applications/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -16,10 +16,10 @@ msgstr ""
 "X-Launchpad-Export-Date: 2016-12-06 05:26+0000\n"
 
 #: src/Plug.vala:44
-#, fuzzy
-#| msgid "Manage default and startup applications"
 msgid "Manage default apps, startup apps, and app permissions"
-msgstr "Gerenciar aplicativos padrão e de inicialização"
+msgstr ""
+"Gerenciar aplicativos padrão, aplicativos de inicialização e permissões de "
+"aplicativos"
 
 #: src/Plug.vala:45
 msgid "Applications"
@@ -83,16 +83,12 @@ msgid "File Browser"
 msgstr "Explorador de Arquivos"
 
 #: src/Sidebar.vala:21 src/Defaults/DefaultPlug.vala:12
-#, fuzzy
-#| msgid "Default"
 msgid "Defaults"
-msgstr "Padrão"
+msgstr "Padrões"
 
 #: src/Sidebar.vala:29 src/Sidebar.vala:43
-#, fuzzy
-#| msgid "Search Applications"
 msgid "Search Apps"
-msgstr "Buscar aplicativos"
+msgstr "Buscar Aplicativos"
 
 #: src/Sidebar.vala:127
 msgid "System"
@@ -107,10 +103,8 @@ msgid "Home Folder"
 msgstr "Pasta pessoal"
 
 #: src/Permissions/Backend/App.vala:43
-#, fuzzy
-#| msgid "Home Folder"
 msgid "System Folders"
-msgstr "Pasta pessoal"
+msgstr "Pastas do sistema"
 
 #: src/Permissions/Backend/App.vala:44
 msgid "Devices"
@@ -137,10 +131,8 @@ msgid "GPU Acceleration"
 msgstr "Aceleração GPU"
 
 #: src/Permissions/Backend/PermissionStore.vala:66
-#, fuzzy
-#| msgid "%s permissions"
 msgid "Couldn't set permission"
-msgstr "%s permissões"
+msgstr "Não foi possível definir a permissão"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:64
 msgid "Advanced System Access"
@@ -156,10 +148,8 @@ msgstr ""
 "corretamente sem ele"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:70
-#, fuzzy
-#| msgid "Default"
 msgid "Reset to Defaults"
-msgstr "Padrão"
+msgstr "Redefinir para os padrões"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:121
 msgid ""
@@ -258,7 +248,7 @@ msgstr "%s permissões"
 #. / Translators: This is a delimiter that separates types of permissions in the sidebar description
 #: src/Permissions/Widgets/SidebarRow.vala:84
 msgid ", "
-msgstr ""
+msgstr ", "
 
 #: src/Startup/Startup.vala:24
 msgid "Launch Apps on Startup"
@@ -301,10 +291,8 @@ msgstr "Cancelar"
 
 #. TRANSLATORS: This string is used by screen reader
 #: src/Startup/Widgets/AppChooser.vala:53
-#, fuzzy
-#| msgid "Remove Selected Startup App"
 msgid "Select startup app"
-msgstr "Remover aplicativo de inicialização selecionado"
+msgstr "Selecione o aplicativo de inicialização"
 
 #~ msgid "Try changing search terms."
 #~ msgstr "Tente alterar os termos da pesquisa."
