@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-19 21:04+0000\n"
-"PO-Revision-Date: 2024-10-05 14:42+0000\n"
-"Last-Translator: anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2024-12-02 12:16+0000\n"
+"Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
 "Language-Team: Finnish <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-applications/fi/>\n"
 "Language: fi\n"
@@ -96,17 +96,15 @@ msgstr "Järjestelmä"
 
 #: src/Sidebar.vala:132
 msgid "Apps"
-msgstr ""
+msgstr "Sovellukset"
 
 #: src/Permissions/Backend/App.vala:42
 msgid "Home Folder"
 msgstr "Kotikansio"
 
 #: src/Permissions/Backend/App.vala:43
-#, fuzzy
-#| msgid "Home Folder"
 msgid "System Folders"
-msgstr "Kotikansio"
+msgstr "Järjestelmäkansiot"
 
 #: src/Permissions/Backend/App.vala:44
 msgid "Devices"
@@ -133,10 +131,8 @@ msgid "GPU Acceleration"
 msgstr "Näytönohjaimen kiihdytys"
 
 #: src/Permissions/Backend/PermissionStore.vala:66
-#, fuzzy
-#| msgid "%s permissions"
 msgid "Couldn't set permission"
-msgstr "%s oikeutta"
+msgstr "Oikeutta ei voitu asettaa"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:64
 msgid "Advanced System Access"
@@ -174,10 +170,8 @@ msgstr ""
 "yhdistettyihin USB-laitteisiin."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:133
-#, fuzzy
-#| msgid "Access the Internet and local networks."
 msgid "Connect to the Internet and local networks."
-msgstr "Pääsy internetiin ja paikallisiin verkkoihin."
+msgstr "Yhdistä Internetiin ja paikallisiin verkkoihin."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:137
 msgid "Manage Bluetooth devices including pairing, unpairing, and discovery."
@@ -187,13 +181,11 @@ msgstr ""
 
 #: src/Permissions/Widgets/AppSettingsView.vala:141
 msgid "Manage printers and see the print queue."
-msgstr ""
+msgstr "Hallitse tulostimia ja niiden tulostusjonoja."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:145
-#, fuzzy
-#| msgid "Access other devices on the network via SSH."
 msgid "Connect to other devices on the network via SSH."
-msgstr "Pääsy muihin verkossa oleviin laitteisiin SSH:n välityksellä."
+msgstr "Yhdistä muihin verkossa oleviin laitteisiin SSH:n välityksellä."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:149
 msgid "Accelerate graphical output."
@@ -201,11 +193,12 @@ msgstr "Kiihdytä graafista ulostuloa."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:175
 msgid "Background Activity"
-msgstr ""
+msgstr "Taustatoiminta"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:176
 msgid "Perform tasks and use system resources while its window is closed."
 msgstr ""
+"Suorita tehtäviä ja käytä järjestelmäresursseja, kun sen ikkuna on suljettu."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:186
 msgid "Location Services"
@@ -213,7 +206,7 @@ msgstr "Sijaintipalvelut"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:187
 msgid "Determine the location of this device."
-msgstr ""
+msgstr "Määritä tämän laitteen sijainti."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:200
 msgid "Notifications"
@@ -227,11 +220,11 @@ msgstr ""
 
 #: src/Permissions/Widgets/AppSettingsView.vala:211
 msgid "Screenshot"
-msgstr ""
+msgstr "Kuvakaappaus"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:212
 msgid "Take pictures of the display without asking first."
-msgstr ""
+msgstr "Ota kuvakaappauksia ilman erillistä pyynnön esittämistä."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:222
 msgid "Wallpaper"
@@ -239,7 +232,7 @@ msgstr "Taustakuva"
 
 #: src/Permissions/Widgets/AppSettingsView.vala:223
 msgid "Set the wallpaper on the desktop and lock screen."
-msgstr ""
+msgstr "Aseta työpöydän ja lukitusnäytön taustakuva."
 
 #: src/Permissions/Widgets/AppSettingsView.vala:239
 #, c-format
