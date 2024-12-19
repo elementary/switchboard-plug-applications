@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-11-19 21:04+0000\n"
-"PO-Revision-Date: 2024-08-17 10:16+0000\n"
+"PO-Revision-Date: 2024-12-20 08:28+0000\n"
 "Last-Translator: DutchVipperloid <svenroelof@e.email>\n"
 "Language-Team: Dutch <https://l10n.elementary.io/projects/switchboard/"
 "applications-plug-extra/nl/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.6.2\n"
+"X-Generator: Weblate 5.8.4\n"
 
 #: data/applications.metainfo.xml.in:10
 msgid "Applications Settings"
@@ -45,24 +45,26 @@ msgstr "Bijgewerkte vertalingen"
 
 #: data/applications.metainfo.xml.in:54
 msgid "A Big Redesign!"
-msgstr ""
+msgstr "Een groots nieuw ontwerp!"
 
 #: data/applications.metainfo.xml.in:56
 msgid "A new icon"
-msgstr ""
+msgstr "Een nieuw icoon"
 
 #: data/applications.metainfo.xml.in:57
 msgid "Redesigned layout that makes it faster to get to app permissions"
-msgstr ""
+msgstr "Een nieuwe indeling ontworpen om snel naar de app-toestemmingen te gaan"
 
 #: data/applications.metainfo.xml.in:58
 msgid ""
 "Portal permissions like Backgrounding, Location, Screenshots, and Wallpapers"
 msgstr ""
+"Portaaltoestemmingen zoals achtergrond-taken, locatie, schermafdrukken en "
+"achtergronden"
 
 #: data/applications.metainfo.xml.in:84 data/applications.metainfo.xml.in:114
 msgid "New features:"
-msgstr "Nieuwe functionaliteit:"
+msgstr "Nieuwe functies:"
 
 #: data/applications.metainfo.xml.in:86
 msgid "Properly handle autostart files created by the Background Portal"
